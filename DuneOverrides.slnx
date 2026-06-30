@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/GeneratedProject/">
+    <Project Path="GeneratedProject/Spice86.Generated.csproj" />
+  </Folder>
+  <Folder Name="/Spice86/" />
+  <Folder Name="/Spice86/src/">
+    <Project Path="Spice86/src/Spice86.Core/Spice86.Core.csproj" />
+    <Project Path="Spice86/src/Spice86.Logging/Spice86.Logging.csproj" />
+    <Project Path="Spice86/src/Spice86.Shared/Spice86.Shared.csproj" />
+    <Project Path="Spice86/src/Spice86.Storage.Cd/Spice86.Storage.Cd.csproj" />
+    <Project Path="Spice86/src/Spice86.Storage.Fat/Spice86.Storage.Fat.csproj" />
+    <Project Path="Spice86/src/Spice86/Spice86.csproj" />
+  </Folder>
+</Solution>

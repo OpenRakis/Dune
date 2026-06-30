@@ -1,0 +1,3 @@
+[submodule "Spice86"]
+	path = Spice86
+	url = .\\Spice86\\
