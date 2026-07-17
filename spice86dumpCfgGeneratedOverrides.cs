@@ -123,6 +123,10 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x0CEA, unknown_100D_0CEA_10DBA);
         DefineFunction(cs1, 0x0CF2, unknown_100D_0CF2_10DC2);
         DefineFunction(cs1, 0x0D0D, unknown_100D_0D0D_10DDD);
+        DefineFunction(cs1, 0x0D45, unknown_100D_0D45_10E15);
+        DefineFunction(cs1, 0x0D8E, unknown_100D_0D8E_10E5E);
+        DefineFunction(cs1, 0x0E66, unknown_100D_0E66_10F36);
+        DefineFunction(cs1, 0x0E6C, unknown_100D_0E6C_10F3C);
         DefineFunction(cs1, 0x0ED0, unknown_100D_0ED0_10FA0);
         DefineFunction(cs1, 0x0F08, unknown_100D_0F08_10FD8);
         DefineFunction(cs1, 0x0F66, unknown_100D_0F66_11036);
@@ -183,6 +187,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x1AE7, unknown_100D_1AE7_11BB7);
         DefineFunction(cs1, 0x1B0D, unknown_100D_1B0D_11BDD);
         DefineFunction(cs1, 0x1B23, unknown_100D_1B23_11BF3);
+        DefineFunction(cs1, 0x1BB2, unknown_100D_1BB2_11C82);
         DefineFunction(cs1, 0x1BEC, unknown_100D_1BEC_11CBC);
         DefineFunction(cs1, 0x1C18, unknown_100D_1C18_11CE8);
         DefineFunction(cs1, 0x1C46, unknown_100D_1C46_11D16);
@@ -294,6 +299,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x3901, unknown_100D_3901_139D1);
         DefineFunction(cs1, 0x390A, unknown_100D_390A_139DA);
         DefineFunction(cs1, 0x3916, unknown_100D_3916_139E6);
+        DefineFunction(cs1, 0x391D, unknown_100D_391D_139ED);
         DefineFunction(cs1, 0x3950, unknown_100D_3950_13A20);
         DefineFunction(cs1, 0x395C, unknown_100D_395C_13A2C);
         DefineFunction(cs1, 0x395F, unknown_100D_395F_13A2F);
@@ -646,6 +652,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x9285, unknown_100D_9285_19355);
         DefineFunction(cs1, 0x92C9, unknown_100D_92C9_19399);
         DefineFunction(cs1, 0x93DF, unknown_100D_93DF_194AF);
+        DefineFunction(cs1, 0x941D, unknown_100D_941D_194ED);
         DefineFunction(cs1, 0x94F3, unknown_100D_94F3_195C3);
         DefineFunction(cs1, 0x9556, unknown_100D_9556_19626);
         DefineFunction(cs1, 0x956D, unknown_100D_956D_1963D);
@@ -655,6 +662,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x96D8, unknown_100D_96D8_197A8);
         DefineFunction(cs1, 0x96F1, unknown_100D_96F1_197C1);
         DefineFunction(cs1, 0x9702, unknown_100D_9702_197D2);
+        DefineFunction(cs1, 0x970B, unknown_100D_970B_197DB);
         DefineFunction(cs1, 0x9719, unknown_100D_9719_197E9);
         DefineFunction(cs1, 0x9761, unknown_100D_9761_19831);
         DefineFunction(cs1, 0x978E, unknown_100D_978E_1985E);
@@ -1304,20 +1312,28 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs5, 0x00E3, provided_mouse_driver_F000_00E3_F00E3);
         DefineFunction(cs1, 0x0FA7, unknown_100D_0FA7_11077);
         DefineFunction(cs1, 0x1877, _ => unknown_100D_0FA7_11077(0x1877), name: "unknown_entry");
+        DefineFunction(cs1, 0x2993, _ => unknown_100D_0FA7_11077(0x2993), name: "unknown_entry");
         DefineFunction(cs1, 0x2999, _ => unknown_100D_0FA7_11077(0x2999), name: "unknown_entry");
         DefineFunction(cs1, 0x3F27, _ => unknown_100D_0FA7_11077(0x3F27), name: "unknown_entry");
+        DefineFunction(cs1, 0x42E9, _ => unknown_100D_0FA7_11077(0x42E9), name: "unknown_entry");
         DefineFunction(cs1, 0x4703, _ => unknown_100D_0FA7_11077(0x4703), name: "unknown_entry");
         DefineFunction(cs1, 0x4FC3, _ => unknown_100D_0FA7_11077(0x4FC3), name: "unknown_entry");
         DefineFunction(cs1, 0x7D81, _ => unknown_100D_0FA7_11077(0x7D81), name: "unknown_entry");
         DefineFunction(cs1, 0x8214, _ => unknown_100D_0FA7_11077(0x8214), name: "unknown_entry");
         DefineFunction(cs1, 0x8246, _ => unknown_100D_0FA7_11077(0x8246), name: "unknown_entry");
         DefineFunction(cs1, 0x8286, _ => unknown_100D_0FA7_11077(0x8286), name: "unknown_entry");
+        DefineFunction(cs1, 0x8296, _ => unknown_100D_0FA7_11077(0x8296), name: "unknown_entry");
         DefineFunction(cs1, 0x829E, _ => unknown_100D_0FA7_11077(0x829E), name: "unknown_entry");
         DefineFunction(cs1, 0x872C, _ => unknown_100D_0FA7_11077(0x872C), name: "unknown_entry");
+        DefineFunction(cs1, 0x92FC, _ => unknown_100D_0FA7_11077(0x92FC), name: "unknown_entry");
+        DefineFunction(cs1, 0x9301, _ => unknown_100D_0FA7_11077(0x9301), name: "unknown_entry");
         DefineFunction(cs1, 0x9306, _ => unknown_100D_0FA7_11077(0x9306), name: "unknown_entry");
         DefineFunction(cs1, 0x930B, _ => unknown_100D_0FA7_11077(0x930B), name: "unknown_entry");
+        DefineFunction(cs1, 0x936F, _ => unknown_100D_0FA7_11077(0x936F), name: "unknown_entry");
+        DefineFunction(cs1, 0x9381, _ => unknown_100D_0FA7_11077(0x9381), name: "unknown_entry");
         DefineFunction(cs1, 0x956C, _ => unknown_100D_0FA7_11077(0x956C), name: "unknown_entry");
         DefineFunction(cs1, 0x961A, _ => unknown_100D_0FA7_11077(0x961A), name: "unknown_entry");
+        DefineFunction(cs1, 0x96EB, _ => unknown_100D_0FA7_11077(0x96EB), name: "unknown_entry");
         DefineFunction(cs1, 0xA3F9, _ => unknown_100D_0FA7_11077(0xA3F9), name: "unknown_entry");
         DefineFunction(cs1, 0xAD21, _ => unknown_100D_0FA7_11077(0xAD21), name: "unknown_entry");
         DefineFunction(cs1, 0xAD30, _ => unknown_100D_0FA7_11077(0xAD30), name: "unknown_entry");
@@ -1346,7 +1362,6 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x35AC, unknown_100D_35AC_1367C);
         DefineFunction(cs1, 0x3722, unknown_100D_3722_137F2);
         DefineFunction(cs1, 0x38E0, unknown_100D_38E0_139B0);
-        DefineFunction(cs1, 0x391D, unknown_100D_391D_139ED);
         DefineFunction(cs1, 0x3978, unknown_100D_3978_13A48);
         DefineFunction(cs1, 0x3A6A, unknown_100D_3A6A_13B3A);
         DefineFunction(cs1, 0x3A7B, unknown_100D_3A7B_13B4B);
@@ -1360,6 +1375,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x5CE3, unknown_100D_5CE3_15DB3);
         DefineFunction(cs1, 0x5D44, unknown_100D_5D44_15E14);
         DefineFunction(cs1, 0x5D50, _ => unknown_100D_5D44_15E14(0x5D50), name: "unknown_entry");
+        DefineFunction(cs1, 0x7429, _ => unknown_100D_5D44_15E14(0x7429), name: "unknown_entry");
         DefineFunction(cs1, 0x5F9F, unknown_100D_5F9F_1606F);
         DefineFunction(cs1, 0x62F1, unknown_100D_62F1_163C1);
         DefineFunction(cs1, 0x6322, _ => unknown_100D_62F1_163C1(0x6322), name: "unknown_entry");
@@ -1367,9 +1383,11 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x6458, unknown_100D_6458_16528);
         DefineFunction(cs1, 0x68E0, unknown_100D_68E0_169B0);
         DefineFunction(cs1, 0x6912, unknown_100D_6912_169E2);
+        DefineFunction(cs1, 0x6B24, unknown_100D_6B24_16BF4);
         DefineFunction(cs1, 0x6BB6, unknown_100D_6BB6_16C86);
         DefineFunction(cs1, 0x7085, unknown_100D_7085_17155);
         DefineFunction(cs1, 0x71BB, unknown_100D_71BB_1728B);
+        DefineFunction(cs1, 0x764C, unknown_100D_764C_1771C);
         DefineFunction(cs1, 0x7655, unknown_100D_7655_17725);
         DefineFunction(cs1, 0x78BB, unknown_100D_78BB_1798B);
         DefineFunction(cs1, 0x79DB, unknown_100D_79DB_17AAB);
@@ -5087,6 +5105,398 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         return NearRet((ushort)0x0000);
     }
 
+    public virtual Action unknown_100D_0D45_10E15(int loadOffset) {
+    label_100D_0D45_10E15_37575:
+        CheckExternalEvents(cs1, 0x0D45);
+        // 100D:0D45 call near 0x395C
+        NearCall(cs1, 0x0D48, unknown_100D_395C_13A2C);
+    label_100D_0D48_10E18_37580:
+        CheckExternalEvents(cs1, 0x0D48);
+        // 100D:0D48 call near 0x3971
+        NearCall(cs1, 0x0D4B, unknown_100D_3971_13A41);
+    label_100D_0D4B_10E1B_37583:
+        CheckExternalEvents(cs1, 0x0D4B);
+        // 100D:0D4B call near 0x39B9
+        NearCall(cs1, 0x0D4E, unknown_100D_39B9_13A89);
+    label_100D_0D4E_10E1E_37586:
+        CheckExternalEvents(cs1, 0x0D4E);
+        // 100D:0D4E inc byte ptr DS:[0x227D]
+        UInt8[DS, (ushort)0x227D] = Alu8.Inc(UInt8[DS, (ushort)0x227D]);
+        // 100D:0D52 mov CX,3
+        CX = (ushort)0x0003;
+    label_100D_0D55_10E25_37589:
+        CheckExternalEvents(cs1, 0x0D55);
+        // 100D:0D55 push CX
+        Stack.Push16(CX);
+        // 100D:0D56 mov BL,0x28
+        BL = (byte)0x28;
+        // 100D:0D58 call near 0x3971
+        NearCall(cs1, 0x0D5B, unknown_100D_3971_13A41);
+    label_100D_0D5B_10E2B_37597:
+        CheckExternalEvents(cs1, 0x0D5B);
+        // 100D:0D5B call near 0x398C
+        NearCall(cs1, 0x0D5E, unknown_100D_398C_13A5C);
+    label_100D_0D5E_10E2E_37600:
+        CheckExternalEvents(cs1, 0x0D5E);
+        // 100D:0D5E call near 0xC0F4
+        NearCall(cs1, 0x0D61, unknown_100D_C0F4_1C1C4);
+    label_100D_0D61_10E31_37603:
+        CheckExternalEvents(cs1, 0x0D61);
+        // 100D:0D61 mov byte ptr DS:[0x46D7],0x20
+        UInt8[DS, (ushort)0x46D7] = (byte)0x20;
+    label_100D_0D66_10E36_37604:
+        CheckExternalEvents(cs1, 0x0D66);
+        // 100D:0D66 mov BP,0x391D
+        BP = (ushort)0x391D;
+        // 100D:0D69 mov AX,3
+        AX = (ushort)0x0003;
+        // 100D:0D6C call near 0xE353
+        NearCall(cs1, 0x0D6F, unknown_100D_E353_1E423);
+    label_100D_0D6F_10E3F_37651:
+        CheckExternalEvents(cs1, 0x0D6F);
+        // 100D:0D6F cmp byte ptr DS:[0x46D7],0x10
+        Alu8.Sub(UInt8[DS, (ushort)0x46D7], (byte)0x10);
+        // 100D:0D74 jae short 0x0D66
+        if (!CarryFlag) {
+            goto label_100D_0D66_10E36_37604;
+        }
+    label_100D_0D76_10E46_37656:
+        CheckExternalEvents(cs1, 0x0D76);
+        // 100D:0D76 pop CX
+        CX = Stack.Pop16();
+        // 100D:0D77 loop 0x0D55
+        CX = unchecked((ushort)(CX - (ushort)0x0001));
+        if (CX != (ushort)0x0000) {
+            goto label_100D_0D55_10E25_37589;
+        }
+    label_100D_0D79_10E49_37661:
+        CheckExternalEvents(cs1, 0x0D79);
+        // 100D:0D79 mov BP,0x391D
+        BP = (ushort)0x391D;
+        // 100D:0D7C mov AX,3
+        AX = (ushort)0x0003;
+        // 100D:0D7F call near 0xE353
+        NearCall(cs1, 0x0D82, unknown_100D_E353_1E423);
+    label_100D_0D82_10E52_37672:
+        CheckExternalEvents(cs1, 0x0D82);
+        // 100D:0D82 cmp byte ptr DS:[0x46D7],0
+        Alu8.Sub(UInt8[DS, (ushort)0x46D7], (byte)0x00);
+        // 100D:0D87 jne short 0x0D79
+        if (!ZeroFlag) {
+            goto label_100D_0D79_10E49_37661;
+        }
+    label_100D_0D89_10E59_37676:
+        CheckExternalEvents(cs1, 0x0D89);
+        // 100D:0D89 dec byte ptr DS:[0x227D]
+        UInt8[DS, (ushort)0x227D] = Alu8.Dec(UInt8[DS, (ushort)0x227D]);
+        // 100D:0D8D ret near
+        return NearRet((ushort)0x0000);
+    }
+
+    public virtual Action unknown_100D_0D8E_10E5E(int loadOffset) {
+    entrydispatcher:
+    label_100D_0D8E_10E5E_37542:
+        CheckExternalEvents(cs1, 0x0D8E);
+        // 100D:0D8E cmp byte ptr DS:[0x47A9],0
+        Alu8.Sub(UInt8[DS, (ushort)0x47A9], (byte)0x00);
+        // 100D:0D93 jne short 0x0D9D
+        if (!ZeroFlag) {
+            goto label_100D_0D9D_10E6D_37546;
+        }
+    label_100D_0D95_10E65_37548:
+        CheckExternalEvents(cs1, 0x0D95);
+        // 100D:0D95 xor AX,AX
+        AX = Alu16.Xor(AX, AX);
+        // 100D:0D97 cmp byte ptr DS:[0x46D9],AL
+        Alu8.Sub(UInt8[DS, (ushort)0x46D9], AL);
+        // 100D:0D9B jns short 0x0D9E
+        if (!SignFlag) {
+            goto label_100D_0D9E_10E6E_37552;
+        }
+    label_100D_0D9D_10E6D_37546:
+        CheckExternalEvents(cs1, 0x0D9D);
+        // 100D:0D9D ret near
+        return NearRet((ushort)0x0000);
+    label_100D_0D9E_10E6E_37552:
+        CheckExternalEvents(cs1, 0x0D9E);
+        // 100D:0D9E mov byte ptr DS:[0x473B],AL
+        UInt8[DS, (ushort)0x473B] = AL;
+        // 100D:0DA1 mov byte ptr DS:[0x46EC],AL
+        UInt8[DS, (ushort)0x46EC] = AL;
+        // 100D:0DA4 cmp byte ptr DS:[0x00FB],AL
+        Alu8.Sub(UInt8[DS, (ushort)0x00FB], AL);
+        // 100D:0DA8 jns short 0x0DB0
+        if (!SignFlag) {
+            goto label_100D_0DB0_10E80_37558;
+        }
+    label_100D_0DAA_10E7A_37560:
+        CheckExternalEvents(cs1, 0x0DAA);
+        VerifySpeculativeEntryOrFail(cs1, 0x0DAA, [(byte)0xE8, (byte)0x05, (byte)0xCE]);
+        // 100D:0DAA call near 0xDBB2
+        NearCall(cs1, 0x0DAD, unknown_100D_DBB2_1DC82);
+        throw FailAsUntested("Call at 100D:0DAA returned to 100D:0DAD, but no continuation was observed during discovery.");
+    label_100D_0DB0_10E80_37558:
+        CheckExternalEvents(cs1, 0x0DB0);
+        // 100D:0DB0 call near 0xD2BD
+        NearCall(cs1, 0x0DB3, unknown_100D_D2BD_1D38D);
+    label_100D_0DB3_10E83_37574:
+        CheckExternalEvents(cs1, 0x0DB3);
+        // 100D:0DB3 call near 0x0D45
+        NearCall(cs1, 0x0DB6, unknown_100D_0D45_10E15);
+    label_100D_0DB6_10E86_37682:
+        CheckExternalEvents(cs1, 0x0DB6);
+        // 100D:0DB6 call near 0xDBB2
+        NearCall(cs1, 0x0DB9, unknown_100D_DBB2_1DC82);
+    label_100D_0DB9_10E89_37685:
+        CheckExternalEvents(cs1, 0x0DB9);
+        // 100D:0DB9 call near 0x98E6
+        NearCall(cs1, 0x0DBC, unknown_100D_98E6_199B6);
+    label_100D_0DBC_10E8C_37688:
+        CheckExternalEvents(cs1, 0x0DBC);
+        // 100D:0DBC mov word ptr DS:[2],0x16C5
+        UInt16[DS, (ushort)0x0002] = (ushort)0x16C5;
+        // 100D:0DC2 call near 0x0E66
+        NearCall(cs1, 0x0DC5, unknown_100D_0E66_10F36);
+    label_100D_0DC5_10E95_37754:
+        CheckExternalEvents(cs1, 0x0DC5);
+        // 100D:0DC5 mov byte ptr DS:[0x11CA],1
+        UInt8[DS, (ushort)0x11CA] = (byte)0x01;
+        // 100D:0DCA call near 0x9F40
+        NearCall(cs1, 0x0DCD, unknown_100D_9F40_1A010);
+    label_100D_0DCD_10E9D_37759:
+        CheckExternalEvents(cs1, 0x0DCD);
+        // 100D:0DCD mov word ptr DS:[0x47C4],0xFFFF
+        UInt16[DS, (ushort)0x47C4] = (ushort)0xFFFF;
+        // 100D:0DD3 mov AL,0x80
+        AL = (byte)0x80;
+        // 100D:0DD5 xchg AL,byte ptr DS:[0x46D9]
+        ushort xchgOffset_100D_0DD5_10EA5 = (ushort)0x46D9;
+        byte temp_100D_0DD5_10EA5 = AL;
+        AL = UInt8[DS, xchgOffset_100D_0DD5_10EA5];
+        UInt8[DS, xchgOffset_100D_0DD5_10EA5] = unchecked((byte)temp_100D_0DD5_10EA5);
+        // 100D:0DD9 xor AH,AH
+        AH = Alu8.Xor(AH, AH);
+        // 100D:0DDB push AX
+        Stack.Push16(AX);
+        // 100D:0DDC add AX,0x00BA
+        AX = Alu16.Add(AX, (ushort)0x00BA);
+        // 100D:0DDF call near 0x9901
+        NearCall(cs1, 0x0DE2, unknown_100D_9901_199D1);
+    label_100D_0DE2_10EB2_37774:
+        CheckExternalEvents(cs1, 0x0DE2);
+        // 100D:0DE2 call near 0x88AF
+        NearCall(cs1, 0x0DE5, unknown_100D_88AF_1897F);
+    label_100D_0DE5_10EB5_37796:
+        CheckExternalEvents(cs1, 0x0DE5);
+        // 100D:0DE5 call near 0x9901
+        NearCall(cs1, 0x0DE8, unknown_100D_9901_199D1);
+    label_100D_0DE8_10EB8_37799:
+        CheckExternalEvents(cs1, 0x0DE8);
+        // 100D:0DE8 mov SI,0x2254
+        SI = (ushort)0x2254;
+        // 100D:0DEB call near 0x7B1B
+        NearCall(cs1, 0x0DEE, unknown_100D_7B1B_17BEB);
+    label_100D_0DEE_10EBE_37804:
+        CheckExternalEvents(cs1, 0x0DEE);
+        // 100D:0DEE call near 0xDA53
+        NearCall(cs1, 0x0DF1, unknown_100D_DA53_1DB23);
+    label_100D_0DF1_10EC1_37807:
+        CheckExternalEvents(cs1, 0x0DF1);
+        // 100D:0DF1 pop AX
+        AX = Stack.Pop16();
+        // 100D:0DF2 mov BX,0x225D
+        BX = (ushort)0x225D;
+        // 100D:0DF5 xlat byte ptr DS:[BX+AL]
+        AL = UInt8[DS, (ushort)(BX + unchecked((ushort)AL))];
+        // 100D:0DF6 or AL,AL
+        AL = Alu8.Or(AL, AL);
+        // 100D:0DF8 js short 0x0E22
+        if (SignFlag) {
+            goto label_100D_0E22_10EF2_37813;
+        }
+    label_100D_0DFA_10ECA_37815:
+        CheckExternalEvents(cs1, 0x0DFA);
+        // 100D:0DFA call near 0x91A0
+        NearCall(cs1, 0x0DFD, unknown_100D_91A0_19270);
+    label_100D_0DFD_10ECD_37824:
+        CheckExternalEvents(cs1, 0x0DFD);
+        // 100D:0DFD les SI,word ptr DS:[0xDBB0]
+        ushort lxsOffset_100D_0DFD_10ECD = (ushort)0xDBB0;
+        ushort lxsValue_100D_0DFD_10ECD = UInt16[DS, lxsOffset_100D_0DFD_10ECD];
+        ushort lxsSegment_100D_0DFD_10ECD = UInt16[DS, (ushort)(lxsOffset_100D_0DFD_10ECD + (ushort)0x0002)];
+        SI = unchecked((ushort)lxsValue_100D_0DFD_10ECD);
+        ES = unchecked((ushort)lxsSegment_100D_0DFD_10ECD);
+        // 100D:0E01 lods AX,word ptr ES:[SI]
+        AX = UInt16[ES, SI];
+        SI = unchecked((ushort)(SI + unchecked((ushort)State.Direction16)));
+        // 100D:0E03 shr AX,1
+        AX = Alu16.Shr(AX, 1);
+        // 100D:0E05 sub AX,3
+        AX = Alu16.Sub(AX, (ushort)0x0003);
+        // 100D:0E08 mov DX,word ptr DS:[0x2254]
+        DX = UInt16[DS, (ushort)0x2254];
+        // 100D:0E0C mov BX,word ptr DS:[0x2256]
+        BX = UInt16[DS, (ushort)0x2256];
+        // 100D:0E10 inc DX
+        DX = Alu16.Inc(DX);
+        // 100D:0E11 inc BX
+        BX = Alu16.Inc(BX);
+        // 100D:0E12 push AX
+        Stack.Push16(AX);
+        // 100D:0E13 call near 0xC2FD
+        NearCall(cs1, 0x0E16, unknown_100D_C2FD_1C3CD);
+    label_100D_0E16_10EE6_37845:
+        CheckExternalEvents(cs1, 0x0E16);
+        // 100D:0E16 pop AX
+        AX = Stack.Pop16();
+        // 100D:0E17 inc AX
+        AX = Alu16.Inc(AX);
+        // 100D:0E18 call near 0xC22F
+        NearCall(cs1, 0x0E1B, unknown_100D_C22F_1C2FF);
+    label_100D_0E1B_10EEB_37852:
+        CheckExternalEvents(cs1, 0x0E1B);
+        // 100D:0E1B call far dword ptr DS:[0x3935]
+        ushort targetSegment_37852 = unchecked((ushort)(UInt16[DS, (ushort)((ushort)0x3935 + (ushort)0x0002)]));
+        ushort targetOffset_37852 = unchecked((ushort)(UInt16[DS, (ushort)0x3935]));
+        if (targetSegment_37852 == cs2 && targetOffset_37852 == 0x0160) {
+            FarCall(cs1, 0x0E1F, cs2, unknown_3358_0160_336E0);
+            goto label_100D_0E1F_10EEF_37854;
+        }
+        throw FailAsUntested($"Unknown far call target {targetSegment_37852:X4}:{targetOffset_37852:X4} at 100D:0E1B");
+    label_100D_0E1F_10EEF_37854:
+        CheckExternalEvents(cs1, 0x0E1F);
+        // 100D:0E1F call near 0x9EFD
+        NearCall(cs1, 0x0E22, unknown_100D_9EFD_19FCD);
+    label_100D_0E22_10EF2_37813:
+        CheckExternalEvents(cs1, 0x0E22);
+        // 100D:0E22 call near 0xC4CD
+        NearCall(cs1, 0x0E25, unknown_100D_C4CD_1C59D);
+    label_100D_0E25_10EF5_37876:
+        CheckExternalEvents(cs1, 0x0E25);
+        // 100D:0E25 mov byte ptr DS:[0x4727],0
+        UInt8[DS, (ushort)0x4727] = (byte)0x00;
+        // 100D:0E2A call near 0xD741
+        NearCall(cs1, 0x0E2D, unknown_100D_D741_1D811);
+    label_100D_0E2D_10EFD_37881:
+        CheckExternalEvents(cs1, 0x0E2D);
+        // 100D:0E2D mov byte ptr DS:[0x47A7],1
+        UInt8[DS, (ushort)0x47A7] = (byte)0x01;
+        // 100D:0E32 mov BP,0x20A2
+        BP = (ushort)0x20A2;
+        // 100D:0E35 mov BX,0x0F66
+        BX = (ushort)0x0F66;
+        // 100D:0E38 call near 0xD323
+        NearCall(cs1, 0x0E3B, unknown_100D_D323_1D3F3);
+    label_100D_0E3B_10F0B_37890:
+        CheckExternalEvents(cs1, 0x0E3B);
+        // 100D:0E3B jmp near 0xDBEC
+        if (JumpDispatcher.Jump(unknown_100D_DBEC_1DCBC, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
+    }
+
+    public virtual Action unknown_100D_0E66_10F36(int loadOffset) {
+    entrydispatcher:
+    label_100D_0E66_10F36_37691:
+        CheckExternalEvents(cs1, 0x0E66);
+        // 100D:0E66 call near 0xAD5E
+        NearCall(cs1, 0x0E69, unknown_100D_AD5E_1AE2E);
+    label_100D_0E69_10F39_37696:
+        CheckExternalEvents(cs1, 0x0E69);
+        // 100D:0E69 mov AX,0x000C
+        AX = (ushort)0x000C;
+        if (JumpDispatcher.Jump(unknown_100D_0E6C_10F3C, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
+    }
+
+    public virtual Action unknown_100D_0E6C_10F3C(int loadOffset) {
+    entrydispatcher:
+    label_100D_0E6C_10F3C_37697:
+        CheckExternalEvents(cs1, 0x0E6C);
+        // 100D:0E6C push AX
+        Stack.Push16(AX);
+        // 100D:0E6D call near 0xA7A5
+        NearCall(cs1, 0x0E70, unknown_100D_A7A5_1A875);
+    label_100D_0E70_10F40_37703:
+        CheckExternalEvents(cs1, 0x0E70);
+        // 100D:0E70 pop AX
+        AX = Stack.Pop16();
+        // 100D:0E71 mov BP,0x181E
+        BP = (ushort)0x181E;
+        // 100D:0E74 jmp near 0xC8FB
+    label_100D_C8FB_1C9CB_37707:
+        CheckExternalEvents(cs1, 0xC8FB);
+        // 100D:C8FB call near 0xC07C
+        NearCall(cs1, 0xC8FE, unknown_100D_C07C_1C14C);
+    label_100D_C8FE_1C9CE_37713:
+        CheckExternalEvents(cs1, 0xC8FE);
+        // 100D:C8FE push BP
+        Stack.Push16(BP);
+        // 100D:C8FF call near 0xCA1B
+        NearCall(cs1, 0xC902, unknown_100D_CA1B_1CAEB);
+    label_100D_C902_1C9D2_37718:
+        CheckExternalEvents(cs1, 0xC902);
+        // 100D:C902 call near 0xC4DD
+        NearCall(cs1, 0xC905, unknown_100D_C4DD_1C5AD);
+    label_100D_C905_1C9D5_37721:
+        CheckExternalEvents(cs1, 0xC905);
+        // 100D:C905 call near 0xC0F4
+        NearCall(cs1, 0xC908, unknown_100D_C0F4_1C1C4);
+    label_100D_C908_1C9D8_37724:
+        CheckExternalEvents(cs1, 0xC908);
+        // 100D:C908 pop BP
+        BP = Stack.Pop16();
+        // 100D:C909 call near BP
+        switch ((ushort)(BP)) {
+            case 0x181E:
+                NearCall(cs1, 0xC90B, unknown_100D_181E_118EE);
+                break;
+            default:
+                throw FailAsUntested($"Unknown near call target 0x{((ushort)(BP)):X4} at 100D:C909");
+        }
+    label_100D_C90B_1C9DB_37728:
+        CheckExternalEvents(cs1, 0xC90B);
+        // 100D:C90B call near 0xC9F4
+        NearCall(cs1, 0xC90E, unknown_100D_C9F4_1CAC4);
+    label_100D_C90E_1C9DE_37731:
+        CheckExternalEvents(cs1, 0xC90E);
+        // 100D:C90E je short 0xC90B
+        if (ZeroFlag) {
+            goto label_100D_C90B_1C9DB_37728;
+        }
+    label_100D_C910_1C9E0_37734:
+        CheckExternalEvents(cs1, 0xC910);
+        // 100D:C910 call near 0xC4DD
+        NearCall(cs1, 0xC913, unknown_100D_C4DD_1C5AD);
+    label_100D_C913_1C9E3_37738:
+        CheckExternalEvents(cs1, 0xC913);
+        // 100D:C913 call near 0xACE6
+        NearCall(cs1, 0xC916, unknown_100D_ACE6_1ADB6);
+    label_100D_C916_1C9E6_37741:
+        CheckExternalEvents(cs1, 0xC916);
+        // 100D:C916 call near 0xCC85
+        NearCall(cs1, 0xC919, unknown_100D_CC85_1CD55);
+    label_100D_C919_1C9E9_37744:
+        CheckExternalEvents(cs1, 0xC919);
+        // 100D:C919 je short 0xC90B
+        if (ZeroFlag) {
+            goto label_100D_C90B_1C9DB_37728;
+        }
+    label_100D_C91B_1C9EB_37747:
+        CheckExternalEvents(cs1, 0xC91B);
+        // 100D:C91B call near 0xC412
+        NearCall(cs1, 0xC91E, unknown_100D_C412_1C4E2);
+    label_100D_C91E_1C9EE_37751:
+        CheckExternalEvents(cs1, 0xC91E);
+        // 100D:C91E jmp near 0xCA01
+        return unknown_100D_CA01_1CAD1(0x0000);
+    }
+
     public virtual Action unknown_100D_0ED0_10FA0(int loadOffset) {
     entrydispatcher:
     label_100D_0ED0_10FA0_19962:
@@ -6796,9 +7206,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:18E3 cmp byte ptr DS:[0x002B],0
         Alu8.Sub(UInt8[DS, (ushort)0x002B], (byte)0x00);
         // 100D:18E8 je short 0x18ED
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:18E8");
+        if (ZeroFlag) {
+            goto label_100D_18ED_119BD_16343;
         }
+    label_100D_18EA_119BA_38139:
+        CheckExternalEvents(cs1, 0x18EA);
+        // 100D:18EA call near 0x0B21
+        NearCall(cs1, 0x18ED, unknown_100D_0B21_10BF1);
     label_100D_18ED_119BD_16343:
         CheckExternalEvents(cs1, 0x18ED);
         // 100D:18ED ret near
@@ -7249,7 +7663,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(UInt8[DS, (ushort)0x00C2], (byte)0x07);
         // 100D:1B63 jae short 0x1BB2
         if (!CarryFlag) {
-            goto label_100D_1BB2_11C82_15199;
+            throw FailAsUntested("Unobserved conditional jump target at 100D:1B63");
         }
     label_100D_1B65_11C35_15065:
         CheckExternalEvents(cs1, 0x1B65);
@@ -7322,7 +7736,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(UInt8[DS, (ushort)0x46D9], (byte)0x00);
         // 100D:1B95 jne short 0x1BB2
         if (!ZeroFlag) {
-            goto label_100D_1BB2_11C82_15199;
+            throw FailAsUntested("Unobserved conditional jump target at 100D:1B95");
         }
     label_100D_1B97_11C67_15187:
         CheckExternalEvents(cs1, 0x1B97);
@@ -7344,7 +7758,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DI = Alu16.Or(DI, DI);
         // 100D:1BA7 je short 0x1BB2
         if (ZeroFlag) {
-            goto label_100D_1BB2_11C82_15199;
+            return unknown_100D_1BB2_11C82(0x0000);
         }
     label_100D_1BA9_11C79_15194:
         CheckExternalEvents(cs1, 0x1BA9);
@@ -7357,22 +7771,16 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     label_100D_1BB0_11C80_15197:
         CheckExternalEvents(cs1, 0x1BB0);
         // 100D:1BB0 ja short 0x1BB8
-        if (!CarryFlag && !ZeroFlag) {
-            goto label_100D_1BB8_11C88_36514;
+        if (!(!CarryFlag && !ZeroFlag)) {
+            return unknown_100D_1BB2_11C82(0x0000);
         }
-    label_100D_1BB2_11C82_15199:
-        CheckExternalEvents(cs1, 0x1BB2);
-        // 100D:1BB2 mov byte ptr DS:[0x473B],0
-        UInt8[DS, (ushort)0x473B] = (byte)0x00;
-        // 100D:1BB7 ret near
-        return NearRet((ushort)0x0000);
     label_100D_1BB8_11C88_36514:
         CheckExternalEvents(cs1, 0x1BB8);
         // 100D:1BB8 cmp byte ptr DS:[0x00FB],0
         Alu8.Sub(UInt8[DS, (ushort)0x00FB], (byte)0x00);
         // 100D:1BBD js short 0x1BB2
         if (SignFlag) {
-            goto label_100D_1BB2_11C82_15199;
+            throw FailAsUntested("Unobserved conditional jump target at 100D:1BBD");
         }
     label_100D_1BBF_11C8F_36517:
         CheckExternalEvents(cs1, 0x1BBF);
@@ -7380,12 +7788,37 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(UInt8[DS, (ushort)0x46DA], (byte)0x00);
         // 100D:1BC4 jne short 0x1BB2
         if (!ZeroFlag) {
-            goto label_100D_1BB2_11C82_15199;
+            return unknown_100D_1BB2_11C82(0x0000);
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:1BC4");
+    label_100D_1BC6_11C96_38148:
+        CheckExternalEvents(cs1, 0x1BC6);
+        // 100D:1BC6 call near 0xDBB2
+        NearCall(cs1, 0x1BC9, unknown_100D_DBB2_1DC82);
+    label_100D_1BC9_11C99_38151:
+        CheckExternalEvents(cs1, 0x1BC9);
+        // 100D:1BC9 call near 0x1BB2
+        NearCall(cs1, 0x1BCC, unknown_100D_1BB2_11C82);
+    label_100D_1BCC_11C9C_38154:
+        CheckExternalEvents(cs1, 0x1BCC);
+        // 100D:1BCC call near 0x0B21
+        NearCall(cs1, 0x1BCF, unknown_100D_0B21_10BF1);
+    label_100D_1BCF_11C9F_38157:
+        CheckExternalEvents(cs1, 0x1BCF);
+        // 100D:1BCF jmp near 0x2DB1
+        if (JumpDispatcher.Jump(unknown_100D_2DB1_12E81, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
         }
-        throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
+        return JumpDispatcher.RequiredJumpAsmReturn;
+    }
+
+    public virtual Action unknown_100D_1BB2_11C82(int loadOffset) {
+    label_100D_1BB2_11C82_15199:
+        CheckExternalEvents(cs1, 0x1BB2);
+        // 100D:1BB2 mov byte ptr DS:[0x473B],0
+        UInt8[DS, (ushort)0x473B] = (byte)0x00;
+        // 100D:1BB7 ret near
+        return NearRet((ushort)0x0000);
     }
 
     public virtual Action unknown_100D_1BEC_11CBC(int loadOffset) {
@@ -7989,6 +8422,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_1DD7_11EA7(int loadOffset) {
+    entrydispatcher:
     label_100D_1DD7_11EA7_22433:
         CheckExternalEvents(cs1, 0x1DD7);
         // 100D:1DD7 jmp near 0x1F64
@@ -8202,7 +8636,11 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     label_100D_2014_120E4_34306:
         CheckExternalEvents(cs1, 0x2014);
         // 100D:2014 jmp near 0x5D50
-        return unknown_100D_5D44_15E14(0x5D50);
+        if (JumpDispatcher.Jump(unknown_100D_5D44_15E14, 0x5D50)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
     public virtual Action unknown_100D_1DDA_11EAA(int loadOffset) {
@@ -11110,6 +11548,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_2CCF_12D9F(int loadOffset) {
+    entrydispatcher:
     label_100D_2CCF_12D9F_35342:
         CheckExternalEvents(cs1, 0x2CCF);
         // 100D:2CCF or byte ptr DS:[0x000A],8
@@ -11117,9 +11556,95 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:2CD4 cmp byte ptr DS:[0x009F],1
         Alu8.Sub(UInt8[DS, (ushort)0x009F], (byte)0x01);
         // 100D:2CD9 jne short 0x2D2B
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:2CD9");
+        if (!ZeroFlag) {
+            goto label_100D_2D2B_12DFB_35346;
         }
+    label_100D_2CDB_12DAB_37947:
+        CheckExternalEvents(cs1, 0x2CDB);
+        // 100D:2CDB call near 0xDBB2
+        NearCall(cs1, 0x2CDE, unknown_100D_DBB2_1DC82);
+    label_100D_2CDE_12DAE_37950:
+        CheckExternalEvents(cs1, 0x2CDE);
+        // 100D:2CDE call near 0xABCC
+        NearCall(cs1, 0x2CE1, unknown_100D_ABCC_1AC9C);
+    label_100D_2CE1_12DB1_37953:
+        CheckExternalEvents(cs1, 0x2CE1);
+        // 100D:2CE1 jne short 0x2CEB
+        if (!ZeroFlag) {
+            goto label_100D_2CEB_12DBB_37954;
+        }
+    label_100D_2CE3_12DB3_37957:
+        CheckExternalEvents(cs1, 0x2CE3);
+        VerifySpeculativeEntryOrFail(cs1, 0x2CE3, [(byte)0xB8, (byte)0x58, (byte)0x02]);
+        // 100D:2CE3 mov AX,0x0258
+        AX = (ushort)0x0258;
+        VerifySpeculativeEntryOrFail(cs1, 0x2CE6, [(byte)0xE8, (byte)0xC7, (byte)0xB0]);
+        // 100D:2CE6 call near 0xDDB0
+        NearCall(cs1, 0x2CE9, unknown_100D_DDB0_1DE80);
+        throw FailAsUntested("Call at 100D:2CE6 returned to 100D:2CE9, but no continuation was observed during discovery.");
+    label_100D_2CEB_12DBB_37954:
+        CheckExternalEvents(cs1, 0x2CEB);
+        // 100D:2CEB call near 0xABD5
+        NearCall(cs1, 0x2CEE, unknown_100D_ABD5_1ACA5);
+    label_100D_2CEE_12DBE_37966:
+        CheckExternalEvents(cs1, 0x2CEE);
+        // 100D:2CEE cmp byte ptr DS:[0x0029],0x64
+        Alu8.Sub(UInt8[DS, (ushort)0x0029], (byte)0x64);
+        // 100D:2CF3 jb short 0x2D26
+        if (CarryFlag) {
+            goto label_100D_2D26_12DF6_37969;
+        }
+    label_100D_2CF5_12DC5_37971:
+        CheckExternalEvents(cs1, 0x2CF5);
+        // 100D:2CF5 or byte ptr DS:[0x000A],2
+        UInt8[DS, (ushort)0x000A] = Alu8.Or(UInt8[DS, (ushort)0x000A], (byte)0x02);
+        // 100D:2CFA mov byte ptr DS:[0x00D5],0xFF
+        UInt8[DS, (ushort)0x00D5] = (byte)0xFF;
+        // 100D:2CFF mov AL,0x38
+        AL = (byte)0x38;
+        // 100D:2D01 mov BP,0x0F66
+        BP = (ushort)0x0F66;
+        // 100D:2D04 call near 0xC108
+        NearCall(cs1, 0x2D07, unknown_100D_C108_1C1D8);
+    label_100D_2D07_12DD7_37985:
+        CheckExternalEvents(cs1, 0x2D07);
+        // 100D:2D07 mov AX,0x03E8
+        AX = (ushort)0x03E8;
+        // 100D:2D0A call near 0xE387
+        NearCall(cs1, 0x2D0D, unknown_100D_E387_1E457);
+    label_100D_2D0D_12DDD_37990:
+        CheckExternalEvents(cs1, 0x2D0D);
+        // 100D:2D0D call near 0x8C8A
+        NearCall(cs1, 0x2D10, unknown_100D_8C8A_18D5A);
+    label_100D_2D10_12DE0_37993:
+        CheckExternalEvents(cs1, 0x2D10);
+        // 100D:2D10 mov AL,0x36
+        AL = (byte)0x36;
+        // 100D:2D12 mov BP,0x0F66
+        BP = (ushort)0x0F66;
+        // 100D:2D15 call near 0xC108
+        NearCall(cs1, 0x2D18, unknown_100D_C108_1C1D8);
+    label_100D_2D18_12DE8_38000:
+        CheckExternalEvents(cs1, 0x2D18);
+        // 100D:2D18 mov CX,3
+        CX = (ushort)0x0003;
+        // 100D:2D1B call near 0x0FD9
+        NearCall(cs1, 0x2D1E, unknown_100D_0FD9_110A9);
+    label_100D_2D1E_12DEE_38005:
+        CheckExternalEvents(cs1, 0x2D1E);
+        // 100D:2D1E mov byte ptr DS:[0x0023],0x11
+        UInt8[DS, (ushort)0x0023] = (byte)0x11;
+        // 100D:2D23 jmp near 0x35AD
+        if (JumpDispatcher.Jump(unknown_100D_35AD_1367D, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
+    label_100D_2D26_12DF6_37969:
+        CheckExternalEvents(cs1, 0x2D26);
+        VerifySpeculativeEntryOrFail(cs1, 0x2D26, [(byte)0xC6, (byte)0x06, (byte)0xD9, (byte)0x46, (byte)0x03]);
+        // 100D:2D26 mov byte ptr DS:[0x46D9],3
+        UInt8[DS, (ushort)0x46D9] = (byte)0x03;
     label_100D_2D2B_12DFB_35346:
         CheckExternalEvents(cs1, 0x2D2B);
         // 100D:2D2B ret near
@@ -12490,7 +13015,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)16)], (byte)0x80);
         // 100D:3198 jne short 0x31C9
         if (!ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:3198");
+            goto label_100D_31C9_13299_38160;
         }
     label_100D_319A_1326A_22874:
         CheckExternalEvents(cs1, 0x319A);
@@ -12539,6 +13064,39 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:31C5 add DI,AX
         DI = Alu16.Add(DI, AX);
         // 100D:31C7 jmp short 0x31ED
+        goto label_100D_31ED_132BD_22879;
+    label_100D_31C9_13299_38160:
+        CheckExternalEvents(cs1, 0x31C9);
+        // 100D:31C9 mov BP,0x1098
+        BP = (ushort)0x1098;
+        // 100D:31CC mov DI,0x4768
+        DI = (ushort)0x4768;
+        // 100D:31CF mov AL,byte ptr DS:[SI+3]
+        AL = UInt8[DS, (ushort)(SI + (sbyte)3)];
+        // 100D:31D2 and AL,0x10
+        AL = Alu8.And(AL, (byte)0x10);
+        // 100D:31D4 and byte ptr SS:[BP+0x0F],0xEF
+        UInt8[SS, (ushort)(BP + (sbyte)15)] = Alu8.And(UInt8[SS, (ushort)(BP + (sbyte)15)], (byte)0xEF);
+        // 100D:31D8 or byte ptr SS:[BP+0x0F],AL
+        UInt8[SS, (ushort)(BP + (sbyte)15)] = Alu8.Or(UInt8[SS, (ushort)(BP + (sbyte)15)], AL);
+        // 100D:31DB mov word ptr DS:[0x00EE],0
+        UInt16[DS, (ushort)0x00EE] = (ushort)0x0000;
+        // 100D:31E1 or AL,AL
+        AL = Alu8.Or(AL, AL);
+        // 100D:31E3 mov AL,0xFF
+        AL = (byte)0xFF;
+        // 100D:31E5 jne short 0x31EA
+        if (!ZeroFlag) {
+            goto label_100D_31EA_132BA_38171;
+        }
+    label_100D_31E7_132B7_38173:
+        CheckExternalEvents(cs1, 0x31E7);
+        // 100D:31E7 mov AL,byte ptr DS:[SI+0x15]
+        AL = UInt8[DS, (ushort)(SI + (sbyte)21)];
+    label_100D_31EA_132BA_38171:
+        CheckExternalEvents(cs1, 0x31EA);
+        // 100D:31EA mov byte ptr DS:[0x00ED],AL
+        UInt8[DS, (ushort)0x00ED] = AL;
     label_100D_31ED_132BD_22879:
         CheckExternalEvents(cs1, 0x31ED);
         // 100D:31ED mov word ptr DS:[DI],SI
@@ -14845,6 +15403,71 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
     }
 
+    public virtual Action unknown_100D_391D_139ED(int loadOffset) {
+    label_100D_391D_139ED_6270:
+        CheckExternalEvents(cs1, 0x391D);
+        // 100D:391D mov CX,0x01C5
+        CX = (ushort)0x01C5;
+        // 100D:3920 mov BX,0x00DB
+        BX = (ushort)0x00DB;
+        // 100D:3923 cmp byte ptr DS:[0x22E3],0
+        Alu8.Sub(UInt8[DS, (ushort)0x22E3], (byte)0x00);
+        // 100D:3928 jne short 0x3930
+        if (!(!ZeroFlag)) {
+            throw FailAsUntested("Unobserved conditional fallthrough at 100D:3928");
+        }
+    label_100D_3930_13A00_6275:
+        CheckExternalEvents(cs1, 0x3930);
+        // 100D:3930 mov AL,byte ptr DS:[0x46D7]
+        AL = UInt8[DS, (ushort)0x46D7];
+        // 100D:3933 push AX
+        Stack.Push16(AX);
+        // 100D:3934 call far dword ptr DS:[0x3951]
+        ushort targetSegment_6278 = unchecked((ushort)(UInt16[DS, (ushort)((ushort)0x3951 + (ushort)0x0002)]));
+        ushort targetOffset_6278 = unchecked((ushort)(UInt16[DS, (ushort)0x3951]));
+        if (targetSegment_6278 == cs2 && targetOffset_6278 == 0x0175) {
+            FarCall(cs1, 0x3938, cs2, unknown_3358_0175_336F5);
+            goto label_100D_3938_13A08_6322;
+        }
+        throw FailAsUntested($"Unknown far call target {targetSegment_6278:X4}:{targetOffset_6278:X4} at 100D:3934");
+    label_100D_3938_13A08_6322:
+        CheckExternalEvents(cs1, 0x3938);
+        // 100D:3938 pop AX
+        AX = Stack.Pop16();
+        // 100D:3939 cmp byte ptr DS:[0x227D],0
+        Alu8.Sub(UInt8[DS, (ushort)0x227D], (byte)0x00);
+        // 100D:393E jne short 0x394A
+        if (!ZeroFlag) {
+            goto label_100D_394A_13A1A_6326;
+        }
+    label_100D_3940_13A10_25317:
+        CheckExternalEvents(cs1, 0x3940);
+        // 100D:3940 mov CX,0x0030
+        CX = (ushort)0x0030;
+        // 100D:3943 mov BX,0x02D0
+        BX = (ushort)0x02D0;
+        // 100D:3946 call far dword ptr DS:[0x3951]
+        ushort targetSegment_25320 = unchecked((ushort)(UInt16[DS, (ushort)((ushort)0x3951 + (ushort)0x0002)]));
+        ushort targetOffset_25320 = unchecked((ushort)(UInt16[DS, (ushort)0x3951]));
+        if (targetSegment_25320 == cs2 && targetOffset_25320 == 0x0175) {
+            FarCall(cs1, 0x394A, cs2, unknown_3358_0175_336F5);
+            goto label_100D_394A_13A1A_6326;
+        }
+        throw FailAsUntested($"Unknown far call target {targetSegment_25320:X4}:{targetOffset_25320:X4} at 100D:3946");
+    label_100D_394A_13A1A_6326:
+        CheckExternalEvents(cs1, 0x394A);
+        // 100D:394A dec byte ptr DS:[0x46D7]
+        UInt8[DS, (ushort)0x46D7] = Alu8.Dec(UInt8[DS, (ushort)0x46D7]);
+        // 100D:394E jne short 0x395B
+        if (!(!ZeroFlag)) {
+            return unknown_100D_3950_13A20(0x0000);
+        }
+    label_100D_395B_13A2B_6329:
+        CheckExternalEvents(cs1, 0x395B);
+        // 100D:395B ret near
+        return NearRet((ushort)0x0000);
+    }
+
     public virtual Action unknown_100D_3950_13A20(int loadOffset) {
     label_100D_3950_13A20_6339:
         CheckExternalEvents(cs1, 0x3950);
@@ -16006,9 +16629,21 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:3D65 cmp AL,0x0C
         Alu8.Sub(AL, (byte)0x0C);
         // 100D:3D67 jne short 0x3D72
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:3D67");
+        if (!ZeroFlag) {
+            goto label_100D_3D72_13E42_7802;
         }
+    label_100D_3D69_13E39_38188:
+        CheckExternalEvents(cs1, 0x3D69);
+        // 100D:3D69 test byte ptr DS:[0x10A7],0x10
+        Alu8.And(UInt8[DS, (ushort)0x10A7], (byte)0x10);
+        // 100D:3D6E je short 0x3D72
+        if (ZeroFlag) {
+            goto label_100D_3D72_13E42_7802;
+        }
+    label_100D_3D70_13E40_38192:
+        CheckExternalEvents(cs1, 0x3D70);
+        // 100D:3D70 mov AL,0x12
+        AL = (byte)0x12;
     label_100D_3D72_13E42_7802:
         CheckExternalEvents(cs1, 0x3D72);
         // 100D:3D72 mov AH,CH
@@ -20909,7 +21544,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DX = Alu16.Or(DX, DX);
         // 100D:5056 je short 0x507A
         if (ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:5056");
+            goto label_100D_507A_1514A_37534;
         }
     label_100D_5058_15128_36180:
         CheckExternalEvents(cs1, 0x5058);
@@ -20955,6 +21590,16 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         UInt8[DS, (ushort)0x11DD] = AH;
         // 100D:5079 ret near
         return NearRet((ushort)0x0000);
+    label_100D_507A_1514A_37534:
+        CheckExternalEvents(cs1, 0x507A);
+        // 100D:507A jcxz short 0x5081
+        if (CX == (ushort)0x0000) {
+            goto label_100D_5081_15151_22597;
+        }
+    label_100D_507C_1514C_37537:
+        CheckExternalEvents(cs1, 0x507C);
+        // 100D:507C mov byte ptr DS:[0x46D9],4
+        UInt8[DS, (ushort)0x46D9] = (byte)0x04;
     label_100D_5081_15151_22597:
         CheckExternalEvents(cs1, 0x5081);
         // 100D:5081 ret near
@@ -23355,9 +24000,22 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:58A6 cmp BL,CH
         Alu8.Sub(BL, CH);
         // 100D:58A8 je short 0x58B0
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:58A8");
+        if (ZeroFlag) {
+            goto label_100D_58B0_15980_37310;
         }
+    label_100D_58AA_1597A_38065:
+        CheckExternalEvents(cs1, 0x58AA);
+        // 100D:58AA mov BH,0x9A
+        BH = (byte)0x9A;
+        // 100D:58AC jb short 0x58B0
+        if (CarryFlag) {
+            goto label_100D_58B0_15980_37310;
+        }
+    label_100D_58AE_1597E_38069:
+        CheckExternalEvents(cs1, 0x58AE);
+        VerifySpeculativeEntryOrFail(cs1, 0x58AE, [(byte)0xF6, (byte)0xD7]);
+        // 100D:58AE not BH
+        BH = unchecked((byte)~BH);
     label_100D_58B0_15980_37310:
         CheckExternalEvents(cs1, 0x58B0);
         // 100D:58B0 ret near
@@ -24113,6 +24771,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_5C03_15CD3(int loadOffset) {
+    entrydispatcher:
     label_100D_5C03_15CD3_18512:
         CheckExternalEvents(cs1, 0x5C03);
         // 100D:5C03 mov DI,word ptr DS:[0xDBE0]
@@ -24132,9 +24791,25 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:5C14 cmp AX,0x03E8
         Alu16.Sub(AX, (ushort)0x03E8);
         // 100D:5C17 jb short 0x5C22
-        if (!(CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:5C17");
+        if (CarryFlag) {
+            goto label_100D_5C22_15CF2_18521;
         }
+    label_100D_5C19_15CE9_38073:
+        CheckExternalEvents(cs1, 0x5C19);
+        // 100D:5C19 call near 0xDBB2
+        NearCall(cs1, 0x5C1C, unknown_100D_DBB2_1DC82);
+    label_100D_5C1C_15CEC_38076:
+        CheckExternalEvents(cs1, 0x5C1C);
+        // 100D:5C1C call near 0x5BEB
+        NearCall(cs1, 0x5C1F, unknown_100D_5BEB_15CBB);
+    label_100D_5C1F_15CEF_38079:
+        CheckExternalEvents(cs1, 0x5C1F);
+        // 100D:5C1F jmp near 0xDBEC
+        if (JumpDispatcher.Jump(unknown_100D_DBEC_1DCBC, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     label_100D_5C22_15CF2_18521:
         CheckExternalEvents(cs1, 0x5C22);
         // 100D:5C22 cmp DI,0x4710
@@ -26234,7 +26909,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(UInt8[DS, (ushort)(SI + (sbyte)3)], (byte)0x06);
         // 100D:6169 jne short 0x6179
         if (!ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:6169");
+            goto label_100D_6179_16249_35884;
         }
     label_100D_616B_1623B_35877:
         CheckExternalEvents(cs1, 0x616B);
@@ -26252,6 +26927,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CX = Alu16.Add(CX, UInt16[DS, (ushort)(SI + (sbyte)12)]);
         // 100D:6176 add BX,word ptr DS:[SI+0x0E]
         BX = Alu16.Add(BX, UInt16[DS, (ushort)(SI + (sbyte)14)]);
+    label_100D_6179_16249_35884:
+        CheckExternalEvents(cs1, 0x6179);
         // 100D:6179 ret near
         return NearRet((ushort)0x0000);
     }
@@ -27861,7 +28538,6 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x66BB);
         // 100D:66BB call near 0xC58A
         NearCall(cs1, 0x66BE, unknown_100D_C58A_1C65A);
-        throw FailAsUntested("Call at 100D:66BB returned to 100D:66BE, but no continuation was observed during discovery.");
     label_100D_66BE_1678E_37143:
         CheckExternalEvents(cs1, 0x66BE);
         // 100D:66BE pop DI
@@ -29078,7 +29754,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(AL, CL);
         // 100D:6AD2 je short 0x6B24
         if (ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:6AD2");
+            return unknown_100D_6B24_16BF4(0x0000);
         }
         else {
             if (JumpDispatcher.Jump(unknown_100D_6AD4_16BA4, 0x0000)) {
@@ -29158,16 +29834,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(AL, UInt8[DS, (ushort)0x1954]);
         // 100D:6B1F jne short 0x6B24
         if (!ZeroFlag) {
-            goto label_100D_6B24_16BF4_24685;
+            return unknown_100D_6B24_16BF4(0x0000);
         }
     label_100D_6B21_16BF1_24675:
         CheckExternalEvents(cs1, 0x6B21);
         // 100D:6B21 call near 0x7847
         NearCall(cs1, 0x6B24, unknown_100D_7847_17917);
-    label_100D_6B24_16BF4_24685:
-        CheckExternalEvents(cs1, 0x6B24);
-        // 100D:6B24 ret near
-        return NearRet((ushort)0x0000);
+        return unknown_100D_6B24_16BF4(0x0000);
     }
 
     public virtual Action unknown_100D_6B25_16BF5(int loadOffset) {
@@ -30179,16 +30852,20 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(AH, (byte)0x08);
         // 100D:6F29 je short 0x6F2F
         if (ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:6F29");
+            goto label_100D_6F2F_16FFF_38128;
         }
     label_100D_6F2B_16FFB_22714:
         CheckExternalEvents(cs1, 0x6F2B);
         // 100D:6F2B cmp AL,0x64
         Alu8.Sub(AL, (byte)0x64);
         // 100D:6F2D jb short 0x6F31
-        if (!(CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:6F2D");
+        if (CarryFlag) {
+            goto label_100D_6F31_17001_22717;
         }
+    label_100D_6F2F_16FFF_38128:
+        CheckExternalEvents(cs1, 0x6F2F);
+        // 100D:6F2F mov AL,0x64
+        AL = (byte)0x64;
     label_100D_6F31_17001_22717:
         CheckExternalEvents(cs1, 0x6F31);
         // 100D:6F31 cmp byte ptr DS:[0x002A],0x64
@@ -31450,6 +32127,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_739E_1746E(int loadOffset) {
+    entrydispatcher:
     label_100D_739E_1746E_34320:
         CheckExternalEvents(cs1, 0x739E);
         // 100D:739E or byte ptr DS:[0x11BC],1
@@ -31470,7 +32148,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu16.Sub(UInt16[DS, (ushort)0x0094], unchecked((ushort)unchecked((short)(sbyte)0)));
         // 100D:73E1 je short 0x7429
         if (ZeroFlag) {
-            goto label_100D_7429_174F9_36381;
+            throw FailAsUntested("Unobserved conditional jump target at 100D:73E1");
         }
     label_100D_73E3_174B3_34359:
         CheckExternalEvents(cs1, 0x73E3);
@@ -31544,144 +32222,16 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         BX = Alu16.Or(BX, BX);
         // 100D:7416 je short 0x7429
         if (ZeroFlag) {
-            goto label_100D_7429_174F9_36381;
+            if (JumpDispatcher.Jump(unknown_100D_5D44_15E14, 0x7429)) {
+                loadOffset = JumpDispatcher.NextEntryAddress;
+                goto entrydispatcher;
+            }
+            return JumpDispatcher.RequiredJumpAsmReturn;
         }
     label_100D_7418_174E8_36173:
         CheckExternalEvents(cs1, 0x7418);
         // 100D:7418 ret near
         return NearRet((ushort)0x0000);
-    label_100D_7429_174F9_36381:
-        CheckExternalEvents(cs1, 0x7429);
-        // 100D:7429 cmp DI,word ptr DS:[0x114E]
-        Alu16.Sub(DI, UInt16[DS, (ushort)0x114E]);
-        // 100D:742D je short 0x7434
-        if (ZeroFlag) {
-            goto label_100D_7434_17504_36384;
-        }
-    label_100D_742F_174FF_37120:
-        CheckExternalEvents(cs1, 0x742F);
-        // 100D:742F mov AL,7
-        AL = (byte)0x07;
-        // 100D:7431 call near 0x71B2
-        NearCall(cs1, 0x7434, unknown_100D_71B2_17282);
-    label_100D_7434_17504_36384:
-        CheckExternalEvents(cs1, 0x7434);
-        // 100D:7434 cmp byte ptr DS:[DI+8],0x28
-        Alu8.Sub(UInt8[DS, (ushort)(DI + (sbyte)8)], (byte)0x28);
-        // 100D:7438 jae short 0x7443
-        if (!(!CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:7438");
-        }
-    label_100D_7443_17513_36387:
-        CheckExternalEvents(cs1, 0x7443);
-        // 100D:7443 push SI
-        Stack.Push16(SI);
-        // 100D:7444 push DI
-        Stack.Push16(DI);
-        // 100D:7445 mov byte ptr DS:[DI+0x0B],5
-        UInt8[DS, (ushort)(DI + (sbyte)11)] = (byte)0x05;
-        // 100D:7449 call near 0x644E
-        NearCall(cs1, 0x744C, unknown_100D_644E_1651E);
-    label_100D_744C_1751C_36392:
-        CheckExternalEvents(cs1, 0x744C);
-        // 100D:744C pop DI
-        DI = Stack.Pop16();
-        // 100D:744D pop SI
-        SI = Stack.Pop16();
-        // 100D:744E call near 0x1AC5
-        NearCall(cs1, 0x7451, unknown_100D_1AC5_11B95);
-    label_100D_7451_17521_36396:
-        CheckExternalEvents(cs1, 0x7451);
-        // 100D:7451 add AL,2
-        AL = Alu8.Add(AL, (byte)0x02);
-        // 100D:7453 mov byte ptr DS:[DI+0x0B],AL
-        UInt8[DS, (ushort)(DI + (sbyte)11)] = AL;
-        // 100D:7456 mov AL,4
-        AL = (byte)0x04;
-        // 100D:7458 call near 0x6F78
-        NearCall(cs1, 0x745B, unknown_100D_6F78_17048);
-    label_100D_745B_1752B_36401:
-        CheckExternalEvents(cs1, 0x745B);
-        // 100D:745B mov AL,1
-        AL = (byte)0x01;
-        // 100D:745D call near 0x6F56
-        NearCall(cs1, 0x7460, unknown_100D_6F56_17026);
-    label_100D_7460_17530_36404:
-        CheckExternalEvents(cs1, 0x7460);
-        // 100D:7460 or byte ptr DS:[DI+0x0A],8
-        UInt8[DS, (ushort)(DI + (sbyte)10)] = Alu8.Or(UInt8[DS, (ushort)(DI + (sbyte)10)], (byte)0x08);
-        // 100D:7464 push CX
-        Stack.Push16(CX);
-        // 100D:7465 mov CL,byte ptr DS:[DI]
-        CL = UInt8[DS, DI];
-        // 100D:7467 mov AX,0x8000
-        AX = (ushort)0x8000;
-        // 100D:746A rol AX,CL
-        AX = Alu16.Rol(AX, CL);
-        // 100D:746C mov word ptr DS:[0x115A],AX
-        UInt16[DS, (ushort)0x115A] = AX;
-        // 100D:746F pop CX
-        CX = Stack.Pop16();
-        // 100D:7470 mov BP,0x75AF
-        BP = (ushort)0x75AF;
-        // 100D:7473 call near 0x6603
-        NearCall(cs1, 0x7476, unknown_100D_6603_166D3);
-    label_100D_7476_17546_36445:
-        CheckExternalEvents(cs1, 0x7476);
-        // 100D:7476 mov BP,0x75EA
-        BP = (ushort)0x75EA;
-        // 100D:7479 call near 0x6603
-        NearCall(cs1, 0x747C, unknown_100D_6603_166D3);
-    label_100D_747C_1754C_36477:
-        CheckExternalEvents(cs1, 0x747C);
-        // 100D:747C xor DX,DX
-        DX = Alu16.Xor(DX, DX);
-        // 100D:747E test word ptr DS:[0],3
-        Alu16.And(UInt16[DS, (ushort)0x0000], (ushort)0x0003);
-        // 100D:7484 jne short 0x7487
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:7484");
-        }
-    label_100D_7487_17557_36481:
-        CheckExternalEvents(cs1, 0x7487);
-        // 100D:7487 xor CX,CX
-        CX = Alu16.Xor(CX, CX);
-        // 100D:7489 mov BP,0x762A
-        BP = (ushort)0x762A;
-        // 100D:748C call near 0x6603
-        NearCall(cs1, 0x748F, unknown_100D_6603_166D3);
-    label_100D_748F_1755F_36492:
-        CheckExternalEvents(cs1, 0x748F);
-        // 100D:748F cmp CX,DX
-        Alu16.Sub(CX, DX);
-        // 100D:7491 ja short 0x7487
-        if (!CarryFlag && !ZeroFlag) {
-            goto label_100D_7487_17557_36481;
-        }
-    label_100D_7493_17563_36495:
-        CheckExternalEvents(cs1, 0x7493);
-        // 100D:7493 push SI
-        Stack.Push16(SI);
-        // 100D:7494 push DI
-        Stack.Push16(DI);
-        // 100D:7495 call near 0x1CDA
-        NearCall(cs1, 0x7498, unknown_100D_1CDA_11DAA);
-    label_100D_7498_17568_36501:
-        CheckExternalEvents(cs1, 0x7498);
-        // 100D:7498 cmp DL,1
-        Alu8.Sub(DL, (byte)0x01);
-        // 100D:749B ja short 0x74B1
-        if (!(!CarryFlag && !ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:749B");
-        }
-    label_100D_74B1_17581_36504:
-        CheckExternalEvents(cs1, 0x74B1);
-        // 100D:74B1 pop DI
-        DI = Stack.Pop16();
-        // 100D:74B2 pop SI
-        SI = Stack.Pop16();
-        // 100D:74B3 jmp near 0x5D50
-        return unknown_100D_5D44_15E14(0x5D50);
     label_100D_751D_175ED_34366:
         CheckExternalEvents(cs1, 0x751D);
         // 100D:751D mov AX,word ptr DS:[0x0094]
@@ -31757,6 +32307,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_74B6_17586(int loadOffset) {
+    entrydispatcher:
     label_100D_74B6_17586_34467:
         CheckExternalEvents(cs1, 0x74B6);
         // 100D:74B6 and byte ptr DS:[DI+0x0A],0xFD
@@ -31839,7 +32390,11 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:74F9 and byte ptr DS:[DI+0x0A],0xF6
         UInt8[DS, (ushort)(DI + (sbyte)10)] = Alu8.And(UInt8[DS, (ushort)(DI + (sbyte)10)], (byte)0xF6);
         // 100D:74FD jmp near 0x5D44
-        return unknown_100D_5D44_15E14(0x0000);
+        if (JumpDispatcher.Jump(unknown_100D_5D44_15E14, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
     public virtual Action unknown_100D_7506_175D6(int loadOffset) {
@@ -32019,7 +32574,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)3)], (byte)0x20);
         // 100D:75BB jne short 0x75DE
         if (!ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:75BB");
+            goto label_100D_75DE_176AE_38142;
         }
     label_100D_75BD_1768D_36424:
         CheckExternalEvents(cs1, 0x75BD);
@@ -32029,12 +32584,14 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(UInt8[DS, (ushort)(DI + (sbyte)8)], (byte)0x28);
         // 100D:75C6 jb short 0x75CC
         if (CarryFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:75C6");
+            goto label_100D_75CC_1769C_36430;
         }
     label_100D_75C8_17698_36428:
         CheckExternalEvents(cs1, 0x75C8);
         // 100D:75C8 or word ptr DS:[SI+0x10],0x0020
         UInt16[DS, (ushort)(SI + (sbyte)16)] = Alu16.Or(UInt16[DS, (ushort)(SI + (sbyte)16)], unchecked((ushort)unchecked((short)(sbyte)32)));
+    label_100D_75CC_1769C_36430:
+        CheckExternalEvents(cs1, 0x75CC);
         // 100D:75CC mov AL,4
         AL = (byte)0x04;
         // 100D:75CE call near 0x6F48
@@ -32057,6 +32614,10 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
             goto entrydispatcher;
         }
         return JumpDispatcher.RequiredJumpAsmReturn;
+    label_100D_75DE_176AE_38142:
+        CheckExternalEvents(cs1, 0x75DE);
+        // 100D:75DE mov byte ptr DS:[SI+3],0x22
+        UInt8[DS, (ushort)(SI + (sbyte)3)] = (byte)0x22;
     label_100D_75E2_176B2_36416:
         CheckExternalEvents(cs1, 0x75E2);
         // 100D:75E2 ret near
@@ -32069,7 +32630,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x75EA);
         // 100D:75EA jb short 0x764C
         if (CarryFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:75EA");
+            return unknown_100D_764C_1771C(0x0000);
         }
     label_100D_75EC_176BC_36450:
         CheckExternalEvents(cs1, 0x75EC);
@@ -32145,7 +32706,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x762A);
         // 100D:762A jb short 0x764C
         if (CarryFlag) {
-            goto label_100D_764C_1771C_36487;
+            return unknown_100D_764C_1771C(0x0000);
         }
     label_100D_762C_176FC_36489:
         CheckExternalEvents(cs1, 0x762C);
@@ -32153,7 +32714,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)16)], (byte)0x80);
         // 100D:7630 je short 0x764C
         if (ZeroFlag) {
-            goto label_100D_764C_1771C_36487;
+            return unknown_100D_764C_1771C(0x0000);
         }
     label_100D_7632_17702_37167:
         CheckExternalEvents(cs1, 0x7632);
@@ -32181,21 +32742,31 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         UInt8[DS, (ushort)(SI + (sbyte)25)] = (byte)0x00;
         // 100D:764B inc CX
         CX = Alu16.Inc(CX);
-    label_100D_764C_1771C_36487:
-        CheckExternalEvents(cs1, 0x764C);
-        // 100D:764C ret near
-        return NearRet((ushort)0x0000);
+        return unknown_100D_764C_1771C(0x0000);
     }
 
     public virtual Action unknown_100D_764D_1771D(int loadOffset) {
+    entrydispatcher:
     label_100D_764D_1771D_36614:
         CheckExternalEvents(cs1, 0x764D);
         // 100D:764D jb short 0x765D
         if (CarryFlag) {
             return unknown_100D_765D_1772D(0x0000);
         }
+    label_100D_764F_1771F_38322:
+        CheckExternalEvents(cs1, 0x764F);
+        // 100D:764F test byte ptr DS:[SI+0x10],0x80
+        Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)16)], (byte)0x80);
+        // 100D:7653 je short 0x765D
+        if (ZeroFlag) {
+            return unknown_100D_765D_1772D(0x0000);
+        }
         else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:764D");
+            if (JumpDispatcher.Jump(unknown_100D_7655_17725, 0x0000)) {
+                loadOffset = JumpDispatcher.NextEntryAddress;
+                goto entrydispatcher;
+            }
+            return JumpDispatcher.RequiredJumpAsmReturn;
         }
         throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
     }
@@ -32234,9 +32805,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:77EB cmp DI,word ptr DS:[0x1150]
         Alu16.Sub(DI, UInt16[DS, (ushort)0x1150]);
         // 100D:77EF jne short 0x77F3
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:77EF");
+        if (!ZeroFlag) {
+            goto label_100D_77F3_178C3_31199;
         }
+    label_100D_77F1_178C1_38328:
+        CheckExternalEvents(cs1, 0x77F1);
+        // 100D:77F1 inc AL
+        AL = Alu8.Inc(AL);
     label_100D_77F3_178C3_31199:
         CheckExternalEvents(cs1, 0x77F3);
         // 100D:77F3 cmp byte ptr DS:[BX+0x46FE],AL
@@ -34677,8 +35252,20 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:8262 cmp AL,0x20
         Alu8.Sub(AL, (byte)0x20);
         // 100D:8264 jb short 0x826C
-        if (!(CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:8264");
+        if (CarryFlag) {
+            goto label_100D_826C_1833C_29302;
+        }
+    label_100D_8266_18336_38306:
+        CheckExternalEvents(cs1, 0x8266);
+        // 100D:8266 test byte ptr DS:[DI+0x0A],8
+        Alu8.And(UInt8[DS, (ushort)(DI + (sbyte)10)], (byte)0x08);
+        // 100D:826A je short 0x8296
+        if (ZeroFlag) {
+            if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x8296)) {
+                loadOffset = JumpDispatcher.NextEntryAddress;
+                goto entrydispatcher;
+            }
+            return JumpDispatcher.RequiredJumpAsmReturn;
         }
     label_100D_826C_1833C_29302:
         CheckExternalEvents(cs1, 0x826C);
@@ -35010,9 +35597,14 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
             }
             return JumpDispatcher.RequiredJumpAsmReturn;
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:8395");
+    label_100D_8397_18467_37944:
+        CheckExternalEvents(cs1, 0x8397);
+        // 100D:8397 jmp near 0x7429
+        if (JumpDispatcher.Jump(unknown_100D_5D44_15E14, 0x7429)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
         }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     label_100D_839A_1846A_35485:
         CheckExternalEvents(cs1, 0x839A);
         // 100D:839A test byte ptr DS:[DI+0x0A],0x80
@@ -35026,7 +35618,11 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:83A0 and byte ptr DS:[DI+0x0A],0x7F
         UInt8[DS, (ushort)(DI + (sbyte)10)] = Alu8.And(UInt8[DS, (ushort)(DI + (sbyte)10)], (byte)0x7F);
         // 100D:83A4 jmp near 0x5D44
-        return unknown_100D_5D44_15E14(0x0000);
+        if (JumpDispatcher.Jump(unknown_100D_5D44_15E14, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     label_100D_83A7_18477_29851:
         CheckExternalEvents(cs1, 0x83A7);
         // 100D:83A7 cmp AL,5
@@ -35427,9 +36023,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:84C0 cmp AL,3
         Alu8.Sub(AL, (byte)0x03);
         // 100D:84C2 jne short 0x84C8
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:84C2");
+        if (!ZeroFlag) {
+            goto label_100D_84C8_18598_34879;
         }
+    label_100D_84C4_18594_38010:
+        CheckExternalEvents(cs1, 0x84C4);
+        // 100D:84C4 and byte ptr DS:[SI+3],0xFC
+        UInt8[DS, (ushort)(SI + (sbyte)3)] = Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)3)], (byte)0xFC);
     label_100D_84C8_18598_34879:
         CheckExternalEvents(cs1, 0x84C8);
         // 100D:84C8 jmp short 0x8461
@@ -35790,9 +36390,67 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:85D3 cmp byte ptr DS:[SI+2],8
         Alu8.Sub(UInt8[DS, (ushort)(SI + (sbyte)2)], (byte)0x08);
         // 100D:85D7 jbe short 0x8603
-        if (!(CarryFlag || ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:85D7");
+        if (CarryFlag || ZeroFlag) {
+            goto label_100D_8603_186D3_29910;
         }
+    label_100D_85D9_186A9_38082:
+        CheckExternalEvents(cs1, 0x85D9);
+        // 100D:85D9 call near 0x858C
+        NearCall(cs1, 0x85DC, unknown_100D_858C_1865C);
+    label_100D_85DC_186AC_38085:
+        CheckExternalEvents(cs1, 0x85DC);
+        // 100D:85DC push SI
+        Stack.Push16(SI);
+        // 100D:85DD mov AL,byte ptr DS:[DI+9]
+        AL = UInt8[DS, (ushort)(DI + (sbyte)9)];
+    label_100D_85E0_186B0_38088:
+        CheckExternalEvents(cs1, 0x85E0);
+        // 100D:85E0 or AL,AL
+        AL = Alu8.Or(AL, AL);
+        // 100D:85E2 je short 0x85FF
+        if (ZeroFlag) {
+            goto label_100D_85FF_186CF_38090;
+        }
+    label_100D_85E4_186B4_38092:
+        CheckExternalEvents(cs1, 0x85E4);
+        // 100D:85E4 call near 0x6906
+        NearCall(cs1, 0x85E7, unknown_100D_6906_169D6);
+    label_100D_85E7_186B7_38101:
+        CheckExternalEvents(cs1, 0x85E7);
+        // 100D:85E7 mov AL,byte ptr DS:[SI+1]
+        AL = UInt8[DS, (ushort)(SI + (sbyte)1)];
+        // 100D:85EA test byte ptr DS:[SI+0x10],0x80
+        Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)16)], (byte)0x80);
+        // 100D:85EE jne short 0x85E0
+        if (!ZeroFlag) {
+            goto label_100D_85E0_186B0_38088;
+        }
+    label_100D_85F0_186C0_38107:
+        CheckExternalEvents(cs1, 0x85F0);
+        // 100D:85F0 test byte ptr DS:[SI+3],0x20
+        Alu8.And(UInt8[DS, (ushort)(SI + (sbyte)3)], (byte)0x20);
+        // 100D:85F4 je short 0x85E0
+        if (ZeroFlag) {
+            goto label_100D_85E0_186B0_38088;
+        }
+    label_100D_85F6_186C6_38111:
+        CheckExternalEvents(cs1, 0x85F6);
+        // 100D:85F6 call near 0xE270
+        NearCall(cs1, 0x85F9, unknown_100D_E270_1E340);
+    label_100D_85F9_186C9_38119:
+        CheckExternalEvents(cs1, 0x85F9);
+        // 100D:85F9 call near 0x66B1
+        NearCall(cs1, 0x85FC, unknown_100D_66B1_16781);
+    label_100D_85FC_186CC_38122:
+        CheckExternalEvents(cs1, 0x85FC);
+        // 100D:85FC call near 0xE283
+        NearCall(cs1, 0x85FF, unknown_100D_E283_1E353);
+    label_100D_85FF_186CF_38090:
+        CheckExternalEvents(cs1, 0x85FF);
+        // 100D:85FF pop SI
+        SI = Stack.Pop16();
+        // 100D:8600 call near 0x851F
+        NearCall(cs1, 0x8603, unknown_100D_851F_185EF);
     label_100D_8603_186D3_29910:
         CheckExternalEvents(cs1, 0x8603);
         // 100D:8603 ret near
@@ -37713,9 +38371,29 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:8CFB cmp word ptr DS:[0x47C4],-1
         Alu16.Sub(UInt16[DS, (ushort)0x47C4], unchecked((ushort)unchecked((short)(sbyte)-1)));
         // 100D:8D00 jne short 0x8D1B
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:8D00");
+        if (!ZeroFlag) {
+            goto label_100D_8D1B_18DEB_11852;
         }
+    label_100D_8D02_18DD2_37777:
+        CheckExternalEvents(cs1, 0x8D02);
+        // 100D:8D02 mov AX,0x0048
+        AX = (ushort)0x0048;
+        // 100D:8D05 mov word ptr DS:[0x4784],AX
+        UInt16[DS, (ushort)0x4784] = AX;
+        // 100D:8D08 mov AL,0x10
+        AL = (byte)0x10;
+        // 100D:8D0A mov word ptr DS:[0x4786],AX
+        UInt16[DS, (ushort)0x4786] = AX;
+        // 100D:8D0D mov AL,8
+        AL = (byte)0x08;
+        // 100D:8D0F mov word ptr DS:[0x4788],AX
+        UInt16[DS, (ushort)0x4788] = AX;
+        // 100D:8D12 mov word ptr DS:[0x478A],AX
+        UInt16[DS, (ushort)0x478A] = AX;
+        // 100D:8D15 mov BP,0x224C
+        BP = (ushort)0x224C;
+        // 100D:8D18 jmp near 0x8DDB
+        goto label_100D_8DDB_18EAB_11867;
     label_100D_8D1B_18DEB_11852:
         CheckExternalEvents(cs1, 0x8D1B);
         // 100D:8D1B cmp byte ptr DS:[0x00C6],0
@@ -38696,9 +39374,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:905A cmp byte ptr DS:[0x00EA],0
         Alu8.Sub(UInt8[DS, (ushort)0x00EA], (byte)0x00);
         // 100D:905F jle short 0x9063
-        if (!(ZeroFlag || SignFlag != OverflowFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:905F");
+        if (ZeroFlag || SignFlag != OverflowFlag) {
+            goto label_100D_9063_19133_31456;
         }
+    label_100D_9061_19131_37469:
+        CheckExternalEvents(cs1, 0x9061);
+        // 100D:9061 mov AH,8
+        AH = (byte)0x08;
     label_100D_9063_19133_31456:
         CheckExternalEvents(cs1, 0x9063);
         // 100D:9063 repne scas AL,byte ptr ES:[DI]
@@ -38839,8 +39521,20 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:90C4 test word ptr DS:[0x0012],0x1000
         Alu16.And(UInt16[DS, (ushort)0x0012], (ushort)0x1000);
         // 100D:90CA je short 0x90D9
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:90CA");
+        if (ZeroFlag) {
+            goto label_100D_90D9_191A9_15503;
+        }
+    label_100D_90CC_1919C_38196:
+        CheckExternalEvents(cs1, 0x90CC);
+        // 100D:90CC mov BX,0x009C
+        BX = (ushort)0x009C;
+        // 100D:90CF mov DX,0x9584
+        DX = (ushort)0x9584;
+        // 100D:90D2 test byte ptr DS:[0x10A7],0x10
+        Alu8.And(UInt8[DS, (ushort)0x10A7], (byte)0x10);
+        // 100D:90D7 je short 0x9111
+        if (ZeroFlag) {
+            goto label_100D_9111_191E1_15521;
         }
     label_100D_90D9_191A9_15503:
         CheckExternalEvents(cs1, 0x90D9);
@@ -39105,10 +39799,10 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
             }
             return JumpDispatcher.RequiredJumpAsmReturn;
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:919D");
-        }
-        throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
+    label_100D_919F_1926F_37873:
+        CheckExternalEvents(cs1, 0x919F);
+        // 100D:919F ret near
+        return NearRet((ushort)0x0000);
     }
 
     public virtual Action unknown_100D_91A0_19270(int loadOffset) {
@@ -39128,9 +39822,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:91AB test byte ptr DS:[0x10A7],0x10
         Alu8.And(UInt8[DS, (ushort)0x10A7], (byte)0x10);
         // 100D:91B0 je short 0x91B8
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:91B0");
+        if (ZeroFlag) {
+            goto label_100D_91B8_19288_7856;
         }
+    label_100D_91B2_19282_38289:
+        CheckExternalEvents(cs1, 0x91B2);
+        // 100D:91B2 mov word ptr DS:[0x00F0],0x000A
+        UInt16[DS, (ushort)0x00F0] = (ushort)0x000A;
     label_100D_91B8_19288_7856:
         CheckExternalEvents(cs1, 0x91B8);
         // 100D:91B8 call near 0x9123
@@ -39280,7 +39978,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(CL, (byte)0x2F);
         // 100D:922D je short 0x9282
         if (ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:922D");
+            goto label_100D_9282_19352_37523;
         }
     label_100D_922F_192FF_37277:
         CheckExternalEvents(cs1, 0x922F);
@@ -39288,7 +39986,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu8.Sub(CL, (byte)0x0F);
         // 100D:9232 jae short 0x9240
         if (!CarryFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:9232");
+            goto label_100D_9240_19310_37526;
         }
     label_100D_9234_19304_37280:
         CheckExternalEvents(cs1, 0x9234);
@@ -39304,6 +40002,18 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         SI = AX;
         // 100D:923D jmp near word ptr DS:[SI+4]
         switch ((ushort)(UInt16[DS, (ushort)(SI + (sbyte)4)])) {
+            case 0x92FC:
+                if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x92FC)) {
+                    loadOffset = JumpDispatcher.NextEntryAddress;
+                    goto entrydispatcher;
+                }
+                return JumpDispatcher.RequiredJumpAsmReturn;
+            case 0x9301:
+                if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x9301)) {
+                    loadOffset = JumpDispatcher.NextEntryAddress;
+                    goto entrydispatcher;
+                }
+                return JumpDispatcher.RequiredJumpAsmReturn;
             case 0x9306:
                 if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x9306)) {
                     loadOffset = JumpDispatcher.NextEntryAddress;
@@ -39316,9 +40026,27 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                     goto entrydispatcher;
                 }
                 return JumpDispatcher.RequiredJumpAsmReturn;
+            case 0x936F:
+                if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x936F)) {
+                    loadOffset = JumpDispatcher.NextEntryAddress;
+                    goto entrydispatcher;
+                }
+                return JumpDispatcher.RequiredJumpAsmReturn;
             default:
                 throw FailAsUntested($"Unknown near jump target 0x{((ushort)(UInt16[DS, (ushort)(SI + (sbyte)4)])):X4} at 100D:923D");
         }
+    label_100D_9240_19310_37526:
+        CheckExternalEvents(cs1, 0x9240);
+        // 100D:9240 sub CL,0x0F
+        CL = Alu8.Sub(CL, (byte)0x0F);
+        // 100D:9243 mov AL,CL
+        AL = CL;
+        // 100D:9245 jmp near 0x9381
+        if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x9381)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     label_100D_9248_19318_21355:
         CheckExternalEvents(cs1, 0x9248);
         // 100D:9248 cmp BP,0x1F7E
@@ -39359,7 +40087,14 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         else {
             throw FailAsUntested("Unobserved conditional fallthrough at 100D:926E");
         }
-        throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
+    label_100D_9282_19352_37523:
+        CheckExternalEvents(cs1, 0x9282);
+        // 100D:9282 jmp near 0x42E9
+        if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x42E9)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
     public virtual Action unknown_100D_9285_19355(int loadOffset) {
@@ -39567,6 +40302,32 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         UInt8[DS, (ushort)0x0019] = (byte)0x00;
         // 100D:941C ret near
         return NearRet((ushort)0x0000);
+    }
+
+    public virtual Action unknown_100D_941D_194ED(int loadOffset) {
+    entrydispatcher:
+    label_100D_941D_194ED_37472:
+        CheckExternalEvents(cs1, 0x941D);
+        // 100D:941D cmp byte ptr DS:[0x47A9],0
+        Alu8.Sub(UInt8[DS, (ushort)0x47A9], (byte)0x00);
+        // 100D:9422 je short 0x9427
+        if (ZeroFlag) {
+            goto label_100D_9427_194F7_37475;
+        }
+    label_100D_9424_194F4_37477:
+        CheckExternalEvents(cs1, 0x9424);
+        // 100D:9424 jmp near 0x2993
+        if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x2993)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
+    label_100D_9427_194F7_37475:
+        CheckExternalEvents(cs1, 0x9427);
+        VerifySpeculativeEntryOrFail(cs1, 0x9427, [(byte)0xE8, (byte)0xF1, (byte)0x3F]);
+        // 100D:9427 call near 0xD41B
+        NearCall(cs1, 0x942A, unknown_100D_D41B_1D4EB);
+        throw FailAsUntested("Call at 100D:9427 returned to 100D:942A, but no continuation was observed during discovery.");
     }
 
     public virtual Action unknown_100D_94F3_195C3(int loadOffset) {
@@ -39874,6 +40635,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_96D8_197A8(int loadOffset) {
+    entrydispatcher:
     label_100D_96D8_197A8_27194:
         CheckExternalEvents(cs1, 0x96D8);
         // 100D:96D8 mov word ptr DS:[0x47C4],AX
@@ -39888,10 +40650,11 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x96E5);
         // 100D:96E5 mov word ptr DS:[0x1BEA],0
         UInt16[DS, (ushort)0x1BEA] = (ushort)0x0000;
-        // 100D:96EB mov byte ptr DS:[0x47DC],0
-        UInt8[DS, (ushort)0x47DC] = (byte)0x00;
-        // 100D:96F0 ret near
-        return NearRet((ushort)0x0000);
+        if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x96EB)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
     public virtual Action unknown_100D_96F1_197C1(int loadOffset) {
@@ -39939,6 +40702,17 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         AX = Alu16.Shl(AX, 1);
         // 100D:9708 or AX,4
         AX = Alu16.Or(AX, (ushort)0x0004);
+        if (JumpDispatcher.Jump(unknown_100D_970B_197DB, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
+    }
+
+    public virtual Action unknown_100D_970B_197DB(int loadOffset) {
+    entrydispatcher:
+    label_100D_970B_197DB_19857:
+        CheckExternalEvents(cs1, 0x970B);
         // 100D:970B mov SI,AX
         SI = AX;
         // 100D:970D shl SI,1
@@ -42904,9 +43678,10 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         if (ZeroFlag) {
             goto label_100D_2288_12358_32986;
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:229D");
-        }
+    label_100D_229F_1236F_38036:
+        CheckExternalEvents(cs1, 0x229F);
+        // 100D:229F mov word ptr DS:[0x113F],SI
+        UInt16[DS, (ushort)0x113F] = SI;
     label_100D_22A3_12373_34809:
         CheckExternalEvents(cs1, 0x22A3);
         // 100D:22A3 call near 0x235F
@@ -43069,9 +43844,21 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:A186 test byte ptr DS:[0x000A],2
         Alu8.And(UInt8[DS, (ushort)0x000A], (byte)0x02);
         // 100D:A18B je short 0xA197
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:A18B");
+        if (ZeroFlag) {
+            goto label_100D_A197_1A267_32861;
         }
+    label_100D_A18D_1A25D_38054:
+        CheckExternalEvents(cs1, 0xA18D);
+        // 100D:A18D mov AL,0x28
+        AL = (byte)0x28;
+        // 100D:A18F call near 0x6F78
+        NearCall(cs1, 0xA192, unknown_100D_6F78_17048);
+    label_100D_A192_1A262_38059:
+        CheckExternalEvents(cs1, 0xA192);
+        // 100D:A192 mov AX,0xFFCE
+        AX = (ushort)0xFFCE;
+        // 100D:A195 jmp short 0xA1AA
+        goto label_100D_A1AA_1A27A_32871;
     label_100D_A197_1A267_32861:
         CheckExternalEvents(cs1, 0xA197);
         // 100D:A197 mov AX,word ptr DS:[0x1176]
@@ -43106,7 +43893,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu16.Sub(AX, (ushort)0x0064);
         // 100D:A1B5 jae short 0xA1BF
         if (!CarryFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:A1B5");
+            goto label_100D_A1BF_1A28F_32881;
         }
     label_100D_A1B7_1A287_32876:
         CheckExternalEvents(cs1, 0xA1B7);
@@ -43122,6 +43909,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         BL = (byte)0x80;
         // 100D:A1BD sub BL,AL
         BL = Alu8.Sub(BL, AL);
+    label_100D_A1BF_1A28F_32881:
+        CheckExternalEvents(cs1, 0xA1BF);
         // 100D:A1BF mov byte ptr DS:[0x00D5],BL
         UInt8[DS, (ushort)0x00D5] = BL;
         // 100D:A1C3 ret near
@@ -43143,7 +43932,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x24F5);
         // 100D:24F5 jae short 0x252D
         if (!CarryFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:24F5");
+            goto label_100D_252D_125FD_38039;
         }
     label_100D_24F7_125C7_33031:
         CheckExternalEvents(cs1, 0x24F7);
@@ -43187,6 +43976,26 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:2520 dec byte ptr DS:[0x0022]
         UInt8[DS, (ushort)0x0022] = Alu8.Dec(UInt8[DS, (ushort)0x0022]);
         return unknown_100D_2524_125F4(0x0000);
+    label_100D_252D_125FD_38039:
+        CheckExternalEvents(cs1, 0x252D);
+        // 100D:252D cmp byte ptr DS:[0x476D],0
+        Alu8.Sub(UInt8[DS, (ushort)0x476D], (byte)0x00);
+        // 100D:2532 je short 0x2540
+        if (ZeroFlag) {
+            goto label_100D_2540_12610_38042;
+        }
+    label_100D_2534_12604_38044:
+        CheckExternalEvents(cs1, 0x2534);
+        // 100D:2534 mov DI,word ptr DS:[0x10B4]
+        DI = UInt16[DS, (ushort)0x10B4];
+        // 100D:2538 and byte ptr DS:[DI+2],0x9F
+        UInt8[DS, (ushort)(DI + (sbyte)2)] = Alu8.And(UInt8[DS, (ushort)(DI + (sbyte)2)], (byte)0x9F);
+        // 100D:253C or byte ptr DS:[DI+2],0x20
+        UInt8[DS, (ushort)(DI + (sbyte)2)] = Alu8.Or(UInt8[DS, (ushort)(DI + (sbyte)2)], (byte)0x20);
+    label_100D_2540_12610_38042:
+        CheckExternalEvents(cs1, 0x2540);
+        // 100D:2540 ret near
+        return NearRet((ushort)0x0000);
     label_100D_A157_1A227_33020:
         CheckExternalEvents(cs1, 0xA157);
         // 100D:A157 mov AX,word ptr DS:[0x47C4]
@@ -43567,7 +44376,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu16.Sub(AX, UInt16[DS, (ushort)0x114E]);
         // 100D:A2AE je short 0xA28C
         if (ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:A2AE");
+            return unknown_100D_A28C_1A35C(0x0000);
         }
     label_100D_A2B0_1A380_36629:
         CheckExternalEvents(cs1, 0xA2B0);
@@ -44849,9 +45658,27 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:A6CC cmp BX,-1
         Alu16.Sub(BX, unchecked((ushort)unchecked((short)(sbyte)-1)));
         // 100D:A6CF jne short 0xA6E6
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:A6CF");
+        if (!ZeroFlag) {
+            goto label_100D_A6E6_1A7B6_8384;
         }
+    label_100D_A6D1_1A7A1_37931:
+        CheckExternalEvents(cs1, 0xA6D1);
+        // 100D:A6D1 mov AX,word ptr [0x0001A7A2]
+        AX = UInt16[unchecked((uint)(0x0001A7A2u))];
+        // 100D:A6D4 xor byte ptr CS:[0xA6D3],0x10
+        UInt8[CS, (ushort)0xA6D3] = Alu8.Xor(UInt8[CS, (ushort)0xA6D3], (byte)0x10);
+        // 100D:A6DA mov BX,word ptr DS:[0x22A6]
+        BX = UInt16[DS, (ushort)0x22A6];
+        // 100D:A6DE call near 0xA8BC
+        NearCall(cs1, 0xA6E1, unknown_100D_A8BC_1A98C);
+    label_100D_A6E1_1A7B1_37866:
+        CheckExternalEvents(cs1, 0xA6E1);
+        // 100D:A6E1 call near 0xA7A5
+        NearCall(cs1, 0xA6E4, unknown_100D_A7A5_1A875);
+    label_100D_A6E4_1A7B4_37869:
+        CheckExternalEvents(cs1, 0xA6E4);
+        // 100D:A6E4 jmp short 0xA740
+        goto label_100D_A740_1A810_8464;
     label_100D_A6E6_1A7B6_8384:
         CheckExternalEvents(cs1, 0xA6E6);
         // 100D:A6E6 push BX
@@ -44958,6 +45785,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         SI = AX;
         // 100D:A73C mov word ptr DS:[0xDC28],SI
         UInt16[DS, (ushort)0xDC28] = SI;
+    label_100D_A740_1A810_8464:
+        CheckExternalEvents(cs1, 0xA740);
         // 100D:A740 mov byte ptr DS:[0xDC2A],0xFF
         UInt8[DS, (ushort)0xDC2A] = (byte)0xFF;
         // 100D:A745 call near 0xA83F
@@ -46808,6 +47637,12 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     }
 
     public virtual Action unknown_100D_ABD5_1ACA5(int loadOffset) {
+        goto label_100D_ABD5_1ACA5_19898;
+
+    label_100D_ABD2_1ACA2_37963:
+        CheckExternalEvents(cs1, 0xABD2);
+        // 100D:ABD2 call near 0xA7C2
+        NearCall(cs1, 0xABD5, unknown_100D_A7C2_1A892);
     label_100D_ABD5_1ACA5_19898:
         CheckExternalEvents(cs1, 0xABD5);
         // 100D:ABD5 call near 0xABCC
@@ -46816,7 +47651,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0xABD8);
         // 100D:ABD8 jne short 0xABD2
         if (!ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:ABD8");
+            goto label_100D_ABD2_1ACA2_37963;
         }
     label_100D_ABDA_1ACAA_19902:
         CheckExternalEvents(cs1, 0xABDA);
@@ -49392,9 +50227,15 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:B55E cmp DX,BP
         Alu16.Sub(DX, BP);
         // 100D:B560 jb short 0xB566
-        if (!(CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:B560");
+        if (CarryFlag) {
+            goto label_100D_B566_1B636_22310;
         }
+    label_100D_B562_1B632_38317:
+        CheckExternalEvents(cs1, 0xB562);
+        // 100D:B562 sub DX,BP
+        DX = Alu16.Sub(DX, BP);
+        // 100D:B564 sub DI,BP
+        DI = Alu16.Sub(DI, BP);
     label_100D_B566_1B636_22310:
         CheckExternalEvents(cs1, 0xB566);
         // 100D:B566 loop 0xB551
@@ -49584,17 +50425,53 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         if (!CarryFlag) {
             goto label_100D_B5F5_1B6C5_27858;
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:B5D7");
+    label_100D_B5D9_1B6A9_38024:
+        CheckExternalEvents(cs1, 0xB5D9);
+        // 100D:B5D9 inc BL
+        BL = Alu8.Inc(BL);
+        // 100D:B5DB cmp BL,0x62
+        Alu8.Sub(BL, (byte)0x62);
+        // 100D:B5DE jl short 0xB5F5
+        if (SignFlag != OverflowFlag) {
+            goto label_100D_B5F5_1B6C5_27858;
         }
+    label_100D_B5E0_1B6B0_38029:
+        CheckExternalEvents(cs1, 0xB5E0);
+        VerifySpeculativeEntryOrFail(cs1, 0xB5E0, [(byte)0xFE, (byte)0xCB]);
+        // 100D:B5E0 dec BL
+        BL = Alu8.Dec(BL);
+        VerifySpeculativeEntryOrFail(cs1, 0xB5E2, [(byte)0x2A, (byte)0xFC]);
+        // 100D:B5E2 sub BH,AH
+        BH = Alu8.Sub(BH, AH);
+        VerifySpeculativeEntryOrFail(cs1, 0xB5E4, [(byte)0xEB, (byte)0x0F]);
+        // 100D:B5E4 jmp short 0xB5F5
+        goto label_100D_B5F5_1B6C5_27858;
     label_100D_B5E6_1B6B6_28096:
         CheckExternalEvents(cs1, 0xB5E6);
         // 100D:B5E6 add BH,AH
         BH = Alu8.Add(BH, AH);
         // 100D:B5E8 jb short 0xB5F5
-        if (!(CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:B5E8");
+        if (CarryFlag) {
+            goto label_100D_B5F5_1B6C5_27858;
         }
+    label_100D_B5EA_1B6BA_38013:
+        CheckExternalEvents(cs1, 0xB5EA);
+        // 100D:B5EA dec BL
+        BL = Alu8.Dec(BL);
+        // 100D:B5EC cmp BL,0x9E
+        Alu8.Sub(BL, (byte)0x9E);
+        // 100D:B5EF jg short 0xB5F5
+        if (!ZeroFlag && SignFlag == OverflowFlag) {
+            goto label_100D_B5F5_1B6C5_27858;
+        }
+    label_100D_B5F1_1B6C1_38018:
+        CheckExternalEvents(cs1, 0xB5F1);
+        VerifySpeculativeEntryOrFail(cs1, 0xB5F1, [(byte)0xFE, (byte)0xC3]);
+        // 100D:B5F1 inc BL
+        BL = Alu8.Inc(BL);
+        VerifySpeculativeEntryOrFail(cs1, 0xB5F3, [(byte)0x2A, (byte)0xFC]);
+        // 100D:B5F3 sub BH,AH
+        BH = Alu8.Sub(BH, AH);
     label_100D_B5F5_1B6C5_27858:
         CheckExternalEvents(cs1, 0xB5F5);
         // 100D:B5F5 cbw
@@ -49806,12 +50683,14 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         Alu16.Sub(CX, DX);
         // 100D:B695 jae short 0xB699
         if (!CarryFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:B695");
+            goto label_100D_B699_1B769_19519;
         }
     label_100D_B697_1B767_19517:
         CheckExternalEvents(cs1, 0xB697);
         // 100D:B697 mov DX,BP
         DX = BP;
+    label_100D_B699_1B769_19519:
+        CheckExternalEvents(cs1, 0xB699);
         // 100D:B699 ret near
         return NearRet((ushort)0x0000);
     }
@@ -51028,9 +51907,15 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:BAB9 cmp DX,AX
         Alu16.Sub(DX, AX);
         // 100D:BABB jl short 0xBAC0
-        if (!(SignFlag != OverflowFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:BABB");
+        if (SignFlag != OverflowFlag) {
+            goto label_100D_BAC0_1BB90_19525;
         }
+    label_100D_BABD_1BB8D_37926:
+        CheckExternalEvents(cs1, 0xBABD);
+        // 100D:BABD mov DX,AX
+        DX = AX;
+        // 100D:BABF inc CX
+        CX = Alu16.Inc(CX);
     label_100D_BAC0_1BB90_19525:
         CheckExternalEvents(cs1, 0xBAC0);
         // 100D:BAC0 neg AX
@@ -60621,9 +61506,15 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:D6CF cmp byte ptr DS:[0x46D9],0
         Alu8.Sub(UInt8[DS, (ushort)0x46D9], (byte)0x00);
         // 100D:D6D4 je short 0xD6DC
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:D6D4");
+        if (ZeroFlag) {
+            goto label_100D_D6DC_1D7AC_15357;
         }
+    label_100D_D6D6_1D7A6_37894:
+        CheckExternalEvents(cs1, 0xD6D6);
+        // 100D:D6D6 mov CX,5
+        CX = (ushort)0x0005;
+        // 100D:D6D9 mov DI,0x1B48
+        DI = (ushort)0x1B48;
     label_100D_D6DC_1D7AC_15357:
         CheckExternalEvents(cs1, 0xD6DC);
         // 100D:D6DC cmp byte ptr DS:[DI+8],0
@@ -61096,9 +61987,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:D841 cmp byte ptr DS:[0x46D9],0
         Alu8.Sub(UInt8[DS, (ushort)0x46D9], (byte)0x00);
         // 100D:D846 je short 0xD84B
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:D846");
+        if (ZeroFlag) {
+            goto label_100D_D84B_1D91B_14693;
         }
+    label_100D_D848_1D918_37541:
+        CheckExternalEvents(cs1, 0xD848);
+        // 100D:D848 call near 0x0D8E
+        NearCall(cs1, 0xD84B, unknown_100D_0D8E_10E5E);
     label_100D_D84B_1D91B_14693:
         CheckExternalEvents(cs1, 0xD84B);
         // 100D:D84B call near 0xE3CC
@@ -61494,6 +62389,9 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 break;
             case 0x9215:
                 NearCall(cs1, 0xD941, unknown_100D_9215_192E5);
+                break;
+            case 0x941D:
+                NearCall(cs1, 0xD941, unknown_100D_941D_194ED);
                 break;
             case 0xAED6:
                 NearCall(cs1, 0xD941, unknown_100D_AED6_1AFA6);
@@ -63320,6 +64218,9 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
             case 0x27B6:
                 NearCall(cs1, 0xE35A, unknown_100D_27B6_12886);
                 break;
+            case 0x391D:
+                NearCall(cs1, 0xE35A, unknown_100D_391D_139ED);
+                break;
             case 0x4821:
                 NearCall(cs1, 0xE35A, unknown_100D_4821_148F1);
                 break;
@@ -63340,9 +64241,52 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:E35C cmp byte ptr DS:[0x227D],0
         Alu8.Sub(UInt8[DS, (ushort)0x227D], (byte)0x00);
         // 100D:E361 je short 0xE378
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:E361");
+        if (ZeroFlag) {
+            goto label_100D_E378_1E448_21763;
         }
+    label_100D_E363_1E433_37612:
+        CheckExternalEvents(cs1, 0xE363);
+        // 100D:E363 push BX
+        Stack.Push16(BX);
+        // 100D:E364 push CX
+        Stack.Push16(CX);
+        // 100D:E365 push DX
+        Stack.Push16(DX);
+        // 100D:E366 push SI
+        Stack.Push16(SI);
+        // 100D:E367 push DI
+        Stack.Push16(DI);
+        // 100D:E368 push BP
+        Stack.Push16(BP);
+        // 100D:E369 push ES
+        Stack.Push16(ES);
+        // 100D:E36A call near 0xDD63
+        NearCall(cs1, 0xE36D, unknown_100D_DD63_1DE33);
+    label_100D_E36D_1E43D_37629:
+        CheckExternalEvents(cs1, 0xE36D);
+        // 100D:E36D pop ES
+        ES = UInt16[SS, SP];
+        SP = unchecked((ushort)(SP + (ushort)0x0002));
+        // 100D:E36E pop BP
+        BP = Stack.Pop16();
+        // 100D:E36F pop DI
+        DI = Stack.Pop16();
+        // 100D:E370 pop SI
+        SI = Stack.Pop16();
+        // 100D:E371 pop DX
+        DX = Stack.Pop16();
+        // 100D:E372 pop CX
+        CX = Stack.Pop16();
+        // 100D:E373 pop BX
+        BX = Stack.Pop16();
+        // 100D:E374 jb short 0xE386
+        if (CarryFlag) {
+            goto label_100D_E386_1E456_21773;
+        }
+    label_100D_E376_1E446_37640:
+        CheckExternalEvents(cs1, 0xE376);
+        // 100D:E376 jmp short 0xE37B
+        goto label_100D_E37B_1E44B_21765;
     label_100D_E378_1E448_21763:
         CheckExternalEvents(cs1, 0xE378);
         // 100D:E378 call near 0xDE7B
@@ -63363,6 +64307,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0xE384);
         // 100D:E384 or AL,1
         AL = Alu8.Or(AL, (byte)0x01);
+    label_100D_E386_1E456_21773:
+        CheckExternalEvents(cs1, 0xE386);
         // 100D:E386 ret near
         return NearRet((ushort)0x0000);
     }
@@ -69763,9 +70709,11 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 3358:1580 jmp near BP
         switch ((ushort)(BP)) {
             case 0x172B:
-                goto label_3358_172B_34CAB_33953;
+                goto label_3358_172B_34CAB_38133;
+            case 0x17AC:
+                goto label_3358_17AC_34D2C_37937;
             case 0x17C4:
-                goto label_3358_17C4_34D44_33286;
+                goto label_3358_17C4_34D44_38131;
             case 0x17D2:
                 goto label_3358_17D2_34D52_26180;
             default:
@@ -70309,14 +71257,14 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DI = Alu16.Inc(DI);
         // 3358:1726 jmp short 0x16ED
         goto label_3358_16ED_34C6D_30470;
-    label_3358_1728_34CA8_33959:
+    label_3358_1728_34CA8_38135:
         CheckExternalEvents(cs2, 0x1728);
-        // 3358:1728 add SI,4
-        SI = Alu16.Add(SI, unchecked((ushort)unchecked((short)(sbyte)4)));
-    label_3358_172B_34CAB_33953:
+        // 3358:1728 add SI,(short)byte ptr [0x00034CAA]
+        SI = Alu16.Add(SI, unchecked((ushort)unchecked((short)Int8[unchecked((uint)(0x00034CAAu))])));
+    label_3358_172B_34CAB_38133:
         CheckExternalEvents(cs2, 0x172B);
-        // 3358:172B mov BP,0x001B
-        BP = (ushort)0x001B;
+        // 3358:172B mov BP,word ptr [0x00034CAC]
+        BP = UInt16[unchecked((uint)(0x00034CACu))];
         // 3358:172E push DI
         Stack.Push16(DI);
         // 3358:172F add BP,DI
@@ -70388,7 +71336,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         AL = Alu8.And(AL, DL);
         // 3358:1756 je short 0x179D
         if (ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 3358:1756");
+            goto label_3358_179D_34D1D_37454;
         }
     label_3358_1758_34CD8_26109:
         CheckExternalEvents(cs2, 0x1758);
@@ -70407,6 +71355,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs2, 0x175F);
         // 3358:175F shr AH,1
         AH = Alu8.Shr(AH, 1);
+    label_3358_1761_34CE1_26116:
+        CheckExternalEvents(cs2, 0x1761);
         // 3358:1761 shr AH,1
         AH = Alu8.Shr(AH, 1);
         // 3358:1763 shr AH,1
@@ -70421,6 +71371,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs2, 0x1769);
         // 3358:1769 mov AL,AH
         AL = AH;
+    label_3358_176B_34CEB_26122:
+        CheckExternalEvents(cs2, 0x176B);
         // 3358:176B add AL,DH
         AL = Alu8.Add(AL, DH);
         // 3358:176D stos byte ptr ES:[DI],AL
@@ -70441,6 +71393,9 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 3358:1773 add DI,0x0140
         DI = Alu16.Add(DI, (ushort)0x0140);
         // 3358:1777 selector
+        if (SelectorSignatureMatches(cs2, 0x1777, [(byte)0xE2, (byte)0x30])) {
+            goto label_3358_1777_34CF7_37447;
+        }
         if (SelectorSignatureMatches(cs2, 0x1777, [(byte)0xE2, (byte)0x48])) {
             goto label_3358_1777_34CF7_33294;
         }
@@ -70456,7 +71411,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 3358:1777 loop 0x17CF
         CX = unchecked((ushort)(CX - (ushort)0x0001));
         if (CX != (ushort)0x0000) {
-            goto label_3358_17CF_34D4F_26148;
+            goto label_3358_17CF_34D4F_38137;
         }
         else {
             goto label_3358_1779_34CF9_26178;
@@ -70476,7 +71431,17 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 3358:1777 loop 0x1728
         CX = unchecked((ushort)(CX - (ushort)0x0001));
         if (CX != (ushort)0x0000) {
-            goto label_3358_1728_34CA8_33959;
+            goto label_3358_1728_34CA8_38135;
+        }
+        else {
+            goto label_3358_1779_34CF9_26178;
+        }
+    label_3358_1777_34CF7_37447:
+        CheckExternalEvents(cs2, 0x1777);
+        // 3358:1777 loop 0x17A9
+        CX = unchecked((ushort)(CX - (ushort)0x0001));
+        if (CX != (ushort)0x0000) {
+            goto label_3358_17A9_34D29_37939;
         }
     label_3358_1779_34CF9_26178:
         CheckExternalEvents(cs2, 0x1779);
@@ -70538,20 +71503,71 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DI = Alu16.Add(DI, unchecked((ushort)unchecked((short)(sbyte)2)));
         // 3358:179B jmp short 0x176E
         goto label_3358_176E_34CEE_26124;
+    label_3358_179D_34D1D_37454:
+        CheckExternalEvents(cs2, 0x179D);
+        // 3358:179D inc DI
+        DI = Alu16.Inc(DI);
+        // 3358:179E cmp DI,BP
+        Alu16.Sub(DI, BP);
+        // 3358:17A0 jae short 0x1772
+        if (!CarryFlag) {
+            goto label_3358_1772_34CF2_26144;
+        }
+    label_3358_17A2_34D22_37459:
+        CheckExternalEvents(cs2, 0x17A2);
+        // 3358:17A2 shr AH,1
+        AH = Alu8.Shr(AH, 1);
+        // 3358:17A4 je short 0x1761
+        if (ZeroFlag) {
+            goto label_3358_1761_34CE1_26116;
+        }
     label_3358_17A6_34D26_26169:
         CheckExternalEvents(cs2, 0x17A6);
         // 3358:17A6 inc DI
         DI = Alu16.Inc(DI);
         // 3358:17A7 jmp short 0x176E
         goto label_3358_176E_34CEE_26124;
+    label_3358_17A9_34D29_37939:
+        CheckExternalEvents(cs2, 0x17A9);
+        // 3358:17A9 add SI,(short)byte ptr [0x00034D2B]
+        SI = Alu16.Add(SI, unchecked((ushort)unchecked((short)Int8[unchecked((uint)(0x00034D2Bu))])));
+    label_3358_17AC_34D2C_37937:
+        CheckExternalEvents(cs2, 0x17AC);
+        // 3358:17AC mov BP,word ptr [0x00034D2D]
+        BP = UInt16[unchecked((uint)(0x00034D2Du))];
+        // 3358:17AF push DI
+        Stack.Push16(DI);
+        // 3358:17B0 add BP,DI
+        BP = Alu16.Add(BP, DI);
+        // 3358:17B2 lods AL,byte ptr DS:[SI]
+        AL = UInt8[DS, SI];
+        SI = unchecked((ushort)(SI + unchecked((ushort)State.Direction8)));
+        // 3358:17B3 cmp AL,DL
+        Alu8.Sub(AL, DL);
+        // 3358:17B5 jbe short 0x17A6
+        if (CarryFlag || ZeroFlag) {
+            goto label_3358_17A6_34D26_26169;
+        }
+    label_3358_17B7_34D37_37429:
+        CheckExternalEvents(cs2, 0x17B7);
+        // 3358:17B7 shr AL,1
+        AL = Alu8.Shr(AL, 1);
+        // 3358:17B9 shr AL,1
+        AL = Alu8.Shr(AL, 1);
+        // 3358:17BB shr AL,1
+        AL = Alu8.Shr(AL, 1);
+        // 3358:17BD shr AL,1
+        AL = Alu8.Shr(AL, 1);
+        // 3358:17BF jmp short 0x176B
+        goto label_3358_176B_34CEB_26122;
     label_3358_17C1_34D41_33298:
         CheckExternalEvents(cs2, 0x17C1);
         // 3358:17C1 add SI,3
         SI = Alu16.Add(SI, unchecked((ushort)unchecked((short)(sbyte)3)));
-    label_3358_17C4_34D44_33286:
+    label_3358_17C4_34D44_38131:
         CheckExternalEvents(cs2, 0x17C4);
-        // 3358:17C4 mov BP,8
-        BP = (ushort)0x0008;
+        // 3358:17C4 mov BP,word ptr [0x00034D45]
+        BP = UInt16[unchecked((uint)(0x00034D45u))];
         // 3358:17C7 push DI
         Stack.Push16(DI);
         // 3358:17C8 add BP,DI
@@ -70563,10 +71579,10 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         AH = AL;
         // 3358:17CD jmp short 0x1754
         goto label_3358_1754_34CD4_26107;
-    label_3358_17CF_34D4F_26148:
+    label_3358_17CF_34D4F_38137:
         CheckExternalEvents(cs2, 0x17CF);
-        // 3358:17CF add SI,4
-        SI = Alu16.Add(SI, unchecked((ushort)unchecked((short)(sbyte)4)));
+        // 3358:17CF add SI,(short)byte ptr [0x00034D51]
+        SI = Alu16.Add(SI, unchecked((ushort)unchecked((short)Int8[unchecked((uint)(0x00034D51u))])));
     label_3358_17D2_34D52_26180:
         CheckExternalEvents(cs2, 0x17D2);
         // 3358:17D2 mov BP,word ptr [0x00034D53]
@@ -70605,8 +71621,30 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 3358:17ED sub AX,BX
         AX = Alu16.Sub(AX, BX);
         // 3358:17EF jle short 0x17FC
-        if (!(ZeroFlag || SignFlag != OverflowFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 3358:17EF");
+        if (ZeroFlag || SignFlag != OverflowFlag) {
+            goto label_3358_17FC_34D7C_31517;
+        }
+    label_3358_17F1_34D71_37483:
+        CheckExternalEvents(cs2, 0x17F1);
+        // 3358:17F1 sub CX,AX
+        CX = Alu16.Sub(CX, AX);
+        // 3358:17F3 jbe short 0x1825
+        if (CarryFlag || ZeroFlag) {
+            goto label_3358_1825_34DA5_37486;
+        }
+    label_3358_17F5_34D75_37488:
+        CheckExternalEvents(cs2, 0x17F5);
+        // 3358:17F5 add BX,AX
+        BX = Alu16.Add(BX, AX);
+    label_3358_17F7_34D77_37490:
+        CheckExternalEvents(cs2, 0x17F7);
+        // 3358:17F7 add SI,DI
+        SI = Alu16.Add(SI, DI);
+        // 3358:17F9 dec AX
+        AX = Alu16.Dec(AX);
+        // 3358:17FA jne short 0x17F7
+        if (!ZeroFlag) {
+            goto label_3358_17F7_34D77_37490;
         }
     label_3358_17FC_34D7C_31517:
         CheckExternalEvents(cs2, 0x17FC);
@@ -70626,7 +71664,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CX = Alu16.Sub(CX, AX);
         // 3358:1807 jbe short 0x1825
         if (CarryFlag || ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 3358:1807");
+            goto label_3358_1825_34DA5_37486;
         }
     label_3358_1809_34D89_31522:
         CheckExternalEvents(cs2, 0x1809);
@@ -70643,6 +71681,10 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         else {
             throw FailAsUntested("Unobserved conditional fallthrough at 3358:1810");
         }
+    label_3358_1825_34DA5_37486:
+        CheckExternalEvents(cs2, 0x1825);
+        // 3358:1825 ret far
+        return FarRet((ushort)0x0000);
     label_3358_1837_34DB7_31548:
         CheckExternalEvents(cs2, 0x1837);
         // 3358:1837 sub BP,DX
@@ -70711,7 +71753,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DI = Alu16.Sub(DI, AX);
         // 3358:185B jle short 0x1825
         if (ZeroFlag || SignFlag != OverflowFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 3358:185B");
+            goto label_3358_1825_34DA5_37486;
         }
     label_3358_185D_34DDD_31531:
         CheckExternalEvents(cs2, 0x185D);
@@ -70720,16 +71762,32 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 3358:1860 sub AX,DX
         AX = Alu16.Sub(AX, DX);
         // 3358:1862 jg short 0x1872
-        if (!(!ZeroFlag && SignFlag == OverflowFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 3358:1862");
+        if (!ZeroFlag && SignFlag == OverflowFlag) {
+            goto label_3358_1872_34DF2_31535;
         }
+    label_3358_1864_34DE4_37501:
+        CheckExternalEvents(cs2, 0x1864);
+        // 3358:1864 push DI
+        Stack.Push16(DI);
+        // 3358:1865 call near 0x0C10
+        NearCall(cs2, 0x1868, unknown_3358_0C10_34190);
+    label_3358_1868_34DE8_37506:
+        CheckExternalEvents(cs2, 0x1868);
+        // 3358:1868 pop DX
+        DX = Stack.Pop16();
+        // 3358:1869 mov BP,word ptr CS:[0x158B]
+        BP = UInt16[CS, (ushort)0x158B];
+        // 3358:186E mov BX,CX
+        BX = CX;
+        // 3358:1870 jmp short 0x1837
+        goto label_3358_1837_34DB7_31548;
     label_3358_1872_34DF2_31535:
         CheckExternalEvents(cs2, 0x1872);
         // 3358:1872 sub DI,AX
         DI = Alu16.Sub(DI, AX);
         // 3358:1874 jle short 0x1825
         if (ZeroFlag || SignFlag != OverflowFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 3358:1874");
+            goto label_3358_1825_34DA5_37486;
         }
     label_3358_1876_34DF6_31538:
         CheckExternalEvents(cs2, 0x1876);
@@ -86153,10 +87211,14 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_0FA7_11077_28006;
             case 0x1877:
                 goto label_100D_1877_11947_13218;
+            case 0x2993:
+                goto label_100D_2993_12A63_31927;
             case 0x2999:
                 goto label_100D_2999_12A69_31930;
             case 0x3F27:
                 goto label_100D_3F27_13FF7_19793;
+            case 0x42E9:
+                goto label_100D_42E9_143B9_20659;
             case 0x4703:
                 goto label_100D_4703_147D3_21483;
             case 0x4FC3:
@@ -86169,18 +87231,30 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_8246_18316_30173;
             case 0x8286:
                 goto label_100D_8286_18356_29311;
+            case 0x8296:
+                goto label_100D_8296_18366_29354;
             case 0x829E:
                 goto label_100D_829E_1836E_29364;
             case 0x872C:
                 goto label_100D_872C_187FC_30128;
+            case 0x92FC:
+                goto label_100D_92FC_193CC_33283;
+            case 0x9301:
+                goto label_100D_9301_193D1_26927;
             case 0x9306:
                 goto label_100D_9306_193D6_23066;
             case 0x930B:
                 goto label_100D_930B_193DB_33492;
+            case 0x936F:
+                goto label_100D_936F_1943F_33901;
+            case 0x9381:
+                goto label_100D_9381_19451_26988;
             case 0x956C:
                 goto label_100D_956C_1963C_25978;
             case 0x961A:
                 goto label_100D_961A_196EA_16214;
+            case 0x96EB:
+                goto label_100D_96EB_197BB_27205;
             case 0xA3F9:
                 goto label_100D_A3F9_1A4C9_25339;
             case 0xAD21:
@@ -86296,6 +87370,38 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
             goto entrydispatcher;
         }
         return JumpDispatcher.RequiredJumpAsmReturn;
+    label_100D_0E47_10F17_37899:
+        CheckExternalEvents(cs1, 0x0E47);
+        // 100D:0E47 mov CL,0xFF
+        CL = (byte)0xFF;
+    label_100D_0E49_10F19_37900:
+        CheckExternalEvents(cs1, 0x0E49);
+        // 100D:0E49 push CX
+        Stack.Push16(CX);
+        // 100D:0E4A cmp byte ptr DS:[0x46D9],0
+        Alu8.Sub(UInt8[DS, (ushort)0x46D9], (byte)0x00);
+        // 100D:0E4F je short 0x0E62
+        if (ZeroFlag) {
+            goto label_100D_0E62_10F32_37904;
+        }
+    label_100D_0E51_10F21_37906:
+        CheckExternalEvents(cs1, 0x0E51);
+        // 100D:0E51 mov AX,0x000D
+        AX = (ushort)0x000D;
+        // 100D:0E54 call near 0x0E6C
+        NearCall(cs1, 0x0E57, unknown_100D_0E6C_10F3C);
+    label_100D_0E57_10F27_37918:
+        CheckExternalEvents(cs1, 0x0E57);
+        // 100D:0E57 mov byte ptr DS:[0x46D9],0
+        UInt8[DS, (ushort)0x46D9] = (byte)0x00;
+        // 100D:0E5C mov word ptr DS:[0x47C4],0
+        UInt16[DS, (ushort)0x47C4] = (ushort)0x0000;
+    label_100D_0E62_10F32_37904:
+        CheckExternalEvents(cs1, 0x0E62);
+        // 100D:0E62 pop CX
+        CX = Stack.Pop16();
+        // 100D:0E63 jmp near 0xB3B0
+        goto label_100D_B3B0_1B480_20205;
     label_100D_0EA6_10F76_19951:
         CheckExternalEvents(cs1, 0x0EA6);
         // 100D:0EA6 call near 0xB2B9
@@ -86639,9 +87745,17 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:2483 sub AL,byte ptr DS:[DI+1]
         AL = Alu8.Sub(AL, UInt8[DS, (ushort)(DI + (sbyte)1)]);
         // 100D:2486 jb short 0x2491
-        if (!(CarryFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:2486");
+        if (CarryFlag) {
+            goto label_100D_2491_12561_34044;
         }
+    label_100D_2488_12558_37516:
+        CheckExternalEvents(cs1, 0x2488);
+        // 100D:2488 mov byte ptr DS:[0x009D],0
+        UInt8[DS, (ushort)0x009D] = (byte)0x00;
+        // 100D:248D mov AL,3
+        AL = (byte)0x03;
+        // 100D:248F jmp short 0x2496
+        goto label_100D_2496_12566_33008;
     label_100D_2491_12561_34044:
         CheckExternalEvents(cs1, 0x2491);
         // 100D:2491 call near 0x23D5
@@ -86667,6 +87781,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:283A xor AX,AX
         AX = Alu16.Xor(AX, AX);
         // 100D:283C jmp short 0x2841
+        goto label_100D_2841_12911_31601;
+    label_100D_283E_1290E_38312:
+        CheckExternalEvents(cs1, 0x283E);
+        // 100D:283E xor AX,AX
+        AX = Alu16.Xor(AX, AX);
+        // 100D:2840 dec AX
+        AX = Alu16.Dec(AX);
     label_100D_2841_12911_31601:
         CheckExternalEvents(cs1, 0x2841);
         // 100D:2841 mov byte ptr DS:[0x00DB],AL
@@ -88348,9 +89469,26 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         if (ZeroFlag) {
             goto label_100D_7780_17850_31180;
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:774F");
+    label_100D_7751_17821_38292:
+        CheckExternalEvents(cs1, 0x7751);
+        // 100D:7751 inc BX
+        BX = Alu16.Inc(BX);
+        // 100D:7752 shr CL,1
+        CL = Alu8.Shr(CL, 1);
+        // 100D:7754 and CL,AL
+        Alu8.And(CL, AL);
+        // 100D:7756 je short 0x7780
+        if (ZeroFlag) {
+            goto label_100D_7780_17850_31180;
         }
+    label_100D_7758_17828_38298:
+        CheckExternalEvents(cs1, 0x7758);
+        VerifySpeculativeEntryOrFail(cs1, 0x7758, [(byte)0xB0, (byte)0x0F]);
+        // 100D:7758 mov AL,0x0F
+        AL = (byte)0x0F;
+        VerifySpeculativeEntryOrFail(cs1, 0x775A, [(byte)0xEB, (byte)0x6E]);
+        // 100D:775A jmp short 0x77CA
+        goto label_100D_77CA_1789A_33806;
     label_100D_776D_1783D_31173:
         CheckExternalEvents(cs1, 0x776D);
         // 100D:776D call near 0x68EB
@@ -88377,7 +89515,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         AL = (byte)0x0F;
         // 100D:777E jne short 0x77CA
         if (!ZeroFlag) {
-            throw FailAsUntested("Unobserved conditional jump target at 100D:777E");
+            goto label_100D_77CA_1789A_33806;
         }
     label_100D_7780_17850_31180:
         CheckExternalEvents(cs1, 0x7780);
@@ -88473,6 +89611,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x77C8);
         // 100D:77C8 mov AL,0x0E
         AL = (byte)0x0E;
+    label_100D_77CA_1789A_33806:
+        CheckExternalEvents(cs1, 0x77CA);
         // 100D:77CA push AX
         Stack.Push16(AX);
         // 100D:77CB push SI
@@ -89180,6 +90320,65 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         AL = (byte)0x08;
         // 100D:931C jmp near 0x93AA
         goto label_100D_93AA_1947A_15415;
+    label_100D_932E_193FE_38252:
+        CheckExternalEvents(cs1, 0x932E);
+        // 100D:932E mov SI,word ptr DS:[0x4768]
+        SI = UInt16[DS, (ushort)0x4768];
+        // 100D:9332 call near 0x31F6
+        NearCall(cs1, 0x9335, unknown_100D_31F6_132C6);
+    label_100D_9335_19405_38257:
+        CheckExternalEvents(cs1, 0x9335);
+        // 100D:9335 call near 0x407E
+        NearCall(cs1, 0x9338, unknown_100D_407E_1414E);
+    label_100D_9338_19408_38260:
+        CheckExternalEvents(cs1, 0x9338);
+        // 100D:9338 mov BP,0x0044
+        BP = (ushort)0x0044;
+        // 100D:933B cmp word ptr SS:[BP],0
+        Alu16.Sub(UInt16[SS, (ushort)(BP + (sbyte)0)], unchecked((ushort)unchecked((short)(sbyte)0)));
+        // 100D:933F jne short 0x9356
+        if (!ZeroFlag) {
+            goto label_100D_9356_19426_38264;
+        }
+    label_100D_9341_19411_38266:
+        CheckExternalEvents(cs1, 0x9341);
+        // 100D:9341 mov AX,word ptr DS:[0x00E2]
+        AX = UInt16[DS, (ushort)0x00E2];
+        // 100D:9344 cmp AX,0x001E
+        Alu16.Sub(AX, (ushort)0x001E);
+        // 100D:9347 jae short 0x936B
+        if (!CarryFlag) {
+            goto label_100D_936B_1943B_38272;
+        }
+    label_100D_9349_19419_38274:
+        CheckExternalEvents(cs1, 0x9349);
+        VerifySpeculativeEntryOrFail(cs1, 0x9349, [(byte)0xBD, (byte)0xE4, (byte)0x00]);
+        // 100D:9349 mov BP,0x00E4
+        BP = (ushort)0x00E4;
+        VerifySpeculativeEntryOrFail(cs1, 0x934C, [(byte)0x8B, (byte)0x36, (byte)0x68, (byte)0x47]);
+        // 100D:934C mov SI,word ptr DS:[0x4768]
+        SI = UInt16[DS, (ushort)0x4768];
+        VerifySpeculativeEntryOrFail(cs1, 0x9350, [(byte)0x8B, (byte)0x46, (byte)0x00]);
+        // 100D:9350 mov AX,word ptr SS:[BP]
+        AX = UInt16[SS, (ushort)(BP + (sbyte)0)];
+        VerifySpeculativeEntryOrFail(cs1, 0x9353, [(byte)0x89, (byte)0x44, (byte)0x0C]);
+        // 100D:9353 mov word ptr DS:[SI+0x0C],AX
+        UInt16[DS, (ushort)(SI + (sbyte)12)] = AX;
+    label_100D_9356_19426_38264:
+        CheckExternalEvents(cs1, 0x9356);
+        VerifySpeculativeEntryOrFail(cs1, 0x9356, [(byte)0xFF, (byte)0x76, (byte)0x00]);
+        // 100D:9356 push word ptr SS:[BP]
+        Stack.Push16(UInt16[SS, (ushort)(BP + (sbyte)0)]);
+        VerifySpeculativeEntryOrFail(cs1, 0x9359, [(byte)0xE8, (byte)0xC7, (byte)0xBF]);
+        // 100D:9359 call near 0x5323
+        NearCall(cs1, 0x935C, unknown_100D_5323_153F3);
+        throw FailAsUntested("Call at 100D:9359 returned to 100D:935C, but no continuation was observed during discovery.");
+    label_100D_936B_1943B_38272:
+        CheckExternalEvents(cs1, 0x936B);
+        // 100D:936B mov AL,0x0C
+        AL = (byte)0x0C;
+        // 100D:936D jmp short 0x93AA
+        goto label_100D_93AA_1947A_15415;
     label_100D_936F_1943F_33901:
         CheckExternalEvents(cs1, 0x936F);
         // 100D:936F mov AL,0x0D
@@ -89202,6 +90401,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x937E);
         // 100D:937E sub AX,0x0087
         AX = Alu16.Sub(AX, (ushort)0x0087);
+    label_100D_9381_19451_26988:
+        CheckExternalEvents(cs1, 0x9381);
         // 100D:9381 cmp AL,9
         Alu8.Sub(AL, (byte)0x09);
         // 100D:9383 jb short 0x9387
@@ -89504,6 +90705,56 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         CheckExternalEvents(cs1, 0x956C);
         // 100D:956C ret near
         return NearRet((ushort)0x0000);
+    label_100D_9584_19654_38206:
+        CheckExternalEvents(cs1, 0x9584);
+        // 100D:9584 mov SI,word ptr DS:[0x47A2]
+        SI = UInt16[DS, (ushort)0x47A2];
+        // 100D:9588 mov CL,byte ptr DS:[SI+0x0E]
+        CL = UInt8[DS, (ushort)(SI + (sbyte)14)];
+        // 100D:958B mov AX,1
+        AX = (ushort)0x0001;
+        // 100D:958E shl AX,CL
+        AX = Alu16.Shl(AX, unchecked((int)CL));
+        // 100D:9590 and word ptr DS:[0x00EE],AX
+        Alu16.And(UInt16[DS, (ushort)0x00EE], AX);
+        // 100D:9594 jne short 0x95B4
+        if (!ZeroFlag) {
+            goto label_100D_95B4_19684_38213;
+        }
+    label_100D_9596_19666_38215:
+        CheckExternalEvents(cs1, 0x9596);
+        // 100D:9596 or word ptr DS:[0x00EE],AX
+        UInt16[DS, (ushort)0x00EE] = Alu16.Or(UInt16[DS, (ushort)0x00EE], AX);
+        // 100D:959A mov SI,word ptr DS:[0x4768]
+        SI = UInt16[DS, (ushort)0x4768];
+        // 100D:959E mov AL,0x20
+        AL = (byte)0x20;
+        // 100D:95A0 sub byte ptr DS:[SI+0x15],0x29
+        UInt8[DS, (ushort)(SI + (sbyte)21)] = Alu8.Sub(UInt8[DS, (ushort)(SI + (sbyte)21)], (byte)0x29);
+        // 100D:95A4 sub byte ptr DS:[0x00ED],0x29
+        UInt8[DS, (ushort)0x00ED] = Alu8.Sub(UInt8[DS, (ushort)0x00ED], (byte)0x29);
+        // 100D:95A9 jns short 0x95B4
+        if (!SignFlag) {
+            goto label_100D_95B4_19684_38213;
+        }
+    label_100D_95AB_1967B_38227:
+        CheckExternalEvents(cs1, 0x95AB);
+        // 100D:95AB or byte ptr DS:[SI+3],0x10
+        UInt8[DS, (ushort)(SI + (sbyte)3)] = Alu8.Or(UInt8[DS, (ushort)(SI + (sbyte)3)], (byte)0x10);
+        // 100D:95AF or byte ptr DS:[0x10A7],0x10
+        UInt8[DS, (ushort)0x10A7] = Alu8.Or(UInt8[DS, (ushort)0x10A7], (byte)0x10);
+    label_100D_95B4_19684_38213:
+        CheckExternalEvents(cs1, 0x95B4);
+        // 100D:95B4 mov AX,0x0085
+        AX = (ushort)0x0085;
+        // 100D:95B7 inc byte ptr DS:[0x47DC]
+        UInt8[DS, (ushort)0x47DC] = Alu8.Inc(UInt8[DS, (ushort)0x47DC]);
+        // 100D:95BB call near 0x970B
+        NearCall(cs1, 0x95BE, unknown_100D_970B_197DB);
+    label_100D_95BE_1968E_38247:
+        CheckExternalEvents(cs1, 0x95BE);
+        // 100D:95BE jmp near 0x96EB
+        goto label_100D_96EB_197BB_27205;
     label_100D_95C1_19691_23195:
         CheckExternalEvents(cs1, 0x95C1);
         // 100D:95C1 mov AX,0x0064
@@ -89673,6 +90924,12 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
             goto entrydispatcher;
         }
         return JumpDispatcher.RequiredJumpAsmReturn;
+    label_100D_96EB_197BB_27205:
+        CheckExternalEvents(cs1, 0x96EB);
+        // 100D:96EB mov byte ptr DS:[0x47DC],0
+        UInt8[DS, (ushort)0x47DC] = (byte)0x00;
+        // 100D:96F0 ret near
+        return NearRet((ushort)0x0000);
     label_100D_9ED5_19FA5_16216:
         CheckExternalEvents(cs1, 0x9ED5);
         // 100D:9ED5 cmp word ptr DS:[0x47C4],0x0010
@@ -90158,9 +91415,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         // 100D:B3B0 cmp byte ptr DS:[0x46D9],0
         Alu8.Sub(UInt8[DS, (ushort)0x46D9], (byte)0x00);
         // 100D:B3B5 je short 0xB3BA
-        if (!(ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:B3B5");
+        if (ZeroFlag) {
+            goto label_100D_B3BA_1B48A_20208;
         }
+    label_100D_B3B7_1B487_37933:
+        CheckExternalEvents(cs1, 0xB3B7);
+        // 100D:B3B7 jmp near 0x0E49
+        goto label_100D_0E49_10F19_37900;
     label_100D_B3BA_1B48A_20208:
         CheckExternalEvents(cs1, 0xB3BA);
         // 100D:B3BA add CL,0x31
@@ -90415,6 +91676,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_003A_1010A_20103;
             case 0x0E3E:
                 goto label_100D_0E3E_10F0E_20099;
+            case 0x0E47:
+                goto label_100D_0E47_10F17_37899;
             case 0x0EA6:
                 goto label_100D_0EA6_10F76_19951;
             case 0x0EB9:
@@ -90439,6 +91702,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_2453_12523_33002;
             case 0x283A:
                 goto label_100D_283A_1290A_31598;
+            case 0x283E:
+                goto label_100D_283E_1290E_38312;
             case 0x290B:
                 goto label_100D_290B_129DB_31740;
             case 0x2993:
@@ -90527,6 +91792,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_9315_193E5_34586;
             case 0x931A:
                 goto label_100D_931A_193EA_32039;
+            case 0x932E:
+                goto label_100D_932E_193FE_38252;
             case 0x936F:
                 goto label_100D_936F_1943F_33901;
             case 0x9373:
@@ -90537,6 +91804,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_9472_19542_15581;
             case 0x9533:
                 goto label_100D_9533_19603_25901;
+            case 0x9584:
+                goto label_100D_9584_19654_38206;
             case 0x95C1:
                 goto label_100D_95C1_19691_23195;
             case 0x95E2:
@@ -91020,71 +92289,6 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_391D_139ED(int loadOffset) {
-    label_100D_391D_139ED_6270:
-        CheckExternalEvents(cs1, 0x391D);
-        // 100D:391D mov CX,0x01C5
-        CX = (ushort)0x01C5;
-        // 100D:3920 mov BX,0x00DB
-        BX = (ushort)0x00DB;
-        // 100D:3923 cmp byte ptr DS:[0x22E3],0
-        Alu8.Sub(UInt8[DS, (ushort)0x22E3], (byte)0x00);
-        // 100D:3928 jne short 0x3930
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:3928");
-        }
-    label_100D_3930_13A00_6275:
-        CheckExternalEvents(cs1, 0x3930);
-        // 100D:3930 mov AL,byte ptr DS:[0x46D7]
-        AL = UInt8[DS, (ushort)0x46D7];
-        // 100D:3933 push AX
-        Stack.Push16(AX);
-        // 100D:3934 call far dword ptr DS:[0x3951]
-        ushort targetSegment_6278 = unchecked((ushort)(UInt16[DS, (ushort)((ushort)0x3951 + (ushort)0x0002)]));
-        ushort targetOffset_6278 = unchecked((ushort)(UInt16[DS, (ushort)0x3951]));
-        if (targetSegment_6278 == cs2 && targetOffset_6278 == 0x0175) {
-            FarCall(cs1, 0x3938, cs2, unknown_3358_0175_336F5);
-            goto label_100D_3938_13A08_6322;
-        }
-        throw FailAsUntested($"Unknown far call target {targetSegment_6278:X4}:{targetOffset_6278:X4} at 100D:3934");
-    label_100D_3938_13A08_6322:
-        CheckExternalEvents(cs1, 0x3938);
-        // 100D:3938 pop AX
-        AX = Stack.Pop16();
-        // 100D:3939 cmp byte ptr DS:[0x227D],0
-        Alu8.Sub(UInt8[DS, (ushort)0x227D], (byte)0x00);
-        // 100D:393E jne short 0x394A
-        if (!ZeroFlag) {
-            goto label_100D_394A_13A1A_6326;
-        }
-    label_100D_3940_13A10_25317:
-        CheckExternalEvents(cs1, 0x3940);
-        // 100D:3940 mov CX,0x0030
-        CX = (ushort)0x0030;
-        // 100D:3943 mov BX,0x02D0
-        BX = (ushort)0x02D0;
-        // 100D:3946 call far dword ptr DS:[0x3951]
-        ushort targetSegment_25320 = unchecked((ushort)(UInt16[DS, (ushort)((ushort)0x3951 + (ushort)0x0002)]));
-        ushort targetOffset_25320 = unchecked((ushort)(UInt16[DS, (ushort)0x3951]));
-        if (targetSegment_25320 == cs2 && targetOffset_25320 == 0x0175) {
-            FarCall(cs1, 0x394A, cs2, unknown_3358_0175_336F5);
-            goto label_100D_394A_13A1A_6326;
-        }
-        throw FailAsUntested($"Unknown far call target {targetSegment_25320:X4}:{targetOffset_25320:X4} at 100D:3946");
-    label_100D_394A_13A1A_6326:
-        CheckExternalEvents(cs1, 0x394A);
-        // 100D:394A dec byte ptr DS:[0x46D7]
-        UInt8[DS, (ushort)0x46D7] = Alu8.Dec(UInt8[DS, (ushort)0x46D7]);
-        // 100D:394E jne short 0x395B
-        if (!(!ZeroFlag)) {
-            return unknown_100D_3950_13A20(0x0000);
-        }
-    label_100D_395B_13A2B_6329:
-        CheckExternalEvents(cs1, 0x395B);
-        // 100D:395B ret near
-        return NearRet((ushort)0x0000);
-    }
-
     public virtual Action unknown_100D_3978_13A48(int loadOffset) {
     label_100D_3978_13A48_5969:
         CheckExternalEvents(cs1, 0x3978);
@@ -91284,6 +92488,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_5D44_15E14_34517;
             case 0x5D50:
                 goto label_100D_5D50_15E20_34308;
+            case 0x7429:
+                goto label_100D_7429_174F9_36381;
             default:
                 throw FailAsUntested($"Unknown generated entry loadOffset 0x{loadOffset:X4}");
         }
@@ -91344,6 +92550,152 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         SI = Stack.Pop16();
         // 100D:5D6C ret near
         return NearRet((ushort)0x0000);
+    label_100D_7429_174F9_36381:
+        CheckExternalEvents(cs1, 0x7429);
+        // 100D:7429 cmp DI,word ptr DS:[0x114E]
+        Alu16.Sub(DI, UInt16[DS, (ushort)0x114E]);
+        // 100D:742D je short 0x7434
+        if (ZeroFlag) {
+            goto label_100D_7434_17504_36384;
+        }
+    label_100D_742F_174FF_37120:
+        CheckExternalEvents(cs1, 0x742F);
+        // 100D:742F mov AL,7
+        AL = (byte)0x07;
+        // 100D:7431 call near 0x71B2
+        NearCall(cs1, 0x7434, unknown_100D_71B2_17282);
+    label_100D_7434_17504_36384:
+        CheckExternalEvents(cs1, 0x7434);
+        // 100D:7434 cmp byte ptr DS:[DI+8],0x28
+        Alu8.Sub(UInt8[DS, (ushort)(DI + (sbyte)8)], (byte)0x28);
+        // 100D:7438 jae short 0x7443
+        if (!CarryFlag) {
+            goto label_100D_7443_17513_36387;
+        }
+    label_100D_743A_1750A_38331:
+        CheckExternalEvents(cs1, 0x743A);
+        // 100D:743A and byte ptr DS:[DI+0x0A],0xFD
+        UInt8[DS, (ushort)(DI + (sbyte)10)] = Alu8.And(UInt8[DS, (ushort)(DI + (sbyte)10)], (byte)0xFD);
+        // 100D:743E mov BP,0x75AF
+        BP = (ushort)0x75AF;
+        // 100D:7441 jmp short 0x7479
+        goto label_100D_7479_17549_36447;
+    label_100D_7443_17513_36387:
+        CheckExternalEvents(cs1, 0x7443);
+        // 100D:7443 push SI
+        Stack.Push16(SI);
+        // 100D:7444 push DI
+        Stack.Push16(DI);
+        // 100D:7445 mov byte ptr DS:[DI+0x0B],5
+        UInt8[DS, (ushort)(DI + (sbyte)11)] = (byte)0x05;
+        // 100D:7449 call near 0x644E
+        NearCall(cs1, 0x744C, unknown_100D_644E_1651E);
+    label_100D_744C_1751C_36392:
+        CheckExternalEvents(cs1, 0x744C);
+        // 100D:744C pop DI
+        DI = Stack.Pop16();
+        // 100D:744D pop SI
+        SI = Stack.Pop16();
+        // 100D:744E call near 0x1AC5
+        NearCall(cs1, 0x7451, unknown_100D_1AC5_11B95);
+    label_100D_7451_17521_36396:
+        CheckExternalEvents(cs1, 0x7451);
+        // 100D:7451 add AL,2
+        AL = Alu8.Add(AL, (byte)0x02);
+        // 100D:7453 mov byte ptr DS:[DI+0x0B],AL
+        UInt8[DS, (ushort)(DI + (sbyte)11)] = AL;
+        // 100D:7456 mov AL,4
+        AL = (byte)0x04;
+        // 100D:7458 call near 0x6F78
+        NearCall(cs1, 0x745B, unknown_100D_6F78_17048);
+    label_100D_745B_1752B_36401:
+        CheckExternalEvents(cs1, 0x745B);
+        // 100D:745B mov AL,1
+        AL = (byte)0x01;
+        // 100D:745D call near 0x6F56
+        NearCall(cs1, 0x7460, unknown_100D_6F56_17026);
+    label_100D_7460_17530_36404:
+        CheckExternalEvents(cs1, 0x7460);
+        // 100D:7460 or byte ptr DS:[DI+0x0A],8
+        UInt8[DS, (ushort)(DI + (sbyte)10)] = Alu8.Or(UInt8[DS, (ushort)(DI + (sbyte)10)], (byte)0x08);
+        // 100D:7464 push CX
+        Stack.Push16(CX);
+        // 100D:7465 mov CL,byte ptr DS:[DI]
+        CL = UInt8[DS, DI];
+        // 100D:7467 mov AX,0x8000
+        AX = (ushort)0x8000;
+        // 100D:746A rol AX,CL
+        AX = Alu16.Rol(AX, CL);
+        // 100D:746C mov word ptr DS:[0x115A],AX
+        UInt16[DS, (ushort)0x115A] = AX;
+        // 100D:746F pop CX
+        CX = Stack.Pop16();
+        // 100D:7470 mov BP,0x75AF
+        BP = (ushort)0x75AF;
+        // 100D:7473 call near 0x6603
+        NearCall(cs1, 0x7476, unknown_100D_6603_166D3);
+    label_100D_7476_17546_36445:
+        CheckExternalEvents(cs1, 0x7476);
+        // 100D:7476 mov BP,0x75EA
+        BP = (ushort)0x75EA;
+    label_100D_7479_17549_36447:
+        CheckExternalEvents(cs1, 0x7479);
+        // 100D:7479 call near 0x6603
+        NearCall(cs1, 0x747C, unknown_100D_6603_166D3);
+    label_100D_747C_1754C_36477:
+        CheckExternalEvents(cs1, 0x747C);
+        // 100D:747C xor DX,DX
+        DX = Alu16.Xor(DX, DX);
+        // 100D:747E test word ptr DS:[0],3
+        Alu16.And(UInt16[DS, (ushort)0x0000], (ushort)0x0003);
+        // 100D:7484 jne short 0x7487
+        if (!ZeroFlag) {
+            goto label_100D_7487_17557_36481;
+        }
+    label_100D_7486_17556_38145:
+        CheckExternalEvents(cs1, 0x7486);
+        // 100D:7486 inc DX
+        DX = Alu16.Inc(DX);
+    label_100D_7487_17557_36481:
+        CheckExternalEvents(cs1, 0x7487);
+        // 100D:7487 xor CX,CX
+        CX = Alu16.Xor(CX, CX);
+        // 100D:7489 mov BP,0x762A
+        BP = (ushort)0x762A;
+        // 100D:748C call near 0x6603
+        NearCall(cs1, 0x748F, unknown_100D_6603_166D3);
+    label_100D_748F_1755F_36492:
+        CheckExternalEvents(cs1, 0x748F);
+        // 100D:748F cmp CX,DX
+        Alu16.Sub(CX, DX);
+        // 100D:7491 ja short 0x7487
+        if (!CarryFlag && !ZeroFlag) {
+            goto label_100D_7487_17557_36481;
+        }
+    label_100D_7493_17563_36495:
+        CheckExternalEvents(cs1, 0x7493);
+        // 100D:7493 push SI
+        Stack.Push16(SI);
+        // 100D:7494 push DI
+        Stack.Push16(DI);
+        // 100D:7495 call near 0x1CDA
+        NearCall(cs1, 0x7498, unknown_100D_1CDA_11DAA);
+    label_100D_7498_17568_36501:
+        CheckExternalEvents(cs1, 0x7498);
+        // 100D:7498 cmp DL,1
+        Alu8.Sub(DL, (byte)0x01);
+        // 100D:749B ja short 0x74B1
+        if (!(!CarryFlag && !ZeroFlag)) {
+            throw FailAsUntested("Unobserved conditional fallthrough at 100D:749B");
+        }
+    label_100D_74B1_17581_36504:
+        CheckExternalEvents(cs1, 0x74B1);
+        // 100D:74B1 pop DI
+        DI = Stack.Pop16();
+        // 100D:74B2 pop SI
+        SI = Stack.Pop16();
+        // 100D:74B3 jmp near 0x5D50
+        goto label_100D_5D50_15E20_34308;
     }
 
     public virtual Action unknown_100D_5F9F_1606F(int loadOffset) {
@@ -91578,6 +92930,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         return NearRet((ushort)0x0000);
     }
 
+    public virtual Action unknown_100D_6B24_16BF4(int loadOffset) {
+    label_100D_6B24_16BF4_24685:
+        CheckExternalEvents(cs1, 0x6B24);
+        // 100D:6B24 ret near
+        return NearRet((ushort)0x0000);
+    }
+
     public virtual Action unknown_100D_6BB6_16C86(int loadOffset) {
     entrydispatcher:
     label_100D_6BB6_16C86_24609:
@@ -91645,6 +93004,13 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     label_100D_71BB_1728B_25153:
         CheckExternalEvents(cs1, 0x71BB);
         // 100D:71BB ret near
+        return NearRet((ushort)0x0000);
+    }
+
+    public virtual Action unknown_100D_764C_1771C(int loadOffset) {
+    label_100D_764C_1771C_36487:
+        CheckExternalEvents(cs1, 0x764C);
+        // 100D:764C ret near
         return NearRet((ushort)0x0000);
     }
 
@@ -91775,9 +93141,17 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
     label_100D_8336_18406_29762:
         CheckExternalEvents(cs1, 0x8336);
         // 100D:8336 jne short 0x833B
-        if (!(!ZeroFlag)) {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:8336");
+        if (!ZeroFlag) {
+            goto label_100D_833B_1840B_29764;
         }
+    label_100D_8338_18408_37941:
+        CheckExternalEvents(cs1, 0x8338);
+        // 100D:8338 jmp near 0xC58A
+        if (JumpDispatcher.Jump(unknown_100D_C58A_1C65A, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     label_100D_833B_1840B_29764:
         CheckExternalEvents(cs1, 0x833B);
         // 100D:833B ret near
