@@ -1360,6 +1360,7 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         DefineFunction(cs1, 0x9306, _ => unknown_100D_0FA7_11077(0x9306), name: "unknown_entry");
         DefineFunction(cs1, 0x930B, _ => unknown_100D_0FA7_11077(0x930B), name: "unknown_entry");
         DefineFunction(cs1, 0x936F, _ => unknown_100D_0FA7_11077(0x936F), name: "unknown_entry");
+        DefineFunction(cs1, 0x9373, _ => unknown_100D_0FA7_11077(0x9373), name: "unknown_entry");
         DefineFunction(cs1, 0x9381, _ => unknown_100D_0FA7_11077(0x9381), name: "unknown_entry");
         DefineFunction(cs1, 0x93AA, _ => unknown_100D_0FA7_11077(0x93AA), name: "unknown_entry");
         DefineFunction(cs1, 0x9472, _ => unknown_100D_0FA7_11077(0x9472), name: "unknown_entry");
@@ -40845,6 +40846,12 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                     goto entrydispatcher;
                 }
                 return JumpDispatcher.RequiredJumpAsmReturn;
+            case 0x9373:
+                if (JumpDispatcher.Jump(unknown_100D_0FA7_11077, 0x9373)) {
+                    loadOffset = JumpDispatcher.NextEntryAddress;
+                    goto entrydispatcher;
+                }
+                return JumpDispatcher.RequiredJumpAsmReturn;
             default:
                 throw FailAsUntested($"Unknown near jump target 0x{((ushort)(UInt16[DS, (ushort)(SI + (sbyte)4)])):X4} at 100D:923D");
         }
@@ -40897,9 +40904,30 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
         if (!CarryFlag) {
             return unknown_100D_9281_19351(0x0000);
         }
-        else {
-            throw FailAsUntested("Unobserved conditional fallthrough at 100D:926E");
+    label_100D_9270_19340_40055:
+        CheckExternalEvents(cs1, 0x9270);
+        // 100D:9270 cmp byte ptr DS:[8],0x21
+        Alu8.Sub(UInt8[DS, (ushort)0x0008], (byte)0x21);
+        // 100D:9275 je short 0x9281
+        if (ZeroFlag) {
+            return unknown_100D_9281_19351(0x0000);
         }
+    label_100D_9277_19347_40059:
+        CheckExternalEvents(cs1, 0x9277);
+        // 100D:9277 cmp byte ptr DS:[0x002B],0
+        Alu8.Sub(UInt8[DS, (ushort)0x002B], (byte)0x00);
+        // 100D:927C jne short 0x9281
+        if (!ZeroFlag) {
+            return unknown_100D_9281_19351(0x0000);
+        }
+    label_100D_927E_1934E_40063:
+        CheckExternalEvents(cs1, 0x927E);
+        // 100D:927E jmp near 0x3F15
+        if (JumpDispatcher.Jump(unknown_100D_3F15_13FE5, 0x0000)) {
+            loadOffset = JumpDispatcher.NextEntryAddress;
+            goto entrydispatcher;
+        }
+        return JumpDispatcher.RequiredJumpAsmReturn;
     label_100D_9282_19352_37523:
         CheckExternalEvents(cs1, 0x9282);
         // 100D:9282 jmp near 0x42E9
@@ -89636,6 +89664,8 @@ public class CfgGeneratedOverrides : CSharpOverrideHelper {
                 goto label_100D_930B_193DB_33492;
             case 0x936F:
                 goto label_100D_936F_1943F_33901;
+            case 0x9373:
+                goto label_100D_9373_19443_23170;
             case 0x9381:
                 goto label_100D_9381_19451_26988;
             case 0x93AA:

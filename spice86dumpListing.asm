@@ -12789,6 +12789,11 @@
 100D:9268 jne short 0x9281
 100D:926A cmp BX,0x0098
 100D:926E jae short 0x9281
+100D:9270 cmp byte ptr DS:[8],0x21
+100D:9275 je short 0x9281
+100D:9277 cmp byte ptr DS:[0x002B],0
+100D:927C jne short 0x9281
+100D:927E jmp near 0x3F15
 100D:9281 ret near
 100D:9282 jmp near 0x42E9
 100D:9285 cmp BX,0x0098
