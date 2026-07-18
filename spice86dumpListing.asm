@@ -5698,6 +5698,8 @@
 100D:41B5 call near 0x41CC
 100D:41B8 sub byte ptr DS:[0x4726],0x20
 100D:41BD jne short 0x4181
+100D:41BF mov byte ptr DS:[0x46D9],2
+100D:41C4 ret near
 100D:41C5 mov byte ptr DS:[0x4726],0
 100D:41CA xor AL,AL
 100D:41CC mov byte ptr DS:[0x21FD],AL
@@ -6343,6 +6345,13 @@
 100D:48D1 dec byte ptr DS:[0x46E0]
 100D:48D5 mov byte ptr DS:[0x4732],0
 100D:48DA jmp near 0x2D74
+100D:48DD mov BP,0xC4CD
+100D:48E0 call near 0xC8FB
+100D:48E3 jmp short 0x48D1
+100D:48E5 cmp AL,9
+100D:48E7 je short 0x48DD
+100D:48E9 mov byte ptr DS:[0x4731],0xFF
+100D:48EE call near 0xC07C
 100D:4913 mov AX,0x000E
 100D:4916 call near 0xCA1B
 100D:4919 jmp near 0x388D
@@ -6993,6 +7002,9 @@
 100D:5027 cmp byte ptr DS:[0x0023],0
 100D:502C pop CX
 100D:502D loope 0x500C
+100D:502F je short 0x4FC3
+100D:5031 add byte ptr DS:[0x4726],0x20
+100D:5036 jmp near 0x2E52
 100D:5039 pop CX
 100D:503A jmp short 0x4FC3
 100D:503C mov byte ptr DS:[0x00FD],0
