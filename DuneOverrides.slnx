@@ -2,6 +2,9 @@
   <Folder Name="/GeneratedProject/">
     <Project Path="GeneratedProject/Spice86.Generated.csproj" />
   </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/UnHsq/UnHsq.csproj" />
+  </Folder>
   <Folder Name="/Spice86/" />
   <Folder Name="/Spice86/src/">
     <Project Path="Spice86/src/Spice86.Core/Spice86.Core.csproj" />
