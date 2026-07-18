@@ -1,0 +1,27844 @@
+100D:0000 mov AX,0xDD1D
+100D:0003 call near 0xE4AD
+100D:0006 call near 0xE594
+100D:0009 call near 0x00B0
+100D:000C sti
+100D:000D call near 0x0580
+100D:0010 call near 0x0309
+100D:0013 call near 0x021C
+100D:0016 call near 0xAEB7
+100D:0019 mov byte ptr DS:[0x3810],0
+100D:001E mov word ptr DS:[2],2
+100D:0024 call near 0x0083
+100D:0027 mov CL,0xFF
+100D:0029 call near 0xB389
+100D:002C call near 0x1860
+100D:002F mov byte ptr DS:[0xCE80],0xFF
+100D:0034 call near 0xB2BE
+100D:0037 call near 0xD815
+100D:003A cld
+100D:003B xor AX,AX
+100D:003D int 0x33
+100D:003F mov AX,0x1F58
+100D:0042 mov DS,AX
+100D:0044 call near 0xE8D5
+100D:0047 cmp word ptr DS:[0x3977],0
+100D:004C je short 0x0056
+100D:004E call far dword ptr DS:[0x3975]
+100D:0052 call far dword ptr DS:[0x398D]
+100D:0056 mov AX,3
+100D:0059 int 0x10
+100D:005B mov SI,word ptr DS:[0x3CBC]
+100D:005F or SI,SI
+100D:0061 je short 0x006E
+100D:006E mov AX,0x0E0D
+100D:0071 int 0x10
+100D:0073 mov AX,0x0E0A
+100D:0076 int 0x10
+100D:0078 mov DL,0xFF
+100D:007A mov AX,0x0C06
+100D:007D int 0x21
+100D:007F mov AH,0x4C
+100D:0081 int 0x21
+100D:0083 call near 0xCFA0
+100D:0086 call near 0xC07C
+100D:0089 call near 0xC0AD
+100D:008C mov SI,0x1AE4
+100D:008F mov BP,0xD1EF
+100D:0092 call near 0xC097
+100D:0095 jmp near 0x1797
+100D:0098 mov CX,word ptr ES:[DI]
+100D:009B shr CX,1
+100D:009D mov BX,DI
+100D:009F mov AX,word ptr ES:[DI]
+100D:00A2 add AX,BX
+100D:00A4 stos word ptr ES:[DI],AX
+100D:00A5 loop 0x009F
+100D:00A7 ret near
+100D:00B0 call near 0x00D1
+100D:00B3 call near 0x0169
+100D:00B6 call near 0xDA53
+100D:00B9 call near 0xB17A
+100D:00BC call near 0xB17A
+100D:00BF xor AX,AX
+100D:00C1 mov ES,AX
+100D:00C3 mov AX,word ptr ES:[0x046C]
+100D:00C7 mov word ptr DS:[0xD824],AX
+100D:00CA mov word ptr DS:[0xD826],AX
+100D:00CD mov word ptr DS:[0xD828],AX
+100D:00D0 ret near
+100D:00D1 push DS
+100D:00D2 pop ES
+100D:00D3 mov DI,0x4948
+100D:00D6 mov SI,0x00BA
+100D:00D9 call near 0xF0B9
+100D:00DC mov CX,0x018C
+100D:00DF mov SI,DI
+100D:00E1 lods AX,word ptr DS:[SI]
+100D:00E2 xchg AH,AL
+100D:00E4 stos word ptr ES:[DI],AX
+100D:00E5 loop 0x00E1
+100D:00E7 mov DI,0x4880
+100D:00EA mov CX,0x0063
+100D:00ED mov SI,0x494A
+100D:00F0 xor AX,AX
+100D:00F2 mov DX,1
+100D:00F5 mov BX,word ptr DS:[SI]
+100D:00F7 shl BX,1
+100D:00F9 div BX
+100D:00FB cmp word ptr DS:[SI],DX
+100D:00FD adc AX,0
+100D:0100 stos word ptr ES:[DI],AX
+100D:0101 add SI,8
+100D:0104 loop 0x00F0
+100D:0106 mov SI,0x00BF
+100D:0109 call near 0xF0B9
+100D:010C mov AX,DI
+100D:010E add AX,0x62FC
+100D:0111 mov word ptr DS:[0xDCFE],AX
+100D:0114 mov word ptr DS:[0xDD00],ES
+100D:0118 push DS
+100D:0119 pop ES
+100D:011A mov DI,0xAA76
+100D:011D mov SI,0x00BD
+100D:0120 call near 0xF0A0
+100D:0123 call near 0x0098
+100D:0126 mov SI,0x00BC
+100D:0129 call near 0xF0B9
+100D:012C mov word ptr DS:[0xAA72],DI
+100D:0130 mov word ptr DS:[0xAA74],ES
+100D:0134 call near 0x0098
+100D:0137 les AX,word ptr DS:[0x39B7]
+100D:013B mov word ptr DS:[0x47AC],AX
+100D:013E mov word ptr DS:[0x47AE],ES
+100D:0142 mov CX,0x1D4C
+100D:0145 call near 0xF0FF
+100D:0148 les AX,word ptr DS:[0x39B7]
+100D:014C mov word ptr DS:[0x47B0],AX
+100D:014F mov word ptr DS:[0x47B2],ES
+100D:0153 mov CX,0xADD4
+100D:0156 call near 0xF0FF
+100D:0159 call near 0xCFB9
+100D:015C jmp near 0xC137
+100D:0169 mov AX,0x003A
+100D:016C call near 0xC13E
+100D:016F push DS
+100D:0170 pop ES
+100D:0171 mov DI,0x4C60
+100D:0174 push DI
+100D:0175 mov AX,7
+100D:0178 mov CX,0x0100
+100D:017B rep stos word ptr ES:[DI],AX
+100D:017D pop DI
+100D:017E les SI,word ptr DS:[0xDBB0]
+100D:0182 mov CX,0xC5F9
+100D:0185 lods AL,byte ptr ES:[SI]
+100D:0187 mov BX,AX
+100D:0189 shl BX,1
+100D:018B inc word ptr DS:[BX+DI]
+100D:018D loop 0x0185
+100D:018F mov SI,0x0100
+100D:0192 mov DX,word ptr DS:[SI+2]
+100D:0195 mov BX,word ptr DS:[SI+4]
+100D:0198 call near 0xB5C5
+100D:019B mov word ptr DS:[SI+2],DX
+100D:019E mov word ptr DS:[SI+6],DI
+100D:01A1 or byte ptr ES:[DI],0x40
+100D:01A5 mov ES,word ptr DS:[0xDBB2]
+100D:01A9 mov AL,byte ptr ES:[DI]
+100D:01AC mov byte ptr DS:[SI+0x10],AL
+100D:01AF xor BX,BX
+100D:01B1 mov BL,AL
+100D:01B3 shl BX,1
+100D:01B5 mov AX,word ptr DS:[BX+0x4C60]
+100D:01B9 mov CL,4
+100D:01BB shr AX,CL
+100D:01BD mov byte ptr DS:[SI+0x11],AL
+100D:01C0 add SI,0x001C
+100D:01C3 cmp byte ptr DS:[SI],0xFF
+100D:01C6 jne short 0x0192
+100D:01C8 mov DI,0x0100
+100D:01CB mov BP,0x01E0
+100D:01CE mov DX,word ptr DS:[DI+2]
+100D:01D1 mov BX,word ptr DS:[DI+4]
+100D:01D4 call near 0x6603
+100D:01D7 add DI,0x001C
+100D:01DA cmp byte ptr DS:[DI],0xFF
+100D:01DD jne short 0x01CB
+100D:01DF ret near
+100D:01E0 mov word ptr DS:[SI+4],DI
+100D:01E3 mov word ptr DS:[SI+6],DX
+100D:01E6 mov word ptr DS:[SI+8],BX
+100D:01E9 mov AL,byte ptr DS:[DI]
+100D:01EB mov AH,byte ptr DS:[SI+0x12]
+100D:01EE and AX,0x700F
+100D:01F1 cmp AL,3
+100D:01F3 jbe short 0x0206
+100D:01F5 xor AH,0x80
+100D:01F8 cmp AL,5
+100D:01FA jbe short 0x0206
+100D:01FC xor AH,0x80
+100D:01FF cmp AL,9
+100D:0201 jbe short 0x0206
+100D:0203 xor AH,0x80
+100D:0206 or AL,AH
+100D:0208 mov byte ptr DS:[SI+0x12],AL
+100D:020B ret near
+100D:021C mov byte ptr DS:[0x289E],0x8C
+100D:0221 mov byte ptr DS:[0x28E7],1
+100D:0226 je short 0x0292
+100D:0228 call near 0xAD50
+100D:022B mov AX,0x03E8
+100D:022E mov SI,1
+100D:0231 push SI
+100D:0232 mov BP,0x02C1
+100D:0235 call near 0xC102
+100D:0238 call near 0xADE0
+100D:023B pop AX
+100D:023C push AX
+100D:023D call near 0xAB4F
+100D:0240 pop SI
+100D:0241 call near 0xDE54
+100D:0244 je short 0x0292
+100D:0246 push SI
+100D:0247 mov AX,0x0320
+100D:024A mov AX,0x0FA0
+100D:024D call near 0xDDB0
+100D:0250 pushf
+100D:0251 call near 0x0911
+100D:0254 call near 0xAC14
+100D:0257 call near 0xADED
+100D:025A popf
+100D:025B pop SI
+100D:025C je short 0x0292
+100D:025E inc SI
+100D:025F cmp SI,8
+100D:0262 jbe short 0x0231
+100D:0264 mov BP,0x0301
+100D:0267 mov AL,0x10
+100D:0269 call near 0xC108
+100D:026C mov AX,0x00C8
+100D:026F call near 0xDDB0
+100D:0272 mov BL,0x0C
+100D:0274 call near 0x38F1
+100D:0277 mov byte ptr DS:[0x46DF],1
+100D:027C mov AX,0x04B0
+100D:027F call near 0xDDB0
+100D:0282 call near 0x3950
+100D:0285 mov byte ptr DS:[0x46DF],0
+100D:028A mov BP,0xC0AD
+100D:028D mov AL,0x10
+100D:028F call near 0xC108
+100D:0292 mov ES,word ptr DS:[0xDBD8]
+100D:0296 call far dword ptr DS:[0x38D5]
+100D:029A call near 0xAC14
+100D:029D mov byte ptr DS:[0x227D],0
+100D:02A2 mov byte ptr DS:[0x00C5],0
+100D:02A7 call near 0x0911
+100D:02AA mov byte ptr DS:[0x28E7],0
+100D:02AF mov byte ptr DS:[0xDBE6],6
+100D:02B4 inc byte ptr DS:[0x0115]
+100D:02B8 mov DX,0x200A
+100D:02BB mov BX,0x0180
+100D:02BE jmp near 0x08F0
+100D:02C1 push SI
+100D:02C2 call near 0xC0AD
+100D:02C5 add SI,SI
+100D:02C7 mov BP,word ptr CS:[SI+0x020A]
+100D:02CC call near BP
+100D:02CE pop AX
+100D:02CF add AX,0x0117
+100D:02D2 call near 0xD068
+100D:02D5 call near 0x9901
+100D:02D8 call near 0x88AF
+100D:02DB jmp near 0x9901
+100D:02DE xor CX,CX
+100D:02E0 jmp near 0x0A44
+100D:02E3 mov CX,0x0020
+100D:02E6 call near 0x02E0
+100D:02E9 call near 0xB8A7
+100D:02EC call near 0xB85A
+100D:02EF mov AX,0x002C
+100D:02F2 call near 0xC13E
+100D:02F5 jmp near 0xB8EA
+100D:02F8 jmp near 0x07EE
+100D:02FB jmp near 0x09AD
+100D:02FE jmp near 0x076A
+100D:0301 call near 0xC0AD
+100D:0304 mov AL,0x1B
+100D:0306 jmp near 0xC2F2
+100D:0309 je short 0x0331
+100D:030B call near 0xDE4E
+100D:030E call near 0xC07C
+100D:0311 call near 0xC0AD
+100D:0314 mov AX,0x0018
+100D:0317 call far dword ptr DS:[0x3939]
+100D:031B mov BP,0x09EF
+100D:031E call near 0xC102
+100D:0321 call near 0xAD50
+100D:0324 call near 0x0A16
+100D:0327 call near 0xCC85
+100D:032A jne short 0x0331
+100D:032C call near 0xDD63
+100D:032F jae short 0x0324
+100D:0331 pushf
+100D:0332 call near 0x0579
+100D:0335 popf
+100D:0336 ret near
+100D:0579 xor AX,AX
+100D:057B call far dword ptr DS:[0x3939]
+100D:057F ret near
+100D:0580 call near 0xDE54
+100D:0583 je short 0x05FD
+100D:0585 call far dword ptr DS:[0x3959]
+100D:0589 call near 0xAEB7
+100D:058C mov SI,0x0337
+100D:058F call near 0x0945
+100D:0592 mov AX,0x0018
+100D:0595 call far dword ptr DS:[0x3939]
+100D:0599 call near 0x093F
+100D:059C mov BX,AX
+100D:059E inc AX
+100D:059F jne short 0x05A3
+100D:05A1 jmp short 0x0580
+100D:05A3 call near 0xDE0C
+100D:05A6 jb short 0x05FD
+100D:05A8 call near 0x0911
+100D:05AB call far dword ptr DS:[0x3959]
+100D:05AF call near 0x093F
+100D:05B2 mov BP,AX
+100D:05B4 call near 0xC097
+100D:05B7 and byte ptr DS:[0x47D1],0x7F
+100D:05BC call near 0x39E6
+100D:05BF call near 0x093F
+100D:05C2 mov BX,AX
+100D:05C4 call near 0xDE0C
+100D:05C7 jb short 0x05FD
+100D:05C9 call near 0x093F
+100D:05CC or AX,AX
+100D:05CE js short 0x05DC
+100D:05D0 mov BP,0x0F66
+100D:05D3 call near 0xC108
+100D:05D6 call near 0xC0F4
+100D:05D9 call near 0x3A7C
+100D:05DC call near 0xC07C
+100D:05DF or byte ptr DS:[0x47D1],0x80
+100D:05E4 call near 0xDD63
+100D:05E7 jb short 0x05FD
+100D:05E9 call near 0x093F
+100D:05EC clc
+100D:05ED call near AX
+100D:05EF jb short 0x05FD
+100D:05F1 call near 0x093F
+100D:05F4 or AX,AX
+100D:05F6 je short 0x0592
+100D:05F8 call near 0xDDF0
+100D:05FB jae short 0x0592
+100D:05FD pushf
+100D:05FE call near 0x9985
+100D:0601 mov ES,word ptr DS:[0xDBD8]
+100D:0605 call far dword ptr DS:[0x38D5]
+100D:0609 popf
+100D:060A pushf
+100D:060B call near 0x0579
+100D:060E call near 0xCA01
+100D:0611 mov word ptr DS:[2],2
+100D:0617 call near 0x0911
+100D:061A popf
+100D:061B ret near
+100D:061C call near 0xAD57
+100D:061F mov AX,0x0015
+100D:0622 jmp near 0xCA1B
+100D:0625 call near 0xC07C
+100D:0628 call near 0xDD63
+100D:062B jb short 0x064C
+100D:062D call near 0xC9F4
+100D:0630 je short 0x0628
+100D:0632 call near 0xC4CD
+100D:0635 cmp word ptr DS:[0xDBCE],8
+100D:063A jb short 0x0646
+100D:063C cmp byte ptr DS:[0xDBCB],0
+100D:0641 je short 0x0646
+100D:0643 call near 0xAEB7
+100D:0646 call near 0xCC85
+100D:0649 je short 0x0628
+100D:064B clc
+100D:064C ret near
+100D:064D mov AL,0x0A
+100D:064F call near 0xAD95
+100D:0652 mov AX,0x0016
+100D:0655 jmp near 0xCA1B
+100D:0658 call near 0xC0AD
+100D:065B mov AX,0x0017
+100D:065E jmp near 0xCA1B
+100D:0661 call near 0xC07C
+100D:0664 call near 0xDD63
+100D:0667 jb short 0x064C
+100D:0669 call near 0xC9F4
+100D:066C je short 0x0664
+100D:066E call near 0xC4CD
+100D:0671 call near 0xCC85
+100D:0674 je short 0x0664
+100D:0676 clc
+100D:0677 ret near
+100D:0678 call near 0x0579
+100D:067B call near 0xC0AD
+100D:067E mov AX,0x0018
+100D:0681 jmp near 0xCA1B
+100D:0684 jmp short 0x06BD
+100D:069E call near 0xC07C
+100D:06A1 call near 0x0579
+100D:06A4 mov AX,0x000F
+100D:06A7 jmp near 0xCA1B
+100D:06AA call near 0x0579
+100D:06AD call near 0xC08E
+100D:06B0 call near 0xC9E8
+100D:06B3 jb short 0x06BC
+100D:06B5 cmp word ptr DS:[0xDBE8],0x0056
+100D:06BA jne short 0x06B0
+100D:06BC ret near
+100D:06BD call near 0x0579
+100D:06C0 call near 0xC08E
+100D:06C3 call near 0xC9E8
+100D:06C6 jb short 0x06BC
+100D:06C8 call near 0xCC85
+100D:06CB je short 0x06C3
+100D:06CD ret near
+100D:06CE mov AX,0x0010
+100D:06D1 jmp short 0x06F3
+100D:06D3 mov AX,0x0011
+100D:06D6 jmp short 0x06F3
+100D:06D8 call near 0xAC14
+100D:06DB mov AL,1
+100D:06DD mov byte ptr DS:[0x46DF],AL
+100D:06E0 mov BL,0x12
+100D:06E2 call near 0x38A2
+100D:06E5 mov AX,0x0012
+100D:06E8 jmp short 0x06F3
+100D:06EA mov word ptr DS:[4],2
+100D:06F0 mov AX,0x0013
+100D:06F3 add word ptr DS:[0xDBDA],0x01E0
+100D:06F9 jmp near 0xCA1B
+100D:06FC mov byte ptr DS:[0x46D7],0x3F
+100D:0701 call near 0x3901
+100D:0704 xor BP,BP
+100D:0706 mov SI,0x070C
+100D:0709 call near 0xDA25
+100D:070C call near 0xCA60
+100D:070F clc
+100D:0710 ret near
+100D:0711 add word ptr DS:[0xDBDA],0x01E0
+100D:0717 mov AX,0x000E
+100D:071A jmp near 0xCA1B
+100D:071D mov AL,8
+100D:071F call near 0xAB15
+100D:0722 jmp short 0x072C
+100D:0724 call near 0x4B16
+100D:0727 call near 0x4937
+100D:072A jne short 0x0736
+100D:072C call near 0xC9F4
+100D:072F jne short 0x0724
+100D:0731 call near 0xDD63
+100D:0734 ja short 0x0724
+100D:0736 ret near
+100D:0737 mov AL,0x56
+100D:0739 jmp near 0xC2F2
+100D:073C mov AL,0x57
+100D:073E jmp short 0x0739
+100D:0740 call near 0xC0AD
+100D:0743 mov AL,0x58
+100D:0745 jmp short 0x0739
+100D:0747 mov AL,0x59
+100D:0749 jmp short 0x0739
+100D:074B call near 0xC0AD
+100D:074E mov AL,0x5A
+100D:0750 jmp short 0x0739
+100D:0752 mov AL,0x5B
+100D:0754 jmp short 0x0739
+100D:0756 mov AL,0x5C
+100D:0758 jmp short 0x0739
+100D:075A mov AL,0x5D
+100D:075C jmp short 0x0739
+100D:075E mov AL,0x5E
+100D:0760 jmp short 0x0739
+100D:0762 mov AL,0x5F
+100D:0764 jmp short 0x0739
+100D:0766 mov AL,0x60
+100D:0768 jmp short 0x0739
+100D:076A call near 0xC0AD
+100D:076D mov AL,0x61
+100D:076F jmp short 0x0739
+100D:0771 mov DX,0x2004
+100D:0774 call near 0x0978
+100D:0777 mov AL,1
+100D:0779 jmp near 0x099D
+100D:077C call near 0xC0AD
+100D:077F mov BX,0x1080
+100D:0782 mov DX,0x0803
+100D:0785 jmp near 0x0981
+100D:0788 mov AL,7
+100D:078A jmp near 0x099D
+100D:078D call near 0xC0F4
+100D:0790 mov byte ptr DS:[0xDBE6],6
+100D:0795 call near 0xC868
+100D:0798 mov word ptr DS:[0x4780],0x0190
+100D:079E call near 0x9EFD
+100D:07A1 clc
+100D:07A2 ret near
+100D:07A3 mov AX,0x002E
+100D:07A6 call near 0xC13E
+100D:07A9 mov SI,0x1500
+100D:07AC call near 0xC21B
+100D:07AF mov AX,1
+100D:07B2 mov DX,0x0054
+100D:07B5 mov BX,0x000B
+100D:07B8 call near 0xC22F
+100D:07BB call near 0xC412
+100D:07BE mov AL,6
+100D:07C0 mov BP,0x0012
+100D:07C3 jmp near 0x099D
+100D:07C6 mov BX,0x1080
+100D:07C9 mov DX,0x0802
+100D:07CC mov word ptr DS:[0x0012],0x0100
+100D:07D2 call near 0x0981
+100D:07D5 mov word ptr DS:[0x0012],0
+100D:07DB mov AL,5
+100D:07DD jmp near 0x099D
+100D:07E0 mov AL,4
+100D:07E2 call near 0xABDB
+100D:07E5 mov DX,0x0804
+100D:07E8 mov BX,0x1080
+100D:07EB jmp near 0x0981
+100D:07EE mov AX,0x0030
+100D:07F1 call near 0xC13E
+100D:07F4 mov SI,0x1526
+100D:07F7 call near 0xC21B
+100D:07FA jmp near 0x0960
+100D:07FD call near 0xC0AD
+100D:0800 mov BL,8
+100D:0802 call near 0x0820
+100D:0805 mov CX,0x00F0
+100D:0808 mov BX,0x0180
+100D:080B call far dword ptr DS:[0x38BD]
+100D:080F mov byte ptr DS:[0x46D7],0
+100D:0814 mov AX,0x002E
+100D:0817 call near 0xC13E
+100D:081A mov SI,0x1500
+100D:081D jmp near 0xC21B
+100D:0820 mov AX,0x002E
+100D:0823 jmp near 0x3978
+100D:0826 cmp byte ptr DS:[0x46D7],0
+100D:082B jne short 0x0854
+100D:082D mov AL,byte ptr DS:[0x46D6]
+100D:0830 inc AX
+100D:0831 cmp AL,0x0B
+100D:0833 je short 0x0857
+100D:0835 cmp AL,0x0E
+100D:0837 je short 0x0867
+100D:0839 mov AH,0x0A
+100D:083B cmp AL,0x0D
+100D:083D je short 0x0841
+100D:083F mov AH,0x1E
+100D:0841 mov byte ptr DS:[0x46D7],AH
+100D:0845 mov BL,AL
+100D:0847 call near 0x0820
+100D:084A mov CX,0x00F0
+100D:084D mov BX,0x0180
+100D:0850 call far dword ptr DS:[0x394D]
+100D:0854 jmp near 0x391D
+100D:0857 mov AX,9
+100D:085A jmp near 0xC13E
+100D:085D mov SI,0x0826
+100D:0860 mov BP,9
+100D:0863 call near 0xDA25
+100D:0866 clc
+100D:0867 ret near
+100D:0868 mov BL,0x0B
+100D:086A call near 0x0802
+100D:086D mov AX,7
+100D:0870 mov DX,0x0013
+100D:0873 mov BX,0x004A
+100D:0876 call near 0xC22F
+100D:0879 clc
+100D:087A ret near
+100D:087B mov SI,0x0826
+100D:087E mov BP,0x0010
+100D:0881 call near 0xDA25
+100D:0884 clc
+100D:0885 ret near
+100D:0886 mov AX,0x0030
+100D:0889 call near 0xC13E
+100D:088C mov SI,0x1470
+100D:088F mov AL,0xDE
+100D:0891 mov ES,word ptr DS:[0xDBDA]
+100D:0895 call far dword ptr DS:[0x38DD]
+100D:0899 mov SI,0x154E
+100D:089C call near 0xC21B
+100D:089F call near 0x5BA8
+100D:08A2 mov SI,0x155C
+100D:08A5 call near 0xC32F
+100D:08A8 call near 0xC412
+100D:08AB mov AL,0x0A
+100D:08AD mov DX,0x003A
+100D:08B0 call near 0x09C7
+100D:08B3 jmp near 0x978E
+100D:08B6 mov AX,0x0030
+100D:08B9 call near 0xC13E
+100D:08BC call near 0xC412
+100D:08BF call near 0x5BA8
+100D:08C2 mov DX,0xFFA0
+100D:08C5 push DX
+100D:08C6 call near 0xC43E
+100D:08C9 pop DX
+100D:08CA mov BX,0x000D
+100D:08CD mov AX,5
+100D:08D0 call near 0xC305
+100D:08D3 mov AX,6
+100D:08D6 call near 0xC305
+100D:08D9 push DX
+100D:08DA call near 0xC4DD
+100D:08DD pop DX
+100D:08DE add DX,0x0020
+100D:08E1 jle short 0x08C5
+100D:08E3 clc
+100D:08E4 ret near
+100D:08F0 xor AL,AL
+100D:08F2 mov byte ptr DS:[0x47A4],AL
+100D:08F5 mov byte ptr DS:[0x46DF],AL
+100D:08F8 mov word ptr DS:[4],DX
+100D:08FC mov word ptr DS:[6],BX
+100D:0900 mov byte ptr DS:[8],DH
+100D:0904 mov AL,0x1C
+100D:0906 mul BH
+100D:0908 add AX,0x00E4
+100D:090B mov word ptr DS:[0x114E],AX
+100D:090E jmp near 0x2D74
+100D:0911 call near 0x39E6
+100D:0914 call near 0xB930
+100D:0917 call near 0x0B21
+100D:091A call near 0x9985
+100D:091D call near 0x98E6
+100D:0920 mov byte ptr DS:[0x22E3],1
+100D:0925 mov byte ptr DS:[0x46D7],0
+100D:092A mov SI,0x070C
+100D:092D call near 0xDA5F
+100D:0930 mov SI,0x3916
+100D:0933 call near 0xDA5F
+100D:0936 call near 0x0A3E
+100D:0939 mov SI,0x0826
+100D:093C jmp near 0xDA5F
+100D:093F mov SI,word ptr DS:[0x4854]
+100D:0943 lods AX,word ptr CS:[SI]
+100D:0945 mov word ptr DS:[0x4854],SI
+100D:0949 ret near
+100D:094A call near 0x38B4
+100D:094D mov AX,0x002D
+100D:0950 call near 0xC13E
+100D:0953 xor AX,AX
+100D:0955 xor DX,DX
+100D:0957 mov BX,0x003C
+100D:095A jmp near 0xC22F
+100D:0960 call near 0xC412
+100D:0963 xor DX,DX
+100D:0965 mov AL,0x2D
+100D:0967 call near 0x09C7
+100D:096A mov byte ptr DS:[0x478C],1
+100D:096F jmp near 0x978E
+100D:0972 call near 0xC0AD
+100D:0975 mov DX,0x2002
+100D:0978 mov word ptr DS:[0x0012],0
+100D:097E mov BX,0x0180
+100D:0981 call near 0x08F0
+100D:0984 call near 0x37B2
+100D:0987 jmp near 0xC412
+100D:098A mov word ptr DS:[0x0012],2
+100D:0990 mov DX,0x2004
+100D:0993 jmp short 0x097E
+100D:0995 mov DX,0x200A
+100D:0998 call near 0x0978
+100D:099B xor AL,AL
+100D:099D xor DX,DX
+100D:099F call near 0x09C7
+100D:09A2 jmp near 0x978E
+100D:09A5 call near 0xC0AD
+100D:09A8 mov AL,0x62
+100D:09AA jmp near 0xC2F2
+100D:09AD mov AX,0x0030
+100D:09B0 call near 0xC13E
+100D:09B3 mov SI,0x153A
+100D:09B6 call near 0xC21B
+100D:09B9 call near 0xC412
+100D:09BC mov AL,9
+100D:09BE mov DX,0x0052
+100D:09C1 call near 0x09C7
+100D:09C4 jmp near 0x978E
+100D:09C7 push DX
+100D:09C8 xor AH,AH
+100D:09CA mov word ptr DS:[0x47C4],AX
+100D:09CD call near 0x91A0
+100D:09D0 mov byte ptr DS:[0x478C],0x1E
+100D:09D5 mov DI,0x1BF0
+100D:09D8 pop AX
+100D:09D9 cmp word ptr DS:[DI],AX
+100D:09DB jae short 0x09EE
+100D:09DD add word ptr DS:[DI],AX
+100D:09DF add word ptr DS:[DI+4],AX
+100D:09E2 cmp word ptr DS:[DI+4],0x0140
+100D:09E7 jle short 0x09EE
+100D:09EE ret near
+100D:09EF mov AX,0x0014
+100D:09F2 jmp near 0xCA1B
+100D:0A16 push word ptr DS:[0xDBDA]
+100D:0A1A call near 0x0A23
+100D:0A1D pop word ptr DS:[0xDBDA]
+100D:0A21 clc
+100D:0A22 ret near
+100D:0A23 cmp byte ptr DS:[0x227D],0
+100D:0A28 je short 0x0A30
+100D:0A2A call near 0xC08E
+100D:0A2D jmp near 0xCA60
+100D:0A3E mov SI,0x0A16
+100D:0A41 jmp near 0xDA5F
+100D:0A44 mov AX,0x002C
+100D:0A47 call near 0xC13E
+100D:0A4A call near 0x5BA8
+100D:0A4D call near 0xC07C
+100D:0A50 push CX
+100D:0A51 call near 0xC432
+100D:0A54 pop AX
+100D:0A55 push AX
+100D:0A56 mul AL
+100D:0A58 shr AX,1
+100D:0A5A mov DX,AX
+100D:0A5C neg DX
+100D:0A5E push DX
+100D:0A5F xor BX,BX
+100D:0A61 xor AX,AX
+100D:0A63 call near 0xC305
+100D:0A66 mov AX,1
+100D:0A69 add DX,0x0130
+100D:0A6D call near 0xC305
+100D:0A70 mov AX,2
+100D:0A73 add DX,0x0130
+100D:0A77 call near 0xC30D
+100D:0A7A pop DX
+100D:0A7B push DX
+100D:0A7C shl DX,1
+100D:0A7E push DX
+100D:0A7F shl DX,1
+100D:0A81 add DX,0x0045
+100D:0A84 mov AX,0x0024
+100D:0A87 mov BX,0x004E
+100D:0A8A call near 0xC343
+100D:0A8D pop DX
+100D:0A8E pop CX
+100D:0A8F pop AX
+100D:0A90 push AX
+100D:0A91 push CX
+100D:0A92 add DX,0x03E2
+100D:0A96 cmp AX,0x0014
+100D:0A99 ja short 0x0AA5
+100D:0A9B mov DX,AX
+100D:0A9D shl DX,1
+100D:0A9F shl DX,1
+100D:0AA1 add DX,0x00F2
+100D:0AA5 shr AX,1
+100D:0AA7 shr AX,1
+100D:0AA9 add AX,0x0025
+100D:0AAC mov BX,0x0067
+100D:0AAF call near 0xC343
+100D:0AB2 pop DX
+100D:0AB3 pop AX
+100D:0AB4 neg DX
+100D:0AB6 shr DX,1
+100D:0AB8 shr DX,1
+100D:0ABA shr DX,1
+100D:0ABC shr DX,1
+100D:0ABE add DX,0x0080
+100D:0AC2 add AL,3
+100D:0AC4 mov BX,0x004F
+100D:0AC7 call near 0xC343
+100D:0ACA jmp near 0xC4DD
+100D:0ACD mov word ptr DS:[0x2786],0xC827
+100D:0AD3 mov byte ptr CS:[0xC13C],0x2B
+100D:0AD9 call near 0xC13B
+100D:0ADC call near 0xC07C
+100D:0ADF mov SI,0x1582
+100D:0AE2 mov ES,word ptr DS:[0xDBDA]
+100D:0AE6 mov AX,2
+100D:0AE9 call near 0xC370
+100D:0AEC mov SI,0x158A
+100D:0AEF mov AX,3
+100D:0AF2 call near 0xC370
+100D:0AF5 mov SI,0x11DD
+100D:0AF8 call near 0xC21B
+100D:0AFB call near 0x5BA0
+100D:0AFE mov DI,0x4856
+100D:0B01 xor AX,AX
+100D:0B03 push DS
+100D:0B04 pop ES
+100D:0B05 mov CX,8
+100D:0B08 rep stos byte ptr ES:[DI],AL
+100D:0B0A mov SI,0x0B45
+100D:0B0D call near 0xDA5F
+100D:0B10 mov SI,0x0B45
+100D:0B13 mov BP,3
+100D:0B16 call near 0xDA25
+100D:0B19 call near 0xC412
+100D:0B1C mov AL,3
+100D:0B1E jmp near 0xAB15
+100D:0B21 call near 0xAC30
+100D:0B24 mov byte ptr CS:[0xC13C],0x25
+100D:0B2A mov SI,0x0B45
+100D:0B2D call near 0xDA5F
+100D:0B30 cmp byte ptr DS:[0x227D],0
+100D:0B35 jne short 0x0B3E
+100D:0B37 cmp byte ptr DS:[0x00FB],0
+100D:0B3C js short 0x0B44
+100D:0B3E mov word ptr DS:[0x3CBE],0
+100D:0B44 ret near
+100D:0B45 mov SI,0x4856
+100D:0B48 dec byte ptr DS:[SI+7]
+100D:0B4B cmp byte ptr DS:[0x00EA],0
+100D:0B50 jg short 0x0B5F
+100D:0B52 mov BL,byte ptr DS:[SI+7]
+100D:0B55 cmp BL,0x10
+100D:0B58 ja short 0x0B5F
+100D:0B5A push SI
+100D:0B5B call near 0x0D0D
+100D:0B5E pop SI
+100D:0B5F mov AX,word ptr DS:[0x479E]
+100D:0B62 or AL,byte ptr DS:[0x46EB]
+100D:0B66 or AX,AX
+100D:0B68 je short 0x0B6B
+100D:0B6A ret near
+100D:0B6B dec word ptr DS:[SI+4]
+100D:0B6E jns short 0x0BB7
+100D:0B70 dec byte ptr DS:[SI+6]
+100D:0B73 jns short 0x0B86
+100D:0B75 call near 0xE3CC
+100D:0B78 and AL,0x7F
+100D:0B7A mov byte ptr DS:[SI+6],AL
+100D:0B7D mov AL,AH
+100D:0B7F xor AH,AH
+100D:0B81 mov word ptr DS:[SI+4],AX
+100D:0B84 jmp short 0x0BB7
+100D:0B86 call near 0xE3CC
+100D:0B89 mov BX,AX
+100D:0B8B mov DX,AX
+100D:0B8D and BX,0x007F
+100D:0B90 cmp BL,0x60
+100D:0B93 jae short 0x0BB7
+100D:0B95 cmp BL,0x30
+100D:0B98 jb short 0x0BB7
+100D:0B9A xchg DL,DH
+100D:0B9C rol DH,1
+100D:0B9E and DX,0x01FF
+100D:0BA2 cmp DX,0x0140
+100D:0BA6 jae short 0x0BB7
+100D:0BA8 mov AX,BX
+100D:0BAA and AX,7
+100D:0BAD add AX,0x001C
+100D:0BB0 push SI
+100D:0BB1 xor SI,SI
+100D:0BB3 call near 0xC60B
+100D:0BB6 pop SI
+100D:0BB7 dec byte ptr DS:[SI]
+100D:0BB9 jns short 0x0BBE
+100D:0BBB call near 0x0C3B
+100D:0BBE mov DI,0x3CC0
+100D:0BC1 mov CX,word ptr DS:[DI-2]
+100D:0BC4 jcxz short 0x0C3A
+100D:0BC6 mov AX,word ptr DS:[DI+8]
+100D:0BC9 mov DX,word ptr DS:[DI+0x0A]
+100D:0BCC push CX
+100D:0BCD cmp AL,0x14
+100D:0BCF jb short 0x0BF9
+100D:0BD1 cmp AL,0x1C
+100D:0BD3 jb short 0x0BDC
+100D:0BD5 inc AX
+100D:0BD6 cmp AL,0x2D
+100D:0BD8 jbe short 0x0C09
+100D:0BDA jmp short 0x0C2F
+100D:0BDC mov BX,word ptr DS:[DI+0x0D]
+100D:0BDF call near 0x0CEA
+100D:0BE2 call near 0x0CEA
+100D:0BE5 mov word ptr DS:[DI+0x0D],BX
+100D:0BE8 mov AX,word ptr DS:[0]
+100D:0BEB mov CL,3
+100D:0BED rol AX,CL
+100D:0BEF mov word ptr DS:[0],AX
+100D:0BF2 and AX,7
+100D:0BF5 add AL,0x14
+100D:0BF7 jmp short 0x0C09
+100D:0BF9 shr AX,1
+100D:0BFB shr AX,1
+100D:0BFD rol word ptr DS:[0],1
+100D:0C01 rcl AX,1
+100D:0C03 rol word ptr DS:[0],1
+100D:0C07 rcl AX,1
+100D:0C09 mov word ptr DS:[DI+8],AX
+100D:0C0C mov BL,DH
+100D:0C0E mov AX,BX
+100D:0C10 cbw
+100D:0C11 mov BX,AX
+100D:0C13 mov AX,DX
+100D:0C15 cbw
+100D:0C16 mov DX,AX
+100D:0C18 push DI
+100D:0C19 call near 0xC661
+100D:0C1C pop DI
+100D:0C1D cmp word ptr DS:[DI],0x0140
+100D:0C21 jae short 0x0C2F
+100D:0C23 xor AX,AX
+100D:0C25 cmp word ptr DS:[DI+4],AX
+100D:0C28 js short 0x0C2F
+100D:0C2A cmp word ptr DS:[DI+6],AX
+100D:0C2D jns short 0x0C34
+100D:0C2F push DI
+100D:0C30 call near 0xC58A
+100D:0C33 pop DI
+100D:0C34 pop CX
+100D:0C35 add DI,0x0011
+100D:0C38 loop 0x0BC6
+100D:0C3A ret near
+100D:0C3B dec byte ptr DS:[SI+1]
+100D:0C3E jns short 0x0C79
+100D:0C40 test word ptr DS:[0],3
+100D:0C46 jne short 0x0C58
+100D:0C48 mov byte ptr DS:[SI+7],0x0B
+100D:0C4C test word ptr DS:[0],0x000C
+100D:0C52 jne short 0x0C58
+100D:0C54 mov byte ptr DS:[SI+7],0x11
+100D:0C58 call near 0xE3CC
+100D:0C5B cmp byte ptr DS:[0x473A],0
+100D:0C60 je short 0x0C64
+100D:0C64 mov CX,AX
+100D:0C66 mov BX,7
+100D:0C69 call near 0xE3B7
+100D:0C6C mov byte ptr DS:[SI+1],AL
+100D:0C6F cmp AL,4
+100D:0C71 jb short 0x0C76
+100D:0C73 or CH,0x40
+100D:0C76 mov word ptr DS:[SI+2],CX
+100D:0C79 mov byte ptr DS:[SI],8
+100D:0C7C mov AL,byte ptr DS:[SI+2]
+100D:0C7F mov DI,AX
+100D:0C81 mov BL,byte ptr DS:[SI+3]
+100D:0C84 and AX,0x0010
+100D:0C87 jne short 0x0C98
+100D:0C89 and BX,6
+100D:0C8C mov SI,word ptr DS:[BX+0x15A2]
+100D:0C90 add BX,BX
+100D:0C92 add AX,BX
+100D:0C94 add AL,4
+100D:0C96 jmp short 0x0CD6
+100D:0C98 mov AL,byte ptr DS:[SI+3]
+100D:0C9B mov AH,AL
+100D:0C9D and AX,0xC03F
+100D:0CA0 test AH,0x40
+100D:0CA3 je short 0x0CCA
+100D:0CA5 rol word ptr DS:[0],1
+100D:0CA9 jae short 0x0CCA
+100D:0CAB mov CL,0x0A
+100D:0CAD or AH,AH
+100D:0CAF jns short 0x0CB3
+100D:0CB1 neg CL
+100D:0CB3 add AL,CL
+100D:0CB5 jns short 0x0CBC
+100D:0CB7 xor AH,0x80
+100D:0CBA xor AL,AL
+100D:0CBC cmp AL,0x40
+100D:0CBE jb short 0x0CC5
+100D:0CC0 mov AL,0x3F
+100D:0CC2 xor AH,0x80
+100D:0CC5 or AH,AL
+100D:0CC7 mov byte ptr DS:[SI+3],AH
+100D:0CCA add AL,0xE0
+100D:0CCC call near 0x5198
+100D:0CCF mov DH,BL
+100D:0CD1 mov SI,DX
+100D:0CD3 mov AX,0x0014
+100D:0CD6 and DI,0x000C
+100D:0CD9 mov BX,word ptr DS:[DI+0x1594]
+100D:0CDD mov DX,word ptr DS:[DI+0x1592]
+100D:0CE1 call near 0xC60B
+100D:0CE4 mov word ptr DS:[DI+0x0D],0
+100D:0CE9 ret near
+100D:0CEA xor AX,AX
+100D:0CEC mov AL,DL
+100D:0CEE or AL,AL
+100D:0CF0 js short 0x0D05
+100D:0CF2 add AL,BL
+100D:0CF4 mov CL,5
+100D:0CF6 ror AX,CL
+100D:0CF8 mov CL,3
+100D:0CFA shr AH,CL
+100D:0CFC mov BL,AH
+100D:0CFE mov DL,AL
+100D:0D00 xchg BL,BH
+100D:0D02 xchg DL,DH
+100D:0D04 ret near
+100D:0D05 neg AL
+100D:0D07 call near 0x0CF2
+100D:0D0A neg DH
+100D:0D0C ret near
+100D:0D0D mov AL,BL
+100D:0D0F mov BX,0x0180
+100D:0D12 mov CX,0x0054
+100D:0D15 mov DL,0x37
+100D:0D17 je short 0x0D23
+100D:0D19 dec DX
+100D:0D1A cmp AL,0x0A
+100D:0D1C je short 0x0D23
+100D:0D1E call far dword ptr DS:[0x3951]
+100D:0D22 ret near
+100D:0D23 call near 0xC13B
+100D:0D26 mov AL,DL
+100D:0D28 xor AH,AH
+100D:0D2A call near 0xC1F4
+100D:0D2D lea DX,SI+6
+100D:0D30 call far dword ptr DS:[0x38BD]
+100D:0D34 call near 0xC0F4
+100D:0D37 mov AX,0x0035
+100D:0D3A call near 0xC1F4
+100D:0D3D lea DX,SI+6
+100D:0D40 call far dword ptr DS:[0x394D]
+100D:0D44 ret near
+100D:0D45 call near 0x395C
+100D:0D48 call near 0x3971
+100D:0D4B call near 0x39B9
+100D:0D4E inc byte ptr DS:[0x227D]
+100D:0D52 mov CX,3
+100D:0D55 push CX
+100D:0D56 mov BL,0x28
+100D:0D58 call near 0x3971
+100D:0D5B call near 0x398C
+100D:0D5E call near 0xC0F4
+100D:0D61 mov byte ptr DS:[0x46D7],0x20
+100D:0D66 mov BP,0x391D
+100D:0D69 mov AX,3
+100D:0D6C call near 0xE353
+100D:0D6F cmp byte ptr DS:[0x46D7],0x10
+100D:0D74 jae short 0x0D66
+100D:0D76 pop CX
+100D:0D77 loop 0x0D55
+100D:0D79 mov BP,0x391D
+100D:0D7C mov AX,3
+100D:0D7F call near 0xE353
+100D:0D82 cmp byte ptr DS:[0x46D7],0
+100D:0D87 jne short 0x0D79
+100D:0D89 dec byte ptr DS:[0x227D]
+100D:0D8D ret near
+100D:0D8E cmp byte ptr DS:[0x47A9],0
+100D:0D93 jne short 0x0D9D
+100D:0D95 xor AX,AX
+100D:0D97 cmp byte ptr DS:[0x46D9],AL
+100D:0D9B jns short 0x0D9E
+100D:0D9D ret near
+100D:0D9E mov byte ptr DS:[0x473B],AL
+100D:0DA1 mov byte ptr DS:[0x46EC],AL
+100D:0DA4 cmp byte ptr DS:[0x00FB],AL
+100D:0DA8 jns short 0x0DB0
+100D:0DAA call near 0xDBB2
+100D:0DB0 call near 0xD2BD
+100D:0DB3 call near 0x0D45
+100D:0DB6 call near 0xDBB2
+100D:0DB9 call near 0x98E6
+100D:0DBC mov word ptr DS:[2],0x16C5
+100D:0DC2 call near 0x0E66
+100D:0DC5 mov byte ptr DS:[0x11CA],1
+100D:0DCA call near 0x9F40
+100D:0DCD mov word ptr DS:[0x47C4],0xFFFF
+100D:0DD3 mov AL,0x80
+100D:0DD5 xchg AL,byte ptr DS:[0x46D9]
+100D:0DD9 xor AH,AH
+100D:0DDB push AX
+100D:0DDC add AX,0x00BA
+100D:0DDF call near 0x9901
+100D:0DE2 call near 0x88AF
+100D:0DE5 call near 0x9901
+100D:0DE8 mov SI,0x2254
+100D:0DEB call near 0x7B1B
+100D:0DEE call near 0xDA53
+100D:0DF1 pop AX
+100D:0DF2 mov BX,0x225D
+100D:0DF5 xlat byte ptr DS:[BX+AL]
+100D:0DF6 or AL,AL
+100D:0DF8 js short 0x0E22
+100D:0DFA call near 0x91A0
+100D:0DFD les SI,word ptr DS:[0xDBB0]
+100D:0E01 lods AX,word ptr ES:[SI]
+100D:0E03 shr AX,1
+100D:0E05 sub AX,3
+100D:0E08 mov DX,word ptr DS:[0x2254]
+100D:0E0C mov BX,word ptr DS:[0x2256]
+100D:0E10 inc DX
+100D:0E11 inc BX
+100D:0E12 push AX
+100D:0E13 call near 0xC2FD
+100D:0E16 pop AX
+100D:0E17 inc AX
+100D:0E18 call near 0xC22F
+100D:0E1B call far dword ptr DS:[0x3935]
+100D:0E1F call near 0x9EFD
+100D:0E22 call near 0xC4CD
+100D:0E25 mov byte ptr DS:[0x4727],0
+100D:0E2A call near 0xD741
+100D:0E2D mov byte ptr DS:[0x47A7],1
+100D:0E32 mov BP,0x20A2
+100D:0E35 mov BX,0x0F66
+100D:0E38 call near 0xD323
+100D:0E3B jmp near 0xDBEC
+100D:0E3E mov BX,0x0F66
+100D:0E41 mov BP,0x20B6
+100D:0E44 jmp near 0xD323
+100D:0E47 mov CL,0xFF
+100D:0E49 push CX
+100D:0E4A cmp byte ptr DS:[0x46D9],0
+100D:0E4F je short 0x0E62
+100D:0E51 mov AX,0x000D
+100D:0E54 call near 0x0E6C
+100D:0E57 mov byte ptr DS:[0x46D9],0
+100D:0E5C mov word ptr DS:[0x47C4],0
+100D:0E62 pop CX
+100D:0E63 jmp near 0xB3B0
+100D:0E66 call near 0xAD5E
+100D:0E69 mov AX,0x000C
+100D:0E6C push AX
+100D:0E6D call near 0xA7A5
+100D:0E70 pop AX
+100D:0E71 mov BP,0x181E
+100D:0E74 jmp near 0xC8FB
+100D:0EA6 call near 0xB2B9
+100D:0EA9 call near 0x98E6
+100D:0EAC call near 0x181E
+100D:0EAF mov AL,4
+100D:0EB1 xor DX,DX
+100D:0EB3 mov BP,0x0ED0
+100D:0EB6 jmp near 0xC108
+100D:0EB9 xor AX,AX
+100D:0EBB mov byte ptr DS:[0x47C3],AL
+100D:0EBE call near 0xB2BE
+100D:0EC1 mov byte ptr DS:[0x47A6],0xFF
+100D:0EC6 mov AL,4
+100D:0EC8 xor DX,DX
+100D:0ECA call near 0x189A
+100D:0ECD jmp near 0x2DB1
+100D:0ED0 mov AL,0x3B
+100D:0ED2 call near 0xC2F2
+100D:0ED5 mov AX,1
+100D:0ED8 call near 0xC22F
+100D:0EDB call near 0x0F08
+100D:0EDE mov AX,0x003B
+100D:0EE1 call near 0xC13E
+100D:0EE4 mov AX,2
+100D:0EE7 xor DX,DX
+100D:0EE9 xor BX,BX
+100D:0EEB call near 0xC22F
+100D:0EEE call near 0x1797
+100D:0EF1 mov SI,0x1D1E
+100D:0EF4 call near 0xD72B
+100D:0EF7 call near 0x98F5
+100D:0EFA mov byte ptr DS:[0x1C06],0x80
+100D:0EFF mov BP,0x20C2
+100D:0F02 mov BX,0x0EB9
+100D:0F05 jmp near 0xD338
+100D:0F08 test word ptr DS:[0x0010],0x0080
+100D:0F0E jne short 0x0F13
+100D:0F10 jmp near 0x0960
+100D:0F48 mov AX,word ptr DS:[2]
+100D:0F4B mov BX,AX
+100D:0F4D and AL,0x0F
+100D:0F4F cmp AL,0x0C
+100D:0F51 jae short 0x0F66
+100D:0F53 push BX
+100D:0F54 cmp AL,2
+100D:0F56 jae short 0x0F5F
+100D:0F58 mov AX,BX
+100D:0F5A add AL,2
+100D:0F5C call near 0x0FB2
+100D:0F5F pop AX
+100D:0F60 and AL,0xF0
+100D:0F62 or AL,0x0C
+100D:0F64 jmp short 0x0F84
+100D:0F66 ret near
+100D:0F67 mov AX,word ptr DS:[2]
+100D:0F6A mov BX,AX
+100D:0F6C and AL,0x0F
+100D:0F6E cmp AL,0x0B
+100D:0F70 jb short 0x0F66
+100D:0F72 push BX
+100D:0F73 cmp AL,0x0D
+100D:0F75 jae short 0x0F7E
+100D:0F77 mov AX,BX
+100D:0F79 add AL,2
+100D:0F7B call near 0x0FB2
+100D:0F7E pop AX
+100D:0F7F and AL,0xF0
+100D:0F81 add AX,0x0010
+100D:0F84 cmp byte ptr DS:[0x002A],0x14
+100D:0F89 jne short 0x0F95
+100D:0F8B call near 0x0F95
+100D:0F8E sub word ptr DS:[0xDC5A],0x03E8
+100D:0F94 ret near
+100D:0F95 push AX
+100D:0F96 call near 0x390A
+100D:0F99 call near 0x4D00
+100D:0F9C call near 0xB2BE
+100D:0F9F pop CX
+100D:0FA0 sub CX,word ptr DS:[2]
+100D:0FA4 call near 0x0FD9
+100D:0FA7 call near 0xDBB2
+100D:0FAA mov AL,0x2A
+100D:0FAC call near 0x189A
+100D:0FAF jmp near 0xD763
+100D:0FB2 call near 0x395F
+100D:0FB5 call near 0x3971
+100D:0FB8 cmp byte ptr DS:[0x46D7],0
+100D:0FBD je short 0x0FC2
+100D:0FBF jmp near 0x39B9
+100D:0FC2 jmp near 0x398C
+100D:0FC5 mov CX,0x0010
+100D:0FC8 push CX
+100D:0FC9 mov CX,1
+100D:0FCC call near 0x0FD9
+100D:0FCF pop CX
+100D:0FD0 cmp byte ptr DS:[0x002B],0
+100D:0FD5 loopne 0x0FC8
+100D:0FD7 jmp short 0x0FA7
+100D:0FD9 mov byte ptr DS:[0x46DA],1
+100D:0FDE call near 0xB2BE
+100D:0FE1 or CX,CX
+100D:0FE3 jle short 0x1005
+100D:0FE5 push CX
+100D:0FE6 mov AX,word ptr DS:[0x146E]
+100D:0FE9 mov word ptr DS:[0x46DB],AX
+100D:0FEC cmp byte ptr DS:[0x46DD],0
+100D:0FF1 je short 0x0FF6
+100D:0FF6 inc word ptr DS:[2]
+100D:0FFA mov byte ptr DS:[0x46DD],1
+100D:0FFF call near 0x1B23
+100D:1002 pop CX
+100D:1003 loop 0x0FD9
+100D:1005 mov byte ptr DS:[0x46DA],0
+100D:100A ret near
+100D:100B mov byte ptr DS:[0x100B],1
+100D:1010 ret near
+100D:1011 dec byte ptr DS:[0x122A]
+100D:1015 mov SI,0x1021
+100D:1018 call near 0x105B
+100D:101B mov byte ptr DS:[0x0FE8],9
+100D:1020 ret near
+100D:1027 and byte ptr DS:[0x122E],0x7F
+100D:102C jmp near 0x2FFB
+100D:102F and byte ptr DS:[0x124A],0x7F
+100D:1034 and byte ptr DS:[0x1247],0x7F
+100D:1039 mov word ptr DS:[0x121D],0xFFFF
+100D:103F mov AX,0x1321
+100D:1042 jmp near 0x1771
+100D:1045 mov byte ptr DS:[0x0FD8],5
+100D:104A call near 0x101B
+100D:104D mov AX,0x010B
+100D:1050 jmp near 0x26DA
+100D:1053 mov byte ptr DS:[0x0FD8],0x0A
+100D:1058 mov SI,0x1069
+100D:105B lods AX,word ptr CS:[SI]
+100D:105D or AX,AX
+100D:105F je short 0x1068
+100D:1061 mov DI,AX
+100D:1063 call near 0x425B
+100D:1066 jmp short 0x105B
+100D:1068 ret near
+100D:1071 mov byte ptr DS:[0x00FF],0
+100D:1076 mov byte ptr DS:[0x002A],0x15
+100D:107B mov byte ptr DS:[0x0FDB],1
+100D:1080 mov word ptr DS:[0x1018],0x200B
+100D:1086 mov word ptr DS:[0x101A],0x0180
+100D:108C mov byte ptr DS:[0x0FE8],0x0A
+100D:1091 mov byte ptr DS:[0x00D5],0xFF
+100D:1096 call near 0x2090
+100D:1099 or byte ptr DS:[0x000A],1
+100D:109E mov AX,1
+100D:10A1 jmp near 0x29EE
+100D:10A4 and byte ptr DS:[0x1245],0x7F
+100D:10A9 mov word ptr DS:[0x1217],0xFFFF
+100D:10AF jmp near 0x2FFB
+100D:10B2 mov byte ptr DS:[0x0FFB],1
+100D:10B7 ret near
+100D:10B8 mov DI,0x0800
+100D:10BB jmp near 0x425B
+100D:10BE mov AX,word ptr DS:[2]
+100D:10C1 mov word ptr DS:[0x1154],AX
+100D:10C4 mov word ptr DS:[0x1018],0x2006
+100D:10CA mov word ptr DS:[0x0FF8],0x2008
+100D:10D0 mov word ptr DS:[0x0FFA],0x0180
+100D:10D6 mov byte ptr DS:[0x0FE8],0x0A
+100D:10DB mov word ptr DS:[0x0FEA],0x0180
+100D:10E1 mov word ptr DS:[0x1201],0x0109
+100D:10E7 mov AL,0x14
+100D:10E9 call near 0x6F78
+100D:10EC or byte ptr DS:[0x000A],0x10
+100D:10F1 mov SI,0x10F7
+100D:10F4 jmp near 0x105B
+100D:1103 mov AX,4
+100D:1106 call near 0x29EE
+100D:1109 mov AX,0x1409
+100D:110C jmp near 0x26DA
+100D:110F cmp byte ptr DS:[0x0FE8],8
+100D:1114 je short 0x1121
+100D:1116 mov byte ptr DS:[0x0FE8],0x0A
+100D:111B mov word ptr DS:[0x0FEA],0x0180
+100D:1121 mov AX,0x280A
+100D:1124 jmp near 0x26DA
+100D:1127 mov byte ptr DS:[0x0FDB],0xFF
+100D:112C ret near
+100D:112D or byte ptr DS:[0x1067],2
+100D:1132 ret near
+100D:1133 mov DI,0x03D8
+100D:1136 jmp near 0x425B
+100D:1139 mov AL,0x0A
+100D:113B call near 0x6F78
+100D:113E mov AX,0x1313
+100D:1141 call near 0x1771
+100D:1144 mov AL,byte ptr DS:[0x1057]
+100D:1147 or AL,0x10
+100D:1149 and AL,0xFD
+100D:114B mov byte ptr DS:[0x1057],AL
+100D:114E mov AL,byte ptr DS:[0x0028]
+100D:1151 add AL,2
+100D:1153 mov byte ptr DS:[0x1178],AL
+100D:1156 mov SI,0x115C
+100D:1159 jmp near 0x105B
+100D:1166 inc byte ptr DS:[0x1141]
+100D:116A mov byte ptr DS:[0x0FE8],2
+100D:116F mov word ptr DS:[0x0FEA],0x0180
+100D:1175 mov AX,0x0105
+100D:1178 jmp near 0x29EE
+100D:117B or byte ptr DS:[0x000A],0x40
+100D:1180 mov AL,0x28
+100D:1182 call near 0x6F78
+100D:1185 jmp near 0x101B
+100D:1188 and byte ptr DS:[0x1259],0x7F
+100D:118D mov word ptr DS:[0x1211],0xFFFF
+100D:1193 jmp near 0x2FFB
+100D:1196 or byte ptr DS:[0x000A],0x20
+100D:119B mov AX,0x12FB
+100D:119E call near 0x1771
+100D:11A1 mov SI,0x11A7
+100D:11A4 jmp near 0x105B
+100D:11B3 mov byte ptr DS:[0x1038],5
+100D:11B8 add byte ptr DS:[0x11D0],0x0C
+100D:11BD call near 0x1AC5
+100D:11C0 add AX,3
+100D:11C3 mov word ptr DS:[0x1156],AX
+100D:11C6 inc byte ptr DS:[0x1141]
+100D:11CA ret near
+100D:11CB mov byte ptr DS:[0x00FF],0
+100D:11D0 mov byte ptr DS:[0x002A],0x60
+100D:11D5 mov DI,0x011C
+100D:11D8 call near 0x40AE
+100D:11DB mov DL,2
+100D:11DD mov word ptr DS:[0x1048],DX
+100D:11E1 mov word ptr DS:[0x104A],BX
+100D:11E5 ret near
+100D:11E6 jmp near 0x1F13
+100D:121F cmp AL,byte ptr DS:[0x002A]
+100D:1223 jbe short 0x1242
+100D:1225 mov byte ptr DS:[0x002A],AL
+100D:1228 mov byte ptr DS:[0x00FF],0
+100D:122D call near 0xB17A
+100D:1230 mov BL,byte ptr DS:[0x002A]
+100D:1234 cmp BL,0x6C
+100D:1237 ja short 0x1242
+100D:1239 xor BH,BH
+100D:123B shr BX,1
+100D:123D call near word ptr CS:[BX+0x11E7]
+100D:1242 ret near
+100D:127C cmp AL,4
+100D:127E jne short 0x128D
+100D:1280 cmp byte ptr DS:[0x002A],0x15
+100D:1285 jb short 0x128D
+100D:1287 cmp byte ptr DS:[0x002A],0x20
+100D:128C ret near
+100D:128D clc
+100D:128E ret near
+100D:1392 mov word ptr DS:[0x2220],0x1FBA
+100D:1398 ret near
+100D:1399 mov word ptr DS:[0x2220],0x1FAE
+100D:139F ret near
+100D:13A0 call near 0x1399
+100D:13A3 or byte ptr DS:[0x46EB],0x40
+100D:13A8 jmp short 0x13B6
+100D:13AA call near 0x58FA
+100D:13AD call near 0xC08E
+100D:13B0 mov SI,0x18E9
+100D:13B3 call near 0xC551
+100D:13B6 mov AX,0x000F
+100D:13B9 call near 0xC08E
+100D:13BC call near 0x9761
+100D:13BF call near 0x9EFD
+100D:13C2 call near 0x9901
+100D:13C5 jmp near 0xC07C
+100D:13C8 lods AL,byte ptr CS:[SI]
+100D:13CA mov byte ptr DS:[4],AL
+100D:13CD mov word ptr DS:[0x4778],SI
+100D:13D1 lods AL,byte ptr CS:[SI]
+100D:13D3 xor AH,AH
+100D:13D5 add SI,AX
+100D:13D7 mov word ptr DS:[0x477A],SI
+100D:13DB call near 0x1392
+100D:13DE call near 0x2DB1
+100D:13E1 jmp near 0x1707
+100D:13E4 call near 0x1399
+100D:13E7 push SI
+100D:13E8 call near 0x8C8A
+100D:13EB pop SI
+100D:13EC lods AL,byte ptr CS:[SI]
+100D:13EE inc word ptr DS:[0x477A]
+100D:13F2 xor AH,AH
+100D:13F4 cmp AX,word ptr DS:[0x47C4]
+100D:13F8 je short 0x1408
+100D:13FA cmp byte ptr DS:[0x47A4],AH
+100D:13FE jns short 0x1408
+100D:1400 push AX
+100D:1401 mov BP,0x2DB1
+100D:1404 call near 0xC097
+100D:1407 pop AX
+100D:1408 jmp near 0x9761
+100D:140B call near 0x1392
+100D:140E lods AL,byte ptr CS:[SI]
+100D:1410 inc word ptr DS:[0x477A]
+100D:1414 xor AH,AH
+100D:1416 mov word ptr DS:[0x47C4],AX
+100D:1419 call near 0x978E
+100D:141C call near 0x9B8B
+100D:141F jmp near 0x1707
+100D:1422 call near 0x1392
+100D:1425 call near 0x1AE0
+100D:1428 cmp AL,0x0D
+100D:142A jae short 0x1434
+100D:142C mov CX,1
+100D:142F call near 0x0FD9
+100D:1432 jmp short 0x1422
+100D:1434 call near 0x390A
+100D:1437 call near 0x37B2
+100D:143A call near 0xC412
+100D:143D mov SI,0x2290
+100D:1440 jmp short 0x1465
+100D:1442 call near 0x1392
+100D:1445 call near 0x37B2
+100D:1448 mov ES,word ptr DS:[0xDBDE]
+100D:144C push DS
+100D:144D mov DS,word ptr DS:[0xDBDA]
+100D:1451 xor DX,DX
+100D:1453 mov BX,0x0032
+100D:1456 mov BP,3
+100D:1459 call far dword ptr SS:[0x3949]
+100D:145E pop DS
+100D:145F call near 0xC43E
+100D:1462 mov SI,0x2298
+100D:1465 mov AX,0x0027
+100D:1468 call near 0xC13E
+100D:146B call near 0xC21B
+100D:146E call near 0xC0F4
+100D:1471 jmp near 0xC4DD
+100D:1474 ret near
+100D:1707 cmp word ptr DS:[0x2220],0x1FAE
+100D:170D jne short 0x171A
+100D:170F mov DI,0x1B56
+100D:1712 call near 0xD6FE
+100D:1715 jae short 0x171A
+100D:171A mov byte ptr DS:[0xCE9D],0
+100D:171F mov SI,word ptr DS:[0x477A]
+100D:1723 lods AL,byte ptr CS:[SI]
+100D:1725 cmp AL,0xFF
+100D:1727 je short 0x1736
+100D:1729 mov word ptr DS:[0x477A],SI
+100D:172D xor AH,AH
+100D:172F mov BX,AX
+100D:1731 jmp near word ptr CS:[BX+0x1475]
+100D:1736 mov SI,0x176B
+100D:1739 call near 0xDA5F
+100D:173C mov AX,word ptr DS:[0x4776]
+100D:173F mov byte ptr DS:[4],AL
+100D:1742 mov byte ptr DS:[0x46E0],AH
+100D:1746 xor AL,AL
+100D:1748 mov byte ptr DS:[0x4774],AL
+100D:174B cmp byte ptr DS:[0x002A],0x48
+100D:1750 je short 0x1755
+100D:1752 call near 0xADBE
+100D:1755 call near 0xB2BE
+100D:1758 cmp byte ptr DS:[0x00FB],0
+100D:175D js short 0x1762
+100D:175F jmp near 0x0FA7
+100D:1762 call near 0xAD5E
+100D:1765 call near 0x68EB
+100D:1768 jmp near 0x780A
+100D:176B xor byte ptr DS:[0x4775],0xFF
+100D:1770 ret near
+100D:1771 mov word ptr DS:[0x477A],AX
+100D:1774 mov word ptr DS:[0x4778],0
+100D:177A inc byte ptr DS:[0x4774]
+100D:177E call near 0xB2B9
+100D:1781 call near 0xAD5E
+100D:1784 mov AL,byte ptr DS:[4]
+100D:1787 mov AH,byte ptr DS:[0x46E0]
+100D:178B mov word ptr DS:[0x4776],AX
+100D:178E mov BP,0x0064
+100D:1791 mov SI,0x176B
+100D:1794 jmp near 0xDA25
+100D:1797 push word ptr DS:[0x2784]
+100D:179B call near 0xC137
+100D:179E mov DX,0x007E
+100D:17A1 mov BX,0x0094
+100D:17A4 mov AX,0x000F
+100D:17A7 call near 0xC22F
+100D:17AA mov AX,0x0010
+100D:17AD add AL,byte ptr DS:[0x00E8]
+100D:17B1 mov DX,0x0096
+100D:17B4 mov BX,0x0089
+100D:17B7 call near 0xC22F
+100D:17BA pop AX
+100D:17BB jmp near 0xC13E
+100D:17BE call near 0xC07C
+100D:17C1 mov SI,0x1E6E
+100D:17C4 push SI
+100D:17C5 cmp byte ptr DS:[0xCE66],0
+100D:17CA jne short 0x17D1
+100D:17CC call near 0xC446
+100D:17CF jmp short 0x17DF
+100D:17D1 mov BP,0x1E76
+100D:17D4 mov SI,0xCD9E
+100D:17D7 mov ES,word ptr DS:[0xDBD6]
+100D:17DB call far dword ptr DS:[0x391D]
+100D:17DF call near 0x1797
+100D:17E2 pop SI
+100D:17E3 jmp near 0xC4F0
+100D:17E6 cmp byte ptr DS:[0x11C9],0
+100D:17EB jne short 0x181D
+100D:17ED cmp byte ptr DS:[0x00E8],0x0A
+100D:17F2 je short 0x181D
+100D:17F4 inc byte ptr DS:[0x00E8]
+100D:17F8 call near 0x17BE
+100D:17FB mov AX,8
+100D:17FE call near 0xE387
+100D:1801 jmp short 0x17E6
+100D:1803 cmp byte ptr DS:[0x28E7],0
+100D:1808 jne short 0x181D
+100D:180A cmp byte ptr DS:[0x00E8],0
+100D:180F je short 0x181D
+100D:1811 mov byte ptr DS:[0xCE66],1
+100D:1816 call near 0x181E
+100D:1819 dec byte ptr DS:[0xCE66]
+100D:181D ret near
+100D:181E cmp byte ptr DS:[0x00E8],0
+100D:1823 je short 0x181D
+100D:1825 dec byte ptr DS:[0x00E8]
+100D:1829 call near 0x17BE
+100D:182C mov AX,8
+100D:182F call near 0xE387
+100D:1832 jmp short 0x181E
+100D:1834 mov SI,0xCD9E
+100D:1837 mov BP,0x1E76
+100D:183A mov ES,word ptr DS:[0xDBD6]
+100D:183E call far dword ptr DS:[0x3919]
+100D:1842 ret near
+100D:1843 cmp byte ptr DS:[0x00E8],0
+100D:1848 je short 0x181D
+100D:1860 cmp byte ptr DS:[0x11C9],0
+100D:1865 je short 0x1868
+100D:1868 call near 0x1843
+100D:186B call near 0xDAA3
+100D:186E neg byte ptr DS:[0x00FB]
+100D:1872 jns short 0x1877
+100D:1874 jmp near 0x5A1A
+100D:1877 call near 0xD2BD
+100D:187A call near 0x5ADF
+100D:187D mov AL,byte ptr DS:[0x28E8]
+100D:1880 mov byte ptr DS:[0x28E7],AL
+100D:1883 call near 0xB930
+100D:1886 mov word ptr DS:[0x1C14],0x0080
+100D:188C mov word ptr DS:[0x1C22],0x0080
+100D:1892 mov BP,0xD75A
+100D:1895 call near 0xC097
+100D:1898 mov AL,0x34
+100D:189A mov BP,0x2DB1
+100D:189D cmp byte ptr DS:[0x46D9],0
+100D:18A2 je short 0x18A6
+100D:18A6 xor DX,DX
+100D:18A8 call near 0xC108
+100D:18AB call near 0xC07C
+100D:18AE call near 0xAE04
+100D:18B1 mov AX,word ptr DS:[0xCE7A]
+100D:18B4 mov word ptr DS:[0xDC5A],AX
+100D:18B7 jmp near 0x17E6
+100D:18BA mov word ptr DS:[0x1C06],0
+100D:18C0 mov word ptr DS:[0x1C14],0
+100D:18C6 mov word ptr DS:[0x1C22],0
+100D:18CC call near 0x39E6
+100D:18CF call near 0xAC30
+100D:18D2 call near 0x4D00
+100D:18D5 call near 0xD2BD
+100D:18D8 call near 0x4ACA
+100D:18DB call near 0x98E6
+100D:18DE mov byte ptr DS:[0x46DF],0
+100D:18E3 cmp byte ptr DS:[0x002B],0
+100D:18E8 je short 0x18ED
+100D:18EA call near 0x0B21
+100D:18ED ret near
+100D:1A0F cmp word ptr DS:[0x1AFE],0
+100D:1A14 jne short 0x1A33
+100D:1A16 call near 0xDBB2
+100D:1A19 push word ptr DS:[0x2784]
+100D:1A1D call near 0xC137
+100D:1A20 mov SI,0x1AF4
+100D:1A23 call near 0xD200
+100D:1A26 call near 0x1A34
+100D:1A29 mov SI,0x1F06
+100D:1A2C call near 0xC4AA
+100D:1A2F pop AX
+100D:1A30 call near 0xC13E
+100D:1A33 ret near
+100D:1A34 cmp word ptr DS:[0x1AFE],0
+100D:1A39 jne short 0x1A33
+100D:1A3B push word ptr DS:[0xDBDA]
+100D:1A3F call near 0xC08E
+100D:1A42 mov AX,word ptr DS:[2]
+100D:1A45 and AX,0x000F
+100D:1A48 shl AX,1
+100D:1A4A shl AX,1
+100D:1A4C shl AX,1
+100D:1A4E add AX,0x1E7E
+100D:1A51 mov SI,AX
+100D:1A53 mov AX,0x004A
+100D:1A56 call near 0x1A9B
+100D:1A59 mov AX,0x004B
+100D:1A5C call near 0x1A9B
+100D:1A5F call near 0xD075
+100D:1A62 mov word ptr DS:[0xDBE4],0xF1FA
+100D:1A68 call near 0x1AD1
+100D:1A6B mov BX,0x016D
+100D:1A6E add AX,BX
+100D:1A70 sub AX,BX
+100D:1A72 cmp AX,BX
+100D:1A74 jae short 0x1A70
+100D:1A76 inc AX
+100D:1A77 mov DX,0x000B
+100D:1A7A mov BX,0x00BE
+100D:1A7D cmp AX,0x0064
+100D:1A80 jae short 0x1A8D
+100D:1A82 sub DL,2
+100D:1A85 cmp AX,0x000A
+100D:1A88 jae short 0x1A8D
+100D:1A8A sub DL,2
+100D:1A8D call near 0xE290
+100D:1A90 mov AL,0x20
+100D:1A92 call near word ptr DS:[0x2518]
+100D:1A96 pop word ptr DS:[0xDBDA]
+100D:1A9A ret near
+100D:1A9B push AX
+100D:1A9C lods AX,word ptr DS:[SI]
+100D:1A9D mov DX,AX
+100D:1A9F lods AX,word ptr DS:[SI]
+100D:1AA0 mov BX,AX
+100D:1AA2 pop AX
+100D:1AA3 or DX,DX
+100D:1AA5 je short 0x1AC4
+100D:1AA7 push SI
+100D:1AA8 call near 0xC1F4
+100D:1AAB push DS
+100D:1AAC push ES
+100D:1AAD mov ES,word ptr DS:[0xDBD8]
+100D:1AB1 pop DS
+100D:1AB2 lods AX,word ptr DS:[SI]
+100D:1AB3 mov DI,AX
+100D:1AB5 lods AX,word ptr DS:[SI]
+100D:1AB6 mov CX,AX
+100D:1AB8 xor CH,CH
+100D:1ABA mov BP,0x1EFE
+100D:1ABD call far dword ptr SS:[0x38CD]
+100D:1AC2 pop DS
+100D:1AC3 pop SI
+100D:1AC4 ret near
+100D:1AC5 mov AX,word ptr DS:[2]
+100D:1AC8 shr AX,1
+100D:1ACA shr AX,1
+100D:1ACC shr AX,1
+100D:1ACE shr AX,1
+100D:1AD0 ret near
+100D:1AD1 mov AX,word ptr DS:[2]
+100D:1AD4 add AX,3
+100D:1AD7 shr AX,1
+100D:1AD9 shr AX,1
+100D:1ADB shr AX,1
+100D:1ADD shr AX,1
+100D:1ADF ret near
+100D:1AE0 mov AX,word ptr DS:[2]
+100D:1AE3 and AX,0x000F
+100D:1AE6 ret near
+100D:1AE7 call near 0xD41B
+100D:1AEA cmp BP,0x1F7E
+100D:1AEE jne short 0x1B0C
+100D:1AF0 mov AX,word ptr DS:[0xCE7A]
+100D:1AF3 cmp AX,word ptr DS:[0x4770]
+100D:1AF7 je short 0x1B0C
+100D:1AF9 mov word ptr DS:[0x4770],AX
+100D:1AFC sub AX,word ptr DS:[0x476E]
+100D:1B00 cmp AX,word ptr DS:[0x4772]
+100D:1B04 jb short 0x1B0C
+100D:1B06 call near 0xC85B
+100D:1B09 call near 0xC868
+100D:1B0C ret near
+100D:1B0D call near 0xABCC
+100D:1B10 jne short 0x1B0C
+100D:1B12 cmp byte ptr DS:[0x2788],0
+100D:1B17 jne short 0x1B0C
+100D:1B19 cmp byte ptr DS:[0x002A],0xC8
+100D:1B1E jae short 0x1B0C
+100D:1B20 call near 0x2B2A
+100D:1B23 cmp byte ptr DS:[0x46DD],0
+100D:1B28 je short 0x1B0C
+100D:1B2A mov byte ptr DS:[0x46DD],0
+100D:1B2F mov AL,byte ptr DS:[0x00F4]
+100D:1B32 dec AL
+100D:1B34 cmp AL,0x10
+100D:1B36 jge short 0x1B3D
+100D:1B38 xor AL,AL
+100D:1B3A mov byte ptr DS:[0x00F5],AL
+100D:1B3D mov byte ptr DS:[0x00F4],AL
+100D:1B40 call near 0x1A0F
+100D:1B43 call near 0x38E1
+100D:1B46 mov AX,word ptr DS:[2]
+100D:1B49 mov CX,AX
+100D:1B4B xchg AX,word ptr DS:[0x1174]
+100D:1B4F and AL,0xF0
+100D:1B51 and CL,0xF0
+100D:1B54 sub AL,CL
+100D:1B56 mov byte ptr DS:[0x46DE],AL
+100D:1B59 je short 0x1B5E
+100D:1B5B call near 0x1C46
+100D:1B5E cmp byte ptr DS:[0x00C2],7
+100D:1B63 jae short 0x1BB2
+100D:1B65 call near 0x1D9F
+100D:1B68 push word ptr DS:[0x11F7]
+100D:1B6C push word ptr DS:[0x11CE]
+100D:1B70 call near 0x6C6F
+100D:1B73 call near 0x63F0
+100D:1B76 call near 0x1AE0
+100D:1B79 shl AX,1
+100D:1B7B mov SI,AX
+100D:1B7D call near word ptr CS:[SI+0x1DB3]
+100D:1B82 call near 0x1C18
+100D:1B85 pop DI
+100D:1B86 call near 0x331E
+100D:1B89 pop word ptr DS:[0x11F7]
+100D:1B8D call near 0x1BEC
+100D:1B90 cmp byte ptr DS:[0x46D9],0
+100D:1B95 jne short 0x1BB2
+100D:1B97 cmp byte ptr DS:[0x46EC],0
+100D:1B9C je short 0x1BA1
+100D:1B9E call near 0x5D6D
+100D:1BA1 mov DI,word ptr DS:[0x114E]
+100D:1BA5 or DI,DI
+100D:1BA7 je short 0x1BB2
+100D:1BA9 cmp byte ptr DS:[0x473B],0
+100D:1BAE js short 0x1BD2
+100D:1BB0 ja short 0x1BB8
+100D:1BB2 mov byte ptr DS:[0x473B],0
+100D:1BB7 ret near
+100D:1BB8 cmp byte ptr DS:[0x00FB],0
+100D:1BBD js short 0x1BB2
+100D:1BBF cmp byte ptr DS:[0x46DA],0
+100D:1BC4 jne short 0x1BB2
+100D:1BC6 call near 0xDBB2
+100D:1BC9 call near 0x1BB2
+100D:1BCC call near 0x0B21
+100D:1BCF jmp near 0x2DB1
+100D:1BEC cmp byte ptr DS:[0x002B],0
+100D:1BF1 je short 0x1C17
+100D:1BF3 mov DI,word ptr DS:[0x114E]
+100D:1BF7 call near 0x503C
+100D:1BFA cmp byte ptr DS:[0x46D9],0
+100D:1BFF je short 0x1C06
+100D:1C06 cmp byte ptr DS:[0x002B],0
+100D:1C0B jne short 0x1C17
+100D:1C0D push DI
+100D:1C0E call near 0x0B21
+100D:1C11 pop DI
+100D:1C12 or byte ptr DS:[0x473B],1
+100D:1C17 ret near
+100D:1C18 cmp byte ptr DS:[0x46EB],0
+100D:1C1D jns short 0x1C39
+100D:1C1F call near 0xC13B
+100D:1C22 mov SI,word ptr DS:[0x46FA]
+100D:1C26 or SI,SI
+100D:1C28 je short 0x1C2D
+100D:1C2D mov DI,word ptr DS:[0x46F8]
+100D:1C31 or DI,DI
+100D:1C33 je short 0x1C38
+100D:1C35 call near 0x600E
+100D:1C38 ret near
+100D:1C39 jne short 0x1C45
+100D:1C3B cmp byte ptr DS:[0x00FB],0
+100D:1C40 jns short 0x1C45
+100D:1C42 call near 0xBDBB
+100D:1C45 ret near
+100D:1C46 mov AL,byte ptr DS:[0x002A]
+100D:1C49 mov AH,AL
+100D:1C4B xchg AL,byte ptr DS:[0x00FE]
+100D:1C4F cmp AL,AH
+100D:1C51 je short 0x1C58
+100D:1C53 mov byte ptr DS:[0x00FF],0
+100D:1C58 inc byte ptr DS:[0x00FF]
+100D:1C5C call near 0x1D66
+100D:1C5F call near 0x1E43
+100D:1C62 mov AL,byte ptr DS:[0x00D5]
+100D:1C65 inc AL
+100D:1C67 cmp AL,2
+100D:1C69 jb short 0x1C6E
+100D:1C6B mov byte ptr DS:[0x00D5],AL
+100D:1C6E xor AX,AX
+100D:1C70 xchg AX,word ptr DS:[0x1172]
+100D:1C74 mov BX,word ptr DS:[0x00A0]
+100D:1C78 add AX,BX
+100D:1C7A xchg BX,word ptr DS:[0x1170]
+100D:1C7E sub AX,BX
+100D:1C80 jae short 0x1C84
+100D:1C84 mov word ptr DS:[0x00A6],AX
+100D:1C87 xchg AX,word ptr DS:[0x00AE]
+100D:1C8B xor BX,BX
+100D:1C8D sub AX,word ptr DS:[0x00A6]
+100D:1C91 jae short 0x1C96
+100D:1C93 neg AX
+100D:1C95 xchg BX,AX
+100D:1C96 mov word ptr DS:[0x00B2],AX
+100D:1C99 mov word ptr DS:[0x00B0],BX
+100D:1C9D call near 0x1CDA
+100D:1CA0 call near 0xC02E
+100D:1CA3 call near 0xBF26
+100D:1CA6 call near 0xE3CC
+100D:1CA9 mov BX,AX
+100D:1CAB mov SI,0x10D8
+100D:1CAE test byte ptr DS:[SI+2],8
+100D:1CB2 je short 0x1CD1
+100D:1CB4 mov BP,4
+100D:1CB7 cmp byte ptr SS:[BP+SI+4],0
+100D:1CBB jne short 0x1CCE
+100D:1CBD cmp byte ptr SS:[BP+SI+9],0
+100D:1CC1 jns short 0x1CCE
+100D:1CC3 rol BX,1
+100D:1CC5 rol BX,1
+100D:1CC7 mov AL,BL
+100D:1CC9 and AL,3
+100D:1CCB mov byte ptr SS:[BP+SI+4],AL
+100D:1CCE dec BP
+100D:1CCF jns short 0x1CB7
+100D:1CD1 add SI,0x0011
+100D:1CD4 cmp byte ptr DS:[SI],0x14
+100D:1CD7 jb short 0x1CAE
+100D:1CD9 ret near
+100D:1CDA mov DI,0x0100
+100D:1CDD xor CX,CX
+100D:1CDF xor DX,DX
+100D:1CE1 call near 0x5D36
+100D:1CE4 jb short 0x1CF4
+100D:1CE6 inc DX
+100D:1CE7 mov AL,byte ptr DS:[DI+0x12]
+100D:1CEA shr AL,1
+100D:1CEC shr AL,1
+100D:1CEE shr AL,1
+100D:1CF0 xor AH,AH
+100D:1CF2 add CX,AX
+100D:1CF4 add DI,0x001C
+100D:1CF7 cmp byte ptr DS:[DI],0xFF
+100D:1CFA jne short 0x1CE1
+100D:1CFC mov BX,CX
+100D:1CFE shr BX,1
+100D:1D00 shr BX,1
+100D:1D02 shr BX,1
+100D:1D04 shr BX,1
+100D:1D06 call near 0xE3DF
+100D:1D09 add CX,AX
+100D:1D0B mov word ptr DS:[0x00A8],CX
+100D:1D0F ret near
+100D:1D10 rol word ptr DS:[0],1
+100D:1D14 jae short 0x1D34
+100D:1D16 mov SI,0x08AA
+100D:1D19 test byte ptr DS:[SI+0x10],0x80
+100D:1D1D je short 0x1D2B
+100D:1D1F mov AL,byte ptr DS:[SI+0x1A]
+100D:1D22 dec AL
+100D:1D24 cmp AL,0xC7
+100D:1D26 jae short 0x1D2B
+100D:1D28 inc byte ptr DS:[SI+0x1A]
+100D:1D2B add SI,0x001B
+100D:1D2E cmp SI,0x0FA0
+100D:1D32 jb short 0x1D19
+100D:1D34 ret near
+100D:1D66 mov SI,0x0FD8
+100D:1D69 mov CX,0x000C
+100D:1D6C mov AX,word ptr DS:[SI+2]
+100D:1D6F cmp AL,0x80
+100D:1D71 jne short 0x1D99
+100D:1D73 cmp AH,0xFF
+100D:1D76 je short 0x1D99
+100D:1D78 mov AL,0x1C
+100D:1D7A mul AH
+100D:1D7C add AX,0x00E4
+100D:1D7F mov DI,AX
+100D:1D81 mov AX,word ptr DS:[SI]
+100D:1D83 mov BL,byte ptr DS:[DI+8]
+100D:1D86 cmp AH,BL
+100D:1D88 jne short 0x1D93
+100D:1D8A xor BH,BH
+100D:1D8C cmp AL,byte ptr CS:[BX+0x1D35]
+100D:1D91 jbe short 0x1D99
+100D:1D99 add SI,0x0010
+100D:1D9C loop 0x1D6C
+100D:1D9E ret near
+100D:1D9F test word ptr DS:[0x0012],0x0080
+100D:1DA5 jne short 0x1DB2
+100D:1DA7 mov SI,0x1048
+100D:1DAA call near 0x1E01
+100D:1DAD jae short 0x1DB2
+100D:1DAF call near 0x1EDA
+100D:1DB2 ret near
+100D:1DD3 ret near
+100D:1DD4 jmp near 0x20A4
+100D:1DD7 jmp near 0x1F64
+100D:1DDA test byte ptr DS:[0x00BF],0x10
+100D:1DDF je short 0x1DFD
+100D:1DE1 test word ptr DS:[0x0010],8
+100D:1DE7 jne short 0x1DFD
+100D:1DE9 cmp byte ptr DS:[0x000B],8
+100D:1DEE je short 0x1DFD
+100D:1DF0 cmp byte ptr DS:[0x00C2],0
+100D:1DF5 jne short 0x1DFD
+100D:1DF7 mov AX,0x030B
+100D:1DFA call near 0x29EE
+100D:1DFD ret near
+100D:1DFE jmp near 0x1D10
+100D:1E01 cmp byte ptr DS:[0x002A],0x5D
+100D:1E06 jne short 0x1E3E
+100D:1E08 cmp byte ptr DS:[SI+0x0E],7
+100D:1E0C jne short 0x1E3E
+100D:1E0E mov BX,word ptr DS:[SI+2]
+100D:1E11 cmp BL,0x80
+100D:1E14 jne short 0x1E3E
+100D:1E16 mov byte ptr DS:[SI],2
+100D:1E19 jne short 0x1E3E
+100D:1E1B mov AL,0x1C
+100D:1E1D mul BH
+100D:1E1F add AX,0x00E4
+100D:1E22 mov DI,AX
+100D:1E24 mov AL,byte ptr DS:[DI+9]
+100D:1E27 or AL,AL
+100D:1E29 je short 0x1E3E
+100D:1E2B push SI
+100D:1E2C call near 0x6906
+100D:1E2F test word ptr DS:[SI+0x12],0x0400
+100D:1E34 jne short 0x1E40
+100D:1E36 mov AL,byte ptr DS:[SI+1]
+100D:1E39 or AL,AL
+100D:1E3B jne short 0x1E2C
+100D:1E3D pop SI
+100D:1E3E clc
+100D:1E3F ret near
+100D:1E40 pop SI
+100D:1E41 stc
+100D:1E42 ret near
+100D:1E43 call near 0x1AC5
+100D:1E46 cmp AX,word ptr DS:[0x1156]
+100D:1E4A jb short 0x1EA8
+100D:1E4C cmp byte ptr DS:[0x002A],0x5C
+100D:1E51 jne short 0x1EA8
+100D:1E53 cmp word ptr DS:[0x114E],0x07C8
+100D:1E59 je short 0x1EA8
+100D:1E5B mov DI,0x0100
+100D:1E5E xor CX,CX
+100D:1E60 cmp byte ptr DS:[DI+8],0x28
+100D:1E64 jae short 0x1E82
+100D:1E66 test byte ptr DS:[DI+0x0A],0x80
+100D:1E6A jne short 0x1E82
+100D:1E6C cmp DI,0x02C0
+100D:1E70 je short 0x1E82
+100D:1E72 xor DX,DX
+100D:1E74 mov BP,0x1EA1
+100D:1E77 call near 0x661D
+100D:1E7A cmp DX,CX
+100D:1E7C jbe short 0x1E82
+100D:1E7E mov CX,DX
+100D:1E80 mov BX,DI
+100D:1E82 add DI,0x001C
+100D:1E85 cmp byte ptr DS:[DI],0xFF
+100D:1E88 jne short 0x1E60
+100D:1E8A jcxz short 0x1EA8
+100D:1E8C mov DI,BX
+100D:1E8E mov word ptr DS:[0x11DB],DI
+100D:1E92 inc byte ptr DS:[0x00F8]
+100D:1E96 mov BP,0x1EA9
+100D:1E99 call near 0x661D
+100D:1E9C mov AL,8
+100D:1E9E jmp near 0x71B2
+100D:1EA1 cmp byte ptr DS:[SI+3],8
+100D:1EA5 adc DX,0
+100D:1EA8 ret near
+100D:1EA9 or word ptr DS:[SI+0x12],0x0400
+100D:1EAE jmp near 0x7085
+100D:1EB1 mov AX,word ptr DS:[SI+0x12]
+100D:1EB4 and AX,0xFBFF
+100D:1EB7 or AX,0x0800
+100D:1EBA mov word ptr DS:[SI+0x12],AX
+100D:1EBD ret near
+100D:1EBE test word ptr DS:[SI+0x12],0x0800
+100D:1EC3 je short 0x1ED9
+100D:1EC5 mov AL,byte ptr DS:[0x002A]
+100D:1EC8 sub AL,0x60
+100D:1ECA cmp AL,4
+100D:1ECC jae short 0x1ED9
+100D:1ECE call near 0xE270
+100D:1ED1 mov AL,0x64
+100D:1ED3 call near 0x121F
+100D:1ED6 call near 0xE283
+100D:1ED9 ret near
+100D:1EDA add byte ptr DS:[0x00F9],8
+100D:1EDF jne short 0x1F12
+100D:1EE1 push CX
+100D:1EE2 push SI
+100D:1EE3 mov BP,0x1EB1
+100D:1EE6 call near 0x6603
+100D:1EE9 mov AX,0x0709
+100D:1EEC call near 0x29F0
+100D:1EEF dec byte ptr DS:[0x00F8]
+100D:1EF3 mov DI,0x0100
+100D:1EF6 call near 0x1E24
+100D:1EF9 jb short 0x1F05
+100D:1EFB add DI,0x001C
+100D:1EFE cmp byte ptr DS:[DI],0xFF
+100D:1F01 jne short 0x1EF6
+100D:1F03 xor DI,DI
+100D:1F05 mov word ptr DS:[0x11DB],DI
+100D:1F09 or DI,DI
+100D:1F0B jne short 0x1F10
+100D:1F0D call near 0x11CB
+100D:1F10 pop SI
+100D:1F11 pop CX
+100D:1F12 ret near
+100D:1F13 mov DI,0x0138
+100D:1F16 mov BX,0xFF9C
+100D:1F19 mov AX,word ptr DS:[DI+4]
+100D:1F1C cmp AX,BX
+100D:1F1E jle short 0x1F37
+100D:1F20 call near 0x5D36
+100D:1F23 jb short 0x1F37
+100D:1F25 call near 0x5098
+100D:1F28 or DX,DX
+100D:1F2A jne short 0x1F37
+100D:1F2C mov AX,word ptr DS:[DI+4]
+100D:1F2F cmp AX,BX
+100D:1F31 jle short 0x1F37
+100D:1F33 mov BX,AX
+100D:1F35 mov SI,DI
+100D:1F37 add DI,0x001C
+100D:1F3A cmp byte ptr DS:[DI],8
+100D:1F3D jb short 0x1F19
+100D:1F3F cmp BX,-100
+100D:1F42 jne short 0x1F47
+100D:1F47 mov DI,SI
+100D:1F49 call near 0x40AE
+100D:1F4C mov DL,3
+100D:1F4E mov word ptr DS:[0x1048],DX
+100D:1F52 mov word ptr DS:[0x104A],BX
+100D:1F56 mov AH,byte ptr DS:[DI]
+100D:1F58 mov AL,byte ptr DS:[DI+1]
+100D:1F5B mov word ptr DS:[0x00F2],AX
+100D:1F5E mov AX,0x2B0A
+100D:1F61 jmp near 0x26DA
+100D:1F64 cmp byte ptr DS:[0x002A],0x3C
+100D:1F69 jae short 0x1F79
+100D:1F6B mov AX,word ptr DS:[2]
+100D:1F6E sub AX,word ptr DS:[0x1154]
+100D:1F72 jb short 0x1F91
+100D:1F74 cmp AX,0x0070
+100D:1F77 jb short 0x1F91
+100D:1F79 test word ptr DS:[2],0x0010
+100D:1F7F jne short 0x1F91
+100D:1F81 xor AL,AL
+100D:1F83 xchg AL,byte ptr DS:[0x11BC]
+100D:1F87 or AL,AL
+100D:1F89 jne short 0x1F91
+100D:1F8B rol word ptr DS:[0],1
+100D:1F8F jb short 0x1F92
+100D:1F91 ret near
+100D:1F92 call near 0x2017
+100D:1F95 je short 0x2013
+100D:1F97 inc byte ptr DS:[0x00C4]
+100D:1F9B mov CX,2
+100D:1F9E mov AL,byte ptr SS:[BP+9]
+100D:1FA1 or AL,AL
+100D:1FA3 je short 0x1FCB
+100D:1FA5 call near 0x6906
+100D:1FA8 mov AL,byte ptr DS:[SI+1]
+100D:1FAB test byte ptr DS:[SI+0x10],0x80
+100D:1FAF je short 0x1FA1
+100D:1FB1 push CX
+100D:1FB2 push BP
+100D:1FB3 push SI
+100D:1FB4 push DI
+100D:1FB5 mov byte ptr DS:[SI+3],0x8D
+100D:1FB9 call near 0x84A6
+100D:1FBC pop DI
+100D:1FBD pop SI
+100D:1FBE and byte ptr DS:[SI+0x10],0xEF
+100D:1FC2 push DI
+100D:1FC3 call near 0x8357
+100D:1FC6 pop DI
+100D:1FC7 pop BP
+100D:1FC8 pop CX
+100D:1FC9 loop 0x1F9E
+100D:1FCB or byte ptr DS:[DI+0x0A],2
+100D:1FCF call near 0x83FD
+100D:1FD2 call near 0x40AE
+100D:1FD5 mov SI,0x0FD8
+100D:1FD8 mov CX,9
+100D:1FDB cmp BX,word ptr DS:[SI+2]
+100D:1FDE jne short 0x1FE2
+100D:1FE2 add SI,0x0010
+100D:1FE5 loop 0x1FDB
+100D:1FE7 mov AL,0x0C
+100D:1FE9 mov SI,0x08E0
+100D:1FEC cmp DI,word ptr DS:[SI+4]
+100D:1FEF jne short 0x1FF3
+100D:1FF3 push BX
+100D:1FF4 push DX
+100D:1FF5 call near 0x71B2
+100D:1FF8 pop DX
+100D:1FF9 pop BX
+100D:1FFA cmp BX,word ptr DS:[6]
+100D:1FFE jne short 0x2014
+100D:2014 jmp near 0x5D50
+100D:2017 mov DI,0x0100
+100D:201A mov word ptr DS:[0xD816],0
+100D:2020 mov BX,0x0064
+100D:2023 cmp byte ptr DS:[DI+8],0x20
+100D:2027 jae short 0x207D
+100D:2029 test byte ptr DS:[DI+0x0A],0x82
+100D:202D jne short 0x207D
+100D:202F cmp BX,word ptr DS:[DI+4]
+100D:2032 jle short 0x207D
+100D:2034 call near 0x1E24
+100D:2037 jb short 0x207D
+100D:2039 push BX
+100D:203A call near 0x331E
+100D:203D pop BX
+100D:203E mov AL,byte ptr DS:[0x0060]
+100D:2041 sub AL,byte ptr DS:[0x0063]
+100D:2045 je short 0x207D
+100D:2047 mov BP,word ptr DS:[0x00E4]
+100D:204B cmp word ptr DS:[0x00E2],0x001E
+100D:2050 jb short 0x205D
+100D:2052 cmp word ptr DS:[0x00DC],0x001E
+100D:2057 jae short 0x207D
+100D:2059 mov BP,word ptr DS:[0x00DE]
+100D:205D cmp BP,0x011C
+100D:2061 je short 0x207D
+100D:2063 push DI
+100D:2064 mov DI,BP
+100D:2066 call near 0x5098
+100D:2069 mov BP,DI
+100D:206B pop DI
+100D:206C jcxz short 0x207D
+100D:206E or DX,DX
+100D:2070 jne short 0x207D
+100D:2072 mov BX,word ptr DS:[DI+4]
+100D:2075 mov word ptr DS:[0xD816],DI
+100D:2079 mov word ptr DS:[0xD818],BP
+100D:207D add DI,0x001C
+100D:2080 cmp byte ptr DS:[DI],8
+100D:2083 jb short 0x2023
+100D:2085 mov BP,word ptr DS:[0xD818]
+100D:2089 mov DI,word ptr DS:[0xD816]
+100D:208D or DI,DI
+100D:208F ret near
+100D:2090 call near 0x1AC5
+100D:2093 mov word ptr DS:[0x118D],AX
+100D:2096 jmp short 0x20D2
+100D:20A4 test byte ptr DS:[0x00BF],0x80
+100D:20A9 je short 0x20D1
+100D:20AB call near 0x1AC5
+100D:20AE cmp byte ptr DS:[0x00C2],0
+100D:20B3 jne short 0x2098
+100D:20B5 test byte ptr DS:[0x00BF],0x10
+100D:20BA jne short 0x2131
+100D:20BC cmp byte ptr DS:[0x11BB],0
+100D:20C1 je short 0x20C6
+100D:20C6 sub AX,word ptr DS:[0x118D]
+100D:20CA je short 0x20D2
+100D:20CC neg AX
+100D:20CE mov byte ptr DS:[0x00CF],AL
+100D:20D1 ret near
+100D:20D2 mov AL,byte ptr DS:[0x00C3]
+100D:20D5 inc byte ptr DS:[0x00C3]
+100D:20D9 mov BX,0x0096
+100D:20DC mul BX
+100D:20DE or DX,DX
+100D:20E0 jne short 0x2111
+100D:20E2 add AX,0x0064
+100D:20E5 jb short 0x2111
+100D:20E7 mov CX,AX
+100D:20E9 mov BX,0x003F
+100D:20EC call near 0xE3B7
+100D:20EF add AX,0x00E0
+100D:20F2 mul CX
+100D:20F4 or DH,DH
+100D:20F6 jne short 0x2111
+100D:20F8 mov DH,DL
+100D:20FA mov DL,AH
+100D:20FC mov AL,byte ptr DS:[0x00BE]
+100D:20FF shl AL,1
+100D:2101 jb short 0x2114
+100D:2114 mov word ptr DS:[0x00BC],DX
+100D:2118 mov byte ptr DS:[0x00CF],0
+100D:211D or byte ptr DS:[0x00BF],0x90
+100D:2122 mov AX,0x020B
+100D:2125 cmp byte ptr DS:[0x00BE],0
+100D:212A js short 0x212E
+100D:212E jmp near 0x26DA
+100D:2131 sub AX,word ptr DS:[0x118D]
+100D:2135 je short 0x20D1
+100D:2137 cmp AX,4
+100D:213A jae short 0x215F
+100D:213C shl AL,1
+100D:213E shl AL,1
+100D:2140 mov BL,AL
+100D:2142 call near 0x24D2
+100D:2145 mov AL,AH
+100D:2147 cmp AL,3
+100D:2149 jb short 0x214D
+100D:214D add AL,BL
+100D:214F mov BX,0x2161
+100D:2152 xlat byte ptr CS:[BX+AL]
+100D:2154 or AL,AL
+100D:2156 je short 0x215F
+100D:2158 mov AH,AL
+100D:215A mov AL,0x0B
+100D:215C jmp near 0x26DA
+100D:2170 call near 0xE270
+100D:2173 mov SI,0x0FD8
+100D:2176 mov CX,9
+100D:2179 test byte ptr DS:[SI+0x0F],0x40
+100D:217D jne short 0x21F1
+100D:217F mov DX,word ptr DS:[SI]
+100D:2181 mov BX,word ptr DS:[SI+2]
+100D:2184 cmp SI,0x1008
+100D:2188 jne short 0x2194
+100D:218A cmp BX,0x0180
+100D:218E jne short 0x2194
+100D:2190 mov DL,4
+100D:2192 mov word ptr DS:[SI],DX
+100D:2194 cmp BL,0x80
+100D:2197 jne short 0x21EE
+100D:2199 cmp DL,1
+100D:219C jne short 0x21DC
+100D:21DC cmp SI,0x1028
+100D:21E0 jb short 0x21F1
+100D:21E2 cmp BH,1
+100D:21E5 jne short 0x21F1
+100D:21E7 call near 0x21FA
+100D:21EA mov byte ptr DS:[SI],AL
+100D:21EC jmp short 0x21F1
+100D:21F1 add SI,0x0010
+100D:21F4 loop 0x2179
+100D:21F6 call near 0xE283
+100D:21F9 ret near
+100D:21FA mov BX,0x000A
+100D:21FD call near 0xE3DF
+100D:2200 add AL,2
+100D:2202 cmp byte ptr DS:[0x002A],0x54
+100D:2207 jae short 0x221C
+100D:2209 cmp AL,3
+100D:220B je short 0x21FA
+100D:220D cmp byte ptr DS:[0x002A],0x24
+100D:2212 jae short 0x221C
+100D:2214 cmp AL,0x0B
+100D:2216 je short 0x21FA
+100D:2218 cmp AL,6
+100D:221A je short 0x21FA
+100D:221C ret near
+100D:2239 xor AX,AX
+100D:223B mov byte ptr DS:[0x009F],AL
+100D:223E mov word ptr DS:[0x0020],AX
+100D:2241 mov byte ptr DS:[0x001A],AL
+100D:2244 mov AX,word ptr DS:[0x00A0]
+100D:2247 or AX,AX
+100D:2249 je short 0x2250
+100D:224B mov byte ptr DS:[0x009F],3
+100D:2250 call near 0x22B1
+100D:2253 mov SI,0x10D8
+100D:2256 call near 0x1AC5
+100D:2259 xor DL,DL
+100D:225B cmp word ptr DS:[SI+0x0E],0
+100D:225F je short 0x2274
+100D:2261 test byte ptr DS:[SI+2],0x60
+100D:2265 jne short 0x2274
+100D:2267 mov AH,AL
+100D:2269 sub AH,byte ptr DS:[SI+0x10]
+100D:226C cmp AH,DL
+100D:226E jbe short 0x2274
+100D:2270 mov DL,AH
+100D:2272 mov DI,SI
+100D:2274 add SI,0x0011
+100D:2277 cmp byte ptr DS:[SI],0xFF
+100D:227A jne short 0x225B
+100D:227C or DL,DL
+100D:227E mov SI,DI
+100D:2280 jne short 0x22A3
+100D:2282 mov SI,word ptr DS:[0x113F]
+100D:2286 jmp short 0x228E
+100D:2288 cmp SI,word ptr DS:[0x113F]
+100D:228C je short 0x22B0
+100D:228E add SI,0x0011
+100D:2291 cmp byte ptr DS:[SI],0xFF
+100D:2294 jne short 0x2299
+100D:2296 mov SI,0x10D8
+100D:2299 cmp word ptr DS:[SI+0x0E],0
+100D:229D je short 0x2288
+100D:229F mov word ptr DS:[0x113F],SI
+100D:22A3 call near 0x235F
+100D:22A6 mov AL,byte ptr DS:[SI]
+100D:22A8 xor AH,AH
+100D:22AA add AX,0
+100D:22AD mov word ptr DS:[0x11F7],AX
+100D:22B0 ret near
+100D:22B1 mov BP,0x00B4
+100D:22B4 and byte ptr DS:[0x00BF],0xF9
+100D:22B9 mov BX,word ptr DS:[0x00BC]
+100D:22BD mov CX,BX
+100D:22BF shr CX,1
+100D:22C1 add CX,BX
+100D:22C3 mov DX,BX
+100D:22C5 add DX,DX
+100D:22C7 mov SI,AX
+100D:22C9 shr SI,1
+100D:22CB mov DI,AX
+100D:22CD shr DI,1
+100D:22CF shr DI,1
+100D:22D1 add DI,SI
+100D:22D3 cmp AX,BX
+100D:22D5 jb short 0x22F1
+100D:22D7 mov word ptr SS:[BP],BX
+100D:22DA mov word ptr SS:[BP+2],AX
+100D:22DD cmp AX,CX
+100D:22DF jb short 0x2300
+100D:22E1 cmp AX,DX
+100D:22E3 jb short 0x230C
+100D:22E5 mov word ptr SS:[BP+4],CX
+100D:22E8 mov word ptr SS:[BP+6],DX
+100D:22EB or byte ptr DS:[0x00BF],6
+100D:22F0 ret near
+100D:2318 mov AL,byte ptr DS:[DI]
+100D:231A mov SI,0x10C7
+100D:231D add SI,0x0011
+100D:2320 cmp AL,byte ptr DS:[SI]
+100D:2322 jne short 0x231D
+100D:2324 call near 0x235F
+100D:2327 call near 0x1AC5
+100D:232A sub AL,byte ptr DS:[SI+3]
+100D:232D test byte ptr DS:[SI+2],8
+100D:2331 jne short 0x2339
+100D:2333 mov AL,1
+100D:2335 or byte ptr DS:[SI+2],8
+100D:2339 mov byte ptr DS:[0x001E],AL
+100D:233C mov byte ptr DS:[0x009D],0
+100D:2341 mov AX,word ptr DS:[0]
+100D:2344 and AX,7
+100D:2347 cmp AL,byte ptr DS:[0x1141]
+100D:234B jb short 0x2353
+100D:234D sub AL,byte ptr DS:[0x1141]
+100D:2351 jmp short 0x2347
+100D:2353 add AX,0x00E8
+100D:2356 mov word ptr DS:[0x11F1],AX
+100D:2359 mov byte ptr DS:[0x009F],0
+100D:235E ret near
+100D:235F mov word ptr DS:[0x10B4],SI
+100D:2363 mov AL,byte ptr DS:[SI+2]
+100D:2366 mov byte ptr DS:[0x001C],AL
+100D:2369 mov AX,word ptr DS:[SI+0x0E]
+100D:236C mov word ptr DS:[0x0020],AX
+100D:236F mov byte ptr DS:[0x001F],0
+100D:2374 or AX,AX
+100D:2376 je short 0x2381
+100D:2378 call near 0x1AC5
+100D:237B sub AL,byte ptr DS:[SI+0x10]
+100D:237E mov byte ptr DS:[0x001F],AL
+100D:2381 mov AL,byte ptr DS:[SI+1]
+100D:2384 mov byte ptr DS:[0x001D],AL
+100D:2387 ret near
+100D:2388 mov AL,0x3C
+100D:238A call near 0x121F
+100D:238D mov BX,3
+100D:2390 call near 0xE3B7
+100D:2393 mov byte ptr DS:[0x009E],AL
+100D:2396 call near 0x1AC5
+100D:2399 mov DI,word ptr DS:[0x10B4]
+100D:239D mov byte ptr DS:[DI+3],AL
+100D:23A0 mov byte ptr DS:[0x001A],0
+100D:23A5 mov AX,word ptr DS:[0x11F1]
+100D:23A8 sub AX,0x00E8
+100D:23AB mov CX,2
+100D:23AE inc AX
+100D:23AF cmp AL,byte ptr DS:[0x1141]
+100D:23B3 jb short 0x23BC
+100D:23B5 sub AL,byte ptr DS:[0x1141]
+100D:23B9 loop 0x23AF
+100D:23BB ret near
+100D:23BC mov BX,AX
+100D:23BE cmp byte ptr DS:[BX+DI+4],0
+100D:23C2 je short 0x23AE
+100D:23C4 add AX,0x00E8
+100D:23C7 mov word ptr DS:[0x11F1],AX
+100D:23CA mov AL,byte ptr DS:[BX+DI+9]
+100D:23CD and AL,0x7F
+100D:23CF shl AL,1
+100D:23D1 mov byte ptr DS:[0x009D],AL
+100D:23D4 ret near
+100D:23D5 mov AL,byte ptr DS:[0x009D]
+100D:23D8 mov AH,AL
+100D:23DA shr AH,1
+100D:23DC shr AH,1
+100D:23DE shr AH,1
+100D:23E0 sub AL,AH
+100D:23E2 mov byte ptr DS:[0x009D],AL
+100D:23E5 ret near
+100D:23E6 and byte ptr DS:[DI+2],0x9F
+100D:23EA xor AX,AX
+100D:23EC xchg AL,byte ptr DS:[0x009D]
+100D:23F0 add word ptr DS:[0x0020],AX
+100D:23F4 add word ptr DS:[DI+0x0E],AX
+100D:23F7 cmp AX,word ptr DS:[DI+0x0E]
+100D:23FA jne short 0x2400
+100D:23FC inc byte ptr DS:[0x0022]
+100D:2400 call near 0x1AC5
+100D:2403 mov byte ptr DS:[DI+0x10],AL
+100D:2406 mov AX,word ptr DS:[0x11F1]
+100D:2409 sub AX,0x00E8
+100D:240C mov BX,AX
+100D:240E dec byte ptr DS:[BX+DI+4]
+100D:2411 mov SI,word ptr DS:[0x114E]
+100D:2415 inc byte ptr DS:[BX+SI+0x14]
+100D:2418 ret near
+100D:241A cmp word ptr DS:[0x47C4],0x000D
+100D:241F je short 0x2426
+100D:2421 mov AL,1
+100D:2423 jmp short 0x2496
+100D:2426 mov DI,word ptr DS:[0x10B4]
+100D:242A call near 0x23E6
+100D:242D mov AL,1
+100D:242F jmp short 0x2496
+100D:2432 cmp word ptr DS:[0x47C4],0x000D
+100D:2437 je short 0x243E
+100D:2439 mov AL,2
+100D:243B jmp short 0x2496
+100D:243E mov DI,word ptr DS:[0x10B4]
+100D:2442 mov BX,7
+100D:2445 call near 0xE3B7
+100D:2448 je short 0x246B
+100D:244A mov byte ptr DS:[0x009D],0
+100D:244F mov AL,2
+100D:2451 jmp short 0x2496
+100D:2453 cmp word ptr DS:[0x47C4],0x000D
+100D:2458 je short 0x245F
+100D:245A mov AL,3
+100D:245C jmp short 0x2496
+100D:245F mov DI,word ptr DS:[0x10B4]
+100D:2463 mov BX,3
+100D:2466 call near 0xE3B7
+100D:2469 jne short 0x2474
+100D:246B or byte ptr DS:[0x009E],0x10
+100D:2470 mov AL,3
+100D:2472 jmp short 0x2496
+100D:2474 inc byte ptr DS:[0x009E]
+100D:2478 and byte ptr DS:[0x009E],3
+100D:247D and AL,1
+100D:247F add AL,byte ptr DS:[0x001A]
+100D:2483 sub AL,byte ptr DS:[DI+1]
+100D:2486 jb short 0x2491
+100D:2488 mov byte ptr DS:[0x009D],0
+100D:248D mov AL,3
+100D:248F jmp short 0x2496
+100D:2491 call near 0x23D5
+100D:2494 mov AL,3
+100D:2496 mov byte ptr DS:[0x009F],AL
+100D:2499 inc byte ptr DS:[0x001A]
+100D:249D call near 0xD2E2
+100D:24A0 jmp near 0x9472
+100D:24A3 cmp byte ptr DS:[0x002A],0x10
+100D:24A8 jae short 0x24B0
+100D:24AA or byte ptr DS:[0x0FF7],0x10
+100D:24AF ret near
+100D:24B0 call near 0xA1E8
+100D:24B3 mov word ptr DS:[0x00C0],0
+100D:24B9 or byte ptr DS:[0x00BF],1
+100D:24BE call near 0x24D2
+100D:24C1 add AH,7
+100D:24C4 mov AL,0x0B
+100D:24C6 cmp AH,0x0C
+100D:24C9 jne short 0x24CF
+100D:24CF jmp near 0x26DA
+100D:24D2 mov AL,byte ptr DS:[0x00BE]
+100D:24D5 xor CL,CL
+100D:24D7 xor AH,AH
+100D:24D9 cmp AL,1
+100D:24DB adc AH,CL
+100D:24DD cmp AL,0x40
+100D:24DF adc AH,CL
+100D:24E1 cmp AL,0x80
+100D:24E3 adc AH,CL
+100D:24E5 cmp AL,0x90
+100D:24E7 adc AH,CL
+100D:24E9 cmp AL,0xFF
+100D:24EB adc AH,CL
+100D:24ED ret near
+100D:24EE cmp byte ptr DS:[0x009F],2
+100D:24F3 je short 0x2541
+100D:24F5 jae short 0x252D
+100D:24F7 cmp byte ptr DS:[0x476D],0
+100D:24FC jne short 0x2517
+100D:24FE mov AL,byte ptr DS:[0x001A]
+100D:2501 dec AX
+100D:2502 and AX,3
+100D:2505 mov BX,AX
+100D:2507 shl BX,1
+100D:2509 mov AX,word ptr DS:[BX+0x00B4]
+100D:250D mov word ptr DS:[0x00C0],AX
+100D:2510 mov word ptr DS:[0x1158],0xFFFF
+100D:2516 ret near
+100D:2517 mov DI,word ptr DS:[0x10B4]
+100D:251B xor AX,AX
+100D:251D xchg AX,word ptr DS:[DI+0x0E]
+100D:2520 dec byte ptr DS:[0x0022]
+100D:2524 sub word ptr DS:[0x00A0],AX
+100D:2528 add word ptr DS:[0x1172],AX
+100D:252C ret near
+100D:252D cmp byte ptr DS:[0x476D],0
+100D:2532 je short 0x2540
+100D:2534 mov DI,word ptr DS:[0x10B4]
+100D:2538 and byte ptr DS:[DI+2],0x9F
+100D:253C or byte ptr DS:[DI+2],0x20
+100D:2540 ret near
+100D:2555 mov AL,0x0A
+100D:2557 call near 0xAB15
+100D:255A mov DX,0x008C
+100D:255D mov BX,0x0027
+100D:2560 mov AX,0x001B
+100D:2563 jmp near 0xC22F
+100D:2566 mov SI,0x1008
+100D:2569 push AX
+100D:256A call near 0x40E6
+100D:256D pop AX
+100D:256E mov BX,AX
+100D:2570 call near 0x2524
+100D:2573 mov AX,BX
+100D:2575 xor DX,DX
+100D:2577 xchg AL,AH
+100D:2579 xchg AL,DL
+100D:257B div word ptr DS:[0x00BC]
+100D:257F cmp AX,0x0200
+100D:2582 jb short 0x2587
+100D:2587 shr AX,1
+100D:2589 jne short 0x258D
+100D:258D mov byte ptr DS:[0x00BE],AL
+100D:2590 mov AH,0x40
+100D:2592 mov BX,7
+100D:2595 cmp AL,0xC0
+100D:2597 jae short 0x25B3
+100D:2599 dec BX
+100D:259A cmp AL,0x80
+100D:259C ja short 0x25B3
+100D:25B3 or AH,0x80
+100D:25B6 mov byte ptr DS:[0x00BF],AH
+100D:25BA mov SI,0x118D
+100D:25BD add word ptr DS:[SI],BX
+100D:25BF mov BL,byte ptr DS:[0x00C3]
+100D:25C3 shr BL,1
+100D:25C5 and BX,3
+100D:25C8 call near 0xE3B7
+100D:25CB add word ptr DS:[SI],AX
+100D:25CD call near 0x1AC5
+100D:25D0 sub AX,word ptr DS:[SI]
+100D:25D2 neg AX
+100D:25D4 mov byte ptr DS:[0x00CF],AL
+100D:25D7 mov word ptr DS:[0x1158],0
+100D:25DD call near 0x2806
+100D:25E0 call near 0x2795
+100D:25E3 call near 0xC49A
+100D:25E6 mov AX,0x002C
+100D:25E9 call near 0xC13E
+100D:25EC call near 0xC0F4
+100D:25EF mov BP,0x2555
+100D:25F2 mov AL,8
+100D:25F4 call near 0xC108
+100D:25F7 mov AX,0x0064
+100D:25FA call near 0xDDB0
+100D:25FD mov CX,0x0018
+100D:2600 mov BP,0x0A44
+100D:2603 mov AL,6
+100D:2605 call near 0xC108
+100D:2608 mov CX,0x0018
+100D:260B push CX
+100D:260C mov BP,0x0A44
+100D:260F mov AX,0x000C
+100D:2612 dec CX
+100D:2613 call near 0xE353
+100D:2616 pop CX
+100D:2617 loop 0x260B
+100D:2619 mov AX,0x0027
+100D:261C call near 0xAB4F
+100D:261F mov SI,0x4C60
+100D:2622 mov BP,0x15AA
+100D:2625 mov ES,word ptr DS:[0xDBD6]
+100D:2629 call far dword ptr DS:[0x3919]
+100D:262D mov AX,0x00C8
+100D:2630 call near 0xDDB0
+100D:2633 call near 0xABA9
+100D:2636 mov AL,1
+100D:2638 call near 0xAB15
+100D:263B mov CX,1
+100D:263E push CX
+100D:263F mov SI,0x15B2
+100D:2642 push SI
+100D:2643 mov BP,0x26AC
+100D:2646 mov AX,0x000C
+100D:2649 call near 0xE353
+100D:264C pop SI
+100D:264D cmp SI,0x161E
+100D:2651 jne short 0x2656
+100D:2653 call near 0xAC30
+100D:2656 add SI,6
+100D:2659 cmp byte ptr DS:[SI],0xFF
+100D:265C jne short 0x2642
+100D:265E pop CX
+100D:265F loop 0x263E
+100D:2661 call near 0x26AC
+100D:2664 xor CX,CX
+100D:2666 inc CX
+100D:2667 push CX
+100D:2668 mov BP,0x0A44
+100D:266B mov AX,0x000C
+100D:266E call near 0xE353
+100D:2671 pop CX
+100D:2672 cmp CX,0x0019
+100D:2675 jb short 0x2666
+100D:2677 mov byte ptr DS:[0x47A9],1
+100D:267C mov BP,0x2DB1
+100D:267F call near 0xC097
+100D:2682 mov AX,0x002C
+100D:2685 call near 0xC13E
+100D:2688 mov AL,6
+100D:268A mov BP,0x2555
+100D:268D call near 0xC108
+100D:2690 mov BP,0x2DB1
+100D:2693 call near 0xC097
+100D:2696 mov byte ptr DS:[0x47A9],0
+100D:269B mov BP,0x26A6
+100D:269E mov AL,8
+100D:26A0 call near 0xC108
+100D:26A3 jmp near 0x2773
+100D:26A6 call near 0xC43E
+100D:26A9 jmp near 0x1797
+100D:26AC push SI
+100D:26AD mov BP,0x15AA
+100D:26B0 mov SI,0x4C60
+100D:26B3 mov ES,word ptr DS:[0xDBD6]
+100D:26B7 call far dword ptr DS:[0x391D]
+100D:26BB pop SI
+100D:26BC lods AX,word ptr DS:[SI]
+100D:26BD or AX,AX
+100D:26BF js short 0x26CB
+100D:26C1 mov BX,AX
+100D:26C3 lods AX,word ptr DS:[SI]
+100D:26C4 mov DX,AX
+100D:26C6 lods AX,word ptr DS:[SI]
+100D:26C7 xchg BX,AX
+100D:26C8 call near 0xC22F
+100D:26CB mov DX,0x007E
+100D:26CE mov BX,0x004C
+100D:26D1 mov BP,0x00C2
+100D:26D4 mov AX,0x004C
+100D:26D7 jmp near 0xC526
+100D:26DA call near 0xE270
+100D:26DD mov CL,byte ptr DS:[0x00C8]
+100D:26E1 xor CH,CH
+100D:26E3 jcxz short 0x26F1
+100D:26E5 mov SI,0x1179
+100D:26E8 cmp AX,word ptr DS:[SI]
+100D:26EA je short 0x272B
+100D:26EC add SI,2
+100D:26EF loop 0x26E8
+100D:26F1 mov CL,byte ptr DS:[0x00C8]
+100D:26F5 mov SI,0x1179
+100D:26F8 cmp CL,0x0A
+100D:26FB jb short 0x2707
+100D:26FD push AX
+100D:26FE call near 0x272F
+100D:2701 mov CL,9
+100D:2703 mov SI,0x1179
+100D:2706 pop AX
+100D:2707 add CL,CL
+100D:2709 xor CH,CH
+100D:270B add SI,CX
+100D:270D mov word ptr DS:[SI],AX
+100D:270F inc byte ptr DS:[0x00C8]
+100D:2713 inc byte ptr DS:[0x00C9]
+100D:2717 cmp byte ptr DS:[0x002A],0x38
+100D:271C jb short 0x272B
+100D:271E cmp byte ptr DS:[0x000B],8
+100D:2723 je short 0x272B
+100D:2725 mov AX,0x0201
+100D:2728 call near 0x29EE
+100D:272B call near 0xE283
+100D:272E ret near
+100D:272F mov CL,byte ptr DS:[0x00C8]
+100D:2733 xor CH,CH
+100D:2735 jcxz short 0x274D
+100D:2737 mov SI,0x1179
+100D:273A dec byte ptr DS:[0x00C8]
+100D:273E mov DI,SI
+100D:2740 add SI,2
+100D:2743 push DS
+100D:2744 pop ES
+100D:2745 mov CX,9
+100D:2748 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:274A xor AX,AX
+100D:274C stos word ptr ES:[DI],AX
+100D:274D ret near
+100D:274E call near 0xC08E
+100D:2751 mov AX,0x0015
+100D:2754 call near 0xC13E
+100D:2757 mov SI,0x14C8
+100D:275A call near 0xC21B
+100D:275D mov AL,1
+100D:275F call near 0xC08E
+100D:2762 and AX,7
+100D:2765 add AL,0x0B
+100D:2767 mov BX,0x0056
+100D:276A mov DX,0x0064
+100D:276D call near 0xC22F
+100D:2770 jmp near 0xC07C
+100D:2773 mov AX,0x0015
+100D:2776 call near 0xC13E
+100D:2779 mov AL,9
+100D:277B call near 0xAB15
+100D:277E mov word ptr DS:[0xD816],4
+100D:2784 mov BP,0x27B6
+100D:2787 mov AX,9
+100D:278A call near 0xE353
+100D:278D dec word ptr DS:[0xD816]
+100D:2791 jns short 0x2784
+100D:2793 jmp short 0x274E
+100D:2795 mov AX,0x0015
+100D:2798 call near 0xC13E
+100D:279B mov word ptr DS:[0xD816],0
+100D:27A1 mov BP,0x27B6
+100D:27A4 mov AX,9
+100D:27A7 call near 0xE353
+100D:27AA inc word ptr DS:[0xD816]
+100D:27AE cmp word ptr DS:[0xD816],0x000D
+100D:27B3 jb short 0x27A1
+100D:27B5 ret near
+100D:27B6 mov AX,word ptr DS:[0xD816]
+100D:27B9 and AX,7
+100D:27BC cmp AL,5
+100D:27BE jb short 0x27C4
+100D:27C0 sub AL,8
+100D:27C2 neg AL
+100D:27C4 add AL,2
+100D:27C6 call near 0x275F
+100D:27C9 call near 0xC08E
+100D:27CC mov BX,0x0067
+100D:27CF push BX
+100D:27D0 mov BX,0x000F
+100D:27D3 call near 0xE3B7
+100D:27D6 cmp AL,DL
+100D:27D8 je short 0x27D3
+100D:27DA mov DL,AL
+100D:27DC add AX,0x0017
+100D:27DF pop BX
+100D:27E0 push DX
+100D:27E1 mov DX,0x00A3
+100D:27E4 call near 0xC2FD
+100D:27E7 pop DX
+100D:27E8 add BX,3
+100D:27EB cmp BX,0x0070
+100D:27EE jbe short 0x27CF
+100D:27F0 mov SI,0x14CE
+100D:27F3 mov AX,word ptr DS:[0xD816]
+100D:27F6 and AX,3
+100D:27F9 add AL,0x13
+100D:27FB mov byte ptr DS:[SI],AL
+100D:27FD mov byte ptr DS:[SI+6],AL
+100D:2800 call near 0xC21B
+100D:2803 jmp near 0xC07C
+100D:2806 call near 0x274E
+100D:2809 mov AL,2
+100D:280B call near 0x275F
+100D:280E mov CX,0x0014
+100D:2811 call near 0x281C
+100D:2814 call near 0xABA9
+100D:2817 mov AL,1
+100D:2819 jmp near 0x275F
+100D:281C mov AX,0x0015
+100D:281F call near 0xC13E
+100D:2822 mov word ptr DS:[0xD816],0
+100D:2828 push CX
+100D:2829 call near 0x27C9
+100D:282C mov AX,9
+100D:282F call near 0xE3A0
+100D:2832 inc word ptr DS:[0xD816]
+100D:2836 pop CX
+100D:2837 loop 0x2828
+100D:2839 ret near
+100D:283A xor AX,AX
+100D:283C jmp short 0x2841
+100D:283E xor AX,AX
+100D:2840 dec AX
+100D:2841 mov byte ptr DS:[0x00DB],AL
+100D:2844 neg AX
+100D:2846 add AL,0x2A
+100D:2848 call near 0xAB45
+100D:284B call near 0x98B2
+100D:284E call near 0x2806
+100D:2851 call near 0x2A7F
+100D:2854 call near 0x3AE9
+100D:2857 mov byte ptr DS:[0x00E9],0
+100D:285C push DS
+100D:285D pop ES
+100D:285E mov DI,0x1FC3
+100D:2861 xor AL,AL
+100D:2863 stos byte ptr ES:[DI],AL
+100D:2864 mov SI,0x1179
+100D:2867 xor CX,CX
+100D:2869 mov CL,byte ptr DS:[0x00C8]
+100D:286D add SI,CX
+100D:286F add SI,CX
+100D:2871 mov BL,byte ptr DS:[0x00DB]
+100D:2875 sub SI,2
+100D:2878 mov AX,word ptr DS:[SI]
+100D:287A mov AH,AL
+100D:287C xor AH,BL
+100D:287E js short 0x288B
+100D:2880 and AX,0x003F
+100D:2883 add AX,0x0078
+100D:2886 stos word ptr ES:[DI],AX
+100D:2887 mov AX,0x290B
+100D:288A stos word ptr ES:[DI],AX
+100D:288B loop 0x2875
+100D:288D mov AX,0x00A3
+100D:2890 stos word ptr ES:[DI],AX
+100D:2891 mov AX,0x29D4
+100D:2894 stos word ptr ES:[DI],AX
+100D:2895 xor AX,AX
+100D:2897 stos word ptr ES:[DI],AX
+100D:2898 mov BP,0x1FC2
+100D:289B mov BX,0x0F66
+100D:289E jmp near 0xD323
+100D:28A1 mov byte ptr DS:[0x47A9],AL
+100D:28A4 call near 0x2795
+100D:28A7 call near 0xC49A
+100D:28AA call near 0xABA9
+100D:28AD mov BP,0x28B5
+100D:28B0 mov AL,8
+100D:28B2 jmp near 0xC108
+100D:28B5 mov AX,0x0015
+100D:28B8 call near 0xC13E
+100D:28BB mov AL,0x0A
+100D:28BD call near 0xAB15
+100D:28C0 mov AL,byte ptr DS:[0x47A9]
+100D:28C3 xor AH,AH
+100D:28C5 mov SI,AX
+100D:28C7 shl SI,1
+100D:28C9 mov DX,word ptr DS:[SI+0x225D]
+100D:28CD xor BX,BX
+100D:28CF xchg BL,DH
+100D:28D1 add AX,0x001E
+100D:28D4 shl SI,1
+100D:28D6 mov word ptr DS:[SI+0x47F8],DX
+100D:28DA mov word ptr DS:[SI+0x47FA],BX
+100D:28DE jmp near 0xC22F
+100D:28E1 cmp byte ptr DS:[0x0024],0x0C
+100D:28E6 jne short 0x28EB
+100D:28EB cmp byte ptr DS:[0x47A9],0
+100D:28F0 je short 0x290A
+100D:28F2 call near 0xC49A
+100D:28F5 mov byte ptr DS:[0x47A6],0xFF
+100D:28FA mov AL,8
+100D:28FC mov BP,0x2DD3
+100D:28FF call near 0xC108
+100D:2902 mov byte ptr DS:[0x47A9],0
+100D:2907 call near 0x2773
+100D:290A ret near
+100D:290B mov AL,byte ptr DS:[0x1FC3]
+100D:290E cbw
+100D:290F shr AX,1
+100D:2911 shr AX,1
+100D:2913 add CX,AX
+100D:2915 inc CX
+100D:2916 mov SI,0x1179
+100D:2919 xor AX,AX
+100D:291B mov AL,byte ptr DS:[0x00C8]
+100D:291E add SI,AX
+100D:2920 add SI,AX
+100D:2922 sub SI,2
+100D:2925 mov AX,word ptr DS:[SI]
+100D:2927 xor AL,byte ptr DS:[0x00DB]
+100D:292B js short 0x2922
+100D:292D loop 0x2922
+100D:292F mov AX,word ptr DS:[SI]
+100D:2931 mov byte ptr DS:[0x0024],AH
+100D:2935 and AL,0x3F
+100D:2937 cmp byte ptr DS:[0x00DB],0
+100D:293C jne short 0x2956
+100D:293E or byte ptr DS:[SI],0x80
+100D:2941 dec byte ptr DS:[0x00C9]
+100D:2945 cmp AL,0x0B
+100D:2947 jne short 0x2956
+100D:2949 sub AH,2
+100D:294C cmp AH,2
+100D:294F jae short 0x2956
+100D:2951 or byte ptr DS:[0x00BF],0x20
+100D:2956 xor AH,AH
+100D:2958 cmp AL,byte ptr DS:[0x47A9]
+100D:295C je short 0x2970
+100D:295E push AX
+100D:295F call near 0x28E1
+100D:2962 pop AX
+100D:2963 push AX
+100D:2964 add AX,0x001A
+100D:2967 call near 0xAB45
+100D:296A pop AX
+100D:296B push AX
+100D:296C call near 0x28A1
+100D:296F pop AX
+100D:2970 mov byte ptr DS:[0x00E9],AL
+100D:2973 xor BL,BL
+100D:2975 xchg BL,byte ptr DS:[0x46D9]
+100D:2979 push BX
+100D:297A call near 0x96F1
+100D:297D call near 0x98F5
+100D:2980 mov byte ptr DS:[0x1C06],0x80
+100D:2985 mov BP,0x1FF2
+100D:2988 mov BX,0x2997
+100D:298B call near 0xD323
+100D:298E pop AX
+100D:298F mov byte ptr DS:[0x46D9],AL
+100D:2992 ret near
+100D:2993 mov AL,6
+100D:2995 jmp short 0x2999
+100D:2997 xor AL,AL
+100D:2999 mov BL,byte ptr DS:[0x00C9]
+100D:299D mov byte ptr DS:[0x00EB],BL
+100D:29A1 cmp byte ptr DS:[0x47A9],0
+100D:29A6 je short 0x2992
+100D:29A8 push AX
+100D:29A9 call near 0x97CF
+100D:29AC call near 0x98F5
+100D:29AF call near 0xC08E
+100D:29B2 call near 0x28B5
+100D:29B5 call near 0x28E1
+100D:29B8 mov byte ptr DS:[0x0024],0
+100D:29BD pop AX
+100D:29BE mov byte ptr DS:[0x0023],AL
+100D:29C1 call near 0xD316
+100D:29C4 call near 0x2EB2
+100D:29C7 call near 0x2DD3
+100D:29CA cmp byte ptr DS:[0x47A7],0
+100D:29CF jne short 0x2992
+100D:29D1 jmp near 0xD280
+100D:29D4 mov AX,0x0029
+100D:29D7 call near 0xAB45
+100D:29DA mov byte ptr DS:[0x47A6],0xFF
+100D:29DF mov BP,0x2DBF
+100D:29E2 call near 0xC097
+100D:29E5 call near 0xD316
+100D:29E8 call near 0xD280
+100D:29EB jmp near 0xABA9
+100D:29EE xor DI,DI
+100D:29F0 test byte ptr DS:[0x000A],1
+100D:29F5 je short 0x2A33
+100D:29F7 mov SI,0x1190
+100D:29FA mov CL,byte ptr DS:[SI]
+100D:29FC xor CH,CH
+100D:29FE jcxz short 0x2A14
+100D:2A00 inc SI
+100D:2A01 cmp AX,word ptr DS:[SI]
+100D:2A03 jne short 0x2A0A
+100D:2A0A add SI,4
+100D:2A0D loop 0x2A01
+100D:2A0F mov SI,0x1190
+100D:2A12 mov CL,byte ptr DS:[SI]
+100D:2A14 cmp CX,0x000A
+100D:2A17 jb short 0x2A25
+100D:2A25 inc byte ptr DS:[SI]
+100D:2A27 inc SI
+100D:2A28 add CX,CX
+100D:2A2A add CX,CX
+100D:2A2C add SI,CX
+100D:2A2E mov word ptr DS:[SI],AX
+100D:2A30 mov word ptr DS:[SI+2],DI
+100D:2A33 ret near
+100D:2A34 mov SI,0x1190
+100D:2A37 dec byte ptr DS:[SI]
+100D:2A39 jne short 0x2A3F
+100D:2A3B mov byte ptr DS:[SI-1],0
+100D:2A3F inc SI
+100D:2A40 mov DI,SI
+100D:2A42 add SI,4
+100D:2A45 push DS
+100D:2A46 pop ES
+100D:2A47 mov CX,0x0012
+100D:2A4A rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2A4C xor AX,AX
+100D:2A4E stos word ptr ES:[DI],AX
+100D:2A4F stos word ptr ES:[DI],AX
+100D:2A50 ret near
+100D:2A51 mov SI,0x1190
+100D:2A54 mov DL,AL
+100D:2A56 mov BX,DI
+100D:2A58 xor CX,CX
+100D:2A5A xor BP,BP
+100D:2A5C lods AL,byte ptr DS:[SI]
+100D:2A5D mov CL,AL
+100D:2A5F jcxz short 0x2AAE
+100D:2A61 mov DI,SI
+100D:2A63 push DS
+100D:2A64 pop ES
+100D:2A65 lods AX,word ptr DS:[SI]
+100D:2A66 cmp AH,DL
+100D:2A68 jne short 0x2A78
+100D:2A6A cmp DL,0x0F
+100D:2A6D jne short 0x2A73
+100D:2A6F cmp BX,word ptr DS:[SI]
+100D:2A71 jne short 0x2A78
+100D:2A73 add SI,2
+100D:2A76 jmp short 0x2A7B
+100D:2A78 stos word ptr ES:[DI],AX
+100D:2A79 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2A7A inc BP
+100D:2A7B loop 0x2A65
+100D:2A7D jmp short 0x2A9E
+100D:2A7F mov SI,0x1190
+100D:2A82 xor CX,CX
+100D:2A84 xor BP,BP
+100D:2A86 lods AL,byte ptr DS:[SI]
+100D:2A87 mov CL,AL
+100D:2A89 jcxz short 0x2AAE
+100D:2A8B mov DI,SI
+100D:2A8D push DS
+100D:2A8E pop ES
+100D:2A8F lods AX,word ptr DS:[SI]
+100D:2A90 cmp AL,1
+100D:2A92 jne short 0x2A99
+100D:2A99 stos word ptr ES:[DI],AX
+100D:2A9A movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2A9B inc BP
+100D:2A9C loop 0x2A8F
+100D:2A9E mov CX,BP
+100D:2AA0 mov CH,CL
+100D:2AA2 xchg CL,byte ptr DS:[0x1190]
+100D:2AA6 cmp CL,CH
+100D:2AA8 je short 0x2AAE
+100D:2AAA xor AX,AX
+100D:2AAC stos word ptr ES:[DI],AX
+100D:2AAD stos word ptr ES:[DI],AX
+100D:2AAE ret near
+100D:2AAF push SI
+100D:2AB0 mov SI,0x1190
+100D:2AB3 xor CX,CX
+100D:2AB5 mov CL,byte ptr DS:[SI]
+100D:2AB7 jcxz short 0x2ACD
+100D:2AB9 inc SI
+100D:2ABA cmp AL,byte ptr DS:[SI+1]
+100D:2ABD jne short 0x2AC8
+100D:2ABF cmp AL,0x0F
+100D:2AC1 jne short 0x2AD0
+100D:2AC8 add SI,4
+100D:2ACB loop 0x2ABA
+100D:2ACD pop SI
+100D:2ACE clc
+100D:2ACF ret near
+100D:2AD0 mov AX,word ptr DS:[SI]
+100D:2AD2 mov DI,word ptr DS:[SI+2]
+100D:2AD5 pop SI
+100D:2AD6 stc
+100D:2AD7 ret near
+100D:2AD8 push AX
+100D:2AD9 mov AX,word ptr DS:[0x1191]
+100D:2ADC mov BX,word ptr DS:[0x0012]
+100D:2AE0 mov CL,AH
+100D:2AE2 shr BX,CL
+100D:2AE4 shr BX,1
+100D:2AE6 jae short 0x2AF7
+100D:2AF7 pop AX
+100D:2AF8 clc
+100D:2AF9 ret near
+100D:2B00 push word ptr DS:[0x11CE]
+100D:2B04 or DI,DI
+100D:2B06 je short 0x2B0D
+100D:2B0D mov byte ptr DS:[0x00EA],AL
+100D:2B10 mov AL,AH
+100D:2B12 xor AH,AH
+100D:2B14 call near 0x96D8
+100D:2B17 call near 0x9945
+100D:2B1A mov byte ptr DS:[0x00EA],0xFF
+100D:2B1F mov AL,1
+100D:2B21 call near 0x9EF1
+100D:2B24 pop DI
+100D:2B25 call near 0x331E
+100D:2B28 stc
+100D:2B29 ret near
+100D:2B2A mov AL,byte ptr DS:[0x46D9]
+100D:2B2D or AL,byte ptr DS:[0x4774]
+100D:2B31 or AL,byte ptr DS:[0x11C9]
+100D:2B35 jne short 0x2B8F
+100D:2B37 call near 0xD41B
+100D:2B3A cmp BP,0x1F0E
+100D:2B3E jne short 0x2B8F
+100D:2B40 cmp byte ptr DS:[0x00FB],0
+100D:2B45 js short 0x2B8F
+100D:2B47 mov AX,word ptr DS:[0xCE7A]
+100D:2B4A cmp byte ptr DS:[0x002A],0x14
+100D:2B4F jb short 0x2B8F
+100D:2B51 je short 0x2BA1
+100D:2B53 cmp byte ptr DS:[0x1190],0
+100D:2B58 je short 0x2B8F
+100D:2B5A sub AX,word ptr DS:[0xDC5A]
+100D:2B5E cmp AX,0x0032
+100D:2B61 jb short 0x2B8F
+100D:2B63 call near 0x2AD8
+100D:2B66 jae short 0x2B70
+100D:2B70 cmp byte ptr DS:[0x002B],0
+100D:2B75 jne short 0x2BD2
+100D:2B77 mov BL,0x28
+100D:2B79 cmp AX,0x0096
+100D:2B7C jb short 0x2B90
+100D:2B7E cmp AX,0x00FA
+100D:2B81 jb short 0x2B8F
+100D:2B83 cmp AX,0x015E
+100D:2B86 mov BL,0x26
+100D:2B88 jb short 0x2B90
+100D:2B8A cmp AX,0x01C2
+100D:2B8D jae short 0x2BD2
+100D:2B8F ret near
+100D:2B90 push BX
+100D:2B91 call near 0xDBB2
+100D:2B94 call near 0xC49A
+100D:2B97 pop AX
+100D:2B98 mov BP,0x0F66
+100D:2B9B call near 0xC108
+100D:2B9E jmp near 0xDBEC
+100D:2BA1 cmp word ptr DS:[0x0010],0
+100D:2BA6 jne short 0x2B8F
+100D:2BA8 cmp byte ptr DS:[8],0xFF
+100D:2BAD jne short 0x2B8F
+100D:2BAF sub AX,word ptr DS:[0xDC5A]
+100D:2BB3 cmp AX,0x03E8
+100D:2BB6 jb short 0x2B8F
+100D:2BB8 add word ptr DS:[0xDC5A],0x03B6
+100D:2BBE call near 0x1071
+100D:2BC1 call near 0xB17A
+100D:2BC4 call near 0x2B2A
+100D:2BC7 cmp byte ptr DS:[0x00EA],0xFF
+100D:2BCC jne short 0x2BC4
+100D:2BCE ret near
+100D:2BD2 call near 0xDBB2
+100D:2BD5 call near 0xAD5E
+100D:2BD8 mov DI,word ptr DS:[0x1193]
+100D:2BDC or DI,DI
+100D:2BDE je short 0x2BF4
+100D:2BE0 mov AX,DI
+100D:2BE2 sub AX,0x0100
+100D:2BE5 cmp AX,0x07AA
+100D:2BE8 jb short 0x2BF1
+100D:2BF1 call near 0x331E
+100D:2BF4 mov AX,word ptr DS:[0x1191]
+100D:2BF7 mov byte ptr DS:[0x00EA],AL
+100D:2BFA cmp AL,1
+100D:2BFC jne short 0x2C01
+100D:2BFE mov byte ptr DS:[0x00EB],AL
+100D:2C01 mov AL,AH
+100D:2C03 xor AH,AH
+100D:2C05 mov DI,word ptr DS:[0x1193]
+100D:2C09 cmp AX,0x0010
+100D:2C0C jae short 0x2BCF
+100D:2C0E cmp AL,0x0E
+100D:2C10 jne short 0x2C16
+100D:2C16 mov word ptr DS:[0x47C4],AX
+100D:2C19 or DI,DI
+100D:2C1B je short 0x2C47
+100D:2C1D call near 0x331E
+100D:2C20 call near 0x2E98
+100D:2C23 cmp word ptr DS:[0x47C4],0x000E
+100D:2C28 jb short 0x2C47
+100D:2C2A mov AL,3
+100D:2C2C cmp byte ptr DS:[0x00EA],0x0E
+100D:2C31 je short 0x2C3A
+100D:2C33 mov AL,byte ptr DS:[DI+9]
+100D:2C36 or AL,AL
+100D:2C38 je short 0x2C47
+100D:2C3A call near 0x6906
+100D:2C3D mov word ptr DS:[0x47C4],0x000E
+100D:2C43 mov word ptr DS:[0x4756],SI
+100D:2C47 call near 0x2C92
+100D:2C4A mov AL,1
+100D:2C4C call near 0x9EF1
+100D:2C4F call near 0x2A34
+100D:2C52 xor AX,AX
+100D:2C54 mov byte ptr DS:[0x1F0F],AL
+100D:2C57 mov word ptr DS:[0x1F10],AX
+100D:2C5A call near 0xD397
+100D:2C5D call near 0xB2B9
+100D:2C60 mov AX,0x0BB8
+100D:2C63 call near 0xDDB0
+100D:2C66 call near 0xB2B3
+100D:2C69 mov SI,0x2CC7
+100D:2C6C call near 0xDA5F
+100D:2C6F call near 0x98E6
+100D:2C72 xor AX,AX
+100D:2C74 mov word ptr DS:[0x479E],AX
+100D:2C77 mov word ptr DS:[0x4540],AX
+100D:2C7A mov byte ptr DS:[0x00EA],0xFF
+100D:2C7F mov byte ptr DS:[0x00E8],0x0A
+100D:2C84 mov word ptr DS:[0xDC30],0
+100D:2C8A mov AL,6
+100D:2C8C call near 0x189A
+100D:2C8F jmp near 0xC412
+100D:2C92 mov AL,6
+100D:2C94 mov BP,0x2C9A
+100D:2C97 jmp near 0xC108
+100D:2C9A mov byte ptr DS:[0x00E8],0
+100D:2C9F mov AL,0x23
+100D:2CA1 call near 0xC2F2
+100D:2CA4 call near 0xC412
+100D:2CA7 mov AX,word ptr DS:[0x47C4]
+100D:2CAA call near 0x96D8
+100D:2CAD xor AX,AX
+100D:2CAF mov word ptr DS:[0x1BEA],AX
+100D:2CB2 mov word ptr DS:[0x1BF8],AX
+100D:2CB5 mov byte ptr DS:[0x46DF],AL
+100D:2CB8 mov SI,0xC0B6
+100D:2CBB call near 0xDA5F
+100D:2CBE mov SI,0x2CC7
+100D:2CC1 mov BP,6
+100D:2CC4 jmp near 0xDA25
+100D:2CC7 mov AL,0x0A
+100D:2CC9 mov SI,0x1478
+100D:2CCC jmp near 0xC0D5
+100D:2CCF or byte ptr DS:[0x000A],8
+100D:2CD4 cmp byte ptr DS:[0x009F],1
+100D:2CD9 jne short 0x2D2B
+100D:2CDB call near 0xDBB2
+100D:2CDE call near 0xABCC
+100D:2CE1 jne short 0x2CEB
+100D:2CE3 mov AX,0x0258
+100D:2CE6 call near 0xDDB0
+100D:2CEB call near 0xABD5
+100D:2CEE cmp byte ptr DS:[0x0029],0x64
+100D:2CF3 jb short 0x2D26
+100D:2CF5 or byte ptr DS:[0x000A],2
+100D:2CFA mov byte ptr DS:[0x00D5],0xFF
+100D:2CFF mov AL,0x38
+100D:2D01 mov BP,0x0F66
+100D:2D04 call near 0xC108
+100D:2D07 mov AX,0x03E8
+100D:2D0A call near 0xE387
+100D:2D0D call near 0x8C8A
+100D:2D10 mov AL,0x36
+100D:2D12 mov BP,0x0F66
+100D:2D15 call near 0xC108
+100D:2D18 mov CX,3
+100D:2D1B call near 0x0FD9
+100D:2D1E mov byte ptr DS:[0x0023],0x11
+100D:2D23 jmp near 0x35AD
+100D:2D26 mov byte ptr DS:[0x46D9],3
+100D:2D2B ret near
+100D:2D74 mov SI,word ptr DS:[0x114E]
+100D:2D78 cmp SI,0x0100
+100D:2D7C jb short 0x2DB0
+100D:2D7E xor AX,AX
+100D:2D80 call near 0x5E4F
+100D:2D83 cmp AX,2
+100D:2D86 jae short 0x2D8F
+100D:2D88 test byte ptr DS:[0x4732],1
+100D:2D8D jne short 0x2DB0
+100D:2D8F cmp AX,4
+100D:2D92 ja short 0x2DB0
+100D:2D94 jne short 0x2D97
+100D:2D97 cmp byte ptr DS:[0x144C],AL
+100D:2D9B je short 0x2DB0
+100D:2D9D mov byte ptr DS:[0x144C],AL
+100D:2DA0 add AX,0x00A1
+100D:2DA3 push DS
+100D:2DA4 pop ES
+100D:2DA5 mov DI,0xBC6E
+100D:2DA8 mov SI,AX
+100D:2DAA call near 0xF0B9
+100D:2DAD call near 0x0098
+100D:2DB0 ret near
+100D:2DB1 mov BP,0xD717
+100D:2DB4 call near 0xC097
+100D:2DB7 call near 0xD95B
+100D:2DBA mov byte ptr DS:[0x47A6],0xFF
+100D:2DBF call near 0x2D74
+100D:2DC2 xor AX,AX
+100D:2DC4 mov byte ptr DS:[0xDCE6],AL
+100D:2DC7 mov byte ptr DS:[0x47A4],AL
+100D:2DCA mov word ptr DS:[0x47AA],AX
+100D:2DCD mov BP,0x2EB2
+100D:2DD0 call near 0xC097
+100D:2DD3 cmp byte ptr DS:[0x002B],0
+100D:2DD8 je short 0x2DFB
+100D:2DDA mov byte ptr DS:[0x4732],0
+100D:2DDF call near 0x2D74
+100D:2DE2 or byte ptr DS:[0x11BC],1
+100D:2DE7 mov byte ptr DS:[0x46DF],0
+100D:2DEC call near 0x0ACD
+100D:2DEF call near 0x1797
+100D:2DF2 call near 0xC4CD
+100D:2DF5 call near 0xC0F4
+100D:2DF8 jmp near 0x17E6
+100D:2DFB test byte ptr DS:[0x4732],1
+100D:2E00 je short 0x2E05
+100D:2E02 call near 0x488A
+100D:2E05 xor AX,AX
+100D:2E07 mov word ptr DS:[0x0014],AX
+100D:2E0A mov byte ptr DS:[0x46DF],AL
+100D:2E0D call near 0xC07C
+100D:2E10 call near 0x5BA0
+100D:2E13 call near 0x37B2
+100D:2E16 test byte ptr DS:[0x11C9],3
+100D:2E1B jne short 0x2E20
+100D:2E1D call near 0xC412
+100D:2E20 call near 0xAD5E
+100D:2E23 call near 0x1834
+100D:2E26 call near 0x1797
+100D:2E29 mov AL,byte ptr DS:[0x46DF]
+100D:2E2C mov AH,AL
+100D:2E2E xchg AL,byte ptr DS:[0x46E0]
+100D:2E32 cmp AL,AH
+100D:2E34 je short 0x2E4C
+100D:2E36 mov AX,word ptr DS:[0xDBD6]
+100D:2E39 cmp AX,word ptr DS:[0xDBD8]
+100D:2E3D je short 0x2E52
+100D:2E3F mov AL,0x10
+100D:2E41 mov BP,0x0F66
+100D:2E44 call near 0xC108
+100D:2E47 call near 0xAE04
+100D:2E4A jmp short 0x2E52
+100D:2E4C call near 0xC0F4
+100D:2E4F call near 0xC4CD
+100D:2E52 call near 0x35AD
+100D:2E55 mov AX,word ptr DS:[0xCE7A]
+100D:2E58 mov word ptr DS:[0xDC5A],AX
+100D:2E5B cmp byte ptr DS:[0x47A7],0
+100D:2E60 jne short 0x2E97
+100D:2E62 mov AL,byte ptr DS:[0x4735]
+100D:2E65 or AL,AL
+100D:2E67 jns short 0x2E6C
+100D:2E69 jmp near 0x3723
+100D:2E6C cmp byte ptr DS:[8],0xFF
+100D:2E71 je short 0x2E7D
+100D:2E73 cmp byte ptr DS:[0x4774],0
+100D:2E78 jne short 0x2E97
+100D:2E7A jmp near 0x17E6
+100D:2E7D cmp byte ptr DS:[0x11C9],0
+100D:2E82 jne short 0x2E97
+100D:2E84 mov SI,word ptr DS:[0x47AA]
+100D:2E88 or SI,SI
+100D:2E8A je short 0x2E97
+100D:2E97 ret near
+100D:2E98 mov word ptr DS:[0x47E6],DI
+100D:2E9C xor AH,AH
+100D:2E9E mov AL,byte ptr DS:[DI]
+100D:2EA0 add AX,0
+100D:2EA3 mov word ptr DS:[0x11ED],AX
+100D:2EA6 mov AL,byte ptr DS:[DI+1]
+100D:2EA9 xor AH,AH
+100D:2EAB add AX,0x000C
+100D:2EAE mov word ptr DS:[0x11EF],AX
+100D:2EB1 ret near
+100D:2EB2 cmp byte ptr DS:[0x4774],0
+100D:2EB7 je short 0x2EC9
+100D:2EB9 call near 0x301A
+100D:2EBC call near 0x98E6
+100D:2EBF mov BP,word ptr DS:[0x2220]
+100D:2EC3 mov BX,0x0F66
+100D:2EC6 jmp near 0xD338
+100D:2EC9 mov DI,word ptr DS:[0x114E]
+100D:2ECD call near 0x2E98
+100D:2ED0 call near 0x2EFB
+100D:2ED3 cmp byte ptr DS:[0x11C9],0
+100D:2ED8 jne short 0x2EDD
+100D:2EDA call near 0x3090
+100D:2EDD mov AX,word ptr DS:[0xDC38]
+100D:2EE0 cmp AX,0x0074
+100D:2EE3 jb short 0x2EEC
+100D:2EE5 mov AX,0xDBEC
+100D:2EE8 push AX
+100D:2EE9 call near 0xDBB2
+100D:2EEC call near 0x2FFB
+100D:2EEF call near 0xD763
+100D:2EF2 mov BP,0x1F0E
+100D:2EF5 mov BX,0x0F66
+100D:2EF8 jmp near 0xD338
+100D:2EFB push DS
+100D:2EFC pop ES
+100D:2EFD mov DI,0x1F0F
+100D:2F00 xor AL,AL
+100D:2F02 stos byte ptr ES:[DI],AL
+100D:2F03 mov BX,word ptr DS:[6]
+100D:2F07 mov DX,word ptr DS:[4]
+100D:2F0B cmp BL,0x80
+100D:2F0E je short 0x2F13
+100D:2F10 jmp near 0x2FAA
+100D:2F13 mov SI,0x220C
+100D:2F16 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F17 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F18 cmp DL,1
+100D:2F1B jne short 0x2F58
+100D:2F1D cmp byte ptr DS:[0x002B],0
+100D:2F22 je short 0x2F3D
+100D:2F24 mov SI,0x2218
+100D:2F27 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F28 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F29 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F2A movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F2B mov SI,0x2214
+100D:2F2E lods AX,word ptr DS:[SI]
+100D:2F2F cmp byte ptr DS:[0x002A],0x4F
+100D:2F34 sbb AH,AH
+100D:2F36 and AH,0x40
+100D:2F39 stos word ptr ES:[DI],AX
+100D:2F3A movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F3B jmp short 0x2FA3
+100D:2F3D push DI
+100D:2F3E mov DI,word ptr DS:[0x114E]
+100D:2F42 call near 0x7F27
+100D:2F45 pop DI
+100D:2F46 mov SI,0x21DC
+100D:2F49 lods AX,word ptr DS:[SI]
+100D:2F4A cmp byte ptr DS:[0x46FF],1
+100D:2F4F sbb AH,AH
+100D:2F51 and AH,0x40
+100D:2F54 stos word ptr ES:[DI],AX
+100D:2F55 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F56 jmp short 0x2FA3
+100D:2F58 cmp BH,1
+100D:2F5B jne short 0x2FA3
+100D:2F5D cmp DL,8
+100D:2F60 jne short 0x2F99
+100D:2F62 cmp byte ptr DS:[0x00C8],0
+100D:2F67 je short 0x2FA3
+100D:2F69 mov SI,0x21E8
+100D:2F6C lods AX,word ptr DS:[SI]
+100D:2F6D mov CL,byte ptr DS:[0x00C9]
+100D:2F71 mov CH,0x27
+100D:2F73 cmp CL,1
+100D:2F76 sbb AH,AH
+100D:2F78 add CH,AH
+100D:2F7A cmp byte ptr DS:[0x47A9],0
+100D:2F7F je short 0x2F83
+100D:2F81 mov CH,0x28
+100D:2F83 mov byte ptr DS:[0x1248],CH
+100D:2F87 and AH,0x40
+100D:2F8A stos word ptr ES:[DI],AX
+100D:2F8B movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F8C lods AX,word ptr DS:[SI]
+100D:2F8D cmp CL,byte ptr DS:[0x00C8]
+100D:2F91 cmc
+100D:2F92 sbb AH,AH
+100D:2F94 and AH,0x40
+100D:2F97 stos word ptr ES:[DI],AX
+100D:2F98 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2F99 cmp DL,9
+100D:2F9C jne short 0x2FA3
+100D:2F9E mov SI,0x21F0
+100D:2FA1 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FA2 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FA3 mov SI,0x21F4
+100D:2FA6 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FA7 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FA8 jmp short 0x2FF7
+100D:2FAA test byte ptr DS:[0x11C9],3
+100D:2FAF jne short 0x2FD7
+100D:2FB1 mov SI,0x220C
+100D:2FB4 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FB5 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FB6 mov SI,0x2214
+100D:2FB9 lods AX,word ptr DS:[SI]
+100D:2FBA cmp byte ptr DS:[0x002A],0x4F
+100D:2FBF sbb AH,AH
+100D:2FC1 and AH,0x40
+100D:2FC4 stos word ptr ES:[DI],AX
+100D:2FC5 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FC6 call near 0x1AE0
+100D:2FC9 mov SI,0x21E0
+100D:2FCC cmp AL,0x0B
+100D:2FCE jb short 0x2FD3
+100D:2FD0 add SI,4
+100D:2FD3 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FD4 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FD5 jmp short 0x2FA3
+100D:2FD7 mov SI,0x21FC
+100D:2FDA cmp byte ptr DS:[0x11CB],0
+100D:2FDF je short 0x2FF0
+100D:2FE1 mov SI,0x2200
+100D:2FE4 cmp byte ptr DS:[0x002A],0x32
+100D:2FE9 jb short 0x2FF0
+100D:2FEB movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FEC movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FED mov SI,0x2204
+100D:2FF0 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FF1 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FF2 mov SI,0x21F8
+100D:2FF5 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FF6 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:2FF7 xor AX,AX
+100D:2FF9 stos word ptr ES:[DI],AX
+100D:2FFA ret near
+100D:2FFB cmp byte ptr DS:[0x002B],0
+100D:3000 jne short 0x301A
+100D:3002 test byte ptr DS:[0x11C9],3
+100D:3007 je short 0x3020
+100D:3009 cmp byte ptr DS:[0x11CA],0
+100D:300E jne short 0x301A
+100D:3010 mov SI,0x1D72
+100D:3013 cmp byte ptr DS:[0x11CB],0
+100D:3018 jne short 0x301D
+100D:301A mov SI,0x1D1E
+100D:301D jmp near 0xD72B
+100D:3020 mov BX,word ptr DS:[6]
+100D:3024 cmp BL,0x80
+100D:3027 jne short 0x3073
+100D:3029 mov DX,word ptr DS:[4]
+100D:302D cmp DH,0x21
+100D:3030 je short 0x3073
+100D:3032 call near 0x3EFE
+100D:3035 inc SI
+100D:3036 mov DI,0x1B96
+100D:3039 mov AL,0x20
+100D:303B cmp word ptr DS:[0x114E],0x0100
+100D:3041 jne short 0x3045
+100D:3043 mov AL,0x80
+100D:3045 mov BX,0x0021
+100D:3048 cmp DL,1
+100D:304B jne short 0x3050
+100D:304D inc BX
+100D:304E mov AL,0x20
+100D:3050 mov word ptr DS:[DI+2],BX
+100D:3053 mov byte ptr DS:[DI+0x46],AL
+100D:3056 mov byte ptr DS:[0x1CC4],AL
+100D:3059 mov CX,4
+100D:305C lods AL,byte ptr DS:[SI]
+100D:305D add DI,0x000E
+100D:3060 mov AH,0x20
+100D:3062 or AL,AL
+100D:3064 je short 0x306C
+100D:3066 cmp AL,0xFB
+100D:3068 jl short 0x306C
+100D:306A mov AH,0x80
+100D:306C mov byte ptr DS:[DI],AH
+100D:306E loop 0x305C
+100D:3070 jmp near 0xD735
+100D:3073 mov DI,0x1B98
+100D:3076 mov word ptr DS:[DI],0x0023
+100D:307A mov BX,0x001D
+100D:307D mov CX,4
+100D:3080 add DI,0x000E
+100D:3083 mov word ptr DS:[DI],BX
+100D:3085 mov word ptr DS:[DI-2],0x0080
+100D:308A inc BX
+100D:308B loop 0x3080
+100D:308D jmp near 0xD735
+100D:3090 call near 0x98E6
+100D:3093 call near 0x3127
+100D:3096 mov DI,0x1F0C
+100D:3099 add DI,4
+100D:309C cmp word ptr DS:[DI],0
+100D:309F jne short 0x3099
+100D:30A1 mov word ptr DS:[0x0012],0
+100D:30A7 push DS
+100D:30A8 pop ES
+100D:30A9 mov BP,0x30B9
+100D:30AC call near 0x36EE
+100D:30AF mov BP,0x3120
+100D:30B2 call near 0x36EE
+100D:30B5 xor AX,AX
+100D:30B7 stos word ptr ES:[DI],AX
+100D:30B8 ret near
+100D:30B9 test byte ptr DS:[SI+0x0F],0x40
+100D:30BD jne short 0x311F
+100D:30BF cmp word ptr DS:[0x47AA],0
+100D:30C4 jne short 0x30CA
+100D:30C6 mov word ptr DS:[0x47AA],SI
+100D:30CA mov AL,byte ptr DS:[SI+0x0E]
+100D:30CD mov CL,AL
+100D:30CF xor AH,AH
+100D:30D1 add AX,0x0078
+100D:30D4 stos word ptr ES:[DI],AX
+100D:30D5 mov AX,1
+100D:30D8 shl AX,CL
+100D:30DA or word ptr DS:[0x0012],AX
+100D:30DE mov AX,word ptr DS:[SI+4]
+100D:30E1 stos word ptr ES:[DI],AX
+100D:30E2 cmp CL,0x0F
+100D:30E5 jne short 0x311F
+100D:30E7 mov CL,byte ptr DS:[0x476A]
+100D:30EB xor CH,CH
+100D:30ED dec CX
+100D:30EE jle short 0x30FE
+100D:30F0 push SI
+100D:30F1 mov SI,AX
+100D:30F3 mov AX,0x0087
+100D:30F6 inc AX
+100D:30F7 stos word ptr ES:[DI],AX
+100D:30F8 xchg SI,AX
+100D:30F9 stos word ptr ES:[DI],AX
+100D:30FA xchg SI,AX
+100D:30FB loop 0x30F6
+100D:30FD pop SI
+100D:30FE cmp byte ptr DS:[0x002A],5
+100D:3103 jb short 0x311F
+100D:3105 mov AL,byte ptr DS:[0x476B]
+100D:3108 or AL,AL
+100D:310A je short 0x311F
+100D:310C push DI
+100D:310D dec AL
+100D:310F sub AL,byte ptr DS:[0x476A]
+100D:3113 cbw
+100D:3114 shl AX,1
+100D:3116 shl AX,1
+100D:3118 add DI,AX
+100D:311A mov word ptr DS:[DI],0x008F
+100D:311E pop DI
+100D:311F ret near
+100D:3120 test byte ptr DS:[SI+0x0F],0x40
+100D:3124 jne short 0x30CA
+100D:3126 ret near
+100D:3127 mov byte ptr DS:[0x476B],0
+100D:312C mov byte ptr DS:[0x476A],0
+100D:3131 mov AX,0x7F80
+100D:3134 mov word ptr DS:[0x10CA],AX
+100D:3137 mov word ptr DS:[0x10BA],AX
+100D:313A mov word ptr DS:[0x10AA],AX
+100D:313D mov word ptr DS:[0x109A],AX
+100D:3140 mov BX,word ptr DS:[6]
+100D:3144 cmp BL,0x80
+100D:3147 jne short 0x316D
+100D:3149 mov DI,word ptr DS:[0x114E]
+100D:314D mov DX,word ptr DS:[4]
+100D:3151 mov BP,0x316E
+100D:3154 call near 0x6603
+100D:3157 cmp byte ptr DS:[DI+8],0x21
+100D:315B jne short 0x316A
+100D:315D mov word ptr DS:[0x10A8],DX
+100D:3161 mov word ptr DS:[0x10AA],BX
+100D:3165 push DI
+100D:3166 call near 0x2318
+100D:3169 pop DI
+100D:316A call near 0x331E
+100D:316D ret near
+100D:316E mov AL,byte ptr DS:[SI+3]
+100D:3171 mov AH,2
+100D:3173 test AL,0x20
+100D:3175 je short 0x3181
+100D:3177 cmp byte ptr DS:[DI+8],0x28
+100D:317B jb short 0x3190
+100D:317D inc AH
+100D:317F jmp short 0x3190
+100D:3181 test byte ptr DS:[SI+0x10],0x80
+100D:3185 jne short 0x316D
+100D:3187 cmp byte ptr DS:[0x002B],0
+100D:318C je short 0x3190
+100D:318E dec AH
+100D:3190 cmp AH,DL
+100D:3192 jne short 0x316D
+100D:3194 test byte ptr DS:[SI+0x10],0x80
+100D:3198 jne short 0x31C9
+100D:319A mov BP,0x10B8
+100D:319D mov DI,0x4756
+100D:31A0 cmp AL,0x80
+100D:31A2 jae short 0x31ED
+100D:31A4 mov BP,0x10C8
+100D:31A7 mov DI,0x4758
+100D:31AA and byte ptr DS:[0x476A],7
+100D:31AF mov AL,byte ptr DS:[0x476A]
+100D:31B2 inc byte ptr DS:[0x476A]
+100D:31B6 xor AH,AH
+100D:31B8 cmp SI,0x08E0
+100D:31BC jne short 0x31C3
+100D:31BE inc AX
+100D:31BF mov byte ptr DS:[0x476B],AL
+100D:31C2 dec AX
+100D:31C3 shl AX,1
+100D:31C5 add DI,AX
+100D:31C7 jmp short 0x31ED
+100D:31C9 mov BP,0x1098
+100D:31CC mov DI,0x4768
+100D:31CF mov AL,byte ptr DS:[SI+3]
+100D:31D2 and AL,0x10
+100D:31D4 and byte ptr SS:[BP+0x0F],0xEF
+100D:31D8 or byte ptr SS:[BP+0x0F],AL
+100D:31DB mov word ptr DS:[0x00EE],0
+100D:31E1 or AL,AL
+100D:31E3 mov AL,0xFF
+100D:31E5 jne short 0x31EA
+100D:31E7 mov AL,byte ptr DS:[SI+0x15]
+100D:31EA mov byte ptr DS:[0x00ED],AL
+100D:31ED mov word ptr DS:[DI],SI
+100D:31EF mov word ptr SS:[BP],DX
+100D:31F2 mov word ptr SS:[BP+2],BX
+100D:31F5 ret near
+100D:31F6 call near 0xE270
+100D:31F9 mov DI,word ptr DS:[SI+4]
+100D:31FC mov word ptr DS:[0x002C],DI
+100D:3200 mov AL,byte ptr DS:[SI]
+100D:3202 mov byte ptr DS:[0x002E],AL
+100D:3205 mov AL,byte ptr DS:[SI+3]
+100D:3208 mov byte ptr DS:[0x0030],AL
+100D:320B and AX,0x000F
+100D:320E mov byte ptr DS:[0x002F],AL
+100D:3211 add AX,0x0018
+100D:3214 mov word ptr DS:[0x11F3],AX
+100D:3217 call near 0x32C7
+100D:321A call near 0x329D
+100D:321D mov word ptr DS:[0x0048],AX
+100D:3220 mov AX,word ptr DS:[SI+0x10]
+100D:3223 mov word ptr DS:[0x0032],AX
+100D:3226 mov AX,word ptr DS:[SI+0x12]
+100D:3229 mov word ptr DS:[0x0034],AX
+100D:322C and AX,0x000F
+100D:322F mov byte ptr DS:[0x0031],AL
+100D:3232 add AX,0
+100D:3235 mov word ptr DS:[0x11FF],AX
+100D:3238 call near 0x6EFD
+100D:323B mov byte ptr DS:[0x0036],AL
+100D:323E mov AL,byte ptr DS:[SI+0x16]
+100D:3241 mov byte ptr DS:[0x0038],AL
+100D:3244 call near 0x3310
+100D:3247 mov word ptr DS:[0x11F7],AX
+100D:324A mov AL,byte ptr DS:[SI+0x17]
+100D:324D mov byte ptr DS:[0x0039],AL
+100D:3250 call near 0x3310
+100D:3253 mov word ptr DS:[0x11F9],AX
+100D:3256 mov AL,byte ptr DS:[SI+0x18]
+100D:3259 mov byte ptr DS:[0x003A],AL
+100D:325C call near 0x3310
+100D:325F mov word ptr DS:[0x11FB],AX
+100D:3262 mov AX,word ptr DS:[SI+0x0C]
+100D:3265 mov word ptr DS:[0x0044],AX
+100D:3268 mov AX,word ptr DS:[SI+0x0E]
+100D:326B mov word ptr DS:[0x0046],AX
+100D:326E xor AH,AH
+100D:3270 add AX,0x00E8
+100D:3273 mov word ptr DS:[0x11F1],AX
+100D:3276 call near 0x693B
+100D:3279 mov BP,AX
+100D:327B mov AL,byte ptr SS:[BP+SI+0x16]
+100D:327E mov byte ptr DS:[0x0037],AL
+100D:3281 mov AL,byte ptr DS:[SI+0x19]
+100D:3284 mov byte ptr DS:[0x003B],AL
+100D:3287 mov AL,byte ptr DS:[SI+0x1A]
+100D:328A mov byte ptr DS:[0x003C],AL
+100D:328D call near 0x1AC5
+100D:3290 sub AL,byte ptr DS:[SI+0x14]
+100D:3293 mov byte ptr DS:[0x0040],AL
+100D:3296 call near 0x331E
+100D:3299 call near 0xE283
+100D:329C ret near
+100D:329D cmp byte ptr DS:[SI+3],0
+100D:32A1 je short 0x32AA
+100D:32A3 xor AX,AX
+100D:32A5 and word ptr DS:[SI+0x10],-13
+100D:32A9 ret near
+100D:32AA mov AX,word ptr DS:[0x0042]
+100D:32AD or AX,AX
+100D:32AF je short 0x32C1
+100D:32B1 mov CX,AX
+100D:32B3 mov AX,word ptr DS:[SI+0x0E]
+100D:32B6 xor DX,DX
+100D:32B8 div CX
+100D:32BA shl DX,1
+100D:32BC cmp CX,DX
+100D:32BE adc AX,0
+100D:32C1 mov word ptr DS:[0x004A],AX
+100D:32C4 jmp near 0x708A
+100D:32C7 mov AX,word ptr DS:[2]
+100D:32CA sub AX,word ptr DS:[SI+0x0A]
+100D:32CD mov word ptr DS:[0x0042],AX
+100D:32D0 mov DX,AX
+100D:32D2 mov CL,4
+100D:32D4 shr AX,CL
+100D:32D6 mov byte ptr DS:[0x0041],AL
+100D:32D9 mov AX,0x0074
+100D:32DC test byte ptr DS:[SI+3],0x10
+100D:32E0 jne short 0x330C
+100D:32E2 mov AX,0x0070
+100D:32E5 cmp DX,3
+100D:32E8 jb short 0x330C
+100D:32EA inc AX
+100D:32EB cmp DX,0x0010
+100D:32EE jb short 0x330C
+100D:32F0 inc AX
+100D:32F1 cmp DX,0x0020
+100D:32F4 jb short 0x330C
+100D:32F6 inc AX
+100D:32F7 push AX
+100D:32F8 push SI
+100D:32F9 mov SI,AX
+100D:32FB call near 0xCF70
+100D:32FE call near 0xD03C
+100D:3301 mov AX,DX
+100D:3303 mov CL,4
+100D:3305 shr AX,CL
+100D:3307 call near 0xE2E3
+100D:330A pop SI
+100D:330B pop AX
+100D:330C mov word ptr DS:[0x11F5],AX
+100D:330F ret near
+100D:3310 xor AH,AH
+100D:3312 shr AX,1
+100D:3314 shr AX,1
+100D:3316 shr AX,1
+100D:3318 shr AX,1
+100D:331A add AX,0x00D1
+100D:331D ret near
+100D:331E mov word ptr DS:[0x11CE],DI
+100D:3322 push SI
+100D:3323 push DI
+100D:3324 mov AH,byte ptr DS:[DI]
+100D:3326 mov AL,byte ptr DS:[DI+1]
+100D:3329 mov word ptr DS:[0x004E],AX
+100D:332C mov BX,0x1141
+100D:332F xlat byte ptr DS:[BX+AL]
+100D:3330 mov byte ptr DS:[0x0050],AL
+100D:3333 mov AL,byte ptr DS:[DI+0x0A]
+100D:3336 mov byte ptr DS:[0x0051],AL
+100D:3339 mov AL,byte ptr DS:[DI+0x12]
+100D:333C mov byte ptr DS:[0x0052],AL
+100D:333F mov AL,byte ptr DS:[DI+0x1B]
+100D:3342 mov byte ptr DS:[0x0054],AL
+100D:3345 mov AL,byte ptr DS:[DI+8]
+100D:3348 mov byte ptr DS:[0x004D],AL
+100D:334B push DS
+100D:334C pop ES
+100D:334D push DI
+100D:334E lea SI,DI+0x14
+100D:3351 mov DI,0x0055
+100D:3354 mov CX,7
+100D:3357 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:3359 pop DI
+100D:335A call near 0x33BE
+100D:335D call near 0x34A5
+100D:3360 call near 0x7F27
+100D:3363 mov DI,0x46FE
+100D:3366 mov AL,0xFF
+100D:3368 mov CX,7
+100D:336B cmp byte ptr DS:[DI],1
+100D:336E rcl AL,1
+100D:3370 inc DI
+100D:3371 loop 0x336B
+100D:3373 not AL
+100D:3375 mov CL,1
+100D:3377 shl AL,CL
+100D:3379 mov byte ptr DS:[0x0053],AL
+100D:337C pop DI
+100D:337D call near 0x3385
+100D:3380 call near 0x5274
+100D:3383 pop SI
+100D:3384 ret near
+100D:3385 mov byte ptr DS:[0x00F7],0
+100D:338A cmp DI,word ptr DS:[0x1150]
+100D:338E je short 0x33BD
+100D:3390 mov AX,DI
+100D:3392 sub AX,0x0100
+100D:3395 mov BL,0x1C
+100D:3397 div BL
+100D:3399 inc AX
+100D:339A mov BH,AL
+100D:339C mov BL,0x80
+100D:339E mov SI,0x1018
+100D:33A1 call near 0x33AD
+100D:33A4 mov SI,0x1028
+100D:33A7 call near 0x33AD
+100D:33AA mov SI,0x1048
+100D:33AD cmp BX,word ptr DS:[SI+2]
+100D:33B0 jne short 0x33BD
+100D:33B2 mov CL,byte ptr DS:[SI+0x0E]
+100D:33B5 mov AL,1
+100D:33B7 shl AL,CL
+100D:33B9 or byte ptr DS:[0x00F7],AL
+100D:33BD ret near
+100D:33BE xor AX,AX
+100D:33C0 mov word ptr DS:[0x0094],AX
+100D:33C3 mov word ptr DS:[0x0096],AX
+100D:33C6 mov word ptr DS:[0x005C],AX
+100D:33C9 mov word ptr DS:[0x005E],AX
+100D:33CC mov BP,0x3406
+100D:33CF call near 0x6603
+100D:33D2 call near 0x33D9
+100D:33D5 mov byte ptr DS:[0x009C],AL
+100D:33D8 ret near
+100D:33D9 mov AX,word ptr DS:[0x0096]
+100D:33DC mov DX,word ptr DS:[0x0094]
+100D:33E0 cmp AX,DX
+100D:33E2 pushf
+100D:33E3 jae short 0x33E6
+100D:33E5 xchg DX,AX
+100D:33E6 mov CX,DX
+100D:33E8 jcxz short 0x33FD
+100D:33EA xor DX,DX
+100D:33EC xchg AH,DL
+100D:33EE xchg AL,AH
+100D:33F0 cmp DX,CX
+100D:33F2 jae short 0x33FD
+100D:33F4 div CX
+100D:33F6 shr AX,1
+100D:33F8 cmp AX,0x00FC
+100D:33FB jb short 0x3400
+100D:33FD mov AX,0x00FC
+100D:3400 popf
+100D:3401 jae short 0x3405
+100D:3403 neg AL
+100D:3405 ret near
+100D:3406 test byte ptr DS:[SI+3],0x20
+100D:340A jne short 0x342C
+100D:340C call near 0x342D
+100D:340F test byte ptr DS:[SI+0x10],0x80
+100D:3413 jne short 0x3428
+100D:3415 add word ptr DS:[0x0096],AX
+100D:3419 mov AX,word ptr DS:[SI+0x10]
+100D:341C or word ptr DS:[0x005C],AX
+100D:3420 mov AX,word ptr DS:[SI+0x12]
+100D:3423 or word ptr DS:[0x005E],AX
+100D:3427 ret near
+100D:3428 add word ptr DS:[0x0094],AX
+100D:342C ret near
+100D:342D call near 0x6EFD
+100D:3430 xor AH,AH
+100D:3432 add AL,AL
+100D:3434 add AL,byte ptr DS:[SI+0x17]
+100D:3437 jae short 0x343B
+100D:343B mul byte ptr DS:[SI+0x1A]
+100D:343E shr AX,1
+100D:3440 shr AX,1
+100D:3442 shr AX,1
+100D:3444 shr AX,1
+100D:3446 mov DX,AX
+100D:3448 mov BL,byte ptr DS:[SI+0x19]
+100D:344B shl BL,1
+100D:344D shl BL,1
+100D:344F shl DX,1
+100D:3451 shl BL,1
+100D:3453 jae short 0x3459
+100D:3455 add AX,DX
+100D:3457 jb short 0x3477
+100D:3459 shl DX,1
+100D:345B shl BL,1
+100D:345D jae short 0x3463
+100D:345F add AX,DX
+100D:3461 jb short 0x3477
+100D:3463 shl DX,1
+100D:3465 shl BL,1
+100D:3467 jae short 0x346D
+100D:3469 add AX,DX
+100D:346B jb short 0x3477
+100D:346D shl DX,1
+100D:346F shl BL,1
+100D:3471 jae short 0x347A
+100D:347A mov AL,AH
+100D:347C xor AH,AH
+100D:347E or AX,AX
+100D:3480 jne short 0x3489
+100D:3482 cmp byte ptr DS:[SI+0x1A],1
+100D:3486 cmc
+100D:3487 adc AL,AH
+100D:3489 ret near
+100D:34A5 push SI
+100D:34A6 push DS
+100D:34A7 pop ES
+100D:34A8 push DI
+100D:34A9 mov DI,0x0060
+100D:34AC mov CX,0x0033
+100D:34AF xor AL,AL
+100D:34B1 rep stos byte ptr ES:[DI],AL
+100D:34B3 pop DI
+100D:34B4 mov BP,0x34D0
+100D:34B7 call near 0x6639
+100D:34BA mov AL,byte ptr DS:[0x0060]
+100D:34BD add AL,byte ptr DS:[0x007E]
+100D:34C1 mov byte ptr DS:[0x0091],AL
+100D:34C4 mov AL,byte ptr DS:[0x0061]
+100D:34C7 add AL,byte ptr DS:[0x007F]
+100D:34CB mov byte ptr DS:[0x0092],AL
+100D:34CE pop SI
+100D:34CF ret near
+100D:34D0 test byte ptr DS:[SI+3],0x20
+100D:34D4 jne short 0x351A
+100D:34D6 mov AL,byte ptr DS:[SI+3]
+100D:34D9 mov DX,0x0061
+100D:34DC test AL,0x40
+100D:34DE je short 0x34E3
+100D:34E0 mov DX,0x007F
+100D:34E3 mov BX,DX
+100D:34E5 test byte ptr DS:[SI+0x10],0x80
+100D:34E9 jne short 0x34F0
+100D:34EB dec BX
+100D:34EC cmp AL,0x80
+100D:34EE je short 0x351B
+100D:34F0 inc byte ptr DS:[BX]
+100D:34F2 mov AH,AL
+100D:34F4 and AX,0x030F
+100D:34F7 cmp AH,3
+100D:34FA jne short 0x34FE
+100D:34FC and AL,0xFC
+100D:34FE xor AH,AH
+100D:3500 mov BX,DX
+100D:3502 add BX,AX
+100D:3504 inc byte ptr DS:[BX+1]
+100D:3507 cmp BX,0x007F
+100D:350B jae short 0x351A
+100D:350D mov AX,word ptr DS:[SI+0x12]
+100D:3510 and AX,0x000F
+100D:3513 mov BX,0x0071
+100D:3516 add BX,AX
+100D:3518 inc byte ptr DS:[BX]
+100D:351A ret near
+100D:351B inc byte ptr DS:[0x0090]
+100D:351F ret near
+100D:3520 cmp byte ptr DS:[0x47A7],0
+100D:3525 jne short 0x351A
+100D:3527 mov AL,byte ptr DS:[SI+0x0E]
+100D:352A xor AH,AH
+100D:352C push SI
+100D:352D call near 0x96F1
+100D:3530 pop SI
+100D:3531 jae short 0x3542
+100D:3533 mov AX,word ptr DS:[0x47C4]
+100D:3536 mov DI,word ptr DS:[0x114E]
+100D:353A call near 0x2AAF
+100D:353D jae short 0x35AC
+100D:353F call near 0x2B00
+100D:3542 mov AX,word ptr DS:[0x47C4]
+100D:3545 mov DI,word ptr DS:[0x114E]
+100D:3549 call near 0x2A51
+100D:354C mov byte ptr DS:[0x00E7],0
+100D:3551 inc byte ptr DS:[0x47A7]
+100D:3555 cmp byte ptr DS:[0x0023],3
+100D:355A jne short 0x3572
+100D:355C mov BP,0x1F92
+100D:355F mov BX,0x97CF
+100D:3562 call near 0xD323
+100D:3565 mov word ptr DS:[0x1BEA],0
+100D:356B mov word ptr DS:[0x1BF8],0
+100D:3571 ret near
+100D:3572 cmp byte ptr DS:[0x0023],4
+100D:3577 jne short 0x3595
+100D:3579 mov BP,0x1F9E
+100D:357C and byte ptr SS:[BP+0x0B],0xBF
+100D:3580 mov BX,0x97CF
+100D:3583 call near 0xD323
+100D:3586 mov word ptr DS:[0x1BEA],0
+100D:358C mov word ptr DS:[0x1BF8],0
+100D:3592 jmp near 0x2FFB
+100D:3595 cmp byte ptr DS:[0x4774],0
+100D:359A jne short 0x35AC
+100D:359C cmp byte ptr DS:[0x0023],0x64
+100D:35A1 jae short 0x35AC
+100D:35A3 mov AX,word ptr DS:[0x47C4]
+100D:35A6 call near 0x93DF
+100D:35A9 call near 0xD280
+100D:35AC ret near
+100D:35AD cmp byte ptr DS:[0x11C9],0
+100D:35B2 jne short 0x35E9
+100D:35B4 xor AX,AX
+100D:35B6 mov byte ptr DS:[0x001A],AL
+100D:35B9 mov byte ptr DS:[0x47A7],AL
+100D:35BC xchg AL,byte ptr DS:[0x47A6]
+100D:35C0 or AL,AL
+100D:35C2 jne short 0x35AC
+100D:35C4 inc byte ptr DS:[0x001A]
+100D:35C8 cmp byte ptr DS:[0x000B],8
+100D:35CD jne short 0x35E3
+100D:35CF mov AX,word ptr DS:[0x00C0]
+100D:35D2 and AX,word ptr DS:[0x1158]
+100D:35D6 je short 0x35E3
+100D:35D8 test word ptr DS:[0x0012],8
+100D:35DE je short 0x35E3
+100D:35E0 call near 0x2566
+100D:35E3 mov BP,0x3520
+100D:35E6 jmp near 0x36EE
+100D:35E9 xor AX,AX
+100D:35EB mov byte ptr DS:[0x001A],AL
+100D:35EE mov byte ptr DS:[0x47A7],AL
+100D:35F1 mov byte ptr DS:[0x0023],AL
+100D:35F4 xchg AL,byte ptr DS:[0x47A6]
+100D:35F8 or AL,AL
+100D:35FA jne short 0x35AC
+100D:35FC cmp word ptr DS:[0x1152],-1
+100D:3601 je short 0x3637
+100D:3603 call near 0x40F9
+100D:3606 call near 0x4182
+100D:3609 cmp byte ptr DS:[0x0023],0
+100D:360E je short 0x3636
+100D:3610 call near 0x366F
+100D:3613 js short 0x3636
+100D:3615 call near 0xDBB2
+100D:3618 call near 0x368B
+100D:361B push AX
+100D:361C mov AX,0x004B
+100D:361F call near 0xE387
+100D:3622 pop AX
+100D:3623 push AX
+100D:3624 call near 0x96D8
+100D:3627 pop AX
+100D:3628 jb short 0x3636
+100D:362A mov CL,0x10
+100D:362C mul CL
+100D:362E add AX,0x0FD8
+100D:3631 mov SI,AX
+100D:3633 call near 0x3551
+100D:3636 ret near
+100D:3637 call near 0x4182
+100D:363A cmp byte ptr DS:[0x0023],0
+100D:363F je short 0x3636
+100D:366F mov AX,word ptr DS:[0x1152]
+100D:3672 cmp AX,0xFFFF
+100D:3675 je short 0x3688
+100D:3677 cmp AH,0xFF
+100D:367A je short 0x3686
+100D:367C test word ptr DS:[0],0x0080
+100D:3682 jne short 0x3686
+100D:3684 xchg AL,AH
+100D:3686 xor AH,AH
+100D:3688 or AX,AX
+100D:368A ret near
+100D:368B call near 0xE270
+100D:368E or byte ptr DS:[0x4728],1
+100D:3693 mov BL,byte ptr DS:[0x11C9]
+100D:3697 and BL,3
+100D:369A cmp BL,2
+100D:369D je short 0x36CB
+100D:369F dec BL
+100D:36A1 jne short 0x36C7
+100D:36A3 mov byte ptr DS:[0x473E],1
+100D:36A8 mov byte ptr DS:[0x47A4],1
+100D:36AD push AX
+100D:36AE mov AL,0x34
+100D:36B0 call near 0xC2F2
+100D:36B3 call near 0xC0F4
+100D:36B6 call near 0xC412
+100D:36B9 pop AX
+100D:36BA or AX,AX
+100D:36BC js short 0x36C4
+100D:36BE mov word ptr DS:[0x47C4],AX
+100D:36C1 call near 0x978E
+100D:36C4 call near 0xC4DD
+100D:36C7 call near 0xE283
+100D:36CA ret near
+100D:36D3 cmp byte ptr DS:[0x0023],0
+100D:36D8 je short 0x36ED
+100D:36DA call near 0x98B2
+100D:36DD mov byte ptr DS:[0x47A7],0
+100D:36E2 mov BP,0x3520
+100D:36E5 call near 0x36EE
+100D:36E8 mov byte ptr DS:[0x0023],0
+100D:36ED ret near
+100D:36EE push BX
+100D:36EF push DX
+100D:36F0 mov SI,0x0FD8
+100D:36F3 mov CX,0x0010
+100D:36F6 mov BX,word ptr DS:[6]
+100D:36FA mov DX,word ptr DS:[4]
+100D:36FE cmp BX,word ptr DS:[SI+2]
+100D:3701 jne short 0x371B
+100D:3703 cmp DX,word ptr DS:[SI]
+100D:3705 jne short 0x371B
+100D:3707 pop DX
+100D:3708 pop BX
+100D:3709 push BX
+100D:370A push DX
+100D:370B push CX
+100D:370C push SI
+100D:370D push BP
+100D:370E call near BP
+100D:3710 pop BP
+100D:3711 pop SI
+100D:3712 pop CX
+100D:3713 mov BX,word ptr DS:[6]
+100D:3717 mov DX,word ptr DS:[4]
+100D:371B add SI,0x0010
+100D:371E loop 0x36FE
+100D:3720 pop DX
+100D:3721 pop BX
+100D:3722 ret near
+100D:3723 and byte ptr DS:[0x4735],0x7F
+100D:3728 sub AL,0x94
+100D:372A jb short 0x3722
+100D:372C test AL,0x0F
+100D:372E jne short 0x3722
+100D:3730 push AX
+100D:3731 call near 0xDBB2
+100D:3734 call near 0xC07C
+100D:3737 call near 0x37AD
+100D:373A call near 0xC4DD
+100D:373D pop AX
+100D:373E xor AH,AH
+100D:3740 mov CL,4
+100D:3742 shr AX,CL
+100D:3744 inc AX
+100D:3745 cmp AL,0x0A
+100D:3747 jb short 0x374B
+100D:374B xchg AL,AH
+100D:374D call near 0xE387
+100D:3750 cmp byte ptr DS:[0x4735],0x37
+100D:3755 jb short 0x37AA
+100D:37AA jmp near 0x2DB1
+100D:37AD mov AL,0x22
+100D:37AF jmp near 0xC2F2
+100D:37B2 call near 0x98E6
+100D:37B5 call near 0x4D00
+100D:37B8 mov word ptr DS:[0x472D],0
+100D:37BE call near 0x5BA8
+100D:37C1 call near 0xC432
+100D:37C4 mov AX,0xFFFF
+100D:37C7 cmp byte ptr DS:[8],AL
+100D:37CB je short 0x37D5
+100D:37CD mov DX,word ptr DS:[4]
+100D:37D1 call near 0x3EFE
+100D:37D4 lods AL,byte ptr DS:[SI]
+100D:37D5 or AX,AX
+100D:37D7 js short 0x37DC
+100D:37D9 jmp near 0x39EC
+100D:37DC call near 0x3AE9
+100D:37DF or byte ptr DS:[0x47A4],1
+100D:37E4 test byte ptr DS:[0x11C9],3
+100D:37E9 jne short 0x37F4
+100D:37EB call near 0x380C
+100D:37EE call near 0x4E12
+100D:37F1 jmp near 0x4D06
+100D:37F4 mov byte ptr DS:[0x4728],0
+100D:37F9 call near 0x4988
+100D:37FC call near 0x4A5A
+100D:37FF mov AX,word ptr DS:[0x487E]
+100D:3802 call near 0xCA1B
+100D:3805 call far dword ptr DS:[0x3959]
+100D:3809 jmp near 0x388D
+100D:380C mov byte ptr DS:[0x22E3],1
+100D:3811 call near 0x388D
+100D:3814 mov SI,word ptr DS:[0x1150]
+100D:3818 mov AX,0x1972
+100D:381B call near 0x5E4F
+100D:381E mov BX,AX
+100D:3820 mov DX,word ptr DS:[4]
+100D:3824 mov AX,word ptr DS:[6]
+100D:3827 cmp AL,0x80
+100D:3829 mov AL,0
+100D:382B je short 0x3834
+100D:382D cmp DX,word ptr DS:[SI+2]
+100D:3830 jne short 0x384A
+100D:3832 mov AL,AH
+100D:3834 cmp AL,byte ptr DS:[BX+5]
+100D:3837 jae short 0x384A
+100D:3839 add AL,byte ptr DS:[BX]
+100D:383B cmp AL,0x7F
+100D:383D jne short 0x3847
+100D:383F mov AH,byte ptr DS:[SI]
+100D:3841 shr AH,1
+100D:3843 add AL,AH
+100D:3845 sub AL,5
+100D:3847 jmp near 0xC2F2
+100D:384A mov DI,word ptr DS:[0x1150]
+100D:384E test byte ptr DS:[DI+0x0A],1
+100D:3852 jne short 0x3872
+100D:3854 call near 0x407E
+100D:3857 call near 0xB58B
+100D:385A dec DI
+100D:385B mov CX,4
+100D:385E mov AL,byte ptr ES:[DI]
+100D:3861 inc DI
+100D:3862 and AL,0x30
+100D:3864 cmp AL,0x10
+100D:3866 je short 0x3872
+100D:3868 loop 0x385E
+100D:386A mov BX,0x0013
+100D:386D mov CX,0x0042
+100D:3870 jmp short 0x3878
+100D:3878 mov AX,word ptr DS:[6]
+100D:387B xchg AL,AH
+100D:387D xor AX,word ptr DS:[4]
+100D:3881 inc AX
+100D:3882 xor DX,DX
+100D:3884 div BX
+100D:3886 mov AX,DX
+100D:3888 add AX,CX
+100D:388A jmp near 0xC2F2
+100D:388D mov byte ptr DS:[0x46DF],1
+100D:3892 call near 0x395C
+100D:3895 cmp byte ptr DS:[0x46D7],0
+100D:389A je short 0x38AD
+100D:389C cmp byte ptr DS:[0x46D6],BL
+100D:38A0 je short 0x38B3
+100D:38A2 mov byte ptr DS:[0x46D7],0x30
+100D:38A7 call near 0x3971
+100D:38AA jmp near 0x39B9
+100D:38AD call near 0x3971
+100D:38B0 call near 0x398C
+100D:38B3 ret near
+100D:38B4 call near 0x388D
+100D:38B7 mov AX,0x0028
+100D:38BA call near 0xC13E
+100D:38BD xor AX,AX
+100D:38BF mov BP,0x0014
+100D:38C2 xor BX,BX
+100D:38C4 mov CX,4
+100D:38C7 xor DX,DX
+100D:38C9 push CX
+100D:38CA push BP
+100D:38CB push AX
+100D:38CC call near 0xC2FD
+100D:38CF pop AX
+100D:38D0 add DX,0x0028
+100D:38D3 cmp DX,0x0140
+100D:38D7 jb short 0x38CB
+100D:38D9 pop BP
+100D:38DA pop CX
+100D:38DB inc AX
+100D:38DC add BX,BP
+100D:38DE loop 0x38C7
+100D:38E0 ret near
+100D:38E1 cmp byte ptr DS:[0x46DF],0
+100D:38E6 je short 0x38E0
+100D:38E8 call near 0x395C
+100D:38EB cmp byte ptr DS:[0x46D6],BL
+100D:38EF je short 0x38E0
+100D:38F1 call near 0x3971
+100D:38F4 call near 0x39B9
+100D:38F7 mov AL,0x40
+100D:38F9 xchg AL,byte ptr DS:[0x46D7]
+100D:38FD or AL,AL
+100D:38FF jne short 0x38E0
+100D:3901 mov SI,0x3916
+100D:3904 mov BP,0x0010
+100D:3907 jmp near 0xDA25
+100D:390A cmp byte ptr DS:[0x46D7],0
+100D:390F je short 0x38E0
+100D:3911 call near 0x3916
+100D:3914 jmp short 0x390A
+100D:3916 cmp byte ptr DS:[0x46DF],0
+100D:391B je short 0x3950
+100D:391D mov CX,0x01C5
+100D:3920 mov BX,0x00DB
+100D:3923 cmp byte ptr DS:[0x22E3],0
+100D:3928 jne short 0x3930
+100D:3930 mov AL,byte ptr DS:[0x46D7]
+100D:3933 push AX
+100D:3934 call far dword ptr DS:[0x3951]
+100D:3938 pop AX
+100D:3939 cmp byte ptr DS:[0x227D],0
+100D:393E jne short 0x394A
+100D:3940 mov CX,0x0030
+100D:3943 mov BX,0x02D0
+100D:3946 call far dword ptr DS:[0x3951]
+100D:394A dec byte ptr DS:[0x46D7]
+100D:394E jne short 0x395B
+100D:3950 mov byte ptr DS:[0x46D7],0
+100D:3955 mov SI,0x3916
+100D:3958 jmp near 0xDA5F
+100D:395B ret near
+100D:395C mov AX,word ptr DS:[2]
+100D:395F mov AH,AL
+100D:3961 shr AH,1
+100D:3963 shr AH,1
+100D:3965 and AX,0x1C0F
+100D:3968 mov BX,0x2280
+100D:396B xlat byte ptr DS:[BX+AL]
+100D:396C add AL,AH
+100D:396E mov BL,AL
+100D:3970 ret near
+100D:3971 mov AX,0x0028
+100D:3974 add AL,byte ptr DS:[0x22E3]
+100D:3978 mov byte ptr DS:[0xDBB4],AL
+100D:397B call near 0xC13E
+100D:397E mov AL,BL
+100D:3980 xor AH,AH
+100D:3982 mov byte ptr DS:[0x46D6],AL
+100D:3985 call near 0xC1F4
+100D:3988 lea DX,SI+6
+100D:398B ret near
+100D:398C mov CX,0x01C5
+100D:398F mov BX,0x00DB
+100D:3992 cmp byte ptr DS:[0x22E3],0
+100D:3997 jne short 0x399F
+100D:3999 mov CX,0x00F0
+100D:399C mov BX,0x0180
+100D:399F push CX
+100D:39A0 call far dword ptr DS:[0x38BD]
+100D:39A4 pop CX
+100D:39A5 add DX,CX
+100D:39A7 cmp byte ptr DS:[0x227D],0
+100D:39AC jne short 0x39B8
+100D:39AE mov CX,0x0030
+100D:39B1 mov BX,0x02D0
+100D:39B4 call far dword ptr DS:[0x38BD]
+100D:39B8 ret near
+100D:39B9 mov CX,0x01C5
+100D:39BC mov BX,0x00DB
+100D:39BF cmp byte ptr DS:[0x22E3],0
+100D:39C4 jne short 0x39CC
+100D:39CC push CX
+100D:39CD call far dword ptr DS:[0x394D]
+100D:39D1 pop CX
+100D:39D2 add DX,CX
+100D:39D4 cmp byte ptr DS:[0x227D],0
+100D:39D9 jne short 0x39E5
+100D:39DB mov CX,0x0030
+100D:39DE mov BX,0x02D0
+100D:39E1 call far dword ptr DS:[0x394D]
+100D:39E5 ret near
+100D:39E6 mov SI,0xC0B6
+100D:39E9 jmp near 0xDA5F
+100D:39EC mov byte ptr DS:[0x22E3],1
+100D:39F1 push AX
+100D:39F2 call near 0x3AE9
+100D:39F5 mov AX,word ptr DS:[4]
+100D:39F8 cmp AX,0x2005
+100D:39FB je short 0x3A1D
+100D:39FD cmp AX,0x1005
+100D:3A00 je short 0x3A18
+100D:3A02 dec AL
+100D:3A04 jne short 0x3A20
+100D:3A06 cmp AH,0x21
+100D:3A09 jne short 0x3A13
+100D:3A0B pop AX
+100D:3A0C mov DI,word ptr DS:[0x114E]
+100D:3A10 mov AL,byte ptr DS:[DI]
+100D:3A12 push AX
+100D:3A13 call near 0x37EB
+100D:3A16 jmp short 0x3A20
+100D:3A18 mov byte ptr DS:[0x22E3],0
+100D:3A1D call near 0x38B4
+100D:3A20 pop AX
+100D:3A21 call near 0x3B59
+100D:3A24 cmp byte ptr DS:[0x46DF],0
+100D:3A29 je short 0x3A7C
+100D:3A2B cmp byte ptr DS:[4],1
+100D:3A30 jne short 0x3A7C
+100D:3A32 cmp byte ptr DS:[0x4731],0xFF
+100D:3A37 je short 0x3A7B
+100D:3A39 mov CL,byte ptr DS:[0x46FF]
+100D:3A3D xor CH,CH
+100D:3A3F jcxz short 0x3A7B
+100D:3A41 mov AX,0x388D
+100D:3A44 push AX
+100D:3A45 mov byte ptr DS:[0x4731],0
+100D:3A4A test byte ptr DS:[0x47A4],0x81
+100D:3A4F jne short 0x3A7B
+100D:3A51 mov AX,0x0033
+100D:3A54 call near 0xC13E
+100D:3A57 call near 0x3A95
+100D:3A5A mov AX,DX
+100D:3A5C add AX,0x000C
+100D:3A5F mov word ptr DS:[0x472D],AX
+100D:3A62 mov AX,BX
+100D:3A64 add AX,8
+100D:3A67 mov word ptr DS:[0x472F],AX
+100D:3A6A push CX
+100D:3A6B push BX
+100D:3A6C push DX
+100D:3A6D call near 0x3AA9
+100D:3A70 pop DX
+100D:3A71 pop BX
+100D:3A72 pop CX
+100D:3A73 add DX,0x0046
+100D:3A76 add BX,0x000A
+100D:3A79 loop 0x3A6A
+100D:3A7B ret near
+100D:3A7C call near 0x39E6
+100D:3A7F mov AX,word ptr DS:[4]
+100D:3A82 cmp AL,4
+100D:3A84 jne short 0x3A94
+100D:3A86 cmp AH,0x20
+100D:3A89 jae short 0x3A94
+100D:3A8B mov SI,0xC0B6
+100D:3A8E mov BP,0x000C
+100D:3A91 call near 0xDA25
+100D:3A94 ret near
+100D:3A95 mov DX,0x0095
+100D:3A98 mov BX,0x0039
+100D:3A9B cmp byte ptr DS:[5],0x20
+100D:3AA0 jb short 0x3AA8
+100D:3AA2 mov DX,0x00CA
+100D:3AA5 mov BX,0x0049
+100D:3AA8 ret near
+100D:3AA9 xor AX,AX
+100D:3AAB call near 0xC305
+100D:3AAE add DX,6
+100D:3AB1 add BX,0x001E
+100D:3AB4 mov AX,1
+100D:3AB7 call near 0xC305
+100D:3ABA sub DX,2
+100D:3ABD add BX,0x0014
+100D:3AC0 mov AL,byte ptr DS:[0x4731]
+100D:3AC3 xor AH,AH
+100D:3AC5 push AX
+100D:3AC6 sub AL,0x0F
+100D:3AC8 jae short 0x3ACC
+100D:3ACA xor AX,AX
+100D:3ACC cmp AL,5
+100D:3ACE jbe short 0x3AD2
+100D:3AD0 mov AL,5
+100D:3AD2 add AL,2
+100D:3AD4 call near 0xC305
+100D:3AD7 sub DX,0x0055
+100D:3ADA sub BX,0x0035
+100D:3ADD pop AX
+100D:3ADE cmp AL,0x0E
+100D:3AE0 jb short 0x3AE4
+100D:3AE2 mov AL,0x0E
+100D:3AE4 add AL,8
+100D:3AE6 jmp near 0xC30D
+100D:3AE9 push AX
+100D:3AEA push DS
+100D:3AEB pop ES
+100D:3AEC mov CX,0x002E
+100D:3AEF mov AX,0xFFFF
+100D:3AF2 mov DI,0x47F8
+100D:3AF5 rep stos word ptr ES:[DI],AX
+100D:3AF7 pop AX
+100D:3AF8 ret near
+100D:3AF9 cmp byte ptr DS:[0x002B],0
+100D:3AFE je short 0x3B03
+100D:3B00 jmp near 0xC43E
+100D:3B03 cmp byte ptr DS:[0x47A4],0
+100D:3B08 js short 0x3B58
+100D:3B0A mov AX,word ptr DS:[0x47C4]
+100D:3B0D cmp AL,0x0F
+100D:3B0F jne short 0x3B15
+100D:3B11 add AL,byte ptr DS:[0x476C]
+100D:3B15 mov DI,AX
+100D:3B17 shl DI,1
+100D:3B19 shl DI,1
+100D:3B1B mov DX,word ptr DS:[DI+0x47F8]
+100D:3B1F or DX,DX
+100D:3B21 js short 0x3B58
+100D:3B23 push word ptr DS:[DI+0x47FA]
+100D:3B27 push DX
+100D:3B28 or byte ptr DS:[0x47A4],0x80
+100D:3B2D call near 0x37B5
+100D:3B30 pop DX
+100D:3B31 pop BX
+100D:3B32 cmp DX,0x00F0
+100D:3B36 jb short 0x3B3B
+100D:3B38 mov DX,0x00F0
+100D:3B3B cmp BX,0x0071
+100D:3B3E jb short 0x3B43
+100D:3B40 mov BX,0x0071
+100D:3B43 mov ES,word ptr DS:[0xDBDE]
+100D:3B47 push DS
+100D:3B48 mov DS,word ptr DS:[0xDBDA]
+100D:3B4C mov BP,6
+100D:3B4F call far dword ptr SS:[0x3949]
+100D:3B54 pop DS
+100D:3B55 jmp near 0xC43E
+100D:3B58 ret near
+100D:3B59 sub SP,0x0018
+100D:3B5C mov word ptr DS:[0x47F6],SP
+100D:3B60 xor AH,AH
+100D:3B62 dec AX
+100D:3B63 push AX
+100D:3B64 mov CL,4
+100D:3B66 shr AX,CL
+100D:3B68 je short 0x3B70
+100D:3B6A add AX,0x0013
+100D:3B6D call near 0xC13E
+100D:3B70 pop AX
+100D:3B71 and AX,0x000F
+100D:3B74 shl AX,1
+100D:3B76 mov SI,0xBC6E
+100D:3B79 add SI,AX
+100D:3B7B mov SI,word ptr DS:[SI]
+100D:3B7D call near 0x3D83
+100D:3B80 lods AX,word ptr DS:[SI]
+100D:3B81 cmp AX,0xFFFF
+100D:3B84 je short 0x3BB5
+100D:3B86 js short 0x3BBF
+100D:3B88 mov DI,AX
+100D:3B8A shr AH,1
+100D:3B8C and AH,1
+100D:3B8F lods AL,byte ptr DS:[SI]
+100D:3B90 mov DX,AX
+100D:3B92 lods AL,byte ptr DS:[SI]
+100D:3B93 xor AH,AH
+100D:3B95 mov BX,AX
+100D:3B97 lods AL,byte ptr DS:[SI]
+100D:3B98 push SI
+100D:3B99 mov byte ptr CS:[0xC21A],AL
+100D:3B9D mov AX,DI
+100D:3B9F and AX,0xFDFF
+100D:3BA2 dec AX
+100D:3BA3 and DI,0x01FF
+100D:3BA7 cmp DI,1
+100D:3BAA jne short 0x3BAF
+100D:3BAC jmp near 0x3D12
+100D:3BAF call near 0xC22F
+100D:3BB2 pop SI
+100D:3BB3 jmp short 0x3B80
+100D:3BB5 mov byte ptr CS:[0xC21A],0
+100D:3BBB add SP,0x0018
+100D:3BBE ret near
+100D:3BBF cmp AH,0xC0
+100D:3BC2 je short 0x3BC9
+100D:3BC4 call near 0x3BE9
+100D:3BC7 jmp short 0x3B80
+100D:3BC9 push AX
+100D:3BCA mov ES,word ptr DS:[0xDBDA]
+100D:3BCE lods AX,word ptr DS:[SI]
+100D:3BCF mov DX,AX
+100D:3BD1 lods AX,word ptr DS:[SI]
+100D:3BD2 mov BX,AX
+100D:3BD4 lods AX,word ptr DS:[SI]
+100D:3BD5 mov DI,AX
+100D:3BD7 lods AX,word ptr DS:[SI]
+100D:3BD8 mov CX,AX
+100D:3BDA pop AX
+100D:3BDB push SI
+100D:3BDC mov BP,0xFFFF
+100D:3BDF mov SI,0x1470
+100D:3BE2 call far dword ptr DS:[0x3901]
+100D:3BE6 pop SI
+100D:3BE7 jmp short 0x3B80
+100D:3BE9 mov word ptr DS:[0x22D9],0x4C60
+100D:3BEF push DS
+100D:3BF0 pop ES
+100D:3BF1 mov AL,byte ptr DS:[SI-2]
+100D:3BF4 mov byte ptr DS:[0x47ED],AL
+100D:3BF7 mov AL,byte ptr DS:[SI-1]
+100D:3BFA mov byte ptr DS:[0x47EC],AL
+100D:3BFD lods AL,byte ptr DS:[SI]
+100D:3BFE cbw
+100D:3BFF shl AX,1
+100D:3C01 shl AX,1
+100D:3C03 shl AX,1
+100D:3C05 shl AX,1
+100D:3C07 mov word ptr DS:[0x22DB],AX
+100D:3C0A lods AL,byte ptr DS:[SI]
+100D:3C0B cbw
+100D:3C0C shl AX,1
+100D:3C0E shl AX,1
+100D:3C10 shl AX,1
+100D:3C12 shl AX,1
+100D:3C14 mov word ptr DS:[0x22DD],AX
+100D:3C17 lods AX,word ptr DS:[SI]
+100D:3C18 mov DX,AX
+100D:3C1A lods AX,word ptr DS:[SI]
+100D:3C1B mov BX,AX
+100D:3C1D mov word ptr DS:[0x47EE],DX
+100D:3C21 mov word ptr DS:[0x47F0],BX
+100D:3C25 lods AX,word ptr DS:[SI]
+100D:3C26 push AX
+100D:3C27 and AX,0x3FFF
+100D:3C2A mov DI,AX
+100D:3C2C lods AX,word ptr DS:[SI]
+100D:3C2D mov CX,AX
+100D:3C2F call near 0x3E13
+100D:3C32 mov DX,DI
+100D:3C34 mov BX,CX
+100D:3C36 pop AX
+100D:3C37 test AX,0x4000
+100D:3C3A je short 0x3C25
+100D:3C3C mov word ptr DS:[0x47F2],DI
+100D:3C40 mov word ptr DS:[0x47F4],CX
+100D:3C44 mov DX,word ptr DS:[0x47EE]
+100D:3C48 mov BX,word ptr DS:[0x47F0]
+100D:3C4C mov word ptr DS:[0x22D9],0x4C62
+100D:3C52 test AX,0x8000
+100D:3C55 jne short 0x3C71
+100D:3C57 lods AX,word ptr DS:[SI]
+100D:3C58 push AX
+100D:3C59 and AX,0x3FFF
+100D:3C5C mov DI,AX
+100D:3C5E lods AX,word ptr DS:[SI]
+100D:3C5F mov CX,AX
+100D:3C61 call near 0x3E13
+100D:3C64 mov DX,DI
+100D:3C66 mov BX,CX
+100D:3C68 pop AX
+100D:3C69 or AX,AX
+100D:3C6B jns short 0x3C57
+100D:3C6D mov DX,DI
+100D:3C6F mov BX,CX
+100D:3C71 mov DI,word ptr DS:[0x47F2]
+100D:3C75 mov CX,word ptr DS:[0x47F4]
+100D:3C79 call near 0x3E13
+100D:3C7C mov ES,word ptr DS:[0xDBDA]
+100D:3C80 push SI
+100D:3C81 mov BX,word ptr DS:[0x47F0]
+100D:3C85 mov BP,word ptr DS:[0x47F4]
+100D:3C89 sub BP,BX
+100D:3C8B lea SI,0x4C60
+100D:3C8F mov CX,BP
+100D:3C91 mov BP,0
+100D:3C94 mov AH,byte ptr DS:[0x47EC]
+100D:3C98 and AH,0x3E
+100D:3C9B je short 0x3CA0
+100D:3C9D mov BP,1
+100D:3CA0 mov AL,2
+100D:3CA2 mov word ptr DS:[0x22DF],AX
+100D:3CA5 mov AH,byte ptr DS:[0x47ED]
+100D:3CA9 xor AL,AL
+100D:3CAB test byte ptr DS:[0x47EC],1
+100D:3CB0 jne short 0x3CE0
+100D:3CB2 push CX
+100D:3CB3 push AX
+100D:3CB4 lods AX,word ptr DS:[SI]
+100D:3CB5 mov DX,AX
+100D:3CB7 lods AX,word ptr DS:[SI]
+100D:3CB8 mov CX,AX
+100D:3CBA pop AX
+100D:3CBB cmp DX,CX
+100D:3CBD jb short 0x3CC1
+100D:3CBF xchg DX,CX
+100D:3CC1 inc CX
+100D:3CC2 sub CX,DX
+100D:3CC4 je short 0x3CD6
+100D:3CC6 push SI
+100D:3CC7 push BX
+100D:3CC8 mov SI,word ptr DS:[0x22DF]
+100D:3CCC mov DI,word ptr DS:[0x22DB]
+100D:3CD0 call far dword ptr DS:[0x3945]
+100D:3CD4 pop BX
+100D:3CD5 pop SI
+100D:3CD6 add AX,word ptr DS:[0x22DD]
+100D:3CDA inc BX
+100D:3CDB pop CX
+100D:3CDC loop 0x3CB2
+100D:3CDE pop SI
+100D:3CDF ret near
+100D:3CE0 push CX
+100D:3CE1 push AX
+100D:3CE2 lods AX,word ptr DS:[SI]
+100D:3CE3 mov DX,AX
+100D:3CE5 lods AX,word ptr DS:[SI]
+100D:3CE6 mov CX,AX
+100D:3CE8 pop AX
+100D:3CE9 cmp DX,CX
+100D:3CEB jae short 0x3CEF
+100D:3CED xchg DX,CX
+100D:3CEF dec CX
+100D:3CF0 sub CX,DX
+100D:3CF2 je short 0x3D08
+100D:3CF4 neg CX
+100D:3CF6 push SI
+100D:3CF7 push BX
+100D:3CF8 mov SI,word ptr DS:[0x22DF]
+100D:3CFC mov DI,word ptr DS:[0x22DB]
+100D:3D00 std
+100D:3D01 call far dword ptr DS:[0x3945]
+100D:3D05 pop BX
+100D:3D06 pop SI
+100D:3D07 cld
+100D:3D08 add AX,word ptr DS:[0x22DD]
+100D:3D0C inc BX
+100D:3D0D pop CX
+100D:3D0E loop 0x3CE0
+100D:3D10 pop SI
+100D:3D11 ret near
+100D:3D12 test byte ptr DS:[0x47A4],0x81
+100D:3D17 jne short 0x3D2B
+100D:3D19 mov DI,word ptr DS:[0x47F6]
+100D:3D1D dec word ptr DS:[0x47F6]
+100D:3D21 cmp byte ptr DS:[DI],0xFF
+100D:3D24 je short 0x3D2B
+100D:3D26 mov AL,byte ptr DS:[DI]
+100D:3D28 call near 0x3D2F
+100D:3D2B pop SI
+100D:3D2C jmp near 0x3B80
+100D:3D2F push word ptr DS:[0x2784]
+100D:3D33 push AX
+100D:3D34 xor AH,AH
+100D:3D36 mov DI,AX
+100D:3D38 shl DI,1
+100D:3D3A shl DI,1
+100D:3D3C mov word ptr DS:[DI+0x47F8],DX
+100D:3D40 mov word ptr DS:[DI+0x47FA],BX
+100D:3D44 mov AX,0x0026
+100D:3D47 call near 0xC13E
+100D:3D4A pop AX
+100D:3D4B mov CH,AH
+100D:3D4D cmp AL,0x0F
+100D:3D4F jb short 0x3D58
+100D:3D51 sub AL,0x0F
+100D:3D53 mov byte ptr DS:[0x476C],AL
+100D:3D56 mov AL,0x0F
+100D:3D58 call near 0x9123
+100D:3D5B call near 0x127C
+100D:3D5E jae short 0x3D65
+100D:3D60 mov AL,0x11
+100D:3D62 add BX,0x0035
+100D:3D65 cmp AL,0x0C
+100D:3D67 jne short 0x3D72
+100D:3D69 test byte ptr DS:[0x10A7],0x10
+100D:3D6E je short 0x3D72
+100D:3D70 mov AL,0x12
+100D:3D72 mov AH,CH
+100D:3D74 shl AL,1
+100D:3D76 push AX
+100D:3D77 call near 0xC2FD
+100D:3D7A pop AX
+100D:3D7B inc AX
+100D:3D7C call near 0xC22F
+100D:3D7F pop AX
+100D:3D80 jmp near 0xC13E
+100D:3D83 push DS
+100D:3D84 pop ES
+100D:3D85 mov AX,0xFFFF
+100D:3D88 mov CX,0x0017
+100D:3D8B mov DI,word ptr DS:[0x47F6]
+100D:3D8F rep stos byte ptr ES:[DI],AL
+100D:3D91 mov DI,word ptr DS:[0x47F6]
+100D:3D95 cmp byte ptr DS:[0x4774],0
+100D:3D9A je short 0x3DB0
+100D:3D9C mov AX,word ptr DS:[0x4778]
+100D:3D9F or AX,AX
+100D:3DA1 je short 0x3DB0
+100D:3DA3 push SI
+100D:3DA4 mov SI,AX
+100D:3DA6 lods AL,byte ptr CS:[SI]
+100D:3DA8 mov CL,AL
+100D:3DAA rep movs byte ptr ES:[DI],byte ptr CS:[SI]
+100D:3DAD pop SI
+100D:3DAE jmp short 0x3DE5
+100D:3DB0 mov DX,word ptr DS:[0x0012]
+100D:3DB4 xor DX,word ptr DS:[0x0010]
+100D:3DB8 mov CL,byte ptr DS:[SI]
+100D:3DBA or CL,CL
+100D:3DBC je short 0x3DE5
+100D:3DBE mov CH,byte ptr DS:[0x00C5]
+100D:3DC2 and CH,0x0F
+100D:3DC5 mov AX,0xFFFF
+100D:3DC8 inc AX
+100D:3DC9 shr DX,1
+100D:3DCB jae short 0x3DD0
+100D:3DCD call near 0x3DF4
+100D:3DD0 or DX,DX
+100D:3DD2 jne short 0x3DC8
+100D:3DD4 mov DL,byte ptr DS:[0x476A]
+100D:3DD8 dec DX
+100D:3DD9 jle short 0x3DE5
+100D:3DDB mov AX,0x000F
+100D:3DDE inc AX
+100D:3DDF call near 0x3DF4
+100D:3DE2 dec DX
+100D:3DE3 jne short 0x3DDE
+100D:3DE5 lods AL,byte ptr DS:[SI]
+100D:3DE6 xor AH,AH
+100D:3DE8 mov DI,word ptr DS:[0x47F6]
+100D:3DEC dec AX
+100D:3DED add DI,AX
+100D:3DEF mov word ptr DS:[0x47F6],DI
+100D:3DF3 ret near
+100D:3DF4 mov BX,AX
+100D:3DF6 add BL,CH
+100D:3DF8 sub BL,CL
+100D:3DFA jae short 0x3DF8
+100D:3DFC add BL,CL
+100D:3DFE cmp byte ptr DS:[BX+DI],0xFF
+100D:3E01 je short 0x3E10
+100D:3E03 mov BX,0xFFFF
+100D:3E06 inc BX
+100D:3E07 cmp BL,CL
+100D:3E09 jae short 0x3E12
+100D:3E0B cmp byte ptr DS:[BX+DI],0xFF
+100D:3E0E jne short 0x3E06
+100D:3E10 mov byte ptr DS:[BX+DI],AL
+100D:3E12 ret near
+100D:3E13 push BX
+100D:3E14 push CX
+100D:3E15 push DX
+100D:3E16 push DI
+100D:3E17 mov word ptr DS:[0x47E8],DX
+100D:3E1B mov word ptr DS:[0x47EA],BX
+100D:3E1F sub BX,CX
+100D:3E21 sub DX,DI
+100D:3E23 neg BX
+100D:3E25 neg DX
+100D:3E27 call near 0x3E80
+100D:3E2A pop DI
+100D:3E2B pop DX
+100D:3E2C pop CX
+100D:3E2D pop BX
+100D:3E2E ret near
+100D:3E2F mov BX,word ptr DS:[0x47EA]
+100D:3E33 mov CX,DX
+100D:3E35 mov DX,word ptr DS:[0x47E8]
+100D:3E39 add word ptr DS:[0x47E8],CX
+100D:3E3D jae short 0x3E41
+100D:3E3F add DX,CX
+100D:3E41 mov DI,word ptr DS:[0x22D9]
+100D:3E45 mov AX,DX
+100D:3E47 stos word ptr ES:[DI],AX
+100D:3E48 add DI,2
+100D:3E4B mov word ptr DS:[0x22D9],DI
+100D:3E4F pop SI
+100D:3E50 pop DI
+100D:3E51 ret near
+100D:3E52 mov CX,BX
+100D:3E54 mov BX,word ptr DS:[0x47EA]
+100D:3E58 mov DX,word ptr DS:[0x47E8]
+100D:3E5C or AX,AX
+100D:3E5E jns short 0x3E68
+100D:3E68 add word ptr DS:[0x47EA],CX
+100D:3E6C inc CX
+100D:3E6D mov DI,word ptr DS:[0x22D9]
+100D:3E71 mov AX,DX
+100D:3E73 stos word ptr ES:[DI],AX
+100D:3E74 add DI,2
+100D:3E77 loop 0x3E73
+100D:3E79 mov word ptr DS:[0x22D9],DI
+100D:3E7D pop SI
+100D:3E7E pop DI
+100D:3E7F ret near
+100D:3E80 push DI
+100D:3E81 push SI
+100D:3E82 or BX,BX
+100D:3E84 je short 0x3E2F
+100D:3E86 mov AX,1
+100D:3E89 jns short 0x3E8F
+100D:3E8F or DX,DX
+100D:3E91 je short 0x3E52
+100D:3E93 mov CX,1
+100D:3E96 jns short 0x3E9C
+100D:3E98 neg CX
+100D:3E9A neg DX
+100D:3E9C push AX
+100D:3E9D push CX
+100D:3E9E push AX
+100D:3E9F push CX
+100D:3EA0 mov BP,SP
+100D:3EA2 mov SI,BX
+100D:3EA4 mov DI,DX
+100D:3EA6 xor AX,AX
+100D:3EA8 cmp DX,BX
+100D:3EAA jbe short 0x3EB1
+100D:3EAC mov word ptr SS:[BP+2],AX
+100D:3EAF jmp short 0x3EBA
+100D:3EB1 or BX,BX
+100D:3EB3 je short 0x3EF8
+100D:3EB5 xchg DI,SI
+100D:3EB7 mov word ptr SS:[BP],AX
+100D:3EBA mov AX,DI
+100D:3EBC mov CX,DI
+100D:3EBE shr AX,1
+100D:3EC0 add AX,SI
+100D:3EC2 cmp AX,DI
+100D:3EC4 jb short 0x3ED0
+100D:3EC6 sub AX,DI
+100D:3EC8 mov DX,word ptr SS:[BP+4]
+100D:3ECB mov BX,word ptr SS:[BP+6]
+100D:3ECE jmp short 0x3ED6
+100D:3ED0 mov DX,word ptr SS:[BP]
+100D:3ED3 mov BX,word ptr SS:[BP+2]
+100D:3ED6 add DX,word ptr DS:[0x47E8]
+100D:3EDA cmp BX,1
+100D:3EDD jne short 0x3EF2
+100D:3EDF push DI
+100D:3EE0 push AX
+100D:3EE1 mov DI,word ptr DS:[0x22D9]
+100D:3EE5 mov AX,word ptr DS:[0x47E8]
+100D:3EE8 stos word ptr ES:[DI],AX
+100D:3EE9 add DI,2
+100D:3EEC mov word ptr DS:[0x22D9],DI
+100D:3EF0 pop AX
+100D:3EF1 pop DI
+100D:3EF2 mov word ptr DS:[0x47E8],DX
+100D:3EF6 loop 0x3EC0
+100D:3EF8 add SP,8
+100D:3EFB pop SI
+100D:3EFC pop DI
+100D:3EFD ret near
+100D:3EFE mov AL,DH
+100D:3F00 xor AH,AH
+100D:3F02 shl AX,1
+100D:3F04 mov SI,AX
+100D:3F06 mov SI,word ptr DS:[SI+0x13C4]
+100D:3F0A mov AL,DL
+100D:3F0C dec AL
+100D:3F0E mov AH,5
+100D:3F10 mul AH
+100D:3F12 add SI,AX
+100D:3F14 ret near
+100D:3F15 mov BP,1
+100D:3F18 jmp short 0x3F27
+100D:3F1A mov BP,2
+100D:3F1D jmp short 0x3F27
+100D:3F1F mov BP,3
+100D:3F22 jmp short 0x3F27
+100D:3F24 mov BP,4
+100D:3F27 push BP
+100D:3F28 call near 0xD2BD
+100D:3F2B call near 0xAC30
+100D:3F2E call near 0xA7A5
+100D:3F31 pop BP
+100D:3F32 mov byte ptr DS:[0x47A9],0
+100D:3F37 mov byte ptr DS:[0x0026],0
+100D:3F3C mov DX,word ptr DS:[4]
+100D:3F40 mov BX,word ptr DS:[6]
+100D:3F44 cmp BL,0x80
+100D:3F47 je short 0x3F67
+100D:3F49 mov AL,byte ptr DS:[0x4735]
+100D:3F4C and AL,0x7F
+100D:3F4E inc AL
+100D:3F50 jns short 0x3F54
+100D:3F54 or AL,0x80
+100D:3F56 mov byte ptr DS:[0x4735],AL
+100D:3F59 cmp byte ptr DS:[0x00F4],0x14
+100D:3F5E jae short 0x3F64
+100D:3F60 inc byte ptr DS:[0x00F4]
+100D:3F64 jmp near 0x3FF5
+100D:3F67 call near 0x3EFE
+100D:3F6A mov DL,byte ptr SS:[BP+SI]
+100D:3F6C or DL,DL
+100D:3F6E je short 0x3F14
+100D:3F70 js short 0x3FD2
+100D:3F72 cmp byte ptr DS:[0x000B],1
+100D:3F77 jne short 0x3F84
+100D:3F79 call near 0xE270
+100D:3F7C mov CL,2
+100D:3F7E call near 0xB389
+100D:3F81 call near 0xE283
+100D:3F84 mov SI,word ptr DS:[0x114E]
+100D:3F88 test byte ptr DS:[SI+0x0A],0x10
+100D:3F8C jne short 0x3FAA
+100D:3F8E or byte ptr DS:[SI+0x0A],0x10
+100D:3F92 cmp DH,0x20
+100D:3F95 adc byte ptr DS:[0x0025],0
+100D:3F9A mov byte ptr DS:[0x0026],0xFF
+100D:3F9F call near 0xE270
+100D:3FA2 mov CL,3
+100D:3FA4 call near 0xB389
+100D:3FA7 call near 0xE283
+100D:3FAA mov byte ptr DS:[0x000C],DL
+100D:3FAE mov byte ptr DS:[0x0023],1
+100D:3FB3 call near 0xA1C4
+100D:3FB6 push BX
+100D:3FB7 push DX
+100D:3FB8 call near 0x36D3
+100D:3FBB pop DX
+100D:3FBC pop BX
+100D:3FBD call near 0xA1E2
+100D:3FC0 je short 0x3FC3
+100D:3FC2 ret near
+100D:3FC3 push BX
+100D:3FC4 push DX
+100D:3FC5 call near 0xABD5
+100D:3FC8 pop DX
+100D:3FC9 pop BX
+100D:3FCA mov byte ptr DS:[0x0023],5
+100D:3FCF jmp near 0x4057
+100D:3FD2 mov byte ptr DS:[0x00E7],0
+100D:3FD7 xor DH,DH
+100D:3FD9 neg DL
+100D:3FDB mov BP,DX
+100D:3FDD xor SI,SI
+100D:3FDF xchg SI,word ptr DS:[0x114E]
+100D:3FE3 mov DX,word ptr DS:[SI+2]
+100D:3FE6 mov BX,word ptr DS:[SI+4]
+100D:3FE9 xor BH,BH
+100D:3FEB mov byte ptr DS:[8],0xFF
+100D:3FF0 mov byte ptr DS:[9],0xFF
+100D:3FF5 shl BP,1
+100D:3FF7 mov AX,word ptr SS:[BP+0x1454]
+100D:3FFB call near 0xB5CF
+100D:3FFE or BH,BH
+100D:4000 jne short 0x4057
+100D:4002 mov AX,BX
+100D:4004 cbw
+100D:4005 mov BX,AX
+100D:4007 call near 0xB532
+100D:400A xor BH,BH
+100D:400C test AL,0x40
+100D:400E je short 0x4057
+100D:4010 call near 0x409A
+100D:4013 jne short 0x4057
+100D:4015 cmp DX,word ptr DS:[SI+2]
+100D:4018 jne short 0x4057
+100D:401A mov AX,BX
+100D:401C cbw
+100D:401D mov BX,AX
+100D:401F mov byte ptr DS:[0x4735],0
+100D:4024 mov word ptr DS:[0x114E],SI
+100D:4028 mov word ptr DS:[0x1150],SI
+100D:402C mov DI,SI
+100D:402E call near 0x503C
+100D:4031 mov word ptr DS:[0x009A],0
+100D:4037 mov word ptr DS:[0x0098],0
+100D:403D call near 0x425B
+100D:4040 call near 0x40AE
+100D:4043 mov byte ptr DS:[8],DH
+100D:4047 mov byte ptr DS:[9],BH
+100D:404B cmp DH,0x20
+100D:404E jb short 0x4054
+100D:4050 or byte ptr DS:[SI+0x0A],0x10
+100D:4054 call near 0x2170
+100D:4057 call near 0x40C3
+100D:405A mov word ptr DS:[4],DX
+100D:405E mov AL,DL
+100D:4060 xchg AL,byte ptr DS:[0x000B]
+100D:4064 mov byte ptr DS:[0x000D],AL
+100D:4067 mov word ptr DS:[6],BX
+100D:406B cmp byte ptr DS:[0x46EB],0
+100D:4070 js short 0x4099
+100D:4072 cmp DX,0x3002
+100D:4076 jne short 0x407B
+100D:407B jmp near 0x2DBF
+100D:407E mov DX,word ptr DS:[4]
+100D:4082 mov BX,word ptr DS:[6]
+100D:4086 cmp BL,0x80
+100D:4089 jne short 0x4096
+100D:408B mov SI,word ptr DS:[0x114E]
+100D:408F mov DX,word ptr DS:[SI+2]
+100D:4092 mov BX,word ptr DS:[SI+4]
+100D:4095 ret near
+100D:4096 xchg BX,AX
+100D:4097 cbw
+100D:4098 xchg BX,AX
+100D:4099 ret near
+100D:409A mov SI,0x00E4
+100D:409D add SI,0x001C
+100D:40A0 cmp word ptr DS:[SI],-1
+100D:40A3 je short 0x40AB
+100D:40A5 cmp DI,word ptr DS:[SI+6]
+100D:40A8 jne short 0x409D
+100D:40AA ret near
+100D:40AE mov AX,DI
+100D:40B0 sub AX,0x0100
+100D:40B3 mov BL,0x1C
+100D:40B5 div BL
+100D:40B7 mov BH,AL
+100D:40B9 inc BH
+100D:40BB mov BL,0x80
+100D:40BD mov DH,byte ptr DS:[DI+8]
+100D:40C0 mov DL,1
+100D:40C2 ret near
+100D:40C3 mov BP,0x40C9
+100D:40C6 jmp near 0x36EE
+100D:40C9 test byte ptr DS:[SI+0x0F],0x40
+100D:40CD je short 0x40D4
+100D:40CF mov word ptr DS:[SI],DX
+100D:40D1 mov word ptr DS:[SI+2],BX
+100D:40D4 ret near
+100D:40D5 mov byte ptr DS:[0x0023],7
+100D:40DA call near 0x36D3
+100D:40DD call near 0x4AC4
+100D:40E0 mov BP,0x40E6
+100D:40E3 jmp near 0x36EE
+100D:40E6 test byte ptr DS:[SI+0x0F],0x40
+100D:40EA je short 0x40F8
+100D:40EC test byte ptr DS:[SI+0x0F],2
+100D:40F0 je short 0x40F8
+100D:40F2 call near 0x9556
+100D:40F5 call near 0x9655
+100D:40F8 ret near
+100D:40F9 test byte ptr DS:[0x11C9],3
+100D:40FE jne short 0x4101
+100D:4101 cmp word ptr DS:[0x0010],0
+100D:4106 je short 0x4181
+100D:4108 call near 0x407E
+100D:410B mov CX,9
+100D:410E mov AX,9
+100D:4111 call near 0xB56C
+100D:4114 mov CX,0x0051
+100D:4117 lods AL,byte ptr DS:[SI]
+100D:4118 test AL,0x40
+100D:411A je short 0x417C
+100D:411C mov DI,word ptr DS:[SI]
+100D:411E push CX
+100D:411F push SI
+100D:4120 call near 0x409A
+100D:4123 jne short 0x417A
+100D:4125 test byte ptr DS:[SI+0x0A],0x80
+100D:4129 je short 0x417A
+100D:412B mov AL,byte ptr DS:[0x002A]
+100D:412E cmp AL,byte ptr DS:[SI+0x0B]
+100D:4131 jb short 0x417A
+100D:4133 mov DI,SI
+100D:4135 call near 0x5124
+100D:4138 jb short 0x417A
+100D:413A sub AL,byte ptr DS:[0x11C7]
+100D:413E add AL,0x60
+100D:4140 cmp AL,0xC0
+100D:4142 jae short 0x417A
+100D:4144 xor AH,AH
+100D:4146 mov CX,0x00CE
+100D:4149 cmp AL,0x60
+100D:414B jb short 0x4152
+100D:414D inc AH
+100D:414F add CX,2
+100D:4152 mov word ptr DS:[0x11F5],CX
+100D:4156 mov byte ptr DS:[0x00E1],AH
+100D:415A call near 0x6231
+100D:415D add AX,0x0048
+100D:4160 mov word ptr DS:[0x11F3],AX
+100D:4163 mov byte ptr DS:[0x0023],3
+100D:4168 call near 0x425B
+100D:416B call near 0x4944
+100D:416E call near 0xDBB2
+100D:4171 call near 0x2EFB
+100D:4174 call near 0x2FFB
+100D:4177 call near 0xD397
+100D:417A pop SI
+100D:417B pop CX
+100D:417C add SI,2
+100D:417F loop 0x4117
+100D:4181 ret near
+100D:4182 mov AL,byte ptr DS:[0x11C9]
+100D:4185 and AL,3
+100D:4187 dec AL
+100D:4189 jne short 0x4181
+100D:418B cmp byte ptr DS:[0x11CB],0
+100D:4190 jne short 0x419B
+100D:4192 mov DI,word ptr DS:[0x11C5]
+100D:4196 call near 0x5D36
+100D:4199 jb short 0x41C5
+100D:419B call near 0x407E
+100D:419E call near 0xB532
+100D:41A1 and AL,0x30
+100D:41A3 cmp AL,0x30
+100D:41A5 jb short 0x41C5
+100D:41A7 cmp byte ptr DS:[0x4726],0
+100D:41AC jne short 0x41B3
+100D:41AE mov byte ptr DS:[0x0023],4
+100D:41B3 mov AL,0x40
+100D:41B5 call near 0x41CC
+100D:41B8 sub byte ptr DS:[0x4726],0x20
+100D:41BD jne short 0x4181
+100D:41C5 mov byte ptr DS:[0x4726],0
+100D:41CA xor AL,AL
+100D:41CC mov byte ptr DS:[0x21FD],AL
+100D:41CF cmp word ptr DS:[0x1F12],0x4FFB
+100D:41D5 jne short 0x41DA
+100D:41D7 mov byte ptr DS:[0x1F11],AL
+100D:41DA ret near
+100D:41DB dec byte ptr DS:[0x196C]
+100D:41DF clc
+100D:41E0 ret near
+100D:41E1 cmp byte ptr DS:[0x196C],0
+100D:41E6 jne short 0x41DB
+100D:41E8 mov AL,byte ptr DS:[0x11C7]
+100D:41EB add AL,0x20
+100D:41ED test AL,0x40
+100D:41EF mov CX,1
+100D:41F2 mov AX,8
+100D:41F5 je short 0x41F8
+100D:41F7 xchg CX,AX
+100D:41F8 call near 0xB56C
+100D:41FB mov CX,8
+100D:41FE lods AL,byte ptr DS:[SI]
+100D:41FF test AL,0x40
+100D:4201 jne short 0x420A
+100D:4203 add SI,2
+100D:4206 loop 0x41FE
+100D:4208 clc
+100D:4209 ret near
+100D:420A mov DI,word ptr DS:[SI]
+100D:420C push CX
+100D:420D push SI
+100D:420E call near 0x409A
+100D:4211 jne short 0x4257
+100D:4213 test byte ptr DS:[SI+0x0A],0x80
+100D:4217 je short 0x4221
+100D:4219 mov AL,byte ptr DS:[0x002A]
+100D:421C cmp AL,byte ptr DS:[SI+0x0B]
+100D:421F jb short 0x4257
+100D:4221 mov DI,SI
+100D:4223 call near 0x5124
+100D:4226 jb short 0x4257
+100D:4228 sub AL,byte ptr DS:[0x11C7]
+100D:422C add AL,0x20
+100D:422E cmp AL,0x40
+100D:4230 jae short 0x4257
+100D:4232 sub AL,0x20
+100D:4234 cbw
+100D:4235 shl AX,1
+100D:4237 shl AX,1
+100D:4239 shl AX,1
+100D:423B shl AX,1
+100D:423D shl AX,1
+100D:423F mov word ptr DS:[0x1968],AX
+100D:4242 xor AX,AX
+100D:4244 call near 0x5E4F
+100D:4247 mov BX,0x196D
+100D:424A xlat byte ptr DS:[BX+AL]
+100D:424B mov word ptr DS:[0x196A],AX
+100D:424E pop SI
+100D:424F pop CX
+100D:4250 mov byte ptr DS:[0x196C],6
+100D:4255 stc
+100D:4256 ret near
+100D:4257 pop SI
+100D:4258 pop CX
+100D:4259 jmp short 0x4203
+100D:425B test byte ptr DS:[DI+0x0A],0x80
+100D:425F je short 0x4284
+100D:4261 and byte ptr DS:[DI+0x0A],0x7F
+100D:4265 mov byte ptr DS:[DI+0x0B],0
+100D:4269 cmp byte ptr DS:[DI+8],0x20
+100D:426D jae short 0x4284
+100D:426F inc byte ptr DS:[0x0027]
+100D:4273 cmp word ptr DS:[DI],0x0603
+100D:4277 jne short 0x4284
+100D:4279 call near 0xE270
+100D:427C mov AL,0x10
+100D:427E call near 0x121F
+100D:4281 call near 0xE283
+100D:4284 ret near
+100D:4285 mov DI,0x015F
+100D:4288 cmp word ptr CS:[DI+2],0
+100D:428D jne short 0x42AA
+100D:428F push CS
+100D:4290 pop ES
+100D:4291 mov SI,0x00BE
+100D:4294 call near 0xF0B9
+100D:4297 mov SI,0x015F
+100D:429A mov DI,0xAA66
+100D:429D push DS
+100D:429E pop ES
+100D:429F mov CX,4
+100D:42A2 rep movs word ptr ES:[DI],word ptr CS:[SI]
+100D:42A5 add word ptr CS:[SI],0x0167
+100D:42AA mov word ptr DS:[0x487E],1
+100D:42B0 mov byte ptr DS:[0x473E],0
+100D:42B5 mov byte ptr DS:[0x11C9],8
+100D:42BA mov SI,word ptr CS:[0x0167]
+100D:42BF add SI,word ptr CS:[SI]
+100D:42C2 mov word ptr DS:[0xAA6E],SI
+100D:42C6 mov AX,0x0039
+100D:42C9 call near 0xC13E
+100D:42CC call far dword ptr DS:[0x3935]
+100D:42D0 ret near
+100D:42D1 call near 0x98B2
+100D:42D4 call near 0x4285
+100D:42D7 jmp short 0x4305
+100D:42D9 mov DX,word ptr DS:[4]
+100D:42DD mov BX,word ptr DS:[6]
+100D:42E1 mov DL,1
+100D:42E3 call near 0x4057
+100D:42E6 call near 0x186B
+100D:42E9 call near 0x98B2
+100D:42EC call near 0x38E1
+100D:42EF mov AX,0x0024
+100D:42F2 call near 0xC13E
+100D:42F5 mov byte ptr DS:[0x473E],1
+100D:42FA mov byte ptr DS:[0x11C9],4
+100D:42FF mov word ptr DS:[0x487E],2
+100D:4305 mov BP,0x212E
+100D:4308 call near 0x49EA
+100D:430B mov BX,0x4415
+100D:430E call near 0xD323
+100D:4311 mov AX,0x1AC8
+100D:4314 call near 0xD95E
+100D:4317 call near 0x4ACA
+100D:431A mov word ptr DS:[0x46FC],0
+100D:4320 call near 0x5B5D
+100D:4323 mov byte ptr DS:[0x46EB],1
+100D:4328 mov SI,0x1CCA
+100D:432B call near 0xD72B
+100D:432E mov SI,0x149C
+100D:4331 mov DI,0x46E3
+100D:4334 call near 0xDAAA
+100D:4337 call near 0x5B99
+100D:433A call near 0x439F
+100D:433D mov AX,0x02BC
+100D:4340 call near 0xAB4F
+100D:4343 call near 0x4658
+100D:4346 mov word ptr DS:[0x46ED],0x4377
+100D:434C call near 0x5B93
+100D:434F call near 0xB6C3
+100D:4352 call near 0xC137
+100D:4355 call near 0x5DCE
+100D:4358 cmp byte ptr DS:[0x473E],0
+100D:435D je short 0x436E
+100D:435F mov AX,0x0024
+100D:4362 call near 0xC13E
+100D:4365 mov SI,0x14C0
+100D:4368 call near 0xC21B
+100D:436B call near 0xC0F4
+100D:436E call near 0xC4DD
+100D:4371 call near 0x445D
+100D:4374 jmp near 0xD280
+100D:4377 call near 0xC07C
+100D:437A call near 0x5B93
+100D:437D call near 0xB6C3
+100D:4380 call near 0xC137
+100D:4383 call near 0x5DCE
+100D:4386 cmp byte ptr DS:[0x473E],0
+100D:438B je short 0x4399
+100D:438D mov AX,0x0024
+100D:4390 call near 0xC13E
+100D:4393 mov SI,0x14C0
+100D:4396 call near 0xC21B
+100D:4399 call near 0xC4ED
+100D:439C jmp near 0x445D
+100D:439F call near 0xC07C
+100D:43A2 cmp byte ptr DS:[0x473E],0
+100D:43A7 jne short 0x43CC
+100D:43A9 mov AX,0x0024
+100D:43AC call near 0xC13E
+100D:43AF call near 0xC49A
+100D:43B2 call near 0xC412
+100D:43B5 call far dword ptr DS:[0x3935]
+100D:43B9 call near 0x5B69
+100D:43BC mov SI,0x14A4
+100D:43BF mov AL,0xF5
+100D:43C1 mov ES,word ptr DS:[0xDBDA]
+100D:43C5 call far dword ptr DS:[0x38DD]
+100D:43C9 jmp near 0xC4DD
+100D:43CC cmp byte ptr DS:[0x002B],0
+100D:43D1 jne short 0x43D6
+100D:43D3 call near 0x38B4
+100D:43D6 mov AX,0x0024
+100D:43D9 call near 0xC13E
+100D:43DC mov SI,0x14B4
+100D:43DF call near 0xC21B
+100D:43E2 ret near
+100D:43E3 cmp byte ptr DS:[0x473E],0
+100D:43E8 jne short 0x43FC
+100D:43EA cmp word ptr DS:[0xDBEA],0
+100D:43EF jne short 0x440F
+100D:43F1 mov SI,0x14AC
+100D:43F4 push SI
+100D:43F5 call near 0xC446
+100D:43F8 pop SI
+100D:43F9 jmp near 0xC4F0
+100D:43FC cmp byte ptr DS:[6],0x80
+100D:4401 jne short 0x440F
+100D:4403 call near 0x388D
+100D:4406 call near 0xC43E
+100D:4409 call near 0xC4DD
+100D:440C jmp near 0xC0F4
+100D:440F call near 0x4ABE
+100D:4412 jmp near 0xC0F4
+100D:4415 xor AL,AL
+100D:4417 xchg AL,byte ptr DS:[0x46EB]
+100D:441B or AL,AL
+100D:441D jne short 0x4420
+100D:4420 mov word ptr DS:[0xA5C0],0
+100D:4426 call near 0xDAA3
+100D:4429 mov SI,0x44AB
+100D:442C call near 0xDA5F
+100D:442F call near 0x469B
+100D:4432 call near 0x5BA0
+100D:4435 call near 0x43E3
+100D:4438 call near 0xC0F4
+100D:443B cmp word ptr DS:[0x11C5],0
+100D:4440 jne short 0x4447
+100D:4442 mov byte ptr DS:[0x11C9],0
+100D:4447 call near 0xD95B
+100D:444A call near 0xD717
+100D:444D call near 0x2FFB
+100D:4450 cmp byte ptr DS:[0x4728],0
+100D:4455 jle short 0x445A
+100D:445A jmp near 0x4AC4
+100D:445D mov SI,0x44AB
+100D:4460 call near 0xDA5F
+100D:4463 call near 0x407E
+100D:4466 call near 0x62D6
+100D:4469 jae short 0x4472
+100D:446B mov word ptr DS:[0x4749],0
+100D:4471 ret near
+100D:4472 call near 0xC137
+100D:4475 mov AX,0x004C
+100D:4478 call near 0xC1F4
+100D:447B lods AX,word ptr ES:[SI]
+100D:447D and AH,0x0F
+100D:4480 mov BP,AX
+100D:4482 lods AX,word ptr ES:[SI]
+100D:4484 xor AH,AH
+100D:4486 sub BX,AX
+100D:4488 sub DX,0x000D
+100D:448B add BP,DX
+100D:448D add AX,BX
+100D:448F mov DI,0x4749
+100D:4492 mov word ptr DS:[DI],DX
+100D:4494 mov word ptr DS:[DI+2],BX
+100D:4497 mov word ptr DS:[DI+4],BP
+100D:449A mov word ptr DS:[DI+6],AX
+100D:449D mov SI,0x44AB
+100D:44A0 mov BP,0x012C
+100D:44A3 call near 0xDA25
+100D:44A6 mov byte ptr DS:[0x4751],0
+100D:44AB inc byte ptr DS:[0x4751]
+100D:44AF push word ptr DS:[0xDBDA]
+100D:44B3 call near 0xC08E
+100D:44B6 call near 0x5B93
+100D:44B9 call near 0xC137
+100D:44BC mov SI,0x4749
+100D:44BF call near 0xDB74
+100D:44C2 mov DX,word ptr DS:[SI]
+100D:44C4 mov BX,word ptr DS:[SI+2]
+100D:44C7 mov BP,word ptr DS:[SI+4]
+100D:44CA mov AX,word ptr DS:[SI+6]
+100D:44CD mov SI,0xD834
+100D:44D0 cmp BP,word ptr DS:[SI+4]
+100D:44D3 jb short 0x44D8
+100D:44D5 mov BP,word ptr DS:[SI+4]
+100D:44D8 cmp AX,word ptr DS:[SI+6]
+100D:44DB jb short 0x44E0
+100D:44E0 cmp DX,word ptr DS:[SI]
+100D:44E2 jae short 0x44E6
+100D:44E4 mov DX,word ptr DS:[SI]
+100D:44E6 cmp BX,word ptr DS:[SI+2]
+100D:44E9 jae short 0x44EE
+100D:44EB mov BX,word ptr DS:[SI+2]
+100D:44EE call near 0xC4FB
+100D:44F1 mov BL,byte ptr DS:[0x4751]
+100D:44F5 shr BL,1
+100D:44F7 jae short 0x4507
+100D:44F9 mov AX,0x004C
+100D:44FC mov DX,word ptr DS:[0x4749]
+100D:4500 mov BX,word ptr DS:[0x474B]
+100D:4504 call near 0xC30D
+100D:4507 pop word ptr DS:[0xDBDA]
+100D:450B jmp near 0xDB67
+100D:450E test byte ptr DS:[0x11C9],0x0F
+100D:4513 je short 0x4533
+100D:4515 push BX
+100D:4516 push DX
+100D:4517 call near 0x4586
+100D:451A pop DX
+100D:451B pop BX
+100D:451C mov DI,word ptr DS:[0x46FC]
+100D:4520 or DI,DI
+100D:4522 je short 0x4533
+100D:4524 js short 0x4534
+100D:4526 test byte ptr DS:[0x11C9],3
+100D:452B jne short 0x4534
+100D:452D cmp DI,word ptr DS:[0x114E]
+100D:4531 jne short 0x4534
+100D:4533 ret near
+100D:4534 push BX
+100D:4535 push DX
+100D:4536 push DI
+100D:4537 call near 0x456C
+100D:453A call near 0xAB45
+100D:453D pop DI
+100D:453E mov CX,9
+100D:4541 push CX
+100D:4542 push DI
+100D:4543 mov AX,0x0014
+100D:4546 call near 0xE3A0
+100D:4549 push DI
+100D:454A xor DI,DI
+100D:454C call near 0x45DE
+100D:454F pop DI
+100D:4550 mov AX,0x000A
+100D:4553 call near 0xE3A0
+100D:4556 call near 0x45DE
+100D:4559 pop DI
+100D:455A pop CX
+100D:455B loop 0x4541
+100D:455D push DI
+100D:455E call near 0xABA9
+100D:4561 pop DI
+100D:4562 pop DX
+100D:4563 pop BX
+100D:4564 mov byte ptr DS:[0x4732],0x80
+100D:4569 jmp near 0x4703
+100D:456C mov AX,DI
+100D:456E cmp AH,0xFF
+100D:4571 je short 0x4582
+100D:4573 mov AX,word ptr DS:[DI]
+100D:4575 dec AX
+100D:4576 shl AL,1
+100D:4578 shl AL,1
+100D:457A shl AL,1
+100D:457C shl AL,1
+100D:457E or AL,AH
+100D:4580 xor AH,AH
+100D:4582 add AX,0x02BC
+100D:4585 ret near
+100D:4586 call near 0x5D1D
+100D:4589 mov DI,0
+100D:458C jae short 0x45D3
+100D:458E mov AL,0xFF
+100D:4590 call near 0x5E6D
+100D:4593 cmp AX,9
+100D:4596 jb short 0x45D3
+100D:4598 mov DI,0xFFFF
+100D:459B mov DX,word ptr DS:[0x4749]
+100D:459F or DX,DX
+100D:45A1 je short 0x45D3
+100D:45A3 add DX,0x000B
+100D:45A6 sub DX,word ptr DS:[0xDC36]
+100D:45AA neg DX
+100D:45AC mov BX,word ptr DS:[0xDC38]
+100D:45B0 sub BX,word ptr DS:[0x474F]
+100D:45B4 call near 0x514E
+100D:45B7 add AL,3
+100D:45B9 mov AH,AL
+100D:45BB and AH,0x1F
+100D:45BE cmp AH,6
+100D:45C1 mov DI,0xFFFF
+100D:45C4 jae short 0x45D3
+100D:45C6 rol AL,1
+100D:45C8 rol AL,1
+100D:45CA rol AL,1
+100D:45CC and AL,7
+100D:45CE or AX,0xFFF0
+100D:45D1 mov DI,AX
+100D:45D3 mov AX,DI
+100D:45D5 xchg AX,word ptr DS:[0x46FC]
+100D:45D9 cmp AX,DI
+100D:45DB jne short 0x45DE
+100D:45DD ret near
+100D:45DE push word ptr DS:[0xDBDA]
+100D:45E2 call near 0xC08E
+100D:45E5 call near 0xDBB2
+100D:45E8 call near 0xD075
+100D:45EB mov DX,0x0055
+100D:45EE mov BX,0x0022
+100D:45F1 mov CX,0xF5FE
+100D:45F4 cmp byte ptr DS:[0x473E],0
+100D:45F9 je short 0x4600
+100D:45FB add BX,4
+100D:45FE mov CH,0x20
+100D:4600 or DI,DI
+100D:4602 je short 0x462A
+100D:4604 call near 0x469B
+100D:4607 cmp DI,-16
+100D:460A jb short 0x4636
+100D:460C mov AX,0x00A4
+100D:460F call near 0xD194
+100D:4612 sub DI,-16
+100D:4615 cmp DI,8
+100D:4618 jae short 0x4641
+100D:461A mov AL,0x20
+100D:461C call near word ptr DS:[0x2518]
+100D:4620 mov AX,DI
+100D:4622 add AX,0x00DA
+100D:4625 call near 0xD19B
+100D:4628 jmp short 0x4641
+100D:462A call near 0x4658
+100D:462D mov word ptr DS:[0xDBE4],CX
+100D:4631 call near 0xD04E
+100D:4634 jmp short 0x4641
+100D:4636 push CX
+100D:4637 call near 0x629D
+100D:463A call near 0xD05F
+100D:463D pop CX
+100D:463E call near 0x62A6
+100D:4641 cmp word ptr DS:[0xD82C],0x00ED
+100D:4647 ja short 0x4651
+100D:4649 mov AL,0x20
+100D:464B call near word ptr DS:[0x2518]
+100D:464F jmp short 0x4641
+100D:4651 pop word ptr DS:[0xDBDA]
+100D:4655 jmp near 0xDBEC
+100D:4658 cmp word ptr DS:[0x473F],0
+100D:465D jne short 0x469A
+100D:465F call near 0xE270
+100D:4662 mov SI,0x0057
+100D:4665 call near 0xCF70
+100D:4668 mov word ptr DS:[0x4741],ES
+100D:466C mov word ptr DS:[0x473F],SI
+100D:4670 mov word ptr DS:[0x4743],0x0055
+100D:4676 mov CX,0xF561
+100D:4679 mov AX,0x0022
+100D:467C cmp byte ptr DS:[0x473E],0
+100D:4681 je short 0x4687
+100D:4683 add AL,4
+100D:4685 mov CH,0x20
+100D:4687 mov word ptr DS:[0x4745],AX
+100D:468A mov word ptr DS:[0x4747],CX
+100D:468E mov SI,0x46B5
+100D:4691 mov BP,0x0018
+100D:4694 call near 0xDA25
+100D:4697 call near 0xE283
+100D:469A ret near
+100D:469B cmp word ptr DS:[0x473F],0
+100D:46A0 je short 0x46B4
+100D:46A2 mov word ptr DS:[0x473F],0
+100D:46A8 call near 0xE270
+100D:46AB mov SI,0x46B5
+100D:46AE call near 0xDA5F
+100D:46B1 call near 0xE283
+100D:46B4 ret near
+100D:46B5 les SI,word ptr DS:[0x473F]
+100D:46B9 mov AL,byte ptr ES:[SI]
+100D:46BC or AL,AL
+100D:46BE js short 0x4702
+100D:46C0 inc word ptr DS:[0x473F]
+100D:46C4 mov SI,0x14A4
+100D:46C7 call near 0xDB74
+100D:46CA push word ptr DS:[0xDBDA]
+100D:46CE call near 0xC08E
+100D:46D1 mov DX,word ptr DS:[0x4743]
+100D:46D5 mov BX,word ptr DS:[0x4745]
+100D:46D9 call near 0xD04E
+100D:46DC mov CX,word ptr DS:[0x4747]
+100D:46E0 mov word ptr DS:[0xDBE4],CX
+100D:46E4 call near 0xD075
+100D:46E7 push AX
+100D:46E8 call near 0xD12F
+100D:46EB call near 0xD05F
+100D:46EE mov word ptr DS:[0x4743],DX
+100D:46F2 mov word ptr DS:[0x4745],BX
+100D:46F6 pop AX
+100D:46F7 pop word ptr DS:[0xDBDA]
+100D:46FB call near 0xDB67
+100D:46FE cmp AL,0x20
+100D:4700 je short 0x46B5
+100D:4702 ret near
+100D:4703 call near 0x4944
+100D:4706 call near 0x38E1
+100D:4709 mov AL,byte ptr DS:[0x11C9]
+100D:470C push AX
+100D:470D shr AL,1
+100D:470F shr AL,1
+100D:4711 or byte ptr DS:[0x11C9],AL
+100D:4715 call near 0xAD5E
+100D:4718 cmp byte ptr DS:[0x002B],0
+100D:471D je short 0x4727
+100D:4727 call near 0xD2EA
+100D:472A call near 0x4D00
+100D:472D pop AX
+100D:472E test AL,3
+100D:4730 jne short 0x478F
+100D:4732 mov word ptr DS:[0x472B],0
+100D:4738 push AX
+100D:4739 call near 0x41C5
+100D:473C mov AL,byte ptr DS:[0x11C9]
+100D:473F and AL,3
+100D:4741 dec AL
+100D:4743 jne short 0x4748
+100D:4745 call near 0x181E
+100D:4748 call near 0xC474
+100D:474B call near 0x40D5
+100D:474E pop AX
+100D:474F mov BL,byte ptr DS:[0x11C7]
+100D:4753 push BX
+100D:4754 call near 0x4795
+100D:4757 pop AX
+100D:4758 mov byte ptr DS:[0x11C7],AL
+100D:475B mov byte ptr DS:[8],0xFF
+100D:4760 call near 0x4B3B
+100D:4763 mov word ptr DS:[0x114E],0
+100D:4769 mov word ptr DS:[0x4729],0
+100D:476F cmp byte ptr DS:[0x46EB],0
+100D:4774 js short 0x4779
+100D:4776 call near 0x2DBF
+100D:4779 call near 0x4AB8
+100D:477C mov AL,byte ptr DS:[0x11C9]
+100D:477F and AL,3
+100D:4781 dec AL
+100D:4783 jne short 0x478F
+100D:4785 mov DI,word ptr DS:[0x1150]
+100D:4789 dec byte ptr DS:[DI+0x15]
+100D:478C jmp near 0xAC14
+100D:478F call near 0x2EB2
+100D:4792 jmp near 0xC0F4
+100D:4795 cmp byte ptr DS:[0x46EB],0
+100D:479A js short 0x47CD
+100D:479C cmp AL,4
+100D:479E je short 0x47CE
+100D:47A0 call near 0x98AF
+100D:47A3 mov byte ptr DS:[0xCEE8],0
+100D:47A8 mov AL,0x50
+100D:47AA call near 0x121F
+100D:47AD mov byte ptr DS:[0x00E8],0
+100D:47B2 call near 0x1797
+100D:47B5 mov AL,0x10
+100D:47B7 mov BP,0x4913
+100D:47BA call near 0xC108
+100D:47BD mov byte ptr DS:[0x227D],1
+100D:47C2 call near 0x491C
+100D:47C5 mov byte ptr DS:[0x227D],0
+100D:47CA jmp near 0xAC14
+100D:47CD ret near
+100D:47CE call near 0xCE53
+100D:47D1 xor AL,AL
+100D:47D3 xchg AL,byte ptr DS:[0x4732]
+100D:47D7 shl AL,1
+100D:47D9 jae short 0x47CD
+100D:47DB call near 0x181E
+100D:47DE mov byte ptr DS:[0x4731],0xFF
+100D:47E3 call near 0xC07C
+100D:47E6 call near 0x37B2
+100D:47E9 call near 0xC412
+100D:47EC call near 0x5BA0
+100D:47EF mov byte ptr DS:[0x4731],0
+100D:47F4 mov AL,6
+100D:47F6 call near 0xAB15
+100D:47F9 mov CL,1
+100D:47FB mov BP,0x4821
+100D:47FE mov AX,0x0014
+100D:4801 call near 0xE353
+100D:4804 add byte ptr DS:[0x4731],CL
+100D:4808 mov AL,byte ptr DS:[0x4731]
+100D:480B cmp AL,0x1A
+100D:480D jne short 0x4816
+100D:480F or CL,CL
+100D:4811 js short 0x4816
+100D:4813 call near 0xAC30
+100D:4816 call near 0xAE04
+100D:4819 cmp byte ptr DS:[0x4731],0x21
+100D:481E jb short 0x47FB
+100D:4820 ret near
+100D:4821 push CX
+100D:4822 call near 0xC43E
+100D:4825 mov AX,0x002A
+100D:4828 call near 0xC13E
+100D:482B call near 0xC0F4
+100D:482E call near 0xC07C
+100D:4831 call near 0x3A95
+100D:4834 mov AL,byte ptr DS:[0x4731]
+100D:4837 cmp AL,0x0D
+100D:4839 jne short 0x4840
+100D:483B push AX
+100D:483C call near 0xAC30
+100D:483F pop AX
+100D:4840 sub AL,0x0E
+100D:4842 jbe short 0x485D
+100D:4844 pop CX
+100D:4845 push CX
+100D:4846 or CL,CL
+100D:4848 mov CX,5
+100D:484B jns short 0x484F
+100D:484F mov AH,AL
+100D:4851 sub DX,CX
+100D:4853 dec AH
+100D:4855 jne short 0x4851
+100D:4857 mul AL
+100D:4859 sar AX,1
+100D:485B sub BX,AX
+100D:485D call near 0x3AA9
+100D:4860 call near 0x3A95
+100D:4863 mov CL,byte ptr DS:[0x46FF]
+100D:4867 xor CH,CH
+100D:4869 jcxz short 0x487B
+100D:486B mov AL,byte ptr DS:[0x4731]
+100D:486E push AX
+100D:486F mov byte ptr DS:[0x4731],0
+100D:4874 call near 0x3A73
+100D:4877 pop AX
+100D:4878 mov byte ptr DS:[0x4731],AL
+100D:487B call near 0xC4DD
+100D:487E cmp byte ptr DS:[0x46D7],0
+100D:4883 je short 0x4888
+100D:4888 pop CX
+100D:4889 ret near
+100D:488A mov AX,6
+100D:488D mov SI,word ptr DS:[0x114E]
+100D:4891 call near 0x5E4F
+100D:4894 cmp AL,8
+100D:4896 jae short 0x48E5
+100D:4898 mov BX,AX
+100D:489A call near 0xDBB2
+100D:489D mov byte ptr DS:[0x4728],0x80
+100D:48A2 push BX
+100D:48A3 call near 0xCA60
+100D:48A6 xor AX,AX
+100D:48A8 call near 0x4EC6
+100D:48AB pop BX
+100D:48AC cmp word ptr DS:[0xDC00],2
+100D:48B2 jne short 0x48A2
+100D:48B4 mov AX,0x003C
+100D:48B7 cmp BX,6
+100D:48BB je short 0x48C0
+100D:48BD mov AX,0x0016
+100D:48C0 cmp AX,word ptr DS:[0xDBEA]
+100D:48C4 jne short 0x48A2
+100D:48C6 call near 0xCE4B
+100D:48C9 call near 0xCA60
+100D:48CC call near 0xCC85
+100D:48CF je short 0x48C9
+100D:48D1 dec byte ptr DS:[0x46E0]
+100D:48D5 mov byte ptr DS:[0x4732],0
+100D:48DA jmp near 0x2D74
+100D:4913 mov AX,0x000E
+100D:4916 call near 0xCA1B
+100D:4919 jmp near 0x388D
+100D:491C call near 0xC08E
+100D:491F call near 0xC0F4
+100D:4922 mov AL,8
+100D:4924 call near 0xAB15
+100D:4927 call near 0xAE04
+100D:492A call near 0xC9E8
+100D:492D je short 0x4934
+100D:492F call near 0x4937
+100D:4932 je short 0x492A
+100D:4934 jmp near 0xC07C
+100D:4937 mov AX,word ptr DS:[0xDBE8]
+100D:493A cmp AL,0x0B
+100D:493C jne short 0x4941
+100D:493E call near 0xAC30
+100D:4941 jmp near 0xCC85
+100D:4944 call near 0x50BE
+100D:4947 cmp DI,-16
+100D:494A jb short 0x4965
+100D:494C dec byte ptr DS:[0x11CB]
+100D:4950 call near 0xB5F9
+100D:4953 mov CX,BX
+100D:4955 mov DI,DX
+100D:4957 call near 0x407E
+100D:495A call near 0x5133
+100D:495D mov DI,word ptr DS:[0x1150]
+100D:4961 mov CL,1
+100D:4963 jmp short 0x496A
+100D:4965 call near 0x5124
+100D:4968 xor CX,CX
+100D:496A mov word ptr DS:[0x11C5],DI
+100D:496E mov byte ptr DS:[0x11C8],CL
+100D:4972 mov byte ptr DS:[0x11C7],0
+100D:4977 jmp near 0x5119
+100D:497A call near 0x98E6
+100D:497D mov BP,0x212E
+100D:4980 mov byte ptr DS:[0x4728],1
+100D:4985 jmp near 0x430B
+100D:4988 mov word ptr DS:[0x46FC],0
+100D:498E call near 0x5B5D
+100D:4991 mov SI,0x148A
+100D:4994 mov DI,0x46E3
+100D:4997 call near 0x5B99
+100D:499A mov word ptr DS:[0x46ED],0x49A0
+100D:49A0 call near 0xC085
+100D:49A3 call near 0x5B93
+100D:49A6 mov byte ptr DS:[0x46EB],1
+100D:49AB call near 0xB6C3
+100D:49AE call near 0x5B69
+100D:49B1 call near 0xC137
+100D:49B4 call near 0x5DCE
+100D:49B7 mov SI,word ptr DS:[0x11C5]
+100D:49BB or SI,SI
+100D:49BD je short 0x49CC
+100D:49BF call near 0x62C9
+100D:49C2 jb short 0x49CC
+100D:49C4 dec BX
+100D:49C5 dec DX
+100D:49C6 mov AX,0x002E
+100D:49C9 call near 0xC22F
+100D:49CC mov byte ptr DS:[0x46EB],0
+100D:49D1 jmp near 0xC07C
+100D:49EA mov byte ptr DS:[0x4728],0
+100D:49EF push CS
+100D:49F0 pop ES
+100D:49F1 mov DI,0xE40C
+100D:49F4 mov AX,0x0800
+100D:49F7 stos word ptr ES:[DI],AX
+100D:49F8 stos word ptr ES:[DI],AX
+100D:49F9 cmp DI,0xE85C
+100D:49FD jb short 0x49F7
+100D:49FF ret near
+100D:4A00 push CS
+100D:4A01 pop ES
+100D:4A02 mov DI,word ptr DS:[0x149A]
+100D:4A06 mov AX,DX
+100D:4A08 stos word ptr ES:[DI],AX
+100D:4A09 mov AX,BX
+100D:4A0B stos word ptr ES:[DI],AX
+100D:4A0C cmp DI,0xE85C
+100D:4A10 jb short 0x4A15
+100D:4A15 mov word ptr DS:[0x149A],DI
+100D:4A19 ret near
+100D:4A1A cmp byte ptr DS:[0x4728],0
+100D:4A1F js short 0x4A59
+100D:4A21 mov SI,0x148A
+100D:4A24 call near 0xDB74
+100D:4A27 mov SI,word ptr DS:[0x149A]
+100D:4A2B cmp SI,0xE40C
+100D:4A2F jne short 0x4A34
+100D:4A31 mov SI,0xE85C
+100D:4A34 sub SI,4
+100D:4A37 lods AX,word ptr CS:[SI]
+100D:4A39 mov DX,AX
+100D:4A3B lods AX,word ptr CS:[SI]
+100D:4A3D mov BX,AX
+100D:4A3F dec AH
+100D:4A41 jns short 0x4A59
+100D:4A43 call near 0x62D6
+100D:4A46 jb short 0x4A59
+100D:4A48 dec BX
+100D:4A49 dec DX
+100D:4A4A call near 0xC137
+100D:4A4D mov AX,0x002F
+100D:4A50 call near 0xC085
+100D:4A53 call near 0xC22F
+100D:4A56 call near 0xC07C
+100D:4A59 ret near
+100D:4A5A call near 0xC137
+100D:4A5D push word ptr DS:[0xDBDA]
+100D:4A61 call near 0xC085
+100D:4A64 mov SI,word ptr DS:[0x149A]
+100D:4A68 lods AX,word ptr CS:[SI]
+100D:4A6A mov DX,AX
+100D:4A6C lods AX,word ptr CS:[SI]
+100D:4A6E mov BX,AX
+100D:4A70 dec AH
+100D:4A72 jns short 0x4A99
+100D:4A74 push SI
+100D:4A75 call near 0x62D6
+100D:4A78 jb short 0x4A98
+100D:4A7A dec BX
+100D:4A7B dec DX
+100D:4A7C cmp DX,0x00CC
+100D:4A80 jl short 0x4A98
+100D:4A82 cmp BX,4
+100D:4A85 jl short 0x4A98
+100D:4A87 cmp DX,0x013A
+100D:4A8B jge short 0x4A98
+100D:4A8D cmp BX,0x003A
+100D:4A90 jge short 0x4A98
+100D:4A92 mov AX,0x002F
+100D:4A95 call near 0xC22F
+100D:4A98 pop SI
+100D:4A99 cmp SI,0xE85C
+100D:4A9D jb short 0x4AA2
+100D:4A9F mov SI,0xE40C
+100D:4AA2 cmp SI,word ptr DS:[0x149A]
+100D:4AA6 jne short 0x4A68
+100D:4AA8 pop word ptr DS:[0xDBDA]
+100D:4AAC ret near
+100D:4AB8 mov byte ptr DS:[0x4727],0xFF
+100D:4ABD ret near
+100D:4ABE call near 0x37F4
+100D:4AC1 call near 0xC4DD
+100D:4AC4 mov byte ptr DS:[0x11CA],0
+100D:4AC9 ret near
+100D:4ACA mov byte ptr DS:[0x11CA],1
+100D:4ACF ret near
+100D:4AEB mov AX,0x0039
+100D:4AEE call near 0xC13E
+100D:4AF1 call near 0xC07C
+100D:4AF4 call near 0x4D6C
+100D:4AF7 call near 0x4B2B
+100D:4AFA jmp near 0xC4DD
+100D:4AFD cmp byte ptr DS:[0x227D],0
+100D:4B02 jne short 0x4B16
+100D:4B04 call near 0x4B2B
+100D:4B07 mov ES,word ptr DS:[0xDBD8]
+100D:4B0B mov SI,word ptr DS:[0xDBD6]
+100D:4B0F call far dword ptr DS:[0x38FD]
+100D:4B13 jmp near 0xDBE3
+100D:4B16 mov AX,word ptr DS:[0xDBD8]
+100D:4B19 mov SI,word ptr DS:[0xDBD6]
+100D:4B1D cmp AX,SI
+100D:4B1F je short 0x4B2A
+100D:4B21 add AX,0x01E0
+100D:4B24 mov ES,AX
+100D:4B26 call far dword ptr DS:[0x38FD]
+100D:4B2A ret near
+100D:4B2B cmp byte ptr DS:[0x4728],0
+100D:4B30 js short 0x4B38
+100D:4B32 mov SI,0x1492
+100D:4B35 call near 0xC46F
+100D:4B38 jmp near 0xDBCA
+100D:4B3B inc word ptr DS:[0x472B]
+100D:4B3F test word ptr DS:[0x472B],0x000F
+100D:4B45 jne short 0x4B4D
+100D:4B47 mov CX,1
+100D:4B4A call near 0x0FD9
+100D:4B4D call near 0x407E
+100D:4B50 call near 0x5206
+100D:4B53 call near 0x40C3
+100D:4B56 mov word ptr DS:[4],DX
+100D:4B5A mov word ptr DS:[6],BX
+100D:4B5E ret near
+100D:4B5F mov SI,0x1470
+100D:4B62 mov AX,DX
+100D:4B64 add AX,word ptr DS:[0x487A]
+100D:4B68 cmp DX,word ptr DS:[SI]
+100D:4B6A jge short 0x4B6E
+100D:4B6E cmp DX,word ptr DS:[SI+4]
+100D:4B71 jle short 0x4B76
+100D:4B76 mov word ptr DS:[0x4860],DX
+100D:4B7A cmp AX,word ptr DS:[SI]
+100D:4B7C jge short 0x4B80
+100D:4B80 cmp AX,word ptr DS:[SI+4]
+100D:4B83 jle short 0x4B88
+100D:4B88 mov word ptr DS:[0x4864],AX
+100D:4B8B mov AX,BX
+100D:4B8D add AX,word ptr DS:[0x487C]
+100D:4B91 cmp BX,word ptr DS:[SI+2]
+100D:4B94 jge short 0x4B99
+100D:4B99 cmp BX,word ptr DS:[SI+6]
+100D:4B9C jle short 0x4BA1
+100D:4BA1 mov word ptr DS:[0x4862],BX
+100D:4BA5 cmp AX,word ptr DS:[SI+2]
+100D:4BA8 jge short 0x4BAD
+100D:4BAD cmp AX,word ptr DS:[SI+6]
+100D:4BB0 jle short 0x4BB5
+100D:4BB2 mov AX,word ptr DS:[SI+6]
+100D:4BB5 mov word ptr DS:[0x4866],AX
+100D:4BB8 ret near
+100D:4BB9 call near 0xD41B
+100D:4BBC cmp word ptr DS:[0x47C6],0
+100D:4BC1 jne short 0x4BDE
+100D:4BC3 cmp BP,0x1F0E
+100D:4BC7 jne short 0x4BDE
+100D:4BC9 mov SI,0x4860
+100D:4BCC call near 0xC446
+100D:4BCF call near 0x4BDF
+100D:4BD2 mov SI,0x4860
+100D:4BD5 call near 0xDB74
+100D:4BD8 call near 0xC4F0
+100D:4BDB call near 0xDB67
+100D:4BDE ret near
+100D:4BDF mov AX,word ptr DS:[0x485E]
+100D:4BE2 call near 0xC13E
+100D:4BE5 mov AX,word ptr DS:[0x4878]
+100D:4BE8 xor AH,AH
+100D:4BEA add AX,word ptr DS:[0x4874]
+100D:4BEE mov word ptr DS:[0x4878],AX
+100D:4BF1 mov AL,AH
+100D:4BF3 cbw
+100D:4BF4 add word ptr DS:[0x4870],AX
+100D:4BF8 mov AX,word ptr DS:[0x4876]
+100D:4BFB xor AH,AH
+100D:4BFD add AX,word ptr DS:[0x4872]
+100D:4C01 mov word ptr DS:[0x4876],AX
+100D:4C04 mov AL,AH
+100D:4C06 cbw
+100D:4C07 add word ptr DS:[0x486E],AX
+100D:4C0B mov DX,word ptr DS:[0x486E]
+100D:4C0F mov BX,word ptr DS:[0x4870]
+100D:4C13 call near 0x4B5F
+100D:4C16 mov SI,word ptr DS:[0x486A]
+100D:4C1A mov DS,word ptr SS:[0xDBB2]
+100D:4C1F cmp byte ptr DS:[SI],0xFF
+100D:4C22 jne short 0x4C29
+100D:4C24 mov SI,word ptr SS:[0x4868]
+100D:4C29 lods AL,byte ptr DS:[SI]
+100D:4C2A xor AH,AH
+100D:4C2C or AL,AL
+100D:4C2E je short 0x4C3E
+100D:4C30 cmp AL,1
+100D:4C32 jne short 0x4C37
+100D:4C37 push SI
+100D:4C38 call near 0x4C45
+100D:4C3B pop SI
+100D:4C3C jmp short 0x4C29
+100D:4C3E push SS
+100D:4C3F pop DS
+100D:4C40 mov word ptr DS:[0x486A],SI
+100D:4C44 ret near
+100D:4C45 sub AX,2
+100D:4C48 shl AX,1
+100D:4C4A mov BP,AX
+100D:4C4C mov SI,word ptr SS:[0x486C]
+100D:4C51 add SI,word ptr DS:[BP+SI]
+100D:4C54 lods AL,byte ptr DS:[SI]
+100D:4C55 or AL,AL
+100D:4C57 je short 0x4C91
+100D:4C59 xor AH,AH
+100D:4C5B mov BP,AX
+100D:4C5D lods AL,byte ptr DS:[SI]
+100D:4C5E mov DX,AX
+100D:4C60 lods AL,byte ptr DS:[SI]
+100D:4C61 mov BX,AX
+100D:4C63 add DX,word ptr SS:[0x486E]
+100D:4C68 add BX,word ptr SS:[0x4870]
+100D:4C6D push SI
+100D:4C6E dec BP
+100D:4C6F mov ES,word ptr SS:[0xDBDA]
+100D:4C74 mov SI,word ptr SS:[0xDBB0]
+100D:4C79 shl BP,1
+100D:4C7B add SI,word ptr DS:[BP+SI]
+100D:4C7E lods AX,word ptr DS:[SI]
+100D:4C7F mov DI,AX
+100D:4C81 lods AX,word ptr DS:[SI]
+100D:4C82 xor AH,AH
+100D:4C84 mov CX,AX
+100D:4C86 mov BP,0x4860
+100D:4C89 call far dword ptr SS:[0x38CD]
+100D:4C8E pop SI
+100D:4C8F jmp short 0x4C54
+100D:4C91 ret near
+100D:4C92 push DS
+100D:4C93 push AX
+100D:4C94 xor AH,AH
+100D:4C96 mov word ptr DS:[0x485E],AX
+100D:4C99 mov word ptr DS:[0x486E],DX
+100D:4C9D mov word ptr DS:[0x4870],BX
+100D:4CA1 mov word ptr DS:[0x4872],BP
+100D:4CA5 mov word ptr DS:[0x4874],CX
+100D:4CA9 mov word ptr DS:[0x4876],0
+100D:4CAF mov word ptr DS:[0x4878],0
+100D:4CB5 call near 0xC13E
+100D:4CB8 push DS
+100D:4CB9 pop ES
+100D:4CBA lds SI,word ptr DS:[0xDBB0]
+100D:4CBE mov BX,word ptr DS:[SI]
+100D:4CC0 add SI,word ptr DS:[BX+SI-2]
+100D:4CC3 mov DI,0x4860
+100D:4CC6 add SI,4
+100D:4CC9 lods AX,word ptr DS:[SI]
+100D:4CCA mov DX,AX
+100D:4CCC lods AX,word ptr DS:[SI]
+100D:4CCD mov BX,AX
+100D:4CCF lods AX,word ptr DS:[SI]
+100D:4CD0 sub AX,DX
+100D:4CD2 mov word ptr SS:[0x487A],AX
+100D:4CD6 lods AX,word ptr DS:[SI]
+100D:4CD7 sub AX,BX
+100D:4CD9 mov word ptr SS:[0x487C],AX
+100D:4CDD mov AX,SI
+100D:4CDF add AX,2
+100D:4CE2 mov word ptr SS:[0x486C],AX
+100D:4CE6 add SI,word ptr DS:[SI]
+100D:4CE8 pop AX
+100D:4CE9 mov AL,AH
+100D:4CEB xor AH,AH
+100D:4CED shl AX,1
+100D:4CEF mov BP,AX
+100D:4CF1 add SI,word ptr DS:[BP+SI]
+100D:4CF4 mov word ptr SS:[0x4868],SI
+100D:4CF9 mov word ptr SS:[0x486A],SI
+100D:4CFE pop DS
+100D:4CFF ret near
+100D:4D00 mov SI,0x4BB9
+100D:4D03 jmp near 0xDA5F
+100D:4D06 mov byte ptr DS:[0x00F6],0
+100D:4D0B mov DI,word ptr DS:[0x1150]
+100D:4D0F mov DX,word ptr DS:[DI+2]
+100D:4D12 cmp DX,word ptr DS:[4]
+100D:4D16 jne short 0x4D56
+100D:4D18 mov AX,word ptr DS:[0x4733]
+100D:4D1B or AH,AH
+100D:4D1D je short 0x4D56
+100D:4D1F mov BX,word ptr DS:[6]
+100D:4D23 cmp BL,byte ptr DS:[DI+4]
+100D:4D26 jne short 0x4D56
+100D:4D28 cmp BH,AH
+100D:4D2A ja short 0x4D56
+100D:4D2C push AX
+100D:4D2D push BX
+100D:4D2E inc byte ptr DS:[0x00F6]
+100D:4D32 mov AH,1
+100D:4D34 call near 0x4D57
+100D:4D37 call near 0x4BDF
+100D:4D3A call near 0xC412
+100D:4D3D pop BX
+100D:4D3E pop AX
+100D:4D3F cmp BH,AL
+100D:4D41 ja short 0x4D56
+100D:4D43 mov AL,5
+100D:4D45 call near 0xAB15
+100D:4D48 xor AH,AH
+100D:4D4A call near 0x4D57
+100D:4D4D mov SI,0x4BB9
+100D:4D50 mov BP,0x0010
+100D:4D53 call near 0xDA25
+100D:4D56 ret near
+100D:4D57 mov AL,0x31
+100D:4D59 mov DX,5
+100D:4D5C shl BH,1
+100D:4D5E shl BH,1
+100D:4D60 add DL,BH
+100D:4D62 mov BX,0x0029
+100D:4D65 xor BP,BP
+100D:4D67 xor CX,CX
+100D:4D69 jmp near 0x4C92
+100D:4D6C mov SI,word ptr DS:[0xAA6E]
+100D:4D70 cmp byte ptr CS:[SI],0xFF
+100D:4D74 jne short 0x4D82
+100D:4D82 push CS
+100D:4D83 pop DS
+100D:4D84 lods AL,byte ptr DS:[SI]
+100D:4D85 xor AH,AH
+100D:4D87 or AL,AL
+100D:4D89 je short 0x4D99
+100D:4D8B cmp AL,1
+100D:4D8D jne short 0x4D92
+100D:4D92 push SI
+100D:4D93 call near 0x4DA0
+100D:4D96 pop SI
+100D:4D97 jmp short 0x4D84
+100D:4D99 push SS
+100D:4D9A pop DS
+100D:4D9B mov word ptr DS:[0xAA6E],SI
+100D:4D9F ret near
+100D:4DA0 sub AX,2
+100D:4DA3 shl AX,1
+100D:4DA5 mov BP,AX
+100D:4DA7 mov SI,0x0169
+100D:4DAA add SI,word ptr CS:[BP+SI]
+100D:4DAD lods AL,byte ptr DS:[SI]
+100D:4DAE or AL,AL
+100D:4DB0 je short 0x4DEC
+100D:4DB2 xor AH,AH
+100D:4DB4 mov BP,AX
+100D:4DB6 lods AL,byte ptr DS:[SI]
+100D:4DB7 mov DX,AX
+100D:4DB9 lods AL,byte ptr DS:[SI]
+100D:4DBA mov BX,AX
+100D:4DBC add DX,word ptr SS:[0xAA66]
+100D:4DC1 add BX,word ptr SS:[0xAA68]
+100D:4DC6 push SI
+100D:4DC7 push DS
+100D:4DC8 dec BP
+100D:4DC9 mov ES,word ptr SS:[0xDBDA]
+100D:4DCE lds SI,word ptr SS:[0xDBB0]
+100D:4DD3 shl BP,1
+100D:4DD5 add SI,word ptr DS:[BP+SI]
+100D:4DD8 lods AX,word ptr DS:[SI]
+100D:4DD9 mov DI,AX
+100D:4DDB lods AX,word ptr DS:[SI]
+100D:4DDC xor AH,AH
+100D:4DDE mov CX,AX
+100D:4DE0 mov BP,0xAA66
+100D:4DE3 call far dword ptr SS:[0x38CD]
+100D:4DE8 pop DS
+100D:4DE9 pop SI
+100D:4DEA jmp short 0x4DAD
+100D:4DEC ret near
+100D:4DED xor CX,CX
+100D:4DEF mov BP,0x4E04
+100D:4DF2 push SI
+100D:4DF3 call near 0x661D
+100D:4DF6 mov CH,byte ptr DS:[DI+0x14]
+100D:4DF9 mov word ptr DS:[0x4733],CX
+100D:4DFD push ES
+100D:4DFE call near 0x7F27
+100D:4E01 pop ES
+100D:4E02 pop SI
+100D:4E03 ret near
+100D:4E04 cmp byte ptr DS:[SI+3],0
+100D:4E08 jne short 0x4E11
+100D:4E0A test byte ptr DS:[SI+0x19],0x80
+100D:4E0E je short 0x4E11
+100D:4E10 inc CX
+100D:4E11 ret near
+100D:4E12 mov word ptr DS:[0x4733],0
+100D:4E18 call near 0x407E
+100D:4E1B call near 0xB532
+100D:4E1E push AX
+100D:4E1F call near 0x4EC6
+100D:4E22 mov word ptr DS:[0x196A],0
+100D:4E28 pop AX
+100D:4E29 test AL,0x40
+100D:4E2B je short 0x4E78
+100D:4E2D call near 0x409A
+100D:4E30 jne short 0x4E78
+100D:4E32 cmp byte ptr DS:[6],0x80
+100D:4E37 je short 0x4E78
+100D:4E39 mov AX,word ptr DS:[SI+2]
+100D:4E3C sub AX,DX
+100D:4E3E add AX,4
+100D:4E41 cmp AX,8
+100D:4E44 jae short 0x4E78
+100D:4E46 mov word ptr DS:[0x1968],AX
+100D:4E49 inc AX
+100D:4E4A mov word ptr DS:[0x1964],AX
+100D:4E4D sub AX,2
+100D:4E50 mov word ptr DS:[0x1960],AX
+100D:4E53 xor AX,AX
+100D:4E55 call near 0x5E4F
+100D:4E58 mov BX,0x196D
+100D:4E5B xlat byte ptr DS:[BX+AL]
+100D:4E5C cmp AL,0x13
+100D:4E5E jb short 0x4E6E
+100D:4E60 sub CL,0x28
+100D:4E63 and CL,0xFB
+100D:4E66 add AL,CL
+100D:4E68 cmp AL,0x17
+100D:4E6A jb short 0x4E6E
+100D:4E6E mov word ptr DS:[0x196A],AX
+100D:4E71 xchg SI,DI
+100D:4E73 call near 0x4DED
+100D:4E76 xchg SI,DI
+100D:4E78 mov AX,word ptr DS:[0x196A]
+100D:4E7B or AX,AX
+100D:4E7D je short 0x4E8C
+100D:4E7F mov CX,word ptr DS:[0x4733]
+100D:4E83 mov CL,byte ptr DS:[0x46FF]
+100D:4E87 xor CH,CH
+100D:4E89 jcxz short 0x4E8C
+100D:4E8B nop
+100D:4E8C ret near
+100D:4E8E mov DX,word ptr DS:[4]
+100D:4E92 mov BX,word ptr DS:[6]
+100D:4E96 push word ptr DS:[0x11CC]
+100D:4E9A call near 0x5206
+100D:4E9D call near 0x5206
+100D:4EA0 call near 0x5206
+100D:4EA3 call near 0x5206
+100D:4EA6 call near 0x5206
+100D:4EA9 call near 0x5206
+100D:4EAC call near 0xB532
+100D:4EAF push AX
+100D:4EB0 call near 0x5206
+100D:4EB3 pop AX
+100D:4EB4 pop word ptr DS:[0x11CC]
+100D:4EB8 push AX
+100D:4EB9 call near 0xB532
+100D:4EBC push AX
+100D:4EBD call near 0x41E1
+100D:4EC0 pop AX
+100D:4EC1 pop BX
+100D:4EC2 add AL,BL
+100D:4EC4 shr AL,1
+100D:4EC6 push BX
+100D:4EC7 mov BX,word ptr DS:[0x487E]
+100D:4ECB cmp BX,2
+100D:4ECE jb short 0x4EED
+100D:4ED0 and AL,0x0F
+100D:4ED2 cmp AL,8
+100D:4ED4 mov AX,word ptr DS:[0xDC00]
+100D:4ED7 jae short 0x4EF3
+100D:4ED9 cmp AX,2
+100D:4EDC jbe short 0x4EED
+100D:4EDE mov BX,5
+100D:4EE1 cmp AX,4
+100D:4EE4 jbe short 0x4EED
+100D:4EE6 mov BX,2
+100D:4EE9 mov word ptr DS:[0x487E],BX
+100D:4EED mov word ptr DS:[0xDC02],BX
+100D:4EF1 pop BX
+100D:4EF2 ret near
+100D:4EF3 mov BX,3
+100D:4EF6 cmp AX,2
+100D:4EF9 jbe short 0x4F03
+100D:4EFB cmp AX,5
+100D:4EFE je short 0x4F03
+100D:4F00 mov BX,4
+100D:4F03 mov word ptr DS:[0xDC02],BX
+100D:4F07 pop BX
+100D:4F08 ret near
+100D:4F0C cmp byte ptr DS:[0x4727],0
+100D:4F11 je short 0x4F33
+100D:4F13 cmp byte ptr DS:[0x11CA],0
+100D:4F18 jne short 0x4F33
+100D:4F1A mov word ptr DS:[0x1C06],0x0080
+100D:4F20 mov AX,0xDBEC
+100D:4F23 push AX
+100D:4F24 call near 0xCA60
+100D:4F27 mov AX,word ptr DS:[0xCE7A]
+100D:4F2A sub AX,word ptr DS:[0x4729]
+100D:4F2E cmp AX,0x0300
+100D:4F31 jae short 0x4F34
+100D:4F33 ret near
+100D:4F34 mov AX,word ptr DS:[0xCE7A]
+100D:4F37 mov word ptr DS:[0x4729],AX
+100D:4F3A call near 0x4B3B
+100D:4F3D call near 0x4A1A
+100D:4F40 call near 0x407E
+100D:4F43 call near 0x4A00
+100D:4F46 call near 0xB58B
+100D:4F49 mov SI,word ptr DS:[0x11C5]
+100D:4F4D cmp DI,word ptr DS:[SI+6]
+100D:4F50 je short 0x4FB0
+100D:4F52 call near 0x2E52
+100D:4F55 cmp byte ptr DS:[0x47A7],0
+100D:4F5A jne short 0x4F33
+100D:4F5C cmp byte ptr DS:[0x4728],0
+100D:4F61 js short 0x4FAD
+100D:4F63 je short 0x4F70
+100D:4F70 call near 0x407E
+100D:4F73 call near 0x62D6
+100D:4F76 jb short 0x4FAD
+100D:4F78 cmp DX,0x00D6
+100D:4F7C jl short 0x4F8E
+100D:4F7E cmp BX,0x000A
+100D:4F81 jl short 0x4F8E
+100D:4F83 cmp DX,0x0132
+100D:4F87 jge short 0x4F8E
+100D:4F89 cmp BX,0x0036
+100D:4F8C jl short 0x4F95
+100D:4F95 cmp byte ptr DS:[0x11CA],0
+100D:4F9A jne short 0x4FAD
+100D:4F9C dec BX
+100D:4F9D dec DX
+100D:4F9E call near 0xC137
+100D:4FA1 mov AX,0x0030
+100D:4FA4 call near 0xC085
+100D:4FA7 call near 0xC22F
+100D:4FAA call near 0xC07C
+100D:4FAD jmp near 0x4E8E
+100D:4FB0 mov word ptr DS:[0x1C06],0
+100D:4FB6 mov AL,byte ptr DS:[0x11C9]
+100D:4FB9 and AL,1
+100D:4FBB mov byte ptr DS:[0x4732],AL
+100D:4FBE jne short 0x4FC3
+100D:4FC0 call near 0xCA01
+100D:4FC3 call near 0xE3CC
+100D:4FC6 mov byte ptr DS:[0x00C5],AL
+100D:4FC9 xor AL,AL
+100D:4FCB mov byte ptr DS:[0x4727],AL
+100D:4FCE xchg AL,byte ptr DS:[0x11C9]
+100D:4FD2 and AL,3
+100D:4FD4 dec AL
+100D:4FD6 jne short 0x4FDF
+100D:4FD8 mov DI,word ptr DS:[0x11C5]
+100D:4FDC inc byte ptr DS:[DI+0x15]
+100D:4FDF call near 0x4AC4
+100D:4FE2 call near 0xDBB2
+100D:4FE5 call near 0xD717
+100D:4FE8 mov DI,word ptr DS:[0x11C5]
+100D:4FEC mov BX,word ptr DS:[DI+4]
+100D:4FEF mov DX,word ptr DS:[DI+2]
+100D:4FF2 mov word ptr DS:[0x11C5],0
+100D:4FF8 jmp near 0x4002
+100D:4FFB mov word ptr DS:[0x1C06],0
+100D:5001 call near 0xCA01
+100D:5004 mov byte ptr DS:[0x11C8],0
+100D:5009 mov CX,0x00C8
+100D:500C push CX
+100D:500D call near 0x4B3B
+100D:5010 call near 0x407E
+100D:5013 call near 0xB58B
+100D:5016 mov SI,word ptr DS:[0x11C5]
+100D:501A cmp DI,word ptr DS:[SI+6]
+100D:501D je short 0x5039
+100D:501F mov byte ptr DS:[0x0023],0
+100D:5024 call near 0x4182
+100D:5027 cmp byte ptr DS:[0x0023],0
+100D:502C pop CX
+100D:502D loope 0x500C
+100D:5039 pop CX
+100D:503A jmp short 0x4FC3
+100D:503C mov byte ptr DS:[0x00FD],0
+100D:5041 mov byte ptr DS:[0x002B],0
+100D:5046 test byte ptr DS:[DI+0x0A],2
+100D:504A jne short 0x5058
+100D:504C call near 0x5D36
+100D:504F jb short 0x5081
+100D:5051 call near 0x5098
+100D:5054 or DX,DX
+100D:5056 je short 0x507A
+100D:5058 inc byte ptr DS:[0x002B]
+100D:505C call near 0x6144
+100D:505F mov AL,byte ptr DS:[DI+8]
+100D:5062 mov AH,0x2F
+100D:5064 cmp AL,0x20
+100D:5066 jb short 0x5075
+100D:5068 inc AH
+100D:506A cmp AL,0x30
+100D:506C je short 0x5075
+100D:506E sub AL,0x28
+100D:5070 jb short 0x5075
+100D:5072 add AH,3
+100D:5075 mov byte ptr DS:[0x11DD],AH
+100D:5079 ret near
+100D:507A jcxz short 0x5081
+100D:507C mov byte ptr DS:[0x46D9],4
+100D:5081 ret near
+100D:5082 test byte ptr DS:[SI+3],0x20
+100D:5086 jne short 0x5095
+100D:5088 test byte ptr DS:[SI+0x10],0x80
+100D:508C jne short 0x5096
+100D:508E cmp byte ptr DS:[SI+3],6
+100D:5092 jne short 0x5095
+100D:5094 inc DX
+100D:5095 ret near
+100D:5096 inc CX
+100D:5097 ret near
+100D:5098 mov BP,0x5082
+100D:509B xor CX,CX
+100D:509D xor DX,DX
+100D:509F jmp near 0x6603
+100D:50A5 mov AX,word ptr DS:[0xDC00]
+100D:50A8 call near 0xCA1B
+100D:50AB mov DI,word ptr DS:[0x1150]
+100D:50AF call near 0x407E
+100D:50B2 call near 0x4965
+100D:50B5 call near 0x4AC4
+100D:50B8 call near 0x50BE
+100D:50BB jmp near 0x2EB2
+100D:50BE mov byte ptr DS:[0x11CB],0
+100D:50C3 ret near
+100D:50C4 call near 0x407E
+100D:50C7 call near 0x5344
+100D:50CA call near 0x4944
+100D:50CD call near 0x4AC4
+100D:50D0 mov byte ptr DS:[0x11C8],0
+100D:50D5 call near 0x50BE
+100D:50D8 jmp near 0x2EB2
+100D:50DB mov word ptr DS:[0x487E],2
+100D:50E1 mov byte ptr DS:[0x473E],1
+100D:50E6 mov AL,4
+100D:50E8 jmp short 0x50EF
+100D:50EA call near 0x4285
+100D:50ED mov AL,8
+100D:50EF mov DI,word ptr DS:[0x46F8]
+100D:50F3 push DI
+100D:50F4 push AX
+100D:50F5 call near 0xD2BD
+100D:50F8 call near 0x49EA
+100D:50FB mov DX,word ptr DS:[4]
+100D:50FF mov BX,word ptr DS:[6]
+100D:5103 pop AX
+100D:5104 push AX
+100D:5105 cmp AL,4
+100D:5107 jne short 0x510B
+100D:5109 mov DL,1
+100D:510B call near 0x4057
+100D:510E call near 0x186B
+100D:5111 pop AX
+100D:5112 mov byte ptr DS:[0x11C9],AL
+100D:5115 pop DI
+100D:5116 jmp near 0x4703
+100D:5119 add byte ptr DS:[0x11C7],AL
+100D:511D mov word ptr DS:[0x11CC],0x0080
+100D:5123 ret near
+100D:5124 push DI
+100D:5125 call near 0x407E
+100D:5128 mov CX,word ptr DS:[DI+4]
+100D:512B mov DI,word ptr DS:[DI+2]
+100D:512E call near 0x5133
+100D:5131 pop DI
+100D:5132 ret near
+100D:5133 sub BX,CX
+100D:5135 neg BX
+100D:5137 sub DX,DI
+100D:5139 neg DX
+100D:513B cmp BX,-128
+100D:513E jl short 0x5146
+100D:5140 cmp BX,0x0080
+100D:5144 jl short 0x514A
+100D:5146 sar BX,1
+100D:5148 sar DX,1
+100D:514A mov BH,BL
+100D:514C xor BL,BL
+100D:514E or BX,BX
+100D:5150 mov AX,BX
+100D:5152 jns short 0x5156
+100D:5154 neg AX
+100D:5156 or DX,DX
+100D:5158 mov DI,DX
+100D:515A mov CX,DX
+100D:515C jns short 0x5160
+100D:515E neg CX
+100D:5160 cmp CX,AX
+100D:5162 jb short 0x5180
+100D:5164 cmp CX,1
+100D:5167 jb short 0x517F
+100D:5169 mov AX,0x0020
+100D:516C mov CX,DX
+100D:516E imul BX
+100D:5170 idiv CX
+100D:5172 mov DX,DI
+100D:5174 or CX,CX
+100D:5176 js short 0x517C
+100D:5178 add AL,0x40
+100D:517A clc
+100D:517B ret near
+100D:517C add AL,0xC0
+100D:517E clc
+100D:517F ret near
+100D:5180 cmp AX,1
+100D:5183 jb short 0x517F
+100D:5185 mov AX,0x0020
+100D:5188 imul DX
+100D:518A idiv BX
+100D:518C mov DX,DI
+100D:518E or BX,BX
+100D:5190 js short 0x5194
+100D:5192 sub AL,0x80
+100D:5194 neg AL
+100D:5196 clc
+100D:5197 ret near
+100D:5198 mov BX,AX
+100D:519A add BL,0x20
+100D:519D mov BH,BL
+100D:519F and BH,0x7F
+100D:51A2 cmp BH,0x40
+100D:51A5 jb short 0x51BA
+100D:51A7 mov DX,0x0020
+100D:51AA sub AL,0x40
+100D:51AC or BL,BL
+100D:51AE jns short 0x51B6
+100D:51B0 neg DX
+100D:51B2 sub AL,0x80
+100D:51B4 neg AL
+100D:51B6 cbw
+100D:51B7 mov BX,AX
+100D:51B9 ret near
+100D:51BA or BL,BL
+100D:51BC mov BX,0xFFE0
+100D:51BF jns short 0x51C7
+100D:51C1 sub AL,0x80
+100D:51C3 neg AL
+100D:51C5 neg BX
+100D:51C7 cbw
+100D:51C8 mov DX,AX
+100D:51CA ret near
+100D:51CB cmp byte ptr DS:[0x11CB],0
+100D:51D0 jne short 0x51D9
+100D:51D2 cmp byte ptr DS:[0x11C8],0
+100D:51D7 je short 0x51F5
+100D:51D9 cmp BX,-77
+100D:51DC jl short 0x51E3
+100D:51DE cmp BX,0x004D
+100D:51E1 jle short 0x5205
+100D:51F5 mov DI,word ptr DS:[0x11C5]
+100D:51F9 push BX
+100D:51FA push DX
+100D:51FB call near 0x5124
+100D:51FE pop DX
+100D:51FF pop BX
+100D:5200 jb short 0x5205
+100D:5202 mov byte ptr DS:[0x11C7],AL
+100D:5205 ret near
+100D:5206 call near 0x51CB
+100D:5209 mov AL,byte ptr DS:[0x11C7]
+100D:520C push DX
+100D:520D push BX
+100D:520E shl BX,1
+100D:5210 jns short 0x5214
+100D:5212 neg BX
+100D:5214 mov BP,word ptr DS:[BX+0x4880]
+100D:5218 call near 0x5198
+100D:521B mov CX,0x0020
+100D:521E mov AX,BP
+100D:5220 imul DX
+100D:5222 idiv CX
+100D:5224 xchg BX,AX
+100D:5225 imul BP
+100D:5227 idiv CX
+100D:5229 mov DX,BX
+100D:522B mov BX,AX
+100D:522D or AX,AX
+100D:522F jns short 0x5233
+100D:5231 neg AX
+100D:5233 add AX,word ptr DS:[0x11CC]
+100D:5237 cmp AH,1
+100D:523A jbe short 0x524E
+100D:523C mov CX,AX
+100D:523E mov AX,DX
+100D:5240 cwd
+100D:5241 mov DL,AH
+100D:5243 mov AH,AL
+100D:5245 xor AL,AL
+100D:5247 idiv CX
+100D:5249 mov DX,AX
+100D:524B mov AX,0x0100
+100D:524E mov byte ptr DS:[0x11CC],AL
+100D:5251 mov AL,AH
+100D:5253 cbw
+100D:5254 or BX,BX
+100D:5256 jns short 0x525A
+100D:5258 neg AX
+100D:525A pop BX
+100D:525B add BX,AX
+100D:525D pop AX
+100D:525E add DX,AX
+100D:5260 mov AX,BX
+100D:5262 add AX,0x0060
+100D:5265 cmp AX,0x00C0
+100D:5268 jb short 0x5273
+100D:5273 ret near
+100D:5274 mov DX,word ptr DS:[DI+2]
+100D:5277 mov BX,word ptr DS:[DI+4]
+100D:527A push SI
+100D:527B mov AX,0xFFFF
+100D:527E mov word ptr DS:[0x00CA],AX
+100D:5281 mov word ptr DS:[0x00D0],AX
+100D:5284 mov word ptr DS:[0x00D6],AX
+100D:5287 mov word ptr DS:[0x00DC],AX
+100D:528A mov word ptr DS:[0x00E2],AX
+100D:528D mov SI,0x0100
+100D:5290 cmp word ptr DS:[SI],-1
+100D:5293 je short 0x52FB
+100D:5295 cmp SI,DI
+100D:5297 je short 0x52F6
+100D:5299 mov CX,word ptr DS:[SI+2]
+100D:529C sub CX,DX
+100D:529E jns short 0x52A2
+100D:52A0 neg CX
+100D:52A2 mov AX,word ptr DS:[SI+4]
+100D:52A5 sub AX,BX
+100D:52A7 jns short 0x52AB
+100D:52A9 neg AX
+100D:52AB mov CL,CH
+100D:52AD xor CH,CH
+100D:52AF cmp CL,AL
+100D:52B1 jae short 0x52B5
+100D:52B3 mov CX,AX
+100D:52B5 cmp byte ptr DS:[SI+8],0x28
+100D:52B9 jb short 0x52C9
+100D:52BB mov BP,0x00E2
+100D:52BE test byte ptr DS:[SI+0x0A],0x80
+100D:52C2 jne short 0x52DD
+100D:52C4 mov BP,0x00DC
+100D:52C7 jmp short 0x52DD
+100D:52C9 mov BP,0x00D0
+100D:52CC test byte ptr DS:[SI+0x0A],0x80
+100D:52D0 je short 0x52DD
+100D:52D2 mov AL,byte ptr DS:[0x002A]
+100D:52D5 cmp AL,byte ptr DS:[SI+0x0B]
+100D:52D8 jb short 0x52F6
+100D:52DA mov BP,0x00D6
+100D:52DD cmp CX,word ptr SS:[BP]
+100D:52E0 jae short 0x52E8
+100D:52E2 mov word ptr SS:[BP],CX
+100D:52E5 mov word ptr SS:[BP+2],SI
+100D:52E8 cmp CX,word ptr DS:[0x00CA]
+100D:52EC jae short 0x52F6
+100D:52EE mov word ptr DS:[0x00CA],CX
+100D:52F2 mov word ptr DS:[0x00CC],SI
+100D:52F6 add SI,0x001C
+100D:52F9 jmp short 0x5290
+100D:52FB push DI
+100D:52FC mov BP,0x00DE
+100D:52FF call near 0x5323
+100D:5302 mov BP,0x00E4
+100D:5305 call near 0x5323
+100D:5308 mov BP,0x00D8
+100D:530B call near 0x5323
+100D:530E add AX,0x00DA
+100D:5311 mov word ptr DS:[0x11FD],AX
+100D:5314 mov BP,0x00CC
+100D:5317 call near 0x5323
+100D:531A mov BP,0x00D2
+100D:531D call near 0x5323
+100D:5320 pop DI
+100D:5321 pop SI
+100D:5322 ret near
+100D:5323 push BX
+100D:5324 push DX
+100D:5325 mov DI,word ptr SS:[BP]
+100D:5328 mov CX,word ptr DS:[DI+4]
+100D:532B mov DI,word ptr DS:[DI+2]
+100D:532E push BP
+100D:532F call near 0x5133
+100D:5332 pop BP
+100D:5333 add AL,0x10
+100D:5335 rol AL,1
+100D:5337 rol AL,1
+100D:5339 rol AL,1
+100D:533B and AX,7
+100D:533E mov byte ptr SS:[BP+2],AL
+100D:5341 pop DX
+100D:5342 pop BX
+100D:5343 ret near
+100D:5344 push SI
+100D:5345 mov BP,0xFFFF
+100D:5348 mov SI,0x0100
+100D:534B cmp word ptr DS:[SI],-1
+100D:534E je short 0x537F
+100D:5350 test byte ptr DS:[SI+0x0A],0x80
+100D:5354 jne short 0x537A
+100D:5356 mov CX,word ptr DS:[SI+2]
+100D:5359 sub CX,DX
+100D:535B jns short 0x535F
+100D:535D neg CX
+100D:535F mov AX,word ptr DS:[SI+4]
+100D:5362 sub AX,BX
+100D:5364 jns short 0x5368
+100D:5366 neg AX
+100D:5368 mov CL,CH
+100D:536A xor CH,CH
+100D:536C cmp CL,AL
+100D:536E jae short 0x5372
+100D:5370 mov CX,AX
+100D:5372 cmp CX,BP
+100D:5374 jae short 0x537A
+100D:5376 mov BP,CX
+100D:5378 mov DI,SI
+100D:537A add SI,0x001C
+100D:537D jmp short 0x534B
+100D:537F pop SI
+100D:5380 ret near
+100D:53F1 mov byte ptr DS:[0x4722],0
+100D:53F6 test byte ptr DS:[0x46EB],0x40
+100D:53FB je short 0x5400
+100D:5400 mov word ptr DS:[0x4720],0x1E6E
+100D:5406 mov DX,word ptr DS:[0x11C1]
+100D:540A mov BX,word ptr DS:[0x11C3]
+100D:540E mov word ptr DS:[0x4710],DX
+100D:5412 mov word ptr DS:[0x4712],BX
+100D:5416 call near 0x5BEB
+100D:5419 call near 0x5F79
+100D:541C call near 0x79DE
+100D:541F push word ptr DS:[0x197C]
+100D:5423 push word ptr DS:[0x197E]
+100D:5427 pop word ptr DS:[0x1982]
+100D:542B pop word ptr DS:[0x1980]
+100D:542F mov word ptr DS:[0x46FC],0
+100D:5435 mov word ptr DS:[0x479E],0
+100D:543B call near 0x557B
+100D:543E mov DI,0x46E3
+100D:5441 add DX,5
+100D:5444 add BX,7
+100D:5447 mov word ptr DS:[DI],DX
+100D:5449 mov word ptr DS:[DI+2],BX
+100D:544C add DX,0x00A0
+100D:5450 mov word ptr DS:[DI+4],DX
+100D:5453 add BX,0x0059
+100D:5456 mov word ptr DS:[DI+6],BX
+100D:5459 mov SI,0x4710
+100D:545C add DX,5
+100D:545F mov word ptr DS:[SI+4],DX
+100D:5462 add BX,0x000C
+100D:5465 mov word ptr DS:[SI+6],BX
+100D:5468 call near 0xC13B
+100D:546B call near 0x557B
+100D:546E mov AX,0x008D
+100D:5471 call near 0xC22F
+100D:5474 call near 0xC07C
+100D:5477 call near 0x5B8D
+100D:547A push word ptr DS:[0xDD00]
+100D:547E mov AX,0x003A
+100D:5481 call near 0xC13E
+100D:5484 call near 0x5584
+100D:5487 push word ptr DS:[0xDBB2]
+100D:548B pop word ptr DS:[0xDD00]
+100D:548F mov byte ptr DS:[0x46EB],0x40
+100D:5494 call near 0xB69A
+100D:5497 call near 0xB6C3
+100D:549A pop word ptr DS:[0xDD00]
+100D:549E call near 0x58E4
+100D:54A1 call near 0xC137
+100D:54A4 call near 0x5DCE
+100D:54A7 call near 0x5605
+100D:54AA call near 0x563E
+100D:54AD mov word ptr DS:[0x2772],0x5555
+100D:54B3 mov DX,word ptr DS:[0x1980]
+100D:54B7 mov BX,word ptr DS:[0x1982]
+100D:54BB call near 0xB647
+100D:54BE mov CX,BX
+100D:54C0 mov DI,DX
+100D:54C2 sub BX,0x0014
+100D:54C5 add CX,0x0013
+100D:54C8 sub DX,0x0028
+100D:54CB add DI,0x0027
+100D:54CE mov AX,word ptr DS:[0x4710]
+100D:54D1 add AX,5
+100D:54D4 cmp DX,AX
+100D:54D6 jge short 0x54DA
+100D:54D8 mov DX,AX
+100D:54DA cmp DI,AX
+100D:54DC jge short 0x54E0
+100D:54DE mov DI,AX
+100D:54E0 add AX,0x009F
+100D:54E3 cmp DX,AX
+100D:54E5 jbe short 0x54E9
+100D:54E7 mov DX,AX
+100D:54E9 cmp DI,AX
+100D:54EB jbe short 0x54EF
+100D:54ED mov DI,AX
+100D:54EF mov AX,word ptr DS:[0x4712]
+100D:54F2 add AX,7
+100D:54F5 cmp BX,AX
+100D:54F7 jge short 0x54FB
+100D:54F9 mov BX,AX
+100D:54FB cmp CX,AX
+100D:54FD jge short 0x5501
+100D:5501 add AX,0x0058
+100D:5504 cmp BX,AX
+100D:5506 jbe short 0x550A
+100D:5508 mov BX,AX
+100D:550A cmp CX,AX
+100D:550C jbe short 0x5510
+100D:550E mov CX,AX
+100D:5510 cmp BX,CX
+100D:5512 je short 0x551D
+100D:5514 cmp DX,DI
+100D:5516 je short 0x551D
+100D:5518 mov AL,0xFB
+100D:551A call near 0xC560
+100D:551D mov word ptr DS:[0x2772],0xFFFF
+100D:5523 mov SI,0x4710
+100D:5526 mov DI,0xDBE0
+100D:5529 cmp word ptr DS:[DI],0
+100D:552C je short 0x5535
+100D:552E cmp word ptr DS:[DI],SI
+100D:5530 je short 0x5535
+100D:5532 mov DI,0xDBE2
+100D:5535 mov word ptr DS:[DI],SI
+100D:5537 cmp DI,0xDBE2
+100D:553B pushf
+100D:553C xor DI,DI
+100D:553E xchg DI,word ptr DS:[0x4720]
+100D:5542 or DI,DI
+100D:5544 je short 0x554D
+100D:5546 xchg SI,DI
+100D:5548 mov AL,6
+100D:554A call near 0xC0E8
+100D:554D popf
+100D:554E jne short 0x5558
+100D:5550 call near 0x62F2
+100D:5553 call near 0x813E
+100D:5556 jmp short 0x555B
+100D:5558 call near 0x6314
+100D:555B mov SI,0x4710
+100D:555E call near 0xC4F0
+100D:5561 call near 0xB69A
+100D:5564 mov byte ptr DS:[0x46EB],0xC0
+100D:5569 mov SI,0x1482
+100D:556C mov DI,0x46E3
+100D:556F call near 0x5B99
+100D:5572 call near 0x5B8D
+100D:5575 mov SI,0x4710
+100D:5578 jmp near 0xDAAA
+100D:557B mov DX,word ptr DS:[0x4710]
+100D:557F mov BX,word ptr DS:[0x4712]
+100D:5583 ret near
+100D:5584 xor AX,AX
+100D:5586 xchg AX,word ptr DS:[0x115A]
+100D:558A or AX,AX
+100D:558C je short 0x55BF
+100D:558E call near 0xE270
+100D:5591 push DS
+100D:5592 push ES
+100D:5593 mov CL,0x0C
+100D:5595 shr AX,1
+100D:5597 jae short 0x55B8
+100D:5599 push AX
+100D:559A push CX
+100D:559B mov BL,0x0D
+100D:559D sub BL,CL
+100D:559F mov DI,0x0100
+100D:55A2 cmp byte ptr DS:[DI],BL
+100D:55A4 jne short 0x55AB
+100D:55A6 call near 0x5D36
+100D:55A9 jae short 0x55B6
+100D:55AB add DI,0x001C
+100D:55AE cmp byte ptr DS:[DI],0xFF
+100D:55B1 jne short 0x55A2
+100D:55B3 call near 0x55C0
+100D:55B6 pop CX
+100D:55B7 pop AX
+100D:55B8 loop 0x5595
+100D:55BA pop ES
+100D:55BB pop DS
+100D:55BC call near 0xE283
+100D:55BF ret near
+100D:55C0 mov SI,0x0100
+100D:55C3 cmp byte ptr DS:[SI],BL
+100D:55C5 jne short 0x55CD
+100D:55C7 mov AL,byte ptr DS:[SI+0x10]
+100D:55CA call near 0x55DD
+100D:55CD add SI,0x001C
+100D:55D0 cmp byte ptr DS:[SI],0xFF
+100D:55D3 jne short 0x55C3
+100D:55D5 mov AL,0x42
+100D:55D7 cmp BL,7
+100D:55DA je short 0x55DD
+100D:55DC ret near
+100D:55DD push DS
+100D:55DE or AL,AL
+100D:55E0 je short 0x5603
+100D:55E2 les DI,word ptr DS:[0xDBB0]
+100D:55E6 mov DS,word ptr DS:[0xDD00]
+100D:55EA mov CX,0xC5F9
+100D:55ED repne scas AL,byte ptr ES:[DI]
+100D:55EF jne short 0x5603
+100D:55F1 mov AH,byte ptr DS:[DI-1]
+100D:55F4 and AH,0x30
+100D:55F7 cmp AH,0x30
+100D:55FA jne short 0x5600
+100D:55FC and byte ptr DS:[DI-1],0xEF
+100D:5600 inc CX
+100D:5601 loop 0x55ED
+100D:5603 pop DS
+100D:5604 ret near
+100D:5605 sub SP,8
+100D:5608 mov SI,0x4710
+100D:560B mov DI,SP
+100D:560D push DS
+100D:560E pop ES
+100D:560F lods AX,word ptr DS:[SI]
+100D:5610 add AX,6
+100D:5613 stos word ptr ES:[DI],AX
+100D:5614 lods AX,word ptr DS:[SI]
+100D:5615 add AX,0x0062
+100D:5618 stos word ptr ES:[DI],AX
+100D:5619 lods AX,word ptr DS:[SI]
+100D:561A sub AX,6
+100D:561D stos word ptr ES:[DI],AX
+100D:561E lods AX,word ptr DS:[SI]
+100D:561F sub AX,2
+100D:5622 stos word ptr ES:[DI],AX
+100D:5623 lea SI,DI-8
+100D:5626 mov AL,0xF5
+100D:5628 mov ES,word ptr DS:[0xDBDA]
+100D:562C call far dword ptr DS:[0x38DD]
+100D:5630 mov byte ptr DS:[0x4724],0xFF
+100D:5635 call near 0xD075
+100D:5638 add SP,8
+100D:563B jmp near 0x557B
+100D:563E add BX,0x0062
+100D:5641 add DX,6
+100D:5644 mov CX,0xF5FE
+100D:5647 mov byte ptr DS:[0x4725],CL
+100D:564B cmp byte ptr DS:[0x4722],0
+100D:5650 jne short 0x568C
+100D:5652 push DX
+100D:5653 mov AX,0x0065
+100D:5656 call near 0xD194
+100D:5659 pop AX
+100D:565A add AX,0x0053
+100D:565D mov word ptr DS:[0xD82C],AX
+100D:5660 mov AL,0x2D
+100D:5662 call near word ptr DS:[0x2518]
+100D:5666 add word ptr DS:[0xD82C],0x0041
+100D:566B mov AL,0x2B
+100D:566D call near word ptr DS:[0x2518]
+100D:5671 call near 0xC13B
+100D:5674 call near 0x557B
+100D:5677 add DX,0x005F
+100D:567A add BX,0x0063
+100D:567D mov AX,0x0080
+100D:5680 call near 0xC2FD
+100D:5683 add DX,0x003C
+100D:5686 mov AX,0x0081
+100D:5689 jmp near 0xC22F
+100D:568C mov AX,0x0068
+100D:568F jmp near 0xD194
+100D:5692 push DI
+100D:5693 call near 0x5605
+100D:5696 pop DI
+100D:5697 or DI,DI
+100D:5699 je short 0x563E
+100D:569B add BX,0x0062
+100D:569E add DX,6
+100D:56A1 mov CX,0xF5FE
+100D:56A4 call near 0x629D
+100D:56A7 call near 0xD05F
+100D:56AA mov CX,0xF5FE
+100D:56AD call near 0x62A6
+100D:56B0 cmp DI,0x0138
+100D:56B4 jb short 0x5719
+100D:56B6 cmp byte ptr DS:[DI+8],0x21
+100D:56BA je short 0x5719
+100D:56BC xor BX,BX
+100D:56BE xor CX,CX
+100D:56C0 mov BP,0x5728
+100D:56C3 call near 0x6639
+100D:56C6 mov DX,word ptr DS:[0x4710]
+100D:56CA add DX,0x0071
+100D:56CD mov AX,CX
+100D:56CF or AX,BX
+100D:56D1 je short 0x571A
+100D:56D3 call near 0xC13B
+100D:56D6 sub byte ptr DS:[0xDBE4],3
+100D:56DB xor AX,AX
+100D:56DD call near 0x56ED
+100D:56E0 mov BL,CH
+100D:56E2 mov AX,1
+100D:56E5 call near 0x56ED
+100D:56E8 mov BL,CL
+100D:56EA mov AX,2
+100D:56ED or BL,BL
+100D:56EF je short 0x5719
+100D:56F1 push CX
+100D:56F2 push DX
+100D:56F3 push BX
+100D:56F4 mov BX,word ptr DS:[0x4712]
+100D:56F8 add BX,0x0062
+100D:56FB add AX,0x0082
+100D:56FE call near 0xC2FD
+100D:5701 add DX,6
+100D:5704 call near 0xD04E
+100D:5707 mov AL,0x3A
+100D:5709 call near word ptr DS:[0x2518]
+100D:570D pop AX
+100D:570E add AL,0x30
+100D:5710 call near word ptr DS:[0x2518]
+100D:5714 pop DX
+100D:5715 pop CX
+100D:5716 add DX,0x0012
+100D:5719 ret near
+100D:571A push DX
+100D:571B call near 0xD05F
+100D:571E pop DX
+100D:571F mov CX,0xF5FB
+100D:5722 mov AX,0x0066
+100D:5725 jmp near 0xD194
+100D:5728 jae short 0x5745
+100D:572A mov AL,byte ptr DS:[SI+3]
+100D:572D and AL,0x0F
+100D:572F cmp AL,2
+100D:5731 je short 0x5745
+100D:5733 shr AL,1
+100D:5735 shr AL,1
+100D:5737 jne short 0x573C
+100D:5739 inc BL
+100D:573B ret near
+100D:573C cmp AL,1
+100D:573E jne short 0x5743
+100D:5740 inc CH
+100D:5742 ret near
+100D:5745 ret near
+100D:5746 mov DI,0x4710
+100D:5749 call near 0xD6FE
+100D:574C jae short 0x57B2
+100D:574E mov AX,word ptr DS:[0x4716]
+100D:5751 sub AX,0x000A
+100D:5754 cmp BX,AX
+100D:5756 jae short 0x57AD
+100D:5758 call near 0x57B2
+100D:575B cmp byte ptr DS:[0x4722],0
+100D:5760 jne short 0x578A
+100D:5762 mov ES,word ptr DS:[0xDBD8]
+100D:5766 call far dword ptr DS:[0x3965]
+100D:576A sub AL,0x50
+100D:576C cmp AL,0x10
+100D:576E jb short 0x5772
+100D:5770 mov AL,0xFF
+100D:5772 mov AH,AL
+100D:5774 xchg AL,byte ptr DS:[0x4724]
+100D:5778 cmp AL,AH
+100D:577A je short 0x578A
+100D:577C call near 0xDBB2
+100D:577F call near 0x578B
+100D:5782 mov AL,AH
+100D:5784 call near 0x578B
+100D:5787 call near 0xDBEC
+100D:578A ret near
+100D:578B or AL,AL
+100D:578D js short 0x578A
+100D:578F push AX
+100D:5790 call near 0x557B
+100D:5793 add DX,0x005E
+100D:5796 add BX,0x0062
+100D:5799 xor AH,AH
+100D:579B shl AX,1
+100D:579D shl AX,1
+100D:579F add DX,AX
+100D:57A1 mov SI,5
+100D:57A4 mov CX,7
+100D:57A7 call far dword ptr DS:[0x3961]
+100D:57AB pop AX
+100D:57AC ret near
+100D:57AD mov CX,0xFEF5
+100D:57B0 jmp short 0x57B5
+100D:57B2 mov CX,0xF5FE
+100D:57B5 mov AL,CL
+100D:57B7 xchg AL,byte ptr DS:[0x4725]
+100D:57BB cmp AL,CL
+100D:57BD je short 0x578A
+100D:57BF push BX
+100D:57C0 push DX
+100D:57C1 call near 0xC08E
+100D:57C4 call near 0x557B
+100D:57C7 add BX,0x0062
+100D:57CA add DX,6
+100D:57CD mov AX,0x0065
+100D:57D0 cmp byte ptr DS:[0x4722],0
+100D:57D5 je short 0x57DA
+100D:57D7 mov AX,0x0068
+100D:57DA call near 0xDBB2
+100D:57DD call near 0xD194
+100D:57E0 pop DX
+100D:57E1 pop BX
+100D:57E2 jmp near 0xC07C
+100D:57E5 call near 0xE270
+100D:57E8 push ES
+100D:57E9 mov AX,0x003A
+100D:57EC call near 0xC13E
+100D:57EF push DS
+100D:57F0 pop ES
+100D:57F1 mov DI,BP
+100D:57F3 mov AL,0x70
+100D:57F5 mov CX,0x0100
+100D:57F8 rep stos byte ptr ES:[DI],AL
+100D:57FA cmp byte ptr DS:[0x4722],0
+100D:57FF jne short 0x583F
+100D:5801 mov SI,0x0100
+100D:5804 mov DI,BP
+100D:5806 xor BX,BX
+100D:5808 mov AL,byte ptr DS:[SI+0x0A]
+100D:580B test AL,0x80
+100D:580D jne short 0x5832
+100D:580F mov BL,byte ptr DS:[SI+0x10]
+100D:5812 test AL,0x40
+100D:5814 pushf
+100D:5815 mov AL,0x75
+100D:5817 test byte ptr DS:[0x2942],2
+100D:581C je short 0x5820
+100D:5820 popf
+100D:5821 je short 0x5830
+100D:5823 mov AL,byte ptr DS:[SI+0x12]
+100D:5826 shr AL,1
+100D:5828 shr AL,1
+100D:582A shr AL,1
+100D:582C shr AL,1
+100D:582E add AL,0x50
+100D:5830 mov byte ptr DS:[BX+DI],AL
+100D:5832 add SI,0x001C
+100D:5835 cmp byte ptr DS:[SI],0xFF
+100D:5838 jne short 0x5808
+100D:583A pop ES
+100D:583B call near 0xE283
+100D:583E ret near
+100D:583F mov DI,0x0100
+100D:5842 mov AL,byte ptr DS:[DI+0x0A]
+100D:5845 test AL,0x80
+100D:5847 jne short 0x5861
+100D:5849 push BP
+100D:584A xor BX,BX
+100D:584C xor CX,CX
+100D:584E mov BP,0x5728
+100D:5851 call near 0x6639
+100D:5854 pop BP
+100D:5855 call near 0x586E
+100D:5858 mov AL,byte ptr DS:[DI+0x10]
+100D:585B xor AH,AH
+100D:585D mov SI,AX
+100D:585F mov byte ptr SS:[BP+SI],BH
+100D:5861 add DI,0x001C
+100D:5864 cmp byte ptr DS:[DI],0xFF
+100D:5867 jne short 0x5842
+100D:5869 pop ES
+100D:586A call near 0xE283
+100D:586D ret near
+100D:586E xor AX,AX
+100D:5870 or BL,BL
+100D:5872 je short 0x5876
+100D:5874 mov AL,1
+100D:5876 or CH,CH
+100D:5878 je short 0x587C
+100D:587A add AL,2
+100D:587C or CL,CL
+100D:587E je short 0x5882
+100D:5882 shl AX,1
+100D:5884 mov SI,AX
+100D:5886 jmp near word ptr CS:[SI+0x588B]
+100D:589B xor BH,BH
+100D:589D ret near
+100D:589E mov BH,0x55
+100D:58A0 ret near
+100D:58A1 mov BH,0xAA
+100D:58A3 ret near
+100D:58A4 mov BH,0x66
+100D:58A6 cmp BL,CH
+100D:58A8 je short 0x58B0
+100D:58AA mov BH,0x9A
+100D:58AC jb short 0x58B0
+100D:58AE not BH
+100D:58B0 ret near
+100D:58E4 sub SP,0x0100
+100D:58E8 mov BP,SP
+100D:58EA call near 0x57E5
+100D:58ED mov BH,byte ptr DS:[0x4722]
+100D:58F1 call far dword ptr DS:[0x395D]
+100D:58F5 add SP,0x0100
+100D:58F9 ret near
+100D:58FA test byte ptr DS:[0x46EB],0x40
+100D:58FF je short 0x5922
+100D:5901 call near 0xE270
+100D:5904 and byte ptr DS:[0x46EB],0xBF
+100D:5909 mov DI,0xDBE0
+100D:590C cmp word ptr DS:[DI],0x4710
+100D:5910 je short 0x5915
+100D:5912 mov DI,0xDBE2
+100D:5915 xor SI,SI
+100D:5917 xchg SI,word ptr DS:[DI]
+100D:5919 call near 0xC6AD
+100D:591C call near 0x5AD9
+100D:591F call near 0xE283
+100D:5922 ret near
+100D:5923 call near 0x5944
+100D:5944 mov AX,BX
+100D:5946 sub AX,word ptr DS:[0x4712]
+100D:594A sub AX,7
+100D:594D jb short 0x5955
+100D:594F sub AX,0x0059
+100D:5952 jae short 0x596D
+100D:5954 ret near
+100D:5955 add SP,2
+100D:5958 mov AX,DX
+100D:595A sub AX,word ptr DS:[0x4710]
+100D:595E sub AX,0x000A
+100D:5961 jae short 0x5978
+100D:5963 call near 0x82A0
+100D:5966 je short 0x596A
+100D:5968 jmp short 0x58FA
+100D:596D add SP,2
+100D:5970 xor byte ptr DS:[0x4722],0xFF
+100D:5975 jmp near 0x542F
+100D:5978 call near 0x82A0
+100D:597B je short 0x599E
+100D:599E ret near
+100D:599F xor AL,AL
+100D:59A1 xchg AL,byte ptr DS:[0x4723]
+100D:59A5 or AL,AL
+100D:59A7 je short 0x5A02
+100D:59C1 cmp byte ptr DS:[0x4723],0
+100D:59C6 je short 0x5A02
+100D:5A02 ret near
+100D:5A03 call near 0x8C8A
+100D:5A06 inc byte ptr DS:[0x46F3]
+100D:5A0A call near 0x68EB
+100D:5A0D mov byte ptr DS:[0x1954],AL
+100D:5A10 not byte ptr DS:[0x00FB]
+100D:5A14 call near 0x5A1A
+100D:5A17 jmp near 0x8685
+100D:5A1A mov byte ptr DS:[0x28E7],1
+100D:5A1F call near 0x18BA
+100D:5A22 call near 0x5B5D
+100D:5A25 mov BP,0x5A56
+100D:5A28 mov AL,0x34
+100D:5A2A mov DX,0xFFFF
+100D:5A2D call near 0xC108
+100D:5A30 cmp byte ptr DS:[0x46F3],0
+100D:5A35 jne short 0x5A3A
+100D:5A37 call near 0x5BB0
+100D:5A3A jmp near 0x17E6
+100D:5A3D mov byte ptr DS:[0x00FB],0xFF
+100D:5A42 call near 0xC13B
+100D:5A45 call far dword ptr DS:[0x3935]
+100D:5A49 mov BP,0x5A56
+100D:5A4C mov AL,2
+100D:5A4E xor DX,DX
+100D:5A50 call near 0xC108
+100D:5A53 jmp near 0xAE04
+100D:5A56 cmp byte ptr DS:[0x46EB],0
+100D:5A5B js short 0x5A9A
+100D:5A5D call near 0xD2BD
+100D:5A60 call near 0x4ACA
+100D:5A63 call near 0xB930
+100D:5A66 mov SI,0x6B34
+100D:5A69 mov BP,0x000F
+100D:5A6C call near 0xDA25
+100D:5A6F mov SI,0x1482
+100D:5A72 mov DI,0x46E3
+100D:5A75 call near 0x5B99
+100D:5A78 call near 0x5B69
+100D:5A7B call near 0x1797
+100D:5A7E mov byte ptr DS:[0x46EB],0x80
+100D:5A83 call near 0xAD5E
+100D:5A86 mov word ptr DS:[0x2786],0xC835
+100D:5A8C mov AX,0x5A9A
+100D:5A8F mov word ptr DS:[0x46ED],AX
+100D:5A92 call near AX
+100D:5A94 call near 0xD792
+100D:5A97 jmp near 0xD712
+100D:5A9A call near 0xC07C
+100D:5A9D call near 0x5B8D
+100D:5AA0 mov AL,0x80
+100D:5AA2 xchg AL,byte ptr DS:[0x46EB]
+100D:5AA6 push AX
+100D:5AA7 call near 0xB6C3
+100D:5AAA call near 0xC13B
+100D:5AAD call near 0x5DCE
+100D:5AB0 call near 0x6314
+100D:5AB3 call near 0xC412
+100D:5AB6 mov word ptr DS:[0x3CBE],0
+100D:5ABC call near 0x6715
+100D:5ABF mov SI,0x46E3
+100D:5AC2 call near 0xC6AD
+100D:5AC5 call near 0x878C
+100D:5AC8 pop AX
+100D:5AC9 mov byte ptr DS:[0x46EB],AL
+100D:5ACC and AL,0x40
+100D:5ACE je short 0x5AD3
+100D:5AD3 mov AX,0x1A9E
+100D:5AD6 call near 0xD95E
+100D:5AD9 mov SI,0x46E3
+100D:5ADC jmp near 0xDAAA
+100D:5ADF call near 0x7B36
+100D:5AE2 xor AX,AX
+100D:5AE4 mov byte ptr DS:[0x46EB],AL
+100D:5AE7 mov byte ptr DS:[0x46F3],AL
+100D:5AEA mov word ptr DS:[0x3CBE],AX
+100D:5AED mov word ptr DS:[0xA5C0],AX
+100D:5AF0 mov word ptr DS:[0xDBE0],AX
+100D:5AF3 mov word ptr DS:[0xDBE2],AX
+100D:5AF6 mov word ptr DS:[0x1954],AX
+100D:5AF9 mov word ptr DS:[0x2786],0xC827
+100D:5AFF mov SI,0x6B34
+100D:5B02 jmp near 0xDA5F
+100D:5B05 call near 0x82A0
+100D:5B08 jne short 0x5B0D
+100D:5B0D call near 0x5B5D
+100D:5B10 call near 0x8850
+100D:5B13 test byte ptr DS:[0x46EB],0x40
+100D:5B18 je short 0x5B1D
+100D:5B1D ret near
+100D:5B1E mov byte ptr DS:[0x1955],3
+100D:5B23 mov SI,0x08E0
+100D:5B26 mov DX,word ptr DS:[SI+6]
+100D:5B29 mov BX,word ptr DS:[SI+8]
+100D:5B2C push SI
+100D:5B2D call near 0x5B60
+100D:5B30 call near 0x5B10
+100D:5B33 pop SI
+100D:5B34 cmp word ptr DS:[0x1176],1
+100D:5B39 ja short 0x5B4A
+100D:5B4A test byte ptr DS:[0x46EB],0x40
+100D:5B4F je short 0x5B52
+100D:5B52 jmp near 0x86CC
+100D:5B55 mov DX,word ptr DS:[DI+2]
+100D:5B58 mov BX,word ptr DS:[DI+4]
+100D:5B5B jmp short 0x5B60
+100D:5B5D call near 0x407E
+100D:5B60 mov word ptr DS:[0x197E],BX
+100D:5B64 mov word ptr DS:[0x197C],DX
+100D:5B68 ret near
+100D:5B69 mov SI,0x46E3
+100D:5B6C mov AL,0xFC
+100D:5B6E mov DX,word ptr DS:[SI]
+100D:5B70 mov BX,word ptr DS:[SI+2]
+100D:5B73 mov DI,word ptr DS:[SI+4]
+100D:5B76 mov CX,word ptr DS:[SI+6]
+100D:5B79 mov BP,4
+100D:5B7C push AX
+100D:5B7D push BP
+100D:5B7E dec DX
+100D:5B7F dec BX
+100D:5B80 call near 0xC560
+100D:5B83 pop BP
+100D:5B84 pop AX
+100D:5B85 inc DI
+100D:5B86 inc CX
+100D:5B87 sub AL,2
+100D:5B89 dec BP
+100D:5B8A jne short 0x5B7C
+100D:5B8C ret near
+100D:5B8D mov DI,0xD83C
+100D:5B90 call near 0x5B96
+100D:5B93 mov DI,0xD834
+100D:5B96 mov SI,0x46E3
+100D:5B99 push DS
+100D:5B9A pop ES
+100D:5B9B movs word ptr ES:[DI],word ptr DS:[SI]
+100D:5B9C movs word ptr ES:[DI],word ptr DS:[SI]
+100D:5B9D movs word ptr ES:[DI],word ptr DS:[SI]
+100D:5B9E movs word ptr ES:[DI],word ptr DS:[SI]
+100D:5B9F ret near
+100D:5BA0 mov SI,0x1470
+100D:5BA3 mov DI,0xD83C
+100D:5BA6 jmp short 0x5B99
+100D:5BA8 mov SI,0x1470
+100D:5BAB mov DI,0xD834
+100D:5BAE jmp short 0x5B99
+100D:5BB0 call near 0xC08E
+100D:5BB3 mov SI,0x194A
+100D:5BB6 mov word ptr DS:[0xDBE0],SI
+100D:5BBA call near 0x7B1B
+100D:5BBD call near 0xD068
+100D:5BC0 mov SI,0x00E2
+100D:5BC3 call near 0xCF70
+100D:5BC6 call near 0xD03C
+100D:5BC9 mov AL,byte ptr DS:[0x0028]
+100D:5BCC xor AH,AH
+100D:5BCE call near 0xE2E3
+100D:5BD1 mov DX,word ptr DS:[0x194A]
+100D:5BD5 mov BX,word ptr DS:[0x194C]
+100D:5BD9 add DX,0x000A
+100D:5BDC add BX,8
+100D:5BDF mov CX,0x00F0
+100D:5BE2 mov AX,0x00E2
+100D:5BE5 call near 0xD194
+100D:5BE8 jmp near 0xC07C
+100D:5BEB cmp word ptr DS:[0xDBE0],0x194A
+100D:5BF1 jne short 0x5C02
+100D:5BF3 call near 0xE270
+100D:5BF6 xor SI,SI
+100D:5BF8 xchg SI,word ptr DS:[0xDBE0]
+100D:5BFC call near 0xC6AD
+100D:5BFF call near 0xE283
+100D:5C02 ret near
+100D:5C03 mov DI,word ptr DS:[0xDBE0]
+100D:5C07 cmp DI,0x194A
+100D:5C0B jne short 0x5C22
+100D:5C0D mov AX,word ptr DS:[0xCE7A]
+100D:5C10 sub AX,word ptr DS:[0xDC5A]
+100D:5C14 cmp AX,0x03E8
+100D:5C17 jb short 0x5C22
+100D:5C19 call near 0xDBB2
+100D:5C1C call near 0x5BEB
+100D:5C1F jmp near 0xDBEC
+100D:5C22 cmp DI,0x4710
+100D:5C26 je short 0x5C32
+100D:5C28 mov DI,word ptr DS:[0xDBE2]
+100D:5C2C cmp DI,0x4710
+100D:5C30 jne short 0x5C75
+100D:5C32 call near 0xD6FE
+100D:5C35 jae short 0x5C4B
+100D:5C37 mov byte ptr DS:[0x46EB],0x40
+100D:5C3C mov AL,0xFF
+100D:5C3E call near 0x5E6D
+100D:5C41 mov byte ptr DS:[0x46EB],0xC0
+100D:5C46 cmp AX,9
+100D:5C49 jb short 0x5C4D
+100D:5C4B xor DI,DI
+100D:5C4D mov AX,DI
+100D:5C4F xchg AX,word ptr DS:[0x46FC]
+100D:5C53 cmp AX,DI
+100D:5C55 je short 0x5C6E
+100D:5C57 push BX
+100D:5C58 push DX
+100D:5C59 push DI
+100D:5C5A push word ptr DS:[0xDBDA]
+100D:5C5E call near 0xDBB2
+100D:5C61 call near 0xC08E
+100D:5C64 call near 0x5692
+100D:5C67 pop word ptr DS:[0xDBDA]
+100D:5C6B pop DI
+100D:5C6C pop DX
+100D:5C6D pop BX
+100D:5C6E or DI,DI
+100D:5C70 jne short 0x5C75
+100D:5C72 call near 0x5746
+100D:5C75 ret near
+100D:5C76 call near 0x5BEB
+100D:5C79 call near 0xC13B
+100D:5C7C mov DI,word ptr DS:[0xDBE0]
+100D:5C80 or DI,DI
+100D:5C82 je short 0x5C95
+100D:5C84 call near 0xD6FE
+100D:5C87 jae short 0x5C95
+100D:5C89 cmp DI,0x4710
+100D:5C8D jne short 0x5C92
+100D:5C8F jmp near 0x5923
+100D:5C92 jmp near 0x7E97
+100D:5C95 mov DI,word ptr DS:[0xDBE2]
+100D:5C99 or DI,DI
+100D:5C9B je short 0x5CA5
+100D:5C9D call near 0xD6FE
+100D:5CA0 jae short 0x5CA5
+100D:5CA2 jmp near 0x7EB8
+100D:5CA5 cmp byte ptr DS:[0x46F5],0
+100D:5CAA je short 0x5CAF
+100D:5CAC jmp near 0xD2E2
+100D:5CAF call near 0x6946
+100D:5CB2 jae short 0x5CB7
+100D:5CB4 jmp near 0x872C
+100D:5CB7 mov AL,0x31
+100D:5CB9 call near 0x5E6D
+100D:5CBC cmp AX,0x0014
+100D:5CBF jae short 0x5CCA
+100D:5CC1 cmp DI,word ptr DS:[0x46F8]
+100D:5CC5 je short 0x5CCA
+100D:5CC7 jmp near 0x5FB0
+100D:5CCA call near 0x5F79
+100D:5CCD call near 0x79DE
+100D:5CD0 call near 0x58FA
+100D:5CD3 cmp byte ptr DS:[0x1954],0
+100D:5CD8 je short 0x5CE3
+100D:5CDA call near 0xD316
+100D:5CDD call near 0x8763
+100D:5CE0 call near 0xD280
+100D:5CE3 ret near
+100D:5CE4 call near 0x5BEB
+100D:5CE7 call near 0xC13B
+100D:5CEA cmp word ptr DS:[0xDBE2],0
+100D:5CEF jne short 0x5CE3
+100D:5CF1 mov DI,word ptr DS:[0xDBE0]
+100D:5CF5 or DI,DI
+100D:5CF7 je short 0x5D04
+100D:5CF9 cmp DI,0x18DF
+100D:5CFD jne short 0x5CE3
+100D:5CFF call near 0xD6FE
+100D:5D02 jb short 0x5D1A
+100D:5D04 call near 0x6946
+100D:5D07 jae short 0x5CE3
+100D:5D09 mov SI,word ptr DS:[SI+0x0A]
+100D:5D0C cmp SI,word ptr DS:[0x46FA]
+100D:5D10 je short 0x5D1A
+100D:5D12 push SI
+100D:5D13 call near 0x7B36
+100D:5D16 pop SI
+100D:5D17 jmp near 0x78BC
+100D:5D1A jmp near 0x79DE
+100D:5D1D cmp DX,word ptr DS:[0x46E3]
+100D:5D21 cmc
+100D:5D22 jae short 0x5D35
+100D:5D24 cmp DX,word ptr DS:[0x46E7]
+100D:5D28 jae short 0x5D35
+100D:5D2A cmp BX,word ptr DS:[0x46E5]
+100D:5D2E cmc
+100D:5D2F jae short 0x5D35
+100D:5D31 cmp BX,word ptr DS:[0x46E9]
+100D:5D35 ret near
+100D:5D36 cmp byte ptr DS:[DI+8],0x28
+100D:5D3A jb short 0x5D43
+100D:5D3C test byte ptr DS:[DI+0x0A],8
+100D:5D40 je short 0x5D43
+100D:5D42 stc
+100D:5D43 ret near
+100D:5D44 test byte ptr DS:[0x11C9],3
+100D:5D49 je short 0x5D50
+100D:5D4B or byte ptr DS:[0x4728],1
+100D:5D50 push SI
+100D:5D51 push DI
+100D:5D52 test byte ptr DS:[DI+0x0A],0x80
+100D:5D56 jne short 0x5D6A
+100D:5D58 cmp byte ptr DS:[0x46EB],0
+100D:5D5D je short 0x5D6A
+100D:5D5F mov SI,DI
+100D:5D61 call near 0x62C9
+100D:5D64 jb short 0x5D6A
+100D:5D66 inc byte ptr DS:[0x46EC]
+100D:5D6A pop DI
+100D:5D6B pop SI
+100D:5D6C ret near
+100D:5D6D mov byte ptr DS:[0x46EC],0
+100D:5D72 cmp byte ptr DS:[0x46EB],0
+100D:5D77 js short 0x5D82
+100D:5D79 je short 0x5DCD
+100D:5D82 call near 0xC07C
+100D:5D85 call near 0xDBB2
+100D:5D88 call near 0x5B8D
+100D:5D8B mov AL,0x80
+100D:5D8D xchg AL,byte ptr DS:[0x46EB]
+100D:5D91 push AX
+100D:5D92 push word ptr DS:[0x46EF]
+100D:5D96 call near 0xB6C3
+100D:5D99 call near 0xC13B
+100D:5D9C call near 0x5DCE
+100D:5D9F call near 0x6314
+100D:5DA2 call near 0xC412
+100D:5DA5 mov word ptr DS:[0x3CBE],0
+100D:5DAB call near 0x6715
+100D:5DAE mov SI,0x46E3
+100D:5DB1 call near 0xC6AD
+100D:5DB4 pop SI
+100D:5DB5 or SI,SI
+100D:5DB7 je short 0x5DBC
+100D:5DB9 call near 0x697C
+100D:5DBC call near 0x1C18
+100D:5DBF pop AX
+100D:5DC0 mov byte ptr DS:[0x46EB],AL
+100D:5DC3 and AL,0x40
+100D:5DC5 je short 0x5DCA
+100D:5DC7 call near 0x542F
+100D:5DCA jmp near 0xC13B
+100D:5DCD ret near
+100D:5DCE mov AL,byte ptr DS:[0x46EB]
+100D:5DD1 or AL,AL
+100D:5DD3 jns short 0x5DDA
+100D:5DD5 push AX
+100D:5DD6 call near 0x633B
+100D:5DD9 pop AX
+100D:5DDA mov DI,0xA5C0
+100D:5DDD and AL,0x40
+100D:5DDF je short 0x5DF1
+100D:5DE1 sub DI,6
+100D:5DE4 add DI,6
+100D:5DE7 cmp word ptr DS:[DI],0
+100D:5DEA je short 0x5DF1
+100D:5DEC and byte ptr DS:[DI+5],AL
+100D:5DEF je short 0x5DE4
+100D:5DF1 mov SI,0x0100
+100D:5DF4 cmp word ptr DS:[SI],-1
+100D:5DF7 je short 0x5E3D
+100D:5DF9 test byte ptr DS:[SI+0x0A],0x80
+100D:5DFD jne short 0x5E38
+100D:5DFF call near 0x62C9
+100D:5E02 jb short 0x5E38
+100D:5E04 mov word ptr DS:[DI],SI
+100D:5E06 mov word ptr DS:[DI+2],DX
+100D:5E09 mov BH,byte ptr DS:[0x46EB]
+100D:5E0D mov word ptr DS:[DI+4],BX
+100D:5E10 xor BH,BH
+100D:5E12 call near 0x5E42
+100D:5E15 cmp CL,0x20
+100D:5E18 jae short 0x5E2E
+100D:5E1A push AX
+100D:5E1B push BX
+100D:5E1C push DX
+100D:5E1D push SI
+100D:5E1E call near 0x7C8F
+100D:5E21 cmp AX,word ptr DS:[0x1176]
+100D:5E25 pop SI
+100D:5E26 pop DX
+100D:5E27 pop BX
+100D:5E28 pop AX
+100D:5E29 jbe short 0x5E2E
+100D:5E2B add AX,5
+100D:5E2E push SI
+100D:5E2F push DI
+100D:5E30 call near 0xC343
+100D:5E33 pop DI
+100D:5E34 pop SI
+100D:5E35 add DI,6
+100D:5E38 add SI,0x001C
+100D:5E3B jmp short 0x5DF4
+100D:5E3D mov word ptr DS:[DI],0
+100D:5E41 ret near
+100D:5E42 mov AX,0x003A
+100D:5E45 test byte ptr DS:[0x46EB],0x80
+100D:5E4A je short 0x5E4F
+100D:5E4C mov AX,0x007A
+100D:5E4F mov CL,byte ptr DS:[SI+8]
+100D:5E52 cmp CL,0x20
+100D:5E55 jb short 0x5E6A
+100D:5E57 inc AX
+100D:5E58 cmp CL,0x21
+100D:5E5B jb short 0x5E6A
+100D:5E5D inc AX
+100D:5E5E cmp CL,0x28
+100D:5E61 jb short 0x5E6A
+100D:5E63 inc AX
+100D:5E64 cmp CL,0x30
+100D:5E67 jb short 0x5E6A
+100D:5E69 inc AX
+100D:5E6A ret near
+100D:5E6D push SI
+100D:5E6E mov BP,SP
+100D:5E70 sub SP,8
+100D:5E73 mov word ptr SS:[BP-8],0xFFFF
+100D:5E78 mov word ptr SS:[BP-6],DX
+100D:5E7B mov word ptr SS:[BP-4],BX
+100D:5E7E mov word ptr SS:[BP-2],0
+100D:5E83 mov SI,0xA5BA
+100D:5E86 add SI,6
+100D:5E89 mov DI,word ptr DS:[SI]
+100D:5E8B or DI,DI
+100D:5E8D je short 0x5EBF
+100D:5E8F cmp byte ptr DS:[DI+8],AL
+100D:5E92 jae short 0x5E86
+100D:5E94 mov BX,word ptr DS:[SI+4]
+100D:5E97 cmp BH,byte ptr DS:[0x46EB]
+100D:5E9B jne short 0x5E86
+100D:5E9D xor BH,BH
+100D:5E9F mov DX,word ptr DS:[SI+2]
+100D:5EA2 sub DX,word ptr SS:[BP-6]
+100D:5EA5 jns short 0x5EA9
+100D:5EA7 neg DX
+100D:5EA9 sub BX,word ptr SS:[BP-4]
+100D:5EAC jns short 0x5EB0
+100D:5EAE neg BX
+100D:5EB0 add DX,BX
+100D:5EB2 cmp DX,word ptr SS:[BP-8]
+100D:5EB5 jae short 0x5E86
+100D:5EB7 mov word ptr SS:[BP-8],DX
+100D:5EBA mov word ptr SS:[BP-2],DI
+100D:5EBD jmp short 0x5E86
+100D:5EBF mov DI,word ptr SS:[BP-2]
+100D:5EC2 mov AX,word ptr SS:[BP-8]
+100D:5EC5 mov DX,word ptr SS:[BP-6]
+100D:5EC8 mov BX,word ptr SS:[BP-4]
+100D:5ECB add SP,8
+100D:5ECE pop SI
+100D:5ECF ret near
+100D:5ED0 mov BP,0xA5BA
+100D:5ED3 add BP,6
+100D:5ED6 mov AX,word ptr SS:[BP]
+100D:5ED9 cmp AX,DI
+100D:5EDB je short 0x5EE3
+100D:5EDD or AX,AX
+100D:5EDF jne short 0x5ED3
+100D:5EE1 or BP,BP
+100D:5EE3 ret near
+100D:5EE4 call near 0x5ED0
+100D:5EE7 jne short 0x5EE3
+100D:5EE9 mov SI,0x1668
+100D:5EEC call near 0x6252
+100D:5EEF mov BX,AX
+100D:5EF1 inc AX
+100D:5EF2 cmp DI,word ptr DS:[0x46F8]
+100D:5EF6 jne short 0x5F12
+100D:5EF8 cmp AL,byte ptr DS:[0x46F7]
+100D:5EFC jne short 0x5F01
+100D:5EFE jmp near 0x7B1B
+100D:5F12 mov byte ptr DS:[0x46F7],AL
+100D:5F15 mov CL,byte ptr DS:[BX+0x11D0]
+100D:5F19 xor CH,CH
+100D:5F1B mov DX,word ptr SS:[BP+2]
+100D:5F1E mov BX,word ptr SS:[BP+4]
+100D:5F21 or BH,BH
+100D:5F23 jns short 0x5EE3
+100D:5F25 xor BH,BH
+100D:5F27 push BX
+100D:5F28 push DX
+100D:5F29 mov AX,CX
+100D:5F2B shr AX,1
+100D:5F2D sub BX,AX
+100D:5F2F cmp BX,4
+100D:5F32 jge short 0x5F37
+100D:5F34 mov BX,4
+100D:5F37 mov AX,0x0094
+100D:5F3A sub AX,CX
+100D:5F3C cmp BX,AX
+100D:5F3E jl short 0x5F42
+100D:5F40 mov BX,AX
+100D:5F42 add DX,0x000F
+100D:5F45 cmp DX,0x00D2
+100D:5F49 jl short 0x5F4F
+100D:5F4B sub DX,0x0082
+100D:5F4F mov word ptr DS:[SI],DX
+100D:5F51 mov word ptr DS:[SI+2],BX
+100D:5F54 add DX,0x006A
+100D:5F57 mov word ptr DS:[SI+4],DX
+100D:5F5A add BX,CX
+100D:5F5C mov word ptr DS:[SI+6],BX
+100D:5F5F mov word ptr DS:[0xDBE0],SI
+100D:5F63 pop DX
+100D:5F64 pop BX
+100D:5F65 mov AX,0x000A
+100D:5F68 sub DX,AX
+100D:5F6A sub BX,AX
+100D:5F6C mov DI,0xD816
+100D:5F6F mov word ptr DS:[DI],DX
+100D:5F71 mov word ptr DS:[DI+2],BX
+100D:5F74 mov AL,6
+100D:5F76 jmp near 0x7B0F
+100D:5F79 xor AX,AX
+100D:5F7B xchg AX,word ptr DS:[0x46F8]
+100D:5F7F or AX,AX
+100D:5F81 je short 0x5F90
+100D:5F83 call near 0xD41B
+100D:5F86 mov AL,byte ptr SS:[BP]
+100D:5F89 inc AL
+100D:5F8B je short 0x5F91
+100D:5F8D jmp near 0xD2E2
+100D:5F90 ret near
+100D:5F91 mov word ptr DS:[0x46F8],0
+100D:5F97 mov byte ptr DS:[0x46F7],0
+100D:5F9C mov SI,0x1668
+100D:5F9F call near 0xC07C
+100D:5FA2 mov word ptr DS:[0xDBE0],0
+100D:5FA8 call near 0xC6AD
+100D:5FAB mov AL,8
+100D:5FAD jmp near 0x7B2B
+100D:5FB0 call near 0x58FA
+100D:5FB3 call near 0x7B36
+100D:5FB6 cmp DI,word ptr DS:[0x114E]
+100D:5FBA je short 0x600E
+100D:5FBC cmp byte ptr DS:[8],0xFF
+100D:5FC1 je short 0x5FF9
+100D:5FC3 cmp byte ptr DS:[0x000B],2
+100D:5FC8 jbe short 0x5FD8
+100D:5FCA cmp byte ptr DS:[8],0x20
+100D:5FCF jae short 0x600E
+100D:5FD1 cmp byte ptr DS:[8],0x28
+100D:5FD6 jae short 0x600E
+100D:5FD8 push DI
+100D:5FD9 mov DI,word ptr DS:[0x114E]
+100D:5FDD call near 0x7F27
+100D:5FE0 pop DI
+100D:5FE1 mov BP,0x20DA
+100D:5FE4 mov AX,word ptr SS:[BP+2]
+100D:5FE7 and AH,0x1F
+100D:5FEA cmp byte ptr DS:[0x46FF],0
+100D:5FEF jne short 0x5FF4
+100D:5FF1 or AH,0x40
+100D:5FF4 mov word ptr SS:[BP+2],AX
+100D:5FF7 jmp short 0x6003
+100D:5FF9 test byte ptr DS:[0x000A],0x40
+100D:5FFE je short 0x600E
+100D:6000 mov BP,0x20E6
+100D:6003 push BP
+100D:6004 call near 0x600E
+100D:6007 pop BP
+100D:6008 mov BX,0x5F91
+100D:600B jmp near 0xD323
+100D:600E call near 0xC08E
+100D:6011 push DI
+100D:6012 call near 0x5EE4
+100D:6015 pop DI
+100D:6016 mov word ptr DS:[0x46F8],DI
+100D:601A call near 0xD068
+100D:601D mov CL,0x9A
+100D:601F mov CH,byte ptr DS:[0x1671]
+100D:6023 mov DX,word ptr DS:[0x1668]
+100D:6027 mov BX,word ptr DS:[0x166A]
+100D:602B add DX,0x000C
+100D:602E add BX,4
+100D:6031 call near 0x629D
+100D:6034 mov CL,0x96
+100D:6036 sub DX,8
+100D:6039 add BX,9
+100D:603C call near 0x62A6
+100D:603F call near 0x6252
+100D:6042 cmp AL,2
+100D:6044 je short 0x6059
+100D:6046 test byte ptr DS:[0x000A],0x20
+100D:604B je short 0x6056
+100D:604D or AL,AL
+100D:604F jne short 0x6056
+100D:6051 push AX
+100D:6052 call near 0x605C
+100D:6055 pop AX
+100D:6056 call near 0x60AC
+100D:6059 jmp near 0xC07C
+100D:605C call near 0xD075
+100D:605F mov CL,0x90
+100D:6061 add BX,0x000A
+100D:6064 mov DX,word ptr DS:[0x1668]
+100D:6068 add DX,4
+100D:606B mov AX,0x006C
+100D:606E call near 0xD194
+100D:6071 mov AL,byte ptr DS:[DI+0x1B]
+100D:6074 mov SI,0x0075
+100D:6077 mov BP,0x006D
+100D:607A test byte ptr DS:[DI+0x0A],0x20
+100D:607E je short 0x609D
+100D:6080 push CX
+100D:6081 push AX
+100D:6082 push SI
+100D:6083 call near 0xE295
+100D:6086 pop AX
+100D:6087 pop CX
+100D:6088 add BX,7
+100D:608B mov DX,word ptr DS:[0x1668]
+100D:608F add DX,4
+100D:6092 mov BP,word ptr DS:[0x166C]
+100D:6096 push BX
+100D:6097 call near 0x617A
+100D:609A pop BX
+100D:609B pop CX
+100D:609C ret near
+100D:609D mov AX,BP
+100D:609F add BX,7
+100D:60A2 mov DX,word ptr DS:[0x1668]
+100D:60A6 add DX,0x000A
+100D:60A9 jmp near 0xD194
+100D:60AC call near 0xC13B
+100D:60AF call near 0xD068
+100D:60B2 mov CL,0x9A
+100D:60B4 mov DX,word ptr DS:[0x1668]
+100D:60B8 add BX,0x000C
+100D:60BB add DX,4
+100D:60BE call near 0x627E
+100D:60C1 jb short 0x60D6
+100D:60C3 mov AX,0x006E
+100D:60C6 call near 0xD194
+100D:60C9 add BX,0x000A
+100D:60CC lea SI,DI+0x14
+100D:60CF mov BP,word ptr DS:[0x166E]
+100D:60D3 jmp near 0x7E3D
+100D:60D6 mov AX,0x004C
+100D:60D9 call near 0xD194
+100D:60DC add BX,6
+100D:60DF add DX,0x002F
+100D:60E2 push BX
+100D:60E3 push DX
+100D:60E4 call near 0x60F8
+100D:60E7 xor AH,AH
+100D:60E9 add AX,0x000F
+100D:60EC mov CL,5
+100D:60EE shr AX,CL
+100D:60F0 add AX,0x008E
+100D:60F3 pop DX
+100D:60F4 pop BX
+100D:60F5 jmp near 0xC22F
+100D:60F8 xor BX,BX
+100D:60FA xor CX,CX
+100D:60FC xor DX,DX
+100D:60FE mov word ptr DS:[0xD81C],DX
+100D:6102 mov BP,0x6155
+100D:6105 call near 0x6603
+100D:6108 xor AX,AX
+100D:610A add BX,DX
+100D:610C je short 0x6114
+100D:610E xchg AH,DL
+100D:6110 xchg DH,DL
+100D:6112 div BX
+100D:6114 mov BX,AX
+100D:6116 xor AX,AX
+100D:6118 mov DX,word ptr DS:[0xD81C]
+100D:611C add CX,DX
+100D:611E je short 0x6126
+100D:6120 xchg AH,DL
+100D:6122 xchg DH,DL
+100D:6124 div CX
+100D:6126 mov CX,AX
+100D:6128 mov SI,BX
+100D:612A cmp SI,CX
+100D:612C jae short 0x6130
+100D:612E mov SI,CX
+100D:6130 mov AX,BX
+100D:6132 sub AX,CX
+100D:6134 or SI,SI
+100D:6136 je short 0x613F
+100D:6138 cwd
+100D:6139 xchg AL,AH
+100D:613B xchg AL,DL
+100D:613D idiv SI
+100D:613F sar AX,1
+100D:6141 add AL,0x80
+100D:6143 ret near
+100D:6144 call near 0xE270
+100D:6147 push ES
+100D:6148 call near 0x60F8
+100D:614B or AL,1
+100D:614D mov byte ptr DS:[0x00FD],AL
+100D:6150 pop ES
+100D:6151 call near 0xE283
+100D:6154 ret near
+100D:6155 xor AX,AX
+100D:6157 mov AL,byte ptr DS:[SI+0x1A]
+100D:615A test byte ptr DS:[SI+0x10],0x80
+100D:615E je short 0x6165
+100D:6160 add word ptr DS:[0xD81C],AX
+100D:6164 ret near
+100D:6165 cmp byte ptr DS:[SI+3],6
+100D:6169 jne short 0x6179
+100D:616B test byte ptr DS:[SI+3],0x20
+100D:616F jne short 0x6173
+100D:6171 add DX,AX
+100D:6173 add CX,word ptr DS:[SI+0x0C]
+100D:6176 add BX,word ptr DS:[SI+0x0E]
+100D:6179 ret near
+100D:617A and CX,0x00FF
+100D:617E je short 0x61D2
+100D:6180 push BX
+100D:6181 push DI
+100D:6182 push AX
+100D:6183 push DX
+100D:6184 call near 0xC1F4
+100D:6187 mov DI,BP
+100D:6189 sub DI,DX
+100D:618B mov BP,word ptr ES:[SI]
+100D:618E and BP,0x0FFF
+100D:6192 add BP,2
+100D:6195 mov AX,DI
+100D:6197 xor DX,DX
+100D:6199 div CX
+100D:619B cmp AX,BP
+100D:619D jae short 0x61B5
+100D:619F sub DI,BP
+100D:61A1 mov AX,DI
+100D:61A3 xor DX,DX
+100D:61A5 div CX
+100D:61A7 mov BP,AX
+100D:61A9 cmp BP,2
+100D:61AC jae short 0x61B5
+100D:61AE mov BP,2
+100D:61B1 mov CX,DI
+100D:61B3 shr CX,1
+100D:61B5 pop DX
+100D:61B6 pop AX
+100D:61B7 push AX
+100D:61B8 push BX
+100D:61B9 push CX
+100D:61BA push DX
+100D:61BB push BP
+100D:61BC call near 0xC22F
+100D:61BF pop BP
+100D:61C0 pop DX
+100D:61C1 pop CX
+100D:61C2 pop BX
+100D:61C3 pop AX
+100D:61C4 add DX,BP
+100D:61C6 loop 0x61B7
+100D:61C8 pop DI
+100D:61C9 pop BX
+100D:61CA call near 0xC1F4
+100D:61CD add BL,byte ptr ES:[SI+2]
+100D:61D1 inc BX
+100D:61D2 ret near
+100D:61D3 and CX,0x00FF
+100D:61D7 je short 0x61D2
+100D:61D9 push BX
+100D:61DA push DI
+100D:61DB push AX
+100D:61DC push DX
+100D:61DD call near 0xC1F4
+100D:61E0 mov DI,BP
+100D:61E2 sub DI,BX
+100D:61E4 mov BP,word ptr ES:[SI+2]
+100D:61E8 and BP,0x00FF
+100D:61EC add BP,2
+100D:61EF mov AX,DI
+100D:61F1 xor DX,DX
+100D:61F3 div CX
+100D:61F5 cmp AX,BP
+100D:61F7 jae short 0x620F
+100D:61F9 sub DI,BP
+100D:61FB mov AX,DI
+100D:61FD xor DX,DX
+100D:61FF div CX
+100D:6201 mov BP,AX
+100D:6203 cmp BP,2
+100D:6206 jae short 0x620F
+100D:620F pop DX
+100D:6210 pop AX
+100D:6211 push AX
+100D:6212 push BX
+100D:6213 push CX
+100D:6214 push DX
+100D:6215 push BP
+100D:6216 call near 0xC22F
+100D:6219 pop BP
+100D:621A pop DX
+100D:621B pop CX
+100D:621C pop BX
+100D:621D pop AX
+100D:621E add BX,BP
+100D:6220 loop 0x6211
+100D:6222 pop DI
+100D:6223 pop BX
+100D:6224 call near 0xC1F4
+100D:6227 mov AX,word ptr ES:[SI]
+100D:622A and AH,0x0F
+100D:622D add DX,AX
+100D:622F inc DX
+100D:6230 ret near
+100D:6231 push BX
+100D:6232 mov BL,byte ptr DS:[DI+8]
+100D:6235 xor AX,AX
+100D:6237 cmp BL,0x20
+100D:623A jb short 0x6250
+100D:623C inc AX
+100D:623D cmp BL,0x21
+100D:6240 jb short 0x6250
+100D:6242 inc AX
+100D:6243 cmp BL,0x28
+100D:6246 jb short 0x6250
+100D:6248 inc AX
+100D:6249 cmp BL,0x30
+100D:624C jb short 0x6250
+100D:624E sub AL,2
+100D:6250 pop BX
+100D:6251 ret near
+100D:6252 call near 0x627E
+100D:6255 jb short 0x627A
+100D:6257 call near 0x5D36
+100D:625A mov AX,2
+100D:625D jb short 0x6260
+100D:625F ret near
+100D:6260 test byte ptr DS:[DI+0x0A],0x10
+100D:6264 je short 0x627D
+100D:6266 call near 0x6231
+100D:6269 or AX,AX
+100D:626B je short 0x627D
+100D:626D cmp AL,3
+100D:626F jne short 0x6274
+100D:6271 xor AX,AX
+100D:6273 ret near
+100D:6274 cmp AL,2
+100D:6276 mov AL,2
+100D:6278 jne short 0x627D
+100D:627A mov AX,1
+100D:627D ret near
+100D:627E call near 0xE270
+100D:6281 test byte ptr DS:[DI+0x0A],2
+100D:6285 jne short 0x6293
+100D:6287 call near 0x5D36
+100D:628A jb short 0x6298
+100D:628C call near 0x5098
+100D:628F or DX,DX
+100D:6291 je short 0x6298
+100D:6293 call near 0xE283
+100D:6296 stc
+100D:6297 ret near
+100D:6298 call near 0xE283
+100D:629B clc
+100D:629C ret near
+100D:629D call near 0x6231
+100D:62A0 add AX,0x0044
+100D:62A3 jmp near 0xD194
+100D:62A6 mov AL,byte ptr DS:[DI]
+100D:62A8 xor AH,AH
+100D:62AA add AX,0
+100D:62AD call near 0xD194
+100D:62B0 cmp byte ptr DS:[DI+1],3
+100D:62B4 mov AL,0x20
+100D:62B6 jb short 0x62BA
+100D:62B8 mov AL,0x2D
+100D:62BA call near word ptr DS:[0x2518]
+100D:62BE mov AL,byte ptr DS:[DI+1]
+100D:62C1 xor AH,AH
+100D:62C3 add AX,0x000C
+100D:62C6 jmp near 0xD19B
+100D:62C9 cmp byte ptr DS:[0x46EB],1
+100D:62CE jb short 0x62F1
+100D:62D0 mov DX,word ptr DS:[SI+2]
+100D:62D3 mov BX,word ptr DS:[SI+4]
+100D:62D6 call near 0xB647
+100D:62D9 cmp DX,word ptr DS:[0x46E3]
+100D:62DD jb short 0x62F1
+100D:62DF cmp DX,word ptr DS:[0x46E7]
+100D:62E3 cmc
+100D:62E4 jb short 0x62F1
+100D:62E6 cmp BX,word ptr DS:[0x46E5]
+100D:62EA jb short 0x62F1
+100D:62EC cmp BX,word ptr DS:[0x46E9]
+100D:62F0 cmc
+100D:62F1 ret near
+100D:62F2 call near 0x68EB
+100D:62F5 test byte ptr DS:[SI+3],0x40
+100D:62F9 jne short 0x6306
+100D:62FB mov SI,word ptr DS:[SI+4]
+100D:62FE call near 0x62C9
+100D:6301 mov AX,0x0036
+100D:6304 jmp short 0x6322
+100D:6306 mov DX,word ptr DS:[SI+6]
+100D:6309 mov BX,word ptr DS:[SI+8]
+100D:630C call near 0x62D6
+100D:630F mov AX,0x0036
+100D:6312 jmp short 0x6322
+100D:6314 call near 0x407E
+100D:6317 call near 0x62D6
+100D:631A mov AX,0x004C
+100D:631D pushf
+100D:631E sub DX,0x000D
+100D:6321 popf
+100D:6322 jb short 0x62F1
+100D:6324 push word ptr DS:[0x2784]
+100D:6328 push AX
+100D:6329 call near 0xC137
+100D:632C pop AX
+100D:632D call near 0xC1F4
+100D:6330 sub BL,byte ptr ES:[SI+2]
+100D:6334 call near 0xC30D
+100D:6337 pop AX
+100D:6338 jmp near 0xC13E
+100D:633B mov DX,word ptr DS:[0x197C]
+100D:633F mov BX,word ptr DS:[0x197E]
+100D:6343 sub BX,0x0012
+100D:6346 call near 0x634D
+100D:6349 inc BX
+100D:634A jae short 0x6346
+100D:634C ret near
+100D:634D push BX
+100D:634E push DX
+100D:634F call near 0x62D6
+100D:6352 pop SI
+100D:6353 pop CX
+100D:6354 jb short 0x6369
+100D:6356 push BX
+100D:6357 push CX
+100D:6358 push DX
+100D:6359 push SI
+100D:635A call near 0x636A
+100D:635D pop SI
+100D:635E pop DX
+100D:635F pop CX
+100D:6360 pop BX
+100D:6361 push CX
+100D:6362 push SI
+100D:6363 call near 0x639A
+100D:6366 pop DX
+100D:6367 pop BX
+100D:6368 clc
+100D:6369 ret near
+100D:636A xchg DX,SI
+100D:636C xchg BX,CX
+100D:636E call near 0xB58B
+100D:6371 xchg DX,SI
+100D:6373 mov BX,CX
+100D:6375 mov AX,word ptr ES:[DI]
+100D:6378 and AX,0x3030
+100D:637B cmp AL,0x10
+100D:637D je short 0x6395
+100D:637F add DX,4
+100D:6382 cmp DX,word ptr DS:[0x46E7]
+100D:6386 jae short 0x6394
+100D:6388 inc DI
+100D:6389 inc SI
+100D:638A cmp SI,BP
+100D:638C jb short 0x6375
+100D:638E sub SI,BP
+100D:6390 sub DI,BP
+100D:6392 jmp short 0x6375
+100D:6394 ret near
+100D:639A xchg DX,SI
+100D:639C xchg BX,CX
+100D:639E call near 0xB58B
+100D:63A1 xchg DX,SI
+100D:63A3 mov BX,CX
+100D:63A5 mov AX,word ptr ES:[DI]
+100D:63A8 and AX,0x3030
+100D:63AB cmp AL,0x10
+100D:63AD je short 0x63C2
+100D:63AF sub DX,4
+100D:63B2 cmp DX,word ptr DS:[0x46E3]
+100D:63B6 jb short 0x6394
+100D:63B8 dec DI
+100D:63B9 dec SI
+100D:63BA jns short 0x63A5
+100D:63BC add SI,BP
+100D:63BE add DI,BP
+100D:63C0 jmp short 0x63A5
+100D:63F0 cmp byte ptr DS:[0x46DE],0
+100D:63F5 je short 0x642D
+100D:63F7 mov ES,word ptr DS:[0xDD00]
+100D:63FB mov DI,0x0100
+100D:63FE mov AL,byte ptr DS:[DI+0x0A]
+100D:6401 test AL,0x20
+100D:6403 je short 0x6422
+100D:6405 mov BL,byte ptr DS:[DI+0x1B]
+100D:6408 mov BH,0xFA
+100D:640A cmp BL,BH
+100D:640C jae short 0x6422
+100D:640E mov SI,word ptr DS:[DI+6]
+100D:6411 call near 0x642E
+100D:6414 shr DX,1
+100D:6416 inc DX
+100D:6417 add BL,DL
+100D:6419 cmp BL,BH
+100D:641B jb short 0x641F
+100D:641F mov byte ptr DS:[DI+0x1B],BL
+100D:6422 add DI,0x001C
+100D:6425 cmp word ptr DS:[DI],-1
+100D:6428 jne short 0x63FE
+100D:642A jmp near 0x65B6
+100D:642D ret near
+100D:642E mov CX,3
+100D:6431 dec SI
+100D:6432 xor DX,DX
+100D:6434 lods AX,word ptr ES:[SI]
+100D:6436 and AX,0x3030
+100D:6439 cmp AH,0x10
+100D:643C jne short 0x643F
+100D:643F cmp AL,0x10
+100D:6441 jne short 0x6444
+100D:6444 loop 0x6434
+100D:6446 ret near
+100D:6447 mov byte ptr DS:[0x4739],0x30
+100D:644C jmp short 0x6458
+100D:644E mov byte ptr DS:[0x4739],0x20
+100D:6453 xor CX,CX
+100D:6455 mov CL,byte ptr DS:[DI+0x0B]
+100D:6458 mov word ptr CS:[0x64ED],0x646F
+100D:645F mov DX,word ptr DS:[DI+2]
+100D:6462 mov BX,word ptr DS:[DI+4]
+100D:6465 mov word ptr DS:[0xD81C],DX
+100D:6469 mov word ptr DS:[0xD818],BX
+100D:646D jmp short 0x64B2
+100D:646F add BX,word ptr DS:[0xD818]
+100D:6473 cmp BX,0x005D
+100D:6476 jg short 0x64B1
+100D:6478 cmp BX,-93
+100D:647B jl short 0x64B1
+100D:647D push DX
+100D:647E mov DX,word ptr DS:[0xD81C]
+100D:6482 call near 0xB58B
+100D:6485 pop AX
+100D:6486 add DI,AX
+100D:6488 add DX,AX
+100D:648A jns short 0x6492
+100D:648C add DI,BP
+100D:648E add DX,BP
+100D:6490 js short 0x648C
+100D:6492 mov AL,byte ptr ES:[DI]
+100D:6495 mov AH,AL
+100D:6497 and AH,0x30
+100D:649A cmp AH,0x10
+100D:649D je short 0x64A5
+100D:649F xor AL,AH
+100D:64A1 or AL,byte ptr DS:[0x4739]
+100D:64A5 stos byte ptr ES:[DI],AL
+100D:64A6 inc DX
+100D:64A7 cmp DX,BP
+100D:64A9 jb short 0x64AF
+100D:64AB sub DX,BP
+100D:64AD sub DI,BP
+100D:64AF loop 0x6492
+100D:64B1 ret near
+100D:64B2 xor BX,BX
+100D:64B4 mov DX,BX
+100D:64B6 mov DI,DX
+100D:64B8 sub BX,CX
+100D:64BA mov SI,CX
+100D:64BC dec SI
+100D:64BD mov AX,CX
+100D:64BF xor BP,BP
+100D:64C1 jmp short 0x64C6
+100D:64C3 inc BP
+100D:64C4 inc DX
+100D:64C5 dec DI
+100D:64C6 sub AX,BP
+100D:64C8 jns short 0x64C3
+100D:64CA call near 0x64EF
+100D:64CD inc BX
+100D:64CE dec SI
+100D:64CF add AX,CX
+100D:64D1 js short 0x64D5
+100D:64D3 loop 0x64C3
+100D:64D5 inc BP
+100D:64D6 dec CX
+100D:64D7 jmp short 0x64DE
+100D:64D9 inc DX
+100D:64DA dec DI
+100D:64DB sub AX,BP
+100D:64DD inc BP
+100D:64DE call near 0x64EF
+100D:64E1 inc BX
+100D:64E2 dec SI
+100D:64E3 add AX,CX
+100D:64E5 jb short 0x64E9
+100D:64E7 loop 0x64DE
+100D:64E9 dec CX
+100D:64EA jns short 0x64D9
+100D:64EC ret near
+100D:64EF push AX
+100D:64F0 push BX
+100D:64F1 push CX
+100D:64F2 push DX
+100D:64F3 push SI
+100D:64F4 push DI
+100D:64F5 push BP
+100D:64F6 mov CX,DX
+100D:64F8 sub CX,DI
+100D:64FA inc CX
+100D:64FB mov DX,DI
+100D:64FD push SI
+100D:64FE push CX
+100D:64FF push DX
+100D:6500 call near word ptr CS:[0x64ED]
+100D:6505 pop DX
+100D:6506 pop CX
+100D:6507 pop BX
+100D:6508 call near word ptr CS:[0x64ED]
+100D:650D pop BP
+100D:650E pop DI
+100D:650F pop SI
+100D:6510 pop DX
+100D:6511 pop CX
+100D:6512 pop BX
+100D:6513 pop AX
+100D:6514 ret near
+100D:65B6 mov ES,word ptr DS:[0xDD00]
+100D:65BA mov SI,word ptr CS:[0x65B4]
+100D:65BF xor BP,BP
+100D:65C1 mov CX,0x0046
+100D:65C4 shr SI,1
+100D:65C6 jae short 0x65CC
+100D:65C8 xor SI,0x0402
+100D:65CC mov DI,SI
+100D:65CE mov AL,byte ptr ES:[DI]
+100D:65D1 mov AH,AL
+100D:65D3 and AH,0x30
+100D:65D6 cmp AH,0x10
+100D:65D9 jne short 0x65E2
+100D:65E2 add DI,0x07FF
+100D:65E6 cmp DI,0xC5F9
+100D:65EA jb short 0x65CE
+100D:65EC loop 0x65C4
+100D:65EE mov word ptr CS:[0x65B4],SI
+100D:65F3 or BP,BP
+100D:65F5 je short 0x6602
+100D:6602 ret near
+100D:6603 push SI
+100D:6604 mov AL,byte ptr DS:[DI+9]
+100D:6607 or AL,AL
+100D:6609 je short 0x661B
+100D:660B call near 0x6906
+100D:660E push SI
+100D:660F push DI
+100D:6610 push BP
+100D:6611 call near BP
+100D:6613 pop BP
+100D:6614 pop DI
+100D:6615 pop SI
+100D:6616 mov AL,byte ptr DS:[SI+1]
+100D:6619 jmp short 0x6607
+100D:661B pop SI
+100D:661C ret near
+100D:661D push SI
+100D:661E mov AL,byte ptr DS:[DI+9]
+100D:6621 or AL,AL
+100D:6623 je short 0x6637
+100D:6625 call near 0x6906
+100D:6628 jae short 0x6632
+100D:662A push SI
+100D:662B push DI
+100D:662C push BP
+100D:662D call near BP
+100D:662F pop BP
+100D:6630 pop DI
+100D:6631 pop SI
+100D:6632 mov AL,byte ptr DS:[SI+1]
+100D:6635 jmp short 0x6621
+100D:6637 pop SI
+100D:6638 ret near
+100D:6639 call near 0x6603
+100D:663C push SI
+100D:663D mov SI,0x08AA
+100D:6640 mov AL,byte ptr DS:[SI+3]
+100D:6643 test AL,0x40
+100D:6645 je short 0x6665
+100D:6647 push BX
+100D:6648 mov BX,word ptr DS:[SI+4]
+100D:664B and AL,3
+100D:664D cmp AL,3
+100D:664F jne short 0x6654
+100D:6651 mov BX,word ptr DS:[SI+0x0C]
+100D:6654 cmp BX,DI
+100D:6656 pop BX
+100D:6657 jne short 0x6665
+100D:6659 push SI
+100D:665A push DI
+100D:665B push BP
+100D:665C cmp byte ptr DS:[SI+3],0x80
+100D:6660 call near BP
+100D:6662 pop BP
+100D:6663 pop DI
+100D:6664 pop SI
+100D:6665 add SI,0x001B
+100D:6668 cmp SI,0x0FBB
+100D:666C jb short 0x6640
+100D:666E pop SI
+100D:666F ret near
+100D:668F test byte ptr DS:[SI+3],0x20
+100D:6693 jne short 0x66B0
+100D:6695 test byte ptr DS:[SI+0x10],0x80
+100D:6699 jne short 0x66B0
+100D:669B or byte ptr DS:[SI+3],0x20
+100D:669F mov byte ptr DS:[SI+0x19],0
+100D:66A3 mov AX,word ptr DS:[2]
+100D:66A6 mov word ptr DS:[SI+0x0A],AX
+100D:66A9 push DI
+100D:66AA mov AL,4
+100D:66AC call near 0x6FB0
+100D:66AF pop DI
+100D:66B0 ret near
+100D:66B1 call near 0x858C
+100D:66B4 push SI
+100D:66B5 push DI
+100D:66B6 call near 0x6917
+100D:66B9 jne short 0x66BE
+100D:66BB call near 0xC58A
+100D:66BE pop DI
+100D:66BF pop SI
+100D:66C0 mov word ptr DS:[SI+4],0x0FBC
+100D:66C5 mov byte ptr DS:[SI+3],0xA0
+100D:66C9 mov byte ptr DS:[SI+0x1A],0
+100D:66CD ret near
+100D:66CE test byte ptr DS:[SI+3],0x80
+100D:66D2 je short 0x6714
+100D:66D4 test byte ptr DS:[SI+0x10],0x80
+100D:66D8 jne short 0x6714
+100D:66DA inc byte ptr DS:[0x0028]
+100D:66DE mov AL,byte ptr DS:[0x0028]
+100D:66E1 cmp AL,byte ptr DS:[0x1178]
+100D:66E5 jb short 0x66EE
+100D:66E7 push SI
+100D:66E8 mov AL,0x4C
+100D:66EA call near 0x121F
+100D:66ED pop SI
+100D:66EE mov AL,1
+100D:66F0 call near 0x6F78
+100D:66F3 and byte ptr DS:[SI+3],0x20
+100D:66F7 or byte ptr DS:[SI+3],2
+100D:66FB call near 0x6B25
+100D:66FE call near 0x1AC5
+100D:6701 mov byte ptr DS:[SI+0x14],AL
+100D:6704 mov DI,word ptr DS:[SI+4]
+100D:6707 cmp byte ptr DS:[DI+0x0B],0
+100D:670B jne short 0x6714
+100D:670D mov byte ptr DS:[DI+0x0B],2
+100D:6711 call near 0x644E
+100D:6714 ret near
+100D:6715 mov BP,0xA5C0
+100D:6718 mov DI,word ptr SS:[BP]
+100D:671B or DI,DI
+100D:671D je short 0x6737
+100D:671F mov AL,byte ptr DS:[DI+9]
+100D:6722 or AL,AL
+100D:6724 je short 0x6732
+100D:6726 push BP
+100D:6727 call near 0x6757
+100D:672A pop BP
+100D:672B mov AL,byte ptr DS:[SI+1]
+100D:672E or AL,AL
+100D:6730 jne short 0x6726
+100D:6732 add BP,6
+100D:6735 jmp short 0x6718
+100D:6737 mov SI,0x088F
+100D:673A add SI,0x001B
+100D:673D cmp SI,0x0FBB
+100D:6741 jae short 0x6756
+100D:6743 test byte ptr DS:[SI+0x10],0x10
+100D:6747 jne short 0x673A
+100D:6749 test byte ptr DS:[SI+3],0x40
+100D:674D je short 0x673A
+100D:674F mov AL,byte ptr DS:[SI]
+100D:6751 call near 0x6757
+100D:6754 jmp short 0x673A
+100D:6756 ret near
+100D:6757 call near 0x6906
+100D:675A call near 0x686E
+100D:675D jb short 0x676D
+100D:675F call near 0x6770
+100D:6762 cmp BP,1
+100D:6765 jb short 0x676D
+100D:6767 push SI
+100D:6768 call near 0xC5CF
+100D:676B pop SI
+100D:676C clc
+100D:676D ret near
+100D:6770 test byte ptr DS:[SI+0x10],0x10
+100D:6774 jne short 0x678F
+100D:6776 mov AL,byte ptr DS:[SI+3]
+100D:6779 test byte ptr DS:[SI+0x10],0x80
+100D:677D jne short 0x6792
+100D:677F or AL,AL
+100D:6781 jns short 0x6792
+100D:6783 mov BP,word ptr DS:[SI+4]
+100D:6786 test byte ptr SS:[BP+0x0A],0x10
+100D:678A mov BP,0x181F
+100D:678D jne short 0x6791
+100D:678F xor BP,BP
+100D:6791 ret near
+100D:6792 test AL,0x40
+100D:6794 je short 0x6799
+100D:6796 jmp near 0x6827
+100D:6799 test AL,0x30
+100D:679B je short 0x67C5
+100D:679D and AX,0x000F
+100D:67A0 mov BP,AX
+100D:67A2 shl BP,1
+100D:67A4 mov BP,word ptr SS:[BP+0x16B6]
+100D:67A8 or AX,AX
+100D:67AA jne short 0x67C4
+100D:67AC mov AL,byte ptr DS:[SI+0x19]
+100D:67AF and AL,0xC0
+100D:67B1 je short 0x67C4
+100D:67B3 mov BP,0x1813
+100D:67B6 cmp AL,0x80
+100D:67B8 je short 0x67C4
+100D:67BA mov BP,0x1817
+100D:67BD cmp AL,0x40
+100D:67BF je short 0x67C4
+100D:67C1 mov BP,0x181B
+100D:67C4 ret near
+100D:67C5 and AX,0x000F
+100D:67C8 je short 0x680A
+100D:67CA mov BP,AX
+100D:67CC shl BP,1
+100D:67CE mov BP,word ptr SS:[BP+0x179C]
+100D:67D2 cmp BP,0x1774
+100D:67D6 je short 0x67ED
+100D:67D8 cmp BP,0x1732
+100D:67DC jne short 0x6791
+100D:67DE mov BP,word ptr DS:[SI+4]
+100D:67E1 test byte ptr SS:[BP+0x0A],2
+100D:67E5 mov BP,0x16AA
+100D:67E8 jne short 0x6791
+100D:67EA mov BP,0x1732
+100D:67ED mov AL,byte ptr DS:[SI+2]
+100D:67F0 dec AL
+100D:67F2 and AL,7
+100D:67F4 cmp AL,3
+100D:67F6 jb short 0x6809
+100D:67F8 add BP,0x000A
+100D:67FB cmp AL,3
+100D:67FD je short 0x6809
+100D:67FF add BP,0x000A
+100D:6802 cmp AL,4
+100D:6804 je short 0x6809
+100D:6806 add BP,0x000A
+100D:6809 ret near
+100D:680A test byte ptr DS:[SI+0x19],0xC0
+100D:680E je short 0x67CA
+100D:6810 mov AL,byte ptr DS:[SI+0x19]
+100D:6813 and AL,0xC0
+100D:6815 mov BP,0x17BC
+100D:6818 cmp AL,0x80
+100D:681A je short 0x6826
+100D:681C mov BP,0x17C9
+100D:681F cmp AL,0x40
+100D:6821 je short 0x6826
+100D:6823 mov BP,0x1806
+100D:6826 ret near
+100D:6827 push BX
+100D:6828 push DX
+100D:6829 push DI
+100D:682A mov DI,word ptr DS:[SI+4]
+100D:682D mov AX,word ptr DS:[DI+2]
+100D:6830 mov BX,word ptr DS:[DI+4]
+100D:6833 sub AX,word ptr DS:[SI+6]
+100D:6836 mov AL,AH
+100D:6838 cbw
+100D:6839 mov DX,AX
+100D:683B mov DI,DX
+100D:683D jns short 0x6841
+100D:683F neg DI
+100D:6841 sub BX,word ptr DS:[SI+8]
+100D:6844 mov CX,BX
+100D:6846 jns short 0x684A
+100D:6848 neg CX
+100D:684A mov BP,2
+100D:684D cmp DI,CX
+100D:684F jb short 0x6854
+100D:6851 dec BP
+100D:6852 xchg DX,BX
+100D:6854 or BX,BX
+100D:6856 jns short 0x685B
+100D:6858 xor BP,2
+100D:685B call near 0x693B
+100D:685E shl AX,1
+100D:6860 shl AX,1
+100D:6862 add BP,AX
+100D:6864 shl BP,1
+100D:6866 mov BP,word ptr SS:[BP+0x18BF]
+100D:686A pop DI
+100D:686B pop DX
+100D:686C pop BX
+100D:686D ret near
+100D:686E cmp byte ptr DS:[0x46EB],0x80
+100D:6873 jb short 0x68AE
+100D:6875 test byte ptr DS:[SI+3],0x40
+100D:6879 jne short 0x68AF
+100D:687B mov BL,byte ptr DS:[SI+2]
+100D:687E dec BX
+100D:687F push DI
+100D:6880 mov DI,word ptr DS:[SI+4]
+100D:6883 test byte ptr DS:[DI+0x0A],2
+100D:6887 je short 0x688C
+100D:6889 xor BL,8
+100D:688C pop DI
+100D:688D and BX,0x000F
+100D:6890 add BX,BX
+100D:6892 mov AL,byte ptr DS:[BX+0x1672]
+100D:6896 cbw
+100D:6897 mov DX,AX
+100D:6899 mov AL,byte ptr DS:[BX+0x1673]
+100D:689D cbw
+100D:689E add DX,word ptr SS:[BP+2]
+100D:68A1 mov BX,word ptr SS:[BP+4]
+100D:68A4 cmp BH,0x80
+100D:68A7 jb short 0x68AE
+100D:68A9 xor BH,BH
+100D:68AB add BX,AX
+100D:68AD clc
+100D:68AE ret near
+100D:68AF mov DX,word ptr DS:[SI+6]
+100D:68B2 mov BX,word ptr DS:[SI+8]
+100D:68B5 call near 0xB647
+100D:68B8 cmp DX,-16
+100D:68BB jle short 0x68D0
+100D:68BD cmp BX,-16
+100D:68C0 jle short 0x68D0
+100D:68C2 cmp DX,0x0148
+100D:68C6 jge short 0x68D0
+100D:68C8 cmp BX,0x00A0
+100D:68CC jge short 0x68D0
+100D:68CE clc
+100D:68CF ret near
+100D:68D0 stc
+100D:68D1 ret near
+100D:68D2 xor CX,CX
+100D:68D4 mov BP,0x68DA
+100D:68D7 jmp near 0x6603
+100D:68DA test byte ptr DS:[SI+0x10],0x10
+100D:68DE je short 0x68EA
+100D:68E0 and byte ptr DS:[SI+0x10],0xEF
+100D:68E4 inc CX
+100D:68E5 push CX
+100D:68E6 call near 0x846C
+100D:68E9 pop CX
+100D:68EA ret near
+100D:68EB mov AL,byte ptr DS:[0x1954]
+100D:68EE cmp byte ptr DS:[0x46EB],0x80
+100D:68F3 jae short 0x6906
+100D:68F5 mov AL,byte ptr DS:[0x476C]
+100D:68F8 xor AH,AH
+100D:68FA add AX,AX
+100D:68FC mov SI,AX
+100D:68FE mov SI,word ptr DS:[SI+0x4758]
+100D:6902 mov AL,byte ptr DS:[SI]
+100D:6904 jmp short 0x6912
+100D:6906 mov SI,AX
+100D:6908 dec AL
+100D:690A mov AH,0x1B
+100D:690C mul AH
+100D:690E add AX,0x08AA
+100D:6911 xchg SI,AX
+100D:6912 cmp byte ptr DS:[SI+3],0x80
+100D:6916 ret near
+100D:6917 cmp byte ptr DS:[0x46EB],0
+100D:691C mov DI,0x3CAF
+100D:691F jns short 0x6938
+100D:6921 mov CX,word ptr DS:[0x3CBE]
+100D:6925 jcxz short 0x6938
+100D:6927 add DI,0x0011
+100D:692A cmp word ptr DS:[DI+0x0A],SI
+100D:692D loopne 0x6927
+100D:692F jne short 0x6937
+100D:6931 test byte ptr DS:[DI+0x0C],0x40
+100D:6935 jne short 0x6925
+100D:6937 ret near
+100D:6938 or DI,DI
+100D:693A ret near
+100D:693B mov AL,byte ptr DS:[SI+3]
+100D:693E and AX,0x000F
+100D:6941 shr AX,1
+100D:6943 shr AX,1
+100D:6945 ret near
+100D:6946 mov SI,0x3CBE
+100D:6949 lods AX,word ptr DS:[SI]
+100D:694A mov CX,AX
+100D:694C jcxz short 0x6972
+100D:694E mov AL,0x11
+100D:6950 mul CL
+100D:6952 add SI,AX
+100D:6954 sub SI,0x0011
+100D:6957 cmp word ptr DS:[SI],DX
+100D:6959 jge short 0x6970
+100D:695B cmp word ptr DS:[SI+2],BX
+100D:695E jge short 0x6970
+100D:6960 cmp DX,word ptr DS:[SI+4]
+100D:6963 jge short 0x6970
+100D:6965 test byte ptr DS:[SI+0x0C],0x40
+100D:6969 jne short 0x6970
+100D:696B cmp BX,word ptr DS:[SI+6]
+100D:696E jl short 0x6974
+100D:6970 loop 0x6954
+100D:6972 clc
+100D:6973 ret near
+100D:6974 mov DI,word ptr DS:[SI+0x0A]
+100D:6977 cmp byte ptr DS:[DI+3],0x80
+100D:697B ret near
+100D:697C call near 0x6917
+100D:697F jne short 0x69A2
+100D:6981 test byte ptr DS:[SI+3],0x40
+100D:6985 jne short 0x698F
+100D:6987 mov DI,word ptr DS:[SI+4]
+100D:698A call near 0x5ED0
+100D:698D jne short 0x69A2
+100D:698F call near 0x686E
+100D:6992 jb short 0x69A2
+100D:6994 mov BP,0x18FD
+100D:6997 call near 0xC5CF
+100D:699A or byte ptr DS:[DI+0x0C],0x40
+100D:699E mov word ptr DS:[0x4752],DI
+100D:69A2 ret near
+100D:69A3 push DI
+100D:69A4 xor DI,DI
+100D:69A6 xchg DI,word ptr DS:[0x4752]
+100D:69AA or DI,DI
+100D:69AC je short 0x69B1
+100D:69AE call near 0xC58A
+100D:69B1 pop DI
+100D:69B2 ret near
+100D:69B3 call near 0x68EB
+100D:69B6 mov BP,0x215A
+100D:69B9 mov AL,byte ptr DS:[SI+3]
+100D:69BC and AL,0x0F
+100D:69BE cmp AL,2
+100D:69C0 je short 0x6A07
+100D:69C2 call near 0x693B
+100D:69C5 mov BP,0x216E
+100D:69C8 cmp AX,1
+100D:69CB jb short 0x69F6
+100D:69CD mov BP,0x21A6
+100D:69D0 jne short 0x69F6
+100D:69D2 mov BP,0x2182
+100D:69D5 and word ptr DS:[0x2188],0xBFFF
+100D:69DB cmp word ptr DS:[0x00E2],0x001E
+100D:69E0 jb short 0x69E8
+100D:69E2 or word ptr DS:[0x2188],0x4000
+100D:69E8 mov AL,byte ptr DS:[SI+3]
+100D:69EB and AL,0x0F
+100D:69ED cmp AL,5
+100D:69EF jne short 0x69F6
+100D:69F6 and word ptr SS:[BP+2],0xBFFF
+100D:69FB cmp byte ptr DS:[0x002A],0x10
+100D:6A00 jae short 0x6A07
+100D:6A02 or word ptr SS:[BP+2],0x4000
+100D:6A07 lea BX,BP-2
+100D:6A0A add BX,4
+100D:6A0D mov AX,word ptr DS:[BX]
+100D:6A0F and AX,0x0FFF
+100D:6A12 je short 0x6A25
+100D:6A14 cmp AX,0x0077
+100D:6A17 jne short 0x6A0A
+100D:6A19 test byte ptr DS:[0x000A],0x20
+100D:6A1E jne short 0x6A23
+100D:6A20 or AX,0x4000
+100D:6A23 mov word ptr DS:[BX],AX
+100D:6A25 mov BX,0x0F66
+100D:6A28 jmp near 0xD323
+100D:6A33 mov AL,3
+100D:6A35 push AX
+100D:6A36 call near 0x68EB
+100D:6A39 pop AX
+100D:6A3A mov CL,byte ptr DS:[SI+3]
+100D:6A3D and CL,0x0C
+100D:6A40 or CL,AL
+100D:6A42 jmp short 0x6A89
+100D:6A45 mov AL,1
+100D:6A47 call near 0x6A35
+100D:6A4A mov byte ptr DS:[0x46D8],1
+100D:6A4F call near 0x68EB
+100D:6A52 and byte ptr DS:[SI+0x10],0xBF
+100D:6A56 mov DI,word ptr DS:[SI+4]
+100D:6A59 call near 0x331E
+100D:6A5C mov DI,word ptr DS:[0x00E4]
+100D:6A60 call near 0x82DA
+100D:6A63 jne short 0x6AC5
+100D:6A65 call near 0x8770
+100D:6A68 jmp near 0x84A6
+100D:6A71 call near 0x68EB
+100D:6A74 xor CL,CL
+100D:6A76 cmp SI,0x08E0
+100D:6A7A jne short 0x6A89
+100D:6A7C inc CX
+100D:6A7D call near 0x6A89
+100D:6A80 jmp near 0x2EBF
+100D:6A83 mov CL,4
+100D:6A85 jmp short 0x6A89
+100D:6A89 call near 0x68EB
+100D:6A8C mov AL,byte ptr DS:[SI+3]
+100D:6A8F and AL,0x0F
+100D:6A91 cmp AL,CL
+100D:6A93 je short 0x6AB5
+100D:6A95 push word ptr DS:[SI+3]
+100D:6A98 push SI
+100D:6A99 push word ptr DS:[SI+0x12]
+100D:6A9C call near 0x6ACB
+100D:6A9F call near 0xA1C4
+100D:6AA2 mov AL,0x0A
+100D:6AA4 call near 0x7BB9
+100D:6AA7 call near 0xA1E2
+100D:6AAA pop AX
+100D:6AAB pop SI
+100D:6AAC pop CX
+100D:6AAD je short 0x6AB8
+100D:6AAF mov word ptr DS:[SI+0x12],AX
+100D:6AB2 call near 0x6ACB
+100D:6AB5 jmp near 0xD2E2
+100D:6AB8 call near 0x693B
+100D:6ABB or AL,AL
+100D:6ABD je short 0x6AB5
+100D:6ABF and byte ptr DS:[SI+0x19],0x7F
+100D:6AC3 jmp short 0x6AB5
+100D:6AC5 mov CL,byte ptr DS:[SI+3]
+100D:6AC8 and CL,0xFC
+100D:6ACB mov AL,byte ptr DS:[SI+3]
+100D:6ACE and AL,0x0F
+100D:6AD0 cmp AL,CL
+100D:6AD2 je short 0x6B24
+100D:6AD4 mov DI,word ptr DS:[SI+4]
+100D:6AD7 cmp CL,8
+100D:6ADA jne short 0x6AEA
+100D:6AEA mov byte ptr DS:[SI+3],CL
+100D:6AED and byte ptr DS:[SI+0x12],0xCF
+100D:6AF1 and word ptr DS:[SI+0x10],0xFEFF
+100D:6AF6 call near 0x6C15
+100D:6AF9 jb short 0x6B00
+100D:6AFB or word ptr DS:[SI+0x10],0x0100
+100D:6B00 call near 0x8461
+100D:6B03 call near 0x6B25
+100D:6B06 cmp byte ptr DS:[SI+3],2
+100D:6B0A je short 0x6B19
+100D:6B0C call near 0x693B
+100D:6B0F mov CL,AL
+100D:6B11 mov AX,0x2000
+100D:6B14 shl AX,CL
+100D:6B16 or word ptr DS:[SI+0x12],AX
+100D:6B19 mov AL,byte ptr DS:[SI]
+100D:6B1B cmp AL,byte ptr DS:[0x1954]
+100D:6B1F jne short 0x6B24
+100D:6B21 call near 0x7847
+100D:6B24 ret near
+100D:6B25 mov AX,word ptr DS:[2]
+100D:6B28 mov word ptr DS:[SI+0x0A],AX
+100D:6B2B xor AX,AX
+100D:6B2D mov word ptr DS:[SI+0x0C],AX
+100D:6B30 mov word ptr DS:[SI+0x0E],AX
+100D:6B33 ret near
+100D:6B34 inc byte ptr DS:[0x46F6]
+100D:6B38 mov AL,byte ptr DS:[0x46F6]
+100D:6B3B and AL,3
+100D:6B3D je short 0x6B4B
+100D:6B3F mov CX,1
+100D:6B42 mov DI,word ptr DS:[0x4752]
+100D:6B46 or DI,DI
+100D:6B48 jne short 0x6B55
+100D:6B4A ret near
+100D:6B4B mov SI,0x3CBE
+100D:6B4E lods AX,word ptr DS:[SI]
+100D:6B4F mov CX,AX
+100D:6B51 jcxz short 0x6B89
+100D:6B53 mov DI,SI
+100D:6B55 test byte ptr DS:[DI+0x0C],1
+100D:6B59 je short 0x6B84
+100D:6B5B mov SI,word ptr DS:[DI+0x0D]
+100D:6B5E lods AL,byte ptr DS:[SI]
+100D:6B5F or AL,AL
+100D:6B61 jne short 0x6B6D
+100D:6B63 mov SI,word ptr DS:[DI+0x0F]
+100D:6B66 lods AL,byte ptr DS:[SI]
+100D:6B67 test byte ptr DS:[DI+0x0C],2
+100D:6B6B jne short 0x6B84
+100D:6B6D xor AH,AH
+100D:6B6F mov word ptr DS:[DI+8],AX
+100D:6B72 lods AL,byte ptr DS:[SI]
+100D:6B73 cbw
+100D:6B74 mov DX,AX
+100D:6B76 lods AL,byte ptr DS:[SI]
+100D:6B77 cbw
+100D:6B78 mov BX,AX
+100D:6B7A mov word ptr DS:[DI+0x0D],SI
+100D:6B7D push CX
+100D:6B7E push DI
+100D:6B7F call near 0xC661
+100D:6B82 pop DI
+100D:6B83 pop CX
+100D:6B84 add DI,0x0011
+100D:6B87 loop 0x6B55
+100D:6B89 ret near
+100D:6B8A mov AH,byte ptr DS:[DI+0x0A]
+100D:6B8D and AH,0x41
+100D:6B90 cmp AH,1
+100D:6B93 cmc
+100D:6B94 jmp short 0x6BB6
+100D:6B96 test word ptr DS:[SI+0x10],0x0200
+100D:6B9B stc
+100D:6B9C jne short 0x6BB6
+100D:6B9E test word ptr DS:[SI+0x12],0x0030
+100D:6BA3 stc
+100D:6BA4 jne short 0x6BB6
+100D:6BA6 cmp byte ptr DS:[DI+0x12],1
+100D:6BAA jb short 0x6BB6
+100D:6BAC mov AL,byte ptr DS:[DI+0x0A]
+100D:6BAF xor AL,0x40
+100D:6BB1 and AL,0x41
+100D:6BB3 je short 0x6BB6
+100D:6BB5 stc
+100D:6BB6 pushf
+100D:6BB7 sbb AH,AH
+100D:6BB9 mov AL,byte ptr DS:[SI+3]
+100D:6BBC and AX,0x1010
+100D:6BBF cmp AL,AH
+100D:6BC1 je short 0x6BD5
+100D:6BC3 xor byte ptr DS:[SI+3],0x10
+100D:6BC7 push AX
+100D:6BC8 push DI
+100D:6BC9 call near 0x8461
+100D:6BCC pop DI
+100D:6BCD pop AX
+100D:6BCE test AL,0x10
+100D:6BD0 je short 0x6BD5
+100D:6BD2 call near 0x6B25
+100D:6BD5 popf
+100D:6BD6 ret near
+100D:6C15 mov DI,word ptr DS:[SI+4]
+100D:6C18 mov BL,byte ptr DS:[SI+3]
+100D:6C1B and BX,0x000F
+100D:6C1E shl BX,1
+100D:6C20 clc
+100D:6C21 jmp near word ptr CS:[BX+0x6BF5]
+100D:6C46 mov AL,byte ptr DS:[0x002A]
+100D:6C49 sub AL,0x2D
+100D:6C4B cmp AL,3
+100D:6C4D jae short 0x6C6E
+100D:6C4F test word ptr DS:[0x0010],0x0010
+100D:6C55 jne short 0x6C6E
+100D:6C57 mov DI,word ptr DS:[0x473C]
+100D:6C5B or DI,DI
+100D:6C5D je short 0x6C6E
+100D:6C5F call near 0x331E
+100D:6C62 cmp byte ptr DS:[0x0066],0
+100D:6C67 je short 0x6C6E
+100D:6C6E ret near
+100D:6C6F xor SI,SI
+100D:6C71 mov AX,word ptr DS:[0x101A]
+100D:6C74 cmp AL,0x80
+100D:6C76 jne short 0x6C83
+100D:6C78 mov AL,0x1C
+100D:6C7A dec AH
+100D:6C7C mul AH
+100D:6C7E add AX,0x0100
+100D:6C81 mov SI,AX
+100D:6C83 mov word ptr DS:[0x473C],SI
+100D:6C87 call near 0x6C46
+100D:6C8A mov byte ptr DS:[0x4737],0
+100D:6C8F mov SI,0x08AA
+100D:6C92 test word ptr DS:[SI+0x12],0x0430
+100D:6C97 jne short 0x6CD3
+100D:6C99 cmp byte ptr DS:[SI+0x1A],0x14
+100D:6C9D jae short 0x6CA4
+100D:6C9F call near 0x6D19
+100D:6CA2 jb short 0x6CC3
+100D:6CA4 mov AL,byte ptr DS:[SI+3]
+100D:6CA7 test AL,0xA0
+100D:6CA9 jne short 0x6CC3
+100D:6CAB test AL,0x40
+100D:6CAD jne short 0x6CED
+100D:6CAF and AX,0x000F
+100D:6CB2 mov BX,AX
+100D:6CB4 shl BX,1
+100D:6CB6 push SI
+100D:6CB7 mov DI,word ptr DS:[SI+4]
+100D:6CBA call near word ptr CS:[BX+0x6C26]
+100D:6CBF pop SI
+100D:6CC0 call near 0x6D7B
+100D:6CC3 add SI,0x001B
+100D:6CC6 cmp SI,0x0FBB
+100D:6CCA jb short 0x6C92
+100D:6CCC mov AL,byte ptr DS:[0x4737]
+100D:6CCF mov byte ptr DS:[0x00FA],AL
+100D:6CD2 ret near
+100D:6CD3 test byte ptr DS:[SI+3],0x40
+100D:6CD7 jne short 0x6CED
+100D:6CD9 cmp byte ptr DS:[0x00FA],0
+100D:6CDE je short 0x6CC3
+100D:6CED mov AL,byte ptr DS:[SI]
+100D:6CEF cmp AL,byte ptr DS:[0x1954]
+100D:6CF3 je short 0x6CC3
+100D:6CF5 push SI
+100D:6CF6 call near 0x8308
+100D:6CF9 pop SI
+100D:6CFA jmp short 0x6CC3
+100D:6CFC cmp byte ptr DS:[DI+8],0x20
+100D:6D00 jae short 0x6D18
+100D:6D02 cmp byte ptr DS:[DI+0x0B],0x0C
+100D:6D06 jae short 0x6D18
+100D:6D08 test byte ptr DS:[DI+0x0A],1
+100D:6D0C jne short 0x6D18
+100D:6D0E inc byte ptr DS:[DI+0x0B]
+100D:6D11 push SI
+100D:6D12 push DI
+100D:6D13 call near 0x644E
+100D:6D16 pop DI
+100D:6D17 pop SI
+100D:6D18 ret near
+100D:6D19 test byte ptr DS:[SI+3],0xE3
+100D:6D1D jne short 0x6D5E
+100D:6D5E ret near
+100D:6D7B test word ptr DS:[2],0x003F
+100D:6D81 je short 0x6D84
+100D:6D83 ret near
+100D:6D84 call near 0x693B
+100D:6D87 mov CL,AL
+100D:6D89 mov AX,0xC000
+100D:6D8C rol AX,CL
+100D:6D8E and AX,word ptr DS:[SI+0x12]
+100D:6D91 je short 0x6DBA
+100D:6D93 shl AX,1
+100D:6D95 jae short 0x6DA0
+100D:6DA0 shl AX,1
+100D:6DA2 jae short 0x6DAD
+100D:6DA4 cmp byte ptr DS:[SI+0x17],0
+100D:6DA8 je short 0x6DAD
+100D:6DAA dec byte ptr DS:[SI+0x17]
+100D:6DAD shl AX,1
+100D:6DAF jae short 0x6DBA
+100D:6DBA ret near
+100D:6DBB push SI
+100D:6DBC call near 0x40AE
+100D:6DBF mov SI,0x0FD8
+100D:6DC2 mov CX,0x000C
+100D:6DC5 cmp BX,word ptr DS:[SI+2]
+100D:6DC8 jne short 0x6DD6
+100D:6DD6 add SI,0x0010
+100D:6DD9 loop 0x6DC5
+100D:6DDB cmp BX,word ptr DS:[6]
+100D:6DDF jne short 0x6DFB
+100D:6DFB pop SI
+100D:6DFC mov BP,0x6E0F
+100D:6DFF call near 0x6603
+100D:6E02 xor CX,CX
+100D:6E04 mov BP,0x764D
+100D:6E07 call near 0x6603
+100D:6E0A or CX,CX
+100D:6E0C jne short 0x6E02
+100D:6E0E ret near
+100D:6E0F test word ptr DS:[SI+0x10],0x0020
+100D:6E14 je short 0x6E1F
+100D:6E16 and word ptr DS:[SI+0x10],-33
+100D:6E1A or word ptr DS:[SI+0x12],0x1000
+100D:6E1F ret near
+100D:6E20 cmp byte ptr DS:[0x46DE],0
+100D:6E25 jne short 0x6E28
+100D:6E27 ret near
+100D:6E28 test byte ptr DS:[DI+0x0A],8
+100D:6E2C je short 0x6E4B
+100D:6E2E call near 0x1AC5
+100D:6E31 sub AL,byte ptr DS:[DI+0x0B]
+100D:6E34 cmp AL,0xFE
+100D:6E36 jae short 0x6E81
+100D:6E38 and byte ptr DS:[DI+0x0A],0xF7
+100D:6E3C and byte ptr DS:[DI+8],7
+100D:6E40 inc byte ptr DS:[0x0027]
+100D:6E44 call near 0x6DBB
+100D:6E47 mov byte ptr DS:[DI+0x0B],5
+100D:6E4B call near 0x6CFC
+100D:6E4E call near 0x1AC5
+100D:6E51 sub AL,byte ptr DS:[SI+0x14]
+100D:6E54 cmp AL,8
+100D:6E56 jbe short 0x6E5D
+100D:6E58 mov AL,1
+100D:6E5A call near 0x6F93
+100D:6E5D mov AL,byte ptr DS:[SI]
+100D:6E5F cmp AL,byte ptr DS:[DI+9]
+100D:6E62 jne short 0x6E81
+100D:6E64 xor DX,DX
+100D:6E66 mov BP,0x6E82
+100D:6E69 call near 0x661D
+100D:6E6C cmp DL,3
+100D:6E6F jne short 0x6E81
+100D:6E81 ret near
+100D:6E82 cmp DI,word ptr DS:[0x114E]
+100D:6E86 je short 0x6EA7
+100D:6E88 cmp byte ptr DS:[DI+8],0x21
+100D:6E8C jae short 0x6EA7
+100D:6E8E cmp byte ptr DS:[SI+0x15],0x28
+100D:6E92 jae short 0x6EA7
+100D:6E94 mov AL,byte ptr DS:[SI+3]
+100D:6E97 and AL,0x2F
+100D:6E99 jne short 0x6EA7
+100D:6E9B mov DH,1
+100D:6E9D test byte ptr DS:[SI+0x12],0x80
+100D:6EA1 je short 0x6EA5
+100D:6EA3 shl DH,1
+100D:6EA5 or DL,DH
+100D:6EA7 ret near
+100D:6EBF push DI
+100D:6EC0 mov DI,word ptr DS:[SI+4]
+100D:6EC3 mov BP,0x6ECB
+100D:6EC6 call near 0x661D
+100D:6EC9 pop DI
+100D:6ECA ret near
+100D:6ECB test byte ptr DS:[SI+0x12],0x10
+100D:6ECF je short 0x6EDA
+100D:6EDA ret near
+100D:6EDB mov AL,1
+100D:6EDD mov DL,byte ptr DS:[BX+SI+0x16]
+100D:6EE0 add AL,DL
+100D:6EE2 cmp AL,0x5F
+100D:6EE4 jbe short 0x6EE8
+100D:6EE6 mov AL,0x5F
+100D:6EE8 mov byte ptr DS:[BX+SI+0x16],AL
+100D:6EEB xor AL,DL
+100D:6EED and AL,0xF0
+100D:6EEF je short 0x6EFC
+100D:6EF1 mov AX,word ptr DS:[SI+0x10]
+100D:6EF4 and AL,0xFC
+100D:6EF6 inc BX
+100D:6EF7 or AL,BL
+100D:6EF9 mov word ptr DS:[SI+0x10],AX
+100D:6EFC ret near
+100D:6EFD mov AH,byte ptr DS:[SI+3]
+100D:6F00 and AH,0x0F
+100D:6F03 mov AL,byte ptr DS:[SI+0x15]
+100D:6F06 cmp byte ptr DS:[0x00FA],0
+100D:6F0B je short 0x6F0F
+100D:6F0F cmp AH,6
+100D:6F12 jne short 0x6F23
+100D:6F14 push DI
+100D:6F15 mov DI,word ptr DS:[SI+4]
+100D:6F18 cmp DI,word ptr DS:[0x114E]
+100D:6F1C pop DI
+100D:6F1D jne short 0x6F31
+100D:6F1F add AL,0x1E
+100D:6F21 jmp short 0x6F2B
+100D:6F23 and AH,0xFE
+100D:6F26 cmp AH,8
+100D:6F29 je short 0x6F2F
+100D:6F2B cmp AL,0x64
+100D:6F2D jb short 0x6F31
+100D:6F2F mov AL,0x64
+100D:6F31 cmp byte ptr DS:[0x002A],0x64
+100D:6F36 jb short 0x6F47
+100D:6F38 cmp byte ptr DS:[0x002A],0x68
+100D:6F3D jae short 0x6F47
+100D:6F3F sub AL,0x28
+100D:6F41 cmp AL,0x0A
+100D:6F43 jge short 0x6F47
+100D:6F45 mov AL,0x0A
+100D:6F47 ret near
+100D:6F48 add byte ptr DS:[SI+0x15],AL
+100D:6F4B cmp byte ptr DS:[SI+0x15],0x64
+100D:6F4F jbe short 0x6F55
+100D:6F55 ret near
+100D:6F56 push SI
+100D:6F57 mov SI,0x08AA
+100D:6F5A test byte ptr DS:[SI+3],0xA0
+100D:6F5E jne short 0x6F6D
+100D:6F60 add byte ptr DS:[SI+0x15],AL
+100D:6F63 cmp byte ptr DS:[SI+0x15],0x64
+100D:6F67 jbe short 0x6F6D
+100D:6F6D add SI,0x001B
+100D:6F70 cmp SI,0x0FBB
+100D:6F74 jb short 0x6F5A
+100D:6F76 pop SI
+100D:6F77 ret near
+100D:6F78 mov AH,byte ptr DS:[0x0029]
+100D:6F7C add AL,AH
+100D:6F7E cmp AL,0xC8
+100D:6F80 jbe short 0x6F84
+100D:6F84 mov byte ptr DS:[0x0029],AL
+100D:6F87 and AX,0xFCFC
+100D:6F8A sub AL,AH
+100D:6F8C shr AL,1
+100D:6F8E shr AL,1
+100D:6F90 jne short 0x6F56
+100D:6F92 ret near
+100D:6F93 sub byte ptr DS:[SI+0x15],AL
+100D:6F96 jae short 0x6F9C
+100D:6F9C cmp byte ptr DS:[SI+0x15],5
+100D:6FA0 jae short 0x6FAF
+100D:6FAF ret near
+100D:6FB0 mov AH,AL
+100D:6FB2 mov AL,byte ptr DS:[0x0029]
+100D:6FB5 sub AL,AH
+100D:6FB7 ja short 0x6FBB
+100D:6FBB mov AH,AL
+100D:6FBD xchg AL,byte ptr DS:[0x0029]
+100D:6FC1 and AX,0xFCFC
+100D:6FC4 sub AL,AH
+100D:6FC6 shr AL,1
+100D:6FC8 shr AL,1
+100D:6FCA jne short 0x6FCD
+100D:6FCD push SI
+100D:6FCE mov SI,0x08AA
+100D:6FD1 test byte ptr DS:[SI+3],0xA0
+100D:6FD5 jne short 0x6FDA
+100D:6FD7 call near 0x6F93
+100D:6FDA add SI,0x001B
+100D:6FDD cmp SI,0x0FBB
+100D:6FE1 jb short 0x6FD1
+100D:6FE3 pop SI
+100D:6FE4 ret near
+100D:6FE5 call near 0x6E20
+100D:6FE8 test word ptr DS:[SI+0x10],0x0200
+100D:6FED jne short 0x705C
+100D:6FEF call near 0x6B96
+100D:6FF2 jae short 0x6FF7
+100D:6FF4 jmp near 0x707B
+100D:6FF7 call near 0x714C
+100D:6FFA or word ptr DS:[SI+0x10],0x0100
+100D:6FFF call near 0x708A
+100D:7002 push AX
+100D:7003 mov DX,word ptr DS:[SI+0x0E]
+100D:7006 add AX,DX
+100D:7008 mov word ptr DS:[SI+0x0E],AX
+100D:700B xor AX,DX
+100D:700D and AX,0xFF80
+100D:7010 je short 0x7019
+100D:7012 mov AL,1
+100D:7014 xor BX,BX
+100D:7016 call near 0x6EDD
+100D:7019 pop AX
+100D:701A push AX
+100D:701B add AX,word ptr DS:[0x46E1]
+100D:701F xor DX,DX
+100D:7021 mov CX,0x000A
+100D:7024 div CX
+100D:7026 mov word ptr DS:[0x46E1],DX
+100D:702A add word ptr DS:[0x00A0],AX
+100D:702E pop AX
+100D:702F add AL,byte ptr DS:[DI+0x13]
+100D:7032 adc AH,0
+100D:7035 mov CL,byte ptr DS:[DI+0x11]
+100D:7038 div CL
+100D:703A mov byte ptr DS:[DI+0x13],AH
+100D:703D mov AH,byte ptr DS:[DI+0x12]
+100D:7040 and AH,0x0F
+100D:7043 cmp AL,AH
+100D:7045 jbe short 0x7052
+100D:7047 test byte ptr DS:[0x46EB],0x40
+100D:704C je short 0x7052
+100D:7052 sub byte ptr DS:[DI+0x12],AL
+100D:7055 jae short 0x705B
+100D:705B ret near
+100D:705C mov AX,word ptr DS:[2]
+100D:705F mov AH,byte ptr DS:[SI]
+100D:7061 and AX,0x0F0F
+100D:7064 cmp AL,AH
+100D:7066 jne short 0x7074
+100D:7068 and word ptr DS:[SI+0x10],0xFDFF
+100D:706D call near 0x6B96
+100D:7070 jb short 0x705B
+100D:7072 jmp short 0x6FFA
+100D:7074 mov word ptr DS:[SI+0x0C],0
+100D:7079 jmp short 0x7085
+100D:707B mov word ptr DS:[SI+0x0C],0
+100D:7080 mov word ptr DS:[SI+0x0E],0
+100D:7085 or byte ptr DS:[SI+3],0x10
+100D:7089 ret near
+100D:708A call near 0x6EFD
+100D:708D mov AH,byte ptr DS:[SI+0x16]
+100D:7090 and AH,0xF0
+100D:7093 add AL,AH
+100D:7095 mul byte ptr DS:[SI+0x1A]
+100D:7098 test byte ptr DS:[SI+0x19],0x80
+100D:709C jne short 0x70A2
+100D:709E shr AX,1
+100D:70A0 shr AX,1
+100D:70A2 mov AL,byte ptr DS:[DI+0x12]
+100D:70A5 and AL,0xF0
+100D:70A7 inc AX
+100D:70A8 mul AH
+100D:70AA xchg AL,AH
+100D:70AC rol AX,1
+100D:70AE and AH,1
+100D:70B1 mov DX,AX
+100D:70B3 xchg DX,word ptr DS:[SI+0x0C]
+100D:70B6 sub DX,AX
+100D:70B8 je short 0x70CB
+100D:70BA mov BL,8
+100D:70BC jb short 0x70C0
+100D:70BE mov BL,4
+100D:70C0 mov CX,word ptr DS:[SI+0x10]
+100D:70C3 and CL,0xF3
+100D:70C6 or CL,BL
+100D:70C8 mov word ptr DS:[SI+0x10],CX
+100D:70CB ret near
+100D:70CC mov AL,byte ptr DS:[DI+0x0A]
+100D:70CF test AL,2
+100D:70D1 jne short 0x710F
+100D:70D3 test AL,0x40
+100D:70D5 jne short 0x7126
+100D:70D7 call near 0x6B8A
+100D:70DA jb short 0x710F
+100D:70DC mov AX,word ptr DS:[SI+0x0C]
+100D:70DF or AX,AX
+100D:70E1 jne short 0x70F7
+100D:70E3 mov AL,byte ptr DS:[DI+0x11]
+100D:70E6 mov CL,4
+100D:70E8 shl AX,CL
+100D:70EA mov CL,byte ptr DS:[SI+0x15]
+100D:70ED add CL,byte ptr DS:[SI+0x16]
+100D:70F0 div CL
+100D:70F2 xor AH,AH
+100D:70F4 mov word ptr DS:[SI+0x0C],AX
+100D:70F7 mov CX,word ptr DS:[2]
+100D:70FB sub CX,word ptr DS:[SI+0x0A]
+100D:70FE cmp AX,CX
+100D:7100 jbe short 0x7110
+100D:7102 jcxz short 0x710F
+100D:7104 mov DX,0x0064
+100D:7107 xchg CX,AX
+100D:7108 mul DX
+100D:710A div CX
+100D:710C mov word ptr DS:[SI+0x0E],AX
+100D:710F ret near
+100D:7110 xor BX,BX
+100D:7112 mov AL,2
+100D:7114 call near 0x6EDD
+100D:7117 or byte ptr DS:[DI+0x0A],0x40
+100D:711B test byte ptr DS:[0x46EB],0x40
+100D:7120 je short 0x7126
+100D:7126 mov AL,byte ptr DS:[SI+3]
+100D:7129 push AX
+100D:712A call near 0x6B8A
+100D:712D mov word ptr DS:[SI+0x0E],0x0064
+100D:7132 pop AX
+100D:7133 cmp SI,word ptr DS:[0x46EF]
+100D:7137 je short 0x710F
+100D:7139 cmp word ptr DS:[0x11D3],0
+100D:713E jne short 0x7149
+100D:7140 test AL,0x10
+100D:7142 jne short 0x710F
+100D:7144 mov AL,0x0E
+100D:7146 jmp short 0x71B2
+100D:7149 jmp near 0x84A6
+100D:714C test byte ptr DS:[0x000A],1
+100D:7151 je short 0x71BB
+100D:7153 test byte ptr DS:[SI+0x19],0x80
+100D:7157 je short 0x71BB
+100D:7159 mov AX,word ptr DS:[2]
+100D:715C mov AH,byte ptr DS:[SI]
+100D:715E and AX,0x0F0F
+100D:7161 cmp AL,AH
+100D:7163 jne short 0x71BB
+100D:7165 call near 0x71BC
+100D:7168 call near 0xE3CC
+100D:716B mov AL,byte ptr DS:[DI]
+100D:716D mov BX,0x1141
+100D:7170 xlat byte ptr DS:[BX+AL]
+100D:7171 cmp AL,AH
+100D:7173 jb short 0x71BB
+100D:7175 or word ptr DS:[SI+0x10],0x4000
+100D:717A test byte ptr DS:[SI+0x19],0x40
+100D:717E jne short 0x71BB
+100D:7180 and AH,3
+100D:7183 je short 0x71BB
+100D:7185 cmp AH,2
+100D:7188 ja short 0x71A4
+100D:718A je short 0x719C
+100D:718C or word ptr DS:[SI+0x10],0x2000
+100D:7191 sub byte ptr DS:[SI+0x1A],2
+100D:7195 ja short 0x71BB
+100D:719C or word ptr DS:[SI+0x10],0x0200
+100D:71A1 jmp near 0x7085
+100D:71A4 or word ptr DS:[SI+0x10],0x1000
+100D:71A9 and byte ptr DS:[SI+0x19],0x7F
+100D:71AD dec byte ptr DS:[DI+0x14]
+100D:71B0 mov AL,6
+100D:71B2 mov AH,0x0F
+100D:71B4 push SI
+100D:71B5 push DI
+100D:71B6 call near 0x29F0
+100D:71B9 pop DI
+100D:71BA pop SI
+100D:71BB ret near
+100D:71BC cmp byte ptr DS:[0x002A],0x35
+100D:71C1 jb short 0x71EE
+100D:71C3 test word ptr DS:[SI+0x12],0x0040
+100D:71C8 je short 0x71EE
+100D:71CA rol word ptr DS:[0],1
+100D:71CE rol word ptr DS:[0],1
+100D:71D2 rol word ptr DS:[0],1
+100D:71D6 test word ptr DS:[0],7
+100D:71DC jne short 0x71EE
+100D:71DE call near 0x719C
+100D:71E1 or word ptr DS:[SI+0x10],0x8000
+100D:71E6 or byte ptr DS:[DI+0x0A],4
+100D:71EA mov AL,3
+100D:71EC jmp short 0x71B2
+100D:71EE ret near
+100D:71EF call near 0x6E20
+100D:71F2 and word ptr DS:[SI+0x10],0xFDFF
+100D:71F7 test byte ptr DS:[DI+0x0A],4
+100D:71FB jne short 0x725F
+100D:71FD dec word ptr DS:[SI+0x0C]
+100D:7200 js short 0x7203
+100D:7202 ret near
+100D:7203 cmp DI,word ptr DS:[0x473C]
+100D:7207 jne short 0x7212
+100D:7209 or word ptr DS:[SI+0x10],0x0800
+100D:720E mov AL,0xA0
+100D:7210 jmp short 0x721B
+100D:7212 call near 0x7298
+100D:7215 mov AX,DX
+100D:7217 jcxz short 0x721B
+100D:7219 div CL
+100D:721B xor AH,AH
+100D:721D sub AL,byte ptr DS:[SI+0x17]
+100D:7220 jae short 0x7224
+100D:7222 xor AL,AL
+100D:7224 shl AX,1
+100D:7226 mov CX,AX
+100D:7228 call near 0x6EFD
+100D:722B xor AH,AH
+100D:722D cmp AL,0x1E
+100D:722F jae short 0x7233
+100D:7231 mov AL,0x1E
+100D:7233 add CX,AX
+100D:7235 mov BL,byte ptr DS:[SI+0x19]
+100D:7238 mov AX,0x00C8
+100D:723B test BL,0x0C
+100D:723E jne short 0x7252
+100D:7240 mov AL,0xFA
+100D:7242 test BL,0x10
+100D:7245 jne short 0x7252
+100D:7247 mov AX,0x012C
+100D:724A test BL,0x20
+100D:724D jne short 0x7252
+100D:724F mov AX,0x0190
+100D:7252 xor DX,DX
+100D:7254 div CX
+100D:7256 mov word ptr DS:[SI+0x0C],AX
+100D:7259 mov BX,1
+100D:725C jmp near 0x6EDB
+100D:725F mov AX,word ptr DS:[SI+0x0E]
+100D:7262 cmp AH,0xFF
+100D:7265 je short 0x726D
+100D:7267 mov AX,0xFF40
+100D:726A sub AL,byte ptr DS:[SI+0x17]
+100D:726D dec AL
+100D:726F jns short 0x7279
+100D:7271 call near 0x727D
+100D:7274 or word ptr DS:[SI+0x12],CX
+100D:7277 xor AX,AX
+100D:7279 mov word ptr DS:[SI+0x0E],AX
+100D:727C ret near
+100D:727D and byte ptr DS:[DI+0x0A],0xFB
+100D:7281 mov BP,0x7289
+100D:7284 xor CX,CX
+100D:7286 jmp near 0x661D
+100D:7289 test word ptr DS:[SI+0x12],0x0040
+100D:728E je short 0x7297
+100D:7290 and word ptr DS:[SI+0x12],-65
+100D:7294 mov CX,0x0100
+100D:7297 ret near
+100D:7298 mov BP,0x72A2
+100D:729B xor CX,CX
+100D:729D xor DX,DX
+100D:729F jmp near 0x661D
+100D:72A2 cmp byte ptr DS:[SI+3],4
+100D:72A6 jne short 0x72AF
+100D:72A8 inc CX
+100D:72A9 add DL,byte ptr DS:[SI+0x17]
+100D:72AC adc DH,0
+100D:72AF ret near
+100D:72B0 mov BX,word ptr DS:[2]
+100D:72B4 sub BX,word ptr DS:[SI+0x0A]
+100D:72B7 test byte ptr DS:[SI+0x10],0x40
+100D:72BB jne short 0x72F7
+100D:72BD mov AL,0x50
+100D:72BF sub AL,byte ptr DS:[SI+0x17]
+100D:72C2 cbw
+100D:72C3 sar AX,1
+100D:72C5 mov BP,AX
+100D:72C7 sar AX,1
+100D:72C9 cmp AX,BX
+100D:72CB jge short 0x72F7
+100D:72CD cmp word ptr DS:[SI+0x0C],0
+100D:72D1 jne short 0x72DF
+100D:72D3 push BX
+100D:72D4 push BP
+100D:72D5 call near 0x68D2
+100D:72D8 pop BP
+100D:72D9 pop BX
+100D:72DA jcxz short 0x72F3
+100D:72DC mov word ptr DS:[SI+0x0C],CX
+100D:72DF cmp BP,BX
+100D:72E1 jge short 0x72F7
+100D:72E3 push BX
+100D:72E4 call near 0x33BE
+100D:72E7 pop BX
+100D:72E8 mov AX,word ptr DS:[0x0094]
+100D:72EB xor DX,DX
+100D:72ED div word ptr DS:[SI+0x0C]
+100D:72F0 mov word ptr DS:[SI+0x0E],AX
+100D:72F3 or byte ptr DS:[SI+0x10],0x40
+100D:72F7 mov AL,byte ptr DS:[SI]
+100D:72F9 cmp AL,byte ptr DS:[DI+9]
+100D:72FC je short 0x7316
+100D:72FE mov AL,byte ptr DS:[SI+0x17]
+100D:7301 xor AH,AH
+100D:7303 shr AX,1
+100D:7305 cmp AX,BX
+100D:7307 jae short 0x7316
+100D:7316 ret near
+100D:739E or byte ptr DS:[0x11BC],1
+100D:73A3 cmp DI,0x011C
+100D:73A7 jne short 0x73D9
+100D:73D9 call near 0x33BE
+100D:73DC cmp word ptr DS:[0x0094],0
+100D:73E1 je short 0x7429
+100D:73E3 call near 0xE3CC
+100D:73E6 cmp AL,byte ptr DS:[0x009C]
+100D:73EA jb short 0x73EF
+100D:73EC jmp near 0x751D
+100D:73EF call near 0x5098
+100D:73F2 push CX
+100D:73F3 call near 0x342D
+100D:73F6 pop CX
+100D:73F7 jcxz short 0x73FD
+100D:73F9 xor DX,DX
+100D:73FB div CX
+100D:73FD mov DL,AL
+100D:73FF inc DL
+100D:7401 jne short 0x7405
+100D:7405 xor DH,DH
+100D:7407 xor CX,CX
+100D:7409 xor BX,BX
+100D:740B mov BP,0x7552
+100D:740E call near 0x6603
+100D:7411 add word ptr DS:[SI+0x0C],CX
+100D:7414 or BX,BX
+100D:7416 je short 0x7429
+100D:7418 ret near
+100D:7429 cmp DI,word ptr DS:[0x114E]
+100D:742D je short 0x7434
+100D:742F mov AL,7
+100D:7431 call near 0x71B2
+100D:7434 cmp byte ptr DS:[DI+8],0x28
+100D:7438 jae short 0x7443
+100D:743A and byte ptr DS:[DI+0x0A],0xFD
+100D:743E mov BP,0x75AF
+100D:7441 jmp short 0x7479
+100D:7443 push SI
+100D:7444 push DI
+100D:7445 mov byte ptr DS:[DI+0x0B],5
+100D:7449 call near 0x644E
+100D:744C pop DI
+100D:744D pop SI
+100D:744E call near 0x1AC5
+100D:7451 add AL,2
+100D:7453 mov byte ptr DS:[DI+0x0B],AL
+100D:7456 mov AL,4
+100D:7458 call near 0x6F78
+100D:745B mov AL,1
+100D:745D call near 0x6F56
+100D:7460 or byte ptr DS:[DI+0x0A],8
+100D:7464 push CX
+100D:7465 mov CL,byte ptr DS:[DI]
+100D:7467 mov AX,0x8000
+100D:746A rol AX,CL
+100D:746C mov word ptr DS:[0x115A],AX
+100D:746F pop CX
+100D:7470 mov BP,0x75AF
+100D:7473 call near 0x6603
+100D:7476 mov BP,0x75EA
+100D:7479 call near 0x6603
+100D:747C xor DX,DX
+100D:747E test word ptr DS:[0],3
+100D:7484 jne short 0x7487
+100D:7486 inc DX
+100D:7487 xor CX,CX
+100D:7489 mov BP,0x762A
+100D:748C call near 0x6603
+100D:748F cmp CX,DX
+100D:7491 ja short 0x7487
+100D:7493 push SI
+100D:7494 push DI
+100D:7495 call near 0x1CDA
+100D:7498 cmp DL,1
+100D:749B ja short 0x74B1
+100D:74B1 pop DI
+100D:74B2 pop SI
+100D:74B3 jmp near 0x5D50
+100D:74B6 and byte ptr DS:[DI+0x0A],0xFD
+100D:74BA cmp DI,word ptr DS:[0x114E]
+100D:74BE je short 0x7500
+100D:74C0 mov AL,byte ptr DS:[DI+8]
+100D:74C3 cmp AL,0x28
+100D:74C5 jae short 0x74EB
+100D:74C7 and AL,7
+100D:74C9 add AL,0x28
+100D:74CB mov byte ptr DS:[DI+8],AL
+100D:74CE dec byte ptr DS:[0x0027]
+100D:74D2 push SI
+100D:74D3 call near 0x40AE
+100D:74D6 mov DL,3
+100D:74D8 mov SI,0x0FD8
+100D:74DB mov CX,9
+100D:74DE cmp BX,word ptr DS:[SI+2]
+100D:74E1 jne short 0x74E5
+100D:74E5 add SI,0x0010
+100D:74E8 loop 0x74DE
+100D:74EA pop SI
+100D:74EB mov BP,0x7506
+100D:74EE call near 0x6603
+100D:74F1 push DI
+100D:74F2 mov CX,5
+100D:74F5 call near 0x6447
+100D:74F8 pop DI
+100D:74F9 and byte ptr DS:[DI+0x0A],0xF6
+100D:74FD jmp near 0x5D44
+100D:7506 test byte ptr DS:[SI+0x10],0x80
+100D:750A je short 0x7511
+100D:750C or byte ptr DS:[SI+0x10],0x10
+100D:7510 ret near
+100D:7511 or byte ptr DS:[SI+3],0x20
+100D:7515 ret near
+100D:751D mov AX,word ptr DS:[0x0094]
+100D:7520 xor DX,DX
+100D:7522 xor CX,CX
+100D:7524 mov CL,byte ptr DS:[0x0060]
+100D:7528 jcxz short 0x752C
+100D:752A div CX
+100D:752C mov DX,AX
+100D:752E call near 0x758D
+100D:7531 add word ptr DS:[SI+0x0E],AX
+100D:7534 sub byte ptr DS:[SI+0x1A],AL
+100D:7537 ja short 0x7551
+100D:7539 mov BX,0x007F
+100D:753C call near 0xE3B7
+100D:753F add AL,0x1E
+100D:7541 mov byte ptr DS:[SI+0x1A],AL
+100D:7544 call near 0x668F
+100D:7547 call near 0x5098
+100D:754A or DX,DX
+100D:754C jne short 0x7551
+100D:754E call near 0x74B6
+100D:7551 ret near
+100D:7552 test byte ptr DS:[SI+0x10],0x80
+100D:7556 je short 0x758C
+100D:7558 inc BX
+100D:7559 call near 0x758D
+100D:755C add CX,AX
+100D:755E sub byte ptr DS:[SI+0x1A],AL
+100D:7561 ja short 0x758C
+100D:7563 or byte ptr DS:[SI+3],0x20
+100D:7567 or byte ptr DS:[SI+0x10],0x10
+100D:756B dec BX
+100D:756C push BX
+100D:756D push CX
+100D:756E push DX
+100D:756F mov BX,3
+100D:7572 call near 0xE3B7
+100D:7575 jne short 0x7581
+100D:7577 mov DI,word ptr DS:[SI+4]
+100D:757A and byte ptr DS:[SI+0x19],0xFB
+100D:757E call near 0x7F75
+100D:7581 call near 0x6917
+100D:7584 jne short 0x7589
+100D:7589 pop DX
+100D:758A pop CX
+100D:758B pop BX
+100D:758C ret near
+100D:758D push DX
+100D:758E mov AX,DX
+100D:7590 mov DX,0x00FF
+100D:7593 sub DL,byte ptr DS:[SI+0x17]
+100D:7596 sub DL,byte ptr DS:[SI+0x17]
+100D:7599 mul DX
+100D:759B mov AL,AH
+100D:759D xor AH,AH
+100D:759F or DX,DX
+100D:75A1 je short 0x75A5
+100D:75A3 mov AL,0xFF
+100D:75A5 pop DX
+100D:75A6 cmp AL,byte ptr DS:[SI+0x1A]
+100D:75A9 jbe short 0x75AE
+100D:75AB mov AL,byte ptr DS:[SI+0x1A]
+100D:75AE ret near
+100D:75AF jae short 0x75E2
+100D:75B1 cmp SI,0x08E0
+100D:75B5 je short 0x75E3
+100D:75B7 test byte ptr DS:[SI+3],0x20
+100D:75BB jne short 0x75DE
+100D:75BD or word ptr DS:[SI+0x10],0x0400
+100D:75C2 cmp byte ptr DS:[DI+8],0x28
+100D:75C6 jb short 0x75CC
+100D:75C8 or word ptr DS:[SI+0x10],0x0020
+100D:75CC mov AL,4
+100D:75CE call near 0x6F48
+100D:75D1 mov BX,1
+100D:75D4 mov AL,3
+100D:75D6 call near 0x6EDD
+100D:75D9 mov CL,4
+100D:75DB jmp near 0x6ACB
+100D:75DE mov byte ptr DS:[SI+3],0x22
+100D:75E2 ret near
+100D:75EA jb short 0x764C
+100D:75EC test byte ptr DS:[SI+0x10],0x80
+100D:75F0 je short 0x764C
+100D:75F2 call near 0x858C
+100D:75F5 and byte ptr DS:[SI+0x10],0x7F
+100D:75F9 call near 0x851F
+100D:75FC cmp CL,8
+100D:75FF jae short 0x7655
+100D:7601 mov byte ptr DS:[SI+3],0xA0
+100D:7605 mov BX,0x0F7F
+100D:7608 call near 0xE3B7
+100D:760B add AX,0x1464
+100D:760E mov byte ptr DS:[SI+0x1A],AL
+100D:7611 mov byte ptr DS:[SI+0x15],AH
+100D:7614 mov BX,0x1F1F
+100D:7617 call near 0xE3B7
+100D:761A add AX,0x0A0A
+100D:761D mov byte ptr DS:[SI+0x16],AL
+100D:7620 mov byte ptr DS:[SI+0x17],AH
+100D:7623 mov byte ptr DS:[SI+0x19],0
+100D:7627 jmp near 0x68E0
+100D:762A jb short 0x764C
+100D:762C test byte ptr DS:[SI+0x10],0x80
+100D:7630 je short 0x764C
+100D:7632 cmp CX,DX
+100D:7634 jae short 0x7655
+100D:7636 mov byte ptr DS:[SI+3],0xAC
+100D:763A or byte ptr DS:[SI+0x10],0x10
+100D:763E mov byte ptr DS:[SI+0x1A],0
+100D:7642 mov word ptr DS:[SI+0x0C],0
+100D:7647 mov byte ptr DS:[SI+0x19],0
+100D:764B inc CX
+100D:764C ret near
+100D:764D jb short 0x765D
+100D:764F test byte ptr DS:[SI+0x10],0x80
+100D:7653 je short 0x765D
+100D:7655 push CX
+100D:7656 push DX
+100D:7657 call near 0x66B1
+100D:765A pop DX
+100D:765B pop CX
+100D:765C inc CX
+100D:765D ret near
+100D:7734 call near 0x68EB
+100D:7737 mov AL,byte ptr DS:[SI+0x19]
+100D:773A mov BX,2
+100D:773D mov CL,0x20
+100D:773F and CL,AL
+100D:7741 je short 0x7780
+100D:7743 inc BX
+100D:7744 shr CL,1
+100D:7746 and CL,AL
+100D:7748 je short 0x7780
+100D:774A inc BX
+100D:774B shr CL,1
+100D:774D and CL,AL
+100D:774F je short 0x7780
+100D:7751 inc BX
+100D:7752 shr CL,1
+100D:7754 and CL,AL
+100D:7756 je short 0x7780
+100D:7758 mov AL,0x0F
+100D:775A jmp short 0x77CA
+100D:776D call near 0x68EB
+100D:7770 mov AL,byte ptr DS:[SI+0x19]
+100D:7773 xor BX,BX
+100D:7775 test AL,0x80
+100D:7777 je short 0x7780
+100D:7779 inc BX
+100D:777A test AL,0x40
+100D:777C mov AL,0x0F
+100D:777E jne short 0x77CA
+100D:7780 push SI
+100D:7781 mov AX,BX
+100D:7783 add AX,0x00E8
+100D:7786 mov word ptr DS:[0x1203],AX
+100D:7789 call near 0x77D7
+100D:778C jb short 0x7792
+100D:778E pop SI
+100D:778F jmp near 0x7D81
+100D:7792 call near 0x7F90
+100D:7795 pop SI
+100D:7796 cmp word ptr DS:[0x470C],-1
+100D:779B je short 0x77C8
+100D:779D mov CL,BL
+100D:779F mov BH,0x80
+100D:77A1 shr BH,CL
+100D:77A3 push BX
+100D:77A4 push SI
+100D:77A5 push word ptr DS:[0x470E]
+100D:77A9 call near 0x6A33
+100D:77AC pop DI
+100D:77AD pop SI
+100D:77AE pop AX
+100D:77AF call near 0xA1E2
+100D:77B2 jne short 0x77D4
+100D:77B4 mov word ptr DS:[SI+0x0E],AX
+100D:77B7 mov AX,word ptr DS:[SI+4]
+100D:77BA mov word ptr DS:[SI+0x0C],AX
+100D:77BD call near 0x84A6
+100D:77C0 mov byte ptr DS:[0x46D8],1
+100D:77C5 jmp near 0x8770
+100D:77C8 mov AL,0x0E
+100D:77CA push AX
+100D:77CB push SI
+100D:77CC call near 0xD2FD
+100D:77CF pop SI
+100D:77D0 pop AX
+100D:77D1 call near 0x7BB9
+100D:77D4 jmp near 0xC13B
+100D:77D7 call near 0x68EB
+100D:77DA mov DI,word ptr DS:[SI+4]
+100D:77DD push BX
+100D:77DE push SI
+100D:77DF call near 0x7F27
+100D:77E2 pop SI
+100D:77E3 pop BX
+100D:77E4 mov AL,1
+100D:77E6 cmp BX,1
+100D:77E9 jne short 0x77F3
+100D:77EB cmp DI,word ptr DS:[0x1150]
+100D:77EF jne short 0x77F3
+100D:77F1 inc AL
+100D:77F3 cmp byte ptr DS:[BX+0x46FE],AL
+100D:77F7 jb short 0x7809
+100D:77F9 mov AL,byte ptr DS:[SI+0x19]
+100D:77FC mov byte ptr DS:[0x003D],AL
+100D:77FF mov AL,0x80
+100D:7801 mov CL,BL
+100D:7803 shr AL,CL
+100D:7805 or byte ptr DS:[SI+0x19],AL
+100D:7808 clc
+100D:7809 ret near
+100D:780A call near 0x7C63
+100D:780D mov BP,0x2122
+100D:7810 cmp AX,word ptr DS:[0x1176]
+100D:7814 ja short 0x783E
+100D:7816 mov AL,byte ptr DS:[SI+3]
+100D:7819 test AL,0x20
+100D:781B je short 0x7821
+100D:781D cmp AL,0x22
+100D:781F jne short 0x783E
+100D:7821 mov BP,0x214A
+100D:7824 test byte ptr DS:[SI+3],0x40
+100D:7828 jne short 0x783E
+100D:782A mov BP,0x210A
+100D:782D mov AX,0x0052
+100D:7830 cmp byte ptr DS:[0x46F3],1
+100D:7835 adc AX,0
+100D:7838 mov word ptr SS:[BP+0x12],AX
+100D:783B call near 0x7847
+100D:783E mov BX,0x8751
+100D:7841 call near 0xD323
+100D:7844 jmp near 0xC13B
+100D:7847 mov word ptr DS:[0x2110],0x404F
+100D:784D or byte ptr DS:[0x2115],0x40
+100D:7852 or byte ptr DS:[0x2119],0x40
+100D:7857 test word ptr DS:[SI+0x12],0x0400
+100D:785C jne short 0x78BB
+100D:785E mov AL,byte ptr DS:[SI+3]
+100D:7861 and AL,0x0F
+100D:7863 cmp AL,1
+100D:7865 je short 0x786C
+100D:7867 and byte ptr DS:[0x2111],0xBF
+100D:786C cmp AL,2
+100D:786E jne short 0x7876
+100D:7870 mov byte ptr DS:[0x2110],0x56
+100D:7875 ret near
+100D:7876 cmp byte ptr DS:[0x002A],5
+100D:787B jb short 0x7882
+100D:787D and byte ptr DS:[0x2119],0xBF
+100D:7882 cmp byte ptr DS:[0x002A],4
+100D:7887 jb short 0x78BB
+100D:7889 test word ptr DS:[SI+0x10],0x0200
+100D:788E jne short 0x78BB
+100D:7890 mov DI,word ptr DS:[SI+4]
+100D:7893 test byte ptr DS:[DI+0x0A],8
+100D:7897 jne short 0x789F
+100D:7899 cmp byte ptr DS:[DI+8],0x28
+100D:789D jae short 0x78BB
+100D:789F push SI
+100D:78A0 call near 0x7F27
+100D:78A3 mov SI,0x46FE
+100D:78A6 mov CX,7
+100D:78A9 xor AL,AL
+100D:78AB or AL,byte ptr DS:[SI]
+100D:78AD inc SI
+100D:78AE loop 0x78AB
+100D:78B0 pop SI
+100D:78B1 or AL,byte ptr DS:[SI+0x19]
+100D:78B4 je short 0x78BB
+100D:78B6 and byte ptr DS:[0x2115],0xBF
+100D:78BB ret near
+100D:78BC mov DI,word ptr DS:[SI+4]
+100D:78BF call near 0x7C63
+100D:78C2 cmp AX,word ptr DS:[0x1176]
+100D:78C6 jae short 0x78BB
+100D:78C8 call near 0x6917
+100D:78CB jne short 0x78BB
+100D:78CD call near 0xC08E
+100D:78D0 mov word ptr DS:[0x46FA],SI
+100D:78D4 push SI
+100D:78D5 mov SI,0x18DF
+100D:78D8 mov BX,word ptr DS:[DI+2]
+100D:78DB mov DX,word ptr DS:[DI]
+100D:78DD mov CX,0x0064
+100D:78E0 call near 0x5F25
+100D:78E3 pop SI
+100D:78E4 mov AL,byte ptr DS:[SI]
+100D:78E6 mov byte ptr DS:[0x1955],AL
+100D:78E9 call near 0x6917
+100D:78EC je short 0x78F1
+100D:78F1 call near 0xC08E
+100D:78F4 call near 0x31F6
+100D:78F7 add word ptr DS:[0x11F3],0x000C
+100D:78FC mov SI,0x18DF
+100D:78FF call near 0x7B1B
+100D:7902 call near 0xD075
+100D:7905 mov CL,0x9A
+100D:7907 mov CH,byte ptr DS:[0x18E8]
+100D:790B mov DX,word ptr DS:[0x18DF]
+100D:790F mov BX,word ptr DS:[0x18E1]
+100D:7913 add DX,0x000C
+100D:7916 add BX,4
+100D:7919 mov AX,0x003A
+100D:791C test byte ptr DS:[0x0030],0x40
+100D:7921 je short 0x7924
+100D:7923 inc AX
+100D:7924 call near 0x8865
+100D:7927 mov CL,0x96
+100D:7929 sub DX,8
+100D:792C add BX,9
+100D:792F mov DI,word ptr DS:[0x002C]
+100D:7933 call near 0x62A6
+100D:7936 mov CL,0x9A
+100D:7938 add BX,0x000A
+100D:793B mov AL,byte ptr DS:[0x0030]
+100D:793E test AL,0x20
+100D:7940 je short 0x794C
+100D:794C mov AX,0x003C
+100D:794F call near 0x8865
+100D:7952 add BX,0x000F
+100D:7955 cmp byte ptr DS:[0x0030],2
+100D:795A je short 0x79BC
+100D:795C mov AL,byte ptr DS:[0x002F]
+100D:795F shr AL,1
+100D:7961 and AX,6
+100D:7964 add AX,0x11F7
+100D:7967 mov SI,AX
+100D:7969 mov AX,word ptr DS:[SI]
+100D:796B call near 0xD194
+100D:796E add BX,0x000A
+100D:7971 test byte ptr DS:[0x0030],0x40
+100D:7976 jne short 0x79BC
+100D:7978 mov AX,0x003F
+100D:797B test word ptr DS:[0x0032],0x0200
+100D:7981 jne short 0x79B6
+100D:7983 mov AX,0x0040
+100D:7986 test word ptr DS:[0x0032],0x0100
+100D:798C je short 0x79B6
+100D:798E test word ptr DS:[0x0034],0x0030
+100D:7994 jne short 0x79B6
+100D:7996 mov AX,0x003D
+100D:7999 cmp byte ptr DS:[0x0030],0
+100D:799E je short 0x79B6
+100D:79A0 mov AX,0x0043
+100D:79A3 cmp byte ptr DS:[0x002F],1
+100D:79A8 je short 0x79B6
+100D:79AA mov AX,0x003E
+100D:79AD cmp byte ptr DS:[0x0030],6
+100D:79B2 je short 0x79B6
+100D:79B4 jmp short 0x79BC
+100D:79B6 call near 0x8865
+100D:79B9 add BX,0x0011
+100D:79BC add BX,4
+100D:79BF mov AX,0x006E
+100D:79C2 mov CL,0x96
+100D:79C4 call near 0xD194
+100D:79C7 add BX,8
+100D:79CA mov SI,word ptr DS:[0x46FA]
+100D:79CE call near 0x7EFB
+100D:79D1 mov SI,0x4705
+100D:79D4 mov BP,word ptr DS:[0x18E5]
+100D:79D8 call near 0x7E3D
+100D:79DB jmp near 0xC07C
+100D:79DE xor AX,AX
+100D:79E0 xchg AX,word ptr DS:[0x46FA]
+100D:79E4 or AX,AX
+100D:79E6 je short 0x79DB
+100D:79E8 mov SI,0x18DF
+100D:79EB jmp near 0x5F9F
+100D:79EE mov word ptr DS:[0x46EF],SI
+100D:79F2 call near 0x6917
+100D:79F5 mov SI,0x18E9
+100D:79F8 jne short 0x7A1E
+100D:79FA mov AX,0x001E
+100D:79FD mov BX,5
+100D:7A00 cmp word ptr DS:[DI+2],0x004C
+100D:7A04 jge short 0x7A0C
+100D:7A06 mov AX,0x000E
+100D:7A09 mov BX,0x0050
+100D:7A0C mov word ptr DS:[SI+2],BX
+100D:7A0F add BX,0x0043
+100D:7A12 mov word ptr DS:[SI+6],BX
+100D:7A15 mov word ptr DS:[0x4710],0x005C
+100D:7A1B mov word ptr DS:[0x4712],AX
+100D:7A1E mov word ptr DS:[0xDBE0],SI
+100D:7A22 mov AL,2
+100D:7A24 call near 0x7B0F
+100D:7A27 mov DI,0x18E9
+100D:7A2A mov SI,0x18F3
+100D:7A2D mov DX,word ptr DS:[DI]
+100D:7A2F mov BX,word ptr DS:[DI+2]
+100D:7A32 mov AX,DX
+100D:7A34 add AX,0x0049
+100D:7A37 mov word ptr DS:[0x2244],AX
+100D:7A3A add BX,3
+100D:7A3D mov word ptr DS:[0x2246],BX
+100D:7A41 xor AX,AX
+100D:7A43 mov word ptr DS:[0x4784],AX
+100D:7A46 mov word ptr DS:[0x4786],5
+100D:7A4C mov word ptr DS:[0x4788],AX
+100D:7A4F inc AX
+100D:7A50 mov word ptr DS:[0x478A],AX
+100D:7A53 add DX,4
+100D:7A56 mov word ptr DS:[SI],DX
+100D:7A58 mov word ptr DS:[SI+2],BX
+100D:7A5B add DX,0x003D
+100D:7A5E add BX,0x003D
+100D:7A61 mov word ptr DS:[SI+4],DX
+100D:7A64 mov word ptr DS:[SI+6],BX
+100D:7A67 call near 0x7B1B
+100D:7A6A mov SI,word ptr DS:[0x46EF]
+100D:7A6E test byte ptr DS:[SI+3],0x20
+100D:7A72 je short 0x7A96
+100D:7A74 mov DI,word ptr DS:[SI+4]
+100D:7A77 test byte ptr DS:[DI+0x0A],2
+100D:7A7B jne short 0x7A82
+100D:7A7D call near 0x5D36
+100D:7A80 jb short 0x7A96
+100D:7A82 mov AX,0x000C
+100D:7A85 mov word ptr DS:[0x47C4],AX
+100D:7A88 call near 0x91A0
+100D:7A8B call near 0xC0F4
+100D:7A8E mov AX,0x000C
+100D:7A91 mov BP,0
+100D:7A94 jmp short 0x7AC1
+100D:7A96 mov AX,0x000F
+100D:7A99 mov word ptr DS:[0x47C4],AX
+100D:7A9C mov word ptr DS:[0x4758],SI
+100D:7AA0 mov byte ptr DS:[0x476C],0
+100D:7AA5 call near 0x91A0
+100D:7AA8 call near 0xC0F4
+100D:7AAB mov AX,word ptr DS:[0x22A6]
+100D:7AAE sub AX,0x000E
+100D:7AB1 shl AX,1
+100D:7AB3 shl AX,1
+100D:7AB5 mov BL,byte ptr DS:[0x47D0]
+100D:7AB9 dec BL
+100D:7ABB xor BH,BH
+100D:7ABD shl BX,1
+100D:7ABF mov BP,BX
+100D:7AC1 mov SI,0x22B9
+100D:7AC4 add SI,AX
+100D:7AC6 lods AX,word ptr DS:[SI]
+100D:7AC7 mov word ptr DS:[0x46D2],AX
+100D:7ACA lods AX,word ptr DS:[SI]
+100D:7ACB mov word ptr DS:[0x46D4],AX
+100D:7ACE push DS
+100D:7ACF mov SI,word ptr SS:[0x47CA]
+100D:7AD4 mov DS,word ptr SS:[0xDBB2]
+100D:7AD9 add SI,word ptr DS:[BP+SI]
+100D:7ADC mov DX,word ptr SS:[0x18F3]
+100D:7AE1 mov BX,word ptr SS:[0x18F5]
+100D:7AE6 inc BX
+100D:7AE7 inc DX
+100D:7AE8 mov word ptr SS:[0x47D4],DX
+100D:7AED mov word ptr SS:[0x47D6],BX
+100D:7AF2 add DX,0x003B
+100D:7AF5 add BX,0x003B
+100D:7AF8 mov word ptr SS:[0x47D8],DX
+100D:7AFD mov word ptr SS:[0x47DA],BX
+100D:7B02 call near 0x9D6A
+100D:7B05 pop DS
+100D:7B06 mov SI,0x47D4
+100D:7B09 call near 0xC4AA
+100D:7B0C jmp near 0xC13B
+100D:7B0F mov byte ptr DS:[0x46D8],0
+100D:7B14 push SI
+100D:7B15 xchg SI,DI
+100D:7B17 call near 0xC0E8
+100D:7B1A pop SI
+100D:7B1B mov ES,word ptr DS:[0xDBDA]
+100D:7B1F mov AL,byte ptr DS:[SI+9]
+100D:7B22 push SI
+100D:7B23 call far dword ptr DS:[0x38DD]
+100D:7B27 pop SI
+100D:7B28 jmp near 0xC551
+100D:7B2B cmp byte ptr DS:[0x46D8],0
+100D:7B30 jne short 0x7B35
+100D:7B32 jmp near 0xC0E8
+100D:7B35 ret near
+100D:7B36 push SI
+100D:7B37 push DI
+100D:7B38 mov byte ptr DS:[0x46D8],1
+100D:7B3D mov byte ptr DS:[0xDCE6],0x80
+100D:7B42 call near 0x8770
+100D:7B45 call near 0x5F79
+100D:7B48 call near 0x79DE
+100D:7B4B mov byte ptr DS:[0xDCE6],0
+100D:7B50 mov byte ptr DS:[0x46F4],0
+100D:7B55 pop DI
+100D:7B56 pop SI
+100D:7B57 ret near
+100D:7B58 mov word ptr DS:[0x1BEA],0
+100D:7B5E mov byte ptr DS:[0x46F4],0
+100D:7B63 xor SI,SI
+100D:7B65 mov byte ptr DS:[0x004C],0
+100D:7B6A xchg SI,word ptr DS:[0x46EF]
+100D:7B6E or SI,SI
+100D:7B70 je short 0x7BA2
+100D:7B72 cmp byte ptr DS:[0x004C],0
+100D:7B77 jne short 0x7B8C
+100D:7B79 call near 0x1EBE
+100D:7B7C and word ptr DS:[SI+0x10],0x03F0
+100D:7B81 and word ptr DS:[SI+0x12],0xE5FF
+100D:7B86 call near 0x1AC5
+100D:7B89 mov byte ptr DS:[SI+0x14],AL
+100D:7B8C call near 0xA7A5
+100D:7B8F mov SI,0x18E9
+100D:7B92 xor AX,AX
+100D:7B94 mov word ptr DS:[0xDBE0],AX
+100D:7B97 mov word ptr DS:[0x47BA],AX
+100D:7B9A call near 0xC6AD
+100D:7B9D mov AL,4
+100D:7B9F call near 0x7B2B
+100D:7BA2 ret near
+100D:7BA3 call near 0xC08E
+100D:7BA6 cmp SI,word ptr DS:[0x46EF]
+100D:7BAA je short 0x7BB8
+100D:7BAC push SI
+100D:7BAD mov word ptr DS:[0x46F1],SI
+100D:7BB1 call near 0x79EE
+100D:7BB4 call near 0x9F40
+100D:7BB7 pop SI
+100D:7BB8 ret near
+100D:7BB9 push AX
+100D:7BBA call near 0x31F6
+100D:7BBD pop AX
+100D:7BBE mov word ptr DS:[0x46F1],SI
+100D:7BC2 mov byte ptr DS:[0x0023],AL
+100D:7BC5 mov word ptr DS:[0x47BA],0
+100D:7BCB call near 0xC08E
+100D:7BCE mov AX,0x000F
+100D:7BD1 call near 0x96F1
+100D:7BD4 jb short 0x7BD9
+100D:7BD6 call near 0x9EFD
+100D:7BD9 mov SI,word ptr DS:[0x46F1]
+100D:7BDD jmp short 0x7C56
+100D:7BE0 cmp SI,word ptr DS:[0x46EF]
+100D:7BE4 je short 0x7BE7
+100D:7BE7 mov word ptr DS:[0x47BA],0
+100D:7BED cmp byte ptr DS:[0x46F4],0
+100D:7BF2 je short 0x7BFE
+100D:7BF4 cmp byte ptr DS:[0x46F5],0
+100D:7BF9 je short 0x7BFE
+100D:7BFE mov SI,word ptr DS:[0x46EF]
+100D:7C02 call near 0x7BA3
+100D:7C05 call near 0x31F6
+100D:7C08 mov DI,word ptr DS:[SI+4]
+100D:7C0B call near 0x2E98
+100D:7C0E call near 0x7C63
+100D:7C11 cmp AX,word ptr DS:[0x1176]
+100D:7C15 jbe short 0x7C2D
+100D:7C17 mov byte ptr DS:[0x004C],0xFF
+100D:7C1C mov DI,word ptr DS:[0x4752]
+100D:7C20 or DI,DI
+100D:7C22 je short 0x7C2D
+100D:7C24 mov AX,0x1916
+100D:7C27 mov word ptr DS:[DI+0x0D],AX
+100D:7C2A mov word ptr DS:[DI+0x0F],AX
+100D:7C2D call near 0x9719
+100D:7C30 mov SI,word ptr DS:[0x46EF]
+100D:7C34 jb short 0x7C2D
+100D:7C36 push SI
+100D:7C37 call near 0x9EFD
+100D:7C3A pop SI
+100D:7C3B mov byte ptr DS:[0x46F4],0
+100D:7C40 cmp byte ptr DS:[0x47A5],0x80
+100D:7C45 jne short 0x7C56
+100D:7C47 inc byte ptr DS:[0x46F4]
+100D:7C4B call near 0x7EFB
+100D:7C4E push SI
+100D:7C4F call near 0x7E1E
+100D:7C52 pop SI
+100D:7C53 jmp short 0x7C56
+100D:7C56 cmp byte ptr DS:[0x46EB],0
+100D:7C5B jns short 0x7C60
+100D:7C5D call near 0x9901
+100D:7C60 jmp near 0xC07C
+100D:7C63 push SI
+100D:7C64 call near 0x407E
+100D:7C67 pop SI
+100D:7C68 mov BP,BX
+100D:7C6A shl BP,1
+100D:7C6C jns short 0x7C70
+100D:7C6E neg BP
+100D:7C70 mov BP,word ptr SS:[BP+0x4880]
+100D:7C74 mov AX,word ptr DS:[SI+6]
+100D:7C77 sub AX,DX
+100D:7C79 jns short 0x7C7D
+100D:7C7B neg AX
+100D:7C7D xor DX,DX
+100D:7C7F div BP
+100D:7C81 sub BX,word ptr DS:[SI+8]
+100D:7C84 jns short 0x7C88
+100D:7C86 neg BX
+100D:7C88 cmp AX,BX
+100D:7C8A jae short 0x7C8E
+100D:7C8C mov AX,BX
+100D:7C8E ret near
+100D:7C8F push SI
+100D:7C90 call near 0x407E
+100D:7C93 pop SI
+100D:7C94 mov BP,BX
+100D:7C96 shl BP,1
+100D:7C98 jns short 0x7C9C
+100D:7C9A neg BP
+100D:7C9C mov BP,word ptr SS:[BP+0x4880]
+100D:7CA0 mov AX,word ptr DS:[SI+2]
+100D:7CA3 sub AX,DX
+100D:7CA5 jns short 0x7CA9
+100D:7CA7 neg AX
+100D:7CA9 xor DX,DX
+100D:7CAB div BP
+100D:7CAD sub BX,word ptr DS:[SI+4]
+100D:7CB0 jns short 0x7CB4
+100D:7CB2 neg BX
+100D:7CB4 cmp AX,BX
+100D:7CB6 jae short 0x7CBA
+100D:7CB8 mov AX,BX
+100D:7CBA ret near
+100D:7CBB mov byte ptr DS:[0x46F5],1
+100D:7CC0 mov BP,0x2012
+100D:7CC3 mov BX,0x7D68
+100D:7CC6 call near 0xD323
+100D:7CC9 call near 0xC13B
+100D:7CCC cmp byte ptr DS:[0x46F4],0
+100D:7CD1 jne short 0x7CF1
+100D:7CD3 mov SI,word ptr DS:[0x46EF]
+100D:7CD7 call near 0x7BE0
+100D:7CDA call near 0x7C02
+100D:7CDD cmp byte ptr DS:[0x46F4],0
+100D:7CE2 jne short 0x7CF1
+100D:7CE4 call near 0x7C02
+100D:7CE7 cmp byte ptr DS:[0x46F4],0
+100D:7CEC jne short 0x7CF1
+100D:7CEE call near 0x7C02
+100D:7CF1 call near 0x7DD9
+100D:7CF4 call near 0x68EB
+100D:7CF7 mov AL,byte ptr DS:[SI+0x19]
+100D:7CFA mov byte ptr DS:[0x003D],AL
+100D:7CFD call near 0x7EFB
+100D:7D00 mov DI,word ptr DS:[SI+4]
+100D:7D03 call near 0x7F27
+100D:7D06 mov word ptr DS:[0x1BEA],0
+100D:7D0C call near 0xC08E
+100D:7D0F mov SI,0x1936
+100D:7D12 call near 0x7B1B
+100D:7D15 mov SI,0x1940
+100D:7D18 call near 0x7B1B
+100D:7D1B call near 0x7E1E
+100D:7D1E push DS
+100D:7D1F pop ES
+100D:7D20 mov SI,0x4C60
+100D:7D23 mov DI,0x4C7C
+100D:7D26 mov CX,0x000E
+100D:7D29 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:7D2B mov BX,word ptr DS:[0x1942]
+100D:7D2F add BX,4
+100D:7D32 mov DX,word ptr DS:[0x1940]
+100D:7D36 add DX,0x0050
+100D:7D39 mov SI,0x46FE
+100D:7D3C mov BP,word ptr DS:[0x1946]
+100D:7D40 mov CX,word ptr DS:[0x1948]
+100D:7D44 mov word ptr DS:[0xDBE4],CX
+100D:7D48 call near 0x7E3D
+100D:7D4B mov CX,word ptr DS:[0x1948]
+100D:7D4F mov DX,word ptr DS:[0x1940]
+100D:7D53 add DX,8
+100D:7D56 mov AX,0x006F
+100D:7D59 call near 0xD194
+100D:7D5C call near 0xE270
+100D:7D5F call near 0xD280
+100D:7D62 call near 0xE283
+100D:7D65 jmp near 0xC07C
+100D:7D68 mov byte ptr DS:[0x46F5],0
+100D:7D6D xor SI,SI
+100D:7D6F mov word ptr DS:[0xDBE2],0
+100D:7D75 mov SI,0x1940
+100D:7D78 call near 0xC6AD
+100D:7D7B call near 0x68EB
+100D:7D7E call near 0x7F11
+100D:7D81 call near 0x8461
+100D:7D84 mov AH,byte ptr DS:[SI+0x19]
+100D:7D87 mov AL,byte ptr DS:[0x003D]
+100D:7D8A mov BL,AL
+100D:7D8C xor BL,AH
+100D:7D8E and AH,BL
+100D:7D90 mov byte ptr DS:[0x003D],AH
+100D:7D94 and AL,BL
+100D:7D96 mov byte ptr DS:[0x003E],AL
+100D:7D99 mov byte ptr DS:[0x003F],0
+100D:7D9E test AH,0x40
+100D:7DA1 je short 0x7DB1
+100D:7DA3 mov DI,word ptr DS:[SI+4]
+100D:7DA6 cmp DI,word ptr DS:[0x1150]
+100D:7DAA jne short 0x7DB1
+100D:7DAC mov byte ptr DS:[0x003F],0x40
+100D:7DB1 mov AL,byte ptr DS:[SI+3]
+100D:7DB4 and AL,0x0F
+100D:7DB6 cmp AL,8
+100D:7DB8 jne short 0x7DBD
+100D:7DBD mov AL,0x0C
+100D:7DBF call near 0x7BB9
+100D:7DC2 mov byte ptr DS:[0x46F4],0
+100D:7DC7 cmp word ptr DS:[0x1BEA],0
+100D:7DCC jne short 0x7DD8
+100D:7DD8 ret near
+100D:7DD9 mov SI,0x18E9
+100D:7DDC mov DI,0x1936
+100D:7DDF mov BP,0x1940
+100D:7DE2 mov word ptr DS:[0xDBE2],BP
+100D:7DE6 mov AX,word ptr DS:[SI]
+100D:7DE8 add AX,0x0030
+100D:7DEB mov word ptr SS:[BP],AX
+100D:7DEE add AX,0x004D
+100D:7DF1 mov word ptr DS:[DI],AX
+100D:7DF3 mov AX,word ptr DS:[SI+4]
+100D:7DF6 mov word ptr DS:[DI+4],AX
+100D:7DF9 mov word ptr SS:[BP+4],AX
+100D:7DFC mov AX,word ptr DS:[SI+2]
+100D:7DFF add AX,0x002B
+100D:7E02 mov word ptr DS:[DI+2],AX
+100D:7E05 mov AX,word ptr DS:[SI+6]
+100D:7E08 mov word ptr DS:[DI+6],AX
+100D:7E0B inc AX
+100D:7E0C cmp AX,0x0070
+100D:7E0F jb short 0x7E14
+100D:7E11 sub AX,0x006D
+100D:7E14 mov word ptr SS:[BP+2],AX
+100D:7E17 add AX,0x0028
+100D:7E1A mov word ptr SS:[BP+6],AX
+100D:7E1D ret near
+100D:7E1E call near 0xD068
+100D:7E21 mov SI,0x4705
+100D:7E24 mov DX,word ptr DS:[0x18E9]
+100D:7E28 mov BX,word ptr DS:[0x18EB]
+100D:7E2C add DX,0x0080
+100D:7E30 add BX,0x002D
+100D:7E33 mov BP,word ptr DS:[0x18EF]
+100D:7E37 mov word ptr DS:[0xDBE4],0x00F0
+100D:7E3D call near 0xC13B
+100D:7E40 push DI
+100D:7E41 push DS
+100D:7E42 pop ES
+100D:7E43 mov DI,0x4C60
+100D:7E46 mov CX,0x000E
+100D:7E49 xor AX,AX
+100D:7E4B rep stos word ptr ES:[DI],AX
+100D:7E4D mov DI,SI
+100D:7E4F mov CX,7
+100D:7E52 xor AL,AL
+100D:7E54 repe scas AL,byte ptr ES:[DI]
+100D:7E56 jne short 0x7E69
+100D:7E58 add BX,5
+100D:7E5B add DX,0x000C
+100D:7E5E call near 0xD04E
+100D:7E61 mov AX,0x0069
+100D:7E64 call near 0xD19B
+100D:7E67 pop DI
+100D:7E68 ret near
+100D:7E69 xor DI,DI
+100D:7E6B mov AL,byte ptr DS:[SI]
+100D:7E6D or AL,AL
+100D:7E6F je short 0x7E8E
+100D:7E71 mov CL,AL
+100D:7E73 push SI
+100D:7E74 push DI
+100D:7E75 push BP
+100D:7E76 mov AL,byte ptr DS:[DI+0x192F]
+100D:7E7A xor AH,AH
+100D:7E7C shl DI,1
+100D:7E7E shl DI,1
+100D:7E80 mov word ptr DS:[DI+0x4C60],DX
+100D:7E84 call near 0x61D3
+100D:7E87 mov word ptr DS:[DI+0x4C62],DX
+100D:7E8B pop BP
+100D:7E8C pop DI
+100D:7E8D pop SI
+100D:7E8E inc SI
+100D:7E8F inc DI
+100D:7E90 cmp DI,7
+100D:7E93 jb short 0x7E6B
+100D:7E95 pop DI
+100D:7E96 ret near
+100D:7E97 cmp byte ptr DS:[0x46F5],0
+100D:7E9C je short 0x7EE1
+100D:7E9E mov DI,0x1936
+100D:7EA1 call near 0xD6FE
+100D:7EA4 jae short 0x7EE1
+100D:7EA6 mov SI,0x4C7C
+100D:7EA9 call near 0x7EE2
+100D:7EAC jae short 0x7EE1
+100D:7EAE dec byte ptr DS:[DI+0x4705]
+100D:7EB2 inc byte ptr DS:[DI+0x46FE]
+100D:7EB6 jmp short 0x7EDE
+100D:7EB8 cmp byte ptr DS:[0x46F5],0
+100D:7EBD je short 0x7EE1
+100D:7EBF mov DI,0x1940
+100D:7EC2 call near 0xD6FE
+100D:7EC5 jae short 0x7EE1
+100D:7EC7 mov SI,0x4C60
+100D:7ECA call near 0x7EE2
+100D:7ECD jae short 0x7EE1
+100D:7ECF cmp byte ptr DS:[DI+0x4705],0
+100D:7ED4 jne short 0x7EE1
+100D:7ED6 inc byte ptr DS:[DI+0x4705]
+100D:7EDA dec byte ptr DS:[DI+0x46FE]
+100D:7EDE call near 0x7D0C
+100D:7EE1 ret near
+100D:7EE2 xor DI,DI
+100D:7EE4 lods AX,word ptr DS:[SI]
+100D:7EE5 or AX,AX
+100D:7EE7 je short 0x7EF1
+100D:7EE9 cmp DX,AX
+100D:7EEB jb short 0x7EF1
+100D:7EED cmp DX,word ptr DS:[SI]
+100D:7EEF jb short 0x7EE1
+100D:7EF1 add SI,2
+100D:7EF4 inc DI
+100D:7EF5 cmp DI,7
+100D:7EF8 jb short 0x7EE4
+100D:7EFB push DI
+100D:7EFC push DS
+100D:7EFD pop ES
+100D:7EFE mov DI,0x4705
+100D:7F01 mov AH,byte ptr DS:[SI+0x19]
+100D:7F04 xor AL,AL
+100D:7F06 rol AX,1
+100D:7F08 stos byte ptr ES:[DI],AL
+100D:7F09 cmp DI,0x470C
+100D:7F0D jb short 0x7F04
+100D:7F0F pop DI
+100D:7F10 ret near
+100D:7F11 push SI
+100D:7F12 mov SI,0x470B
+100D:7F15 std
+100D:7F16 xor AX,AX
+100D:7F18 lods AL,byte ptr DS:[SI]
+100D:7F19 ror AX,1
+100D:7F1B cmp SI,0x4705
+100D:7F1F jae short 0x7F18
+100D:7F21 pop SI
+100D:7F22 cld
+100D:7F23 mov byte ptr DS:[SI+0x19],AH
+100D:7F26 ret near
+100D:7F27 mov BX,0x46FE
+100D:7F2A push DI
+100D:7F2B push DS
+100D:7F2C pop ES
+100D:7F2D mov AL,byte ptr DS:[DI+9]
+100D:7F30 lea SI,DI+0x14
+100D:7F33 mov DI,BX
+100D:7F35 mov CX,7
+100D:7F38 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:7F3A or AL,AL
+100D:7F3C je short 0x7F5D
+100D:7F3E call near 0x6906
+100D:7F41 mov AL,byte ptr DS:[SI+0x19]
+100D:7F44 mov DI,BX
+100D:7F46 shl AL,1
+100D:7F48 jae short 0x7F51
+100D:7F4A sub byte ptr DS:[DI],1
+100D:7F4D jae short 0x7F51
+100D:7F51 inc DI
+100D:7F52 shl AL,1
+100D:7F54 jb short 0x7F4A
+100D:7F56 jne short 0x7F51
+100D:7F58 mov AL,byte ptr DS:[SI+1]
+100D:7F5B jmp short 0x7F3A
+100D:7F5D pop DI
+100D:7F5E ret near
+100D:7F5F mov AL,byte ptr DS:[SI+0x19]
+100D:7F62 push DI
+100D:7F63 add DI,0x0014
+100D:7F66 shl AL,1
+100D:7F68 jae short 0x7F6C
+100D:7F6A inc byte ptr DS:[DI]
+100D:7F6C inc DI
+100D:7F6D shl AL,1
+100D:7F6F jb short 0x7F6A
+100D:7F71 jne short 0x7F6C
+100D:7F73 pop DI
+100D:7F74 ret near
+100D:7F75 mov AL,byte ptr DS:[SI+0x19]
+100D:7F78 push DI
+100D:7F79 add DI,0x0014
+100D:7F7C shl AL,1
+100D:7F7E jae short 0x7F87
+100D:7F80 sub byte ptr DS:[DI],1
+100D:7F83 jae short 0x7F87
+100D:7F87 inc DI
+100D:7F88 shl AL,1
+100D:7F8A jb short 0x7F80
+100D:7F8C jne short 0x7F87
+100D:7F8E pop DI
+100D:7F8F ret near
+100D:7F90 mov DI,word ptr DS:[SI+4]
+100D:7F93 push DI
+100D:7F94 push word ptr DS:[DI+4]
+100D:7F97 push word ptr DS:[DI+2]
+100D:7F9A mov BP,SP
+100D:7F9C mov word ptr DS:[0x470C],0xFFFF
+100D:7FA2 mov DI,0x0138
+100D:7FA5 cmp word ptr DS:[DI],-1
+100D:7FA8 je short 0x8014
+100D:7FAA test byte ptr DS:[DI+0x0A],0x80
+100D:7FAE jne short 0x800F
+100D:7FB0 cmp byte ptr DS:[DI+8],0x28
+100D:7FB4 jae short 0x800F
+100D:7FB6 cmp DI,word ptr SS:[BP+4]
+100D:7FB9 je short 0x800F
+100D:7FBB mov DX,word ptr DS:[DI+2]
+100D:7FBE sub DX,word ptr SS:[BP]
+100D:7FC1 jns short 0x7FC5
+100D:7FC3 neg DX
+100D:7FC5 mov AX,word ptr DS:[DI+4]
+100D:7FC8 sub AX,word ptr SS:[BP+2]
+100D:7FCB jns short 0x7FCF
+100D:7FCD neg AX
+100D:7FCF mov DL,DH
+100D:7FD1 xor DH,DH
+100D:7FD3 cmp DL,AL
+100D:7FD5 jae short 0x7FD9
+100D:7FD7 mov DX,AX
+100D:7FD9 cmp DL,0x32
+100D:7FDC jae short 0x800F
+100D:7FDE cmp byte ptr DS:[DI+8],0x21
+100D:7FE2 jb short 0x7FE8
+100D:7FE4 shr DX,1
+100D:7FE6 shr DX,1
+100D:7FE8 cmp DX,word ptr DS:[0x470C]
+100D:7FEC jae short 0x800F
+100D:7FEE push BX
+100D:7FEF mov BX,0x4C60
+100D:7FF2 call near 0x7F2A
+100D:7FF5 pop BX
+100D:7FF6 cmp byte ptr DS:[BX+0x4C60],0
+100D:7FFB je short 0x800F
+100D:7FFD call near 0x8018
+100D:8000 cmp byte ptr DS:[BX+0x4C60],0
+100D:8005 je short 0x800F
+100D:8007 mov word ptr DS:[0x470C],DX
+100D:800B mov word ptr DS:[0x470E],DI
+100D:800F add DI,0x001C
+100D:8012 jmp short 0x7FA5
+100D:8014 add SP,6
+100D:8017 ret near
+100D:8018 mov SI,0x088F
+100D:801B add SI,0x001B
+100D:801E cmp SI,0x0FBB
+100D:8022 jae short 0x804C
+100D:8024 mov AL,byte ptr DS:[SI+3]
+100D:8027 test AL,0x40
+100D:8029 je short 0x801B
+100D:802B and AL,3
+100D:802D cmp AL,3
+100D:802F jne short 0x801B
+100D:8031 cmp DI,word ptr DS:[SI+4]
+100D:8034 jne short 0x801B
+100D:8036 cmp DI,word ptr DS:[SI+0x0C]
+100D:8039 je short 0x801B
+100D:803B cmp BL,byte ptr DS:[SI+0x0E]
+100D:803E jne short 0x801B
+100D:8040 dec byte ptr DS:[BX+0x4C60]
+100D:8044 jns short 0x801B
+100D:804C cmp DI,word ptr DS:[0x1150]
+100D:8050 jne short 0x8063
+100D:8052 cmp byte ptr DS:[0x002A],0x50
+100D:8057 jae short 0x8063
+100D:8059 dec byte ptr DS:[0x4C61]
+100D:805D jns short 0x8063
+100D:8063 ret near
+100D:8064 mov AX,0x1AAC
+100D:8067 call near 0xD95E
+100D:806A call near 0x68EB
+100D:806D cmp SI,0x08E0
+100D:8071 je short 0x8082
+100D:8073 mov AX,0x0054
+100D:8076 call near 0x80DF
+100D:8079 mov BP,0x212E
+100D:807C mov BX,0x824D
+100D:807F jmp near 0xD323
+100D:8082 push DS
+100D:8083 pop ES
+100D:8084 mov DI,0x4718
+100D:8087 mov SI,0x11D3
+100D:808A movs word ptr ES:[DI],word ptr DS:[SI]
+100D:808B movs word ptr ES:[DI],word ptr DS:[SI]
+100D:808C movs word ptr ES:[DI],word ptr DS:[SI]
+100D:808D sub DI,6
+100D:8090 xor AX,AX
+100D:8092 mov CX,4
+100D:8095 repne scas AX,word ptr ES:[DI]
+100D:8097 sub CX,3
+100D:809A neg CX
+100D:809C mov byte ptr DS:[0x4738],CL
+100D:80A0 mov AX,0x0055
+100D:80A3 call near 0x80DF
+100D:80A6 call near 0x80AC
+100D:80A9 jmp near 0xD32F
+100D:80AC mov BP,0x2136
+100D:80AF and byte ptr SS:[BP+3],0xBF
+100D:80B3 xor CX,CX
+100D:80B5 mov AL,byte ptr DS:[0x4738]
+100D:80B8 dec AL
+100D:80BA cmp AL,2
+100D:80BC jb short 0x80C3
+100D:80BE or byte ptr SS:[BP+3],0x40
+100D:80C2 inc CX
+100D:80C3 mov BX,0x824D
+100D:80C6 ret near
+100D:80C8 mov byte ptr DS:[0x4738],0
+100D:80CD xor AX,AX
+100D:80CF mov word ptr DS:[0x4718],AX
+100D:80D2 mov word ptr DS:[0x471A],AX
+100D:80D5 mov word ptr DS:[0x471C],AX
+100D:80D8 ret near
+100D:80D9 call near 0x80C8
+100D:80DC jmp near 0x8286
+100D:80DF push AX
+100D:80E0 call near 0xC08E
+100D:80E3 call near 0x8FD1
+100D:80E6 pop BX
+100D:80E7 mov SI,0x2244
+100D:80EA mov AX,word ptr DS:[SI+2]
+100D:80ED push AX
+100D:80EE push word ptr DS:[SI+6]
+100D:80F1 push BX
+100D:80F2 cmp AX,0x0032
+100D:80F5 jb short 0x80FA
+100D:80F7 add AX,0x0026
+100D:80FA mov word ptr DS:[SI+2],AX
+100D:80FD mov word ptr DS:[SI+6],0x0019
+100D:8102 call near 0x9F82
+100D:8105 pop AX
+100D:8106 call near 0x88AF
+100D:8109 cmp byte ptr DS:[0x4774],0
+100D:810E jne short 0x811E
+100D:8110 mov AX,0x010A
+100D:8113 add AX,word ptr DS:[0xD810]
+100D:8117 add word ptr DS:[0x4780],AX
+100D:811B call near 0x9EFD
+100D:811E pop word ptr DS:[0x224A]
+100D:8122 pop word ptr DS:[0x2246]
+100D:8126 call near 0xC07C
+100D:8129 mov word ptr DS:[0x4720],0x18F3
+100D:812F mov byte ptr DS:[0x4722],0
+100D:8134 call near 0x541F
+100D:8137 mov word ptr DS:[0x1BEA],0
+100D:813D ret near
+100D:813E sub SP,0x0030
+100D:8141 mov DI,SP
+100D:8143 call near 0x68EB
+100D:8146 mov DX,word ptr DS:[SI+6]
+100D:8149 mov BX,word ptr DS:[SI+8]
+100D:814C call near 0x81D7
+100D:814F cmp SI,0x08E0
+100D:8153 jne short 0x816A
+100D:8155 mov SI,0x4718
+100D:8158 lods AX,word ptr DS:[SI]
+100D:8159 or AX,AX
+100D:815B je short 0x8176
+100D:815D mov BX,AX
+100D:815F mov DX,word ptr DS:[BX+2]
+100D:8162 mov BX,word ptr DS:[BX+4]
+100D:8165 call near 0x81D7
+100D:8168 jmp short 0x8158
+100D:816A mov BX,word ptr DS:[SI+4]
+100D:816D mov DX,word ptr DS:[BX+2]
+100D:8170 mov BX,word ptr DS:[BX+4]
+100D:8173 call near 0x81D7
+100D:8176 mov SI,SP
+100D:8178 lods AX,word ptr DS:[SI]
+100D:8179 mov DX,AX
+100D:817B lods AX,word ptr DS:[SI]
+100D:817C mov BX,AX
+100D:817E lods AX,word ptr DS:[SI]
+100D:817F mov DI,word ptr DS:[SI]
+100D:8181 cmp DI,0x8000
+100D:8185 je short 0x81D3
+100D:8187 push SI
+100D:8188 mov CX,word ptr DS:[SI+2]
+100D:818B sub AX,word ptr DS:[SI+4]
+100D:818E mov SI,DX
+100D:8190 sub SI,DI
+100D:8192 xor AX,SI
+100D:8194 jns short 0x81C0
+100D:8196 mov AX,SI
+100D:8198 or AX,AX
+100D:819A jns short 0x819E
+100D:819C neg AX
+100D:819E cmp AX,0x0050
+100D:81A1 jb short 0x81C0
+100D:81C0 mov ES,word ptr DS:[0xDBDA]
+100D:81C4 mov AL,0x0C
+100D:81C6 mov BP,0x5555
+100D:81C9 mov SI,0x46E3
+100D:81CC call far dword ptr DS:[0x3901]
+100D:81D0 pop SI
+100D:81D1 jmp short 0x8178
+100D:81D3 add SP,0x0030
+100D:81D6 ret near
+100D:81D7 mov word ptr DS:[DI+4],DX
+100D:81DA push DI
+100D:81DB call near 0xB647
+100D:81DE pop DI
+100D:81DF mov word ptr DS:[DI],DX
+100D:81E1 mov word ptr DS:[DI+2],BX
+100D:81E4 add DI,6
+100D:81E7 mov word ptr DS:[DI],0x8000
+100D:81EB ret near
+100D:81EC call near 0xC13B
+100D:81EF mov DI,word ptr DS:[0xDBE2]
+100D:81F3 call near 0xD6FE
+100D:81F6 jae short 0x8246
+100D:81F8 call near 0x5944
+100D:81FB mov byte ptr DS:[0x46EB],0x40
+100D:8200 mov AL,0xFF
+100D:8202 call near 0x5E6D
+100D:8205 mov byte ptr DS:[0x46EB],0xC0
+100D:820A cmp AX,9
+100D:820D jae short 0x824C
+100D:820F call near 0x8256
+100D:8212 jb short 0x824C
+100D:8214 call near 0x82B7
+100D:8217 call near 0x68EB
+100D:821A cmp SI,0x08E0
+100D:821E jne short 0x8235
+100D:8220 push SI
+100D:8221 mov SI,0x4718
+100D:8224 mov DI,0x11D3
+100D:8227 push DS
+100D:8228 pop ES
+100D:8229 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:822A movs word ptr ES:[DI],word ptr DS:[SI]
+100D:822B movs word ptr ES:[DI],word ptr DS:[SI]
+100D:822C pop SI
+100D:822D mov DI,word ptr DS:[0x11D3]
+100D:8231 or DI,DI
+100D:8233 je short 0x8246
+100D:8235 call near 0x82DA
+100D:8238 jne short 0x8246
+100D:823A call near 0x84A6
+100D:823D call near 0xD2FD
+100D:8240 call near 0x8250
+100D:8243 jmp near 0x878C
+100D:8246 call near 0xD2E2
+100D:8249 jmp near 0xC13B
+100D:824C ret near
+100D:824D call near 0x82B7
+100D:8250 call near 0x5AD3
+100D:8253 jmp near 0xC13B
+100D:8256 call near 0x68EB
+100D:8259 cmp SI,0x08E0
+100D:825D jne short 0x829E
+100D:825F mov AL,byte ptr DS:[DI+8]
+100D:8262 cmp AL,0x20
+100D:8264 jb short 0x826C
+100D:8266 test byte ptr DS:[DI+0x0A],8
+100D:826A je short 0x8296
+100D:826C cmp byte ptr DS:[0x4738],3
+100D:8271 jb short 0x8276
+100D:8276 xor BX,BX
+100D:8278 mov BL,byte ptr DS:[0x4738]
+100D:827C inc byte ptr DS:[0x4738]
+100D:8280 shl BX,1
+100D:8282 mov word ptr DS:[BX+0x4718],DI
+100D:8286 call near 0x542F
+100D:8289 call near 0x80AC
+100D:828C call near 0xD33A
+100D:828F cmp byte ptr DS:[0x4738],3
+100D:8294 jae short 0x8298
+100D:8296 stc
+100D:8297 ret near
+100D:8298 mov AX,0x0032
+100D:829B call near 0xE3A0
+100D:829E clc
+100D:829F ret near
+100D:82A0 call near 0xD41B
+100D:82A3 cmp BP,0x212E
+100D:82A7 je short 0x82AD
+100D:82A9 cmp BP,0x2136
+100D:82AD jne short 0x82B6
+100D:82AF mov AL,byte ptr DS:[0x46EB]
+100D:82B2 not AL
+100D:82B4 test AL,0x40
+100D:82B6 ret near
+100D:82B7 test byte ptr DS:[0x46EB],0x40
+100D:82BC je short 0x82D9
+100D:82BE call near 0x58FA
+100D:82C1 call near 0xE270
+100D:82C4 call near 0xC08E
+100D:82C7 mov SI,0x18E9
+100D:82CA call near 0xC551
+100D:82CD call near 0x68EB
+100D:82D0 call near 0x7BE0
+100D:82D3 call near 0xC07C
+100D:82D6 call near 0xE283
+100D:82D9 ret near
+100D:82DA push DI
+100D:82DB push SI
+100D:82DC mov BP,word ptr DS:[SI+4]
+100D:82DF cmp SI,0x08E0
+100D:82E3 je short 0x82EB
+100D:82E5 mov AL,0x10
+100D:82E7 cmp DI,BP
+100D:82E9 je short 0x82FA
+100D:82EB push BP
+100D:82EC mov word ptr DS:[SI+4],DI
+100D:82EF call near 0x31F6
+100D:82F2 call near 0x2E98
+100D:82F5 pop word ptr DS:[SI+4]
+100D:82F8 mov AL,0x0B
+100D:82FA call near 0x9F82
+100D:82FD call near 0xA1C4
+100D:8300 call near 0x7BBE
+100D:8303 pop SI
+100D:8304 pop DI
+100D:8305 jmp near 0xA1E2
+100D:8308 mov CX,4
+100D:830B test byte ptr DS:[SI+0x19],0x40
+100D:830F je short 0x8313
+100D:8311 mov CL,8
+100D:8313 push CX
+100D:8314 call near 0x8604
+100D:8317 pop CX
+100D:8318 mov AX,BX
+100D:831A or AX,DX
+100D:831C je short 0x8357
+100D:831E add word ptr DS:[SI+6],DX
+100D:8321 add word ptr DS:[SI+8],BX
+100D:8324 loop 0x8313
+100D:8326 call near 0x686E
+100D:8329 jb short 0x8333
+100D:832B call near 0x6917
+100D:832E jne short 0x833C
+100D:8330 jmp near 0xC653
+100D:8333 call near 0x6917
+100D:8336 jne short 0x833B
+100D:8338 jmp near 0xC58A
+100D:833B ret near
+100D:833C call near 0x6827
+100D:833F call near 0xC5CF
+100D:8342 mov SI,DI
+100D:8344 jmp near 0xC6AD
+100D:8347 push SI
+100D:8348 push DI
+100D:8349 mov DI,0x11D3
+100D:834C lea SI,DI+2
+100D:834F push DS
+100D:8350 pop ES
+100D:8351 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:8352 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:8353 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:8354 pop DI
+100D:8355 pop SI
+100D:8356 ret near
+100D:8357 cmp SI,0x08E0
+100D:835B jne short 0x8368
+100D:835D mov AX,word ptr DS:[0x11D3]
+100D:8360 cmp AX,word ptr DS:[SI+4]
+100D:8363 jne short 0x8368
+100D:8365 call near 0x8347
+100D:8368 mov AL,byte ptr DS:[SI+3]
+100D:836B and AL,0x0F
+100D:836D mov DI,word ptr DS:[SI+4]
+100D:8370 mov DX,word ptr DS:[DI+2]
+100D:8373 mov BX,word ptr DS:[DI+4]
+100D:8376 mov word ptr DS:[SI+6],DX
+100D:8379 mov word ptr DS:[SI+8],BX
+100D:837C test byte ptr DS:[DI+0x0A],2
+100D:8380 jne short 0x8387
+100D:8382 call near 0x5D36
+100D:8385 jb short 0x83A7
+100D:8387 push AX
+100D:8388 call near 0x83BC
+100D:838B pop AX
+100D:838C cmp AL,5
+100D:838E je short 0x839A
+100D:8390 mov AL,byte ptr DS:[SI]
+100D:8392 cmp AL,byte ptr DS:[DI+9]
+100D:8395 jne short 0x83FD
+100D:8397 jmp near 0x7429
+100D:839A test byte ptr DS:[DI+0x0A],0x80
+100D:839E je short 0x83FD
+100D:83A0 and byte ptr DS:[DI+0x0A],0x7F
+100D:83A4 jmp near 0x5D44
+100D:83A7 cmp AL,5
+100D:83A9 jb short 0x83B6
+100D:83AB cmp AL,6
+100D:83AD ja short 0x83B6
+100D:83AF push DI
+100D:83B0 call near 0x6AC5
+100D:83B3 pop DI
+100D:83B4 xor AL,AL
+100D:83B6 and AL,3
+100D:83B8 cmp AL,3
+100D:83BA je short 0x841F
+100D:83BC call near 0x851F
+100D:83BF and byte ptr DS:[SI+3],0xBF
+100D:83C3 call near 0x85CC
+100D:83C6 call near 0x7F5F
+100D:83C9 mov CL,byte ptr DS:[SI+3]
+100D:83CC or CL,CL
+100D:83CE js short 0x83FC
+100D:83D0 and CL,0x0F
+100D:83D3 call near 0x6AD4
+100D:83D6 mov DI,word ptr DS:[SI+4]
+100D:83D9 cmp DI,word ptr DS:[0x114E]
+100D:83DD jne short 0x83FC
+100D:83DF call near 0xD41B
+100D:83E2 cmp BP,0x1F0E
+100D:83E6 jne short 0x83FC
+100D:83E8 mov AL,1
+100D:83EA cmp byte ptr DS:[0x002B],1
+100D:83EF adc AL,0
+100D:83F1 cmp byte ptr DS:[0x000B],AL
+100D:83F5 jne short 0x83FC
+100D:83F7 or byte ptr DS:[0x473B],1
+100D:83FC ret near
+100D:83FD mov BP,0x8403
+100D:8400 jmp near 0x661D
+100D:8403 test byte ptr DS:[SI+3],0x20
+100D:8407 jne short 0x841B
+100D:8409 mov AL,byte ptr DS:[SI+3]
+100D:840C and AL,0x0F
+100D:840E cmp AL,1
+100D:8410 je short 0x841C
+100D:8412 cmp AL,6
+100D:8414 je short 0x841B
+100D:8416 mov CL,6
+100D:8418 call near 0x6ACB
+100D:841B ret near
+100D:841F mov DI,word ptr DS:[SI+4]
+100D:8422 cmp DI,word ptr DS:[SI+0x0C]
+100D:8425 je short 0x844D
+100D:8427 push SI
+100D:8428 call near 0x7F27
+100D:842B pop SI
+100D:842C mov BX,word ptr DS:[SI+0x0E]
+100D:842F mov CX,BX
+100D:8431 xor BH,BH
+100D:8433 cmp byte ptr DS:[BX+0x46FE],0
+100D:8438 je short 0x8442
+100D:843A dec byte ptr DS:[BX+DI+0x14]
+100D:843D or byte ptr DS:[SI+0x19],CH
+100D:8440 xor CH,CH
+100D:8442 mov word ptr DS:[SI+0x0E],CX
+100D:8445 mov DI,word ptr DS:[SI+0x0C]
+100D:8448 mov word ptr DS:[SI+4],DI
+100D:844B jmp short 0x8461
+100D:844D and byte ptr DS:[SI+3],0xFC
+100D:8451 jmp near 0x83BC
+100D:8461 call near 0x6917
+100D:8464 je short 0x8467
+100D:8466 ret near
+100D:8467 push SI
+100D:8468 call near 0xC58A
+100D:846B pop SI
+100D:846C push SI
+100D:846D test byte ptr DS:[SI+3],0x40
+100D:8471 jne short 0x847B
+100D:8473 mov DI,word ptr DS:[SI+4]
+100D:8476 call near 0x5ED0
+100D:8479 jne short 0x848B
+100D:847B mov AL,byte ptr DS:[SI]
+100D:847D call near 0x6757
+100D:8480 jb short 0x848B
+100D:8482 mov SI,DI
+100D:8484 push DI
+100D:8485 call near 0xC6AD
+100D:8488 pop DI
+100D:8489 pop SI
+100D:848A ret near
+100D:848B xor DI,DI
+100D:848D jmp short 0x8489
+100D:848F mov DI,word ptr DS:[0x11D3]
+100D:8493 cmp word ptr DS:[SI+4],DI
+100D:8496 jne short 0x84A3
+100D:8498 test byte ptr DS:[SI+3],0x40
+100D:849C jne short 0x84A3
+100D:84A3 or DI,DI
+100D:84A5 ret near
+100D:84A6 cmp SI,0x08E0
+100D:84AA jne short 0x84B2
+100D:84AC call near 0x848F
+100D:84AF jne short 0x84B2
+100D:84B2 test byte ptr DS:[SI+3],0x40
+100D:84B6 je short 0x84CA
+100D:84B8 mov word ptr DS:[SI+4],DI
+100D:84BB mov AL,3
+100D:84BD and AL,byte ptr DS:[SI+3]
+100D:84C0 cmp AL,3
+100D:84C2 jne short 0x84C8
+100D:84C4 and byte ptr DS:[SI+3],0xFC
+100D:84C8 jmp short 0x8461
+100D:84CA call near 0x6EBF
+100D:84CD push DI
+100D:84CE call near 0x858C
+100D:84D1 pop DI
+100D:84D2 cmp byte ptr DS:[SI+3],6
+100D:84D6 jne short 0x8501
+100D:84D8 push DI
+100D:84D9 mov DI,word ptr DS:[SI+4]
+100D:84DC test byte ptr DS:[DI+0x0A],2
+100D:84E0 je short 0x84EF
+100D:84E2 call near 0x5098
+100D:84E5 jcxz short 0x84EF
+100D:84E7 dec DX
+100D:84E8 jg short 0x84EF
+100D:84EA push SI
+100D:84EB call near 0x74B6
+100D:84EE pop SI
+100D:84EF pop DI
+100D:84F0 cmp byte ptr DS:[DI+8],0x28
+100D:84F4 jae short 0x8501
+100D:84F6 test byte ptr DS:[DI+0x0A],2
+100D:84FA jne short 0x851E
+100D:84FC mov AL,3
+100D:84FE call near 0x6F93
+100D:8501 xchg DI,word ptr DS:[SI+4]
+100D:8504 or byte ptr DS:[SI+3],0x40
+100D:8508 mov byte ptr DS:[SI+2],0
+100D:850C call near 0x7F75
+100D:850F call near 0x8461
+100D:8512 test byte ptr DS:[SI+0x10],0x10
+100D:8516 jne short 0x851E
+100D:8518 mov CX,7
+100D:851B jmp near 0x8313
+100D:851E ret near
+100D:851F mov AH,byte ptr DS:[SI]
+100D:8521 mov AL,byte ptr DS:[DI+9]
+100D:8524 or AL,AL
+100D:8526 jne short 0x8540
+100D:8528 mov byte ptr DS:[DI+9],AH
+100D:852B mov CX,1
+100D:852E mov byte ptr DS:[SI+2],CL
+100D:8531 test word ptr DS:[SI+0x10],0x0080
+100D:8536 je short 0x853F
+100D:853F ret near
+100D:8540 push DI
+100D:8541 push DS
+100D:8542 pop ES
+100D:8543 sub SP,0x001E
+100D:8546 mov DI,SP
+100D:8548 mov CX,0x001E
+100D:854B push AX
+100D:854C xor AL,AL
+100D:854E rep stos byte ptr ES:[DI],AL
+100D:8550 pop AX
+100D:8551 mov DI,SP
+100D:8553 push SI
+100D:8554 xor BX,BX
+100D:8556 call near 0x6906
+100D:8559 mov BL,byte ptr DS:[SI+2]
+100D:855C mov byte ptr DS:[BX+DI-1],0xFF
+100D:8560 mov AL,byte ptr DS:[SI+1]
+100D:8563 or AL,AL
+100D:8565 jne short 0x8556
+100D:8567 mov byte ptr DS:[SI+1],AH
+100D:856A mov CX,0x001E
+100D:856D pop SI
+100D:856E test word ptr DS:[SI+0x10],0x0080
+100D:8573 je short 0x857B
+100D:8575 sub CX,8
+100D:8578 add DI,8
+100D:857B xor AL,AL
+100D:857D repne scas AL,byte ptr ES:[DI]
+100D:857F sub CX,0x001E
+100D:8582 neg CX
+100D:8584 add SP,0x001E
+100D:8587 pop DI
+100D:8588 mov byte ptr DS:[SI+2],CL
+100D:858B ret near
+100D:858C mov BP,SI
+100D:858E mov AL,byte ptr DS:[SI]
+100D:8590 mov DI,word ptr DS:[SI+4]
+100D:8593 push DI
+100D:8594 test byte ptr DS:[SI+3],0x40
+100D:8598 jne short 0x85BA
+100D:859A cmp AL,byte ptr DS:[DI+9]
+100D:859D je short 0x85C2
+100D:859F mov CL,AL
+100D:85A1 mov AL,byte ptr DS:[DI+9]
+100D:85A4 call near 0x6906
+100D:85A7 mov AL,byte ptr DS:[SI+1]
+100D:85AA mov DI,SI
+100D:85AC or AL,AL
+100D:85AE je short 0x85BA
+100D:85B0 cmp AL,CL
+100D:85B2 jne short 0x85A4
+100D:85B4 mov AH,byte ptr SS:[BP+1]
+100D:85B7 mov byte ptr DS:[SI+1],AH
+100D:85BA mov SI,BP
+100D:85BC mov byte ptr DS:[SI+1],0
+100D:85C0 pop DI
+100D:85C1 ret near
+100D:85C2 xor AH,AH
+100D:85C4 xchg AH,byte ptr DS:[SI+1]
+100D:85C7 pop DI
+100D:85C8 mov byte ptr DS:[DI+9],AH
+100D:85CB ret near
+100D:85CC test word ptr DS:[SI+0x10],0x0080
+100D:85D1 jne short 0x8603
+100D:85D3 cmp byte ptr DS:[SI+2],8
+100D:85D7 jbe short 0x8603
+100D:85D9 call near 0x858C
+100D:85DC push SI
+100D:85DD mov AL,byte ptr DS:[DI+9]
+100D:85E0 or AL,AL
+100D:85E2 je short 0x85FF
+100D:85E4 call near 0x6906
+100D:85E7 mov AL,byte ptr DS:[SI+1]
+100D:85EA test byte ptr DS:[SI+0x10],0x80
+100D:85EE jne short 0x85E0
+100D:85F0 test byte ptr DS:[SI+3],0x20
+100D:85F4 je short 0x85E0
+100D:85F6 call near 0xE270
+100D:85F9 call near 0x66B1
+100D:85FC call near 0xE283
+100D:85FF pop SI
+100D:8600 call near 0x851F
+100D:8603 ret near
+100D:8604 push SI
+100D:8605 mov DI,word ptr DS:[SI+4]
+100D:8608 mov DX,word ptr DS:[DI+2]
+100D:860B mov BX,word ptr DS:[SI+8]
+100D:860E mov BP,BX
+100D:8610 shl BP,1
+100D:8612 jns short 0x8616
+100D:8614 neg BP
+100D:8616 mov BP,word ptr SS:[BP+0x4880]
+100D:861A sub BX,word ptr DS:[DI+4]
+100D:861D neg BX
+100D:861F mov DI,1
+100D:8622 jns short 0x8628
+100D:8624 neg DI
+100D:8626 neg BX
+100D:8628 sub DX,word ptr DS:[SI+6]
+100D:862B mov AX,DX
+100D:862D jns short 0x8631
+100D:862F neg AX
+100D:8631 mov SI,DX
+100D:8633 xor DX,DX
+100D:8635 div BP
+100D:8637 mov DX,SI
+100D:8639 xchg BX,DI
+100D:863B cmp AX,DI
+100D:863D jb short 0x8666
+100D:863F cmp AX,7
+100D:8642 jb short 0x8660
+100D:8644 or DI,DI
+100D:8646 jne short 0x864A
+100D:8648 xor BX,BX
+100D:864A or DX,DX
+100D:864C jns short 0x8650
+100D:864E neg BP
+100D:8650 shr AX,1
+100D:8652 je short 0x865E
+100D:8654 mov DX,BP
+100D:8656 rol word ptr DS:[0],1
+100D:865A jb short 0x865E
+100D:865C xor BX,BX
+100D:865E pop SI
+100D:865F ret near
+100D:8660 xor BX,BX
+100D:8662 xor DX,DX
+100D:8664 pop SI
+100D:8665 ret near
+100D:8666 cmp DI,7
+100D:8669 jb short 0x8660
+100D:866B or AX,AX
+100D:866D je short 0x865E
+100D:866F or DX,DX
+100D:8671 jns short 0x8675
+100D:8673 neg BP
+100D:8675 shr DI,1
+100D:8677 je short 0x865E
+100D:8679 mov DX,BP
+100D:867B rol word ptr DS:[0],1
+100D:867F jb short 0x865E
+100D:8681 xor DX,DX
+100D:8683 pop SI
+100D:8684 ret near
+100D:8685 mov byte ptr DS:[0x46D8],1
+100D:868A call near 0x69A3
+100D:868D call near 0x7B58
+100D:8690 call near 0x5F79
+100D:8693 call near 0x79DE
+100D:8696 call near 0x58FA
+100D:8699 mov AL,byte ptr DS:[0x1954]
+100D:869C cmp AL,0x43
+100D:869E ja short 0x86B8
+100D:86A0 call near 0x6906
+100D:86A3 jae short 0x86B8
+100D:86A5 mov byte ptr DS:[0x1955],AL
+100D:86A8 push SI
+100D:86A9 call near 0x697C
+100D:86AC pop SI
+100D:86AD push SI
+100D:86AE call near 0x780A
+100D:86B1 pop SI
+100D:86B2 mov DI,word ptr DS:[SI+4]
+100D:86B5 call near 0x7C02
+100D:86B8 ret near
+100D:86CC call near 0x5BEB
+100D:86CF cmp byte ptr DS:[0x0028],0
+100D:86D4 je short 0x86B8
+100D:86D6 cmp word ptr DS:[0x1176],2
+100D:86DB jb short 0x86B9
+100D:86DD mov AX,word ptr DS:[0x1954]
+100D:86E0 or AL,AL
+100D:86E2 jne short 0x86FA
+100D:86E4 mov AL,AH
+100D:86E6 or AL,AL
+100D:86E8 je short 0x86FA
+100D:86EA mov byte ptr DS:[0x1954],AL
+100D:86ED call near 0x6906
+100D:86F0 call near 0x6917
+100D:86F3 je short 0x8685
+100D:86FA mov SI,0x3CBE
+100D:86FD lods AX,word ptr DS:[SI]
+100D:86FE mov CX,AX
+100D:8700 jcxz short 0x86B8
+100D:8702 mov AL,byte ptr DS:[0x1954]
+100D:8705 mov BH,0xFF
+100D:8707 xor DI,DI
+100D:8709 mov BP,word ptr DS:[SI+0x0A]
+100D:870C cmp byte ptr SS:[BP+3],0x80
+100D:8710 jae short 0x8721
+100D:8712 mov AH,byte ptr SS:[BP]
+100D:8715 sub AH,AL
+100D:8717 je short 0x8721
+100D:8719 cmp AH,BH
+100D:871B ja short 0x8721
+100D:871D mov BH,AH
+100D:871F mov DI,SI
+100D:8721 add SI,0x0011
+100D:8724 loop 0x8709
+100D:8726 or DI,DI
+100D:8728 je short 0x86B8
+100D:872A mov SI,DI
+100D:872C mov SI,word ptr DS:[SI+0x0A]
+100D:872F mov AL,byte ptr DS:[SI]
+100D:8731 cmp word ptr DS:[0x1176],2
+100D:8736 jae short 0x8741
+100D:8738 mov DI,word ptr DS:[SI+4]
+100D:873B cmp DI,word ptr DS:[0x114E]
+100D:873F jne short 0x8750
+100D:8741 cmp AL,byte ptr DS:[0x1954]
+100D:8745 je short 0x874D
+100D:8747 mov byte ptr DS:[0x1954],AL
+100D:874A jmp near 0x8685
+100D:8750 ret near
+100D:8751 cmp byte ptr DS:[0x1954],0
+100D:8756 je short 0x878B
+100D:8758 call near 0x69A3
+100D:875B mov byte ptr DS:[0x1954],0
+100D:8760 jmp near 0x7B58
+100D:8763 cmp byte ptr DS:[0x46F3],0
+100D:8768 je short 0x8770
+100D:876A call near 0x8770
+100D:876D jmp near 0x186B
+100D:8770 cmp byte ptr DS:[0x1954],0
+100D:8775 je short 0x878B
+100D:8777 call near 0xE270
+100D:877A mov byte ptr DS:[0x46F3],0
+100D:877F call near 0x878C
+100D:8782 mov word ptr DS:[0x1BEA],0
+100D:8788 call near 0xE283
+100D:878B ret near
+100D:878C mov word ptr DS:[0x47BA],0
+100D:8792 mov AX,0x40A7
+100D:8795 cmp byte ptr DS:[8],0xFF
+100D:879A je short 0x87C0
+100D:879C cmp byte ptr DS:[8],0x20
+100D:87A1 jb short 0x87AA
+100D:87A3 cmp byte ptr DS:[0x000B],3
+100D:87A8 jae short 0x87C0
+100D:87AA push DI
+100D:87AB mov DI,word ptr DS:[0x114E]
+100D:87AF call near 0x7F27
+100D:87B2 pop DI
+100D:87B3 mov AX,0x00A7
+100D:87B6 cmp byte ptr DS:[0x46FF],0
+100D:87BB jne short 0x87C0
+100D:87BD or AH,0x40
+100D:87C0 mov BP,0x20F2
+100D:87C3 mov word ptr SS:[BP+0x0E],AX
+100D:87C6 or byte ptr SS:[BP+0x0B],0x40
+100D:87CA mov word ptr SS:[BP+0x12],0
+100D:87CF cmp byte ptr DS:[0x002A],5
+100D:87D4 jb short 0x87DF
+100D:87D6 and byte ptr SS:[BP+0x0B],0xBF
+100D:87DA mov word ptr SS:[BP+0x12],0x0067
+100D:87DF cmp word ptr DS:[0x1176],2
+100D:87E4 jae short 0x8806
+100D:87E6 mov word ptr SS:[BP+6],0x4093
+100D:87EB mov DI,word ptr DS:[0x114E]
+100D:87EF or DI,DI
+100D:87F1 je short 0x8816
+100D:87F3 mov AL,byte ptr DS:[DI+9]
+100D:87F6 or AL,AL
+100D:87F8 je short 0x8816
+100D:87FA call near 0x6906
+100D:87FD jae short 0x8816
+100D:87FF and word ptr SS:[BP+6],0xBFFF
+100D:8804 jmp short 0x8816
+100D:8806 mov AX,0x0062
+100D:8809 cmp word ptr DS:[0x3CBE],0
+100D:880E jne short 0x8813
+100D:8810 or AH,0x40
+100D:8813 mov word ptr SS:[BP+6],AX
+100D:8816 mov BX,0x0F66
+100D:8819 call near 0xD338
+100D:881C jmp near 0xC13B
+100D:881F mov SI,0x146A
+100D:8822 jmp short 0x8831
+100D:8824 mov SI,0x1462
+100D:8827 jmp short 0x8831
+100D:8829 mov SI,0x145E
+100D:882C jmp short 0x8831
+100D:882E mov SI,0x1466
+100D:8831 test AL,1
+100D:8833 je short 0x8857
+100D:8835 cmp byte ptr DS:[0x46EB],0
+100D:883A jns short 0x8846
+100D:883C test byte ptr DS:[0x46EB],0x40
+100D:8841 jne short 0x8858
+100D:8843 call near 0x5BEB
+100D:8846 lods AX,word ptr DS:[SI]
+100D:8847 add word ptr DS:[0x197C],AX
+100D:884B lods AX,word ptr DS:[SI]
+100D:884C add word ptr DS:[0x197E],AX
+100D:8850 call near 0x7B36
+100D:8853 call near word ptr DS:[0x46ED]
+100D:8857 ret near
+100D:8858 lods AX,word ptr DS:[SI]
+100D:8859 add word ptr DS:[0x1980],AX
+100D:885D lods AX,word ptr DS:[SI]
+100D:885E add word ptr DS:[0x1982],AX
+100D:8862 jmp near 0x542F
+100D:8865 call near 0xE270
+100D:8868 mov SI,AX
+100D:886A mov word ptr DS:[0xDBE4],CX
+100D:886E call near 0xD04E
+100D:8871 call near 0xCF70
+100D:8874 call near 0x88F1
+100D:8877 mov DI,0xA6B0
+100D:887A push DI
+100D:887B call near 0x8944
+100D:887E pop SI
+100D:887F push DS
+100D:8880 pop ES
+100D:8881 call near 0xD1BB
+100D:8884 call near 0xE283
+100D:8887 ret near
+100D:8888 cmp byte ptr DS:[0x46D9],0
+100D:888D jne short 0x88E1
+100D:888F mov word ptr DS:[0x479E],1
+100D:8895 mov AL,byte ptr DS:[0x00FB]
+100D:8898 not AL
+100D:889A and AL,0x80
+100D:889C mov byte ptr DS:[0x1C06],AL
+100D:889F push DS
+100D:88A0 pop ES
+100D:88A1 mov DI,0x1BE2
+100D:88A4 xor AX,AX
+100D:88A6 stos word ptr ES:[DI],AX
+100D:88A7 stos word ptr ES:[DI],AX
+100D:88A8 stos word ptr ES:[DI],AX
+100D:88A9 stos word ptr ES:[DI],AX
+100D:88AA mov AL,0x80
+100D:88AC stos word ptr ES:[DI],AX
+100D:88AD ret near
+100D:88AF or AX,AX
+100D:88B1 je short 0x88AE
+100D:88B3 mov word ptr DS:[0x4780],AX
+100D:88B6 mov byte ptr DS:[0x47E0],0
+100D:88BB test byte ptr DS:[0x46EB],0x40
+100D:88C0 je short 0x88CA
+100D:88C2 and byte ptr DS:[0x46EB],0xBF
+100D:88C7 jmp near 0x80DF
+100D:88CA mov SI,AX
+100D:88CC call near 0xCF70
+100D:88CF call near 0x88F1
+100D:88D2 mov DI,0xA6B0
+100D:88D5 push DI
+100D:88D6 call near 0x8944
+100D:88D9 pop SI
+100D:88DA cmp byte ptr DS:[0x28E7],2
+100D:88DF jae short 0x8888
+100D:88E1 lods AL,byte ptr DS:[SI]
+100D:88E2 or AL,AL
+100D:88E4 js short 0x88F0
+100D:88E6 dec SI
+100D:88E7 call near 0x8B11
+100D:88EA cmp byte ptr DS:[SI],0xFE
+100D:88ED jae short 0x88F0
+100D:88F0 ret near
+100D:88F1 push DS
+100D:88F2 push ES
+100D:88F3 pop DS
+100D:88F4 pop ES
+100D:88F5 mov DI,0xA840
+100D:88F8 lods AL,byte ptr DS:[SI]
+100D:88F9 cmp AL,0xFF
+100D:88FB je short 0x893D
+100D:88FD cmp AL,0xFE
+100D:88FF je short 0x8905
+100D:8901 cmp AL,0xE0
+100D:8903 jae short 0x8910
+100D:8905 stos byte ptr ES:[DI],AL
+100D:8906 mov AL,0xFF
+100D:8908 cmp DI,0xA9CF
+100D:890C jae short 0x893D
+100D:890E jmp short 0x88F8
+100D:893D stos byte ptr ES:[DI],AL
+100D:893E mov SI,0xA840
+100D:8941 push SS
+100D:8942 pop DS
+100D:8943 ret near
+100D:8944 sub SP,0x0032
+100D:8947 mov BP,SP
+100D:8949 push DS
+100D:894A pop ES
+100D:894B cmp byte ptr DS:[SI],0x20
+100D:894E jne short 0x8953
+100D:8950 inc SI
+100D:8951 jmp short 0x894B
+100D:8953 lods AL,byte ptr DS:[SI]
+100D:8954 or AL,AL
+100D:8956 js short 0x895B
+100D:8958 stos byte ptr ES:[DI],AL
+100D:8959 jmp short 0x8953
+100D:895B mov byte ptr DS:[0x477F],AL
+100D:895E cmp AL,0xF0
+100D:8960 jae short 0x89B0
+100D:8962 cmp AL,0xD0
+100D:8964 jae short 0x899B
+100D:8966 cmp AL,0xA0
+100D:8968 jae short 0x89AD
+100D:896A cmp AL,0x90
+100D:896C jb short 0x8970
+100D:896E jmp short 0x89E4
+100D:8970 cmp AL,0x80
+100D:8972 jne short 0x8979
+100D:8974 lods AX,word ptr DS:[SI]
+100D:8975 xchg AH,AL
+100D:8977 jmp short 0x8984
+100D:8979 and AX,0x000F
+100D:897C shl AX,1
+100D:897E mov BX,AX
+100D:8980 mov AX,word ptr DS:[BX+0x11EB]
+100D:8984 mov word ptr SS:[BP],SI
+100D:8987 mov word ptr SS:[BP+2],DS
+100D:898A add BP,4
+100D:898D mov SI,AX
+100D:898F call near 0x8A3B
+100D:8992 push ES
+100D:8993 call near 0xCF70
+100D:8996 push ES
+100D:8997 pop DS
+100D:8998 pop ES
+100D:8999 jmp short 0x8953
+100D:89B0 mov BX,SP
+100D:89B2 cmp BP,BX
+100D:89B4 je short 0x89C1
+100D:89B6 sub BP,4
+100D:89B9 mov SI,word ptr SS:[BP]
+100D:89BC mov DS,word ptr SS:[BP+2]
+100D:89BF jmp short 0x8953
+100D:89C1 stos byte ptr ES:[DI],AL
+100D:89C2 cmp AL,0xFF
+100D:89C4 jne short 0x89C8
+100D:89C6 xor SI,SI
+100D:89C8 mov word ptr DS:[0x47B6],SI
+100D:89CC mov word ptr DS:[0x47B8],DS
+100D:89D0 add SP,0x0032
+100D:89D3 test byte ptr DS:[0x47DE],0x10
+100D:89D8 je short 0x89E3
+100D:89DA mov BX,3
+100D:89DD call near 0xE3B7
+100D:89E0 call near 0x8AC3
+100D:89E3 ret near
+100D:89E4 push BP
+100D:89E5 mov BL,AL
+100D:89E7 lods AL,byte ptr DS:[SI]
+100D:89E8 xor AH,AH
+100D:89EA mov BP,AX
+100D:89EC mov AX,word ptr SS:[BP]
+100D:89F0 cmp BL,0x92
+100D:89F3 je short 0x89F7
+100D:89F5 xor AH,AH
+100D:89F7 push AX
+100D:89F8 call near 0x8ACC
+100D:89FB pop AX
+100D:89FC call near 0x8A23
+100D:89FF xchg BX,AX
+100D:8A00 mov CX,5
+100D:8A03 jmp short 0x8A0D
+100D:8A05 mov AL,DH
+100D:8A07 mov DH,DL
+100D:8A09 mov DL,BH
+100D:8A0B mov BH,BL
+100D:8A0D or AL,AL
+100D:8A0F loope 0x8A05
+100D:8A11 inc CX
+100D:8A12 add AL,0x30
+100D:8A14 stos byte ptr ES:[DI],AL
+100D:8A15 mov AL,DH
+100D:8A17 mov DH,DL
+100D:8A19 mov DL,BH
+100D:8A1B mov BH,BL
+100D:8A1D loop 0x8A12
+100D:8A1F pop BP
+100D:8A20 jmp near 0x8953
+100D:8A23 xor DX,DX
+100D:8A25 mov CX,0x2710
+100D:8A28 div CX
+100D:8A2A mov BL,AL
+100D:8A2C mov CX,0x0064
+100D:8A2F mov AX,DX
+100D:8A31 xor DX,DX
+100D:8A33 div CX
+100D:8A35 aam
+100D:8A37 xchg DX,AX
+100D:8A38 aam
+100D:8A3A ret near
+100D:8A3B test byte ptr DS:[0x47DE],0x10
+100D:8A40 jne short 0x8A43
+100D:8A42 ret near
+100D:8A43 push BX
+100D:8A44 mov BH,byte ptr DS:[0x477F]
+100D:8A48 cmp BH,0x8B
+100D:8A4B jne short 0x8A52
+100D:8A4D sub AX,0x0108
+100D:8A50 jmp short 0x8ABE
+100D:8A52 cmp BH,0x84
+100D:8A55 jne short 0x8A69
+100D:8A57 sub AX,0x0048
+100D:8A5A je short 0x8ABE
+100D:8A5C dec AX
+100D:8A5D cmp AL,3
+100D:8A5F jb short 0x8ABE
+100D:8A61 sub AX,0xFFCF
+100D:8A64 cmp AX,0x000C
+100D:8A67 jmp short 0x8ABC
+100D:8A69 cmp BH,0x83
+100D:8A6C je short 0x8A71
+100D:8A6E cmp BH,0x8C
+100D:8A71 jne short 0x8A7A
+100D:8A73 sub AX,0x00E8
+100D:8A76 cmp AL,7
+100D:8A78 jmp short 0x8ABC
+100D:8A7A mov BL,BH
+100D:8A7C sub BL,0x86
+100D:8A7F cmp BL,3
+100D:8A82 jae short 0x8A97
+100D:8A84 mov BL,byte ptr DS:[0x47DE]
+100D:8A88 and BL,0x0F
+100D:8A8B cmp BL,1
+100D:8A8E jne short 0x8AC1
+100D:8A90 sub AX,0x00D1
+100D:8A93 cmp AL,7
+100D:8A95 jmp short 0x8ABC
+100D:8A97 cmp BH,0x85
+100D:8A9A jne short 0x8AB2
+100D:8A9C mov BL,byte ptr DS:[0x47DE]
+100D:8AA0 and BL,0x0F
+100D:8AA3 cmp BL,1
+100D:8AA6 jne short 0x8AC1
+100D:8AA8 cmp AX,0x0074
+100D:8AAB mov AL,0
+100D:8AAD jne short 0x8ABE
+100D:8AAF inc AX
+100D:8AB0 jmp short 0x8ABE
+100D:8AB2 cmp BH,0x89
+100D:8AB5 jne short 0x8AC1
+100D:8AB7 sub AX,0x00DA
+100D:8ABA cmp AL,8
+100D:8ABC jae short 0x8AC1
+100D:8ABE call near 0x8AC3
+100D:8AC1 pop BX
+100D:8AC2 ret near
+100D:8AC3 mov byte ptr DS:[0x47E0],AL
+100D:8AC6 and byte ptr DS:[0x47DE],0xEF
+100D:8ACB ret near
+100D:8ACC test byte ptr SS:[0x47DE],0x10
+100D:8AD2 je short 0x8AC2
+100D:8AD4 push BX
+100D:8AD5 lea BP,BP
+100D:8AD9 cmp BP,0x00CF
+100D:8ADD je short 0x8AFF
+100D:8ADF cmp BP,0x0055
+100D:8AE3 je short 0x8B07
+100D:8AE5 cmp BP,0x0061
+100D:8AE9 je short 0x8B07
+100D:8AEB cmp BP,0x0044
+100D:8AEF jne short 0x8AC1
+100D:8AF1 mov BH,byte ptr SS:[0x47DE]
+100D:8AF6 and BH,0x0F
+100D:8AF9 cmp BH,1
+100D:8AFC jne short 0x8AC1
+100D:8AFE dec AX
+100D:8AFF cmp AL,8
+100D:8B01 jbe short 0x8ABE
+100D:8B03 mov AL,8
+100D:8B05 jmp short 0x8ABE
+100D:8B11 push SI
+100D:8B12 call near 0x8C8A
+100D:8B15 pop SI
+100D:8B16 call near 0x8CCD
+100D:8B19 jb short 0x8B10
+100D:8B1B call near 0x8F28
+100D:8B1E call near 0x8DF0
+100D:8B21 mov DX,word ptr DS:[0x4791]
+100D:8B25 mov BX,word ptr DS:[0x4793]
+100D:8B29 call near 0xD04E
+100D:8B2C mov BP,0xA9D0
+100D:8B2F mov word ptr DS:[0x479A],0x000A
+100D:8B35 mov AL,byte ptr DS:[0x4799]
+100D:8B38 and AL,0x0C
+100D:8B3A je short 0x8B8B
+100D:8B3C cmp AL,8
+100D:8B3E jae short 0x8B66
+100D:8B66 pushf
+100D:8B67 mov AX,word ptr SS:[BP]
+100D:8B6A mov AH,0x0A
+100D:8B6C mul AH
+100D:8B6E mov BX,word ptr DS:[0x478D]
+100D:8B72 sub BX,AX
+100D:8B74 jae short 0x8B78
+100D:8B78 mov word ptr DS:[0x478D],AX
+100D:8B7B popf
+100D:8B7C jne short 0x8B80
+100D:8B7E shr BX,1
+100D:8B80 mov DX,word ptr DS:[0xD82C]
+100D:8B84 add BX,word ptr DS:[0xD82E]
+100D:8B88 call near 0xD04E
+100D:8B8B mov DX,word ptr SS:[BP]
+100D:8B8E add BP,2
+100D:8B91 push DX
+100D:8B92 mov CX,word ptr SS:[BP]
+100D:8B95 add BP,2
+100D:8B98 mov DX,word ptr SS:[BP]
+100D:8B9B mov BX,word ptr SS:[BP+2]
+100D:8B9E add BP,4
+100D:8BA1 jcxz short 0x8C0C
+100D:8BA3 test byte ptr DS:[0x4799],2
+100D:8BA8 je short 0x8BD1
+100D:8BD1 pop AX
+100D:8BD2 push AX
+100D:8BD3 cmp AX,1
+100D:8BD6 je short 0x8BDF
+100D:8BD8 test byte ptr DS:[0x4799],1
+100D:8BDD jne short 0x8BE5
+100D:8BDF mov DX,6
+100D:8BE2 mov BX,0
+100D:8BE5 mov word ptr DS:[0x479C],BX
+100D:8BE9 lods AL,byte ptr DS:[SI]
+100D:8BEA or AL,AL
+100D:8BEC js short 0x8C26
+100D:8BEE cmp AL,0x20
+100D:8BF0 je short 0x8C19
+100D:8BF2 cmp AL,0x0D
+100D:8BF4 je short 0x8C19
+100D:8BF6 cmp AL,6
+100D:8BF8 je short 0x8C0F
+100D:8BFA cmp AL,8
+100D:8BFC je short 0x8C14
+100D:8BFE cmp AL,1
+100D:8C00 jne short 0x8C41
+100D:8C0C jmp short 0x8C47
+100D:8C0F call near 0xD075
+100D:8C12 jmp short 0x8BE9
+100D:8C14 call near 0xD068
+100D:8C17 jmp short 0x8BE9
+100D:8C19 cmp byte ptr DS:[SI],0x20
+100D:8C1C je short 0x8C23
+100D:8C1E cmp byte ptr DS:[SI],0x0D
+100D:8C21 jne short 0x8C26
+100D:8C23 inc SI
+100D:8C24 jmp short 0x8C19
+100D:8C26 dec CX
+100D:8C27 je short 0x8C47
+100D:8C29 push DX
+100D:8C2A add DX,word ptr DS:[0xD82C]
+100D:8C2E cmp word ptr DS:[0x479C],0
+100D:8C33 je short 0x8C3A
+100D:8C35 inc DX
+100D:8C36 dec word ptr DS:[0x479C]
+100D:8C3A mov word ptr DS:[0xD82C],DX
+100D:8C3E pop DX
+100D:8C3F jmp short 0x8BE9
+100D:8C41 call near word ptr DS:[0x2518]
+100D:8C45 jmp short 0x8BE9
+100D:8C47 mov DX,word ptr DS:[0xD830]
+100D:8C4B mov BX,word ptr DS:[0xD832]
+100D:8C4F mov AX,word ptr DS:[0x479A]
+100D:8C52 add BX,AX
+100D:8C54 sub word ptr DS:[0x478D],AX
+100D:8C58 jae short 0x8C60
+100D:8C60 call near 0xD04E
+100D:8C63 pop DX
+100D:8C64 dec DX
+100D:8C65 je short 0x8C6A
+100D:8C67 jmp near 0x8B91
+100D:8C6A mov DX,word ptr DS:[0xD830]
+100D:8C6E mov BX,word ptr DS:[0xD832]
+100D:8C72 mov word ptr DS:[0x4791],DX
+100D:8C76 mov word ptr DS:[0x4793],BX
+100D:8C7A dec SI
+100D:8C7B cmp word ptr DS:[0x479E],0x223C
+100D:8C81 jne short 0x8C89
+100D:8C83 call near 0x9046
+100D:8C86 jmp near 0xC07C
+100D:8C89 ret near
+100D:8C8A xor AX,AX
+100D:8C8C xchg AX,word ptr DS:[0x479E]
+100D:8C90 cmp AX,2
+100D:8C93 jb short 0x8CCC
+100D:8C95 mov SI,0x1470
+100D:8C98 cmp byte ptr DS:[0x28E7],0
+100D:8C9D je short 0x8CB5
+100D:8C9F mov BP,0x1BE2
+100D:8CA2 mov SI,0x4C60
+100D:8CA5 mov ES,word ptr DS:[0xDBDE]
+100D:8CA9 call far dword ptr DS:[0x391D]
+100D:8CAD mov SI,0x1BE2
+100D:8CB0 mov word ptr DS:[SI+8],0
+100D:8CB5 call near 0xC446
+100D:8CB8 mov SI,word ptr DS:[0x47C8]
+100D:8CBC or SI,SI
+100D:8CBE je short 0x8CC9
+100D:8CC0 mov word ptr DS:[0x4540],0
+100D:8CC6 call near 0x9BAC
+100D:8CC9 call near 0xC4DD
+100D:8CCC ret near
+100D:8CCD mov byte ptr DS:[0x4799],9
+100D:8CD2 mov word ptr DS:[0xDBE4],0x00F0
+100D:8CD8 cmp byte ptr DS:[0x46EB],0
+100D:8CDD je short 0x8CFB
+100D:8CDF cmp word ptr DS:[0x46EF],0
+100D:8CE4 jne short 0x8CF5
+100D:8CF5 mov BP,0x2244
+100D:8CF8 jmp near 0x8DDB
+100D:8CFB cmp word ptr DS:[0x47C4],-1
+100D:8D00 jne short 0x8D1B
+100D:8D02 mov AX,0x0048
+100D:8D05 mov word ptr DS:[0x4784],AX
+100D:8D08 mov AL,0x10
+100D:8D0A mov word ptr DS:[0x4786],AX
+100D:8D0D mov AL,8
+100D:8D0F mov word ptr DS:[0x4788],AX
+100D:8D12 mov word ptr DS:[0x478A],AX
+100D:8D15 mov BP,0x224C
+100D:8D18 jmp near 0x8DDB
+100D:8D1B cmp byte ptr DS:[0x00C6],0
+100D:8D20 je short 0x8D43
+100D:8D22 mov BP,0x2265
+100D:8D25 mov AX,0x003C
+100D:8D28 mov word ptr DS:[0x4784],AX
+100D:8D2B mov AL,0x32
+100D:8D2D mov word ptr DS:[0x4786],AX
+100D:8D30 mov AL,0x0A
+100D:8D32 mov word ptr DS:[0x4788],AX
+100D:8D35 mov word ptr DS:[0x478A],AX
+100D:8D38 mov byte ptr DS:[0xDBE4],0x64
+100D:8D3D call near 0xD082
+100D:8D40 jmp near 0x8DDB
+100D:8D43 cmp byte ptr DS:[0x227D],0
+100D:8D48 je short 0x8D62
+100D:8D4A mov byte ptr DS:[0xDBE4],6
+100D:8D4F mov BP,0x2275
+100D:8D52 xor AX,AX
+100D:8D54 mov word ptr DS:[0x4788],AX
+100D:8D57 mov word ptr DS:[0x478A],AX
+100D:8D5A mov word ptr DS:[0x4784],AX
+100D:8D5D mov word ptr DS:[0x4786],AX
+100D:8D60 jmp short 0x8DDB
+100D:8D62 cmp byte ptr DS:[0x28E7],0
+100D:8D67 jne short 0x8D8A
+100D:8D69 mov byte ptr DS:[0x4799],1
+100D:8D6E mov byte ptr DS:[0xDBE4],0x0F
+100D:8D73 mov BP,0x223C
+100D:8D76 xor AX,AX
+100D:8D78 mov word ptr DS:[0x478A],AX
+100D:8D7B inc AX
+100D:8D7C mov word ptr DS:[0x4788],AX
+100D:8D7F mov AX,0x0010
+100D:8D82 mov word ptr DS:[0x4784],AX
+100D:8D85 mov word ptr DS:[0x4786],AX
+100D:8D88 jmp short 0x8DDB
+100D:8D8A mov BP,0x2224
+100D:8D8D mov CX,3
+100D:8D90 mov AX,word ptr SS:[BP+4]
+100D:8D93 sub AX,word ptr DS:[0x4784]
+100D:8D97 sub AX,word ptr DS:[0x4786]
+100D:8D9B mov word ptr DS:[0x478F],AX
+100D:8D9E push SI
+100D:8D9F push CX
+100D:8DA0 call near 0x8E16
+100D:8DA3 pop CX
+100D:8DA4 pop SI
+100D:8DA5 mov AX,word ptr DS:[0xA9D0]
+100D:8DA8 mov AH,0x0A
+100D:8DAA mul AH
+100D:8DAC add AX,word ptr DS:[0x4788]
+100D:8DB0 add AX,word ptr DS:[0x478A]
+100D:8DB4 cmp AX,word ptr SS:[BP+6]
+100D:8DB7 jb short 0x8DCD
+100D:8DB9 add BP,8
+100D:8DBC loop 0x8D90
+100D:8DBE sub BP,8
+100D:8DC1 xor AX,AX
+100D:8DC3 mov word ptr DS:[0x4788],AX
+100D:8DC6 xchg AX,word ptr DS:[0x478A]
+100D:8DCA or AX,AX
+100D:8DCC ret near
+100D:8DCD dec CX
+100D:8DCE je short 0x8DEE
+100D:8DD0 mov BX,1
+100D:8DD3 call near 0xE3B7
+100D:8DD6 je short 0x8DEE
+100D:8DD8 add BP,8
+100D:8DDB mov AX,word ptr SS:[BP+4]
+100D:8DDE sub AX,word ptr DS:[0x4784]
+100D:8DE2 sub AX,word ptr DS:[0x4786]
+100D:8DE6 mov word ptr DS:[0x478F],AX
+100D:8DE9 push SI
+100D:8DEA call near 0x8E16
+100D:8DED pop SI
+100D:8DEE clc
+100D:8DEF ret near
+100D:8DF0 test byte ptr DS:[0x4799],1
+100D:8DF5 je short 0x8E15
+100D:8DF7 push SI
+100D:8DF8 mov SI,0xA9D0
+100D:8DFB lods AX,word ptr DS:[SI]
+100D:8DFC mov CX,AX
+100D:8DFE lods AX,word ptr DS:[SI]
+100D:8DFF or AX,AX
+100D:8E01 je short 0x8E08
+100D:8E03 cmp word ptr DS:[SI],0x001E
+100D:8E06 jae short 0x8E0F
+100D:8E08 add SI,4
+100D:8E0B loop 0x8DFE
+100D:8E0D pop SI
+100D:8E0E ret near
+100D:8E0F and byte ptr DS:[0x4799],0xFE
+100D:8E14 pop SI
+100D:8E15 ret near
+100D:8E16 push DS
+100D:8E17 pop ES
+100D:8E18 mov byte ptr DS:[0x478C],0
+100D:8E1D mov DI,0xA9D2
+100D:8E20 xor DH,DH
+100D:8E22 mov BX,word ptr DS:[0x478F]
+100D:8E26 xor DL,DL
+100D:8E28 mov AL,byte ptr DS:[SI]
+100D:8E2A or AL,AL
+100D:8E2C js short 0x8E74
+100D:8E2E cmp AL,0x0D
+100D:8E30 je short 0x8E39
+100D:8E32 cmp AL,0x20
+100D:8E34 jne short 0x8E4B
+100D:8E36 inc SI
+100D:8E37 jmp short 0x8E28
+100D:8E39 call near 0x8E9E
+100D:8E3C mov word ptr DS:[DI-4],6
+100D:8E41 mov word ptr DS:[DI-2],0
+100D:8E46 xor DL,DL
+100D:8E48 inc SI
+100D:8E49 jmp short 0x8E28
+100D:8E4B call near 0x8ED3
+100D:8E4E or CX,CX
+100D:8E50 je short 0x8E28
+100D:8E52 add CX,6
+100D:8E55 sub BX,CX
+100D:8E57 jb short 0x8E5D
+100D:8E59 inc DL
+100D:8E5B jmp short 0x8E28
+100D:8E5D add BX,6
+100D:8E60 js short 0x8E69
+100D:8E62 inc DL
+100D:8E64 call near 0x8E9E
+100D:8E67 jmp short 0x8E28
+100D:8E69 or DL,DL
+100D:8E6B je short 0x8E97
+100D:8E6D add BX,CX
+100D:8E6F call near 0x8E9E
+100D:8E72 jmp short 0x8E55
+100D:8E74 or DL,DL
+100D:8E76 je short 0x8E7B
+100D:8E78 call near 0x8E9E
+100D:8E7B mov word ptr DS:[DI-4],6
+100D:8E80 mov word ptr DS:[DI-2],0
+100D:8E85 mov word ptr DS:[DI],0
+100D:8E89 mov word ptr DS:[DI+2],0
+100D:8E8E xor DL,DL
+100D:8E90 xchg DH,DL
+100D:8E92 mov word ptr DS:[0xA9D0],DX
+100D:8E96 ret near
+100D:8E9E mov AX,DX
+100D:8EA0 xor AH,AH
+100D:8EA2 stos word ptr ES:[DI],AX
+100D:8EA3 add byte ptr DS:[0x478C],AL
+100D:8EA7 or AX,AX
+100D:8EA9 je short 0x8ECA
+100D:8EAB push DX
+100D:8EAC mov AX,BX
+100D:8EAE mov BX,DX
+100D:8EB0 xor BH,BH
+100D:8EB2 xor DX,DX
+100D:8EB4 dec BX
+100D:8EB5 je short 0x8EB9
+100D:8EB7 div BX
+100D:8EB9 add AX,6
+100D:8EBC stos word ptr ES:[DI],AX
+100D:8EBD mov AX,DX
+100D:8EBF stos word ptr ES:[DI],AX
+100D:8EC0 pop DX
+100D:8EC1 inc DH
+100D:8EC3 xor DL,DL
+100D:8EC5 mov BX,word ptr DS:[0x478F]
+100D:8EC9 ret near
+100D:8ECA stos word ptr ES:[DI],AX
+100D:8ECB stos word ptr ES:[DI],AX
+100D:8ECC inc DH
+100D:8ECE mov BX,word ptr DS:[0x478F]
+100D:8ED2 ret near
+100D:8ED3 xor CX,CX
+100D:8ED5 push BX
+100D:8ED6 mov BX,word ptr DS:[0x47A0]
+100D:8EDA lods AL,byte ptr DS:[SI]
+100D:8EDB cmp AL,0x20
+100D:8EDD je short 0x8F25
+100D:8EDF cmp AL,0x0D
+100D:8EE1 je short 0x8F25
+100D:8EE3 or AL,AL
+100D:8EE5 je short 0x8EED
+100D:8EE7 cmp AL,9
+100D:8EE9 jb short 0x8F09
+100D:8EEB js short 0x8F25
+100D:8EED cmp word ptr DS:[0x2518],0xD0FF
+100D:8EF3 jne short 0x8F04
+100D:8EF5 cmp SI,0xA6B1
+100D:8EF9 jne short 0x8F04
+100D:8EFB call near 0xD0E3
+100D:8EFE jb short 0x8F04
+100D:8F00 add CL,AL
+100D:8F02 jmp short 0x8EDA
+100D:8F04 xlat byte ptr DS:[BX+AL]
+100D:8F05 add CL,AL
+100D:8F07 jmp short 0x8EDA
+100D:8F09 cmp AL,0x0D
+100D:8F0B je short 0x8F25
+100D:8F0D cmp AL,6
+100D:8F0F je short 0x8F1D
+100D:8F11 cmp AL,8
+100D:8F13 jne short 0x8EDA
+100D:8F15 mov word ptr DS:[0x47A0],0xCEEC
+100D:8F1B jmp short 0x8EDA
+100D:8F1D mov word ptr DS:[0x47A0],0xCF6C
+100D:8F23 jmp short 0x8EDA
+100D:8F25 dec SI
+100D:8F26 pop BX
+100D:8F27 ret near
+100D:8F28 mov word ptr DS:[0x479E],BP
+100D:8F2C mov DI,0x1BE2
+100D:8F2F push DS
+100D:8F30 pop ES
+100D:8F31 mov AX,word ptr SS:[BP]
+100D:8F34 stos word ptr ES:[DI],AX
+100D:8F35 mov DX,AX
+100D:8F37 add AX,word ptr DS:[0x4784]
+100D:8F3B mov word ptr DS:[0x4791],AX
+100D:8F3E mov word ptr DS:[0x4795],AX
+100D:8F41 mov AX,word ptr SS:[BP+2]
+100D:8F44 stos word ptr ES:[DI],AX
+100D:8F45 mov BX,AX
+100D:8F47 add AX,word ptr DS:[0x4788]
+100D:8F4B mov word ptr DS:[0x4793],AX
+100D:8F4E mov word ptr DS:[0x4797],AX
+100D:8F51 mov AX,word ptr SS:[BP+4]
+100D:8F54 add DX,AX
+100D:8F56 sub AX,word ptr DS:[0x4784]
+100D:8F5A sub AX,word ptr DS:[0x4786]
+100D:8F5E mov word ptr DS:[0x478F],AX
+100D:8F61 mov AX,word ptr SS:[BP+6]
+100D:8F64 add BX,AX
+100D:8F66 sub AX,word ptr DS:[0x4788]
+100D:8F6A sub AX,word ptr DS:[0x478A]
+100D:8F6E mov word ptr DS:[0x478D],AX
+100D:8F71 mov AX,DX
+100D:8F73 cmp AX,0x0140
+100D:8F76 jb short 0x8F7B
+100D:8F78 mov AX,0x0140
+100D:8F7B stos word ptr ES:[DI],AX
+100D:8F7C mov AX,BX
+100D:8F7E stos word ptr ES:[DI],AX
+100D:8F7F cmp byte ptr DS:[0x46EB],0
+100D:8F84 jne short 0x8FD1
+100D:8F86 cmp byte ptr DS:[0x00C6],0
+100D:8F8B jne short 0x8FF5
+100D:8F8D cmp byte ptr DS:[0x227D],0
+100D:8F92 jne short 0x8FD0
+100D:8F94 cmp byte ptr DS:[0x46D9],0
+100D:8F99 jne short 0x8FD0
+100D:8F9B cmp byte ptr DS:[0x28E7],0
+100D:8FA0 je short 0x900B
+100D:8FA2 push SI
+100D:8FA3 mov SI,0x4C60
+100D:8FA6 mov BP,0x1BE2
+100D:8FA9 mov AX,0x0080
+100D:8FAC mov word ptr SS:[BP+8],AX
+100D:8FAF mov word ptr DS:[0x1C06],AX
+100D:8FB2 mov word ptr SS:[BP+0x0C],0x9468
+100D:8FB7 mov ES,word ptr DS:[0xDBDE]
+100D:8FBB call far dword ptr DS:[0x3919]
+100D:8FBF call near 0xC137
+100D:8FC2 mov SI,0x1BE2
+100D:8FC5 mov ES,word ptr DS:[0xDBD6]
+100D:8FC9 mov AX,0x001C
+100D:8FCC call near 0xC370
+100D:8FCF pop SI
+100D:8FD0 ret near
+100D:8FD1 push SI
+100D:8FD2 mov SI,0x1BE2
+100D:8FD5 mov word ptr DS:[SI+8],0x0080
+100D:8FDA mov word ptr DS:[SI+0x0C],0x7BED
+100D:8FDF sub word ptr DS:[SI+2],2
+100D:8FE3 mov AL,byte ptr DS:[0x18F2]
+100D:8FE6 mov ES,word ptr DS:[0xDBDA]
+100D:8FEA call far dword ptr DS:[0x38DD]
+100D:8FEE add word ptr DS:[0x1BE4],2
+100D:8FF3 pop SI
+100D:8FF4 ret near
+100D:8FF5 push SI
+100D:8FF6 mov AX,0x0032
+100D:8FF9 call near 0xC13E
+100D:8FFC mov AX,3
+100D:8FFF mov SI,0x2265
+100D:9002 mov ES,word ptr DS:[0xDBD6]
+100D:9006 call near 0xC370
+100D:9009 pop SI
+100D:900A ret near
+100D:900B mov DI,0x4C60
+100D:900E mov CX,0x5960
+100D:9011 push DS
+100D:9012 pop ES
+100D:9013 xor AL,AL
+100D:9015 rep stos byte ptr ES:[DI],AL
+100D:9017 mov AX,0x4C6F
+100D:901A and AL,0xF0
+100D:901C mov word ptr DS:[0x22FC],AX
+100D:901F call near 0xC085
+100D:9022 jmp near 0x8895
+100D:9025 mov CX,word ptr DS:[0x4793]
+100D:9029 mov BX,0x0092
+100D:902C sub BX,CX
+100D:902E xor DX,DX
+100D:9030 mov CH,0xFF
+100D:9032 mov DI,0x0140
+100D:9035 mov SI,word ptr DS:[0x22FC]
+100D:9039 mov ES,word ptr DS:[0xDBDA]
+100D:903D mov word ptr DS:[0x4782],BX
+100D:9041 call far dword ptr DS:[0x38C9]
+100D:9045 ret near
+100D:9046 push DS
+100D:9047 pop ES
+100D:9048 mov AX,word ptr DS:[0x4793]
+100D:904B mul word ptr DS:[0x2240]
+100D:904F mov CX,AX
+100D:9051 mov DI,word ptr DS:[0x22FC]
+100D:9055 mov AX,0xF00F
+100D:9058 xor BX,BX
+100D:905A cmp byte ptr DS:[0x00EA],0
+100D:905F jle short 0x9063
+100D:9061 mov AH,8
+100D:9063 repne scas AL,byte ptr ES:[DI]
+100D:9065 jne short 0x908B
+100D:9067 cmp byte ptr DS:[DI-2],BL
+100D:906A jne short 0x906F
+100D:906C mov byte ptr DS:[DI-2],AH
+100D:906F cmp byte ptr DS:[DI],BL
+100D:9071 jne short 0x9075
+100D:9073 mov byte ptr DS:[DI],AH
+100D:9075 cmp byte ptr DS:[DI-321],BL
+100D:9079 jne short 0x907F
+100D:907B mov byte ptr DS:[DI-321],AH
+100D:907F cmp byte ptr DS:[DI+0x013F],BL
+100D:9083 jne short 0x9063
+100D:9085 mov byte ptr DS:[DI+0x013F],AH
+100D:9089 jmp short 0x9063
+100D:908B ret near
+100D:908C mov AX,word ptr DS:[0xD83A]
+100D:908F cmp AX,word ptr DS:[0x4782]
+100D:9093 jbe short 0x90BC
+100D:9095 cmp word ptr DS:[0x479E],0x223C
+100D:909B jne short 0x90BC
+100D:909D mov CX,word ptr DS:[0x4793]
+100D:90A1 mov BX,0x0092
+100D:90A4 sub BX,CX
+100D:90A6 xor DX,DX
+100D:90A8 mov CH,0xFF
+100D:90AA mov DI,0x0140
+100D:90AD mov SI,word ptr DS:[0x22FC]
+100D:90B1 mov ES,word ptr DS:[0xDBDA]
+100D:90B5 mov BP,0xD834
+100D:90B8 call far dword ptr DS:[0x38CD]
+100D:90BC ret near
+100D:90BD mov AL,byte ptr DS:[SI+0x0E]
+100D:90C0 cmp AL,0x0C
+100D:90C2 je short 0x90D9
+100D:90C4 test word ptr DS:[0x0012],0x1000
+100D:90CA je short 0x90D9
+100D:90CC mov BX,0x009C
+100D:90CF mov DX,0x9584
+100D:90D2 test byte ptr DS:[0x10A7],0x10
+100D:90D7 je short 0x9111
+100D:90D9 cmp AL,0x0F
+100D:90DB mov BX,0x0093
+100D:90DE mov DX,0x5A03
+100D:90E1 je short 0x9111
+100D:90E3 cmp AL,0x0E
+100D:90E5 jne short 0x90F7
+100D:90E7 mov BX,0x0096
+100D:90EA mov DX,0x95C1
+100D:90ED test byte ptr DS:[0x000A],0x10
+100D:90F2 je short 0x9111
+100D:90F4 inc BX
+100D:90F5 jmp short 0x9111
+100D:90F7 mov CL,byte ptr DS:[SI+0x0F]
+100D:90FA mov BX,0x4091
+100D:90FD test CL,0x80
+100D:9100 jne short 0x9111
+100D:9102 and BH,0xBF
+100D:9105 mov DX,0x95E2
+100D:9108 test CL,0x40
+100D:910B je short 0x9111
+100D:910D inc BX
+100D:910E mov DX,0x9533
+100D:9111 mov BP,0x1F7E
+100D:9114 mov word ptr SS:[BP+6],BX
+100D:9117 mov word ptr SS:[BP+8],DX
+100D:911A call near 0xD316
+100D:911D mov BX,0x97CF
+100D:9120 jmp near 0xD338
+100D:9123 cmp AL,0x11
+100D:9125 jae short 0x917A
+100D:9127 xor AH,AH
+100D:9129 cmp AL,0x0D
+100D:912B jb short 0x9173
+100D:912D jne short 0x913B
+100D:912F mov DI,word ptr DS:[0x114E]
+100D:9133 mov AH,byte ptr DS:[DI]
+100D:9135 shr AH,1
+100D:9137 inc AH
+100D:9139 jmp short 0x9173
+100D:913B mov SI,word ptr DS:[0x4756]
+100D:913F cmp AL,0x0E
+100D:9141 je short 0x9155
+100D:9143 cmp byte ptr DS:[0x002A],0xC8
+100D:9148 je short 0x9173
+100D:914A mov AL,byte ptr DS:[0x476C]
+100D:914D shl AX,1
+100D:914F mov SI,AX
+100D:9151 mov SI,word ptr DS:[SI+0x4758]
+100D:9155 mov AL,byte ptr DS:[SI]
+100D:9157 push DX
+100D:9158 mov DL,3
+100D:915A div DL
+100D:915C mov DL,0x0F
+100D:915E or AH,AH
+100D:9160 je short 0x9164
+100D:9162 mov DL,0x11
+100D:9164 cmp AL,DL
+100D:9166 jb short 0x916C
+100D:9168 sub AL,DL
+100D:916A jmp short 0x9164
+100D:916C pop DX
+100D:916D xchg AL,AH
+100D:916F add AL,0x0E
+100D:9171 inc AH
+100D:9173 mov byte ptr DS:[0x47D0],AH
+100D:9177 xor AH,AH
+100D:9179 ret near
+100D:917A mov AX,word ptr DS:[2]
+100D:917D shl AX,1
+100D:917F shl AX,1
+100D:9181 cmp AH,8
+100D:9184 jb short 0x9188
+100D:9188 shl AH,1
+100D:918A cmp byte ptr DS:[0x00F4],0x10
+100D:918F cmc
+100D:9190 adc AH,0
+100D:9193 mov AL,0x2D
+100D:9195 jmp short 0x9171
+100D:9197 mov AX,word ptr DS:[0x47C4]
+100D:919A cmp AX,0xFFFF
+100D:919D jne short 0x91A0
+100D:919F ret near
+100D:91A0 mov word ptr DS:[0x00F0],0
+100D:91A6 cmp AX,0x000C
+100D:91A9 jne short 0x91B8
+100D:91AB test byte ptr DS:[0x10A7],0x10
+100D:91B0 je short 0x91B8
+100D:91B2 mov word ptr DS:[0x00F0],0x000A
+100D:91B8 call near 0x9123
+100D:91BB cmp AX,word ptr DS:[0x22A6]
+100D:91BF je short 0x920F
+100D:91C1 push AX
+100D:91C2 call near 0x98B2
+100D:91C5 pop AX
+100D:91C6 mov word ptr DS:[0x22A6],AX
+100D:91C9 mov SI,AX
+100D:91CB call near 0x920F
+100D:91CE mov AL,byte ptr DS:[SI+0x22A8]
+100D:91D2 xor AH,AH
+100D:91D4 mov word ptr DS:[0x2224],AX
+100D:91D7 mov word ptr DS:[0x222C],AX
+100D:91DA mov word ptr DS:[0x2234],AX
+100D:91DD push DS
+100D:91DE push DS
+100D:91DF pop ES
+100D:91E0 lds SI,word ptr DS:[0xDBB0]
+100D:91E4 mov BX,word ptr DS:[SI]
+100D:91E6 add SI,word ptr DS:[BX+SI-2]
+100D:91E9 add SI,4
+100D:91EC mov DI,0x1BF0
+100D:91EF movs word ptr ES:[DI],word ptr DS:[SI]
+100D:91F0 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:91F1 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:91F2 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:91F3 mov AX,SI
+100D:91F5 add AX,2
+100D:91F8 mov word ptr SS:[0x47CC],AX
+100D:91FC add SI,word ptr DS:[SI]
+100D:91FE mov BX,word ptr DS:[SI]
+100D:9200 mov DI,SI
+100D:9202 add DI,word ptr DS:[BX+SI-2]
+100D:9205 pop DS
+100D:9206 mov word ptr DS:[0x47CA],SI
+100D:920A mov word ptr DS:[0x47D2],DI
+100D:920E ret near
+100D:920F add AX,2
+100D:9212 jmp near 0xC13E
+100D:9215 call near 0xD41B
+100D:9218 cmp BP,0x1F0E
+100D:921C jne short 0x9248
+100D:921E cmp byte ptr DS:[0x11C9],0
+100D:9223 jne short 0x9281
+100D:9225 call near 0x9285
+100D:9228 jae short 0x9263
+100D:922A cmp CL,0x2F
+100D:922D je short 0x9282
+100D:922F cmp CL,0x0F
+100D:9232 jae short 0x9240
+100D:9234 mov AL,0x10
+100D:9236 mul CL
+100D:9238 add AX,0x0FD8
+100D:923B mov SI,AX
+100D:923D jmp near word ptr DS:[SI+4]
+100D:9240 sub CL,0x0F
+100D:9243 mov AL,CL
+100D:9245 jmp near 0x9381
+100D:9248 cmp BP,0x1F7E
+100D:924C jne short 0x9281
+100D:924E call near 0x92C9
+100D:9251 jae short 0x9281
+100D:9263 cmp byte ptr DS:[0x000B],1
+100D:9268 jne short 0x9281
+100D:926A cmp BX,0x0098
+100D:926E jae short 0x9281
+100D:9281 ret near
+100D:9282 jmp near 0x42E9
+100D:9285 cmp BX,0x0098
+100D:9289 jae short 0x92C9
+100D:928B mov SI,0x47F8
+100D:928E mov CX,0x0017
+100D:9291 lods AX,word ptr DS:[SI]
+100D:9292 mov DI,AX
+100D:9294 lods AX,word ptr DS:[SI]
+100D:9295 mov BP,AX
+100D:9297 or DI,DI
+100D:9299 js short 0x92A9
+100D:929B sub DI,DX
+100D:929D cmp DI,-32
+100D:92A0 jb short 0x92A9
+100D:92A2 sub BP,BX
+100D:92A4 cmp BP,-80
+100D:92A7 jae short 0x92EB
+100D:92A9 loop 0x9291
+100D:92AB mov AX,word ptr DS:[0x472D]
+100D:92AE or AX,AX
+100D:92B0 je short 0x92C8
+100D:92B2 sub AX,DX
+100D:92B4 cmp AX,0xFFB2
+100D:92B7 cmc
+100D:92B8 jae short 0x92C8
+100D:92BA mov AX,BX
+100D:92BC sub AX,word ptr DS:[0x472F]
+100D:92C0 cmp AX,0x003C
+100D:92C3 jae short 0x92C8
+100D:92C5 mov CX,0x002F
+100D:92C8 ret near
+100D:92C9 xor CX,CX
+100D:92CB mov CL,byte ptr DS:[0x1152]
+100D:92CF cmp CL,0xFF
+100D:92D2 je short 0x9281
+100D:92D4 mov DI,0x1C0C
+100D:92D7 call near 0xD6FE
+100D:92DA jb short 0x9281
+100D:92DC mov CL,byte ptr DS:[0x1153]
+100D:92E0 cmp CL,0xFF
+100D:92E3 je short 0x9281
+100D:92E5 mov DI,0x1C1A
+100D:92E8 jmp near 0xD6FE
+100D:92EB sub CX,0x0017
+100D:92EE neg CX
+100D:92F0 stc
+100D:92F1 ret near
+100D:92F2 xor AL,AL
+100D:92F4 jmp near 0x93AA
+100D:92F7 mov AL,1
+100D:92F9 jmp near 0x93AA
+100D:92FC mov AL,2
+100D:92FE jmp near 0x93AA
+100D:9301 mov AL,3
+100D:9303 jmp near 0x93AA
+100D:9306 mov AL,4
+100D:9308 jmp near 0x93AA
+100D:930B mov AL,5
+100D:930D jmp near 0x93AA
+100D:9310 mov AL,6
+100D:9312 jmp near 0x93AA
+100D:9315 mov AL,7
+100D:9317 jmp near 0x93AA
+100D:931A mov AL,8
+100D:931C jmp near 0x93AA
+100D:932E mov SI,word ptr DS:[0x4768]
+100D:9332 call near 0x31F6
+100D:9335 call near 0x407E
+100D:9338 mov BP,0x0044
+100D:933B cmp word ptr SS:[BP],0
+100D:933F jne short 0x9356
+100D:9341 mov AX,word ptr DS:[0x00E2]
+100D:9344 cmp AX,0x001E
+100D:9347 jae short 0x936B
+100D:9349 mov BP,0x00E4
+100D:934C mov SI,word ptr DS:[0x4768]
+100D:9350 mov AX,word ptr SS:[BP]
+100D:9353 mov word ptr DS:[SI+0x0C],AX
+100D:9356 push word ptr SS:[BP]
+100D:9359 call near 0x5323
+100D:936B mov AL,0x0C
+100D:936D jmp short 0x93AA
+100D:936F mov AL,0x0D
+100D:9371 jmp short 0x93AA
+100D:9373 mov SI,word ptr DS:[0x4756]
+100D:9377 call near 0x31F6
+100D:937A mov AL,0x0E
+100D:937C jmp short 0x93AA
+100D:937E sub AX,0x0087
+100D:9381 cmp AL,9
+100D:9383 jb short 0x9387
+100D:9387 cmp AL,8
+100D:9389 jne short 0x9394
+100D:938B mov AL,byte ptr DS:[0x476B]
+100D:938E dec AL
+100D:9390 jns short 0x9394
+100D:9394 mov byte ptr DS:[0x476C],AL
+100D:9397 mov SI,0x4758
+100D:939A xor AH,AH
+100D:939C add AX,AX
+100D:939E add SI,AX
+100D:93A0 mov SI,word ptr DS:[SI]
+100D:93A2 call near 0x1EBE
+100D:93A5 call near 0x31F6
+100D:93A8 mov AL,0x0F
+100D:93AA xor AH,AH
+100D:93AC mov word ptr DS:[0x47E1],0
+100D:93B2 push AX
+100D:93B3 mov word ptr DS:[0x47C4],AX
+100D:93B6 call near 0x91A0
+100D:93B9 call near 0x3AF9
+100D:93BC call near 0x9197
+100D:93BF call near 0x9908
+100D:93C2 mov SI,word ptr DS:[0x47C8]
+100D:93C6 mov word ptr DS:[0x4540],0
+100D:93CC call near 0x9BAC
+100D:93CF call near 0x1834
+100D:93D2 call near 0xC0F4
+100D:93D5 call near 0xC4DD
+100D:93D8 pop AX
+100D:93D9 call near 0x93DF
+100D:93DC jmp near 0x9472
+100D:93DF mov CL,AL
+100D:93E1 shl AL,1
+100D:93E3 shl AL,1
+100D:93E5 shl AL,1
+100D:93E7 mov word ptr DS:[0x47BE],AX
+100D:93EA mov AX,1
+100D:93ED shl AX,CL
+100D:93EF or word ptr DS:[0x000E],AX
+100D:93F3 or word ptr DS:[0x0014],AX
+100D:93F7 mov AL,0x10
+100D:93F9 mul CL
+100D:93FB add AX,0x0FD8
+100D:93FE mov word ptr DS:[0x47A2],AX
+100D:9401 mov SI,AX
+100D:9403 mov word ptr DS:[0x47BA],0
+100D:9409 call near 0x90BD
+100D:940C mov word ptr DS:[0x47B6],0
+100D:9412 mov byte ptr DS:[0x47C2],0x80
+100D:9417 mov byte ptr DS:[0x0019],0
+100D:941C ret near
+100D:941D cmp byte ptr DS:[0x47A9],0
+100D:9422 je short 0x9427
+100D:9424 jmp near 0x2993
+100D:9427 call near 0xD41B
+100D:9472 call near 0x9F40
+100D:9475 mov byte ptr DS:[0x226D],0x0A
+100D:947A mov byte ptr DS:[0x001B],0
+100D:947F cmp word ptr DS:[0x47B6],0
+100D:9484 jne short 0x94DD
+100D:9486 mov SI,word ptr DS:[0x47BA]
+100D:948A or SI,SI
+100D:948C jne short 0x949A
+100D:948E mov SI,word ptr DS:[0x47BE]
+100D:9492 mov AX,SI
+100D:9494 shl SI,1
+100D:9496 mov SI,word ptr DS:[SI-21898]
+100D:949A cmp SI,-1
+100D:949D je short 0x94B9
+100D:949F call near 0x9B49
+100D:94A2 call near 0x9F9E
+100D:94A5 mov word ptr DS:[0x47BA],SI
+100D:94A9 jae short 0x94DA
+100D:94AB mov AX,word ptr DS:[0x47BE]
+100D:94AE inc AX
+100D:94AF mov word ptr DS:[0x47BE],AX
+100D:94B2 mov SI,AX
+100D:94B4 and AX,3
+100D:94B7 jne short 0x9492
+100D:94B9 cmp word ptr DS:[0x47C4],0x000D
+100D:94BE je short 0x94C3
+100D:94C0 jmp near 0xD2E2
+100D:94C3 cmp SI,-1
+100D:94C6 jne short 0x94CC
+100D:94C8 mov SI,word ptr DS:[0x47BE]
+100D:94CC and SI,-8
+100D:94CF mov word ptr DS:[0x47BE],SI
+100D:94D3 mov byte ptr DS:[0x47C2],0x20
+100D:94D8 jmp short 0x9492
+100D:94DA jmp near 0xD280
+100D:94DD lds SI,word ptr DS:[0x47B6]
+100D:94E1 call near 0x88D2
+100D:94E4 mov SI,word ptr DS:[0x47BA]
+100D:94E8 add word ptr DS:[0x4780],0x1000
+100D:94EE call near 0xA03F
+100D:94F1 jmp short 0x94A5
+100D:94F3 cmp word ptr DS:[0x47C4],0x0010
+100D:94F8 jae short 0x9532
+100D:94FA push SI
+100D:94FB mov SI,word ptr DS:[0x47A2]
+100D:94FF mov AL,byte ptr DS:[SI+0x0F]
+100D:9502 mov byte ptr DS:[0x0018],AL
+100D:9505 test AL,0x40
+100D:9507 mov AX,word ptr DS:[SI+8]
+100D:950A jne short 0x950F
+100D:950C mov AX,word ptr DS:[SI+0x0A]
+100D:950F sub AX,word ptr DS:[2]
+100D:9513 neg AX
+100D:9515 mov word ptr DS:[0x0016],AX
+100D:9518 pop SI
+100D:9519 cmp byte ptr DS:[0x002A],0x64
+100D:951E jae short 0x9532
+100D:9520 cmp word ptr DS:[0x47C4],9
+100D:9525 jae short 0x9532
+100D:9527 mov DI,word ptr DS:[0x11DB]
+100D:952B or DI,DI
+100D:952D je short 0x9532
+100D:952F call near 0x2E98
+100D:9532 ret near
+100D:9533 call near 0xA1C4
+100D:9536 mov AX,6
+100D:9539 call near 0x9F31
+100D:953C call near 0x9F8B
+100D:953F inc byte ptr DS:[0x001B]
+100D:9543 call near 0xA1E2
+100D:9546 jne short 0x956C
+100D:9548 mov SI,word ptr DS:[0x47A2]
+100D:954C call near 0x1E01
+100D:954F jae short 0x9556
+100D:9551 add byte ptr DS:[0x00F9],0x10
+100D:9556 and byte ptr DS:[SI+0x0F],0xBF
+100D:955A mov BX,2
+100D:955D call near 0x956D
+100D:9560 mov CL,byte ptr DS:[SI+0x0E]
+100D:9563 mov AX,0xFFFE
+100D:9566 rol AX,CL
+100D:9568 and word ptr DS:[0x0010],AX
+100D:956C ret near
+100D:956D mov BP,BX
+100D:956F xor BP,2
+100D:9572 mov AX,word ptr DS:[2]
+100D:9575 sub AX,word ptr SS:[BP+SI+8]
+100D:9578 cmp AX,2
+100D:957B jb short 0x9583
+100D:957D mov AX,word ptr DS:[2]
+100D:9580 mov word ptr DS:[BX+SI+8],AX
+100D:9583 ret near
+100D:9584 mov SI,word ptr DS:[0x47A2]
+100D:9588 mov CL,byte ptr DS:[SI+0x0E]
+100D:958B mov AX,1
+100D:958E shl AX,CL
+100D:9590 and word ptr DS:[0x00EE],AX
+100D:9594 jne short 0x95B4
+100D:9596 or word ptr DS:[0x00EE],AX
+100D:959A mov SI,word ptr DS:[0x4768]
+100D:959E mov AL,0x20
+100D:95A0 sub byte ptr DS:[SI+0x15],0x29
+100D:95A4 sub byte ptr DS:[0x00ED],0x29
+100D:95A9 jns short 0x95B4
+100D:95AB or byte ptr DS:[SI+3],0x10
+100D:95AF or byte ptr DS:[0x10A7],0x10
+100D:95B4 mov AX,0x0085
+100D:95B7 inc byte ptr DS:[0x47DC]
+100D:95BB call near 0x970B
+100D:95BE jmp near 0x96EB
+100D:95C1 mov AX,0x0064
+100D:95C4 cmp word ptr DS:[0x00AC],0x03E8
+100D:95CA jb short 0x95DE
+100D:95CC sub AL,byte ptr DS:[0x0029]
+100D:95D0 jb short 0x95DE
+100D:95D2 shr AL,1
+100D:95D4 shr AL,1
+100D:95D6 cmp AL,byte ptr DS:[0x0036]
+100D:95DA jbe short 0x95DE
+100D:95DC mov AH,2
+100D:95DE mov byte ptr DS:[0x0023],AH
+100D:95E2 call near 0xA1C4
+100D:95E5 mov AX,5
+100D:95E8 call near 0x9F31
+100D:95EB call near 0x9F8B
+100D:95EE inc byte ptr DS:[0x001B]
+100D:95F2 mov byte ptr DS:[0x0023],0
+100D:95F7 call near 0xA1E2
+100D:95FA jne short 0x961A
+100D:95FC mov SI,word ptr DS:[0x47A2]
+100D:9600 mov CL,byte ptr DS:[SI+0x0E]
+100D:9603 cmp CL,0x0E
+100D:9606 je short 0x961B
+100D:9608 or byte ptr DS:[SI+0x0F],0x40
+100D:960C xor BX,BX
+100D:960E call near 0x956D
+100D:9611 mov AX,1
+100D:9614 shl AX,CL
+100D:9616 or word ptr DS:[0x0010],AX
+100D:961A ret near
+100D:961B mov SI,word ptr DS:[0x4756]
+100D:961F push SI
+100D:9620 call near 0x66CE
+100D:9623 call near 0x2EFB
+100D:9626 call near 0x3093
+100D:9629 pop SI
+100D:962A cmp SI,0x08E0
+100D:962E jne short 0x9639
+100D:9630 add byte ptr DS:[SI+0x15],0x18
+100D:9634 add byte ptr DS:[0x0036],0x18
+100D:9639 mov AX,SI
+100D:963B mov CX,8
+100D:963E push DS
+100D:963F pop ES
+100D:9640 mov DI,0x4758
+100D:9643 repne scas AX,word ptr ES:[DI]
+100D:9645 mov AL,7
+100D:9647 sub AL,CL
+100D:9649 mov byte ptr DS:[0x476C],AL
+100D:964C mov SI,0x10C8
+100D:964F call near 0x90BD
+100D:9652 jmp near 0xD280
+100D:9655 mov CL,byte ptr DS:[SI+0x0E]
+100D:9658 mov DI,0x1153
+100D:965B mov AL,0xFF
+100D:965D cmp byte ptr DS:[DI],CL
+100D:965F je short 0x9669
+100D:9661 dec DI
+100D:9662 cmp byte ptr DS:[DI],CL
+100D:9664 jne short 0x961A
+100D:9666 xchg AL,byte ptr DS:[DI+1]
+100D:9669 mov byte ptr DS:[DI],AL
+100D:966B mov byte ptr DS:[DI+0x10D0],0
+100D:9670 jmp near 0xD763
+100D:9673 mov CL,byte ptr DS:[SI+0x0E]
+100D:9676 mov DI,0x1152
+100D:9679 cmp byte ptr DS:[DI],CL
+100D:967B je short 0x961A
+100D:967D cmp byte ptr DS:[DI],0xFF
+100D:9680 je short 0x96AB
+100D:9682 inc DI
+100D:9683 cmp byte ptr DS:[DI],CL
+100D:9685 je short 0x961A
+100D:9687 cmp byte ptr DS:[DI],0xFF
+100D:968A je short 0x96AB
+100D:968C dec DI
+100D:968D push CX
+100D:968E mov CL,byte ptr DS:[DI]
+100D:9690 mov AL,0x10
+100D:9692 mul CL
+100D:9694 add AX,0x0FD8
+100D:9697 mov SI,AX
+100D:9699 mov AL,byte ptr DS:[SI+0x0E]
+100D:969C add AL,0x64
+100D:969E mov byte ptr DS:[0x0023],AL
+100D:96A1 call near 0x9556
+100D:96A4 pop CX
+100D:96A5 inc DI
+100D:96A6 mov AL,byte ptr DS:[DI]
+100D:96A8 mov byte ptr DS:[DI-1],AL
+100D:96AB mov byte ptr DS:[DI],CL
+100D:96AD mov byte ptr DS:[DI+0x10D0],0x10
+100D:96B2 jmp near 0xD763
+100D:96B5 push word ptr DS:[0x47C4]
+100D:96B9 push word ptr DS:[0x47C2]
+100D:96BD mov word ptr DS:[0x47C4],0x0010
+100D:96C3 mov byte ptr DS:[0x47C2],0x80
+100D:96C8 mov SI,word ptr DS:[0xAB84]
+100D:96CC call near 0x9F9E
+100D:96CF pop word ptr DS:[0x47C2]
+100D:96D3 pop word ptr DS:[0x47C4]
+100D:96D7 ret near
+100D:96D8 mov word ptr DS:[0x47C4],AX
+100D:96DB inc byte ptr DS:[0x47DC]
+100D:96DF mov AX,0x0010
+100D:96E2 call near 0x9702
+100D:96E5 mov word ptr DS:[0x1BEA],0
+100D:96EB mov byte ptr DS:[0x47DC],0
+100D:96F0 ret near
+100D:96F1 mov word ptr DS:[0x47C4],AX
+100D:96F4 cmp AL,0x0E
+100D:96F6 jne short 0x9702
+100D:96F8 mov SI,word ptr DS:[0x4756]
+100D:96FC call near 0x31F6
+100D:96FF mov AX,0x000E
+100D:9702 shl AX,1
+100D:9704 shl AX,1
+100D:9706 shl AX,1
+100D:9708 or AX,4
+100D:970B mov SI,AX
+100D:970D shl SI,1
+100D:970F mov SI,word ptr DS:[SI-21898]
+100D:9713 call near 0x9F40
+100D:9716 jmp near 0x9F8B
+100D:9719 cmp byte ptr DS:[0x004C],0
+100D:971E js short 0x972C
+100D:9720 mov SI,word ptr DS:[0x46EF]
+100D:9724 mov DI,word ptr DS:[SI+4]
+100D:9727 mov AL,0x0F
+100D:9729 call near 0x2A51
+100D:972C call near 0x9F82
+100D:972F mov word ptr DS:[0x47C4],0x000F
+100D:9735 mov word ptr DS:[0x47A2],0x10C8
+100D:973B call near 0xA1C4
+100D:973E mov SI,word ptr DS:[0x47BA]
+100D:9742 inc SI
+100D:9743 je short 0x9748
+100D:9745 dec SI
+100D:9746 jne short 0x974C
+100D:9748 mov SI,word ptr DS:[0xAB6A]
+100D:974C mov byte ptr DS:[0x47C2],0x20
+100D:9751 call near 0x9F9E
+100D:9754 mov word ptr DS:[0x47BA],SI
+100D:9758 jae short 0x9760
+100D:975A mov word ptr DS:[0x47BA],0
+100D:9760 ret near
+100D:9761 mov word ptr DS:[0x47C4],AX
+100D:9764 cmp AL,0x0E
+100D:9766 jne short 0x9772
+100D:9772 shl AX,1
+100D:9774 shl AX,1
+100D:9776 shl AX,1
+100D:9778 or AX,7
+100D:977B mov SI,AX
+100D:977D shl SI,1
+100D:977F mov SI,word ptr DS:[SI-21898]
+100D:9783 call near 0x9F40
+100D:9786 mov byte ptr DS:[0x47C2],0x80
+100D:978B jmp near 0x9F9E
+100D:978E call near 0x4ACA
+100D:9791 mov AX,word ptr DS:[0x47C4]
+100D:9794 cmp AX,0xFFFF
+100D:9797 je short 0x97CE
+100D:9799 call near 0x91A0
+100D:979C call near 0x9908
+100D:979F cmp word ptr DS:[0x479E],0
+100D:97A4 je short 0x97AC
+100D:97A6 mov SI,0x1BE2
+100D:97A9 call near 0xC477
+100D:97AC mov SI,word ptr DS:[0x47C8]
+100D:97B0 or SI,SI
+100D:97B2 je short 0x97C8
+100D:97B4 mov word ptr DS:[0x4540],0
+100D:97BA call near 0x9BAC
+100D:97BD cmp word ptr DS:[0x479E],0x223C
+100D:97C3 jne short 0x97C8
+100D:97C5 call near 0x9025
+100D:97C8 call near 0xC0F4
+100D:97CB jmp near 0xC4DD
+100D:97CF call near 0xA7A5
+100D:97D2 cmp word ptr DS:[0x47C4],-1
+100D:97D7 je short 0x97CE
+100D:97D9 mov SI,word ptr DS:[0x47A2]
+100D:97DD or byte ptr DS:[SI+0x0F],0x20
+100D:97E1 and byte ptr DS:[SI+0x0F],0xFB
+100D:97E5 mov word ptr DS:[0x47E1],0
+100D:97EB cmp byte ptr DS:[0x11C9],0
+100D:97F0 je short 0x980C
+100D:97F2 call near 0x8C8A
+100D:97F5 mov BP,0x98B2
+100D:97F8 call near 0xC097
+100D:97FB xor AL,AL
+100D:97FD xchg AL,byte ptr DS:[0x11CA]
+100D:9801 push AX
+100D:9802 call near 0x2FFB
+100D:9805 pop AX
+100D:9806 mov byte ptr DS:[0x11CA],AL
+100D:9809 jmp near 0x4ABE
+100D:980C call near 0x8C8A
+100D:980F cmp byte ptr DS:[0x47A4],0
+100D:9814 mov SI,word ptr DS:[0x47A2]
+100D:9818 js short 0x9849
+100D:981A cmp byte ptr DS:[0x002B],0
+100D:981F je short 0x9825
+100D:9821 mov AX,0x9840
+100D:9824 push AX
+100D:9825 test byte ptr DS:[SI+0x0F],0x40
+100D:9829 je short 0x982E
+100D:982B jmp near 0x9673
+100D:982E call near 0x9655
+100D:9831 cmp byte ptr DS:[0x002B],0
+100D:9836 jne short 0x983F
+100D:9838 test byte ptr DS:[0x47A4],1
+100D:983D je short 0x9879
+100D:983F ret near
+100D:9840 call near 0x9B8B
+100D:9843 call near 0xC43E
+100D:9846 jmp near 0xC4DD
+100D:9849 mov word ptr DS:[0x1C06],0
+100D:984F test byte ptr DS:[SI+0x0F],0x40
+100D:9853 je short 0x9858
+100D:9855 call near 0x9673
+100D:9858 xor AX,AX
+100D:985A mov word ptr DS:[0x4540],AX
+100D:985D mov word ptr DS:[0x479E],AX
+100D:9860 and byte ptr DS:[0x47D1],0x3F
+100D:9865 mov word ptr DS:[0x47C8],AX
+100D:9868 and byte ptr DS:[0x47A4],0x7F
+100D:986D call near 0x9B8B
+100D:9870 mov AL,byte ptr DS:[0x0023]
+100D:9873 sub AL,0x64
+100D:9875 cmp AL,0x10
+100D:9877 jb short 0x9898
+100D:9879 call near 0x2EFB
+100D:987C cmp byte ptr DS:[0x11C9],0
+100D:9881 jne short 0x9886
+100D:9883 call near 0x3090
+100D:9886 call near 0x37B2
+100D:9889 call near 0xC412
+100D:988C call near 0xC0F4
+100D:988F call near 0x1834
+100D:9892 call near 0xC4DD
+100D:9895 jmp near 0x17E6
+100D:9898 mov BP,0x37B2
+100D:989B call near 0xC097
+100D:989E call near 0x36D3
+100D:98A1 mov AX,0x00C8
+100D:98A4 call near 0xE3A0
+100D:98A7 mov word ptr DS:[0x1C06],0
+100D:98AD jmp short 0x9858
+100D:98AF call near 0x8C8A
+100D:98B2 cmp byte ptr DS:[0x47C3],0
+100D:98B7 jne short 0x98E5
+100D:98B9 xor AX,AX
+100D:98BB mov word ptr DS:[0x4540],AX
+100D:98BE and byte ptr DS:[0x47D1],0x3F
+100D:98C3 xchg AX,word ptr DS:[0x47C8]
+100D:98C7 or AX,AX
+100D:98C9 je short 0x98E5
+100D:98CB mov SI,0x1BF0
+100D:98CE mov word ptr DS:[SI+8],0
+100D:98D3 mov word ptr DS:[0x1C06],0
+100D:98D9 call near 0xC446
+100D:98DC mov SI,0x1BF0
+100D:98DF call near 0xC4F0
+100D:98E2 jmp near 0x9B8B
+100D:98E5 ret near
+100D:98E6 call near 0x98F5
+100D:98E9 mov word ptr DS:[0x47C8],AX
+100D:98EC mov word ptr DS:[0x47AA],AX
+100D:98EF mov word ptr DS:[0x479E],AX
+100D:98F2 jmp near 0x9B8B
+100D:98F5 xor AX,AX
+100D:98F7 mov word ptr DS:[0x1C06],AX
+100D:98FA mov word ptr DS:[0x1BF8],AX
+100D:98FD mov word ptr DS:[0x1BEA],AX
+100D:9900 ret near
+100D:9901 mov word ptr DS:[0x479E],0
+100D:9907 ret near
+100D:9908 mov SI,word ptr DS:[0x47CA]
+100D:990C mov ES,word ptr DS:[0xDBB2]
+100D:9910 call near 0x994F
+100D:9913 mov byte ptr DS:[0x47D1],0xC0
+100D:9918 mov AL,byte ptr DS:[0x478C]
+100D:991B xor AH,AH
+100D:991D shl AX,1
+100D:991F shl AX,1
+100D:9921 mov word ptr DS:[0x47CE],AX
+100D:9924 add SI,word ptr ES:[BP+SI]
+100D:9927 call near 0x996C
+100D:992A mov word ptr DS:[0x47C8],SI
+100D:992E xchg SI,word ptr DS:[0x47C6]
+100D:9932 or SI,SI
+100D:9934 jne short 0x994E
+100D:9936 cmp byte ptr DS:[0x00EA],0
+100D:993B jg short 0x994E
+100D:993D mov AX,word ptr DS:[0x47C4]
+100D:9940 call near 0x127C
+100D:9943 jb short 0x994E
+100D:9945 mov SI,0x99BE
+100D:9948 mov BP,0x0010
+100D:994B call near 0xDA25
+100D:994E ret near
+100D:994F mov AL,byte ptr DS:[0x47D0]
+100D:9952 or AL,AL
+100D:9954 jne short 0x9963
+100D:9956 mov BX,6
+100D:9959 call near 0xE3B7
+100D:995C mov BP,AX
+100D:995E add BP,word ptr DS:[0x00F0]
+100D:9962 ret near
+100D:9963 dec AL
+100D:9965 xor AH,AH
+100D:9967 shl AX,1
+100D:9969 mov BP,AX
+100D:996B ret near
+100D:996C cmp byte ptr DS:[0x47D0],0
+100D:9971 je short 0x9981
+100D:9973 mov CX,0x0020
+100D:9976 push ES
+100D:9977 pop DS
+100D:9978 lods AL,byte ptr DS:[SI]
+100D:9979 or AL,AL
+100D:997B jne short 0x9978
+100D:997D loop 0x9978
+100D:997F push SS
+100D:9980 pop DS
+100D:9981 ret near
+100D:9982 call near 0x99BE
+100D:9985 test word ptr DS:[0x47CE],7
+100D:998B jne short 0x9982
+100D:998D ret near
+100D:99BE cmp byte ptr DS:[0x47C3],0
+100D:99C3 je short 0x99DA
+100D:99DA call near 0x9197
+100D:99DD mov AL,byte ptr DS:[0x47D1]
+100D:99E0 or AL,AL
+100D:99E2 jns short 0x9A1C
+100D:99E4 test AL,0x10
+100D:99E6 jne short 0x9A40
+100D:99E8 mov SI,word ptr DS:[0x47C6]
+100D:99EC mov ES,word ptr DS:[0xDBB2]
+100D:99F0 cmp byte ptr ES:[SI],0xFF
+100D:99F4 je short 0x9A1D
+100D:99F6 dec word ptr DS:[0x47CE]
+100D:99FA mov word ptr DS:[0x47C8],SI
+100D:99FE call near 0x9BB1
+100D:9A01 mov word ptr DS:[0x47C6],SI
+100D:9A05 cmp word ptr DS:[0xD834],0x013F
+100D:9A0B je short 0x9A1C
+100D:9A0D call near 0x908C
+100D:9A10 mov SI,0xD834
+100D:9A13 call near 0xDB74
+100D:9A16 call near 0xC4F0
+100D:9A19 jmp near 0xDB67
+100D:9A1C ret near
+100D:9A1D cmp word ptr DS:[0x47CE],0
+100D:9A22 js short 0x9A3B
+100D:9A24 mov SI,word ptr DS:[0x47CA]
+100D:9A28 mov ES,word ptr DS:[0xDBB2]
+100D:9A2C call near 0x994F
+100D:9A2F add SI,word ptr ES:[BP+SI]
+100D:9A32 call near 0x996C
+100D:9A35 mov word ptr DS:[0x47C6],SI
+100D:9A39 jmp short 0x99F0
+100D:9A3B or byte ptr DS:[0x47D1],0x10
+100D:9A40 mov SI,word ptr DS:[0x47C6]
+100D:9A44 mov ES,word ptr DS:[0xDBB2]
+100D:9A48 cmp word ptr DS:[0x47CE],0
+100D:9A4D jg short 0x99F6
+100D:9A4F call near 0x9AB4
+100D:9A52 jb short 0x99F6
+100D:9A54 call near 0x9A7B
+100D:9A57 or AH,AH
+100D:9A59 jne short 0x9A1C
+100D:9A5B call near 0x9A60
+100D:9A5E jmp short 0x99F6
+100D:9A60 or AL,AL
+100D:9A62 je short 0x9A74
+100D:9A64 mov BX,AX
+100D:9A66 xor AL,AL
+100D:9A68 mov CX,0xFFFF
+100D:9A6B mov DI,SI
+100D:9A6D repne scas AL,byte ptr ES:[DI]
+100D:9A6F dec BX
+100D:9A70 jne short 0x9A6D
+100D:9A72 mov SI,DI
+100D:9A74 mov word ptr DS:[0x47CE],8
+100D:9A7A ret near
+100D:9A7B mov AL,byte ptr DS:[0x47D0]
+100D:9A7E mov BX,0x0F18
+100D:9A81 or AL,AL
+100D:9A83 jne short 0x9A9A
+100D:9A85 mov AL,5
+100D:9A87 mov BX,0x0F38
+100D:9A8A cmp word ptr DS:[0x47C4],7
+100D:9A8F jne short 0x9A9A
+100D:9A91 cmp byte ptr DS:[0x002A],0xC8
+100D:9A96 jb short 0x9A9A
+100D:9A9A dec AL
+100D:9A9C xor AH,AH
+100D:9A9E shl AX,1
+100D:9AA0 mov BP,AX
+100D:9AA2 add BP,word ptr DS:[0x00F0]
+100D:9AA6 mov SI,word ptr DS:[0x47CA]
+100D:9AAA mov ES,word ptr DS:[0xDBB2]
+100D:9AAE add SI,word ptr ES:[BP+SI]
+100D:9AB1 jmp near 0xE3B7
+100D:9AB4 mov AL,byte ptr DS:[0x47E1]
+100D:9AB7 or AL,AL
+100D:9AB9 je short 0x9B08
+100D:9ABB js short 0x9ADB
+100D:9ABD or byte ptr DS:[0x47E1],0x80
+100D:9AC2 call near 0x9B09
+100D:9AC5 mov AL,byte ptr DS:[0x47E2]
+100D:9AC8 xor AH,AH
+100D:9ACA mov BP,AX
+100D:9ACC mov SI,word ptr DS:[0x47CA]
+100D:9AD0 add SI,word ptr ES:[BP+SI]
+100D:9AD3 mov word ptr DS:[0x47CE],0x0014
+100D:9AD9 stc
+100D:9ADA ret near
+100D:9ADB shr AL,1
+100D:9ADD jae short 0x9B08
+100D:9ADF mov byte ptr DS:[0x47E1],0x80
+100D:9AE4 call near 0xD075
+100D:9AE7 mov SI,word ptr DS:[0x47E4]
+100D:9AEB cmp word ptr DS:[SI],0x0038
+100D:9AEE jae short 0x9B08
+100D:9AF0 lods AX,word ptr DS:[SI]
+100D:9AF1 mov CX,AX
+100D:9AF3 lods AX,word ptr DS:[SI]
+100D:9AF4 mov DX,AX
+100D:9AF6 lods AX,word ptr DS:[SI]
+100D:9AF7 mov BX,AX
+100D:9AF9 lods AX,word ptr DS:[SI]
+100D:9AFA xchg CX,AX
+100D:9AFB call near 0x8865
+100D:9AFE call near 0xD068
+100D:9B01 call near 0xDBB2
+100D:9B04 call near 0xC4DD
+100D:9B07 clc
+100D:9B08 ret near
+100D:9B09 mov SI,word ptr DS:[0x47E4]
+100D:9B0D cmp word ptr DS:[SI],0x0038
+100D:9B10 jb short 0x9B48
+100D:9B12 mov AX,word ptr DS:[0x0020]
+100D:9B15 je short 0x9B1C
+100D:9B17 mov AL,byte ptr DS:[0x009D]
+100D:9B1A xor AH,AH
+100D:9B1C call near 0x8A23
+100D:9B1F mov CX,AX
+100D:9B21 les SI,word ptr DS:[0xDBB0]
+100D:9B25 mov DI,SI
+100D:9B27 mov BP,5
+100D:9B2A and BX,0x000F
+100D:9B2D je short 0x9B32
+100D:9B2F mov BP,6
+100D:9B32 add BX,BP
+100D:9B34 shl BX,1
+100D:9B36 mov AX,word ptr ES:[BX+SI]
+100D:9B39 stos word ptr ES:[DI],AX
+100D:9B3A mov BL,DH
+100D:9B3C mov DH,DL
+100D:9B3E mov DL,CH
+100D:9B40 mov CH,CL
+100D:9B42 mov CL,0xFF
+100D:9B44 cmp BL,CL
+100D:9B46 jne short 0x9B2A
+100D:9B48 ret near
+100D:9B49 mov AX,word ptr DS:[0x47E1]
+100D:9B4C cmp AL,0x80
+100D:9B4E jne short 0x9B84
+100D:9B50 push SI
+100D:9B51 push AX
+100D:9B52 call near 0x9197
+100D:9B55 pop AX
+100D:9B56 mov AL,AH
+100D:9B58 xor AH,AH
+100D:9B5A inc AX
+100D:9B5B inc AX
+100D:9B5C mov BP,AX
+100D:9B5E mov SI,word ptr DS:[0x47CA]
+100D:9B62 mov ES,word ptr DS:[0xDBB2]
+100D:9B66 add SI,word ptr ES:[BP+SI]
+100D:9B69 mov byte ptr DS:[0x47E1],0x81
+100D:9B6E push ES
+100D:9B6F mov BP,0x99F6
+100D:9B72 mov AX,0x000C
+100D:9B75 call near 0xE353
+100D:9B78 pop ES
+100D:9B79 mov SI,word ptr DS:[0x47C6]
+100D:9B7D cmp byte ptr ES:[SI],0xFF
+100D:9B81 jne short 0x9B6E
+100D:9B83 pop SI
+100D:9B84 mov word ptr DS:[0x47E1],0
+100D:9B8A ret near
+100D:9B8B call near 0xA7A5
+100D:9B8E xor AX,AX
+100D:9B90 mov byte ptr DS:[0x47C3],0
+100D:9B95 mov word ptr DS:[0x47CE],AX
+100D:9B98 and byte ptr DS:[0x47D1],0x7F
+100D:9B9D xchg AX,word ptr DS:[0x47C6]
+100D:9BA1 or AX,AX
+100D:9BA3 je short 0x9BAB
+100D:9BA5 mov SI,0x99BE
+100D:9BA8 jmp near 0xDA5F
+100D:9BAB ret near
+100D:9BAC push SI
+100D:9BAD call near 0x9197
+100D:9BB0 pop SI
+100D:9BB1 call near 0x9BEE
+100D:9BB4 push SI
+100D:9BB5 cmp word ptr DS:[0x4540],0
+100D:9BBA jne short 0x9BCC
+100D:9BBC mov SI,0x1BF0
+100D:9BBF mov DI,0xD834
+100D:9BC2 call near 0x5B99
+100D:9BC5 mov word ptr DS:[SI],0x0080
+100D:9BC9 jmp short 0x9BD7
+100D:9BCC call near 0x9C2D
+100D:9BCF cmp word ptr DS:[0xD834],0x013F
+100D:9BD5 je short 0x9BEC
+100D:9BD7 mov SI,0xD834
+100D:9BDA cmp word ptr DS:[SI+6],0x0098
+100D:9BDF jb short 0x9BE6
+100D:9BE1 mov word ptr DS:[SI+6],0x0098
+100D:9BE6 call near 0xC446
+100D:9BE9 call near 0x9D16
+100D:9BEC pop SI
+100D:9BED ret near
+100D:9BEE xor CX,CX
+100D:9BF0 push DS
+100D:9BF1 pop ES
+100D:9BF2 mov DS,word ptr SS:[0xDBB2]
+100D:9BF7 mov DI,0x460A
+100D:9BFA lods AL,byte ptr DS:[SI]
+100D:9BFB xor AH,AH
+100D:9BFD or AL,AL
+100D:9BFF je short 0x9C25
+100D:9C01 cmp AL,1
+100D:9C03 jne short 0x9C08
+100D:9C08 push SI
+100D:9C09 sub AX,2
+100D:9C0C shl AX,1
+100D:9C0E mov BP,AX
+100D:9C10 mov SI,word ptr SS:[0x47CC]
+100D:9C15 add SI,word ptr DS:[BP+SI]
+100D:9C18 lods AL,byte ptr DS:[SI]
+100D:9C19 or AL,AL
+100D:9C1B je short 0x9C22
+100D:9C1D stos byte ptr ES:[DI],AL
+100D:9C1E movs word ptr ES:[DI],word ptr DS:[SI]
+100D:9C1F inc CX
+100D:9C20 jmp short 0x9C18
+100D:9C22 pop SI
+100D:9C23 jmp short 0x9BFA
+100D:9C25 mov word ptr SS:[0x4608],CX
+100D:9C2A push SS
+100D:9C2B pop DS
+100D:9C2C ret near
+100D:9C2D mov word ptr DS:[0xD834],0x013F
+100D:9C33 mov word ptr DS:[0xD836],0x00C7
+100D:9C39 xor AX,AX
+100D:9C3B mov word ptr DS:[0xD838],AX
+100D:9C3E mov word ptr DS:[0xD83A],AX
+100D:9C41 mov AX,DS
+100D:9C43 mov ES,AX
+100D:9C45 mov SI,0x4540
+100D:9C48 mov DI,0x4608
+100D:9C4B call near 0x9C54
+100D:9C4E mov SI,0x4608
+100D:9C51 mov DI,0x4540
+100D:9C54 lods AX,word ptr DS:[SI]
+100D:9C55 mov CX,AX
+100D:9C57 push CX
+100D:9C58 push DI
+100D:9C59 mov CX,word ptr DS:[DI]
+100D:9C5B add DI,2
+100D:9C5E cmps word ptr DS:[SI],word ptr ES:[DI]
+100D:9C5F lahf
+100D:9C60 cmps byte ptr DS:[SI],byte ptr ES:[DI]
+100D:9C61 mov AL,AH
+100D:9C63 lahf
+100D:9C64 and AL,AH
+100D:9C66 test AL,0x40
+100D:9C68 jne short 0x9C75
+100D:9C6A sub SI,3
+100D:9C6D loop 0x9C5E
+100D:9C6F call near 0x9CC6
+100D:9C72 add SI,3
+100D:9C75 pop DI
+100D:9C76 pop CX
+100D:9C77 loop 0x9C57
+100D:9C79 cmp byte ptr DS:[0x47E1],0x81
+100D:9C7E je short 0x9CA6
+100D:9C80 call near 0xABCC
+100D:9C83 je short 0x9CA6
+100D:9C85 mov AX,word ptr DS:[0x47C4]
+100D:9C88 cmp AL,9
+100D:9C8A je short 0x9CC5
+100D:9C8C cmp AL,0x0C
+100D:9C8E je short 0x9CC5
+100D:9C90 mov SI,word ptr DS:[0xDC28]
+100D:9C94 mov AX,word ptr DS:[SI+2]
+100D:9C97 cmp AX,word ptr DS:[0xD83A]
+100D:9C9B jae short 0x9CA6
+100D:9C9D mov word ptr DS:[0xD83A],AX
+100D:9CA0 cmp AX,word ptr DS:[0xD836]
+100D:9CA4 jle short 0x9CBF
+100D:9CA6 cmp byte ptr DS:[0x47E1],0x80
+100D:9CAB jne short 0x9CC5
+100D:9CAD mov AX,0x004C
+100D:9CB0 cmp AX,word ptr DS:[0xD83A]
+100D:9CB4 jae short 0x9CC5
+100D:9CB6 mov word ptr DS:[0xD83A],AX
+100D:9CB9 cmp AX,word ptr DS:[0xD836]
+100D:9CBD jg short 0x9CC5
+100D:9CBF mov word ptr DS:[0xD834],0x013F
+100D:9CC5 ret near
+100D:9CC6 push SI
+100D:9CC7 push DS
+100D:9CC8 xor AH,AH
+100D:9CCA lods AL,byte ptr DS:[SI]
+100D:9CCB mov BP,AX
+100D:9CCD dec BP
+100D:9CCE lods AL,byte ptr DS:[SI]
+100D:9CCF mov DX,AX
+100D:9CD1 add DX,word ptr DS:[0x1BF0]
+100D:9CD5 lods AL,byte ptr DS:[SI]
+100D:9CD6 mov BX,AX
+100D:9CD8 add BX,word ptr DS:[0x1BF2]
+100D:9CDC lds SI,word ptr DS:[0xDBB0]
+100D:9CE0 shl BP,1
+100D:9CE2 add SI,word ptr DS:[BP+SI]
+100D:9CE5 mov BP,0xD834
+100D:9CE8 cmp word ptr SS:[BP],DX
+100D:9CEB jb short 0x9CF0
+100D:9CED mov word ptr SS:[BP],DX
+100D:9CF0 cmp word ptr SS:[BP+2],BX
+100D:9CF3 jb short 0x9CF8
+100D:9CF5 mov word ptr SS:[BP+2],BX
+100D:9CF8 lods AX,word ptr DS:[SI]
+100D:9CF9 and AX,0x01FF
+100D:9CFC add DX,AX
+100D:9CFE lods AX,word ptr DS:[SI]
+100D:9CFF xor AH,AH
+100D:9D01 add BX,AX
+100D:9D03 cmp word ptr SS:[BP+4],DX
+100D:9D06 jae short 0x9D0B
+100D:9D08 mov word ptr SS:[BP+4],DX
+100D:9D0B cmp word ptr SS:[BP+6],BX
+100D:9D0E jae short 0x9D13
+100D:9D10 mov word ptr SS:[BP+6],BX
+100D:9D13 pop DS
+100D:9D14 pop SI
+100D:9D15 ret near
+100D:9D16 push DS
+100D:9D17 pop ES
+100D:9D18 mov DI,0x4540
+100D:9D1B mov SI,0x4608
+100D:9D1E mov CX,word ptr DS:[SI]
+100D:9D20 push SI
+100D:9D21 mov AX,CX
+100D:9D23 shl CX,1
+100D:9D25 add CX,AX
+100D:9D27 add CX,2
+100D:9D2A rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:9D2C pop SI
+100D:9D2D lods AX,word ptr DS:[SI]
+100D:9D2E mov CX,AX
+100D:9D30 push CX
+100D:9D31 lods AL,byte ptr DS:[SI]
+100D:9D32 xor AH,AH
+100D:9D34 mov BP,AX
+100D:9D36 lods AL,byte ptr DS:[SI]
+100D:9D37 mov DX,AX
+100D:9D39 lods AL,byte ptr DS:[SI]
+100D:9D3A mov BX,AX
+100D:9D3C add DX,word ptr DS:[0x1BF0]
+100D:9D40 add BX,word ptr DS:[0x1BF2]
+100D:9D44 push SI
+100D:9D45 dec BP
+100D:9D46 mov ES,word ptr DS:[0xDBDA]
+100D:9D4A lds SI,word ptr DS:[0xDBB0]
+100D:9D4E shl BP,1
+100D:9D50 add SI,word ptr DS:[BP+SI]
+100D:9D53 lods AX,word ptr DS:[SI]
+100D:9D54 mov DI,AX
+100D:9D56 lods AX,word ptr DS:[SI]
+100D:9D57 xor AH,AH
+100D:9D59 mov CX,AX
+100D:9D5B mov BP,0xD834
+100D:9D5E call far dword ptr SS:[0x38CD]
+100D:9D63 push SS
+100D:9D64 pop DS
+100D:9D65 pop SI
+100D:9D66 pop CX
+100D:9D67 loop 0x9D30
+100D:9D69 ret near
+100D:9D6A mov ES,word ptr SS:[0xDBD8]
+100D:9D6F lods AL,byte ptr DS:[SI]
+100D:9D70 xor AH,AH
+100D:9D72 or AL,AL
+100D:9D74 je short 0x9D93
+100D:9D76 cmp AL,1
+100D:9D78 jne short 0x9D7D
+100D:9D7D push SI
+100D:9D7E sub AX,2
+100D:9D81 shl AX,1
+100D:9D83 mov BP,AX
+100D:9D85 mov SI,word ptr SS:[0x47CC]
+100D:9D8A add SI,word ptr DS:[BP+SI]
+100D:9D8D call near 0x9D94
+100D:9D90 pop SI
+100D:9D91 jmp short 0x9D6F
+100D:9D93 ret near
+100D:9D94 lods AL,byte ptr DS:[SI]
+100D:9D95 and AX,0x00FF
+100D:9D98 je short 0x9D93
+100D:9D9A xor AH,AH
+100D:9D9C mov BP,AX
+100D:9D9E lods AL,byte ptr DS:[SI]
+100D:9D9F mov DX,AX
+100D:9DA1 lods AL,byte ptr DS:[SI]
+100D:9DA2 mov BX,AX
+100D:9DA4 add DX,word ptr SS:[0x1BF0]
+100D:9DA9 add BX,word ptr SS:[0x1BF2]
+100D:9DAE sub DX,word ptr SS:[0x46D2]
+100D:9DB3 sub BX,word ptr SS:[0x46D4]
+100D:9DB8 add DX,word ptr SS:[0x47D4]
+100D:9DBD add BX,word ptr SS:[0x47D6]
+100D:9DC2 push SI
+100D:9DC3 push DS
+100D:9DC4 dec BP
+100D:9DC5 lds SI,word ptr SS:[0xDBB0]
+100D:9DCA shl BP,1
+100D:9DCC add SI,word ptr DS:[BP+SI]
+100D:9DCF lods AX,word ptr DS:[SI]
+100D:9DD0 mov DI,AX
+100D:9DD2 lods AX,word ptr DS:[SI]
+100D:9DD3 xor AH,AH
+100D:9DD5 mov CX,AX
+100D:9DD7 mov BP,0x47D4
+100D:9DDA call far dword ptr SS:[0x38CD]
+100D:9DDF pop DS
+100D:9DE0 pop SI
+100D:9DE1 jmp short 0x9D94
+100D:9DE3 cmp word ptr DS:[0x47C4],0x0010
+100D:9DE8 jae short 0x9D93
+100D:9DEA push AX
+100D:9DEB push SI
+100D:9DEC call near 0x9197
+100D:9DEF pop SI
+100D:9DF0 pop AX
+100D:9DF1 cmp byte ptr DS:[0x46EB],0
+100D:9DF6 js short 0x9E75
+100D:9DF8 mov DI,0xD834
+100D:9DFB call near 0x5B99
+100D:9DFE mov DX,word ptr DS:[0x1BF0]
+100D:9E02 mov BX,word ptr DS:[0x1BF2]
+100D:9E06 add word ptr DS:[DI-8],DX
+100D:9E09 add word ptr DS:[DI-6],BX
+100D:9E0C add word ptr DS:[DI-4],DX
+100D:9E0F add word ptr DS:[DI-2],BX
+100D:9E12 mov SI,word ptr DS:[0x47D2]
+100D:9E16 mov AH,byte ptr DS:[0x47D0]
+100D:9E1A dec AH
+100D:9E1C js short 0x9E2D
+100D:9E1E cmp word ptr DS:[0x22A6],0x000D
+100D:9E23 jne short 0x9E27
+100D:9E25 add AL,AH
+100D:9E27 shl AH,1
+100D:9E29 shl AH,1
+100D:9E2B add AL,AH
+100D:9E2D xor AH,AH
+100D:9E2F shl AX,1
+100D:9E31 add SI,AX
+100D:9E33 call near 0x9BEE
+100D:9E36 mov SI,0x4608
+100D:9E39 cmp byte ptr DS:[0x00EA],0
+100D:9E3E jg short 0x9E74
+100D:9E40 cmp word ptr DS:[SI],2
+100D:9E43 jb short 0x9E57
+100D:9E45 call near 0x9D2D
+100D:9E48 call near 0x908C
+100D:9E4B mov SI,0xD834
+100D:9E4E call near 0xDB74
+100D:9E51 call near 0xC4F0
+100D:9E54 jmp near 0xDB67
+100D:9E57 mov SI,0xD834
+100D:9E5A call near 0xDB74
+100D:9E5D push word ptr DS:[0xDBDA]
+100D:9E61 call near 0xC08E
+100D:9E64 mov SI,0x4608
+100D:9E67 call near 0x9D2D
+100D:9E6A call near 0x908C
+100D:9E6D pop word ptr DS:[0xDBDA]
+100D:9E71 jmp near 0xDB67
+100D:9E74 ret near
+100D:9E75 mov SI,word ptr DS:[0x47D2]
+100D:9E79 cmp word ptr DS:[0x47C4],0x000C
+100D:9E7E je short 0x9E8C
+100D:9E80 mov AH,byte ptr DS:[0x47D0]
+100D:9E84 dec AH
+100D:9E86 shl AH,1
+100D:9E88 shl AH,1
+100D:9E8A add AL,AH
+100D:9E8C xor AH,AH
+100D:9E8E shl AX,1
+100D:9E90 add SI,AX
+100D:9E92 push SI
+100D:9E93 mov SI,0x47D4
+100D:9E96 call near 0xDB74
+100D:9E99 pop SI
+100D:9E9A push DS
+100D:9E9B mov DS,word ptr SS:[0xDBB2]
+100D:9EA0 lods AL,byte ptr DS:[SI]
+100D:9EA1 xor AH,AH
+100D:9EA3 sub AL,2
+100D:9EA5 shl AX,1
+100D:9EA7 mov BP,AX
+100D:9EA9 mov SI,word ptr SS:[0x47CC]
+100D:9EAE add SI,word ptr DS:[BP+SI]
+100D:9EB1 cmp byte ptr DS:[SI+3],0
+100D:9EB5 je short 0x9EC9
+100D:9EB7 mov ES,word ptr SS:[0xDBD6]
+100D:9EBC call near 0x9D94
+100D:9EBF pop DS
+100D:9EC0 mov SI,0x47D4
+100D:9EC3 call near 0xC4F0
+100D:9EC6 jmp near 0xDB67
+100D:9EC9 mov ES,word ptr SS:[0xDBD8]
+100D:9ECE call near 0x9D94
+100D:9ED1 pop DS
+100D:9ED2 jmp near 0xDB67
+100D:9ED5 cmp word ptr DS:[0x47C4],0x0010
+100D:9EDA jae short 0x9EEB
+100D:9EDC call near 0x9985
+100D:9EDF cmp byte ptr DS:[0x47E1],0x81
+100D:9EE4 jne short 0x9EEB
+100D:9EEB call near 0xC85B
+100D:9EEE mov AL,byte ptr DS:[0x47DD]
+100D:9EF1 mov byte ptr DS:[0x47DC],AL
+100D:9EF4 call near 0x9EFD
+100D:9EF7 mov byte ptr DS:[0x47DC],0
+100D:9EFC ret near
+100D:9EFD mov AL,byte ptr DS:[0x47DC]
+100D:9F00 mov byte ptr DS:[0x47DD],AL
+100D:9F03 mov AX,word ptr DS:[0x4780]
+100D:9F06 mov BX,word ptr DS:[0x47C4]
+100D:9F0A call near 0xA6CC
+100D:9F0D jae short 0x9EFC
+100D:9F0F cmp word ptr DS:[0x47C4],0x0010
+100D:9F14 jae short 0x9F19
+100D:9F16 call near 0x9F1C
+100D:9F19 jmp near 0xA75C
+100D:9F1C call near 0x9197
+100D:9F1F or byte ptr DS:[0x47D1],0x10
+100D:9F24 call near 0x9A7B
+100D:9F27 xor AH,AH
+100D:9F29 call near 0x9A60
+100D:9F2C mov word ptr DS:[0x47C6],SI
+100D:9F30 ret near
+100D:9F31 mov SI,word ptr DS:[0x47BE]
+100D:9F35 and SI,-8
+100D:9F38 add SI,AX
+100D:9F3A shl SI,1
+100D:9F3C mov SI,word ptr DS:[SI-21898]
+100D:9F40 mov AX,word ptr DS:[0x47C4]
+100D:9F43 cmp AX,2
+100D:9F46 jne short 0x9F56
+100D:9F48 cmp byte ptr DS:[0x00C2],4
+100D:9F4D jne short 0x9F56
+100D:9F56 mov CL,0x10
+100D:9F58 mul CL
+100D:9F5A add AX,0x0FD8
+100D:9F5D mov word ptr DS:[0x47A2],AX
+100D:9F60 cmp byte ptr DS:[0x46EB],0
+100D:9F65 jne short 0x9F82
+100D:9F67 call near 0xC07C
+100D:9F6A mov word ptr DS:[0x4784],0x0028
+100D:9F70 mov word ptr DS:[0x4786],0x0010
+100D:9F76 mov word ptr DS:[0x4788],0x0010
+100D:9F7C mov word ptr DS:[0x478A],0x0010
+100D:9F82 mov word ptr DS:[0xDBE4],0x00F0
+100D:9F88 jmp near 0xD068
+100D:9F8B push word ptr DS:[0x47C2]
+100D:9F8F mov byte ptr DS:[0x47C2],0x20
+100D:9F94 call near 0x9F9E
+100D:9F97 pop word ptr DS:[0x47C2]
+100D:9F9B ret near
+100D:9F9C stc
+100D:9F9D ret near
+100D:9F9E mov word ptr DS:[0x477C],SI
+100D:9FA2 call near 0x94F3
+100D:9FA5 mov word ptr DS:[0x47BC],0xA6B0
+100D:9FAB mov AX,word ptr DS:[SI]
+100D:9FAD cmp AX,0xFFFF
+100D:9FB0 je short 0x9F9C
+100D:9FB2 test AL,0x80
+100D:9FB4 je short 0x9FC0
+100D:9FB6 test AL,0x40
+100D:9FB8 jne short 0x9FC0
+100D:9FBA and AL,byte ptr DS:[0x47C2]
+100D:9FBE jne short 0x9FD3
+100D:9FC0 push SI
+100D:9FC1 mov AL,AH
+100D:9FC3 mov AH,byte ptr DS:[SI+2]
+100D:9FC6 rol AH,1
+100D:9FC8 rol AH,1
+100D:9FCA and AH,3
+100D:9FCD call near 0xA396
+100D:9FD0 pop SI
+100D:9FD1 jne short 0x9FD8
+100D:9FD3 add SI,4
+100D:9FD6 jmp short 0x9FAB
+100D:9FD8 cmp byte ptr DS:[0x46EB],0
+100D:9FDD jne short 0x9FF7
+100D:9FDF mov AX,word ptr DS:[0x47C4]
+100D:9FE2 cmp AX,0x0010
+100D:9FE5 jae short 0x9FF7
+100D:9FE7 push SI
+100D:9FE8 push AX
+100D:9FE9 call near 0xA0F1
+100D:9FEC call near 0x1803
+100D:9FEF call near 0x3AF9
+100D:9FF2 pop AX
+100D:9FF3 call near 0x91A0
+100D:9FF6 pop SI
+100D:9FF7 push SI
+100D:9FF8 lods AX,word ptr DS:[SI]
+100D:9FF9 mov word ptr DS:[0x47DE],AX
+100D:9FFC lods AX,word ptr DS:[SI]
+100D:9FFD xchg AH,AL
+100D:9FFF and AX,0x03FF
+100D:A002 or AX,0x0800
+100D:A005 mov DI,word ptr DS:[0x47BC]
+100D:A009 cmp DI,0xA6B0
+100D:A00D je short 0xA034
+100D:A034 cmp byte ptr DS:[0x00C6],0
+100D:A039 jne short 0xA03E
+100D:A03B call near 0x88AF
+100D:A03E pop SI
+100D:A03F call near 0xC85B
+100D:A042 cmp word ptr DS:[0x47B6],0
+100D:A047 jne short 0xA0AA
+100D:A049 mov AL,byte ptr DS:[SI]
+100D:A04B and AL,0x0F
+100D:A04D je short 0xA05E
+100D:A04F xor AH,AH
+100D:A051 push SI
+100D:A052 dec AX
+100D:A053 shl AX,1
+100D:A055 mov BX,0xA107
+100D:A058 add BX,AX
+100D:A05A call near word ptr CS:[BX]
+100D:A05D pop SI
+100D:A05E mov AL,byte ptr DS:[SI+2]
+100D:A061 and AL,0x0C
+100D:A063 je short 0xA092
+100D:A065 test byte ptr DS:[SI],0x80
+100D:A068 jne short 0xA092
+100D:A06A mov AX,SI
+100D:A06C sub AX,0xAA78
+100D:A06F shr AX,1
+100D:A071 shr AX,1
+100D:A073 mov BL,byte ptr DS:[0x47C4]
+100D:A077 shl BL,1
+100D:A079 shl BL,1
+100D:A07B shl BL,1
+100D:A07D or AH,BL
+100D:A07F mov BP,word ptr DS:[0x11BD]
+100D:A083 mov word ptr CS:[BP],AX
+100D:A087 mov word ptr CS:[BP+2],0
+100D:A08D add word ptr DS:[0x11BD],2
+100D:A092 mov byte ptr DS:[0x0019],0xFF
+100D:A097 or byte ptr DS:[SI],0x80
+100D:A09A add SI,4
+100D:A09D xor AL,AL
+100D:A09F xchg AL,byte ptr DS:[0x47A8]
+100D:A0A3 or AL,AL
+100D:A0A5 je short 0xA0AA
+100D:A0A7 mov SI,0xFFFF
+100D:A0AA cmp byte ptr DS:[0x46EB],0
+100D:A0AF jne short 0xA0E2
+100D:A0B1 cmp word ptr DS:[0x47C4],0x0010
+100D:A0B6 jae short 0xA0E2
+100D:A0B8 push SI
+100D:A0B9 call near 0x978E
+100D:A0BC pop SI
+100D:A0BD cmp byte ptr DS:[0x4774],0
+100D:A0C2 je short 0xA0C9
+100D:A0C4 push SI
+100D:A0C5 call near 0x2EBF
+100D:A0C8 pop SI
+100D:A0C9 cmp byte ptr DS:[0x00EA],0
+100D:A0CE jg short 0xA0E2
+100D:A0D0 call near 0xE270
+100D:A0D3 call near 0x9EFD
+100D:A0D6 mov AX,0x0F66
+100D:A0D9 xchg AX,word ptr DS:[0x227E]
+100D:A0DD call near AX
+100D:A0DF call near 0xE283
+100D:A0E2 cmp byte ptr DS:[0x00FB],0
+100D:A0E7 js short 0xA0EF
+100D:A0E9 mov AL,byte ptr DS:[0x28E8]
+100D:A0EC mov byte ptr DS:[0x28E7],AL
+100D:A0EF clc
+100D:A0F0 ret near
+100D:A0F1 cmp byte ptr DS:[0x28E7],2
+100D:A0F6 jne short 0xA103
+100D:A0F8 test byte ptr DS:[SI+2],0x10
+100D:A0FC je short 0xA104
+100D:A0FE mov byte ptr DS:[0x28E7],1
+100D:A103 ret near
+100D:A104 jmp near 0x8C8A
+100D:A125 mov AX,word ptr DS:[0x47C4]
+100D:A128 cmp AX,1
+100D:A12B je short 0xA186
+100D:A12D cmp AX,3
+100D:A130 jne short 0xA135
+100D:A132 jmp near 0x2239
+100D:A135 cmp AX,5
+100D:A138 jne short 0xA141
+100D:A13A mov word ptr DS:[0x227E],0x2CCF
+100D:A140 ret near
+100D:A141 cmp AX,0x000C
+100D:A144 jne short 0xA14E
+100D:A14E cmp AX,0x000D
+100D:A151 jne short 0xA156
+100D:A153 jmp near 0x2388
+100D:A156 ret near
+100D:A157 mov AX,word ptr DS:[0x47C4]
+100D:A15A cmp AX,3
+100D:A15D jne short 0xA162
+100D:A15F jmp near 0x24EE
+100D:A172 mov AX,word ptr DS:[0x47C4]
+100D:A175 cmp AX,1
+100D:A178 jne short 0xA17E
+100D:A17A inc byte ptr DS:[0x00F5]
+100D:A17E cmp AX,3
+100D:A181 jne short 0xA156
+100D:A183 jmp near 0x24A3
+100D:A186 test byte ptr DS:[0x000A],2
+100D:A18B je short 0xA197
+100D:A18D mov AL,0x28
+100D:A18F call near 0x6F78
+100D:A192 mov AX,0xFFCE
+100D:A195 jmp short 0xA1AA
+100D:A197 mov AX,word ptr DS:[0x1176]
+100D:A19A cmp AX,1
+100D:A19D jne short 0xA1AA
+100D:A19F add AX,0x000A
+100D:A1A2 mov AL,0x0A
+100D:A1A4 call near 0x6F78
+100D:A1A7 mov AX,0x000A
+100D:A1AA add AX,0x0014
+100D:A1AD mov word ptr DS:[0x1176],AX
+100D:A1B0 xor BL,BL
+100D:A1B2 cmp AX,0x0064
+100D:A1B5 jae short 0xA1BF
+100D:A1B7 mov BL,6
+100D:A1B9 div BL
+100D:A1BB mov BL,0x80
+100D:A1BD sub BL,AL
+100D:A1BF mov byte ptr DS:[0x00D5],BL
+100D:A1C3 ret near
+100D:A1C4 mov byte ptr DS:[0x47A5],0xFF
+100D:A1C9 ret near
+100D:A1D0 mov byte ptr DS:[0x47A5],0xFF
+100D:A1D5 ret near
+100D:A1D6 mov byte ptr DS:[0x47A5],0
+100D:A1DB ret near
+100D:A1DC mov byte ptr DS:[0x47A5],0x80
+100D:A1E1 ret near
+100D:A1E2 cmp byte ptr DS:[0x47A5],0xFF
+100D:A1E7 ret near
+100D:A1E8 inc byte ptr DS:[0x47A8]
+100D:A1EC ret near
+100D:A1F7 mov BL,byte ptr DS:[0x002A]
+100D:A1FB mov AX,0x12F8
+100D:A1FE cmp BL,0x14
+100D:A201 jb short 0xA216
+100D:A203 mov AX,0x134F
+100D:A206 cmp BL,0x18
+100D:A209 jb short 0xA216
+100D:A20B mov AX,0x1370
+100D:A20E cmp BL,0x30
+100D:A211 jb short 0xA216
+100D:A216 jmp near 0x1771
+100D:A219 test byte ptr DS:[SI],0x80
+100D:A21C jne short 0xA234
+100D:A21E inc byte ptr DS:[0x002A]
+100D:A222 mov byte ptr DS:[0x00FF],0
+100D:A227 call near 0xB17A
+100D:A22A cmp byte ptr DS:[0x002A],1
+100D:A22F jne short 0xA234
+100D:A231 call near 0x100B
+100D:A234 ret near
+100D:A235 test byte ptr DS:[SI],0x80
+100D:A238 jne short 0xA234
+100D:A23A mov AL,byte ptr DS:[0x002A]
+100D:A23D and AL,0xFC
+100D:A23F add AL,4
+100D:A241 jmp near 0x121F
+100D:A244 xor AL,AL
+100D:A246 jmp short 0xA24A
+100D:A248 mov AL,1
+100D:A24A mov byte ptr DS:[0x476D],AL
+100D:A24D mov byte ptr DS:[0x009F],0
+100D:A252 mov BP,0x1FFE
+100D:A255 mov BX,0x0F66
+100D:A258 call near 0xD323
+100D:A25B push SI
+100D:A25C push DS
+100D:A25D pop ES
+100D:A25E mov AX,word ptr DS:[0x4780]
+100D:A261 mov BX,0x0A01
+100D:A264 mov DI,0x197C
+100D:A267 add DI,8
+100D:A26A scas AX,word ptr ES:[DI]
+100D:A26B ja short 0xA267
+100D:A26D jne short 0xA28C
+100D:A26F cmp word ptr DS:[DI],0x0038
+100D:A272 jne short 0xA276
+100D:A274 mov BH,0x10
+100D:A276 mov AL,byte ptr DS:[0x47D0]
+100D:A279 dec AL
+100D:A27B js short 0xA284
+100D:A27D shl AL,1
+100D:A27F inc AX
+100D:A280 shl AL,1
+100D:A282 add BH,AL
+100D:A284 mov word ptr DS:[0x47E1],BX
+100D:A288 mov word ptr DS:[0x47E4],DI
+100D:A28C pop SI
+100D:A28D ret near
+100D:A28E push SI
+100D:A28F cmp word ptr DS:[0x47C4],0x000E
+100D:A294 jb short 0xA2A0
+100D:A296 mov DI,word ptr DS:[0x47E6]
+100D:A29A call near 0x456C
+100D:A29D mov word ptr DS:[0xDC30],AX
+100D:A2A0 cmp byte ptr DS:[0x28E7],1
+100D:A2A5 je short 0xA28C
+100D:A2A7 mov AX,word ptr DS:[0x47E6]
+100D:A2AA cmp AX,word ptr DS:[0x114E]
+100D:A2AE je short 0xA28C
+100D:A2B0 mov byte ptr DS:[0x47A4],0
+100D:A2B5 mov AX,0x0021
+100D:A2B8 call near 0xC13E
+100D:A2BB mov SI,0x22E4
+100D:A2BE call near 0xC21B
+100D:A2C1 mov SI,word ptr DS:[0x22FC]
+100D:A2C5 mov CX,0x2A80
+100D:A2C8 add SI,CX
+100D:A2CA mov DI,0xA5BF
+100D:A2CD push DS
+100D:A2CE pop ES
+100D:A2CF std
+100D:A2D0 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:A2D2 cld
+100D:A2D3 inc DI
+100D:A2D4 mov word ptr DS:[0x22FC],DI
+100D:A2D8 mov DI,word ptr DS:[0x47E6]
+100D:A2DC push DI
+100D:A2DD call near 0x5B55
+100D:A2E0 mov byte ptr DS:[0x46EB],1
+100D:A2E5 mov SI,0x22F4
+100D:A2E8 mov DI,0x46E3
+100D:A2EB call near 0x5B99
+100D:A2EE call near 0x5B93
+100D:A2F1 call near 0xB6C3
+100D:A2F4 call near 0xC137
+100D:A2F7 call near 0x5DCE
+100D:A2FA pop SI
+100D:A2FB call near 0x62FE
+100D:A2FE mov byte ptr DS:[0x46EB],0
+100D:A303 mov SI,0x22EC
+100D:A306 call near 0xC477
+100D:A309 pop SI
+100D:A30A ret near
+100D:A30B lods AL,byte ptr ES:[SI]
+100D:A30D cmp AL,0x80
+100D:A30F jae short 0xA32A
+100D:A311 push BX
+100D:A312 mov BL,byte ptr ES:[SI]
+100D:A315 inc SI
+100D:A316 xor BH,BH
+100D:A318 cmp AL,1
+100D:A31A je short 0xA322
+100D:A31C mov AX,word ptr DS:[BX]
+100D:A320 pop BX
+100D:A321 ret near
+100D:A322 mov AL,byte ptr DS:[BX]
+100D:A326 xor AH,AH
+100D:A328 pop BX
+100D:A329 ret near
+100D:A32A jne short 0xA331
+100D:A32C lods AL,byte ptr ES:[SI]
+100D:A32E xor AH,AH
+100D:A330 ret near
+100D:A331 lods AX,word ptr ES:[SI]
+100D:A333 ret near
+100D:A334 and BX,0x001F
+100D:A337 jmp near word ptr CS:[BX-23690]
+100D:A33C add DX,AX
+100D:A33E ret near
+100D:A33F sub DX,AX
+100D:A341 ret near
+100D:A342 and DX,AX
+100D:A344 ret near
+100D:A345 or DX,AX
+100D:A347 ret near
+100D:A348 cmp DX,AX
+100D:A34A je short 0xA372
+100D:A34C xor DX,DX
+100D:A34E ret near
+100D:A34F cmp DX,AX
+100D:A351 jb short 0xA372
+100D:A353 xor DX,DX
+100D:A355 ret near
+100D:A356 cmp DX,AX
+100D:A358 ja short 0xA372
+100D:A35A xor DX,DX
+100D:A35C ret near
+100D:A35D cmp DX,AX
+100D:A35F jne short 0xA372
+100D:A361 xor DX,DX
+100D:A363 ret near
+100D:A372 mov DX,0xFFFF
+100D:A375 ret near
+100D:A396 sub SP,0x0032
+100D:A399 mov BP,SP
+100D:A39B shl AX,1
+100D:A39D les SI,word ptr DS:[0xAA72]
+100D:A3A1 add SI,AX
+100D:A3A3 mov SI,word ptr ES:[SI-2]
+100D:A3A7 call near 0xA30B
+100D:A3AA mov DX,AX
+100D:A3AC lods AL,byte ptr ES:[SI]
+100D:A3AE cmp AL,0xFF
+100D:A3B0 je short 0xA3CB
+100D:A3B2 test AL,0x80
+100D:A3B4 jne short 0xA3C0
+100D:A3B6 mov BL,AL
+100D:A3B8 call near 0xA30B
+100D:A3BB call near 0xA334
+100D:A3BE jmp short 0xA3AC
+100D:A3C0 mov word ptr SS:[BP],DX
+100D:A3C3 mov word ptr SS:[BP+2],AX
+100D:A3C6 add BP,4
+100D:A3C9 jmp short 0xA3A7
+100D:A3CB mov SI,SP
+100D:A3CD cmp SI,BP
+100D:A3CF je short 0xA3E2
+100D:A3D1 mov word ptr SS:[BP],DX
+100D:A3D4 lods AX,word ptr DS:[SI]
+100D:A3D5 mov DX,AX
+100D:A3D7 lods AX,word ptr DS:[SI]
+100D:A3D8 mov BX,AX
+100D:A3DA lods AX,word ptr DS:[SI]
+100D:A3DB call near 0xA334
+100D:A3DE cmp SI,BP
+100D:A3E0 jb short 0xA3D7
+100D:A3E2 add SP,0x0032
+100D:A3E5 or DX,DX
+100D:A3E7 ret near
+100D:A3F0 mov AX,0x1AD6
+100D:A3F3 call near 0xD95E
+100D:A3F6 call near 0xD2BD
+100D:A3F9 push word ptr DS:[0xDBDA]
+100D:A3FD call near 0xC08E
+100D:A400 mov AX,0x0055
+100D:A403 call near 0xC13E
+100D:A406 xor AX,AX
+100D:A408 mov DX,word ptr DS:[0x2886]
+100D:A40C mov BX,word ptr DS:[0x2888]
+100D:A410 call near 0xC22F
+100D:A413 pop word ptr DS:[0xDBDA]
+100D:A417 call near 0xA4C6
+100D:A41A call near 0xA47D
+100D:A41D call near 0xA42C
+100D:A420 call near 0xA44C
+100D:A423 call near 0xAC3A
+100D:A426 mov BX,0xA541
+100D:A429 jmp near 0xD32F
+100D:A42C mov AX,0x0055
+100D:A42F call near 0xC13E
+100D:A432 mov AL,byte ptr DS:[0xCEEB]
+100D:A435 push word ptr DS:[0xDBDA]
+100D:A439 call near 0xC08E
+100D:A43C cbw
+100D:A43D call near 0xA465
+100D:A440 shl AX,1
+100D:A442 add AL,0x1C
+100D:A444 call near 0xC22F
+100D:A447 pop word ptr DS:[0xDBDA]
+100D:A44B ret near
+100D:A44C mov AL,byte ptr DS:[0x28E7]
+100D:A44F add AL,8
+100D:A451 jmp short 0xA435
+100D:A453 sub DX,word ptr DS:[0x2886]
+100D:A457 sub BX,word ptr DS:[0x2888]
+100D:A45B ret near
+100D:A45C add DX,word ptr DS:[0x2886]
+100D:A460 add BX,word ptr DS:[0x2888]
+100D:A464 ret near
+100D:A465 push AX
+100D:A466 mov DX,word ptr DS:[0x28C7]
+100D:A46A mov BX,0x28DC
+100D:A46D xlat byte ptr DS:[BX+AL]
+100D:A46E mov BL,7
+100D:A470 mul BL
+100D:A472 mov BX,AX
+100D:A474 add BX,word ptr DS:[0x28C9]
+100D:A478 call near 0xA45C
+100D:A47B pop AX
+100D:A47C ret near
+100D:A47D test word ptr DS:[0xDBC8],8
+100D:A483 je short 0xA48B
+100D:A485 mov SI,0x28A6
+100D:A488 call near 0xA49C
+100D:A48B test word ptr DS:[0xDBC8],0x0800
+100D:A491 je short 0xA4C5
+100D:A493 mov SI,0x28AE
+100D:A496 call near 0xA49C
+100D:A499 mov SI,0x28B6
+100D:A49C push word ptr DS:[0xDBDA]
+100D:A4A0 call near 0xC08E
+100D:A4A3 mov AX,0x0055
+100D:A4A6 call near 0xC13E
+100D:A4A9 lods AL,byte ptr DS:[SI]
+100D:A4AA aam
+100D:A4AC mov AL,AH
+100D:A4AE xor AH,AH
+100D:A4B0 add AL,3
+100D:A4B2 mov byte ptr DS:[SI],1
+100D:A4B5 inc SI
+100D:A4B6 mov DX,word ptr DS:[SI]
+100D:A4B8 mov BX,word ptr DS:[SI+2]
+100D:A4BB call near 0xA45C
+100D:A4BE call near 0xC22F
+100D:A4C1 pop word ptr DS:[0xDBDA]
+100D:A4C5 ret near
+100D:A4C6 call near 0xAE2F
+100D:A4C9 je short 0xA4DE
+100D:A4CB mov SI,0x288E
+100D:A4CE call near 0xA502
+100D:A4D1 test word ptr DS:[0xDBC8],4
+100D:A4D7 jne short 0xA4DE
+100D:A4DE call near 0xAE28
+100D:A4E1 je short 0xA540
+100D:A4E3 mov SI,0x2896
+100D:A4E6 call near 0xA502
+100D:A4E9 mov SI,0x289E
+100D:A4EC call near 0xA502
+100D:A4EF test word ptr DS:[0xDBC8],0x0400
+100D:A4F5 jne short 0xA540
+100D:A502 push word ptr DS:[0xDBDA]
+100D:A506 call near 0xC08E
+100D:A509 push SI
+100D:A50A mov AX,0x0055
+100D:A50D call near 0xC13E
+100D:A510 mov DX,word ptr DS:[SI+2]
+100D:A513 mov BX,0x0022
+100D:A516 call near 0xA45C
+100D:A519 mov AX,1
+100D:A51C call near 0xC2FD
+100D:A51F pop SI
+100D:A520 lods AL,byte ptr DS:[SI]
+100D:A521 mov byte ptr DS:[SI],1
+100D:A524 not AX
+100D:A526 shr AL,1
+100D:A528 shr AL,1
+100D:A52A cbw
+100D:A52B add AX,BX
+100D:A52D mov BX,AX
+100D:A52F sub AX,word ptr DS:[0x2888]
+100D:A533 mov word ptr DS:[SI+3],AX
+100D:A536 mov AX,2
+100D:A539 call near 0xC22F
+100D:A53C pop word ptr DS:[0xDBDA]
+100D:A540 ret near
+100D:A541 mov AL,byte ptr DS:[0x28E7]
+100D:A544 mov byte ptr DS:[0x28E8],AL
+100D:A547 call near 0xDAA3
+100D:A54A call near 0xD95B
+100D:A54D mov SI,0x2886
+100D:A550 jmp near 0xC4F0
+100D:A553 call near 0xAE2F
+100D:A556 je short 0xA540
+100D:A558 mov AX,4
+100D:A55B mov BX,5
+100D:A55E call near 0xA8BC
+100D:A561 call near 0xA83F
+100D:A564 call near 0xADE0
+100D:A567 mov byte ptr DS:[0xDC2B],1
+100D:A56C mov SI,0x3811
+100D:A56F call far dword ptr DS:[0x3991]
+100D:A573 jmp near 0xABA9
+100D:A576 mov DI,0x2886
+100D:A579 call near 0xD6FE
+100D:A57C jb short 0xA581
+100D:A581 call near 0xA453
+100D:A584 mov DI,0x28BF
+100D:A587 call near 0xD6FE
+100D:A58A jb short 0xA553
+100D:A58C mov DI,0x28C7
+100D:A58F call near 0xD6FE
+100D:A592 jb short 0xA5B0
+100D:A594 call near 0xA672
+100D:A597 jae short 0xA59F
+100D:A599 mov byte ptr DS:[0x28BE],1
+100D:A59E ret near
+100D:A59F call near 0xA69F
+100D:A5A2 jae short 0xA5AA
+100D:A5A4 mov byte ptr DS:[0x28BE],2
+100D:A5A9 ret near
+100D:A5AA mov byte ptr DS:[0x28BE],0
+100D:A5AF ret near
+100D:A5B0 sub BX,word ptr DS:[DI+2]
+100D:A5B3 mov AX,BX
+100D:A5B5 mov BL,7
+100D:A5B7 div BL
+100D:A5B9 mov BX,0x28CF
+100D:A5BC xlat byte ptr DS:[BX+AL]
+100D:A5BD cmp AL,7
+100D:A5BF jb short 0xA5CA
+100D:A5C1 je short 0xA5DE
+100D:A5C3 sub AL,8
+100D:A5C5 mov byte ptr DS:[0x28E7],AL
+100D:A5C8 jmp short 0xA5DB
+100D:A5CA cmp AL,byte ptr DS:[0xCEEB]
+100D:A5CE je short 0xA5DE
+100D:A5D0 and byte ptr DS:[0x28E7],0xFD
+100D:A5D5 mov byte ptr DS:[0xCEEB],AL
+100D:A5D8 call near 0xCFE4
+100D:A5DB jmp near 0xA3F9
+100D:A5DF call near 0xA453
+100D:A5E2 sub BX,CX
+100D:A5E4 call near 0xA594
+100D:A5E7 cmp byte ptr DS:[0x28BE],1
+100D:A5EC je short 0xA61A
+100D:A5EE cmp byte ptr DS:[0x28BE],2
+100D:A5F3 jne short 0xA619
+100D:A5F5 cmp AX,6
+100D:A5F8 jae short 0xA5FC
+100D:A5FA neg CX
+100D:A5FC cmp BP,5
+100D:A5FF jb short 0xA603
+100D:A601 neg DI
+100D:A603 mov AL,0x0A
+100D:A605 add CX,DI
+100D:A607 jns short 0xA60B
+100D:A609 neg AL
+100D:A60B add AL,byte ptr DS:[SI]
+100D:A60D cmp AL,0xF1
+100D:A60F jae short 0xA619
+100D:A611 mov byte ptr DS:[SI],AL
+100D:A613 push word ptr DS:[SI+6]
+100D:A616 jmp near 0xA49C
+100D:A619 ret near
+100D:A61A jcxz short 0xA619
+100D:A61C mov AX,word ptr DS:[SI+4]
+100D:A61F add AX,CX
+100D:A621 sub AX,0x0022
+100D:A624 cmp AX,0x0040
+100D:A627 jae short 0xA619
+100D:A629 shl AX,1
+100D:A62B shl AX,1
+100D:A62D not AX
+100D:A62F mov byte ptr DS:[SI],AL
+100D:A631 push word ptr DS:[SI+6]
+100D:A634 jmp near 0xA502
+100D:A637 test word ptr DS:[0xDBC8],4
+100D:A63D jne short 0xA644
+100D:A644 mov AL,byte ptr DS:[0x288E]
+100D:A647 mov AH,byte ptr DS:[0x28A6]
+100D:A64B call far dword ptr DS:[0x39A5]
+100D:A64F ret near
+100D:A650 test word ptr DS:[0xDBC8],0x0400
+100D:A656 jne short 0xA660
+100D:A660 mov AH,byte ptr DS:[0x28AE]
+100D:A664 mov AL,byte ptr DS:[0x2896]
+100D:A667 cmp AL,4
+100D:A669 jae short 0xA66D
+100D:A66D call far dword ptr DS:[0x3985]
+100D:A671 ret near
+100D:A672 mov SI,0x288E
+100D:A675 call near 0xA685
+100D:A678 jb short 0xA69E
+100D:A67A mov SI,0x2896
+100D:A67D call near 0xA685
+100D:A680 jb short 0xA69E
+100D:A682 mov SI,0x289E
+100D:A685 cmp byte ptr DS:[SI+1],1
+100D:A689 cmc
+100D:A68A jae short 0xA69E
+100D:A68C mov AX,DX
+100D:A68E sub AX,word ptr DS:[SI+2]
+100D:A691 mov BP,BX
+100D:A693 sub BP,word ptr DS:[SI+4]
+100D:A696 cmp AX,0x0016
+100D:A699 jae short 0xA69E
+100D:A69B cmp BP,5
+100D:A69E ret near
+100D:A69F mov SI,0x28A6
+100D:A6A2 call near 0xA6B2
+100D:A6A5 jb short 0xA6CB
+100D:A6A7 mov SI,0x28AE
+100D:A6AA call near 0xA6B2
+100D:A6AD jb short 0xA6CB
+100D:A6AF mov SI,0x28B6
+100D:A6B2 cmp byte ptr DS:[SI+1],1
+100D:A6B6 cmc
+100D:A6B7 jae short 0xA6CB
+100D:A6B9 mov AX,DX
+100D:A6BB sub AX,word ptr DS:[SI+2]
+100D:A6BE mov BP,BX
+100D:A6C0 sub BP,word ptr DS:[SI+4]
+100D:A6C3 cmp AX,0x000D
+100D:A6C6 jae short 0xA6CB
+100D:A6C8 cmp BP,0x000B
+100D:A6CB ret near
+100D:A6CC cmp BX,-1
+100D:A6CF jne short 0xA6E6
+100D:A6D1 mov AX,word ptr [0x0001A7A2]
+100D:A6D4 xor byte ptr CS:[0xA6D3],0x10
+100D:A6DA mov BX,word ptr DS:[0x22A6]
+100D:A6DE call near 0xA8BC
+100D:A6E1 call near 0xA7A5
+100D:A6E4 jmp short 0xA740
+100D:A6E6 push BX
+100D:A6E7 cmp BL,0x0E
+100D:A6EA jb short 0xA6EE
+100D:A6EC mov BL,0x0E
+100D:A6EE and AH,0xF3
+100D:A6F1 cmp byte ptr DS:[0x47DC],0
+100D:A6F6 je short 0xA701
+100D:A6F8 sub AX,word ptr DS:[0xD814]
+100D:A6FC add AX,0x03E7
+100D:A6FF jmp short 0xA710
+100D:A701 cmp byte ptr DS:[0x227D],0
+100D:A706 jne short 0xA710
+100D:A708 shl BX,1
+100D:A70A sub AX,word ptr DS:[BX-10252]
+100D:A70E shr BX,1
+100D:A710 cmp BL,0x0E
+100D:A713 jne short 0xA727
+100D:A715 mov CX,AX
+100D:A717 and CL,0xFE
+100D:A71A cmp CL,0x2C
+100D:A71D jne short 0xA727
+100D:A71F pop CX
+100D:A720 mov CL,0x0C
+100D:A722 mov word ptr DS:[0x47C4],CX
+100D:A726 push CX
+100D:A727 call near 0xA8BC
+100D:A72A call near 0xA7A5
+100D:A72D pop AX
+100D:A72E call near 0x9123
+100D:A731 shl AX,1
+100D:A733 shl AX,1
+100D:A735 shl AX,1
+100D:A737 add AX,0x27FA
+100D:A73A mov SI,AX
+100D:A73C mov word ptr DS:[0xDC28],SI
+100D:A740 mov byte ptr DS:[0xDC2A],0xFF
+100D:A745 call near 0xA83F
+100D:A748 jb short 0xA754
+100D:A74A xor byte ptr DS:[0x37E2],6
+100D:A74F call near 0xA83F
+100D:A752 jae short 0xA75B
+100D:A754 call near 0xADE0
+100D:A757 call near 0xD617
+100D:A75A stc
+100D:A75B ret near
+100D:A75C call near 0x9197
+100D:A75F mov BP,0
+100D:A762 mov SI,0xA7C2
+100D:A765 call near 0xDA25
+100D:A768 mov byte ptr DS:[0xDC2B],1
+100D:A76D mov SI,0x3811
+100D:A770 call far dword ptr DS:[0x3991]
+100D:A774 mov AX,word ptr DS:[0xCE7A]
+100D:A777 mov word ptr DS:[0xDC2C],AX
+100D:A77A mov word ptr DS:[0xDC2E],0x8000
+100D:A780 call near 0xA814
+100D:A783 jae short 0xA788
+100D:A785 call near 0xA82E
+100D:A788 ret near
+100D:A789 xor AX,AX
+100D:A78B xchg AX,word ptr DS:[0xDC30]
+100D:A78F or AX,AX
+100D:A791 je short 0xA7A5
+100D:A793 push AX
+100D:A794 call near 0xA7A5
+100D:A797 pop AX
+100D:A798 add AX,word ptr DS:[0xD810]
+100D:A79C mov BL,0x0E
+100D:A79E call near 0xA6CC
+100D:A7A1 jae short 0xA788
+100D:A7A5 mov SI,0xA7C2
+100D:A7A8 call near 0xDA5F
+100D:A7AB mov word ptr DS:[0xDC26],0
+100D:A7B1 call near 0xD61D
+100D:A7B4 call near 0xABCC
+100D:A7B7 je short 0xA788
+100D:A7B9 call near 0xABC6
+100D:A7BC call near 0xA9A1
+100D:A7BF jmp near 0xADED
+100D:A7C2 call near 0xABCC
+100D:A7C5 je short 0xA788
+100D:A7C7 cmp word ptr DS:[0xDC26],0
+100D:A7CC jne short 0xA7D5
+100D:A7CE call near 0xA9E7
+100D:A7D1 jne short 0xA789
+100D:A7D3 jmp short 0xA811
+100D:A7D5 mov DX,word ptr DS:[0xCE7A]
+100D:A7D9 xor DI,DI
+100D:A7DB mov BX,word ptr DS:[0xDC2C]
+100D:A7DF mov BP,word ptr DS:[0xDC2E]
+100D:A7E3 mov CX,word ptr DS:[0x2882]
+100D:A7E7 mov SI,word ptr DS:[0x2884]
+100D:A7EB add BP,SI
+100D:A7ED adc BX,CX
+100D:A7EF sub DX,BX
+100D:A7F1 js short 0xA811
+100D:A7F3 push DI
+100D:A7F4 call near 0xA814
+100D:A7F7 pop DI
+100D:A7F8 jae short 0xA789
+100D:A7FA sub DI,SI
+100D:A7FC sbb DX,CX
+100D:A7FE jb short 0xA806
+100D:A800 add BP,SI
+100D:A802 adc BX,CX
+100D:A804 jmp short 0xA7F3
+100D:A806 mov word ptr DS:[0xDC2C],BX
+100D:A80A mov word ptr DS:[0xDC2E],BP
+100D:A80E call near 0xA82E
+100D:A811 jmp near 0xA9B9
+100D:A814 mov DI,word ptr DS:[0xDC26]
+100D:A818 or DI,DI
+100D:A81A je short 0xA82D
+100D:A81C mov ES,word ptr DS:[0x3813]
+100D:A820 mov AL,byte ptr ES:[DI]
+100D:A823 cmp AL,0xFF
+100D:A825 jae short 0xA82D
+100D:A827 inc DI
+100D:A828 mov word ptr DS:[0xDC26],DI
+100D:A82C stc
+100D:A82D ret near
+100D:A82E cmp AL,byte ptr DS:[0xDC2A]
+100D:A832 je short 0xA83E
+100D:A834 mov byte ptr DS:[0xDC2A],AL
+100D:A837 mov SI,word ptr DS:[0xDC28]
+100D:A83B jmp near 0x9DE3
+100D:A83E ret near
+100D:A83F mov word ptr DS:[0xDC26],0
+100D:A845 call near 0xAE2F
+100D:A848 je short 0xA87D
+100D:A84A call near 0xAC14
+100D:A84D call near 0xA90B
+100D:A850 cmc
+100D:A851 jae short 0xA87D
+100D:A853 les DI,word ptr DS:[0x3811]
+100D:A857 add DI,0x001A
+100D:A85A cmp byte ptr ES:[DI],5
+100D:A85E jne short 0xA871
+100D:A860 mov CX,word ptr ES:[DI+1]
+100D:A864 add DI,4
+100D:A867 mov AX,DI
+100D:A869 add AX,2
+100D:A86C mov word ptr DS:[0xDC26],AX
+100D:A86F add DI,CX
+100D:A871 mov word ptr DS:[0x3811],DI
+100D:A875 sub word ptr DS:[0x3815],DI
+100D:A879 call near 0xA9B9
+100D:A87C stc
+100D:A87D ret near
+100D:A87E pushf
+100D:A87F sti
+100D:A880 call near 0xAE2F
+100D:A883 je short 0xA8AF
+100D:A885 call near 0xAC14
+100D:A888 mov AL,0x0B
+100D:A88A call near 0xABE9
+100D:A88D mov SI,0x3811
+100D:A890 call far dword ptr DS:[0x3991]
+100D:A894 push word ptr DS:[0xCE7A]
+100D:A898 call near 0xA9E7
+100D:A89B je short 0xA898
+100D:A89D mov AX,word ptr DS:[0xCE7A]
+100D:A8A0 pop BX
+100D:A8A1 sub AX,BX
+100D:A8A3 mov CX,0x0800
+100D:A8A6 mul CX
+100D:A8A8 mov word ptr DS:[0x2882],DX
+100D:A8AC mov word ptr DS:[0x2884],AX
+100D:A8AF popf
+100D:A8B0 ret near
+100D:A8B1 and AL,0x0F
+100D:A8B3 add AL,0x30
+100D:A8B5 cmp AL,0x39
+100D:A8B7 jbe short 0xA8BB
+100D:A8B9 add AL,7
+100D:A8BB ret near
+100D:A8BC mov DI,0x37DB
+100D:A8BF push DS
+100D:A8C0 pop ES
+100D:A8C1 push AX
+100D:A8C2 mov AL,BL
+100D:A8C4 add AL,0x41
+100D:A8C6 stos byte ptr ES:[DI],AL
+100D:A8C7 inc DI
+100D:A8C8 inc DI
+100D:A8C9 stos byte ptr ES:[DI],AL
+100D:A8CA pop BX
+100D:A8CB mov CL,4
+100D:A8CD mov AL,BH
+100D:A8CF call near 0xA8B1
+100D:A8D2 stos byte ptr ES:[DI],AL
+100D:A8D3 mov AL,BL
+100D:A8D5 shr AL,CL
+100D:A8D7 call near 0xA8B1
+100D:A8DA stos byte ptr ES:[DI],AL
+100D:A8DB mov AL,BL
+100D:A8DD call near 0xA8B1
+100D:A8E0 stos byte ptr ES:[DI],AL
+100D:A8E1 mov AL,0x4F
+100D:A8E3 cmp byte ptr DS:[0x00EA],0
+100D:A8E8 jg short 0xA8FA
+100D:A8EA cmp byte ptr DS:[6],0x80
+100D:A8EF jne short 0xA8FA
+100D:A8F1 cmp byte ptr DS:[4],1
+100D:A8F6 je short 0xA8FA
+100D:A8F8 mov AL,0x49
+100D:A8FA stos byte ptr ES:[DI],AL
+100D:A8FB mov AL,0x20
+100D:A8FD shr BH,CL
+100D:A8FF or BH,byte ptr DS:[0x47E0]
+100D:A903 je short 0xA909
+100D:A905 mov AL,BH
+100D:A907 add AL,0x41
+100D:A909 stos byte ptr ES:[DI],AL
+100D:A90A ret near
+100D:A90B mov DX,0x37DA
+100D:A90E xor AX,AX
+100D:A910 mov word ptr DS:[0x3811],AX
+100D:A913 mov word ptr DS:[0x3817],AX
+100D:A916 mov word ptr DS:[0x381F],AX
+100D:A919 mov byte ptr DS:[0x3823],AL
+100D:A91C call near 0xF1FB
+100D:A91F jb short 0xA90A
+100D:A921 mov word ptr DS:[0x3821],BX
+100D:A925 sub CX,1
+100D:A928 sbb BP,0
+100D:A92B mov word ptr DS:[0xDBC4],CX
+100D:A92F mov word ptr DS:[0xDBC6],BP
+100D:A933 mov word ptr DS:[0xDBC0],AX
+100D:A936 mov word ptr DS:[0xDBC2],DX
+100D:A93A mov SI,0x3811
+100D:A93D les DX,word ptr DS:[SI]
+100D:A93F push DX
+100D:A940 mov DX,word ptr DS:[0xDBC0]
+100D:A944 mov CX,word ptr DS:[0xDBC2]
+100D:A948 mov AX,0x4200
+100D:A94B int 0x21
+100D:A94D pop DX
+100D:A94E push SI
+100D:A94F push DS
+100D:A950 mov CX,0x2000
+100D:A953 mov AX,word ptr DS:[0xDBC4]
+100D:A956 sub word ptr DS:[0xDBC4],CX
+100D:A95A sbb word ptr DS:[0xDBC6],0
+100D:A95F jae short 0xA964
+100D:A961 mov CX,AX
+100D:A963 inc CX
+100D:A964 push ES
+100D:A965 pop DS
+100D:A966 mov AH,0x3F
+100D:A968 int 0x21
+100D:A96A pop DS
+100D:A96B pop SI
+100D:A96C mov word ptr DS:[SI+4],AX
+100D:A96F jb short 0xA9B8
+100D:A971 add word ptr DS:[0xDBC0],AX
+100D:A975 adc word ptr DS:[0xDBC2],0
+100D:A97A mov byte ptr DS:[0x376A],0xFF
+100D:A97F mov byte ptr DS:[SI+6],1
+100D:A983 mov BL,byte ptr DS:[0x3823]
+100D:A987 cmp BL,0x3F
+100D:A98A jae short 0xA992
+100D:A98C inc byte ptr DS:[0x3823]
+100D:A990 inc BL
+100D:A992 mov byte ptr DS:[SI+7],BL
+100D:A995 cmp word ptr DS:[0xDBC6],0
+100D:A99A clc
+100D:A99B jns short 0xA9B8
+100D:A99D or byte ptr DS:[SI+7],0x80
+100D:A9A1 xor BX,BX
+100D:A9A3 xchg BX,word ptr DS:[0x3821]
+100D:A9A7 or BX,BX
+100D:A9A9 je short 0xA9B7
+100D:A9AB cmp BX,word ptr DS:[0xDBBA]
+100D:A9AF je short 0xA9B7
+100D:A9B7 clc
+100D:A9B8 ret near
+100D:A9B9 call near 0xABA3
+100D:A9BC je short 0xA9E6
+100D:A9BE mov SI,0x3811
+100D:A9C1 cmp byte ptr DS:[0x3817],0
+100D:A9C6 je short 0xA9D2
+100D:A9C8 cmp byte ptr DS:[0x381F],0
+100D:A9CD jne short 0xA9E6
+100D:A9CF mov SI,0x3819
+100D:A9D2 mov BX,word ptr DS:[0x3821]
+100D:A9D6 les DX,word ptr DS:[SI]
+100D:A9D8 add DX,6
+100D:A9DB push SI
+100D:A9DC call near 0xA93F
+100D:A9DF pop SI
+100D:A9E0 jb short 0xA9E6
+100D:A9E2 call far dword ptr DS:[0x39A1]
+100D:A9E6 ret near
+100D:A9E7 cmp byte ptr DS:[0x3817],3
+100D:A9EC je short 0xA9F3
+100D:A9EE cmp byte ptr DS:[0x381F],3
+100D:A9F3 ret near
+100D:A9F4 mov SI,word ptr DS:[0x3824]
+100D:A9F8 les DI,word ptr DS:[SI]
+100D:A9FA add DI,6
+100D:A9FD call near 0xAA70
+100D:AA00 call far dword ptr DS:[0x39A1]
+100D:AA04 mov AX,0x3811
+100D:AA07 xor AX,0x3819
+100D:AA0A xor word ptr DS:[0x3824],AX
+100D:AA0E ret near
+100D:AA0F mov AX,word ptr DS:[0xDC1C]
+100D:AA12 inc AX
+100D:AA13 je short 0xAA0E
+100D:AA15 mov byte ptr DS:[0x376A],0xFF
+100D:AA1A call near 0xAC14
+100D:AA1D xor AX,AX
+100D:AA1F mov word ptr DS:[0x3811],AX
+100D:AA22 mov word ptr DS:[0x3817],AX
+100D:AA25 mov word ptr DS:[0x381F],AX
+100D:AA28 mov SI,0x3811
+100D:AA2B les DI,word ptr DS:[SI]
+100D:AA2D call near 0xAA70
+100D:AA30 sub word ptr DS:[0x3815],0x0020
+100D:AA35 mov CX,word ptr DS:[0x3815]
+100D:AA39 mov word ptr DS:[0x381D],CX
+100D:AA3D add CX,6
+100D:AA40 mov SI,0x001A
+100D:AA43 xor DI,DI
+100D:AA45 rep movs byte ptr ES:[DI],byte ptr ES:[SI]
+100D:AA48 les DI,word ptr DS:[0x3819]
+100D:AA4C mov CX,word ptr DS:[0x3815]
+100D:AA50 push DS
+100D:AA51 lds SI,word ptr DS:[0x3811]
+100D:AA55 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:AA56 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:AA57 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:AA58 mov AL,0x80
+100D:AA5A rep stos byte ptr ES:[DI],AL
+100D:AA5C pop DS
+100D:AA5D mov SI,0x3819
+100D:AA60 mov word ptr DS:[0x3824],SI
+100D:AA64 call far dword ptr DS:[0x3991]
+100D:AA68 mov SI,0x3811
+100D:AA6B call far dword ptr DS:[0x39A1]
+100D:AA6F ret near
+100D:AA70 push SI
+100D:AA71 push DS
+100D:AA72 mov SI,word ptr DS:[0xDC1C]
+100D:AA76 mov DS,word ptr DS:[0xDBDE]
+100D:AA7A lods AX,word ptr DS:[SI]
+100D:AA7B sub AX,4
+100D:AA7E mov CX,AX
+100D:AA80 shr CX,1
+100D:AA82 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:AA84 adc CL,CL
+100D:AA86 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:AA88 pop DS
+100D:AA89 pop SI
+100D:AA8A mov word ptr DS:[SI+4],AX
+100D:AA8D mov byte ptr DS:[SI+6],1
+100D:AA91 mov byte ptr DS:[SI+7],0x41
+100D:AA95 ret near
+100D:AA96 xor AX,AX
+100D:AA98 cmp byte ptr DS:[0x4774],AH
+100D:AA9C je short 0xAAA7
+100D:AA9E cmp byte ptr DS:[0x002A],0x48
+100D:AAA3 jne short 0xAB14
+100D:AAA5 jmp short 0xAB12
+100D:AAA7 mov AL,0x0D
+100D:AAA9 cmp byte ptr DS:[0x46D9],AH
+100D:AAAD jne short 0xAB14
+100D:AAAF mov AL,1
+100D:AAB1 cmp byte ptr DS:[0xDD03],AH
+100D:AAB5 jne short 0xAB14
+100D:AAB7 inc AX
+100D:AAB8 cmp byte ptr DS:[0x00FB],AH
+100D:AABC js short 0xAB14
+100D:AABE inc AX
+100D:AABF cmp byte ptr DS:[0x00C6],AH
+100D:AAC3 jne short 0xAB14
+100D:AAC5 inc AX
+100D:AAC6 cmp byte ptr DS:[0x00EA],AH
+100D:AACA jg short 0xAB14
+100D:AACC inc AX
+100D:AACD mov DX,word ptr DS:[4]
+100D:AAD1 mov BX,word ptr DS:[6]
+100D:AAD5 cmp BL,0x80
+100D:AAD8 jne short 0xAADF
+100D:AADA cmp DL,1
+100D:AADD jne short 0xAAEF
+100D:AADF mov BL,byte ptr DS:[0x11C9]
+100D:AAE3 and BL,3
+100D:AAE6 je short 0xAB14
+100D:AAE8 inc AX
+100D:AAE9 dec BL
+100D:AAEB je short 0xAB14
+100D:AAED inc AX
+100D:AAEE ret near
+100D:AAEF cmp DH,0x20
+100D:AAF2 jae short 0xAB08
+100D:AAF4 mov AL,9
+100D:AAF6 cmp DH,7
+100D:AAF9 sbb AL,0
+100D:AAFB cmp byte ptr DS:[0x002A],0x48
+100D:AB00 jb short 0xAB14
+100D:AB02 shr BL,1
+100D:AB04 jb short 0xAB14
+100D:AB06 jmp short 0xAB12
+100D:AB08 mov AL,0x0C
+100D:AB0A jne short 0xAB14
+100D:AB0C dec AX
+100D:AB0D cmp DL,3
+100D:AB10 jne short 0xAB14
+100D:AB12 mov AL,0x0A
+100D:AB14 ret near
+100D:AB15 call near 0xABCC
+100D:AB18 jne short 0xAB44
+100D:AB1A call near 0xAE2F
+100D:AB1D je short 0xAB44
+100D:AB1F push ES
+100D:AB20 call near 0xE270
+100D:AB23 cmp AL,byte ptr DS:[0x376A]
+100D:AB27 je short 0xAB35
+100D:AB29 call near 0xAC14
+100D:AB2C or AL,AL
+100D:AB2E je short 0xAB40
+100D:AB30 call near 0xABE9
+100D:AB33 jmp short 0xAB39
+100D:AB35 les DI,word ptr DS:[0x3811]
+100D:AB39 mov SI,0x3811
+100D:AB3C call far dword ptr DS:[0x3991]
+100D:AB40 call near 0xE283
+100D:AB43 pop ES
+100D:AB44 ret near
+100D:AB45 call near 0xAE2F
+100D:AB48 je short 0xAB44
+100D:AB4A push AX
+100D:AB4B call near 0xADE0
+100D:AB4E pop AX
+100D:AB4F mov byte ptr DS:[0x47E0],0
+100D:AB54 mov BX,0x0019
+100D:AB57 call near 0xA8BC
+100D:AB5A mov byte ptr DS:[0x37E2],0x49
+100D:AB5F call near 0xABCC
+100D:AB62 jne short 0xAB44
+100D:AB64 call near 0xAE2F
+100D:AB67 je short 0xAB44
+100D:AB69 push ES
+100D:AB6A call near 0xE270
+100D:AB6D call near 0xAC14
+100D:AB70 call near 0xA90B
+100D:AB73 jb short 0xAB8D
+100D:AB75 add word ptr DS:[0x3811],0x001A
+100D:AB7A call near 0xA9B9
+100D:AB7D mov SI,0xAB92
+100D:AB80 mov BP,1
+100D:AB83 call near 0xDA25
+100D:AB86 mov SI,0x3811
+100D:AB89 call far dword ptr DS:[0x3991]
+100D:AB8D call near 0xE283
+100D:AB90 pop ES
+100D:AB91 ret near
+100D:AB92 call near 0xA9B9
+100D:AB95 call near 0xABA3
+100D:AB98 jne short 0xAB44
+100D:AB9A call near 0xADED
+100D:AB9D mov SI,0xAB92
+100D:ABA0 jmp near 0xDA5F
+100D:ABA3 cmp word ptr DS:[0x3821],0
+100D:ABA8 ret near
+100D:ABA9 call near 0xAE2F
+100D:ABAC je short 0xAB44
+100D:ABAE mov BX,word ptr DS:[0xCE7A]
+100D:ABB2 push BX
+100D:ABB3 call near 0xAB92
+100D:ABB6 call near 0xABA3
+100D:ABB9 pop BX
+100D:ABBA je short 0xABC6
+100D:ABBC mov AX,word ptr DS:[0xCE7A]
+100D:ABBF sub AX,BX
+100D:ABC1 cmp AX,0x03E8
+100D:ABC4 jb short 0xABB2
+100D:ABC6 mov byte ptr DS:[0xDC2B],0
+100D:ABCB ret near
+100D:ABCC cmp byte ptr DS:[0xDC2B],0
+100D:ABD1 ret near
+100D:ABD2 call near 0xA7C2
+100D:ABD5 call near 0xABCC
+100D:ABD8 jne short 0xABD2
+100D:ABDA ret near
+100D:ABDB call near 0xAEC6
+100D:ABDE jb short 0xAC13
+100D:ABE0 call near 0xAE2F
+100D:ABE3 stc
+100D:ABE4 je short 0xAC13
+100D:ABE6 call near 0xA9A1
+100D:ABE9 mov word ptr DS:[0x3811],0
+100D:ABEF les DI,word ptr DS:[0x3811]
+100D:ABF3 add word ptr DS:[0x3811],0x001A
+100D:ABF8 xor AH,AH
+100D:ABFA mov SI,AX
+100D:ABFC add SI,0x00AE
+100D:AC00 mov byte ptr DS:[0x376A],AL
+100D:AC03 call near 0xF0B9
+100D:AC06 sub CX,0x001A
+100D:AC09 mov word ptr DS:[0x3815],CX
+100D:AC0D mov word ptr DS:[0x3817],0x8101
+100D:AC13 ret near
+100D:AC14 push AX
+100D:AC15 push BX
+100D:AC16 push CX
+100D:AC17 push SI
+100D:AC18 push DI
+100D:AC19 push BP
+100D:AC1A push ES
+100D:AC1B mov SI,0xAB92
+100D:AC1E call near 0xDA5F
+100D:AC21 call near 0xA9A1
+100D:AC24 call far dword ptr DS:[0x3995]
+100D:AC28 pop ES
+100D:AC29 pop BP
+100D:AC2A pop DI
+100D:AC2B pop SI
+100D:AC2C pop CX
+100D:AC2D pop BX
+100D:AC2E pop AX
+100D:AC2F ret near
+100D:AC30 call far dword ptr DS:[0x3999]
+100D:AC34 ret near
+100D:AC3A mov BP,0x201A
+100D:AC3D or byte ptr SS:[BP+3],0x40
+100D:AC41 or byte ptr SS:[BP+7],0x40
+100D:AC45 or byte ptr SS:[BP+0x0B],0x40
+100D:AC49 mov CL,0xFF
+100D:AC4B call near 0xAE28
+100D:AC4E je short 0xAC6D
+100D:AC50 and byte ptr SS:[BP+3],0xBF
+100D:AC54 and byte ptr SS:[BP+7],0xBF
+100D:AC58 and byte ptr SS:[BP+0x0B],0xBF
+100D:AC5C xor CX,CX
+100D:AC5E test byte ptr DS:[0x2943],0x10
+100D:AC63 jne short 0xAC6D
+100D:AC65 mov CL,byte ptr DS:[0x3810]
+100D:AC69 and CL,1
+100D:AC6C inc CX
+100D:AC6D ret near
+100D:AC6E and byte ptr DS:[0x2943],0xEF
+100D:AC73 mov byte ptr DS:[0x3810],0
+100D:AC78 call near 0xD2E2
+100D:AC7B jmp near 0xAD5E
+100D:AC7E mov BP,0x206A
+100D:AC81 mov BX,0xD917
+100D:AC84 mov CL,byte ptr DS:[0x3810]
+100D:AC88 and CX,2
+100D:AC8B shr CL,1
+100D:AC8D jmp near 0xD32F
+100D:AC90 or byte ptr DS:[0x3810],3
+100D:AC95 jmp short 0xACAE
+100D:AC97 or byte ptr DS:[0x3810],1
+100D:AC9C and byte ptr DS:[0x3810],0xFD
+100D:ACA1 push DS
+100D:ACA2 pop ES
+100D:ACA3 mov SI,0x3804
+100D:ACA6 mov DI,0x37FA
+100D:ACA9 mov CX,9
+100D:ACAC rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:ACAE call near 0xAEB7
+100D:ACB1 call near 0xD2FD
+100D:ACB4 call near 0xD2E2
+100D:ACB7 and byte ptr DS:[0x2943],0xEF
+100D:ACBC jmp short 0xAD21
+100D:ACBF mov BP,0x37FA
+100D:ACC2 mov CX,0x0012
+100D:ACC5 mov BX,8
+100D:ACC8 call near 0xE3DF
+100D:ACCB mov SI,AX
+100D:ACCD mov AX,word ptr DS:[0xCE7A]
+100D:ACD0 xor AX,CX
+100D:ACD2 add word ptr DS:[0xD828],AX
+100D:ACD6 call near 0xE3DF
+100D:ACD9 mov DI,AX
+100D:ACDB mov AL,byte ptr SS:[BP+SI]
+100D:ACDD xchg AL,byte ptr SS:[BP+DI]
+100D:ACDF mov byte ptr SS:[BP+SI],AL
+100D:ACE1 loop 0xACC5
+100D:ACE3 mov SI,BP
+100D:ACE5 ret near
+100D:ACE6 call near 0xABCC
+100D:ACE9 jne short 0xAD36
+100D:ACEB test byte ptr DS:[0x3810],1
+100D:ACF0 je short 0xAD37
+100D:ACF2 cmp byte ptr DS:[0x227D],0
+100D:ACF7 jne short 0xAD36
+100D:ACF9 cmp byte ptr DS:[0xDBCD],0
+100D:ACFE js short 0xAD36
+100D:AD00 mov AX,word ptr DS:[0xDBD2]
+100D:AD03 or AX,AX
+100D:AD05 jne short 0xAD0D
+100D:AD07 mov AX,word ptr DS:[0xCE7A]
+100D:AD0A mov word ptr DS:[0xDBD2],AX
+100D:AD0D sub AX,word ptr DS:[0xCE7A]
+100D:AD11 neg AX
+100D:AD13 cmp AX,0x00C8
+100D:AD16 jb short 0xAD36
+100D:AD18 mov SI,word ptr DS:[0x380E]
+100D:AD1C lods AL,byte ptr DS:[SI]
+100D:AD1D or AL,AL
+100D:AD1F jns short 0xAD30
+100D:AD21 mov SI,0x37FA
+100D:AD24 lods AL,byte ptr DS:[SI]
+100D:AD25 test byte ptr DS:[0x3810],2
+100D:AD2A je short 0xAD30
+100D:AD2C call near 0xACBF
+100D:AD2F lods AL,byte ptr DS:[SI]
+100D:AD30 mov word ptr DS:[0x380E],SI
+100D:AD34 jmp short 0xAD95
+100D:AD36 ret near
+100D:AD37 call near 0xAEC6
+100D:AD3A jb short 0xAD36
+100D:AD3C cmp byte ptr DS:[0xDBCD],0
+100D:AD41 js short 0xAD36
+100D:AD43 mov AL,byte ptr DS:[0xDBCC]
+100D:AD46 mov byte ptr DS:[0xDBCB],0
+100D:AD4B or AL,AL
+100D:AD4D jne short 0xAD95
+100D:AD50 call near 0xAEB7
+100D:AD53 mov AL,3
+100D:AD55 jmp short 0xAD95
+100D:AD57 call near 0xAEB7
+100D:AD5A mov AL,6
+100D:AD5C jmp short 0xAD95
+100D:AD5E call near 0xAEC6
+100D:AD61 jb short 0xAD74
+100D:AD63 call near 0xAA96
+100D:AD66 cmp byte ptr DS:[0x3810],0
+100D:AD6B je short 0xAD75
+100D:AD75 mov BX,0x375C
+100D:AD78 xlat byte ptr DS:[BX+AL]
+100D:AD79 or AL,AL
+100D:AD7B je short 0xADBD
+100D:AD7D or AL,AL
+100D:AD7F js short 0xAD89
+100D:AD81 mov byte ptr DS:[0xDBCC],AL
+100D:AD84 call far dword ptr DS:[0x3979]
+100D:AD88 ret near
+100D:AD89 and AL,0x3F
+100D:AD8B mov byte ptr DS:[0xDBCC],AL
+100D:AD8E cmp AL,byte ptr DS:[0xDBCB]
+100D:AD92 jne short 0xADBE
+100D:AD94 ret near
+100D:AD95 xor AH,AH
+100D:AD97 call near 0xAEC6
+100D:AD9A jb short 0xADBD
+100D:AD9C cmp AL,byte ptr DS:[0xDBCB]
+100D:ADA0 je short 0xADBD
+100D:ADA2 call near 0xAE62
+100D:ADA5 mov byte ptr DS:[0xDBCB],AL
+100D:ADA8 les SI,word ptr DS:[0xDBB6]
+100D:ADAC mov AL,byte ptr DS:[0x3810]
+100D:ADAF and AL,1
+100D:ADB1 call far dword ptr DS:[0x3971]
+100D:ADB5 mov byte ptr DS:[0xDBCD],AL
+100D:ADB8 xor AX,AX
+100D:ADBA mov word ptr DS:[0xDBD2],AX
+100D:ADBD ret near
+100D:ADBE call near 0xAEC6
+100D:ADC1 jb short 0xADBD
+100D:ADC3 test byte ptr DS:[0x3810],1
+100D:ADC8 jne short 0xADBD
+100D:ADCA test byte ptr DS:[0xDBCD],0x40
+100D:ADCF jne short 0xADBD
+100D:ADD1 push BX
+100D:ADD2 mov AX,0x012C
+100D:ADD5 xor BX,BX
+100D:ADD7 call far dword ptr DS:[0x397D]
+100D:ADDB mov byte ptr DS:[0xDBCD],AL
+100D:ADDE pop BX
+100D:ADDF ret near
+100D:ADE0 mov AX,0x0064
+100D:ADE3 mov BL,byte ptr DS:[0x289E]
+100D:ADE7 mov BH,byte ptr DS:[0x28B6]
+100D:ADEB jmp short 0xADF8
+100D:ADED mov AX,0x0190
+100D:ADF0 mov BL,byte ptr DS:[0x2896]
+100D:ADF4 mov BH,byte ptr DS:[0x28AE]
+100D:ADF8 cmp BL,4
+100D:ADFB jae short 0xADFF
+100D:ADFF call far dword ptr DS:[0x397D]
+100D:AE03 ret near
+100D:AE04 call near 0xAEC6
+100D:AE07 jb short 0xADBD
+100D:AE09 test byte ptr DS:[0x3810],1
+100D:AE0E jne short 0xADBD
+100D:AE10 cmp byte ptr DS:[0xDBCD],0
+100D:AE15 jns short 0xAE1E
+100D:AE17 test byte ptr DS:[0xDBCD],0x40
+100D:AE1C je short 0xADBD
+100D:AE1E call near 0xE270
+100D:AE21 call near 0xAD43
+100D:AE24 call near 0xE283
+100D:AE27 ret near
+100D:AE28 test word ptr DS:[0xDBC8],0x0100
+100D:AE2E ret near
+100D:AE2F push AX
+100D:AE30 push DS
+100D:AE31 mov AX,0x1F58
+100D:AE34 mov DS,AX
+100D:AE36 test word ptr DS:[0xDBC8],1
+100D:AE3C pop DS
+100D:AE3D pop AX
+100D:AE3E ret near
+100D:AE3F call near 0xAE28
+100D:AE42 je short 0xAE3E
+100D:AE44 mov DI,0xDBB6
+100D:AE47 mov AX,word ptr DS:[DI]
+100D:AE49 or AX,word ptr DS:[DI+2]
+100D:AE4C jne short 0xAE3E
+100D:AE4E mov CX,0x9C40
+100D:AE51 jmp near 0xF0F6
+100D:AE54 call near 0xAE2F
+100D:AE57 je short 0xAE3E
+100D:AE59 mov DI,0x3811
+100D:AE5C mov CX,0x4E20
+100D:AE5F jmp near 0xF0F6
+100D:AE62 cmp AL,byte ptr DS:[0xDBCA]
+100D:AE66 je short 0xAE84
+100D:AE68 call near 0xAEB7
+100D:AE6B mov byte ptr DS:[0xDBCA],AL
+100D:AE6E push AX
+100D:AE6F add AX,0x00A4
+100D:AE72 mov SI,AX
+100D:AE74 les DI,word ptr DS:[0xDBB6]
+100D:AE78 mov AX,ES
+100D:AE7A cmp AX,word ptr DS:[0xCE68]
+100D:AE7E jae short 0xAE85
+100D:AE80 call near 0xF0B9
+100D:AE83 pop AX
+100D:AE84 ret near
+100D:AEAF or byte ptr DS:[0x2943],0x10
+100D:AEB4 call near 0xD2E2
+100D:AEB7 push AX
+100D:AEB8 mov byte ptr DS:[0xDBCB],0
+100D:AEBD call far dword ptr DS:[0x3975]
+100D:AEC1 mov byte ptr DS:[0xDBCD],AL
+100D:AEC4 pop AX
+100D:AEC5 ret near
+100D:AEC6 test byte ptr DS:[0x2943],0x10
+100D:AECB jne short 0xAED4
+100D:AECD call near 0xAE28
+100D:AED0 je short 0xAED4
+100D:AED2 clc
+100D:AED3 ret near
+100D:AED4 stc
+100D:AED5 ret near
+100D:AED6 cmp byte ptr DS:[0x11C9],0
+100D:AEDB je short 0xAEDE
+100D:AEDE call near 0x18BA
+100D:AEE1 call near 0x181E
+100D:AEE4 call near 0xDAA3
+100D:AEE7 mov byte ptr DS:[0x00C6],1
+100D:AEEC call near 0xB2B9
+100D:AEEF call near 0xD95B
+100D:AEF2 call near 0xAD5E
+100D:AEF5 mov AL,0x34
+100D:AEF7 mov BP,0xAF26
+100D:AEFA call near 0xC108
+100D:AEFD jmp near 0xAE04
+100D:AF00 mov BH,4
+100D:AF02 mov BL,0x1C
+100D:AF04 call near 0xB147
+100D:AF07 mov AX,0x4000
+100D:AF0A je short 0xAF0E
+100D:AF0C xor AH,AH
+100D:AF0E xor CX,CX
+100D:AF10 mov CL,BH
+100D:AF12 mov SI,0x2034
+100D:AF15 add SI,CX
+100D:AF17 and word ptr DS:[SI],0xBFFF
+100D:AF1B or word ptr DS:[SI],AX
+100D:AF1D add BH,4
+100D:AF20 cmp BH,0x0C
+100D:AF23 jbe short 0xAF02
+100D:AF25 ret near
+100D:AF26 call near 0xD7AD
+100D:AF29 mov SI,0x1E1A
+100D:AF2C call near 0xD72B
+100D:AF2F call near 0xAF00
+100D:AF32 mov word ptr DS:[0x2406],0
+100D:AF38 mov BP,0x2032
+100D:AF3B mov BX,0xD917
+100D:AF3E xor CX,CX
+100D:AF40 call near 0xD33A
+100D:AF43 or byte ptr DS:[0x00C6],2
+100D:AF48 call near 0xC432
+100D:AF4B mov AL,0x32
+100D:AF4D call near 0xC2F2
+100D:AF50 mov byte ptr DS:[0x1C30],0
+100D:AF55 jmp near 0x1797
+100D:AF60 mov BX,0x041C
+100D:AF63 mov BP,4
+100D:AF66 jmp short 0xAF76
+100D:AF68 mov BX,0x081C
+100D:AF6B mov BP,8
+100D:AF6E jmp short 0xAF76
+100D:AF76 push BP
+100D:AF77 test byte ptr DS:[0x00C6],2
+100D:AF7C jne short 0xAF86
+100D:AF7E push BX
+100D:AF7F call near 0x0A3E
+100D:AF82 call near 0xB024
+100D:AF85 pop BX
+100D:AF86 call near 0xB147
+100D:AF89 pop BP
+100D:AF8A je short 0xAFC6
+100D:AF8C mov word ptr DS:[0x2406],BX
+100D:AF90 mov AX,0x00A8
+100D:AF93 test byte ptr DS:[0x00C6],2
+100D:AF98 je short 0xAF9D
+100D:AF9A add AX,2
+100D:AF9D mov word ptr DS:[0x11BF],AX
+100D:AFA0 mov SI,0x2034
+100D:AFA3 mov CX,4
+100D:AFA6 push SI
+100D:AFA7 and word ptr DS:[SI],0x7FFF
+100D:AFAB add SI,4
+100D:AFAE loop 0xAFA7
+100D:AFB0 pop SI
+100D:AFB1 or word ptr SS:[BP+SI],0x8000
+100D:AFB5 mov CX,1
+100D:AFB8 mov DX,2
+100D:AFBB test byte ptr DS:[0x00C6],2
+100D:AFC0 je short 0xAFE6
+100D:AFC2 xor DX,DX
+100D:AFC4 jmp short 0xAFE6
+100D:AFE6 mov BX,word ptr DS:[0x2406]
+100D:AFEA mov SI,word ptr DS:[0x11BF]
+100D:AFEE call near 0xB150
+100D:AFF1 je short 0xB006
+100D:AFF3 mov word ptr DS:[0x11BF],DI
+100D:AFF7 call near 0xB1AF
+100D:AFFA mov BP,0xB039
+100D:AFFD call near 0xB02C
+100D:B000 call near 0x9901
+100D:B003 jmp near 0xD397
+100D:B024 mov DH,0xFF
+100D:B026 call near 0xB1AF
+100D:B029 mov BP,0xAF43
+100D:B02C call near 0xAC14
+100D:B02F mov AL,2
+100D:B031 call near 0xAB15
+100D:B034 mov AL,0x0E
+100D:B036 jmp near 0xC108
+100D:B039 and byte ptr DS:[0x00C6],0xF9
+100D:B03E mov SI,0xA6B0
+100D:B041 mov word ptr DS:[0x47BC],SI
+100D:B045 push SI
+100D:B046 mov SI,word ptr DS:[0x11BF]
+100D:B04A mov SI,word ptr CS:[SI]
+100D:B04D mov AX,SI
+100D:B04F call near 0xB254
+100D:B052 shr AH,1
+100D:B054 shr AH,1
+100D:B056 shr AH,1
+100D:B058 mov AL,AH
+100D:B05A xor AH,AH
+100D:B05C add AX,0x00F3
+100D:B05F call near 0xB126
+100D:B062 and SI,0x07FF
+100D:B066 shl SI,1
+100D:B068 shl SI,1
+100D:B06A add SI,0xAA7A
+100D:B06E mov word ptr DS:[0x477C],SI
+100D:B072 lods AX,word ptr DS:[SI]
+100D:B073 pop SI
+100D:B074 push AX
+100D:B075 xchg AL,AH
+100D:B077 and AH,3
+100D:B07A or AH,8
+100D:B07D call near 0xB126
+100D:B080 mov DI,word ptr DS:[0x47BC]
+100D:B084 mov byte ptr DS:[DI-1],0xFF
+100D:B088 call near 0x88E1
+100D:B08B mov SI,0x2408
+100D:B08E call near 0xC551
+100D:B091 call near 0x1797
+100D:B094 mov AX,word ptr DS:[0xD82E]
+100D:B097 mov BX,0x008C
+100D:B09A sub BX,AX
+100D:B09C shr BX,1
+100D:B09E add BX,AX
+100D:B0A0 cmp BX,0x008A
+100D:B0A4 jae short 0xB0B5
+100D:B0A6 mov DX,0x0093
+100D:B0A9 mov AX,0x0032
+100D:B0AC call near 0xC13E
+100D:B0AF mov AX,4
+100D:B0B2 call near 0xC22F
+100D:B0B5 pop AX
+100D:B0B6 cmp word ptr DS:[0x11BF],0x00AA
+100D:B0BC je short 0xB0D4
+100D:B0BE and AX,0x000C
+100D:B0C1 shr AX,1
+100D:B0C3 shr AX,1
+100D:B0C5 add AX,0x0103
+100D:B0C8 mov BX,0x008B
+100D:B0CB mov DX,0x00FA
+100D:B0CE mov CX,0x0064
+100D:B0D1 call near 0xD194
+100D:B0D4 mov BX,3
+100D:B0D7 mov DX,0x0132
+100D:B0DA call near 0xD04E
+100D:B0DD mov word ptr DS:[0xDBE4],0x0053
+100D:B0E3 mov AX,word ptr DS:[0x11BF]
+100D:B0E6 sub AX,0x00AA
+100D:B0E9 shr AX,1
+100D:B0EB inc AX
+100D:B0EC aam
+100D:B0EE add AX,0x3030
+100D:B0F1 xchg AL,AH
+100D:B0F3 cmp AL,0x30
+100D:B0F5 jne short 0xB0F9
+100D:B0F7 mov AL,0x20
+100D:B0F9 push AX
+100D:B0FA call near 0xD12F
+100D:B0FD pop AX
+100D:B0FE mov AL,AH
+100D:B100 call near 0xD12F
+100D:B103 mov byte ptr DS:[0x1C30],0
+100D:B108 mov AX,word ptr DS:[0x243E]
+100D:B10B or AX,AX
+100D:B10D je short 0xB125
+100D:B10F mov byte ptr DS:[0x1C30],0x80
+100D:B114 mov SI,0x2412
+100D:B117 add AX,0xFFF5
+100D:B11A mov word ptr DS:[SI],AX
+100D:B11C mov word ptr DS:[SI+6],AX
+100D:B11F mov word ptr DS:[SI+0x0C],AX
+100D:B122 call near 0xC21B
+100D:B125 ret near
+100D:B126 push SI
+100D:B127 mov SI,AX
+100D:B129 call near 0xCF70
+100D:B12C mov DI,word ptr DS:[0x47BC]
+100D:B130 push DI
+100D:B131 call near 0x88F1
+100D:B134 pop DI
+100D:B135 cmp byte ptr DS:[SI],0x20
+100D:B138 je short 0xB141
+100D:B13A call near 0x8944
+100D:B13D dec DI
+100D:B13E mov AL,0x20
+100D:B140 stos byte ptr ES:[DI],AL
+100D:B141 mov word ptr DS:[0x47BC],DI
+100D:B145 pop SI
+100D:B146 ret near
+100D:B147 mov SI,0x00A8
+100D:B14A mov DX,2
+100D:B14D mov CX,1
+100D:B150 xor DI,DI
+100D:B152 add SI,DX
+100D:B154 or DX,2
+100D:B157 mov BP,word ptr CS:[SI]
+100D:B15A and BP,0x07FF
+100D:B15E je short 0xB177
+100D:B160 shl BP,1
+100D:B162 shl BP,1
+100D:B164 add BP,0xAA78
+100D:B168 mov AL,byte ptr SS:[BP+2]
+100D:B16B and AL,BL
+100D:B16D je short 0xB173
+100D:B16F cmp AL,BH
+100D:B171 jne short 0xB152
+100D:B173 mov DI,SI
+100D:B175 loop 0xB152
+100D:B177 or DI,DI
+100D:B179 ret near
+100D:B17A mov AL,byte ptr DS:[0x00C6]
+100D:B17D push AX
+100D:B17E or AL,0x80
+100D:B180 mov byte ptr DS:[0x00C6],AL
+100D:B183 call near 0x96B5
+100D:B186 pop AX
+100D:B187 mov byte ptr DS:[0x00C6],AL
+100D:B18A ret near
+100D:B18B call near 0xADBE
+100D:B18E mov byte ptr DS:[0x2788],0
+100D:B193 mov byte ptr DS:[0x00C6],0
+100D:B198 mov byte ptr DS:[0x1C30],0
+100D:B19D call near 0xCA01
+100D:B1A0 call near 0x0A3E
+100D:B1A3 call near 0x9901
+100D:B1A6 mov AX,0x0026
+100D:B1A9 call near 0xC13E
+100D:B1AC jmp near 0x1877
+100D:B1AF push DX
+100D:B1B0 call near 0xC08E
+100D:B1B3 call near 0xC137
+100D:B1B6 mov AX,0x000B
+100D:B1B9 or DX,DX
+100D:B1BB js short 0xB1BE
+100D:B1BD dec AX
+100D:B1BE mov BX,0x009E
+100D:B1C1 mov DX,0x001B
+100D:B1C4 push AX
+100D:B1C5 call near 0xC2FD
+100D:B1C8 mov AX,0x000A
+100D:B1CB call near 0xE387
+100D:B1CE pop AX
+100D:B1CF inc AX
+100D:B1D0 cmp AX,0x000B
+100D:B1D3 je short 0xB1D8
+100D:B1D5 sub AX,2
+100D:B1D8 call near 0xC22F
+100D:B1DB mov AX,0x000A
+100D:B1DE call near 0xE387
+100D:B1E1 mov SI,0x1AF4
+100D:B1E4 mov CX,1
+100D:B1E7 call near 0xD1F2
+100D:B1EA pop DX
+100D:B1EB jmp near 0xC07C
+100D:B1EE call far dword ptr DS:[0x3959]
+100D:B1F2 call near 0xAEB7
+100D:B1F5 mov byte ptr DS:[0xDC2B],1
+100D:B1FA mov AL,0x34
+100D:B1FC mov BP,0xB236
+100D:B1FF call near 0xC108
+100D:B202 call near 0xC08E
+100D:B205 mov byte ptr DS:[0xCE80],0
+100D:B20A call near 0xDE4E
+100D:B20D call near 0xC9E8
+100D:B210 jb short 0xB217
+100D:B212 call near 0xCC85
+100D:B215 je short 0xB20D
+100D:B217 call near 0xCA01
+100D:B21A inc byte ptr DS:[0xCE80]
+100D:B21E call near 0xAC14
+100D:B221 call near 0xC07C
+100D:B224 call far dword ptr DS:[0x3969]
+100D:B228 mov AL,0x34
+100D:B22A mov BP,0xB23F
+100D:B22D call near 0xC108
+100D:B230 call near 0xC412
+100D:B233 jmp near 0xABC6
+100D:B236 call near 0xC0AD
+100D:B239 mov AX,word ptr DS:[0x243E]
+100D:B23C jmp near 0xCA1B
+100D:B23F call near 0xC0AD
+100D:B242 mov CX,0x0012
+100D:B245 mov SI,0x1AE6
+100D:B248 call near 0xD1F2
+100D:B24B call near 0xD397
+100D:B24E call near 0xB039
+100D:B251 jmp near 0x9901
+100D:B254 push AX
+100D:B255 push SI
+100D:B256 push DS
+100D:B257 pop ES
+100D:B258 mov DI,0x2426
+100D:B25B mov CX,0x000C
+100D:B25E repne scas AX,word ptr ES:[DI]
+100D:B260 mov AX,0
+100D:B263 jne short 0xB26A
+100D:B265 mov AX,0x0024
+100D:B268 sub AX,CX
+100D:B26A mov word ptr DS:[0x243E],AX
+100D:B26D pop SI
+100D:B26E pop AX
+100D:B26F ret near
+100D:B28C mov BP,0x207A
+100D:B28F call near 0xB2AA
+100D:B292 mov CX,0x8000
+100D:B295 mov SI,0x207C
+100D:B298 call near 0xB30F
+100D:B29B jmp near 0xD397
+100D:B29E mov CX,0x4000
+100D:B2A1 mov SI,0x208C
+100D:B2A4 call near 0xB30F
+100D:B2A7 mov BP,0x208A
+100D:B2AA call near 0xB2B9
+100D:B2AD mov BX,0xB2B3
+100D:B2B0 jmp near 0xD323
+100D:B2B3 dec byte ptr DS:[0x2788]
+100D:B2B7 jns short 0xB2BD
+100D:B2B9 inc byte ptr DS:[0x2788]
+100D:B2BD ret near
+100D:B2BE mov byte ptr DS:[0x2788],0
+100D:B2C3 ret near
+100D:B2C4 cmp byte ptr DS:[0x38AF],0x32
+100D:B2C9 ja short 0xB30E
+100D:B2CB mov AX,word ptr DS:[SI]
+100D:B2CD call near 0xE270
+100D:B2D0 push ES
+100D:B2D1 and AX,0x0FFF
+100D:B2D4 mov SI,AX
+100D:B2D6 call near 0xCF70
+100D:B2D9 call near 0xD03C
+100D:B2DC call near 0xD03C
+100D:B2DF mov AX,word ptr DS:[0xD816]
+100D:B2E2 push AX
+100D:B2E3 add AX,3
+100D:B2E6 shr AX,1
+100D:B2E8 shr AX,1
+100D:B2EA shr AX,1
+100D:B2EC shr AX,1
+100D:B2EE inc AX
+100D:B2EF call near 0xE2E3
+100D:B2F2 lea DI,SI+3
+100D:B2F5 mov SI,0x0117
+100D:B2F8 call near 0xCF70
+100D:B2FB pop AX
+100D:B2FC and AL,0x0F
+100D:B2FE mov AH,0x0A
+100D:B300 mul AH
+100D:B302 add SI,AX
+100D:B304 mov CX,0x000A
+100D:B307 rep movs byte ptr ES:[DI],byte ptr ES:[SI]
+100D:B30A pop ES
+100D:B30B call near 0xE283
+100D:B30E ret near
+100D:B30F mov DI,0x38A8
+100D:B312 mov byte ptr DS:[DI+7],0x31
+100D:B316 mov DX,DI
+100D:B318 call near 0xF2FC
+100D:B31B mov AX,0x3D00
+100D:B31E int 0x21
+100D:B320 jb short 0xB33C
+100D:B322 mov BX,AX
+100D:B324 mov DX,0xD816
+100D:B327 push CX
+100D:B328 mov CX,2
+100D:B32B mov AH,0x3F
+100D:B32D int 0x21
+100D:B32F cmp AX,CX
+100D:B331 pop CX
+100D:B332 jb short 0xB33C
+100D:B334 mov AH,0x3E
+100D:B336 int 0x21
+100D:B338 call near 0xB2C4
+100D:B33B clc
+100D:B33C sbb AX,AX
+100D:B33E cmp CH,0x80
+100D:B341 jne short 0xB345
+100D:B343 not AX
+100D:B345 and AX,CX
+100D:B347 and word ptr DS:[SI],0x3FFF
+100D:B34B or word ptr DS:[SI],AX
+100D:B34D add SI,4
+100D:B350 inc byte ptr DS:[DI+7]
+100D:B353 cmp word ptr DS:[SI],0x00A3
+100D:B357 jne short 0xB316
+100D:B359 ret near
+100D:B35A mov BX,word ptr DS:[2]
+100D:B35E mov word ptr DS:[0xD816],BX
+100D:B362 call near 0xDBB2
+100D:B365 call near 0xB2CD
+100D:B368 push CX
+100D:B369 call near 0xD48A
+100D:B36C pop CX
+100D:B36D call near 0xB389
+100D:B370 pushf
+100D:B371 mov AX,0x0113
+100D:B374 adc AL,0
+100D:B376 mov CX,4
+100D:B379 call near 0xD48A
+100D:B37C mov AX,0x012C
+100D:B37F call near 0xDDB0
+100D:B382 popf
+100D:B383 jb short 0xB388
+100D:B385 jmp near 0xD2E2
+100D:B389 add CL,0x31
+100D:B38C mov byte ptr DS:[0x38AF],CL
+100D:B390 call near 0xB427
+100D:B393 mov AX,word ptr DS:[2]
+100D:B396 push DS
+100D:B397 push ES
+100D:B398 pop DS
+100D:B399 mov SI,DI
+100D:B39B xor DI,DI
+100D:B39D stos word ptr ES:[DI],AX
+100D:B39E call near 0xB4EA
+100D:B3A1 pop DS
+100D:B3A2 mov DX,0x38A8
+100D:B3A5 call near 0xF2FC
+100D:B3A8 xor DI,DI
+100D:B3AA add CX,2
+100D:B3AD jmp near 0xF27C
+100D:B3B0 cmp byte ptr DS:[0x46D9],0
+100D:B3B5 je short 0xB3BA
+100D:B3B7 jmp near 0x0E49
+100D:B3BA add CL,0x31
+100D:B3BD mov byte ptr DS:[0x38AF],CL
+100D:B3C1 mov CX,0x0578
+100D:B3C4 call near 0xF11C
+100D:B3C7 mov DX,0x38A8
+100D:B3CA call near 0xF255
+100D:B3CD mov AL,byte ptr DS:[0x00FB]
+100D:B3D0 push AX
+100D:B3D1 push DS
+100D:B3D2 push ES
+100D:B3D3 pop DS
+100D:B3D4 mov SI,DI
+100D:B3D6 add SI,CX
+100D:B3D8 dec SI
+100D:B3D9 mov DI,0x5779
+100D:B3DC sub CX,2
+100D:B3DF std
+100D:B3E0 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B3E2 cld
+100D:B3E3 lea SI,DI+1
+100D:B3E6 xor DI,DI
+100D:B3E8 call near 0xB4BB
+100D:B3EB mov SI,DI
+100D:B3ED call near 0xB473
+100D:B3F0 pop DS
+100D:B3F1 call near 0x3AE9
+100D:B3F4 call near 0xDA53
+100D:B3F7 mov word ptr DS:[0x22A6],0xFFFF
+100D:B3FD call near 0xB2BE
+100D:B400 pop AX
+100D:B401 mov byte ptr DS:[0x00FB],AL
+100D:B404 or AL,AL
+100D:B406 jns short 0xB41B
+100D:B408 cmp byte ptr DS:[0xDD02],0
+100D:B40D je short 0xB412
+100D:B40F call near 0xB915
+100D:B412 call near 0xB96B
+100D:B415 call near 0xB8EA
+100D:B418 jmp near 0xBA9E
+100D:B41B call near 0xD2BD
+100D:B41E call near 0x1A0F
+100D:B421 call near 0xADBE
+100D:B424 jmp near 0x2DB1
+100D:B427 mov CX,0x0578
+100D:B42A call near 0xF11C
+100D:B42D mov DI,0x0100
+100D:B430 push DI
+100D:B431 push ES
+100D:B432 push DS
+100D:B433 lds SI,word ptr DS:[0xDCFE]
+100D:B437 xor SI,SI
+100D:B439 mov CX,0xC5FC
+100D:B43C shr CX,1
+100D:B43E shr CX,1
+100D:B440 mov AH,3
+100D:B442 lods AL,byte ptr DS:[SI]
+100D:B443 shl AL,1
+100D:B445 shl AL,1
+100D:B447 shl AX,1
+100D:B449 shl AX,1
+100D:B44B jae short 0xB442
+100D:B44D mov AL,AH
+100D:B44F stos byte ptr ES:[DI],AL
+100D:B450 loop 0xB440
+100D:B452 push CS
+100D:B453 pop DS
+100D:B454 mov SI,0x00AA
+100D:B457 mov CX,0x00A2
+100D:B45A rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B45C pop DS
+100D:B45D mov SI,0xAA76
+100D:B460 mov CX,0x11F8
+100D:B463 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B465 mov SI,0
+100D:B468 mov CX,0x1261
+100D:B46B rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B46D pop ES
+100D:B46E pop DI
+100D:B46F mov CX,0x567A
+100D:B472 ret near
+100D:B473 mov ES,word ptr SS:[0xDD00]
+100D:B478 xor DI,DI
+100D:B47A mov BX,0xC5FC
+100D:B47D shr BX,1
+100D:B47F shr BX,1
+100D:B481 lods AL,byte ptr DS:[SI]
+100D:B482 mov CX,4
+100D:B485 mov AH,AL
+100D:B487 ror AH,1
+100D:B489 ror AH,1
+100D:B48B mov AL,byte ptr ES:[DI]
+100D:B48E xor AL,AH
+100D:B490 and AL,0xCF
+100D:B492 xor AL,AH
+100D:B494 stos byte ptr ES:[DI],AL
+100D:B495 rol AH,1
+100D:B497 rol AH,1
+100D:B499 loop 0xB48B
+100D:B49B dec BX
+100D:B49C jne short 0xB481
+100D:B49E push CS
+100D:B49F pop ES
+100D:B4A0 mov DI,0x00AA
+100D:B4A3 mov CX,0x00A2
+100D:B4A6 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B4A8 push SS
+100D:B4A9 pop ES
+100D:B4AA mov DI,0xAA76
+100D:B4AD mov CX,0x11F8
+100D:B4B0 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B4B2 mov DI,0
+100D:B4B5 mov CX,0x1261
+100D:B4B8 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B4BA ret near
+100D:B4BB lods AX,word ptr DS:[SI]
+100D:B4BC mov BL,AL
+100D:B4BE lods AX,word ptr DS:[SI]
+100D:B4BF mov CX,AX
+100D:B4C1 sub CX,4
+100D:B4C4 push DI
+100D:B4C5 lods AL,byte ptr DS:[SI]
+100D:B4C6 cmp AL,BL
+100D:B4C8 je short 0xB4D3
+100D:B4CA stos byte ptr ES:[DI],AL
+100D:B4CB loop 0xB4C5
+100D:B4CD pop CX
+100D:B4CE sub DI,CX
+100D:B4D0 xchg CX,DI
+100D:B4D2 ret near
+100D:B4D3 lods AL,byte ptr DS:[SI]
+100D:B4D4 mov DX,CX
+100D:B4D6 mov CL,AL
+100D:B4D8 xor CH,CH
+100D:B4DA lods AL,byte ptr DS:[SI]
+100D:B4DB rep stos byte ptr ES:[DI],AL
+100D:B4DD mov CX,DX
+100D:B4DF sub CX,2
+100D:B4E2 jcxz short 0xB4CD
+100D:B4E4 jb short 0xB4CD
+100D:B4E6 loop 0xB4C5
+100D:B4EA mov DL,0xF7
+100D:B4EC push DI
+100D:B4ED add DI,4
+100D:B4F0 xor DH,DH
+100D:B4F2 lods AL,byte ptr DS:[SI]
+100D:B4F3 inc DH
+100D:B4F5 cmp AL,byte ptr DS:[SI]
+100D:B4F7 jne short 0xB504
+100D:B4F9 cmp DH,0xFF
+100D:B4FC je short 0xB504
+100D:B4FE dec CX
+100D:B4FF or CX,CX
+100D:B501 jne short 0xB4F2
+100D:B503 inc CX
+100D:B504 cmp AL,DL
+100D:B506 je short 0xB512
+100D:B508 cmp DH,1
+100D:B50B je short 0xB51C
+100D:B50D cmp DH,2
+100D:B510 je short 0xB52F
+100D:B512 mov AH,AL
+100D:B514 mov AL,DL
+100D:B516 stos byte ptr ES:[DI],AL
+100D:B517 mov AL,DH
+100D:B519 stos byte ptr ES:[DI],AL
+100D:B51A mov AL,AH
+100D:B51C stos byte ptr ES:[DI],AL
+100D:B51D loop 0xB4F0
+100D:B51F mov CX,DI
+100D:B521 xor AX,AX
+100D:B523 stos word ptr ES:[DI],AX
+100D:B524 pop DI
+100D:B525 sub CX,DI
+100D:B527 mov word ptr ES:[DI],DX
+100D:B52A mov word ptr ES:[DI+2],CX
+100D:B52E ret near
+100D:B52F stos byte ptr ES:[DI],AL
+100D:B530 jmp short 0xB51C
+100D:B532 push DX
+100D:B533 call near 0xB58B
+100D:B536 pop DX
+100D:B537 mov AL,byte ptr ES:[DI]
+100D:B53A ret near
+100D:B53B push BX
+100D:B53C push CX
+100D:B53D push DX
+100D:B53E push AX
+100D:B53F call near 0xB58B
+100D:B542 pop AX
+100D:B543 mov CX,AX
+100D:B545 shr AX,1
+100D:B547 sub DI,AX
+100D:B549 sub DX,AX
+100D:B54B jae short 0xB551
+100D:B551 mov AL,byte ptr ES:[DI]
+100D:B554 mov byte ptr DS:[SI],AL
+100D:B556 mov word ptr DS:[SI+1],DI
+100D:B559 add SI,3
+100D:B55C inc DI
+100D:B55D inc DX
+100D:B55E cmp DX,BP
+100D:B560 jb short 0xB566
+100D:B562 sub DX,BP
+100D:B564 sub DI,BP
+100D:B566 loop 0xB551
+100D:B568 pop DX
+100D:B569 pop CX
+100D:B56A pop BX
+100D:B56B ret near
+100D:B56C push CX
+100D:B56D mov SI,CX
+100D:B56F shr SI,1
+100D:B571 sub BX,SI
+100D:B573 cmp BX,-98
+100D:B576 jge short 0xB57B
+100D:B57B mov SI,0x9E68
+100D:B57E push AX
+100D:B57F call near 0xB53B
+100D:B582 pop AX
+100D:B583 inc BX
+100D:B584 loop 0xB57E
+100D:B586 mov SI,0x9E68
+100D:B589 pop CX
+100D:B58A ret near
+100D:B58B call near 0xB5A0
+100D:B58E les DI,word ptr DS:[0xDCFE]
+100D:B592 add DI,AX
+100D:B594 mov AX,BP
+100D:B596 mul DX
+100D:B598 shl AX,1
+100D:B59A adc DX,0
+100D:B59D add DI,DX
+100D:B59F ret near
+100D:B5A0 push BX
+100D:B5A1 shl BX,1
+100D:B5A3 shl BX,1
+100D:B5A5 shl BX,1
+100D:B5A7 jns short 0xB5B9
+100D:B5A9 neg BX
+100D:B5AB mov AX,word ptr DS:[BX+0x4948]
+100D:B5AF neg AX
+100D:B5B1 mov BP,word ptr DS:[BX+0x494A]
+100D:B5B5 shl BP,1
+100D:B5B7 pop BX
+100D:B5B8 ret near
+100D:B5B9 mov AX,word ptr DS:[BX+0x4948]
+100D:B5BD mov BP,word ptr DS:[BX+0x494A]
+100D:B5C1 shl BP,1
+100D:B5C3 pop BX
+100D:B5C4 ret near
+100D:B5C5 call near 0xB58B
+100D:B5C8 xor AX,AX
+100D:B5CA div BP
+100D:B5CC mov DX,AX
+100D:B5CE ret near
+100D:B5CF or AH,AH
+100D:B5D1 je short 0xB5F5
+100D:B5D3 js short 0xB5E6
+100D:B5D5 add BH,AH
+100D:B5D7 jae short 0xB5F5
+100D:B5D9 inc BL
+100D:B5DB cmp BL,0x62
+100D:B5DE jl short 0xB5F5
+100D:B5E0 dec BL
+100D:B5E2 sub BH,AH
+100D:B5E4 jmp short 0xB5F5
+100D:B5E6 add BH,AH
+100D:B5E8 jb short 0xB5F5
+100D:B5EA dec BL
+100D:B5EC cmp BL,0x9E
+100D:B5EF jg short 0xB5F5
+100D:B5F1 inc BL
+100D:B5F3 sub BH,AH
+100D:B5F5 cbw
+100D:B5F6 add DX,AX
+100D:B5F8 ret near
+100D:B5F9 sub DX,word ptr DS:[0xDCF6]
+100D:B5FD sub BX,word ptr DS:[0xDCF8]
+100D:B601 xor CX,CX
+100D:B603 test byte ptr DS:[0x46EB],0x80
+100D:B608 je short 0xB60C
+100D:B60C sar BX,CL
+100D:B60E add BX,word ptr DS:[0x197E]
+100D:B612 mov AX,BX
+100D:B614 jns short 0xB618
+100D:B616 neg AX
+100D:B618 shl AX,1
+100D:B61A shl AX,1
+100D:B61C shl AX,1
+100D:B61E mov SI,0x4948
+100D:B621 add SI,AX
+100D:B623 jcxz short 0xB62C
+100D:B62C add DX,word ptr DS:[SI+6]
+100D:B62F mov CX,word ptr DS:[SI+2]
+100D:B632 shl CX,1
+100D:B634 cmp DX,CX
+100D:B636 jb short 0xB640
+100D:B638 js short 0xB63E
+100D:B63A sub DX,CX
+100D:B63C jmp short 0xB640
+100D:B640 xor AX,AX
+100D:B642 div CX
+100D:B644 mov DX,AX
+100D:B646 ret near
+100D:B647 xor CX,CX
+100D:B649 test byte ptr DS:[0x46EB],0x80
+100D:B64E je short 0xB652
+100D:B650 mov CL,2
+100D:B652 mov BP,BX
+100D:B654 sub BX,word ptr DS:[0x197E]
+100D:B658 shl BX,CL
+100D:B65A add BX,word ptr DS:[0xDCF8]
+100D:B65E shl BP,1
+100D:B660 shl BP,1
+100D:B662 shl BP,1
+100D:B664 jns short 0xB668
+100D:B666 neg BP
+100D:B668 mov BP,word ptr SS:[BP+0x494A]
+100D:B66C add BP,BP
+100D:B66E sub DX,word ptr DS:[0x197C]
+100D:B672 mov AX,DX
+100D:B674 imul BP
+100D:B676 jcxz short 0xB67E
+100D:B678 shl AX,1
+100D:B67A rcl DX,1
+100D:B67C loop 0xB678
+100D:B67E add DX,word ptr DS:[0xDCF6]
+100D:B682 ret near
+100D:B683 js short 0xB68B
+100D:B685 sub BP,DX
+100D:B687 neg BP
+100D:B689 jmp short 0xB68F
+100D:B68B xchg DX,BP
+100D:B68D add DX,BP
+100D:B68F mov CX,BP
+100D:B691 neg CX
+100D:B693 cmp CX,DX
+100D:B695 jae short 0xB699
+100D:B697 mov DX,BP
+100D:B699 ret near
+100D:B69A mov AX,word ptr DS:[0x197C]
+100D:B69D xchg AX,word ptr DS:[0x1980]
+100D:B6A1 mov word ptr DS:[0x197C],AX
+100D:B6A4 mov AX,word ptr DS:[0x197E]
+100D:B6A7 xchg AX,word ptr DS:[0x1982]
+100D:B6AB mov word ptr DS:[0x197E],AX
+100D:B6AE mov AX,word ptr DS:[0xDCF6]
+100D:B6B1 xchg AX,word ptr DS:[0xDCFA]
+100D:B6B5 mov word ptr DS:[0xDCF6],AX
+100D:B6B8 mov AX,word ptr DS:[0xDCF8]
+100D:B6BB xchg AX,word ptr DS:[0xDCFC]
+100D:B6BF mov word ptr DS:[0xDCF8],AX
+100D:B6C2 ret near
+100D:B6C3 test byte ptr DS:[0x46EB],0x80
+100D:B6C8 je short 0xB714
+100D:B6CA push DS
+100D:B6CB pop ES
+100D:B6CC mov word ptr DS:[0xDCF6],0x00A0
+100D:B6D2 mov word ptr DS:[0xDCF8],0x004C
+100D:B6D8 mov CX,0x0012
+100D:B6DB mov BX,0x004B
+100D:B6DE mov AX,word ptr DS:[0x197E]
+100D:B6E1 or AX,AX
+100D:B6E3 mov DX,AX
+100D:B6E5 jns short 0xB6E9
+100D:B6E7 neg AX
+100D:B6E9 cmp AX,BX
+100D:B6EB jb short 0xB6F8
+100D:B6ED mov AX,BX
+100D:B6EF or DX,DX
+100D:B6F1 jns short 0xB6F5
+100D:B6F3 neg AX
+100D:B6F5 mov word ptr DS:[0x197E],AX
+100D:B6F8 mov BP,0x4948
+100D:B6FB mov DX,word ptr DS:[0x197C]
+100D:B6FF mov AX,word ptr DS:[0x197E]
+100D:B702 sub AX,CX
+100D:B704 les DI,word ptr DS:[0xDCFE]
+100D:B708 mov SI,0x4C60
+100D:B70B mov BX,word ptr DS:[0xDBDA]
+100D:B70F call far dword ptr DS:[0x3929]
+100D:B713 ret near
+100D:B714 mov DI,0x4C60
+100D:B717 mov AX,word ptr DS:[0x46E7]
+100D:B71A sub AX,word ptr DS:[0x46E3]
+100D:B71E mov DX,AX
+100D:B720 shr DX,1
+100D:B722 add DX,word ptr DS:[0x46E3]
+100D:B726 mov word ptr DS:[0xDCF6],DX
+100D:B72A mov word ptr DS:[0xDCF2],AX
+100D:B72D mov AX,word ptr DS:[0x46E9]
+100D:B730 sub AX,word ptr DS:[0x46E5]
+100D:B734 dec AX
+100D:B735 mov BX,AX
+100D:B737 shr BX,1
+100D:B739 add BX,word ptr DS:[0x46E5]
+100D:B73D mov word ptr DS:[0xDCF8],BX
+100D:B741 inc AX
+100D:B742 mov word ptr DS:[0xDCF4],AX
+100D:B745 dec AX
+100D:B746 shr AX,1
+100D:B748 mov CX,AX
+100D:B74A mov BX,0x0056
+100D:B74D sub BX,AX
+100D:B74F mov AX,word ptr DS:[0x197E]
+100D:B752 or AX,AX
+100D:B754 mov DX,AX
+100D:B756 jns short 0xB75A
+100D:B758 neg AX
+100D:B75A cmp AX,BX
+100D:B75C jb short 0xB769
+100D:B75E mov AX,BX
+100D:B760 or DX,DX
+100D:B762 jns short 0xB766
+100D:B764 neg AX
+100D:B766 mov word ptr DS:[0x197E],AX
+100D:B769 mov BP,0x4948
+100D:B76C mov DX,word ptr DS:[0x197C]
+100D:B770 mov AX,word ptr DS:[0x197E]
+100D:B773 sub AX,CX
+100D:B775 push AX
+100D:B776 mov CX,word ptr DS:[0xDCF4]
+100D:B77A shl AX,1
+100D:B77C shl AX,1
+100D:B77E shl AX,1
+100D:B780 jns short 0xB79C
+100D:B782 neg AX
+100D:B784 add BP,AX
+100D:B786 push CX
+100D:B787 mov CX,word ptr SS:[BP]
+100D:B78A mov BX,word ptr SS:[BP+2]
+100D:B78D neg CX
+100D:B78F je short 0xB7A5
+100D:B791 call near 0xB7D2
+100D:B794 sub BP,8
+100D:B797 pop CX
+100D:B798 loop 0xB786
+100D:B79A jmp short 0xB7AE
+100D:B79C add BP,AX
+100D:B79E push CX
+100D:B79F mov CX,word ptr SS:[BP]
+100D:B7A2 mov BX,word ptr SS:[BP+2]
+100D:B7A5 call near 0xB7D2
+100D:B7A8 add BP,8
+100D:B7AB pop CX
+100D:B7AC loop 0xB79E
+100D:B7AE mov ES,word ptr DS:[0xDBDA]
+100D:B7B2 mov DI,word ptr DS:[0xDCF2]
+100D:B7B6 mov CX,word ptr DS:[0xDCF4]
+100D:B7BA mov DX,word ptr DS:[0x46E3]
+100D:B7BE mov BX,word ptr DS:[0x46E5]
+100D:B7C2 mov SI,0x4C60
+100D:B7C5 pop AX
+100D:B7C6 test byte ptr DS:[0x46EB],0x40
+100D:B7CB jne short 0xB7D1
+100D:B7CD call far dword ptr DS:[0x390D]
+100D:B7D1 ret near
+100D:B7D2 push DX
+100D:B7D3 push DI
+100D:B7D4 push DS
+100D:B7D5 lds SI,word ptr DS:[0xDCFE]
+100D:B7D9 push SS
+100D:B7DA pop ES
+100D:B7DB add SI,CX
+100D:B7DD add BX,BX
+100D:B7DF mov AX,DX
+100D:B7E1 mul BX
+100D:B7E3 mov word ptr SS:[BP+6],DX
+100D:B7E6 mov AX,DX
+100D:B7E8 mov DX,word ptr SS:[0xDCF2]
+100D:B7ED cmp BX,DX
+100D:B7EF jae short 0xB7FB
+100D:B7F1 mov CX,DX
+100D:B7F3 sub CX,BX
+100D:B7F5 shr CX,1
+100D:B7F7 add DI,CX
+100D:B7F9 mov DX,BX
+100D:B7FB mov CX,DX
+100D:B7FD shr CX,1
+100D:B7FF sub AX,CX
+100D:B801 jns short 0xB805
+100D:B803 add AX,BX
+100D:B805 mov CX,DX
+100D:B807 sub BX,AX
+100D:B809 sub CX,BX
+100D:B80B jns short 0xB813
+100D:B80D add CX,BX
+100D:B80F add SI,AX
+100D:B811 jmp short 0xB81D
+100D:B813 xchg BX,CX
+100D:B815 push SI
+100D:B816 add SI,AX
+100D:B818 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B81A pop SI
+100D:B81B xchg BX,CX
+100D:B81D rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:B81F pop DS
+100D:B820 pop DI
+100D:B821 pop DX
+100D:B822 add DI,0x00C8
+100D:B826 ret near
+100D:B827 mov byte ptr DS:[0xDD02],0
+100D:B82C call near 0xB84A
+100D:B82F mov word ptr DS:[0xDD0F],0
+100D:B835 call near 0xB87E
+100D:B838 call near 0x1797
+100D:B83B call near 0xB941
+100D:B83E call near 0xD7B2
+100D:B841 mov SI,0x1DC6
+100D:B844 call near 0xD72B
+100D:B847 jmp near 0xAD5E
+100D:B84A call near 0xC07C
+100D:B84D mov ES,word ptr DS:[0xDBDA]
+100D:B851 mov SI,0x1470
+100D:B854 mov AL,0xF0
+100D:B856 call far dword ptr DS:[0x38DD]
+100D:B85A mov AX,1
+100D:B85D call near 0xC13E
+100D:B860 mov DX,0x005B
+100D:B863 mov BX,0x0014
+100D:B866 mov AX,2
+100D:B869 call near 0xC22F
+100D:B86C mov SI,0x2448
+100D:B86F call near 0xDAAA
+100D:B872 mov SI,0x2440
+100D:B875 mov DI,0xD834
+100D:B878 call near 0x5B99
+100D:B87B jmp near 0xB977
+100D:B87E call near 0x5BA8
+100D:B881 mov AX,1
+100D:B884 call near 0xC13E
+100D:B887 mov DX,word ptr DS:[0xDD0F]
+100D:B88B xor BX,BX
+100D:B88D xor AX,AX
+100D:B88F call near 0xC305
+100D:B892 sub DX,0x00D6
+100D:B896 neg DX
+100D:B898 mov AX,1
+100D:B89B call near 0xC30D
+100D:B89E mov SI,0x2440
+100D:B8A1 mov DI,0xD834
+100D:B8A4 jmp near 0x5B99
+100D:B8A7 push DS
+100D:B8A8 pop ES
+100D:B8A9 mov DI,0x4C60
+100D:B8AC mov SI,0x0092
+100D:B8AF call near 0xF0B9
+100D:B8B2 mov DX,word ptr DS:[0x197C]
+100D:B8B6 mov BX,word ptr DS:[0x197E]
+100D:B8BA call near 0xBA75
+100D:B8BD mov AX,1
+100D:B8C0 call near 0xC13E
+100D:B8C3 jmp near 0xC0F4
+100D:B8C6 call near 0xD2BD
+100D:B8C9 call near 0x5ADF
+100D:B8CC call near 0xB8A7
+100D:B8CF inc byte ptr DS:[0xDD03]
+100D:B8D3 xor AL,AL
+100D:B8D5 mov DX,0xFFFF
+100D:B8D8 mov BP,0xB827
+100D:B8DB call near 0xC108
+100D:B8DE call near 0xAE04
+100D:B8E1 mov AX,0x2562
+100D:B8E4 call near 0xD95E
+100D:B8E7 call near 0x17E6
+100D:B8EA mov SI,0xB9AE
+100D:B8ED mov BP,1
+100D:B8F0 jmp near 0xDA25
+100D:B8F3 call near 0xB84A
+100D:B8F6 mov BP,0xBE1D
+100D:B8F9 call near 0xC097
+100D:B8FC call near 0xC474
+100D:B8FF call near 0xC43E
+100D:B902 call near 0xB87E
+100D:B905 call near 0xC4DD
+100D:B908 sub word ptr DS:[0xDD0F],0x0010
+100D:B90D cmp word ptr DS:[0xDD0F],-106
+100D:B912 jg short 0xB8FF
+100D:B914 ret near
+100D:B915 call near 0xB93B
+100D:B918 call near 0xC08E
+100D:B91B add word ptr DS:[0xDD0F],0x0010
+100D:B920 call near 0xB87E
+100D:B923 cmp word ptr DS:[0xDD0F],0
+100D:B928 jne short 0xB91B
+100D:B92A call near 0xC07C
+100D:B92D jmp near 0xB87E
+100D:B930 mov byte ptr DS:[0xDD03],0
+100D:B935 mov SI,0xB9AE
+100D:B938 call near 0xDA5F
+100D:B93B mov SI,0xBE57
+100D:B93E jmp near 0xDA5F
+100D:B941 mov BP,0x204A
+100D:B944 mov AX,0x00B1
+100D:B947 mov BX,0xB96B
+100D:B94A cmp byte ptr DS:[0xDD02],0
+100D:B94F je short 0xB955
+100D:B951 inc AX
+100D:B952 mov BX,0xB961
+100D:B955 mov word ptr SS:[BP+6],AX
+100D:B958 mov word ptr SS:[BP+8],BX
+100D:B95B mov BX,0xD917
+100D:B95E jmp near 0xD338
+100D:B961 call near 0xB915
+100D:B964 mov byte ptr DS:[0xDD02],0
+100D:B969 jmp short 0xB972
+100D:B96B call near 0xB8F3
+100D:B96E dec byte ptr DS:[0xDD02]
+100D:B972 call near 0xB98B
+100D:B975 jmp short 0xB941
+100D:B977 mov BP,0x4948
+100D:B97A mov ES,word ptr DS:[0xDBD6]
+100D:B97E mov AL,byte ptr DS:[0xDD02]
+100D:B981 lds SI,word ptr DS:[0xDCFE]
+100D:B985 call far dword ptr SS:[0x3911]
+100D:B98A ret near
+100D:B98B call near 0xB977
+100D:B98E call near 0xBAF2
+100D:B991 push BX
+100D:B992 push DX
+100D:B993 mov SI,0xD834
+100D:B996 call near 0xDB74
+100D:B999 call near 0xC4ED
+100D:B99C pop DX
+100D:B99D pop BX
+100D:B99E or DX,DX
+100D:B9A0 je short 0xB9A5
+100D:B9A2 call near 0xBC0C
+100D:B9A5 call near 0xDB67
+100D:B9A8 mov AX,1
+100D:B9AB jmp short 0xB9E0
+100D:B9AE mov ES,word ptr DS:[0xDBD6]
+100D:B9B2 call far dword ptr DS:[0x3915]
+100D:B9B6 jb short 0xB98E
+100D:B9B8 ret near
+100D:B9B9 shr AX,1
+100D:B9BB mov AX,8
+100D:B9BE jmp short 0xB9C5
+100D:B9C0 shr AX,1
+100D:B9C2 mov AX,0xFFF8
+100D:B9C5 jae short 0xB9DF
+100D:B9C7 call near 0xBA15
+100D:B9CA jmp short 0xB98B
+100D:B9CC shr AX,1
+100D:B9CE mov AX,0xFFE0
+100D:B9D1 jmp short 0xB9D8
+100D:B9D3 shr AX,1
+100D:B9D5 mov AX,0x0020
+100D:B9D8 jae short 0xB9DF
+100D:B9DA call near 0xB9E0
+100D:B9DD jmp short 0xB98B
+100D:B9DF ret near
+100D:B9E0 mov SI,0x494C
+100D:B9E3 mov DX,word ptr DS:[SI]
+100D:B9E5 mov CX,0x018E
+100D:B9E8 add DX,AX
+100D:B9EA jns short 0xB9EE
+100D:B9EC add DX,CX
+100D:B9EE cmp DX,CX
+100D:B9F0 js short 0xB9F4
+100D:B9F2 sub DX,CX
+100D:B9F4 mov word ptr DS:[SI],DX
+100D:B9F6 mov AX,0x8000
+100D:B9F9 mov CX,0x018E
+100D:B9FC div CX
+100D:B9FE mov CX,0x0062
+100D:BA01 mov BX,AX
+100D:BA03 add SI,6
+100D:BA06 lods AX,word ptr DS:[SI]
+100D:BA07 mul BX
+100D:BA09 add AX,AX
+100D:BA0B adc DX,DX
+100D:BA0D mov word ptr DS:[SI],DX
+100D:BA0F mov word ptr DS:[SI+2],AX
+100D:BA12 loop 0xBA03
+100D:BA14 ret near
+100D:BA15 add AX,word ptr DS:[0x2460]
+100D:BA19 mov CX,0x0062
+100D:BA1C cmp AX,CX
+100D:BA1E jl short 0xBA22
+100D:BA20 mov AX,CX
+100D:BA22 neg CX
+100D:BA24 cmp AX,CX
+100D:BA26 jg short 0xBA2A
+100D:BA28 mov AX,CX
+100D:BA2A mov word ptr DS:[0x2460],AX
+100D:BA2D push DS
+100D:BA2E pop ES
+100D:BA2F mov DI,0x8B77
+100D:BA32 mov BX,0x0062
+100D:BA35 mov CX,0x00C4
+100D:BA38 mov AX,word ptr DS:[0x2460]
+100D:BA3B add AX,BX
+100D:BA3D cmp AX,BX
+100D:BA3F jle short 0xBA55
+100D:BA41 neg BX
+100D:BA43 add AL,BL
+100D:BA45 add AL,BL
+100D:BA47 dec AL
+100D:BA49 stos word ptr ES:[DI],AX
+100D:BA4A cmp AL,BL
+100D:BA4C jle short 0xBA50
+100D:BA4E loop 0xBA47
+100D:BA50 neg BX
+100D:BA52 mov AX,BX
+100D:BA54 dec CX
+100D:BA55 stos word ptr ES:[DI],AX
+100D:BA56 dec AL
+100D:BA58 js short 0xBA5C
+100D:BA5A loop 0xBA55
+100D:BA5C dec CX
+100D:BA5D jle short 0xBA74
+100D:BA5F neg AX
+100D:BA61 stos word ptr ES:[DI],AX
+100D:BA62 inc AL
+100D:BA64 cmp AL,BL
+100D:BA66 jg short 0xBA6A
+100D:BA68 loop 0xBA61
+100D:BA6A dec CX
+100D:BA6B jle short 0xBA74
+100D:BA6D neg AL
+100D:BA6F inc AL
+100D:BA71 stos word ptr ES:[DI],AX
+100D:BA72 loop 0xBA6F
+100D:BA74 ret near
+100D:BA75 mov SI,0x494C
+100D:BA78 mov AX,0x018E
+100D:BA7B mul DX
+100D:BA7D mov word ptr DS:[SI],DX
+100D:BA7F mov word ptr DS:[SI+2],0
+100D:BA84 mov AX,BX
+100D:BA86 cmp AX,0x0020
+100D:BA89 jae short 0xBA8E
+100D:BA8B mov AX,0x0020
+100D:BA8E cmp AX,0xFFE0
+100D:BA91 jb short 0xBA96
+100D:BA93 mov AX,0xFFE0
+100D:BA96 mov word ptr DS:[0x2460],AX
+100D:BA99 call near 0xB9F6
+100D:BA9C jmp short 0xBA2D
+100D:BA9E call near 0x407E
+100D:BAA1 mov AX,0x018E
+100D:BAA4 mul DX
+100D:BAA6 mov BP,word ptr DS:[0x494A]
+100D:BAAA add BP,BP
+100D:BAAC sub DX,word ptr DS:[0x494C]
+100D:BAB0 call near 0xB683
+100D:BAB3 mov CX,1
+100D:BAB6 mov AX,0x0020
+100D:BAB9 cmp DX,AX
+100D:BABB jl short 0xBAC0
+100D:BABD mov DX,AX
+100D:BABF inc CX
+100D:BAC0 neg AX
+100D:BAC2 cmp DX,AX
+100D:BAC4 jg short 0xBAC9
+100D:BAC6 mov DX,AX
+100D:BAC8 inc CX
+100D:BAC9 sub BX,word ptr DS:[0x2460]
+100D:BACD mov AX,0x0018
+100D:BAD0 cmp BX,AX
+100D:BAD2 jl short 0xBAD7
+100D:BAD4 mov BX,AX
+100D:BAD6 inc CX
+100D:BAD7 neg AX
+100D:BAD9 cmp BX,AX
+100D:BADB jg short 0xBAE0
+100D:BADD mov BX,AX
+100D:BADF inc CX
+100D:BAE0 mov AX,DX
+100D:BAE2 push CX
+100D:BAE3 push BX
+100D:BAE4 call near 0xB9E0
+100D:BAE7 pop AX
+100D:BAE8 call near 0xBA15
+100D:BAEB call near 0xB98B
+100D:BAEE pop CX
+100D:BAEF loop 0xBA9E
+100D:BAF1 ret near
+100D:BAF2 xor DX,DX
+100D:BAF4 cmp byte ptr DS:[0x227D],0
+100D:BAF9 jne short 0xBAF1
+100D:BAFB call near 0x407E
+100D:BAFE sub SP,0x000A
+100D:BB01 mov BP,SP
+100D:BB03 mov word ptr SS:[BP],0
+100D:BB08 shl BX,1
+100D:BB0A shl BX,1
+100D:BB0C shl BX,1
+100D:BB0E jns short 0xBB16
+100D:BB10 mov byte ptr SS:[BP+1],0xFF
+100D:BB14 neg BX
+100D:BB16 mov CX,word ptr DS:[BX+0x494A]
+100D:BB1A mov AX,CX
+100D:BB1C add AX,AX
+100D:BB1E mul DX
+100D:BB20 add AX,AX
+100D:BB22 adc DX,0
+100D:BB25 xor AX,AX
+100D:BB27 sub DX,word ptr DS:[BX+0x494C]
+100D:BB2B jns short 0xBB31
+100D:BB2D neg DX
+100D:BB2F not AX
+100D:BB31 cmp DX,CX
+100D:BB33 jb short 0xBB3D
+100D:BB35 sub DX,CX
+100D:BB37 sub DX,CX
+100D:BB39 neg DX
+100D:BB3B not AX
+100D:BB3D shr CX,1
+100D:BB3F cmp DX,CX
+100D:BB41 jb short 0xBB4D
+100D:BB43 mov byte ptr SS:[BP],0x80
+100D:BB47 sub DX,CX
+100D:BB49 sub DX,CX
+100D:BB4B neg DX
+100D:BB4D mov byte ptr SS:[BP+4],AL
+100D:BB50 shr BX,1
+100D:BB52 shr BX,1
+100D:BB54 push DS
+100D:BB55 pop ES
+100D:BB56 mov DI,0x593A
+100D:BB59 mov AX,BX
+100D:BB5B mov CX,0x0064
+100D:BB5E xor BX,BX
+100D:BB60 repne scas AL,byte ptr ES:[DI]
+100D:BB62 jne short 0xBB7A
+100D:BB64 inc CX
+100D:BB65 cmp DL,byte ptr DS:[DI+0x63]
+100D:BB68 jbe short 0xBB7D
+100D:BB6A mov word ptr SS:[BP+2],CX
+100D:BB6D inc BX
+100D:BB6E add DI,0x00C7
+100D:BB72 cmp DI,0x8B3B
+100D:BB76 jb short 0xBB60
+100D:BB7A mov CX,word ptr SS:[BP+2]
+100D:BB7D mov AX,0x0064
+100D:BB80 sub AX,CX
+100D:BB82 mov word ptr SS:[BP+2],BX
+100D:BB85 mov CX,word ptr SS:[BP]
+100D:BB88 mov AH,CH
+100D:BB8A or CL,CL
+100D:BB8C jns short 0xBB90
+100D:BB8E neg AL
+100D:BB90 mov DI,0x8BBB
+100D:BB93 mov CX,0x0080
+100D:BB96 repne scas AX,word ptr ES:[DI]
+100D:BB98 jne short 0xBBE6
+100D:BB9A xor AL,AL
+100D:BB9C sub DI,0x8C3D
+100D:BBA0 jns short 0xBBA6
+100D:BBA2 neg DI
+100D:BBA4 not AL
+100D:BBA6 mov byte ptr SS:[BP+5],AL
+100D:BBA9 mov BX,0x0036
+100D:BBAC mov AX,DI
+100D:BBAE shr AX,1
+100D:BBB0 mov SI,0x4C60
+100D:BBB3 mov DX,word ptr SS:[BP+2]
+100D:BBB6 mov CL,AL
+100D:BBB8 mov CH,0xFF
+100D:BBBA xor AX,AX
+100D:BBBC lods AL,byte ptr DS:[SI]
+100D:BBBD inc AL
+100D:BBBF je short 0xBBE1
+100D:BBC1 neg AL
+100D:BBC3 cmp AL,DL
+100D:BBC5 jbe short 0xBBE1
+100D:BBC7 mov DI,SI
+100D:BBC9 add SI,AX
+100D:BBCB add DI,DX
+100D:BBCD mov AL,byte ptr DS:[DI]
+100D:BBCF sub AL,CL
+100D:BBD1 cmp AL,CH
+100D:BBD3 jae short 0xBBDE
+100D:BBD5 mov CH,AL
+100D:BBD7 mov word ptr SS:[BP+6],BX
+100D:BBDA or AL,AL
+100D:BBDC je short 0xBBEC
+100D:BBDE dec BX
+100D:BBDF jne short 0xBBBC
+100D:BBE1 cmp CH,2
+100D:BBE4 jbe short 0xBBEC
+100D:BBE6 add SP,0x000A
+100D:BBE9 xor DX,DX
+100D:BBEB ret near
+100D:BBEC mov AX,word ptr SS:[BP+4]
+100D:BBEF mov BX,word ptr SS:[BP+6]
+100D:BBF2 sub BX,0x0036
+100D:BBF5 or AH,AH
+100D:BBF7 je short 0xBBFB
+100D:BBF9 neg BX
+100D:BBFB add BX,0x004F
+100D:BBFE or AL,AL
+100D:BC00 je short 0xBC04
+100D:BC02 neg DX
+100D:BC04 add DX,0x00A0
+100D:BC08 add SP,0x000A
+100D:BC0B ret near
+100D:BC0C call near 0xC08E
+100D:BC0F call near 0xC137
+100D:BC12 mov AX,0x0036
+100D:BC15 call near 0xC1F4
+100D:BC18 sub BL,byte ptr ES:[SI+2]
+100D:BC1C jmp near 0xC22F
+100D:BC1F call near 0xD41B
+100D:BC22 cmp BP,0x204A
+100D:BC26 je short 0xBC2C
+100D:BC28 cmp BP,0x2062
+100D:BC2C jne short 0xBC4D
+100D:BC2E call near 0xBC4E
+100D:BC31 jb short 0xBC3C
+100D:BC33 cmp BP,0x204A
+100D:BC37 je short 0xBC4D
+100D:BC39 jmp near 0xB941
+100D:BC3C cmp BP,0x2062
+100D:BC40 je short 0xBC4D
+100D:BC42 mov BP,0x2062
+100D:BC45 mov BX,0xD917
+100D:BC48 xor CX,CX
+100D:BC4A jmp near 0xD33A
+100D:BC4D ret near
+100D:BC4E sub DX,0x0060
+100D:BC51 cmc
+100D:BC52 jae short 0xBC63
+100D:BC54 cmp DX,0x0080
+100D:BC58 jae short 0xBC63
+100D:BC5A sub BX,0x0019
+100D:BC5D cmc
+100D:BC5E jae short 0xBC63
+100D:BC60 cmp BX,0x006D
+100D:BC63 ret near
+100D:BC64 push BX
+100D:BC65 push DX
+100D:BC66 call near 0xBC4E
+100D:BC69 jae short 0xBC7E
+100D:BC6B call near 0xBD25
+100D:BC6E jae short 0xBC7E
+100D:BC70 mov word ptr DS:[0x197C],AX
+100D:BC73 mov word ptr DS:[0x197E],BX
+100D:BC77 call near 0xB98B
+100D:BC7A pop DX
+100D:BC7B pop BX
+100D:BC7C jmp short 0xBC8D
+100D:BC81 call near 0xBA9E
+100D:BC84 call near 0x5B5D
+100D:BC87 mov DX,0x00A0
+100D:BC8A mov BX,0x004F
+100D:BC8D call near 0xDBB2
+100D:BC90 call near 0xBC99
+100D:BC93 call near 0xADBE
+100D:BC96 jmp near 0x5A3D
+100D:BC99 mov SI,0xDD06
+100D:BC9C mov word ptr DS:[SI],DX
+100D:BC9E mov word ptr DS:[SI+2],BX
+100D:BCA1 inc DX
+100D:BCA2 inc DX
+100D:BCA3 inc BX
+100D:BCA4 mov word ptr DS:[SI+4],DX
+100D:BCA7 mov word ptr DS:[SI+6],BX
+100D:BCAA mov byte ptr DS:[SI+8],7
+100D:BCAE call near 0xC08E
+100D:BCB1 mov CX,8
+100D:BCB4 push CX
+100D:BCB5 mov SI,0xDD06
+100D:BCB8 mov DI,0x2440
+100D:BCBB mov CX,2
+100D:BCBE mov DX,0xFFFC
+100D:BCC1 mov AX,word ptr DS:[SI]
+100D:BCC3 add AX,DX
+100D:BCC5 cmp AX,word ptr DS:[DI]
+100D:BCC7 jae short 0xBCCB
+100D:BCCB mov word ptr DS:[SI],AX
+100D:BCCD add DI,2
+100D:BCD0 add SI,2
+100D:BCD3 sar DX,1
+100D:BCD5 loop 0xBCC1
+100D:BCD7 mov CX,2
+100D:BCDA mov DX,4
+100D:BCDD mov AX,word ptr DS:[SI]
+100D:BCDF add AX,DX
+100D:BCE1 cmp AX,word ptr DS:[DI]
+100D:BCE3 jb short 0xBCE7
+100D:BCE5 mov AX,word ptr DS:[DI]
+100D:BCE7 mov word ptr DS:[SI],AX
+100D:BCE9 add DI,2
+100D:BCEC add SI,2
+100D:BCEF sar DX,1
+100D:BCF1 loop 0xBCDD
+100D:BCF3 mov SI,0xDD06
+100D:BCF6 call near 0xC551
+100D:BCF9 call near 0xBD00
+100D:BCFC pop CX
+100D:BCFD loop 0xBCB4
+100D:BCFF ret near
+100D:BD00 xor AX,AX
+100D:BD02 mov CX,0x000A
+100D:BD05 mov SI,0xDD06
+100D:BD08 inc word ptr DS:[SI]
+100D:BD0A inc word ptr DS:[SI+2]
+100D:BD0D dec word ptr DS:[SI+4]
+100D:BD10 dec word ptr DS:[SI+6]
+100D:BD13 call near 0xC0D5
+100D:BD16 mov SI,0xDD06
+100D:BD19 dec word ptr DS:[SI]
+100D:BD1B dec word ptr DS:[SI+2]
+100D:BD1E inc word ptr DS:[SI+4]
+100D:BD21 inc word ptr DS:[SI+6]
+100D:BD24 ret near
+100D:BD25 sub BX,0x0036
+100D:BD28 mov CX,BX
+100D:BD2A jns short 0xBD2E
+100D:BD2C neg CX
+100D:BD2E push DS
+100D:BD2F pop ES
+100D:BD30 mov SI,0x4C60
+100D:BD33 inc CX
+100D:BD34 xor AX,AX
+100D:BD36 add SI,AX
+100D:BD38 lods AL,byte ptr DS:[SI]
+100D:BD39 inc AL
+100D:BD3B neg AL
+100D:BD3D loopne 0xBD36
+100D:BD3F mov DI,SI
+100D:BD41 add DI,AX
+100D:BD43 sub DX,0x0040
+100D:BD46 mov AX,DX
+100D:BD48 jns short 0xBD4C
+100D:BD4A neg DX
+100D:BD4C add SI,DX
+100D:BD4E cmp SI,DI
+100D:BD50 jae short 0xBDBA
+100D:BD52 push AX
+100D:BD53 lods AL,byte ptr DS:[SI]
+100D:BD54 xor AH,AH
+100D:BD56 or BX,BX
+100D:BD58 js short 0xBD5C
+100D:BD5A neg AX
+100D:BD5C mov SI,0x8C3B
+100D:BD5F add SI,AX
+100D:BD61 add SI,AX
+100D:BD63 lods AX,word ptr DS:[SI]
+100D:BD64 push AX
+100D:BD65 mov SI,0x593A
+100D:BD68 cbw
+100D:BD69 mov BP,AX
+100D:BD6B or AX,AX
+100D:BD6D jns short 0xBD71
+100D:BD6F neg BP
+100D:BD71 mov AX,0x00C8
+100D:BD74 mul DX
+100D:BD76 add SI,AX
+100D:BD78 mov BL,byte ptr SS:[BP+SI]
+100D:BD7A mov AL,byte ptr SS:[BP+SI+0x64]
+100D:BD7D xor AH,AH
+100D:BD7F xor BH,BH
+100D:BD81 mov DI,BX
+100D:BD83 add DI,DI
+100D:BD85 add DI,DI
+100D:BD87 mov CX,word ptr DS:[DI+0x494A]
+100D:BD8B pop DX
+100D:BD8C or DH,DH
+100D:BD8E jns short 0xBD92
+100D:BD90 neg BX
+100D:BD92 or DL,DL
+100D:BD94 jns short 0xBD9A
+100D:BD96 neg AX
+100D:BD98 add AX,CX
+100D:BD9A add CX,CX
+100D:BD9C mov DX,word ptr DS:[DI+0x494C]
+100D:BDA0 pop DI
+100D:BDA1 or DI,DI
+100D:BDA3 jns short 0xBDA7
+100D:BDA5 neg AX
+100D:BDA7 add DX,AX
+100D:BDA9 jns short 0xBDAD
+100D:BDAD cmp DX,CX
+100D:BDAF jb short 0xBDB3
+100D:BDB1 sub DX,CX
+100D:BDB3 xor AX,AX
+100D:BDB5 div CX
+100D:BDB7 sar BX,1
+100D:BDB9 stc
+100D:BDBA ret near
+100D:BDBB cmp word ptr DS:[0xDD0F],0
+100D:BDC0 je short 0xBDF9
+100D:BDC2 call near 0xC08E
+100D:BDC5 call near 0xDBB2
+100D:BDC8 call near 0xBDFA
+100D:BDCB call near 0xBED7
+100D:BDCE mov AX,word ptr DS:[2]
+100D:BDD1 and AX,0xFFF0
+100D:BDD4 mov word ptr DS:[0x115C],AX
+100D:BDD7 call near 0xD075
+100D:BDDA mov SI,0x2494
+100D:BDDD call near 0xD1A6
+100D:BDE0 mov SI,0xDD11
+100D:BDE3 mov DI,0xDD17
+100D:BDE6 push DS
+100D:BDE7 pop ES
+100D:BDE8 mov CX,6
+100D:BDEB cmps byte ptr DS:[SI],byte ptr ES:[DI]
+100D:BDEC loopne 0xBDEB
+100D:BDEE jne short 0xBDF9
+100D:BDF0 dec byte ptr DS:[DI-1]
+100D:BDF3 inc CX
+100D:BDF4 loop 0xBDEB
+100D:BDF6 call near 0xDBEC
+100D:BDF9 ret near
+100D:BDFA mov SI,0x00C2
+100D:BDFD call near 0x1AD1
+100D:BE00 inc AX
+100D:BE01 call near 0xE2DB
+100D:BE04 call near 0xBFA7
+100D:BE07 mov AL,byte ptr DS:[0x0029]
+100D:BE0A xor AH,AH
+100D:BE0C shr AX,1
+100D:BE0E mov SI,0x00C3
+100D:BE11 call near 0xE2DB
+100D:BE14 call near 0xD068
+100D:BE17 mov SI,0x2482
+100D:BE1A jmp near 0xD1A6
+100D:BE1D mov AX,1
+100D:BE20 call near 0xC13E
+100D:BE23 mov SI,0x2506
+100D:BE26 call near 0xC21B
+100D:BE29 call near 0xBED7
+100D:BE2C call near 0xBDFA
+100D:BE2F mov SI,0xDD17
+100D:BE32 xor AX,AX
+100D:BE34 mov word ptr DS:[SI],AX
+100D:BE36 mov word ptr DS:[SI+2],AX
+100D:BE39 mov word ptr DS:[SI+4],AX
+100D:BE3C mov AX,word ptr DS:[2]
+100D:BE3F and AX,0xFFF0
+100D:BE42 mov word ptr DS:[0x115C],AX
+100D:BE45 call near 0xD075
+100D:BE48 mov SI,0x2494
+100D:BE4B call near 0xD1A6
+100D:BE4E mov SI,0xBE57
+100D:BE51 mov BP,0x000C
+100D:BE54 call near 0xDA25
+100D:BE57 call near 0xC08E
+100D:BE5A mov SI,0x1470
+100D:BE5D call near 0xDB74
+100D:BE60 call near 0xC137
+100D:BE63 mov SI,0xDD11
+100D:BE66 xor BP,BP
+100D:BE68 mov CL,byte ptr DS:[SI]
+100D:BE6A sub CL,byte ptr DS:[SI+6]
+100D:BE6D je short 0xBECD
+100D:BE6F mov AL,1
+100D:BE71 jae short 0xBE75
+100D:BE75 add byte ptr DS:[SI+6],AL
+100D:BE78 mov AL,byte ptr DS:[SI+6]
+100D:BE7B cmp AL,0x1E
+100D:BE7D jb short 0xBE81
+100D:BE7F mov AL,0x1E
+100D:BE81 mov BX,BP
+100D:BE83 shl BX,1
+100D:BE85 shl BX,1
+100D:BE87 mov DX,word ptr DS:[BX+0x24EE]
+100D:BE8B mov BX,word ptr DS:[BX+0x24F0]
+100D:BE8F xor AH,AH
+100D:BE91 sub BX,AX
+100D:BE93 push SI
+100D:BE94 push BP
+100D:BE95 mov AX,0x0037
+100D:BE98 shr BP,1
+100D:BE9A adc AX,0
+100D:BE9D call near 0xC2FD
+100D:BEA0 sub BX,0x000A
+100D:BEA3 mov AX,0x0039
+100D:BEA6 call near 0xC2FD
+100D:BEA9 pop BP
+100D:BEAA pop SI
+100D:BEAB mov AL,byte ptr DS:[SI]
+100D:BEAD cmp AL,byte ptr DS:[SI+6]
+100D:BEB0 jne short 0xBECD
+100D:BEB2 test BP,1
+100D:BEB6 mov AX,0x003F
+100D:BEB9 je short 0xBEBD
+100D:BEBB mov AL,0x25
+100D:BEBD mov word ptr DS:[0xDBE4],AX
+100D:BEC0 add DX,4
+100D:BEC3 call near 0xD04E
+100D:BEC6 mov AL,byte ptr SS:[BP+0x116A]
+100D:BECA call near 0xD12F
+100D:BECD inc SI
+100D:BECE inc BP
+100D:BECF cmp BP,6
+100D:BED2 jb short 0xBE68
+100D:BED4 jmp near 0xC07C
+100D:BED7 mov AX,word ptr DS:[2]
+100D:BEDA and AX,0xFFF0
+100D:BEDD mov word ptr DS:[0x115C],AX
+100D:BEE0 call near 0xC02E
+100D:BEE3 call near 0xBF26
+100D:BEE6 push DS
+100D:BEE7 pop ES
+100D:BEE8 mov DI,0xDD11
+100D:BEEB mov AX,word ptr DS:[0x00A4]
+100D:BEEE shr AX,1
+100D:BEF0 inc AX
+100D:BEF1 stos byte ptr ES:[DI],AL
+100D:BEF2 mov AX,word ptr DS:[0x00A2]
+100D:BEF5 shr AX,1
+100D:BEF7 inc AX
+100D:BEF8 stos byte ptr ES:[DI],AL
+100D:BEF9 mov AX,word ptr DS:[0x00A8]
+100D:BEFC shr AX,1
+100D:BEFE shr AX,1
+100D:BF00 shr AX,1
+100D:BF02 shr AX,1
+100D:BF04 inc AL
+100D:BF06 stos byte ptr ES:[DI],AL
+100D:BF07 mov AX,word ptr DS:[0x00A6]
+100D:BF0A shr AX,1
+100D:BF0C shr AX,1
+100D:BF0E shr AX,1
+100D:BF10 shr AX,1
+100D:BF12 inc AL
+100D:BF14 stos byte ptr ES:[DI],AL
+100D:BF15 mov AX,word ptr DS:[0x00AC]
+100D:BF18 mov AL,AH
+100D:BF1A inc AL
+100D:BF1C stos byte ptr ES:[DI],AL
+100D:BF1D mov AX,word ptr DS:[0x00AA]
+100D:BF20 mov AL,AH
+100D:BF22 inc AL
+100D:BF24 stos byte ptr ES:[DI],AL
+100D:BF25 ret near
+100D:BF26 mov DI,0x115E
+100D:BF29 mov BP,0x116A
+100D:BF2C mov SI,0x00C4
+100D:BF2F call near 0xCF70
+100D:BF32 mov AX,word ptr DS:[0x00A4]
+100D:BF35 call near 0xBF73
+100D:BF38 mov AX,word ptr DS:[0x00A2]
+100D:BF3B call near 0xBF73
+100D:BF3E mov AX,word ptr DS:[0x00A8]
+100D:BF41 call near 0xBF61
+100D:BF44 mov AX,word ptr DS:[0x00A6]
+100D:BF47 call near 0xBF61
+100D:BF4A mov AX,word ptr DS:[0x00AC]
+100D:BF4D call near 0xBF61
+100D:BF50 mov AX,word ptr DS:[0x00AA]
+100D:BF53 jmp short 0xBF61
+100D:BF61 push DI
+100D:BF62 push AX
+100D:BF63 call near 0xD03C
+100D:BF66 dec SI
+100D:BF67 mov byte ptr ES:[SI],0x30
+100D:BF6B pop AX
+100D:BF6C push AX
+100D:BF6D call near 0xE31C
+100D:BF70 inc SI
+100D:BF71 jmp short 0xBF7D
+100D:BF73 push DI
+100D:BF74 push AX
+100D:BF75 call near 0xD03C
+100D:BF78 pop AX
+100D:BF79 push AX
+100D:BF7A call near 0xE2E3
+100D:BF7D pop AX
+100D:BF7E pop DI
+100D:BF7F mov DX,AX
+100D:BF81 xchg AX,word ptr DS:[DI]
+100D:BF83 cmp DX,AX
+100D:BF85 mov AL,3
+100D:BF87 jne short 0xBF99
+100D:BF89 mov AX,word ptr DS:[2]
+100D:BF8C and AX,0xFFF0
+100D:BF8F cmp word ptr DS:[0x115C],AX
+100D:BF93 je short 0xBFA2
+100D:BF95 mov AL,3
+100D:BF97 jmp short 0xBF9F
+100D:BF99 mov AL,2
+100D:BF9B jb short 0xBF9F
+100D:BF9D dec AL
+100D:BF9F mov byte ptr SS:[BP],AL
+100D:BFA2 add DI,2
+100D:BFA5 inc BP
+100D:BFA6 ret near
+100D:BFA7 mov BL,byte ptr DS:[0xCEEB]
+100D:BFAB xor BH,BH
+100D:BFAD shl BX,1
+100D:BFAF shl BX,1
+100D:BFB1 shl BX,1
+100D:BFB3 add BX,0x251A
+100D:BFB7 mov AX,word ptr ES:[SI-2]
+100D:BFBB xchg AL,AH
+100D:BFBD and AL,0x0F
+100D:BFBF cmp AH,0x31
+100D:BFC2 je short 0xBFDD
+100D:BFC4 cmp AL,4
+100D:BFC6 jae short 0xBFDD
+100D:BFC8 cmp AL,1
+100D:BFCA jne short 0xBFD7
+100D:BFCC cmp BX,0x2522
+100D:BFD0 jne short 0xBFD7
+100D:BFD7 xor AH,AH
+100D:BFD9 shl AX,1
+100D:BFDB add BX,AX
+100D:BFDD mov AX,word ptr DS:[BX]
+100D:BFDF mov word ptr ES:[SI],AX
+100D:BFE2 ret near
+100D:BFE3 push DS
+100D:BFE4 xor BX,BX
+100D:BFE6 xor DX,DX
+100D:BFE8 mov CX,0xC5F9
+100D:BFEB xor SI,SI
+100D:BFED mov DS,word ptr DS:[0xDD00]
+100D:BFF1 lods AL,byte ptr DS:[SI]
+100D:BFF2 and AL,0x30
+100D:BFF4 je short 0xBFFC
+100D:BFF6 inc DX
+100D:BFF7 cmp AL,0x30
+100D:BFF9 je short 0xBFFC
+100D:BFFB inc BX
+100D:BFFC loop 0xBFF1
+100D:BFFE sub DX,BX
+100D:C000 xor AX,AX
+100D:C002 sub SI,0x0188
+100D:C006 inc SI
+100D:C007 div SI
+100D:C009 mov DX,0x0064
+100D:C00C mul DX
+100D:C00E add AX,AX
+100D:C010 adc DX,0
+100D:C013 xchg DX,BX
+100D:C015 xor AX,AX
+100D:C017 div SI
+100D:C019 mov DX,0x0064
+100D:C01C mul DX
+100D:C01E add AX,AX
+100D:C020 adc DX,0
+100D:C023 inc DX
+100D:C024 pop DS
+100D:C025 mov word ptr DS:[0x00A2],DX
+100D:C029 mov word ptr DS:[0x00A4],BX
+100D:C02D ret near
+100D:C02E call near 0xBFE3
+100D:C031 mov AX,word ptr DS:[0x00A0]
+100D:C034 add AX,word ptr DS:[0x1172]
+100D:C038 sub AX,word ptr DS:[0x1170]
+100D:C03C jae short 0xC040
+100D:C040 cmp AX,word ptr DS:[0x00A6]
+100D:C044 jb short 0xC049
+100D:C046 mov word ptr DS:[0x00A6],AX
+100D:C049 xor AX,AX
+100D:C04B mov word ptr DS:[0x00AA],AX
+100D:C04E mov word ptr DS:[0x00AC],AX
+100D:C051 mov SI,0x08AA
+100D:C054 mov AL,byte ptr DS:[SI+0x1A]
+100D:C057 test byte ptr DS:[SI+3],0x20
+100D:C05B jne short 0xC073
+100D:C05D test byte ptr DS:[SI+0x10],0x80
+100D:C061 je short 0xC069
+100D:C063 add word ptr DS:[0x00AC],AX
+100D:C067 jmp short 0xC073
+100D:C069 test byte ptr DS:[SI+3],0x80
+100D:C06D jne short 0xC073
+100D:C06F add word ptr DS:[0x00AA],AX
+100D:C073 add SI,0x001B
+100D:C076 cmp byte ptr DS:[SI],0
+100D:C079 jne short 0xC054
+100D:C07B ret near
+100D:C07C push word ptr DS:[0xDBD6]
+100D:C080 pop word ptr DS:[0xDBDA]
+100D:C084 ret near
+100D:C085 push word ptr DS:[0xDC32]
+100D:C089 pop word ptr DS:[0xDBDA]
+100D:C08D ret near
+100D:C08E push word ptr DS:[0xDBD8]
+100D:C092 pop word ptr DS:[0xDBDA]
+100D:C096 ret near
+100D:C097 call near 0xC07C
+100D:C09A push word ptr DS:[0xDBD8]
+100D:C09E push word ptr DS:[0xDBD6]
+100D:C0A2 pop word ptr DS:[0xDBD8]
+100D:C0A6 call near BP
+100D:C0A8 pop word ptr DS:[0xDBD8]
+100D:C0AC ret near
+100D:C0AD mov ES,word ptr DS:[0xDBDA]
+100D:C0B1 call far dword ptr DS:[0x38D5]
+100D:C0B5 ret near
+100D:C0B6 call near 0xD41B
+100D:C0B9 cmp BP,0x2012
+100D:C0BD je short 0xC0D4
+100D:C0BF cmp BP,0x201A
+100D:C0C3 je short 0xC0D4
+100D:C0C5 mov AL,0x0C
+100D:C0C7 call near 0xC0D5
+100D:C0CA cmp CX,0x0018
+100D:C0CD jne short 0xC0D4
+100D:C0CF mov AL,4
+100D:C0D1 jmp near 0xAB15
+100D:C0D4 ret near
+100D:C0D5 push DS
+100D:C0D6 mov ES,word ptr DS:[0xDBD8]
+100D:C0DA mov DS,word ptr DS:[0xDBD6]
+100D:C0DE mov BP,0xCE7A
+100D:C0E1 call far dword ptr SS:[0x392D]
+100D:C0E6 pop DS
+100D:C0E7 ret near
+100D:C0E8 mov ES,word ptr DS:[0xDBD8]
+100D:C0EC mov BP,0xCE7A
+100D:C0EF call far dword ptr DS:[0x392D]
+100D:C0F3 ret near
+100D:C0F4 mov AX,word ptr DS:[0xDBD6]
+100D:C0F7 cmp AX,word ptr DS:[0xDBD8]
+100D:C0FB je short 0xC101
+100D:C0FD call far dword ptr DS:[0x3935]
+100D:C101 ret near
+100D:C102 call far dword ptr DS:[0x3959]
+100D:C106 mov AL,0x3A
+100D:C108 mov byte ptr DS:[0xDCE6],0x80
+100D:C10D push AX
+100D:C10E push DX
+100D:C10F call near 0xC097
+100D:C112 pop DX
+100D:C113 pop AX
+100D:C114 push DS
+100D:C115 mov SI,word ptr DS:[0xDBDE]
+100D:C119 mov ES,word ptr DS:[0xDBD8]
+100D:C11D mov DS,word ptr DS:[0xDBD6]
+100D:C121 mov BP,0xCE7A
+100D:C124 call far dword ptr SS:[0x3921]
+100D:C129 pop DS
+100D:C12A call near 0xC4CD
+100D:C12D call far dword ptr DS:[0x3935]
+100D:C131 mov byte ptr DS:[0xDCE6],0
+100D:C136 ret near
+100D:C137 xor AX,AX
+100D:C139 jmp short 0xC13E
+100D:C13B mov AX,word ptr [0x0001C20C]
+100D:C13E or AX,AX
+100D:C140 js short 0xC1A9
+100D:C142 push BX
+100D:C143 mov BX,AX
+100D:C145 xchg BX,word ptr DS:[0x2784]
+100D:C149 cmp AX,BX
+100D:C14B je short 0xC1A8
+100D:C14D push SI
+100D:C14E push DI
+100D:C14F shl BX,1
+100D:C151 js short 0xC15B
+100D:C153 mov SI,word ptr DS:[0xCE7B]
+100D:C157 mov word ptr DS:[BX-9588],SI
+100D:C15B mov SI,AX
+100D:C15D shl SI,1
+100D:C15F shl SI,1
+100D:C161 add SI,0xD844
+100D:C165 les DI,word ptr DS:[SI]
+100D:C167 mov BX,ES
+100D:C169 or BX,BX
+100D:C16B je short 0xC177
+100D:C16D cmp DI,2
+100D:C170 jbe short 0xC19E
+100D:C172 call near 0xC1AA
+100D:C175 jmp short 0xC19E
+100D:C177 push CX
+100D:C178 push DX
+100D:C179 push BP
+100D:C17A push SI
+100D:C17B mov SI,AX
+100D:C17D call near 0xF0B9
+100D:C180 cmp word ptr ES:[DI],2
+100D:C184 jbe short 0xC189
+100D:C186 call near 0xC1AA
+100D:C189 pop SI
+100D:C18A mov DI,word ptr ES:[DI]
+100D:C18D sub CX,DI
+100D:C18F mov word ptr DS:[SI],DI
+100D:C191 mov word ptr DS:[SI+2],ES
+100D:C194 mov AX,word ptr DS:[0x2784]
+100D:C197 call far dword ptr DS:[0x3905]
+100D:C19B pop BP
+100D:C19C pop DX
+100D:C19D pop CX
+100D:C19E mov word ptr DS:[0xDBB0],DI
+100D:C1A2 mov word ptr DS:[0xDBB2],ES
+100D:C1A6 pop DI
+100D:C1A7 pop SI
+100D:C1A8 pop BX
+100D:C1A9 ret near
+100D:C1AA mov AX,word ptr DS:[0x2784]
+100D:C1AD mov AH,AL
+100D:C1AF xchg AL,byte ptr DS:[0xDBB4]
+100D:C1B3 cmp AL,AH
+100D:C1B5 je short 0xC1A9
+100D:C1B7 mov SI,2
+100D:C1BA push CX
+100D:C1BB push DX
+100D:C1BC push DI
+100D:C1BD lods AX,word ptr ES:[SI]
+100D:C1BF cmp AX,0x0100
+100D:C1C2 jne short 0xC1C9
+100D:C1C4 add SI,3
+100D:C1C7 jmp short 0xC1BD
+100D:C1C9 mov BX,AX
+100D:C1CB inc AX
+100D:C1CC je short 0xC1F0
+100D:C1CE mov CL,BH
+100D:C1D0 xor BH,BH
+100D:C1D2 and CX,0x00FF
+100D:C1D6 jne short 0xC1DA
+100D:C1DA mov AX,BX
+100D:C1DC add BX,BX
+100D:C1DE add BX,AX
+100D:C1E0 mov AX,CX
+100D:C1E2 add CX,CX
+100D:C1E4 add CX,AX
+100D:C1E6 mov DX,SI
+100D:C1E8 add SI,CX
+100D:C1EA call far dword ptr DS:[0x38BD]
+100D:C1EE jmp short 0xC1BD
+100D:C1F0 pop DI
+100D:C1F1 pop DX
+100D:C1F2 pop CX
+100D:C1F3 ret near
+100D:C1F4 push BX
+100D:C1F5 les SI,word ptr DS:[0xDBB0]
+100D:C1F9 mov BX,AX
+100D:C1FB shl BX,1
+100D:C1FD add SI,word ptr ES:[BX+SI]
+100D:C200 pop BX
+100D:C201 ret near
+100D:C202 push AX
+100D:C203 push SI
+100D:C204 call near 0xC1F4
+100D:C207 lods AX,word ptr ES:[SI]
+100D:C209 and AH,0x0F
+100D:C20C shr AX,1
+100D:C20E sub DX,AX
+100D:C210 lods AL,byte ptr ES:[SI]
+100D:C212 shr AL,1
+100D:C214 cbw
+100D:C215 sub BX,AX
+100D:C217 pop SI
+100D:C218 pop AX
+100D:C219 ret near
+100D:C21B lods AX,word ptr DS:[SI]
+100D:C21C cmp AX,0xFFFF
+100D:C21F je short 0xC26A
+100D:C221 mov BX,AX
+100D:C223 lods AX,word ptr DS:[SI]
+100D:C224 mov DX,AX
+100D:C226 lods AX,word ptr DS:[SI]
+100D:C227 xchg BX,AX
+100D:C228 push SI
+100D:C229 call near 0xC22F
+100D:C22C pop SI
+100D:C22D jmp short 0xC21B
+100D:C22F mov ES,word ptr DS:[0xDBDA]
+100D:C233 lds SI,word ptr DS:[0xDBB0]
+100D:C237 mov BP,AX
+100D:C239 and BP,0x01FF
+100D:C23D shl BP,1
+100D:C23F add SI,word ptr DS:[BP+SI]
+100D:C242 mov CX,AX
+100D:C244 push AX
+100D:C245 lods AX,word ptr DS:[SI]
+100D:C246 and CH,0x60
+100D:C249 or AH,CH
+100D:C24B mov DI,AX
+100D:C24D lods AX,word ptr DS:[SI]
+100D:C24E mov CX,AX
+100D:C250 cmp byte ptr CS:[0xC21A],0
+100D:C256 je short 0xC25D
+100D:C258 mov CH,byte ptr CS:[0xC21A]
+100D:C25D pop AX
+100D:C25E and AX,0x1C00
+100D:C261 jne short 0xC26B
+100D:C263 call far dword ptr SS:[0x38C9]
+100D:C268 push SS
+100D:C269 pop DS
+100D:C26A ret near
+100D:C26B xchg AH,AL
+100D:C26D mov BP,AX
+100D:C26F shr BP,1
+100D:C271 mov BP,word ptr SS:[BP+0x2774]
+100D:C275 mov AX,DI
+100D:C277 and AX,0x01FF
+100D:C27A push DX
+100D:C27B xchg AH,AL
+100D:C27D xor DX,DX
+100D:C27F div BP
+100D:C281 pop DX
+100D:C282 push AX
+100D:C283 mov AX,CX
+100D:C285 xor AH,AH
+100D:C287 push DX
+100D:C288 xchg AH,AL
+100D:C28A xor DX,DX
+100D:C28C div BP
+100D:C28E pop DX
+100D:C28F mov CL,AL
+100D:C291 pop AX
+100D:C292 or DI,DI
+100D:C294 jns short 0xC299
+100D:C296 call near 0xC2A1
+100D:C299 call far dword ptr SS:[0x3941]
+100D:C29E push SS
+100D:C29F pop DS
+100D:C2A0 ret near
+100D:C2A1 push AX
+100D:C2A2 push BX
+100D:C2A3 push CX
+100D:C2A4 push DI
+100D:C2A5 push ES
+100D:C2A6 push BP
+100D:C2A7 push SS
+100D:C2A8 pop ES
+100D:C2A9 mov BP,DI
+100D:C2AB mov DI,0x4C60
+100D:C2AE and BP,0x01FF
+100D:C2B2 add BP,3
+100D:C2B5 shr BP,1
+100D:C2B7 shr BP,1
+100D:C2B9 shl BP,1
+100D:C2BB mov CX,word ptr DS:[SI-2]
+100D:C2BE xor CH,CH
+100D:C2C0 push CX
+100D:C2C1 mov BX,BP
+100D:C2C3 lods AL,byte ptr DS:[SI]
+100D:C2C4 test AL,0x80
+100D:C2C6 jne short 0xC2D6
+100D:C2C8 mov CL,1
+100D:C2CA add CL,AL
+100D:C2CC xor CH,CH
+100D:C2CE sub BX,CX
+100D:C2D0 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:C2D2 jne short 0xC2C3
+100D:C2D4 jmp short 0xC2E3
+100D:C2D6 mov CL,1
+100D:C2D8 sub CL,AL
+100D:C2DA xor CH,CH
+100D:C2DC sub BX,CX
+100D:C2DE lods AL,byte ptr DS:[SI]
+100D:C2DF rep stos byte ptr ES:[DI],AL
+100D:C2E1 jne short 0xC2C3
+100D:C2E3 pop CX
+100D:C2E4 loop 0xC2C0
+100D:C2E6 mov SI,0x4C60
+100D:C2E9 push SS
+100D:C2EA pop DS
+100D:C2EB pop BP
+100D:C2EC pop ES
+100D:C2ED pop DI
+100D:C2EE pop CX
+100D:C2EF pop BX
+100D:C2F0 pop AX
+100D:C2F1 ret near
+100D:C2F2 xor AH,AH
+100D:C2F4 call near 0xC13E
+100D:C2F7 xor AX,AX
+100D:C2F9 xor BX,BX
+100D:C2FB xor DX,DX
+100D:C2FD push BX
+100D:C2FE push DX
+100D:C2FF call near 0xC22F
+100D:C302 pop DX
+100D:C303 pop BX
+100D:C304 ret near
+100D:C305 push BX
+100D:C306 push DX
+100D:C307 call near 0xC30D
+100D:C30A pop DX
+100D:C30B pop BX
+100D:C30C ret near
+100D:C30D mov ES,word ptr DS:[0xDBDA]
+100D:C311 lds SI,word ptr DS:[0xDBB0]
+100D:C315 mov BP,AX
+100D:C317 shl BP,1
+100D:C319 add SI,word ptr DS:[BP+SI]
+100D:C31C lods AX,word ptr DS:[SI]
+100D:C31D mov DI,AX
+100D:C31F lods AX,word ptr DS:[SI]
+100D:C320 xor AH,AH
+100D:C322 mov CX,AX
+100D:C324 mov BP,0xD834
+100D:C327 call far dword ptr SS:[0x38CD]
+100D:C32C push SS
+100D:C32D pop DS
+100D:C32E ret near
+100D:C32F lods AX,word ptr DS:[SI]
+100D:C330 cmp AX,0xFFFF
+100D:C333 je short 0xC32E
+100D:C335 mov BX,AX
+100D:C337 lods AX,word ptr DS:[SI]
+100D:C338 mov DX,AX
+100D:C33A lods AX,word ptr DS:[SI]
+100D:C33B xchg BX,AX
+100D:C33C push SI
+100D:C33D call near 0xC30D
+100D:C340 pop SI
+100D:C341 jmp short 0xC32F
+100D:C343 mov ES,word ptr DS:[0xDBDA]
+100D:C347 lds SI,word ptr DS:[0xDBB0]
+100D:C34B mov BP,AX
+100D:C34D shl BP,1
+100D:C34F add SI,word ptr DS:[BP+SI]
+100D:C352 lods AX,word ptr DS:[SI]
+100D:C353 mov DI,AX
+100D:C355 and AH,0x0F
+100D:C358 shr AX,1
+100D:C35A sub DX,AX
+100D:C35C lods AX,word ptr DS:[SI]
+100D:C35D xor AH,AH
+100D:C35F mov CX,AX
+100D:C361 shr AX,1
+100D:C363 sub BX,AX
+100D:C365 mov BP,0xD834
+100D:C368 call far dword ptr SS:[0x38CD]
+100D:C36D push SS
+100D:C36E pop DS
+100D:C36F ret near
+100D:C370 push DS
+100D:C371 push DS
+100D:C372 push AX
+100D:C373 push SI
+100D:C374 call far dword ptr DS:[0x38D9]
+100D:C378 pop SI
+100D:C379 pop AX
+100D:C37A pop DS
+100D:C37B mov DX,word ptr DS:[SI]
+100D:C37D push DX
+100D:C37E mov BX,word ptr DS:[SI+2]
+100D:C381 push BX
+100D:C382 mov CX,word ptr DS:[SI+4]
+100D:C385 sub CX,DX
+100D:C387 push CX
+100D:C388 mov CX,word ptr DS:[SI+6]
+100D:C38B sub CX,BX
+100D:C38D push CX
+100D:C38E lds SI,word ptr DS:[0xDBB0]
+100D:C392 mov BP,AX
+100D:C394 shl BP,1
+100D:C396 add SI,word ptr DS:[BP+SI]
+100D:C399 lods AX,word ptr DS:[SI]
+100D:C39A mov DI,AX
+100D:C39C and AX,0x01FF
+100D:C39F push AX
+100D:C3A0 lods AX,word ptr DS:[SI]
+100D:C3A1 mov CX,AX
+100D:C3A3 xor AH,AH
+100D:C3A5 push AX
+100D:C3A6 call far dword ptr SS:[0x38C9]
+100D:C3AB push ES
+100D:C3AC pop DS
+100D:C3AD mov BP,SP
+100D:C3AF mov DX,word ptr SS:[BP+0x0A]
+100D:C3B2 mov BX,word ptr SS:[BP+8]
+100D:C3B5 push BX
+100D:C3B6 push DX
+100D:C3B7 push word ptr SS:[BP]
+100D:C3BA push word ptr SS:[BP+2]
+100D:C3BD push BX
+100D:C3BE push DX
+100D:C3BF mov BP,SP
+100D:C3C1 mov DX,word ptr SS:[BP+0x12]
+100D:C3C4 sub DX,word ptr SS:[BP+4]
+100D:C3C7 mov AX,word ptr SS:[BP+4]
+100D:C3CA add word ptr SS:[BP+8],AX
+100D:C3CD sub DX,AX
+100D:C3CF jae short 0xC3D4
+100D:C3D1 add word ptr SS:[BP+4],DX
+100D:C3D4 push DX
+100D:C3D5 call far dword ptr SS:[0x3931]
+100D:C3DA pop DX
+100D:C3DB cmp DX,0
+100D:C3DE jg short 0xC3C7
+100D:C3E0 mov AX,word ptr SS:[BP+0x12]
+100D:C3E3 mov word ptr SS:[BP+4],AX
+100D:C3E6 mov AX,word ptr SS:[BP]
+100D:C3E9 mov word ptr SS:[BP+8],AX
+100D:C3EC mov BX,word ptr SS:[BP+0x10]
+100D:C3EF sub BX,word ptr SS:[BP+6]
+100D:C3F2 je short 0xC40D
+100D:C3F4 mov AX,word ptr SS:[BP+6]
+100D:C3F7 add word ptr SS:[BP+0x0A],AX
+100D:C3FA sub BX,AX
+100D:C3FC jae short 0xC401
+100D:C3FE add word ptr SS:[BP+6],BX
+100D:C401 push BX
+100D:C402 call far dword ptr SS:[0x3931]
+100D:C407 pop BX
+100D:C408 cmp BX,0
+100D:C40B jg short 0xC3F4
+100D:C40D add SP,0x0018
+100D:C410 pop DS
+100D:C411 ret near
+100D:C412 push DS
+100D:C413 mov ES,word ptr DS:[0xDBDE]
+100D:C417 mov DS,word ptr DS:[0xDBDA]
+100D:C41B call far dword ptr SS:[0x38E1]
+100D:C420 pop DS
+100D:C421 ret near
+100D:C432 mov SI,0x1470
+100D:C435 mov ES,word ptr DS:[0xDBDA]
+100D:C439 call far dword ptr DS:[0x38D9]
+100D:C43D ret near
+100D:C43E mov SI,0x1470
+100D:C441 jmp short 0xC446
+100D:C443 mov SI,0xD834
+100D:C446 mov AX,word ptr DS:[0xDBDE]
+100D:C449 push CX
+100D:C44A mov CX,AX
+100D:C44C mov DX,word ptr DS:[SI]
+100D:C44E mov BX,word ptr DS:[SI+2]
+100D:C451 mov BP,word ptr DS:[SI+4]
+100D:C454 mov AX,word ptr DS:[SI+6]
+100D:C457 sub BP,DX
+100D:C459 jbe short 0xC46D
+100D:C45B sub AX,BX
+100D:C45D jbe short 0xC46D
+100D:C45F mov ES,word ptr DS:[0xDBD6]
+100D:C463 push SI
+100D:C464 push DS
+100D:C465 mov SI,CX
+100D:C467 call far dword ptr DS:[0x38ED]
+100D:C46B pop DS
+100D:C46C pop SI
+100D:C46D pop CX
+100D:C46E ret near
+100D:C46F mov AX,word ptr DS:[0xDC32]
+100D:C472 jmp short 0xC449
+100D:C474 mov SI,0x1470
+100D:C477 mov DX,word ptr DS:[SI]
+100D:C479 mov BX,word ptr DS:[SI+2]
+100D:C47C mov BP,word ptr DS:[SI+4]
+100D:C47F mov AX,word ptr DS:[SI+6]
+100D:C482 sub BP,DX
+100D:C484 jbe short 0xC499
+100D:C486 sub AX,BX
+100D:C488 jbe short 0xC499
+100D:C48A mov ES,word ptr DS:[0xDBDE]
+100D:C48E push DS
+100D:C48F mov DS,word ptr DS:[0xDBD6]
+100D:C493 call far dword ptr SS:[0x38E5]
+100D:C498 pop DS
+100D:C499 ret near
+100D:C49A push DS
+100D:C49B mov ES,word ptr DS:[0xDBD6]
+100D:C49F mov DS,word ptr DS:[0xDBD8]
+100D:C4A3 call far dword ptr SS:[0x38F1]
+100D:C4A8 pop DS
+100D:C4A9 ret near
+100D:C4AA mov DX,word ptr DS:[SI]
+100D:C4AC mov BX,word ptr DS:[SI+2]
+100D:C4AF mov BP,word ptr DS:[SI+4]
+100D:C4B2 mov AX,word ptr DS:[SI+6]
+100D:C4B5 sub BP,DX
+100D:C4B7 jbe short 0xC4CC
+100D:C4B9 sub AX,BX
+100D:C4BB jbe short 0xC4CC
+100D:C4BD push DS
+100D:C4BE mov ES,word ptr DS:[0xDBD6]
+100D:C4C2 mov DS,word ptr DS:[0xDBD8]
+100D:C4C6 call far dword ptr SS:[0x38F5]
+100D:C4CB pop DS
+100D:C4CC ret near
+100D:C4CD push DS
+100D:C4CE mov ES,word ptr DS:[0xDBD8]
+100D:C4D2 mov DS,word ptr DS:[0xDBD6]
+100D:C4D6 call far dword ptr SS:[0x38F1]
+100D:C4DB pop DS
+100D:C4DC ret near
+100D:C4DD mov AX,word ptr DS:[0xDC38]
+100D:C4E0 cmp AX,0x0098
+100D:C4E3 jae short 0xC4E8
+100D:C4E5 call near 0xDBB2
+100D:C4E8 mov SI,0x1470
+100D:C4EB jmp short 0xC4F0
+100D:C4ED mov SI,0xD834
+100D:C4F0 mov DX,word ptr DS:[SI]
+100D:C4F2 mov BX,word ptr DS:[SI+2]
+100D:C4F5 mov BP,word ptr DS:[SI+4]
+100D:C4F8 mov AX,word ptr DS:[SI+6]
+100D:C4FB cmp byte ptr DS:[0x227D],0
+100D:C500 jne short 0xC51E
+100D:C502 cmp AX,0x0089
+100D:C505 jl short 0xC51E
+100D:C507 cmp BP,0x007E
+100D:C50B jl short 0xC51E
+100D:C50D cmp DX,0x00C2
+100D:C511 jge short 0xC51E
+100D:C513 push AX
+100D:C514 push BX
+100D:C515 push DX
+100D:C516 push BP
+100D:C517 call near 0x1797
+100D:C51A pop BP
+100D:C51B pop DX
+100D:C51C pop BX
+100D:C51D pop AX
+100D:C51E sub BP,DX
+100D:C520 jbe short 0xC53D
+100D:C522 sub AX,BX
+100D:C524 jbe short 0xC53D
+100D:C526 cmp word ptr DS:[0x2570],0x1AD6
+100D:C52C je short 0xC53D
+100D:C52E push DS
+100D:C52F mov ES,word ptr DS:[0xDBD8]
+100D:C533 mov DS,word ptr DS:[0xDBD6]
+100D:C537 call far dword ptr SS:[0x38F5]
+100D:C53C pop DS
+100D:C53D ret near
+100D:C53E mov SI,0x276A
+100D:C541 mov BP,word ptr DS:[0x2772]
+100D:C545 mov AL,byte ptr DS:[0xDBE4]
+100D:C548 mov ES,word ptr DS:[0xDBDA]
+100D:C54C call far dword ptr DS:[0x3901]
+100D:C550 ret near
+100D:C551 lods AX,word ptr DS:[SI]
+100D:C552 mov DX,AX
+100D:C554 lods AX,word ptr DS:[SI]
+100D:C555 mov BX,AX
+100D:C557 lods AX,word ptr DS:[SI]
+100D:C558 mov DI,AX
+100D:C55A dec DI
+100D:C55B lods AX,word ptr DS:[SI]
+100D:C55C mov CX,AX
+100D:C55E dec CX
+100D:C55F lods AL,byte ptr DS:[SI]
+100D:C560 mov byte ptr DS:[0xDBE4],AL
+100D:C563 push BX
+100D:C564 push CX
+100D:C565 push DX
+100D:C566 push DI
+100D:C567 mov CX,BX
+100D:C569 call near 0xC53E
+100D:C56C mov BP,SP
+100D:C56E mov CX,word ptr SS:[BP+4]
+100D:C571 mov BX,CX
+100D:C573 call near 0xC53E
+100D:C576 mov BP,SP
+100D:C578 mov DI,DX
+100D:C57A mov BX,word ptr SS:[BP+6]
+100D:C57D call near 0xC53E
+100D:C580 pop DI
+100D:C581 mov DX,DI
+100D:C583 call near 0xC53E
+100D:C586 pop DX
+100D:C587 pop CX
+100D:C588 pop BX
+100D:C589 ret near
+100D:C58A call near 0xC13B
+100D:C58D mov SI,0x3CBE
+100D:C590 lods AX,word ptr DS:[SI]
+100D:C591 or AX,AX
+100D:C593 je short 0xC5CE
+100D:C595 mov AH,0x11
+100D:C597 mul AH
+100D:C599 add SI,AX
+100D:C59B cmp DI,SI
+100D:C59D jae short 0xC5CE
+100D:C59F or byte ptr DS:[DI+0x0C],0x80
+100D:C5A3 push SI
+100D:C5A4 push DI
+100D:C5A5 mov SI,DI
+100D:C5A7 call near 0xC6AD
+100D:C5AA pop DI
+100D:C5AB pop CX
+100D:C5AC push DI
+100D:C5AD lea SI,DI+0x11
+100D:C5B0 sub CX,SI
+100D:C5B2 je short 0xC5B8
+100D:C5B4 push DS
+100D:C5B5 pop ES
+100D:C5B6 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:C5B8 dec word ptr DS:[0x3CBE]
+100D:C5BC pop DI
+100D:C5BD mov SI,0x4752
+100D:C5C0 mov CX,2
+100D:C5C3 lods AX,word ptr DS:[SI]
+100D:C5C4 cmp AX,DI
+100D:C5C6 jb short 0xC5CC
+100D:C5C8 sub word ptr DS:[SI-2],0x0011
+100D:C5CC loop 0xC5C3
+100D:C5CE ret near
+100D:C5CF xor AH,AH
+100D:C5D1 mov AL,byte ptr SS:[BP]
+100D:C5D4 cmp byte ptr SS:[BP+3],0
+100D:C5D8 je short 0xC60B
+100D:C5DA push BP
+100D:C5DB call near 0xC60B
+100D:C5DE pop BP
+100D:C5DF mov word ptr DS:[DI+0x0F],BP
+100D:C5E2 push SI
+100D:C5E3 mov SI,BP
+100D:C5E5 mov BX,0xFFFF
+100D:C5E8 inc BX
+100D:C5E9 js short 0xC609
+100D:C5EB add SI,3
+100D:C5EE cmp byte ptr DS:[SI],0
+100D:C5F1 jne short 0xC5E8
+100D:C5F3 or BX,BX
+100D:C5F5 je short 0xC609
+100D:C5F7 call near 0xE3DF
+100D:C5FA mov BX,AX
+100D:C5FC shl AX,1
+100D:C5FE add AX,BX
+100D:C600 add BP,AX
+100D:C602 mov word ptr DS:[DI+0x0D],BP
+100D:C605 or byte ptr DS:[DI+0x0C],1
+100D:C609 pop SI
+100D:C60A ret near
+100D:C60B push AX
+100D:C60C call near 0xC13B
+100D:C60F pop AX
+100D:C610 call near 0xC202
+100D:C613 push SI
+100D:C614 mov DI,0x3CBE
+100D:C617 mov BP,AX
+100D:C619 mov AX,word ptr DS:[DI]
+100D:C61B inc word ptr DS:[DI]
+100D:C61D mov AH,0x11
+100D:C61F mul AH
+100D:C621 xchg BP,AX
+100D:C622 lea DI,BP+DI+2
+100D:C625 mov word ptr DS:[DI],DX
+100D:C627 mov word ptr DS:[DI+2],BX
+100D:C62A mov word ptr DS:[DI+8],AX
+100D:C62D mov word ptr DS:[DI+0x0A],SI
+100D:C630 mov byte ptr DS:[DI+0x0C],0
+100D:C634 call near 0xC1F4
+100D:C637 lods AX,word ptr ES:[SI]
+100D:C639 and AH,0x0F
+100D:C63C add DX,AX
+100D:C63E add BL,byte ptr ES:[SI]
+100D:C641 adc BH,0
+100D:C644 mov word ptr DS:[DI+4],DX
+100D:C647 mov word ptr DS:[DI+6],BX
+100D:C64A pop SI
+100D:C64B ret near
+100D:C653 call near 0xC13B
+100D:C656 mov AX,word ptr DS:[DI+8]
+100D:C659 call near 0xC202
+100D:C65C sub DX,word ptr DS:[DI]
+100D:C65E sub BX,word ptr DS:[DI+2]
+100D:C661 call near 0xC13B
+100D:C664 mov SI,DI
+100D:C666 sub SP,8
+100D:C669 mov DI,SP
+100D:C66B push DS
+100D:C66C pop ES
+100D:C66D movs word ptr ES:[DI],word ptr DS:[SI]
+100D:C66E movs word ptr ES:[DI],word ptr DS:[SI]
+100D:C66F movs word ptr ES:[DI],word ptr DS:[SI]
+100D:C670 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:C671 sub SI,8
+100D:C674 sub DI,8
+100D:C677 add word ptr DS:[SI],DX
+100D:C679 add word ptr DS:[SI+2],BX
+100D:C67C add word ptr DS:[SI+4],DX
+100D:C67F add word ptr DS:[SI+6],BX
+100D:C682 or DX,DX
+100D:C684 js short 0xC68E
+100D:C686 mov AX,word ptr DS:[SI+4]
+100D:C689 mov word ptr DS:[DI+4],AX
+100D:C68C jmp short 0xC692
+100D:C68E mov AX,word ptr DS:[SI]
+100D:C690 mov word ptr DS:[DI],AX
+100D:C692 or BX,BX
+100D:C694 js short 0xC69E
+100D:C696 mov AX,word ptr DS:[SI+6]
+100D:C699 mov word ptr DS:[DI+6],AX
+100D:C69C jmp short 0xC6A4
+100D:C69E mov AX,word ptr DS:[SI+2]
+100D:C6A1 mov word ptr DS:[DI+2],AX
+100D:C6A4 mov SI,DI
+100D:C6A6 call near 0xC6AD
+100D:C6A9 add SP,8
+100D:C6AC ret near
+100D:C6AD call near 0xC13B
+100D:C6B0 cmp byte ptr DS:[0xDC46],0
+100D:C6B5 js short 0xC6E4
+100D:C6B7 mov AX,word ptr DS:[0xDC44]
+100D:C6BA cmp AX,word ptr DS:[SI+6]
+100D:C6BD jge short 0xC6E4
+100D:C6BF add AX,0x0010
+100D:C6C2 cmp AX,word ptr DS:[SI+2]
+100D:C6C5 jle short 0xC6E4
+100D:C6C7 mov AX,word ptr DS:[0xDC42]
+100D:C6CA cmp AX,word ptr DS:[SI+4]
+100D:C6CD jge short 0xC6E4
+100D:C6CF add AX,0x0010
+100D:C6D2 mov BX,word ptr DS:[SI]
+100D:C6D4 and BH,0x0F
+100D:C6D7 cmp AX,BX
+100D:C6D9 jle short 0xC6E4
+100D:C6DB mov AX,0xDBEC
+100D:C6DE push AX
+100D:C6DF push SI
+100D:C6E0 call near 0xDBB2
+100D:C6E3 pop SI
+100D:C6E4 mov AX,DS
+100D:C6E6 mov ES,AX
+100D:C6E8 mov DI,0xD834
+100D:C6EB mov BX,8
+100D:C6EE lods AX,word ptr DS:[SI]
+100D:C6EF cmp AX,word ptr DS:[BX+DI]
+100D:C6F1 jge short 0xC6F5
+100D:C6F3 mov AX,word ptr DS:[BX+DI]
+100D:C6F5 stos word ptr ES:[DI],AX
+100D:C6F6 lods AX,word ptr DS:[SI]
+100D:C6F7 cmp AX,word ptr DS:[BX+DI]
+100D:C6F9 jge short 0xC6FD
+100D:C6FB mov AX,word ptr DS:[BX+DI]
+100D:C6FD stos word ptr ES:[DI],AX
+100D:C6FE lods AX,word ptr DS:[SI]
+100D:C6FF cmp AX,word ptr DS:[BX+DI]
+100D:C701 jle short 0xC705
+100D:C703 mov AX,word ptr DS:[BX+DI]
+100D:C705 cmp AX,word ptr DS:[DI-4]
+100D:C708 jle short 0xC6AC
+100D:C70A stos word ptr ES:[DI],AX
+100D:C70B lods AX,word ptr DS:[SI]
+100D:C70C cmp AX,word ptr DS:[BX+DI]
+100D:C70E jle short 0xC712
+100D:C710 mov AX,word ptr DS:[BX+DI]
+100D:C712 cmp AX,word ptr DS:[DI-4]
+100D:C715 jle short 0xC6AC
+100D:C717 stos word ptr ES:[DI],AX
+100D:C718 call near 0xC443
+100D:C71B sub SP,0x0200
+100D:C71F mov DI,SP
+100D:C721 mov CX,word ptr DS:[0x3CBE]
+100D:C725 jcxz short 0xC780
+100D:C727 mov SI,0xD834
+100D:C72A lods AX,word ptr DS:[SI]
+100D:C72B mov DX,AX
+100D:C72D lods AX,word ptr DS:[SI]
+100D:C72E mov BX,AX
+100D:C730 lods AX,word ptr DS:[SI]
+100D:C731 mov BP,AX
+100D:C733 mov AX,word ptr DS:[SI]
+100D:C735 mov SI,0x3CC0
+100D:C738 cmp byte ptr DS:[SI+0x0C],0
+100D:C73C js short 0xC756
+100D:C73E cmp word ptr DS:[SI],BP
+100D:C740 jge short 0xC756
+100D:C742 cmp word ptr DS:[SI+2],AX
+100D:C745 jge short 0xC756
+100D:C747 cmp word ptr DS:[SI+4],DX
+100D:C74A jle short 0xC756
+100D:C74C cmp word ptr DS:[SI+6],BX
+100D:C74F jle short 0xC756
+100D:C751 mov word ptr DS:[DI],SI
+100D:C753 add DI,2
+100D:C756 add SI,0x0011
+100D:C759 loop 0xC738
+100D:C75B mov CX,DI
+100D:C75D sub CX,SP
+100D:C75F shr CX,1
+100D:C761 je short 0xC780
+100D:C763 mov SI,SP
+100D:C765 push CX
+100D:C766 call near word ptr DS:[0x2786]
+100D:C76A js short 0xC77F
+100D:C76C xor SI,SI
+100D:C76E xchg SI,word ptr DS:[BX-2]
+100D:C771 mov AX,word ptr DS:[SI+8]
+100D:C774 mov DX,word ptr DS:[SI]
+100D:C776 mov BX,word ptr DS:[SI+2]
+100D:C779 call near 0xC30D
+100D:C77C pop CX
+100D:C77D jmp short 0xC763
+100D:C77F pop CX
+100D:C780 cmp byte ptr DS:[0x227D],0
+100D:C785 jne short 0xC7A2
+100D:C787 cmp word ptr DS:[0xD83A],0x0089
+100D:C78D jl short 0xC7A2
+100D:C78F cmp word ptr DS:[0xD838],0x007E
+100D:C795 jl short 0xC7A2
+100D:C797 cmp word ptr DS:[0xD834],0x00C2
+100D:C79D jge short 0xC7A2
+100D:C79F call near 0x1797
+100D:C7A2 mov SI,word ptr DS:[0xDBE0]
+100D:C7A6 or SI,SI
+100D:C7A8 je short 0xC7BE
+100D:C7AA mov DI,0xD834
+100D:C7AD call near 0xC7D4
+100D:C7B0 mov SI,word ptr DS:[0xDBE2]
+100D:C7B4 or SI,SI
+100D:C7B6 je short 0xC7BE
+100D:C7B8 mov DI,0xD834
+100D:C7BB call near 0xC7D4
+100D:C7BE mov SI,0xD834
+100D:C7C1 mov DX,word ptr DS:[SI]
+100D:C7C3 mov BX,word ptr DS:[SI+2]
+100D:C7C6 mov BP,word ptr DS:[SI+4]
+100D:C7C9 mov AX,word ptr DS:[SI+6]
+100D:C7CC call near 0xC51E
+100D:C7CF add SP,0x0200
+100D:C7D3 ret near
+100D:C7D4 lods AX,word ptr DS:[SI]
+100D:C7D5 cmp AX,word ptr DS:[DI+4]
+100D:C7D8 jge short 0xC826
+100D:C7DA mov DX,AX
+100D:C7DC lods AX,word ptr DS:[SI]
+100D:C7DD cmp AX,word ptr DS:[DI+6]
+100D:C7E0 jge short 0xC826
+100D:C7E2 mov BX,AX
+100D:C7E4 lods AX,word ptr DS:[SI]
+100D:C7E5 cmp AX,word ptr DS:[DI]
+100D:C7E7 jle short 0xC826
+100D:C7E9 mov BP,AX
+100D:C7EB lods AX,word ptr DS:[SI]
+100D:C7EC cmp AX,word ptr DS:[DI+2]
+100D:C7EF jle short 0xC826
+100D:C7F1 cmp DX,word ptr DS:[DI]
+100D:C7F3 jae short 0xC7F7
+100D:C7F5 mov DX,word ptr DS:[DI]
+100D:C7F7 cmp BP,word ptr DS:[DI+4]
+100D:C7FA jb short 0xC7FF
+100D:C7FC mov BP,word ptr DS:[DI+4]
+100D:C7FF cmp BX,word ptr DS:[DI+2]
+100D:C802 jae short 0xC807
+100D:C804 mov BX,word ptr DS:[DI+2]
+100D:C807 cmp AX,word ptr DS:[DI+6]
+100D:C80A jb short 0xC80F
+100D:C80C mov AX,word ptr DS:[DI+6]
+100D:C80F sub BP,DX
+100D:C811 jbe short 0xC826
+100D:C813 sub AX,BX
+100D:C815 jbe short 0xC826
+100D:C817 mov ES,word ptr DS:[0xDBD6]
+100D:C81B mov DS,word ptr DS:[0xDBD8]
+100D:C81F call far dword ptr SS:[0x38F5]
+100D:C824 push SS
+100D:C825 pop DS
+100D:C826 ret near
+100D:C827 lods AX,word ptr DS:[SI]
+100D:C828 or AX,AX
+100D:C82A loope 0xC827
+100D:C82C je short 0xC833
+100D:C82E mov BX,SI
+100D:C830 mov AX,1
+100D:C833 dec AX
+100D:C834 ret near
+100D:C835 mov DX,0xFFFF
+100D:C838 lods AX,word ptr DS:[SI]
+100D:C839 or AX,AX
+100D:C83B je short 0xC856
+100D:C83D mov DI,AX
+100D:C83F mov AX,word ptr DS:[DI+4]
+100D:C842 add AX,word ptr DS:[DI+6]
+100D:C845 test byte ptr DS:[DI+0x0C],0x40
+100D:C849 je short 0xC84E
+100D:C84B mov AX,0x7FFF
+100D:C84E cmp AX,DX
+100D:C850 ja short 0xC856
+100D:C852 mov DX,AX
+100D:C854 mov BX,SI
+100D:C856 loop 0xC838
+100D:C858 or DX,DX
+100D:C85A ret near
+100D:C85B mov AX,word ptr DS:[0xCE7A]
+100D:C85E mov word ptr DS:[0x476E],AX
+100D:C861 mov word ptr DS:[0x4772],0x1770
+100D:C867 ret near
+100D:C868 call near 0xABCC
+100D:C86B jne short 0xC8C0
+100D:C86D mov SI,word ptr DS:[0x22A6]
+100D:C871 cmp SI,0x0011
+100D:C875 jae short 0xC8C0
+100D:C877 shl SI,1
+100D:C879 shl SI,1
+100D:C87B mov DX,word ptr DS:[SI+0x27B6]
+100D:C87F mov BX,word ptr DS:[SI+0x27B8]
+100D:C883 mov AX,BX
+100D:C885 or AX,DX
+100D:C887 je short 0xC8C0
+100D:C889 mov SI,0x2792
+100D:C88C cmp byte ptr DS:[0x227D],0
+100D:C891 jne short 0xC8A3
+100D:C893 push BX
+100D:C894 mov BX,1
+100D:C897 call near 0xE3B7
+100D:C89A pop BX
+100D:C89B mov SI,0x2789
+100D:C89E je short 0xC8A3
+100D:C8A0 mov SI,0x278E
+100D:C8A3 lods AL,byte ptr DS:[SI]
+100D:C8A4 or AL,AL
+100D:C8A6 je short 0xC8BD
+100D:C8A8 jns short 0xC8B2
+100D:C8AA mov AX,0x012C
+100D:C8AD call near 0xE387
+100D:C8B0 jmp short 0xC8A3
+100D:C8B2 push SI
+100D:C8B3 xor AH,AH
+100D:C8B5 mov BP,AX
+100D:C8B7 call near 0xC8C1
+100D:C8BA pop SI
+100D:C8BB jmp short 0xC8A3
+100D:C8BD call near 0xC4DD
+100D:C8C0 ret near
+100D:C8C1 push BX
+100D:C8C2 push DX
+100D:C8C3 push word ptr DS:[0xCE7A]
+100D:C8C7 mov SI,BP
+100D:C8C9 shl SI,1
+100D:C8CB shl SI,1
+100D:C8CD sub DX,word ptr DS:[SI+0x2796]
+100D:C8D1 jae short 0xC8D5
+100D:C8D3 xor DX,DX
+100D:C8D5 sub BX,word ptr DS:[SI+0x2798]
+100D:C8D9 jae short 0xC8DD
+100D:C8DB xor BX,BX
+100D:C8DD push DS
+100D:C8DE mov ES,word ptr DS:[0xDBD8]
+100D:C8E2 mov DS,word ptr DS:[0xDBD6]
+100D:C8E6 call far dword ptr SS:[0x3949]
+100D:C8EB pop DS
+100D:C8EC pop BX
+100D:C8ED mov AX,word ptr DS:[0xCE7A]
+100D:C8F0 sub AX,BX
+100D:C8F2 cmp AL,byte ptr DS:[0xDBE6]
+100D:C8F6 jb short 0xC8ED
+100D:C8F8 pop DX
+100D:C8F9 pop BX
+100D:C8FA ret near
+100D:C8FB call near 0xC07C
+100D:C8FE push BP
+100D:C8FF call near 0xCA1B
+100D:C902 call near 0xC4DD
+100D:C905 call near 0xC0F4
+100D:C908 pop BP
+100D:C909 call near BP
+100D:C90B call near 0xC9F4
+100D:C90E je short 0xC90B
+100D:C910 call near 0xC4DD
+100D:C913 call near 0xACE6
+100D:C916 call near 0xCC85
+100D:C919 je short 0xC90B
+100D:C91B call near 0xC412
+100D:C91E jmp near 0xCA01
+100D:C921 mov BX,0x33A3
+100D:C924 add BX,AX
+100D:C926 add BX,AX
+100D:C928 mov BX,word ptr DS:[BX]
+100D:C92A ret near
+100D:C92B mov word ptr DS:[0xDC00],AX
+100D:C92E call near 0xCA01
+100D:C931 call near 0xCE1A
+100D:C934 mov byte ptr DS:[0xDBE7],0
+100D:C939 call near 0xCE01
+100D:C93C mov AX,word ptr DS:[0xDC00]
+100D:C93F mov word ptr DS:[0xDC02],AX
+100D:C942 call near 0xC921
+100D:C945 mov AX,word ptr DS:[BX]
+100D:C947 mov word ptr DS:[0xDBFE],AX
+100D:C94A lea DX,BX+2
+100D:C94D call near 0xF229
+100D:C950 mov word ptr DS:[0x35A6],BX
+100D:C954 mov word ptr DS:[0xDC04],AX
+100D:C957 mov word ptr DS:[0xDC06],DX
+100D:C95B mov word ptr DS:[0xDC08],CX
+100D:C95F mov word ptr DS:[0xDC0A],BP
+100D:C963 push word ptr DS:[0xDC1A]
+100D:C967 push word ptr DS:[0xDC0C]
+100D:C96B call near 0xCD8F
+100D:C96E jb short 0xC988
+100D:C970 add SI,AX
+100D:C972 jb short 0xC97A
+100D:C974 cmp SI,word ptr DS:[0xCE74]
+100D:C978 jbe short 0xC980
+100D:C980 sub AX,2
+100D:C983 mov CX,AX
+100D:C985 call near 0xCDBF
+100D:C988 pop word ptr DS:[0xDC0C]
+100D:C98C pop word ptr DS:[0xDC1A]
+100D:C990 jb short 0xC9E7
+100D:C992 les SI,word ptr DS:[0xDC0C]
+100D:C996 lods AX,word ptr ES:[SI]
+100D:C998 add AX,SI
+100D:C99A jb short 0xC9A2
+100D:C99C cmp AX,word ptr DS:[0xCE74]
+100D:C9A0 jbe short 0xC9A4
+100D:C9A4 mov byte ptr DS:[0xDBB4],0xFF
+100D:C9A9 call near 0xC1BA
+100D:C9AC dec SI
+100D:C9AD inc SI
+100D:C9AE cmp byte ptr ES:[SI],0xFF
+100D:C9B2 je short 0xC9AD
+100D:C9B4 xor BX,BX
+100D:C9B6 test byte ptr DS:[0xDBFE],4
+100D:C9BB je short 0xC9BF
+100D:C9BF mov CX,word ptr ES:[BX+SI]
+100D:C9C2 mov BX,word ptr ES:[BX+SI+2]
+100D:C9C6 mov AX,word ptr DS:[0xDC04]
+100D:C9C9 add AX,CX
+100D:C9CB mov word ptr DS:[0xDBF6],AX
+100D:C9CE mov AX,word ptr DS:[0xDC06]
+100D:C9D1 adc AX,BX
+100D:C9D3 mov word ptr DS:[0xDBF8],AX
+100D:C9D6 mov AX,word ptr DS:[0xDC08]
+100D:C9D9 sub AX,CX
+100D:C9DB mov word ptr DS:[0xDBFA],AX
+100D:C9DE mov AX,word ptr DS:[0xDC0A]
+100D:C9E1 sbb AX,BX
+100D:C9E3 mov word ptr DS:[0xDBFC],AX
+100D:C9E6 clc
+100D:C9E7 ret near
+100D:C9E8 call near 0xCA60
+100D:C9EB call near 0xDD63
+100D:C9EE jb short 0xC9F1
+100D:C9F0 ret near
+100D:C9F1 jmp near 0xDE4E
+100D:C9F4 push word ptr DS:[0xDBE8]
+100D:C9F8 call near 0xCA60
+100D:C9FB pop AX
+100D:C9FC cmp AX,word ptr DS:[0xDBE8]
+100D:CA00 ret near
+100D:CA01 xor BX,BX
+100D:CA03 xchg BX,word ptr DS:[0x35A6]
+100D:CA07 or BX,BX
+100D:CA09 je short 0xCA18
+100D:CA0B call near 0xCE01
+100D:CA0E cmp BX,word ptr DS:[0xDBBA]
+100D:CA12 je short 0xCA18
+100D:CA18 xor CX,CX
+100D:CA1A ret near
+100D:CA1B call near 0xC92B
+100D:CA1E jb short 0xCA01
+100D:CA20 call near 0xCDA0
+100D:CA23 jb short 0xCA01
+100D:CA25 mov byte ptr DS:[0xDCE6],0
+100D:CA2A les SI,word ptr DS:[0xDC10]
+100D:CA2E lods AX,word ptr ES:[SI]
+100D:CA30 mov BP,word ptr DS:[0xDBDE]
+100D:CA34 call near 0xCCF4
+100D:CA37 call near 0xAA0F
+100D:CA3A call near 0xCC96
+100D:CA3D call near 0xCE1A
+100D:CA40 inc word ptr DS:[0xDBE8]
+100D:CA44 inc word ptr DS:[0xDBEA]
+100D:CA48 test byte ptr DS:[0xDBFE],0x40
+100D:CA4D jne short 0xCA59
+100D:CA4F mov CX,0x0032
+100D:CA52 push CX
+100D:CA53 call near 0xCB1A
+100D:CA56 pop CX
+100D:CA57 loop 0xCA52
+100D:CA59 mov AX,word ptr DS:[0xCE7A]
+100D:CA5C mov word ptr DS:[0xDC22],AX
+100D:CA5F ret near
+100D:CA60 cmp word ptr DS:[0x35A6],0
+100D:CA65 je short 0xCA9A
+100D:CA67 cmp byte ptr DS:[0xDBFE],0
+100D:CA6C jns short 0xCA71
+100D:CA6E call near 0xCA8F
+100D:CA71 call near 0xCAA0
+100D:CA74 jae short 0xCA7B
+100D:CA76 call near 0xCB1A
+100D:CA79 jmp short 0xCA60
+100D:CA7B call near 0xCAD4
+100D:CA7E jb short 0xCA8F
+100D:CA80 mov AX,word ptr DS:[0xDC1E]
+100D:CA83 inc AX
+100D:CA84 je short 0xCA89
+100D:CA86 call near 0xCE3B
+100D:CA89 call near 0xCC96
+100D:CA8C call near 0xCC4E
+100D:CA8F mov AL,byte ptr DS:[0xDBFE]
+100D:CA92 and AL,0x80
+100D:CA94 mov byte ptr DS:[0xDBB5],AL
+100D:CA97 call near 0xCB1A
+100D:CA9A mov byte ptr DS:[0xDBB5],0
+100D:CA9F ret near
+100D:CAA0 cmp word ptr DS:[0xDC16],0
+100D:CAA5 ja short 0xCAD3
+100D:CAA7 mov CX,word ptr DS:[0xDC1A]
+100D:CAAB stc
+100D:CAAC jcxz short 0xCAD3
+100D:CAAE les SI,word ptr DS:[0xDC10]
+100D:CAB2 lods AX,word ptr ES:[SI]
+100D:CAB4 cmp word ptr ES:[SI],0x6D6D
+100D:CAB9 je short 0xCABF
+100D:CABB cmp CX,AX
+100D:CABD jb short 0xCAD3
+100D:CABF mov BP,word ptr DS:[0xDBD6]
+100D:CAC3 test byte ptr DS:[0xDBFE],0x40
+100D:CAC8 je short 0xCACE
+100D:CACA mov BP,word ptr DS:[0xDC32]
+100D:CACE call near 0xCCF4
+100D:CAD1 xor AX,AX
+100D:CAD3 ret near
+100D:CAD4 mov AX,word ptr DS:[0xDC1C]
+100D:CAD7 inc AX
+100D:CAD8 jne short 0xCAF0
+100D:CADA mov AX,word ptr DS:[0xCE7A]
+100D:CADD sub AX,word ptr DS:[0xDC22]
+100D:CAE1 or AH,AH
+100D:CAE3 jne short 0xCAEB
+100D:CAE5 cmp AL,byte ptr DS:[0xDBFF]
+100D:CAE9 jb short 0xCAEF
+100D:CAEB call near 0xCA59
+100D:CAEE clc
+100D:CAEF ret near
+100D:CAF0 mov SI,word ptr DS:[0x3824]
+100D:CAF4 cmp byte ptr DS:[SI+6],1
+100D:CAF8 cmc
+100D:CAF9 jb short 0xCAEF
+100D:CAFB call near 0xA9F4
+100D:CAFE clc
+100D:CAFF ret near
+100D:CB00 mov AX,word ptr DS:[0xDBEA]
+100D:CB03 cmp AX,word ptr DS:[0xDBEE]
+100D:CB07 je short 0xCB61
+100D:CB09 mov AX,word ptr DS:[0xDC08]
+100D:CB0C or AX,word ptr DS:[0xDC0A]
+100D:CB10 je short 0xCB61
+100D:CB12 call near 0xCD8F
+100D:CB15 jb short 0xCB44
+100D:CB17 call near 0xCC0C
+100D:CB1A mov CX,word ptr DS:[0xDC20]
+100D:CB1E jcxz short 0xCB00
+100D:CB20 cmp byte ptr DS:[0xDBFE],0
+100D:CB25 js short 0xCB38
+100D:CB27 mov AX,word ptr DS:[0xDC04]
+100D:CB2A neg AX
+100D:CB2C and AX,0x07FF
+100D:CB2F add AH,8
+100D:CB32 cmp AX,CX
+100D:CB34 jae short 0xCB38
+100D:CB36 mov CX,AX
+100D:CB38 call near 0xCC2B
+100D:CB3B jb short 0xCB44
+100D:CB3D sub word ptr DS:[0xDC20],CX
+100D:CB41 jmp near 0xCDBF
+100D:CB44 ret near
+100D:CB4C or byte ptr DS:[0xDBE7],1
+100D:CB51 cmp word ptr DS:[0xDC1A],0
+100D:CB56 jne short 0xCB60
+100D:CB58 or byte ptr DS:[0xDBE7],2
+100D:CB5D call near 0xCA01
+100D:CB60 ret near
+100D:CB61 test byte ptr DS:[0xDBFE],1
+100D:CB66 je short 0xCB4C
+100D:CB68 mov CX,0x1000
+100D:CB6B call near 0xCC2B
+100D:CB6E jb short 0xCB44
+100D:CB70 mov AX,word ptr DS:[0xDBEA]
+100D:CB73 call near 0xCE07
+100D:CB76 mov word ptr DS:[0xDBEC],AX
+100D:CB79 call near 0xCA9A
+100D:CB7C mov AX,word ptr DS:[0xDC02]
+100D:CB7F cmp AX,word ptr DS:[0xDC00]
+100D:CB83 je short 0xCBA0
+100D:CB85 call near 0xC921
+100D:CB88 test byte ptr DS:[BX],8
+100D:CB8B je short 0xCB45
+100D:CB8D cmp word ptr DS:[BX-6],0
+100D:CB91 je short 0xCB45
+100D:CB93 mov word ptr DS:[0xDC00],AX
+100D:CB96 lea SI,BX-8
+100D:CB99 mov DI,0xDBF6
+100D:CB9C call near 0x5B99
+100D:CB9F movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:CBA0 mov AX,word ptr DS:[0xDBFA]
+100D:CBA3 mov word ptr DS:[0xDC08],AX
+100D:CBA6 mov AX,word ptr DS:[0xDBFC]
+100D:CBA9 mov word ptr DS:[0xDC0A],AX
+100D:CBAC mov AX,word ptr DS:[0xDBF6]
+100D:CBAF mov word ptr DS:[0xDC04],AX
+100D:CBB2 mov AX,word ptr DS:[0xDBF8]
+100D:CBB5 mov word ptr DS:[0xDC06],AX
+100D:CBB8 test byte ptr DS:[0xDBFE],4
+100D:CBBD je short 0xCC09
+100D:CC09 jmp near 0xCB00
+100D:CC0C add SI,AX
+100D:CC0E jb short 0xCC16
+100D:CC10 cmp SI,word ptr DS:[0xCE74]
+100D:CC14 jbe short 0xCC20
+100D:CC16 xor CX,CX
+100D:CC18 xchg CX,word ptr DS:[0xDC0C]
+100D:CC1C mov word ptr DS:[0xDC18],CX
+100D:CC20 sub AX,2
+100D:CC23 mov word ptr DS:[0xDC20],AX
+100D:CC26 inc word ptr DS:[0xDBEA]
+100D:CC2A ret near
+100D:CC2B mov AX,word ptr DS:[0xDC0C]
+100D:CC2E mov BX,word ptr DS:[0xDC10]
+100D:CC32 cmp AX,BX
+100D:CC34 jae short 0xCC3F
+100D:CC36 add AX,CX
+100D:CC38 add AX,0x0012
+100D:CC3B cmp BX,AX
+100D:CC3D jb short 0xCC4D
+100D:CC3F mov AX,word ptr DS:[0xDC1A]
+100D:CC42 add AX,0x000A
+100D:CC45 add AX,CX
+100D:CC47 jb short 0xCC4D
+100D:CC49 cmp word ptr DS:[0xDC18],AX
+100D:CC4D ret near
+100D:CC4E les SI,word ptr DS:[0xDC10]
+100D:CC52 lods AX,word ptr ES:[SI]
+100D:CC54 sub word ptr DS:[0xDC1A],AX
+100D:CC58 add SI,AX
+100D:CC5A jb short 0xCC62
+100D:CC5C cmp SI,word ptr DS:[0xCE74]
+100D:CC60 jbe short 0xCC6A
+100D:CC62 sub AX,2
+100D:CC65 mov word ptr DS:[0xDC10],AX
+100D:CC68 xor AX,AX
+100D:CC6A add word ptr DS:[0xDC10],AX
+100D:CC6E mov AX,word ptr DS:[0xDBE8]
+100D:CC71 inc AX
+100D:CC72 cmp AX,word ptr DS:[0xDBEC]
+100D:CC76 jbe short 0xCC81
+100D:CC78 mov AX,1
+100D:CC7B mov word ptr DS:[0xDBEC],0xFFFF
+100D:CC81 mov word ptr DS:[0xDBE8],AX
+100D:CC84 ret near
+100D:CC85 cmp byte ptr DS:[0xDBE7],0
+100D:CC8A je short 0xCC91
+100D:CC8C cmp byte ptr DS:[0xDBE7],1
+100D:CC91 ret near
+100D:CC96 mov AX,word ptr DS:[0x38FB]
+100D:CC99 mov word ptr CS:[0xCC94],AX
+100D:CC9D xor BP,BP
+100D:CC9F xchg BP,word ptr DS:[0xDC16]
+100D:CCA3 or BP,BP
+100D:CCA5 je short 0xCC4D
+100D:CCA7 mov SI,word ptr DS:[0xDC14]
+100D:CCAB mov AL,byte ptr DS:[0xDBFE]
+100D:CCAE test AL,0x30
+100D:CCB0 jne short 0xCCEA
+100D:CCB2 push DS
+100D:CCB3 test word ptr DS:[0xDC24],0x0400
+100D:CCB9 jne short 0xCCE1
+100D:CCBB mov ES,word ptr DS:[0xDBDA]
+100D:CCBF mov BX,word ptr DS:[0xDC00]
+100D:CCC3 mov DS,BP
+100D:CCC5 lods AX,word ptr DS:[SI]
+100D:CCC6 and AH,0xF9
+100D:CCC9 mov DI,AX
+100D:CCCB lods AX,word ptr DS:[SI]
+100D:CCCC mov CX,AX
+100D:CCCE or CL,CL
+100D:CCD0 je short 0xCCE1
+100D:CCD2 lods AX,word ptr DS:[SI]
+100D:CCD3 mov DX,AX
+100D:CCD5 lods AX,word ptr DS:[SI]
+100D:CCD6 xchg BX,AX
+100D:CCD7 cmp AX,0x0019
+100D:CCDA jae short 0xCCE3
+100D:CCDC call far dword ptr SS:[0x38C9]
+100D:CCE1 pop DS
+100D:CCE2 ret near
+100D:CCE3 call far dword ptr CS:[0xCC92]
+100D:CCE8 pop DS
+100D:CCE9 ret near
+100D:CCEA test AL,0x20
+100D:CCEC jne short 0xCCF1
+100D:CCEE jmp near 0x4AFD
+100D:CCF1 jmp near 0x4AEB
+100D:CCF4 mov word ptr DS:[0xDC1C],0xFFFF
+100D:CCFA mov word ptr DS:[0xDC1E],0xFFFF
+100D:CD00 add AX,SI
+100D:CD02 jb short 0xCD0A
+100D:CD04 cmp AX,word ptr DS:[0xCE74]
+100D:CD08 jbe short 0xCD0C
+100D:CD0A xor SI,SI
+100D:CD0C lods AX,word ptr ES:[SI]
+100D:CD0E cmp AX,0x6473
+100D:CD11 jne short 0xCD25
+100D:CD13 call near 0xAE2F
+100D:CD16 je short 0xCD1C
+100D:CD18 mov word ptr DS:[0xDC1C],SI
+100D:CD1C lods AX,word ptr ES:[SI]
+100D:CD1E sub AX,4
+100D:CD21 add SI,AX
+100D:CD23 lods AX,word ptr ES:[SI]
+100D:CD25 cmp AX,0x6C70
+100D:CD28 jne short 0xCD37
+100D:CD2A lods AX,word ptr ES:[SI]
+100D:CD2C mov word ptr DS:[0xDC1E],SI
+100D:CD30 sub AX,4
+100D:CD33 add SI,AX
+100D:CD35 jmp short 0xCD0C
+100D:CD37 cmp AX,0x6D6D
+100D:CD3A jne short 0xCD4E
+100D:CD4E push DS
+100D:CD4F push ES
+100D:CD50 mov ES,BP
+100D:CD52 xor DI,DI
+100D:CD54 test AH,4
+100D:CD57 je short 0xCD5D
+100D:CD59 mov ES,word ptr DS:[0xDBDA]
+100D:CD5D mov word ptr DS:[0xDC16],ES
+100D:CD61 mov word ptr DS:[0xDC14],DI
+100D:CD65 mov word ptr DS:[0xDC24],AX
+100D:CD68 pop DS
+100D:CD69 mov CX,AX
+100D:CD6B lods AX,word ptr DS:[SI]
+100D:CD6C xchg CX,AX
+100D:CD6D test AH,4
+100D:CD70 jne short 0xCD7C
+100D:CD72 stos word ptr ES:[DI],AX
+100D:CD73 xchg CX,AX
+100D:CD74 stos word ptr ES:[DI],AX
+100D:CD75 jcxz short 0xCD7F
+100D:CD77 test CH,2
+100D:CD7A je short 0xCD81
+100D:CD7C call near 0xF403
+100D:CD7F pop DS
+100D:CD80 ret near
+100D:CD81 sub SI,4
+100D:CD84 mov AX,DS
+100D:CD86 pop DS
+100D:CD87 mov word ptr DS:[0xDC14],SI
+100D:CD8B mov word ptr DS:[0xDC16],AX
+100D:CD8E ret near
+100D:CD8F mov CX,2
+100D:CD92 call near 0xCDBF
+100D:CD95 jb short 0xCD9F
+100D:CD97 les SI,word ptr DS:[0xDC0C]
+100D:CD9B mov AX,word ptr ES:[SI-2]
+100D:CD9F ret near
+100D:CDA0 call near 0xCE1A
+100D:CDA3 call near 0xCD8F
+100D:CDA6 jb short 0xCE00
+100D:CDA8 mov DI,word ptr DS:[0xCE74]
+100D:CDAC sub DI,AX
+100D:CDAE sub DI,2
+100D:CDB1 mov word ptr DS:[0xDC10],DI
+100D:CDB5 stos word ptr ES:[DI],AX
+100D:CDB6 mov word ptr DS:[0xDC0C],DI
+100D:CDBA mov CX,AX
+100D:CDBC sub CX,2
+100D:CDBF mov BX,word ptr DS:[0x35A6]
+100D:CDC3 cmp BX,1
+100D:CDC6 jb short 0xCE00
+100D:CDC8 push CX
+100D:CDC9 mov CX,word ptr DS:[0xDC06]
+100D:CDCD mov DX,word ptr DS:[0xDC04]
+100D:CDD1 mov AX,0x4200
+100D:CDD4 int 0x21
+100D:CDD6 pop CX
+100D:CDD7 push DS
+100D:CDD8 lds DX,word ptr DS:[0xDC0C]
+100D:CDDC mov AH,0x3F
+100D:CDDE int 0x21
+100D:CDE0 pop DS
+100D:CDE1 cmp AX,CX
+100D:CDE3 jb short 0xCDC8
+100D:CDE5 sub word ptr DS:[0xDC08],AX
+100D:CDE9 sbb word ptr DS:[0xDC0A],0
+100D:CDEE add word ptr DS:[0xDC04],AX
+100D:CDF2 adc word ptr DS:[0xDC06],0
+100D:CDF7 add word ptr DS:[0xDC0C],AX
+100D:CDFB add word ptr DS:[0xDC1A],AX
+100D:CDFF clc
+100D:CE00 ret near
+100D:CE01 mov word ptr DS:[0xDBE8],0
+100D:CE07 mov word ptr DS:[0xDBEA],0
+100D:CE0D mov word ptr DS:[0xDBEC],0xFFFF
+100D:CE13 mov word ptr DS:[0xDBEE],0xFFFF
+100D:CE19 ret near
+100D:CE1A mov AX,word ptr DS:[0xDBDE]
+100D:CE1D mov word ptr DS:[0xDC0E],AX
+100D:CE20 mov word ptr DS:[0xDC12],AX
+100D:CE23 xor AX,AX
+100D:CE25 mov word ptr DS:[0xDC0C],AX
+100D:CE28 mov word ptr DS:[0xDC10],AX
+100D:CE2B mov word ptr DS:[0xDC1A],AX
+100D:CE2E mov word ptr DS:[0xDC20],AX
+100D:CE31 mov word ptr DS:[0xDC16],AX
+100D:CE34 mov AX,word ptr DS:[0xCE74]
+100D:CE37 mov word ptr DS:[0xDC18],AX
+100D:CE3A ret near
+100D:CE3B les SI,word ptr DS:[0xDC0C]
+100D:CE3F mov SI,word ptr DS:[0xDC1E]
+100D:CE43 call near 0xC1BA
+100D:CE46 call far dword ptr DS:[0x3935]
+100D:CE4A ret near
+100D:CE4B mov word ptr DS:[0xDC02],BX
+100D:CE4F mov word ptr DS:[0xDBEE],AX
+100D:CE52 ret near
+100D:CE53 test byte ptr DS:[0x3403],4
+100D:CE58 je short 0xCE6B
+100D:CE6B ret near
+100D:CE6C test byte ptr DS:[0x2943],2
+100D:CE71 jne short 0xCE7B
+100D:CE73 cmp word ptr DS:[0x39A9],0x015E
+100D:CE79 jae short 0xCE8A
+100D:CE7B mov AX,2
+100D:CE7E call near 0xC921
+100D:CE81 and byte ptr DS:[BX],0xFB
+100D:CE84 inc AX
+100D:CE85 cmp AX,9
+100D:CE88 jb short 0xCE7E
+100D:CE8A test byte ptr DS:[0x2943],3
+100D:CE8F je short 0xCE9F
+100D:CE9F mov AX,2
+100D:CEA2 push AX
+100D:CEA3 call near 0xCEB0
+100D:CEA6 pop AX
+100D:CEA7 inc AX
+100D:CEA8 cmp AX,8
+100D:CEAB jb short 0xCEA2
+100D:CEAD jmp near 0xCA01
+100D:CEB0 call near 0xC921
+100D:CEB3 push BX
+100D:CEB4 call near 0xC92B
+100D:CEB7 pop DI
+100D:CEB8 jb short 0xCEC8
+100D:CEBA test byte ptr DS:[DI],8
+100D:CEBD je short 0xCEC8
+100D:CEBF sub DI,8
+100D:CEC2 mov SI,0xDBF6
+100D:CEC5 call near 0x5B99
+100D:CEC8 ret near
+100D:CEC9 pushf
+100D:CECA push BX
+100D:CECB push CX
+100D:CECC push DX
+100D:CECD push SI
+100D:CECE push DI
+100D:CECF push BP
+100D:CED0 push ES
+100D:CED1 xor AX,AX
+100D:CED3 xchg AL,byte ptr DS:[0xDBB5]
+100D:CED7 sti
+100D:CED8 push AX
+100D:CED9 call near 0xCAA0
+100D:CEDC jbe short 0xCEEF
+100D:CEDE mov AX,word ptr DS:[0xDC1E]
+100D:CEE1 inc AX
+100D:CEE2 jne short 0xCEEF
+100D:CEE4 call near 0xCAD4
+100D:CEE7 jb short 0xCEEF
+100D:CEE9 call near 0xCC96
+100D:CEEC call near 0xCC4E
+100D:CEEF pop AX
+100D:CEF0 mov byte ptr DS:[0xDBB5],AL
+100D:CEF3 pop ES
+100D:CEF4 pop BP
+100D:CEF5 pop DI
+100D:CEF6 pop SI
+100D:CEF7 pop DX
+100D:CEF8 pop CX
+100D:CEF9 pop BX
+100D:CEFA popf
+100D:CEFB ret near
+100D:CEFC mov AX,0x0069
+100D:CEFF add AL,byte ptr DS:[0xCEEB]
+100D:CF03 call near 0xC13E
+100D:CF06 mov word ptr DS:[0x3622],0x35A8
+100D:CF0C xor AX,AX
+100D:CF0E call far dword ptr DS:[0x3939]
+100D:CF12 call near 0xC0AD
+100D:CF15 mov AX,0x0019
+100D:CF18 jmp near 0xCA1B
+100D:CF1B push word ptr DS:[0xDBDA]
+100D:CF1F call near 0xC08E
+100D:CF22 mov SI,word ptr DS:[0x3622]
+100D:CF26 lods AX,word ptr DS:[SI]
+100D:CF27 cmp AX,word ptr DS:[0xDBE8]
+100D:CF2B ja short 0xCF30
+100D:CF2D call near 0xCF4B
+100D:CF30 call near 0xC9E8
+100D:CF33 jb short 0xCF3B
+100D:CF35 call near 0xCC85
+100D:CF38 je short 0xCF22
+100D:CF3A clc
+100D:CF3B pushf
+100D:CF3C call near 0xCA01
+100D:CF3F call near 0xAC14
+100D:CF42 call near 0xAD57
+100D:CF45 popf
+100D:CF46 pop word ptr DS:[0xDBDA]
+100D:CF4A ret near
+100D:CF4B mov AX,SI
+100D:CF4D mov word ptr DS:[0x3622],AX
+100D:CF50 sub AX,0x35A8
+100D:CF53 shr AX,1
+100D:CF55 shr AX,1
+100D:CF57 jae short 0xCF61
+100D:CF59 mov BX,0x00BE
+100D:CF5C xor DX,DX
+100D:CF5E jmp near 0xC22F
+100D:CF61 mov DI,0xED80
+100D:CF64 mov ES,word ptr DS:[0xDBD8]
+100D:CF68 xor AX,AX
+100D:CF6A mov CX,0x0B40
+100D:CF6D rep stos word ptr ES:[DI],AX
+100D:CF6F ret near
+100D:CF70 push BX
+100D:CF71 dec SI
+100D:CF72 test SI,0x0800
+100D:CF76 je short 0xCF95
+100D:CF78 call near 0xD00F
+100D:CF7B les BX,word ptr DS:[0x47B0]
+100D:CF7F and SI,0x07FF
+100D:CF83 shl SI,1
+100D:CF85 mov SI,word ptr ES:[BX+SI]
+100D:CF88 mov BX,word ptr ES:[BX]
+100D:CF8B mov BX,word ptr ES:[BX-2]
+100D:CF8F mov word ptr DS:[0x47B4],BX
+100D:CF93 pop BX
+100D:CF94 ret near
+100D:CF95 shl SI,1
+100D:CF97 les BX,word ptr DS:[0x47AC]
+100D:CF9B mov SI,word ptr ES:[BX+SI]
+100D:CF9E pop BX
+100D:CF9F ret near
+100D:CFA0 call near 0xAE2F
+100D:CFA3 je short 0xCFB8
+100D:CFA5 mov AL,byte ptr DS:[0xCEEB]
+100D:CFA8 or AL,AL
+100D:CFAA je short 0xCFB0
+100D:CFB0 mov AL,2
+100D:CFB2 mov byte ptr DS:[0x28E7],AL
+100D:CFB5 mov byte ptr DS:[0x28E8],AL
+100D:CFB8 ret near
+100D:CFB9 xor BX,BX
+100D:CFBB mov DI,0xD7F4
+100D:CFBE push DS
+100D:CFBF pop ES
+100D:CFC0 mov SI,word ptr DS:[BX-21898]
+100D:CFC4 cmp word ptr DS:[SI],-1
+100D:CFC7 jne short 0xCFCE
+100D:CFC9 add BX,2
+100D:CFCC jmp short 0xCFC0
+100D:CFCE mov AX,word ptr DS:[SI+2]
+100D:CFD1 xchg AL,AH
+100D:CFD3 and AX,0x03FF
+100D:CFD6 dec AX
+100D:CFD7 stos word ptr ES:[DI],AX
+100D:CFD8 and BX,-16
+100D:CFDB add BX,0x0010
+100D:CFDE cmp BX,0x0110
+100D:CFE2 jb short 0xCFC0
+100D:CFE4 mov AL,byte ptr DS:[0xCEEB]
+100D:CFE7 mov SI,0x00BB
+100D:CFEA cmp AL,6
+100D:CFEC jne short 0xCFF1
+100D:CFEE mov SI,0x00C7
+100D:CFF1 mov DI,0xCEEC
+100D:CFF4 push DS
+100D:CFF5 pop ES
+100D:CFF6 call near 0xF0B9
+100D:CFF9 mov AL,0xC0
+100D:CFFB add AL,byte ptr DS:[0xCEEB]
+100D:CFFF xor AH,AH
+100D:D001 mov SI,AX
+100D:D003 les DI,word ptr DS:[0x47AC]
+100D:D007 call near 0xF0B9
+100D:D00A call near 0x0098
+100D:D00D jmp short 0xD01A
+100D:D00F mov AX,word ptr DS:[0x477C]
+100D:D012 cmp AX,word ptr DS:[0xAAD6]
+100D:D016 mov AL,0x93
+100D:D018 jb short 0xD01C
+100D:D01A mov AL,0x9A
+100D:D01C add AL,byte ptr DS:[0xCEEB]
+100D:D020 cmp AL,byte ptr DS:[0x477E]
+100D:D024 je short 0xD03B
+100D:D026 push SI
+100D:D027 mov byte ptr DS:[0x477E],AL
+100D:D02A xor AH,AH
+100D:D02C mov SI,AX
+100D:D02E les DI,word ptr DS:[0x47B0]
+100D:D032 call near 0xF0B9
+100D:D035 push CX
+100D:D036 call near 0x0098
+100D:D039 pop CX
+100D:D03A pop SI
+100D:D03B ret near
+100D:D03C lods AL,byte ptr ES:[SI]
+100D:D03E sub AL,0x30
+100D:D040 cmp AL,9
+100D:D042 ja short 0xD03C
+100D:D044 lods AL,byte ptr ES:[SI]
+100D:D046 sub AL,0x30
+100D:D048 cmp AL,9
+100D:D04A jbe short 0xD044
+100D:D04C dec SI
+100D:D04D ret near
+100D:D04E mov word ptr DS:[0xD82C],DX
+100D:D052 mov word ptr DS:[0xD82E],BX
+100D:D056 mov word ptr DS:[0xD830],DX
+100D:D05A mov word ptr DS:[0xD832],BX
+100D:D05E ret near
+100D:D05F mov DX,word ptr DS:[0xD82C]
+100D:D063 mov BX,word ptr DS:[0xD82E]
+100D:D067 ret near
+100D:D068 mov word ptr DS:[0x2518],0xD096
+100D:D06E mov word ptr DS:[0x47A0],0xCEEC
+100D:D074 ret near
+100D:D075 mov word ptr DS:[0x2518],0xD12F
+100D:D07B mov word ptr DS:[0x47A0],0xCF6C
+100D:D081 ret near
+100D:D082 mov word ptr DS:[0x2518],0xD0FF
+100D:D088 mov word ptr DS:[0x47A0],0xCEEC
+100D:D08E ret near
+100D:D096 push AX
+100D:D097 push BX
+100D:D098 push CX
+100D:D099 push DX
+100D:D09A push SI
+100D:D09B push DI
+100D:D09C push BP
+100D:D09D push ES
+100D:D09E xor AH,AH
+100D:D0A0 mov SI,AX
+100D:D0A2 shl SI,1
+100D:D0A4 shl SI,1
+100D:D0A6 shl SI,1
+100D:D0A8 add SI,AX
+100D:D0AA add SI,word ptr DS:[0x2514]
+100D:D0AE mov BX,0xCEEC
+100D:D0B1 xlat byte ptr DS:[BX+AL]
+100D:D0B2 call near 0xD05F
+100D:D0B5 add word ptr DS:[0xD82C],AX
+100D:D0B9 mov CL,AL
+100D:D0BB mov CH,9
+100D:D0BD mov AX,word ptr DS:[0xDBE4]
+100D:D0C0 mov ES,word ptr DS:[0xDBDA]
+100D:D0C4 call far dword ptr DS:[0x38D1]
+100D:D0C8 pop ES
+100D:D0C9 pop BP
+100D:D0CA pop DI
+100D:D0CB pop SI
+100D:D0CC pop DX
+100D:D0CD pop CX
+100D:D0CE pop BX
+100D:D0CF pop AX
+100D:D0D0 ret near
+100D:D0E3 push CX
+100D:D0E4 push DI
+100D:D0E5 push ES
+100D:D0E6 push CS
+100D:D0E7 pop ES
+100D:D0E8 mov DI,0xD0D1
+100D:D0EB mov CX,9
+100D:D0EE repne scas AL,byte ptr ES:[DI]
+100D:D0F0 pop ES
+100D:D0F1 stc
+100D:D0F2 jne short 0xD0FC
+100D:D0F4 mov AL,byte ptr CS:[DI+8]
+100D:D0F8 mov AH,0x0D
+100D:D0FA sub AH,CL
+100D:D0FC pop DI
+100D:D0FD pop CX
+100D:D0FE ret near
+100D:D0FF call near 0xD068
+100D:D102 call near 0xD0E3
+100D:D105 jb short 0xD096
+100D:D107 call near 0xE270
+100D:D10A push ES
+100D:D10B push AX
+100D:D10C mov AX,0x0032
+100D:D10F call near 0xC13E
+100D:D112 call near 0xD05F
+100D:D115 pop AX
+100D:D116 mov CL,AH
+100D:D118 xor AH,AH
+100D:D11A add word ptr DS:[0xD82C],AX
+100D:D11E mov AL,CL
+100D:D120 sub BX,0x0013
+100D:D123 jae short 0xD127
+100D:D127 call near 0xC22F
+100D:D12A pop ES
+100D:D12B call near 0xE283
+100D:D12E ret near
+100D:D12F push AX
+100D:D130 push BX
+100D:D131 push CX
+100D:D132 push DX
+100D:D133 push SI
+100D:D134 push DI
+100D:D135 push BP
+100D:D136 push ES
+100D:D137 xor AH,AH
+100D:D139 mov SI,AX
+100D:D13B shl SI,1
+100D:D13D shl SI,1
+100D:D13F shl SI,1
+100D:D141 sub SI,AX
+100D:D143 add SI,word ptr DS:[0x2516]
+100D:D147 mov BX,0xCF6C
+100D:D14A xlat byte ptr DS:[BX+AL]
+100D:D14B call near 0xD05F
+100D:D14E add word ptr DS:[0xD82C],AX
+100D:D152 mov CL,AL
+100D:D154 mov CH,7
+100D:D156 mov AX,word ptr DS:[0xDBE4]
+100D:D159 mov ES,word ptr DS:[0xDBDA]
+100D:D15D call far dword ptr DS:[0x38D1]
+100D:D161 pop ES
+100D:D162 pop BP
+100D:D163 pop DI
+100D:D164 pop SI
+100D:D165 pop DX
+100D:D166 pop CX
+100D:D167 pop BX
+100D:D168 pop AX
+100D:D169 ret near
+100D:D194 mov word ptr DS:[0xDBE4],CX
+100D:D198 call near 0xD04E
+100D:D19B push SI
+100D:D19C mov SI,AX
+100D:D19E call near 0xCF70
+100D:D1A1 call near 0xD1BB
+100D:D1A4 pop SI
+100D:D1A5 ret near
+100D:D1A6 lods AX,word ptr DS:[SI]
+100D:D1A7 mov CX,AX
+100D:D1A9 inc AX
+100D:D1AA je short 0xD1A5
+100D:D1AC lods AX,word ptr DS:[SI]
+100D:D1AD mov DX,AX
+100D:D1AF lods AX,word ptr DS:[SI]
+100D:D1B0 mov BX,AX
+100D:D1B2 lods AX,word ptr DS:[SI]
+100D:D1B3 xchg CX,AX
+100D:D1B4 push SI
+100D:D1B5 call near 0xD194
+100D:D1B8 pop SI
+100D:D1B9 jmp short 0xD1A6
+100D:D1BB lods AL,byte ptr ES:[SI]
+100D:D1BD cmp AL,0xFF
+100D:D1BF je short 0xD1A5
+100D:D1C1 cmp AL,0x0D
+100D:D1C3 je short 0xD1D1
+100D:D1C5 or AL,AL
+100D:D1C7 jns short 0xD1CB
+100D:D1CB call near word ptr DS:[0x2518]
+100D:D1CF jmp short 0xD1BB
+100D:D1D1 mov AX,word ptr DS:[0xD830]
+100D:D1D4 mov word ptr DS:[0xD82C],AX
+100D:D1D7 mov AX,0x000A
+100D:D1DA cmp word ptr DS:[0x2518],0xD12F
+100D:D1E0 jne short 0xD1E5
+100D:D1E2 mov AX,7
+100D:D1E5 add word ptr DS:[0xD832],AX
+100D:D1E9 add word ptr DS:[0xD82E],AX
+100D:D1ED jmp short 0xD1BB
+100D:D1EF lods AX,word ptr DS:[SI]
+100D:D1F0 mov CX,AX
+100D:D1F2 call near 0xC137
+100D:D1F5 push CX
+100D:D1F6 call near 0xD200
+100D:D1F9 pop CX
+100D:D1FA add SI,0x000E
+100D:D1FD loop 0xD1F5
+100D:D1FF ret near
+100D:D200 push word ptr DS:[0xDBDA]
+100D:D204 call near 0xC08E
+100D:D207 push SI
+100D:D208 test byte ptr DS:[SI+8],0x40
+100D:D20C je short 0xD218
+100D:D20E mov ES,word ptr DS:[0xDBDA]
+100D:D212 push SI
+100D:D213 call far dword ptr DS:[0x38D9]
+100D:D217 pop SI
+100D:D218 test byte ptr DS:[SI+8],0x20
+100D:D21C jne short 0xD233
+100D:D21E lods AX,word ptr DS:[SI]
+100D:D21F mov DX,AX
+100D:D221 lods AX,word ptr DS:[SI]
+100D:D222 mov BX,AX
+100D:D224 lods AX,word ptr DS:[SI]
+100D:D225 mov DI,AX
+100D:D227 lods AX,word ptr DS:[SI]
+100D:D228 mov CX,AX
+100D:D22A lods AX,word ptr DS:[SI]
+100D:D22B lods AX,word ptr DS:[SI]
+100D:D22C inc AX
+100D:D22D je short 0xD233
+100D:D22F dec AX
+100D:D230 call near 0xC22F
+100D:D233 pop SI
+100D:D234 pop word ptr DS:[0xDBDA]
+100D:D238 ret near
+100D:D239 mov CH,2
+100D:D23B jmp short 0xD23F
+100D:D23D xor CX,CX
+100D:D23F mov SI,0x1AF4
+100D:D242 mov AX,word ptr DS:[SI+0x0A]
+100D:D245 sub AX,0
+100D:D248 mov CL,3
+100D:D24A div CL
+100D:D24C cmp CH,AH
+100D:D24E je short 0xD27F
+100D:D250 mov AX,1
+100D:D253 jae short 0xD257
+100D:D255 neg AX
+100D:D257 push AX
+100D:D258 push SI
+100D:D259 add word ptr DS:[SI+0x0A],AX
+100D:D25C add word ptr DS:[SI+0x18],AX
+100D:D25F mov CX,2
+100D:D262 call near 0xD1F2
+100D:D265 call near 0x1A34
+100D:D268 mov AX,0x000A
+100D:D26B call near 0xE387
+100D:D26E pop SI
+100D:D26F pop AX
+100D:D270 add word ptr DS:[SI+0x0A],AX
+100D:D273 add word ptr DS:[SI+0x18],AX
+100D:D276 mov CX,2
+100D:D279 call near 0xD1F2
+100D:D27C call near 0x1A34
+100D:D27F ret near
+100D:D280 cmp byte ptr DS:[0xDCE6],0
+100D:D285 jle short 0xD2BC
+100D:D287 call near 0xE270
+100D:D28A mov byte ptr DS:[0xDCE6],0
+100D:D28F call near 0xD239
+100D:D292 mov CX,0x0011
+100D:D295 push CX
+100D:D296 push word ptr DS:[0xCE7A]
+100D:D29A mov SI,word ptr DS:[0xDBDE]
+100D:D29E mov AL,0x18
+100D:D2A0 call near 0xC0D5
+100D:D2A3 pop BX
+100D:D2A4 push BX
+100D:D2A5 call near 0xA7C2
+100D:D2A8 pop BX
+100D:D2A9 mov AX,word ptr DS:[0xCE7A]
+100D:D2AC sub AX,BX
+100D:D2AE cmp AX,6
+100D:D2B1 jb short 0xD2A4
+100D:D2B3 pop CX
+100D:D2B4 loop 0xD295
+100D:D2B6 call near 0xD23D
+100D:D2B9 call near 0xE283
+100D:D2BC ret near
+100D:D2BD mov AL,byte ptr DS:[0xDCE6]
+100D:D2C0 push AX
+100D:D2C1 mov byte ptr DS:[0xDCE6],0x80
+100D:D2C6 mov SI,word ptr DS:[0x21DA]
+100D:D2CA mov SI,word ptr DS:[SI]
+100D:D2CC lods AL,byte ptr DS:[SI]
+100D:D2CD cmp AL,0xFF
+100D:D2CF je short 0xD2DA
+100D:D2D1 and AL,0x0F
+100D:D2D3 je short 0xD2DA
+100D:D2D5 call near 0xD2EA
+100D:D2D8 jmp short 0xD2C1
+100D:D2DA pop AX
+100D:D2DB mov byte ptr DS:[0xDCE6],AL
+100D:D2DE ret near
+100D:D2E2 call near 0xD316
+100D:D2E5 call near 0xD2EA
+100D:D2E8 jmp short 0xD280
+100D:D2EA mov SI,word ptr DS:[0x21DA]
+100D:D2EE mov DI,word ptr DS:[SI]
+100D:D2F0 mov AL,byte ptr DS:[DI]
+100D:D2F2 and AL,0x0F
+100D:D2F4 cmp AL,0x0F
+100D:D2F6 je short 0xD315
+100D:D2F8 mov AX,word ptr DS:[SI+2]
+100D:D2FB call near AX
+100D:D2FD mov SI,word ptr DS:[0x21DA]
+100D:D301 cmp SI,0x21BE
+100D:D305 je short 0xD315
+100D:D307 sub SI,4
+100D:D30A mov word ptr DS:[0x21DA],SI
+100D:D30E mov BP,word ptr DS:[SI]
+100D:D310 mov CL,0xFF
+100D:D312 call near 0xD36D
+100D:D315 ret near
+100D:D316 cmp word ptr DS:[0x35A6],0
+100D:D31B jne short 0xD322
+100D:D31D or byte ptr DS:[0xDCE6],1
+100D:D322 ret near
+100D:D323 call near 0xD316
+100D:D326 call near 0xD338
+100D:D329 call near 0xD280
+100D:D32C jmp near 0xD410
+100D:D32F call near 0xD316
+100D:D332 call near 0xD33A
+100D:D335 jmp near 0xD280
+100D:D338 mov CL,0xFF
+100D:D33A mov SI,word ptr DS:[0x21DA]
+100D:D33E mov DI,word ptr DS:[SI]
+100D:D340 mov AL,byte ptr SS:[BP]
+100D:D343 cmp AL,byte ptr DS:[DI]
+100D:D345 je short 0xD368
+100D:D347 jb short 0xD35B
+100D:D349 push BP
+100D:D34A push BX
+100D:D34B push CX
+100D:D34C mov AX,word ptr DS:[SI+2]
+100D:D34F call near AX
+100D:D351 sub word ptr DS:[0x21DA],4
+100D:D356 pop CX
+100D:D357 pop BX
+100D:D358 pop BP
+100D:D359 jmp short 0xD33A
+100D:D35B cmp SI,0x21D6
+100D:D35F je short 0xD368
+100D:D361 add SI,4
+100D:D364 mov word ptr DS:[0x21DA],SI
+100D:D368 mov word ptr DS:[SI],BP
+100D:D36A mov word ptr DS:[SI+2],BX
+100D:D36D mov SI,word ptr DS:[0x21DA]
+100D:D371 mov word ptr DS:[SI],BP
+100D:D373 mov SI,BP
+100D:D375 add BP,2
+100D:D378 cmp word ptr SS:[BP],0
+100D:D37C je short 0xD388
+100D:D37E and word ptr SS:[BP],0x7FFF
+100D:D383 add BP,4
+100D:D386 jmp short 0xD378
+100D:D388 cmp CX,5
+100D:D38B jae short 0xD397
+100D:D38D shl CX,1
+100D:D38F shl CX,1
+100D:D391 mov BX,CX
+100D:D393 or byte ptr DS:[BX+SI+3],0x80
+100D:D397 mov byte ptr DS:[0xDCE7],0xFF
+100D:D39C mov SI,word ptr DS:[0x21DA]
+100D:D3A0 mov SI,word ptr DS:[SI]
+100D:D3A2 inc SI
+100D:D3A3 lods AL,byte ptr DS:[SI]
+100D:D3A4 mov byte ptr DS:[0xDCE4],AL
+100D:D3A7 cbw
+100D:D3A8 add SI,AX
+100D:D3AA xor CX,CX
+100D:D3AC mov byte ptr DS:[0xDCE8],CL
+100D:D3B0 mov byte ptr DS:[0xDCE5],0xFF
+100D:D3B5 mov AX,word ptr DS:[SI]
+100D:D3B7 or AX,AX
+100D:D3B9 je short 0xD3EF
+100D:D3BB cmp CL,4
+100D:D3BE jb short 0xD3D9
+100D:D3C0 cmp byte ptr DS:[0xDCE4],0
+100D:D3C5 jne short 0xD3CD
+100D:D3C7 cmp word ptr DS:[SI+4],0
+100D:D3CB je short 0xD3D9
+100D:D3CD or byte ptr DS:[0xDCE4],0x80
+100D:D3D2 mov AX,0x00A0
+100D:D3D5 mov byte ptr DS:[0xDCE5],CL
+100D:D3D9 add SI,4
+100D:D3DC push CX
+100D:D3DD push SI
+100D:D3DE inc byte ptr DS:[0xDCE8]
+100D:D3E2 call near 0xD48A
+100D:D3E5 pop SI
+100D:D3E6 pop CX
+100D:D3E7 inc CX
+100D:D3E8 cmp CL,5
+100D:D3EB jb short 0xD3B5
+100D:D3ED jmp short 0xD410
+100D:D3EF cmp byte ptr DS:[0xDCE4],0
+100D:D3F4 je short 0xD403
+100D:D3F6 mov AX,0x00A0
+100D:D3F9 mov byte ptr DS:[0xDCE5],CL
+100D:D3FD inc byte ptr DS:[0xDCE8]
+100D:D401 jmp short 0xD405
+100D:D403 xor AX,AX
+100D:D405 push CX
+100D:D406 call near 0xD48A
+100D:D409 pop CX
+100D:D40A inc CX
+100D:D40B cmp CL,5
+100D:D40E jb short 0xD403
+100D:D410 mov DX,word ptr DS:[0xDC36]
+100D:D414 mov BX,word ptr DS:[0xDC38]
+100D:D418 jmp near 0xD50F
+100D:D41B mov BP,word ptr DS:[0x21DA]
+100D:D41F mov BP,word ptr SS:[BP]
+100D:D422 ret near
+100D:D423 add byte ptr DS:[SI],0x10
+100D:D426 jmp near 0xD397
+100D:D429 mov byte ptr DS:[SI],0
+100D:D42C jmp near 0xD397
+100D:D42F mov CX,4
+100D:D432 jmp short 0xD445
+100D:D434 mov CX,3
+100D:D437 jmp short 0xD445
+100D:D439 mov CX,2
+100D:D43C jmp short 0xD445
+100D:D43E mov CX,1
+100D:D441 jmp short 0xD445
+100D:D443 xor CX,CX
+100D:D445 call near 0xD454
+100D:D448 or BX,BX
+100D:D44A je short 0xD453
+100D:D44C test AH,0x40
+100D:D44F jne short 0xD453
+100D:D451 jmp near BX
+100D:D454 mov SI,word ptr DS:[0x21DA]
+100D:D458 mov SI,word ptr DS:[SI]
+100D:D45A inc SI
+100D:D45B xor CH,CH
+100D:D45D cmp CL,byte ptr DS:[0xDCE5]
+100D:D461 je short 0xD475
+100D:D463 lods AL,byte ptr DS:[SI]
+100D:D464 cbw
+100D:D465 add SI,AX
+100D:D467 mov AX,CX
+100D:D469 shl AX,1
+100D:D46B shl AX,1
+100D:D46D add SI,AX
+100D:D46F mov AX,word ptr DS:[SI]
+100D:D471 mov BX,word ptr DS:[SI+2]
+100D:D474 ret near
+100D:D475 mov AX,0x00A0
+100D:D478 mov BX,0xD423
+100D:D47B cmp byte ptr DS:[0xDCE4],0
+100D:D480 js short 0xD489
+100D:D482 mov BX,0xD429
+100D:D485 jg short 0xD489
+100D:D489 ret near
+100D:D48A push word ptr DS:[0xDBDA]
+100D:D48E call near 0xC08E
+100D:D491 cmp byte ptr DS:[0xDCE6],0
+100D:D496 jle short 0xD49B
+100D:D498 call near 0xC07C
+100D:D49B call near 0xD075
+100D:D49E mov SI,AX
+100D:D4A0 mov AL,0x0E
+100D:D4A2 mul CL
+100D:D4A4 mov DI,AX
+100D:D4A6 add DI,0x1B48
+100D:D4AA mov BX,word ptr DS:[DI+2]
+100D:D4AD inc BX
+100D:D4AE mov DX,0x005D
+100D:D4B1 call near 0xD04E
+100D:D4B4 mov byte ptr DS:[0xDBE5],0xF3
+100D:D4B9 and byte ptr DS:[DI+8],0x7F
+100D:D4BD mov AX,SI
+100D:D4BF and SI,0x3FFF
+100D:D4C3 je short 0xD4E9
+100D:D4C5 mov AL,0xF5
+100D:D4C7 test AH,0x40
+100D:D4CA jne short 0xD4DA
+100D:D4CC or byte ptr DS:[DI+8],0x80
+100D:D4D0 mov AL,0xFA
+100D:D4D2 or AH,AH
+100D:D4D4 jns short 0xD4DA
+100D:D4D6 xchg AL,byte ptr DS:[0xDBE5]
+100D:D4DA mov byte ptr DS:[0xDBE4],AL
+100D:D4DD call near 0xCF70
+100D:D4E0 mov AL,0x20
+100D:D4E2 call near word ptr DS:[0x2518]
+100D:D4E6 call near 0xD1BB
+100D:D4E9 call near 0xD05F
+100D:D4EC mov SI,0xDCE9
+100D:D4EF mov word ptr DS:[SI],DX
+100D:D4F1 mov word ptr DS:[SI+2],BX
+100D:D4F4 mov word ptr DS:[SI+4],0x00E3
+100D:D4F9 add BX,7
+100D:D4FC mov word ptr DS:[SI+6],BX
+100D:D4FF mov AL,byte ptr DS:[0xDBE5]
+100D:D502 mov ES,word ptr DS:[0xDBDA]
+100D:D506 call far dword ptr DS:[0x38DD]
+100D:D50A pop word ptr DS:[0xDBDA]
+100D:D50E ret near
+100D:D50F push BX
+100D:D510 push CX
+100D:D511 push DX
+100D:D512 push SI
+100D:D513 push DI
+100D:D514 push BP
+100D:D515 cmp byte ptr DS:[0x4774],0
+100D:D51A je short 0xD523
+100D:D51C mov CL,byte ptr DS:[0x4775]
+100D:D520 jmp near 0xD5DD
+100D:D523 call near 0xD41B
+100D:D526 cmp BP,0x1F0E
+100D:D52A jne short 0xD575
+100D:D52C cmp byte ptr DS:[0x11C9],0
+100D:D531 jne short 0xD575
+100D:D533 mov DI,0x1BF0
+100D:D536 cmp byte ptr DS:[DI+8],0
+100D:D53A jns short 0xD545
+100D:D53C call near 0xD6FE
+100D:D53F mov CX,word ptr DS:[0x47C4]
+100D:D543 jb short 0xD55D
+100D:D545 push BP
+100D:D546 call near 0x9285
+100D:D549 pop BP
+100D:D54A jae short 0xD575
+100D:D54C mov AL,CL
+100D:D54E sub AL,0x0F
+100D:D550 jb short 0xD55D
+100D:D552 inc AL
+100D:D554 cmp AL,byte ptr DS:[0x476B]
+100D:D558 jne short 0xD55D
+100D:D55D mov BP,CX
+100D:D55F add BP,0x0078
+100D:D563 xor CX,CX
+100D:D565 call near 0xD454
+100D:D568 cmp AX,BP
+100D:D56A je short 0xD5DD
+100D:D56C inc CX
+100D:D56D cmp CL,byte ptr DS:[0xDCE8]
+100D:D571 jb short 0xD565
+100D:D573 jmp short 0xD5DB
+100D:D575 cmp BP,0x1F7E
+100D:D579 jne short 0xD5B1
+100D:D57B mov DI,0x1BE2
+100D:D57E cmp byte ptr DS:[DI+8],0
+100D:D582 jns short 0xD593
+100D:D584 xor CX,CX
+100D:D586 call near 0xD6FE
+100D:D589 jb short 0xD5DD
+100D:D58B mov DI,0x1BF0
+100D:D58E call near 0xD6FE
+100D:D591 jb short 0xD5DD
+100D:D593 cmp byte ptr DS:[0x1BF8],0
+100D:D598 jns short 0xD5B1
+100D:D59A mov DI,0x1BFE
+100D:D59D call near 0xD6FE
+100D:D5A0 mov CL,3
+100D:D5A2 jb short 0xD5DD
+100D:D5A4 call near 0x92C9
+100D:D5A7 jae short 0xD5B1
+100D:D5A9 cmp CX,word ptr DS:[0x47C4]
+100D:D5AD mov CL,2
+100D:D5AF je short 0xD5DD
+100D:D5B1 cmp BX,0x0098
+100D:D5B5 jb short 0xD5DB
+100D:D5B7 mov CL,0xFF
+100D:D5B9 mov DI,0x1B48
+100D:D5BC cmp DX,word ptr DS:[DI]
+100D:D5BE jb short 0xD5DD
+100D:D5C0 cmp DX,word ptr DS:[DI+4]
+100D:D5C3 jae short 0xD5DD
+100D:D5C5 xor CX,CX
+100D:D5C7 cmp BX,word ptr DS:[DI+2]
+100D:D5CA jbe short 0xD5DB
+100D:D5CC cmp BX,word ptr DS:[DI+6]
+100D:D5CF jbe short 0xD5DD
+100D:D5D1 add DI,0x000E
+100D:D5D4 inc CX
+100D:D5D5 cmp CL,byte ptr DS:[0xDCE8]
+100D:D5D9 jb short 0xD5C7
+100D:D5DB mov CL,0xFF
+100D:D5DD mov AL,CL
+100D:D5DF xchg CL,byte ptr DS:[0xDCE7]
+100D:D5E3 cmp AL,CL
+100D:D5E5 je short 0xD610
+100D:D5E7 call near 0xDBB2
+100D:D5EA or CL,CL
+100D:D5EC js short 0xD5FC
+100D:D5EE cmp CL,byte ptr DS:[0xDCE8]
+100D:D5F2 jae short 0xD5FC
+100D:D5F4 push AX
+100D:D5F5 call near 0xD454
+100D:D5F8 call near 0xD48A
+100D:D5FB pop AX
+100D:D5FC cmp AL,byte ptr DS:[0xDCE8]
+100D:D600 jae short 0xD60D
+100D:D602 mov CX,AX
+100D:D604 call near 0xD454
+100D:D607 or AH,0x80
+100D:D60A call near 0xD48A
+100D:D60D call near 0xDBEC
+100D:D610 pop BP
+100D:D611 pop DI
+100D:D612 pop SI
+100D:D613 pop DX
+100D:D614 pop CX
+100D:D615 pop BX
+100D:D616 ret near
+100D:D617 push AX
+100D:D618 mov AX,0x0090
+100D:D61B jmp short 0xD621
+100D:D61D push AX
+100D:D61E mov AX,0x009F
+100D:D621 call near 0xE270
+100D:D624 call near 0xD41B
+100D:D627 mov SI,0x1F7E
+100D:D62A cmp word ptr DS:[SI+2],AX
+100D:D62D mov word ptr DS:[SI+2],AX
+100D:D630 je short 0xD649
+100D:D632 cmp BP,SI
+100D:D634 jne short 0xD649
+100D:D636 call near 0xDBB2
+100D:D639 xor CX,CX
+100D:D63B call near 0xD454
+100D:D63E call near 0xD48A
+100D:D641 mov byte ptr DS:[0xDCE7],0xFF
+100D:D646 call near 0xDBEC
+100D:D649 call near 0xE283
+100D:D64C pop AX
+100D:D64D ret near
+100D:D64E push BX
+100D:D64F push DX
+100D:D650 xor BX,BX
+100D:D652 xor DX,DX
+100D:D654 call near 0xD50F
+100D:D657 pop DX
+100D:D658 pop BX
+100D:D659 ret near
+100D:D65A test byte ptr DS:[DI+9],0x20
+100D:D65E je short 0xD676
+100D:D676 ret near
+100D:D694 mov AX,word ptr DS:[0x2582]
+100D:D697 mov DI,0x1B9C
+100D:D69A cmp AX,0x260C
+100D:D69D je short 0xD6B5
+100D:D69F add DI,0x000E
+100D:D6A2 cmp AX,0x2650
+100D:D6A5 je short 0xD6B5
+100D:D6A7 add DI,0x000E
+100D:D6AA cmp AX,0x2694
+100D:D6AD je short 0xD6B5
+100D:D6AF add DI,0x000E
+100D:D6B2 cmp AX,0x26D8
+100D:D6B5 stc
+100D:D6B6 ret near
+100D:D6B7 call near 0xD694
+100D:D6BA je short 0xD6FD
+100D:D6BC mov DI,0x1AE4
+100D:D6BF mov CX,word ptr DS:[DI]
+100D:D6C1 add DI,2
+100D:D6C4 cmp word ptr DS:[0x2570],0x1AD6
+100D:D6CA jne short 0xD6CF
+100D:D6CC sub CX,5
+100D:D6CF cmp byte ptr DS:[0x46D9],0
+100D:D6D4 je short 0xD6DC
+100D:D6D6 mov CX,5
+100D:D6D9 mov DI,0x1B48
+100D:D6DC cmp byte ptr DS:[DI+8],0
+100D:D6E0 jns short 0xD6F7
+100D:D6E2 cmp DX,word ptr DS:[DI]
+100D:D6E4 jbe short 0xD6F7
+100D:D6E6 cmp DX,word ptr DS:[DI+4]
+100D:D6E9 jae short 0xD6F7
+100D:D6EB cmp BX,word ptr DS:[DI+2]
+100D:D6EE jbe short 0xD6F7
+100D:D6F0 dec BX
+100D:D6F1 cmp BX,word ptr DS:[DI+6]
+100D:D6F4 inc BX
+100D:D6F5 jb short 0xD6FD
+100D:D6F7 add DI,0x000E
+100D:D6FA loop 0xD6DC
+100D:D6FC clc
+100D:D6FD ret near
+100D:D6FE cmp DX,word ptr DS:[DI]
+100D:D700 jbe short 0xD710
+100D:D702 cmp DX,word ptr DS:[DI+4]
+100D:D705 jae short 0xD710
+100D:D707 cmp BX,word ptr DS:[DI+2]
+100D:D70A jbe short 0xD710
+100D:D70C cmp BX,word ptr DS:[DI+6]
+100D:D70F ret near
+100D:D710 clc
+100D:D711 ret near
+100D:D712 mov SI,0x1CCA
+100D:D715 jmp short 0xD72B
+100D:D717 cmp byte ptr DS:[0x46EB],0
+100D:D71C jne short 0xD712
+100D:D71E mov SI,0x1C76
+100D:D721 test byte ptr DS:[0x11C9],3
+100D:D726 je short 0xD72B
+100D:D728 mov SI,0x1D72
+100D:D72B push DS
+100D:D72C pop ES
+100D:D72D mov DI,0x1B8E
+100D:D730 mov CX,0x002A
+100D:D733 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:D735 call near 0xD741
+100D:D738 mov SI,0x1B8E
+100D:D73B mov CX,6
+100D:D73E jmp near 0xD1F2
+100D:D741 mov AX,word ptr DS:[0x1B0C]
+100D:D744 sub AX,3
+100D:D747 cmp AX,3
+100D:D74A jae short 0xD759
+100D:D74C mov SI,0x2458
+100D:D74F mov ES,word ptr DS:[0xDBD8]
+100D:D753 mov AL,0xF0
+100D:D755 call far dword ptr DS:[0x38DD]
+100D:D759 ret near
+100D:D75A mov SI,0x1C36
+100D:D75D call near 0xD795
+100D:D760 call near 0x1A34
+100D:D763 mov SI,0x1C0C
+100D:D766 mov AX,0x0040
+100D:D769 mov word ptr DS:[SI+0x0A],AX
+100D:D76C mov word ptr DS:[SI+0x18],AX
+100D:D76F mov CX,2
+100D:D772 call near 0xD1F2
+100D:D775 mov SI,0x1C0C
+100D:D778 mov AL,byte ptr DS:[0x1152]
+100D:D77B cbw
+100D:D77C add AX,0x0041
+100D:D77F mov word ptr DS:[SI+0x0A],AX
+100D:D782 mov AL,byte ptr DS:[0x1153]
+100D:D785 cbw
+100D:D786 add AX,0x0041
+100D:D789 mov word ptr DS:[SI+0x18],AX
+100D:D78C mov CX,2
+100D:D78F jmp near 0xD1F2
+100D:D792 mov SI,0x1C66
+100D:D795 push DS
+100D:D796 pop ES
+100D:D797 mov DI,0x1AEE
+100D:D79A mov CX,4
+100D:D79D movs word ptr ES:[DI],word ptr DS:[SI]
+100D:D79E movs word ptr ES:[DI],word ptr DS:[SI]
+100D:D79F add DI,0x000A
+100D:D7A2 loop 0xD79D
+100D:D7A4 mov SI,0x1AE6
+100D:D7A7 mov CX,3
+100D:D7AA jmp near 0xD1F2
+100D:D7AD mov SI,0x1C56
+100D:D7B0 jmp short 0xD795
+100D:D7B2 mov SI,0x1C46
+100D:D7B5 jmp short 0xD795
+100D:D7B7 mov AX,word ptr DS:[0xCE7A]
+100D:D7BA shl AX,1
+100D:D7BC shl AX,1
+100D:D7BE cmp AH,byte ptr DS:[0xDCF1]
+100D:D7C2 je short 0xD814
+100D:D7C4 mov byte ptr DS:[0xDCF1],AH
+100D:D7C8 mov AX,word ptr DS:[0x2222]
+100D:D7CB or AX,AX
+100D:D7CD je short 0xD814
+100D:D7CF mov BX,word ptr DS:[0x1152]
+100D:D7D3 push BX
+100D:D7D4 or AL,AL
+100D:D7D6 je short 0xD7E0
+100D:D7D8 dec AL
+100D:D7DA test AL,1
+100D:D7DC je short 0xD7E0
+100D:D7DE mov BL,0xFF
+100D:D7E0 or AH,AH
+100D:D7E2 je short 0xD7ED
+100D:D7E4 dec AH
+100D:D7E6 test AH,1
+100D:D7E9 je short 0xD7ED
+100D:D7EB mov BH,0xFF
+100D:D7ED mov word ptr DS:[0x2222],AX
+100D:D7F0 mov word ptr DS:[0x1152],BX
+100D:D7F4 cmp word ptr DS:[0x1AFE],0
+100D:D7FA jne short 0xD810
+100D:D7FC push word ptr DS:[0x2784]
+100D:D800 call near 0xC137
+100D:D803 call near 0xDBB2
+100D:D806 call near 0xD763
+100D:D809 call near 0xDBEC
+100D:D80C pop AX
+100D:D80D call near 0xC13E
+100D:D810 pop word ptr DS:[0x1152]
+100D:D814 ret near
+100D:D815 mov AX,word ptr DS:[0xCE7A]
+100D:D818 mov word ptr DS:[0xDC68],AX
+100D:D81B mov byte ptr DS:[0xDC4B],0
+100D:D820 cmp byte ptr DS:[0xCEE8],0x2F
+100D:D825 jne short 0xD831
+100D:D831 cmp byte ptr DS:[0x46D9],0
+100D:D836 jne short 0xD83E
+100D:D838 call near 0xD7B7
+100D:D83B call near 0x1B0D
+100D:D83E call near 0xD9D2
+100D:D841 cmp byte ptr DS:[0x46D9],0
+100D:D846 je short 0xD84B
+100D:D848 call near 0x0D8E
+100D:D84B call near 0xE3CC
+100D:D84E mov word ptr DS:[0],AX
+100D:D851 call near 0x4F0C
+100D:D854 cmp byte ptr DS:[0xDC4B],0
+100D:D859 je short 0xD860
+100D:D860 call near 0xDF1E
+100D:D863 call near 0xDB4C
+100D:D866 call near 0xDC20
+100D:D869 mov DI,DX
+100D:D86B xchg DI,word ptr DS:[0xDC62]
+100D:D86F mov CX,BX
+100D:D871 xchg CX,word ptr DS:[0xDC64]
+100D:D875 sub DI,DX
+100D:D877 sub CX,BX
+100D:D879 neg DI
+100D:D87B neg CX
+100D:D87D mov SI,word ptr DS:[0x2570]
+100D:D881 and AX,0x000F
+100D:D884 jne short 0xD893
+100D:D886 call near 0xD50F
+100D:D889 mov AX,CX
+100D:D88B or AX,DI
+100D:D88D je short 0xD88F
+100D:D88F call near word ptr DS:[SI]
+100D:D891 jmp short 0xD820
+100D:D893 mov BP,word ptr DS:[0xCE7A]
+100D:D897 mov word ptr DS:[0xDC5A],BP
+100D:D89B cmp byte ptr DS:[0x4774],0
+100D:D8A0 je short 0xD8B1
+100D:D8A2 and AL,5
+100D:D8A4 cmp AL,5
+100D:D8A6 jne short 0xD8D7
+100D:D8A8 call near 0xDBB2
+100D:D8AB call near 0x1707
+100D:D8AE jmp near 0xD820
+100D:D8B1 test AL,5
+100D:D8B3 jne short 0xD8BA
+100D:D8B5 add SI,2
+100D:D8B8 shr AX,1
+100D:D8BA and AL,5
+100D:D8BC dec AL
+100D:D8BE jne short 0xD8F4
+100D:D8C0 mov BP,word ptr DS:[0xDC5C]
+100D:D8C4 or BP,BP
+100D:D8C6 jne short 0xD8DA
+100D:D8C8 mov AX,CX
+100D:D8CA or AX,DI
+100D:D8CC je short 0xD8D7
+100D:D8CE call near 0xDBB2
+100D:D8D1 mov AL,byte ptr DS:[0xDC35]
+100D:D8D4 call near word ptr DS:[SI+0x0A]
+100D:D8D7 jmp near 0xD820
+100D:D8DA mov AX,word ptr DS:[0xCE7A]
+100D:D8DD sub AX,word ptr DS:[0xDC5E]
+100D:D8E1 cmp AX,0x0032
+100D:D8E4 jb short 0xD8D7
+100D:D8E6 call near 0xD6B7
+100D:D8E9 jae short 0xD8D7
+100D:D8EB cmp DI,BP
+100D:D8ED jne short 0xD8D7
+100D:D8EF call near 0xDBB2
+100D:D8F2 jmp short 0xD92B
+100D:D8F4 call near 0xDBB2
+100D:D8F7 call near 0xE26F
+100D:D8FA sub AL,3
+100D:D8FC je short 0xD944
+100D:D8FE cmp SI,word ptr DS:[0x2570]
+100D:D902 jne short 0xD90E
+100D:D904 call near 0xD6B7
+100D:D907 jb short 0xD918
+100D:D909 push SI
+100D:D90A call near 0x9215
+100D:D90D pop SI
+100D:D90E mov AL,byte ptr DS:[0xDC35]
+100D:D911 call near word ptr DS:[SI+2]
+100D:D914 jmp near 0xD820
+100D:D917 ret near
+100D:D918 mov word ptr DS:[0xDC60],DI
+100D:D91C call near 0xD65A
+100D:D91F test byte ptr DS:[DI+9],0x40
+100D:D923 je short 0xD92B
+100D:D925 mov word ptr DS:[0xDC5C],DI
+100D:D929 jmp short 0xD935
+100D:D92B mov byte ptr DS:[0xCE9D],0
+100D:D930 mov byte ptr DS:[0xCEBA],0
+100D:D935 mov AX,word ptr DS:[0xCE7A]
+100D:D938 mov word ptr DS:[0xDC5E],AX
+100D:D93B mov AL,byte ptr DS:[0xDC35]
+100D:D93E call near word ptr DS:[DI+0x0C]
+100D:D941 jmp near 0xD820
+100D:D944 mov DI,word ptr DS:[0xDC5C]
+100D:D948 mov word ptr DS:[0xDC5C],0
+100D:D94E or DI,DI
+100D:D950 jne short 0xD92B
+100D:D952 mov AL,byte ptr DS:[0xDC35]
+100D:D955 call near word ptr DS:[SI+6]
+100D:D958 jmp near 0xD820
+100D:D95B mov AX,0x2572
+100D:D95E mov word ptr DS:[0x2570],AX
+100D:D961 ret near
+100D:D9D2 call near 0xACE6
+100D:D9D5 mov AX,word ptr DS:[0xCE7A]
+100D:D9D8 mov CX,AX
+100D:D9DA mov BX,AX
+100D:D9DC mov SI,0xDC68
+100D:D9DF xchg CX,word ptr DS:[SI]
+100D:D9E1 sub BX,CX
+100D:D9E3 mov CX,word ptr DS:[SI+2]
+100D:D9E6 jcxz short 0xDA03
+100D:D9E8 add SI,4
+100D:D9EB lods AX,word ptr DS:[SI]
+100D:D9EC mov BP,AX
+100D:D9EE mov AX,BX
+100D:D9F0 add AX,word ptr DS:[SI]
+100D:D9F2 cmp AX,BP
+100D:D9F4 jae short 0xDA04
+100D:D9F6 mov word ptr DS:[SI],AX
+100D:D9F8 add SI,4
+100D:D9FB loop 0xD9EB
+100D:D9FD mov word ptr DS:[0xDC66],0
+100D:DA03 ret near
+100D:DA04 or BP,BP
+100D:DA06 je short 0xDA0E
+100D:DA08 xor DX,DX
+100D:DA0A div BP
+100D:DA0C mov word ptr DS:[SI],DX
+100D:DA0E sub SI,2
+100D:DA11 push BX
+100D:DA12 push CX
+100D:DA13 push SI
+100D:DA14 mov word ptr DS:[0xDC66],SP
+100D:DA18 call near word ptr DS:[SI+4]
+100D:DA1B pop SI
+100D:DA1C pop CX
+100D:DA1D pop BX
+100D:DA1E add SI,6
+100D:DA21 loop 0xD9EB
+100D:DA23 jmp short 0xD9FD
+100D:DA25 push DS
+100D:DA26 pop ES
+100D:DA27 mov DI,0xDC6A
+100D:DA2A mov AX,word ptr DS:[DI]
+100D:DA2C inc AX
+100D:DA2D cmp AX,0x0014
+100D:DA30 ja short 0xDA52
+100D:DA32 stos word ptr ES:[DI],AX
+100D:DA33 dec AX
+100D:DA34 add AX,AX
+100D:DA36 mov BX,AX
+100D:DA38 add AX,AX
+100D:DA3A add AX,BX
+100D:DA3C add DI,AX
+100D:DA3E mov AX,BP
+100D:DA40 stos word ptr ES:[DI],AX
+100D:DA41 xor AX,AX
+100D:DA43 stos word ptr ES:[DI],AX
+100D:DA44 mov AX,SI
+100D:DA46 stos word ptr ES:[DI],AX
+100D:DA47 mov BP,word ptr DS:[0xDC66]
+100D:DA4B or BP,BP
+100D:DA4D je short 0xDA52
+100D:DA52 ret near
+100D:DA53 mov word ptr DS:[0xDC6A],0
+100D:DA59 mov byte ptr DS:[0x46D7],0
+100D:DA5E ret near
+100D:DA5F mov DI,0xDC6A
+100D:DA62 mov CX,word ptr DS:[DI]
+100D:DA64 jcxz short 0xDA72
+100D:DA66 add DI,6
+100D:DA69 cmp word ptr DS:[DI],SI
+100D:DA6B je short 0xDA73
+100D:DA6D add DI,6
+100D:DA70 loop 0xDA69
+100D:DA72 ret near
+100D:DA73 sub DI,4
+100D:DA76 dec word ptr DS:[0xDC6A]
+100D:DA7A mov BP,word ptr DS:[0xDC66]
+100D:DA7E or BP,BP
+100D:DA80 je short 0xDA90
+100D:DA82 cmp DI,word ptr SS:[BP]
+100D:DA85 ja short 0xDA8D
+100D:DA87 sub word ptr SS:[BP],6
+100D:DA8B jmp short 0xDA90
+100D:DA90 dec CX
+100D:DA91 je short 0xDA72
+100D:DA93 mov AX,CX
+100D:DA95 add CX,CX
+100D:DA97 add CX,AX
+100D:DA99 mov SI,DI
+100D:DA9B add SI,6
+100D:DA9E push DS
+100D:DA9F pop ES
+100D:DAA0 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:DAA2 ret near
+100D:DAA3 mov word ptr DS:[0xDC58],0
+100D:DAA9 ret near
+100D:DAAA mov word ptr DS:[0xDC58],SI
+100D:DAAE ret near
+100D:DAE3 test byte ptr DS:[0x2942],0x40
+100D:DAE8 jne short 0xDB02
+100D:DAEA mov AX,word ptr DS:[0xDC36]
+100D:DAED mov DX,word ptr DS:[0xDC38]
+100D:DAF1 mov CX,word ptr DS:[0x2580]
+100D:DAF5 shl AX,CL
+100D:DAF7 mov CL,CH
+100D:DAF9 shl DX,CL
+100D:DAFB mov CX,AX
+100D:DAFD mov AX,4
+100D:DB00 int 0x33
+100D:DB02 ret near
+100D:DB03 call near 0xDBB2
+100D:DB06 mov word ptr DS:[0xDC36],DX
+100D:DB0A mov word ptr DS:[0xDC38],BX
+100D:DB0E call near 0xDAE3
+100D:DB11 jmp near 0xDBEC
+100D:DB14 mov DI,0xDC3A
+100D:DB17 mov word ptr DS:[DI],CX
+100D:DB19 mov word ptr DS:[DI+2],DX
+100D:DB1C mov word ptr DS:[DI+4],AX
+100D:DB1F mov word ptr DS:[DI+6],BX
+100D:DB22 test byte ptr DS:[0x2942],0x40
+100D:DB27 jne short 0xDB43
+100D:DB29 push AX
+100D:DB2A push BX
+100D:DB2B mov AL,byte ptr DS:[0x2580]
+100D:DB2E call near 0xDB44
+100D:DB31 mov AX,7
+100D:DB34 int 0x33
+100D:DB36 pop DX
+100D:DB37 pop CX
+100D:DB38 mov AL,byte ptr DS:[0x2581]
+100D:DB3B call near 0xDB44
+100D:DB3E mov AX,8
+100D:DB41 int 0x33
+100D:DB43 ret near
+100D:DB44 xchg CX,AX
+100D:DB45 shl AX,CL
+100D:DB47 shl DX,CL
+100D:DB49 mov CX,AX
+100D:DB4B ret near
+100D:DB4C mov AX,word ptr DS:[0xDC34]
+100D:DB4F and AL,3
+100D:DB51 mov byte ptr DS:[0xDC35],AL
+100D:DB54 xor AH,AL
+100D:DB56 add AH,AH
+100D:DB58 add AH,AH
+100D:DB5A or AL,AH
+100D:DB5C xor AH,AH
+100D:DB5E mov DX,word ptr DS:[0xDC36]
+100D:DB62 mov BX,word ptr DS:[0xDC38]
+100D:DB66 ret near
+100D:DB67 cmp byte ptr DS:[0xDC47],0
+100D:DB6C jns short 0xDBAB
+100D:DB6E inc byte ptr DS:[0xDC47]
+100D:DB72 jmp short 0xDBEC
+100D:DB74 cmp byte ptr DS:[0xDC46],0
+100D:DB79 js short 0xDBAB
+100D:DB7B push BX
+100D:DB7C push DX
+100D:DB7D mov BX,word ptr DS:[0x2582]
+100D:DB81 mov DX,word ptr DS:[0xDC42]
+100D:DB85 sub DX,word ptr DS:[BX]
+100D:DB87 mov BX,word ptr DS:[BX+2]
+100D:DB8A neg BX
+100D:DB8C add BX,word ptr DS:[0xDC44]
+100D:DB90 cmp DX,word ptr DS:[SI+4]
+100D:DB93 jge short 0xDBA9
+100D:DB95 cmp BX,word ptr DS:[SI+6]
+100D:DB98 jge short 0xDBA9
+100D:DB9A add DX,0x0010
+100D:DB9D cmp DX,word ptr DS:[SI]
+100D:DB9F jle short 0xDBA9
+100D:DBA1 add BX,0x0010
+100D:DBA4 cmp BX,word ptr DS:[SI+2]
+100D:DBA7 jg short 0xDBAC
+100D:DBA9 pop DX
+100D:DBAA pop BX
+100D:DBAB ret near
+100D:DBAC pop DX
+100D:DBAD pop BX
+100D:DBAE dec byte ptr DS:[0xDC47]
+100D:DBB2 push AX
+100D:DBB3 mov AL,byte ptr DS:[0xDC46]
+100D:DBB6 dec byte ptr DS:[0xDC46]
+100D:DBBA js short 0xDBC0
+100D:DBC0 or AL,AL
+100D:DBC2 js short 0xDBC8
+100D:DBC4 call far dword ptr DS:[0x38C5]
+100D:DBC8 pop AX
+100D:DBC9 ret near
+100D:DBCA mov AX,word ptr DS:[0xDC44]
+100D:DBCD cmp AX,0x0098
+100D:DBD0 jae short 0xDBE2
+100D:DBD2 cmp AX,0x0088
+100D:DBD5 jae short 0xDBB2
+100D:DBD7 dec byte ptr DS:[0xDC46]
+100D:DBDB js short 0xDBE2
+100D:DBE2 ret near
+100D:DBE3 mov AX,word ptr DS:[0xDC44]
+100D:DBE6 cmp AX,0x0098
+100D:DBE9 jb short 0xDBEC
+100D:DBEB ret near
+100D:DBEC inc byte ptr DS:[0xDC46]
+100D:DBF0 js short 0xDC1A
+100D:DBF2 jne short 0xDC1B
+100D:DBF4 push AX
+100D:DBF5 push BX
+100D:DBF6 push CX
+100D:DBF7 push DX
+100D:DBF8 push SI
+100D:DBF9 push DI
+100D:DBFA push BP
+100D:DBFB mov DX,word ptr DS:[0xDC36]
+100D:DBFF mov BX,word ptr DS:[0xDC38]
+100D:DC03 mov word ptr DS:[0xDC42],DX
+100D:DC07 mov word ptr DS:[0xDC44],BX
+100D:DC0B mov SI,word ptr DS:[0x2582]
+100D:DC0F call far dword ptr DS:[0x38C1]
+100D:DC13 pop BP
+100D:DC14 pop DI
+100D:DC15 pop SI
+100D:DC16 pop DX
+100D:DC17 pop CX
+100D:DC18 pop BX
+100D:DC19 pop AX
+100D:DC1A ret near
+100D:DC1B dec byte ptr DS:[0xDC46]
+100D:DC1F ret near
+100D:DC20 push AX
+100D:DC21 push BX
+100D:DC22 push CX
+100D:DC23 push DX
+100D:DC24 push SI
+100D:DC25 push DI
+100D:DC26 push BP
+100D:DC27 mov DX,word ptr DS:[0xDC36]
+100D:DC2B mov BX,word ptr DS:[0xDC38]
+100D:DC2F call near 0xDC6A
+100D:DC32 mov SI,BP
+100D:DC34 xchg BP,word ptr DS:[0x2582]
+100D:DC38 xor AL,AL
+100D:DC3A xchg AL,byte ptr DS:[0xDC46]
+100D:DC3E or AL,AL
+100D:DC40 js short 0xDC56
+100D:DC42 cmp DX,word ptr DS:[0xDC42]
+100D:DC46 jne short 0xDC52
+100D:DC48 cmp BX,word ptr DS:[0xDC44]
+100D:DC4C jne short 0xDC52
+100D:DC4E cmp SI,BP
+100D:DC50 je short 0xDC62
+100D:DC52 call far dword ptr DS:[0x38C5]
+100D:DC56 mov word ptr DS:[0xDC42],DX
+100D:DC5A mov word ptr DS:[0xDC44],BX
+100D:DC5E call far dword ptr DS:[0x38C1]
+100D:DC62 pop BP
+100D:DC63 pop DI
+100D:DC64 pop SI
+100D:DC65 pop DX
+100D:DC66 pop CX
+100D:DC67 pop BX
+100D:DC68 pop AX
+100D:DC69 ret near
+100D:DC6A cmp byte ptr DS:[0x28BE],0
+100D:DC6F mov BP,0x25C8
+100D:DC72 jne short 0xDCDF
+100D:DC74 mov BP,0x2584
+100D:DC77 cmp byte ptr DS:[0x4723],0
+100D:DC7C jne short 0xDCDF
+100D:DC7E mov DI,word ptr DS:[0xDC58]
+100D:DC82 or DI,DI
+100D:DC84 je short 0xDCDF
+100D:DC86 cmp BX,0x009B
+100D:DC8A jge short 0xDCDF
+100D:DC8C call near 0xD6FE
+100D:DC8F mov BP,0x25C8
+100D:DC92 jb short 0xDCDF
+100D:DC94 cmp BX,word ptr DS:[DI+2]
+100D:DC97 jl short 0xDCB9
+100D:DC99 cmp BX,word ptr DS:[DI+6]
+100D:DC9C jge short 0xDCB9
+100D:DC9E mov BP,0x26D8
+100D:DCA1 mov AX,word ptr DS:[DI]
+100D:DCA3 sub AX,DX
+100D:DCA5 cmp AX,0x0032
+100D:DCA8 jb short 0xDCDF
+100D:DCAA mov BP,0x2650
+100D:DCAD mov AX,DX
+100D:DCAF sub AX,word ptr DS:[DI+4]
+100D:DCB2 cmp AX,0x0032
+100D:DCB5 jb short 0xDCDF
+100D:DCB7 jmp short 0xDCDC
+100D:DCB9 cmp DX,word ptr DS:[DI]
+100D:DCBB jl short 0xDCDC
+100D:DCBD cmp DX,word ptr DS:[DI+4]
+100D:DCC0 jge short 0xDCDC
+100D:DCC2 mov BP,0x260C
+100D:DCC5 mov AX,word ptr DS:[DI+2]
+100D:DCC8 sub AX,BX
+100D:DCCA cmp AX,0x0019
+100D:DCCD jb short 0xDCDF
+100D:DCCF mov BP,0x2694
+100D:DCD2 mov AX,BX
+100D:DCD4 sub AX,word ptr DS:[DI+6]
+100D:DCD7 cmp AX,0x0019
+100D:DCDA jb short 0xDCDF
+100D:DCDC mov BP,0x2584
+100D:DCDF ret near
+100D:DD63 call near 0xDE7B
+100D:DD66 call near 0xDE54
+100D:DD69 je short 0xDDAE
+100D:DD6B cmp byte ptr DS:[0xCEE8],0
+100D:DD70 jne short 0xDDAE
+100D:DD72 test byte ptr DS:[0x2942],0x40
+100D:DD77 jne short 0xDD89
+100D:DD79 mov AX,3
+100D:DD7C int 0x33
+100D:DD7E xchg BX,SI
+100D:DD80 xor BX,SI
+100D:DD82 and BX,SI
+100D:DD84 and BL,7
+100D:DD87 jne short 0xDDAE
+100D:DD89 test byte ptr DS:[0x2942],0x80
+100D:DD8E je short 0xDD9E
+100D:DD9E push SI
+100D:DD9F push DI
+100D:DDA0 call near 0xE3CC
+100D:DDA3 mov word ptr DS:[0],AX
+100D:DDA6 call near 0xD9D2
+100D:DDA9 pop DI
+100D:DDAA pop SI
+100D:DDAB or AL,1
+100D:DDAD ret near
+100D:DDAE stc
+100D:DDAF ret near
+100D:DDB0 call near 0xE270
+100D:DDB3 push AX
+100D:DDB4 mov byte ptr DS:[0xCEE8],0
+100D:DDB9 cmp byte ptr DS:[0x227D],0
+100D:DDBE jne short 0xDDC3
+100D:DDC0 call near 0xD64E
+100D:DDC3 mov SI,0xFFFF
+100D:DDC6 mov DI,SI
+100D:DDC8 pop CX
+100D:DDC9 sti
+100D:DDCA push word ptr DS:[0xCE7A]
+100D:DDCE push CX
+100D:DDCF call near 0xDD63
+100D:DDD2 pop CX
+100D:DDD3 pop AX
+100D:DDD4 jb short 0xDDE7
+100D:DDD6 mov BX,AX
+100D:DDD8 mov AX,BX
+100D:DDDA sub AX,word ptr SS:[0xCE7A]
+100D:DDDF je short 0xDDD8
+100D:DDE1 add CX,AX
+100D:DDE3 jb short 0xDDCA
+100D:DDE5 or AL,1
+100D:DDE7 pushf
+100D:DDE8 call near 0xDE4E
+100D:DDEB popf
+100D:DDEC call near 0xE283
+100D:DDEF ret near
+100D:DDF0 cmp byte ptr DS:[0xDBCD],0
+100D:DDF5 js short 0xDE07
+100D:DDF7 call near 0xABA3
+100D:DDFA je short 0xDDB0
+100D:DE07 push AX
+100D:DE08 or AL,1
+100D:DE0A pop AX
+100D:DE0B ret near
+100D:DE0C cmp byte ptr DS:[0xDBCD],0
+100D:DE11 jns short 0xDE07
+100D:DE13 call near 0xE270
+100D:DE16 mov byte ptr DS:[0xCEE8],0
+100D:DE1B mov SI,0xFFFF
+100D:DE1E mov DI,SI
+100D:DE20 mov AX,0x0060
+100D:DE23 sub AX,word ptr DS:[0xDBD0]
+100D:DE27 xor AH,AH
+100D:DE29 mov DL,6
+100D:DE2B div DL
+100D:DE2D and AL,0x0F
+100D:DE2F mov DX,word ptr DS:[0xDBCE]
+100D:DE33 shl DX,1
+100D:DE35 shl DX,1
+100D:DE37 shl DX,1
+100D:DE39 shl DX,1
+100D:DE3B or DL,AL
+100D:DE3D cmp BX,DX
+100D:DE3F jbe short 0xDE4A
+100D:DE41 push BX
+100D:DE42 call near 0xDD63
+100D:DE45 pop BX
+100D:DE46 jb short 0xDDE7
+100D:DE48 jmp short 0xDE20
+100D:DE4A or AL,1
+100D:DE4C jmp short 0xDDE7
+100D:DE4E mov byte ptr DS:[0xCEE8],0
+100D:DE53 ret near
+100D:DE54 mov byte ptr DS:[0xCEE9],0
+100D:DE59 cmp byte ptr DS:[0xCEE8],1
+100D:DE5E jne short 0xDE67
+100D:DE60 mov byte ptr DS:[0xCEE9],1
+100D:DE65 jmp short 0xDE4E
+100D:DE67 ret near
+100D:DE7A ret near
+100D:DE7B cmp byte ptr DS:[0xCE9A],0
+100D:DE80 je short 0xDE7A
+100D:DF1E call near 0xDE7B
+100D:DF21 xor AL,AL
+100D:DF23 test byte ptr DS:[0x2942],0x40
+100D:DF28 jne short 0xDF49
+100D:DF2A mov AX,3
+100D:DF2D int 0x33
+100D:DF2F mov AX,CX
+100D:DF31 mov CX,word ptr DS:[0x2580]
+100D:DF35 shr AX,CL
+100D:DF37 mov CL,CH
+100D:DF39 shr DX,CL
+100D:DF3B mov CX,AX
+100D:DF3D mov AL,BL
+100D:DF3F and AL,3
+100D:DF41 mov word ptr DS:[0xDC36],CX
+100D:DF45 mov word ptr DS:[0xDC38],DX
+100D:DF49 mov byte ptr DS:[0xDC34],AL
+100D:DF4C test byte ptr DS:[0x2942],0x80
+100D:DF51 je short 0xDF56
+100D:DF56 mov SI,0xCEC8
+100D:DF59 mov DI,word ptr DS:[0xDC48]
+100D:DF5D xor DX,DX
+100D:DF5F mov BX,DX
+100D:DF61 mov AX,DX
+100D:DF63 mov CX,0x000D
+100D:DF66 lods AL,byte ptr DS:[SI]
+100D:DF67 or AL,byte ptr DS:[SI+0x12]
+100D:DF6A je short 0xDF74
+100D:DF74 add DI,6
+100D:DF77 loop 0xDF66
+100D:DF79 mov AL,byte ptr DS:[0xCEBA]
+100D:DF7C or AL,byte ptr DS:[0xCE9D]
+100D:DF80 or AL,byte ptr DS:[0xCEE6]
+100D:DF84 and AL,1
+100D:DF86 mov AH,AL
+100D:DF88 xchg AL,byte ptr DS:[0xDC57]
+100D:DF8C not AL
+100D:DF8E and AL,byte ptr DS:[0xDC34]
+100D:DF92 or AL,AH
+100D:DF94 mov byte ptr DS:[0xDC34],AL
+100D:DF97 mov AX,DX
+100D:DF99 or AX,BX
+100D:DF9B jne short 0xDFB7
+100D:DF9D mov word ptr DS:[0xDC51],AX
+100D:DFA0 mov word ptr DS:[0xDC53],AX
+100D:DFA3 mov word ptr DS:[0xDC55],AX
+100D:DFA6 ret near
+100D:E26F ret near
+100D:E270 push BX
+100D:E271 push CX
+100D:E272 push DX
+100D:E273 push SI
+100D:E274 push DI
+100D:E275 push BP
+100D:E276 mov BP,SP
+100D:E278 xchg AX,word ptr SS:[BP+0x0C]
+100D:E27B push AX
+100D:E27C mov AX,word ptr SS:[BP+0x0C]
+100D:E27F mov BP,word ptr SS:[BP]
+100D:E282 ret near
+100D:E283 pop AX
+100D:E284 mov BP,SP
+100D:E286 xchg AX,word ptr SS:[BP+0x0C]
+100D:E289 pop BP
+100D:E28A pop DI
+100D:E28B pop SI
+100D:E28C pop DX
+100D:E28D pop CX
+100D:E28E pop BX
+100D:E28F ret near
+100D:E290 call near 0xD04E
+100D:E293 jmp short 0xE297
+100D:E295 xor AH,AH
+100D:E297 push CX
+100D:E298 mov CX,0x0064
+100D:E29B div CL
+100D:E29D add AL,0x30
+100D:E29F cmp AL,0x30
+100D:E2A1 jne short 0xE2A7
+100D:E2A3 mov AL,0x20
+100D:E2A5 dec CH
+100D:E2A7 call near word ptr DS:[0x2518]
+100D:E2AB mov AL,AH
+100D:E2AD aam
+100D:E2AF xchg AL,AH
+100D:E2B1 add AX,0x3030
+100D:E2B4 or CH,CH
+100D:E2B6 je short 0xE2BE
+100D:E2B8 cmp AL,0x30
+100D:E2BA jne short 0xE2BE
+100D:E2BC mov AL,0x20
+100D:E2BE call near word ptr DS:[0x2518]
+100D:E2C2 mov AL,AH
+100D:E2C4 call near word ptr DS:[0x2518]
+100D:E2C8 pop CX
+100D:E2C9 ret near
+100D:E2DB push AX
+100D:E2DC call near 0xCF70
+100D:E2DF call near 0xD03C
+100D:E2E2 pop AX
+100D:E2E3 push BX
+100D:E2E4 push CX
+100D:E2E5 mov CX,0x0064
+100D:E2E8 mov BX,CX
+100D:E2EA cmp AX,0x03E8
+100D:E2ED jb short 0xE2F2
+100D:E2F2 div CL
+100D:E2F4 add AL,0x30
+100D:E2F6 cmp AL,0x30
+100D:E2F8 jne short 0xE2FE
+100D:E2FA mov AL,0x20
+100D:E2FC xor BX,BX
+100D:E2FE mov byte ptr ES:[SI-3],AL
+100D:E302 mov AL,AH
+100D:E304 aam
+100D:E306 xchg AL,AH
+100D:E308 add AX,0x3030
+100D:E30B or BX,BX
+100D:E30D jne short 0xE315
+100D:E30F cmp AL,0x30
+100D:E311 jne short 0xE315
+100D:E313 mov AL,0x20
+100D:E315 mov word ptr ES:[SI-2],AX
+100D:E319 pop CX
+100D:E31A pop BX
+100D:E31B ret near
+100D:E31C push BX
+100D:E31D push CX
+100D:E31E mov CX,0x03E8
+100D:E321 mov BX,CX
+100D:E323 xor DX,DX
+100D:E325 div CX
+100D:E327 aam
+100D:E329 xchg AL,AH
+100D:E32B add AX,0x3030
+100D:E32E cmp AL,0x30
+100D:E330 jne short 0xE33D
+100D:E332 mov AL,0x20
+100D:E334 cmp AH,0x30
+100D:E337 jne short 0xE33D
+100D:E339 mov AH,AL
+100D:E33B xor BX,BX
+100D:E33D mov word ptr ES:[SI-5],AX
+100D:E341 mov AX,DX
+100D:E343 xor DX,DX
+100D:E345 mov CX,0x0064
+100D:E348 div CL
+100D:E34A add AL,0x30
+100D:E34C or BX,BX
+100D:E34E jne short 0xE2FE
+100D:E350 inc BX
+100D:E351 jmp short 0xE2F6
+100D:E353 push AX
+100D:E354 push word ptr DS:[0xCE7A]
+100D:E358 call near BP
+100D:E35A pop BX
+100D:E35B pop BP
+100D:E35C cmp byte ptr DS:[0x227D],0
+100D:E361 je short 0xE378
+100D:E363 push BX
+100D:E364 push CX
+100D:E365 push DX
+100D:E366 push SI
+100D:E367 push DI
+100D:E368 push BP
+100D:E369 push ES
+100D:E36A call near 0xDD63
+100D:E36D pop ES
+100D:E36E pop BP
+100D:E36F pop DI
+100D:E370 pop SI
+100D:E371 pop DX
+100D:E372 pop CX
+100D:E373 pop BX
+100D:E374 jb short 0xE386
+100D:E376 jmp short 0xE37B
+100D:E378 call near 0xDE7B
+100D:E37B mov AX,word ptr DS:[0xCE7A]
+100D:E37E sub AX,BX
+100D:E380 cmp AX,BP
+100D:E382 jb short 0xE35C
+100D:E384 or AL,1
+100D:E386 ret near
+100D:E387 push AX
+100D:E388 push CX
+100D:E389 mov CX,AX
+100D:E38B jcxz short 0xE39D
+100D:E38D pushf
+100D:E38E sti
+100D:E38F mov AX,word ptr SS:[0xCE7A]
+100D:E393 cmp AX,word ptr SS:[0xCE7A]
+100D:E398 je short 0xE393
+100D:E39A loop 0xE38F
+100D:E39C popf
+100D:E39D pop CX
+100D:E39E pop AX
+100D:E39F ret near
+100D:E3A0 mov CX,AX
+100D:E3A2 mov AX,word ptr DS:[0xCE7A]
+100D:E3A5 cmp AX,word ptr DS:[0xCE7A]
+100D:E3A9 je short 0xE3A5
+100D:E3AB call near 0xE270
+100D:E3AE call near 0xD9D2
+100D:E3B1 call near 0xE283
+100D:E3B4 loop 0xE3A2
+100D:E3B6 ret near
+100D:E3B7 push DX
+100D:E3B8 mov AX,word ptr DS:[0xD824]
+100D:E3BB mov DX,0xE56D
+100D:E3BE mul DX
+100D:E3C0 inc AX
+100D:E3C1 mov word ptr DS:[0xD824],AX
+100D:E3C4 mov AL,AH
+100D:E3C6 mov AH,DL
+100D:E3C8 and AX,BX
+100D:E3CA pop DX
+100D:E3CB ret near
+100D:E3CC push DX
+100D:E3CD mov AX,word ptr DS:[0xD826]
+100D:E3D0 mov DX,0xCBD1
+100D:E3D3 mul DX
+100D:E3D5 inc AX
+100D:E3D6 mov word ptr DS:[0xD826],AX
+100D:E3D9 mov AL,AH
+100D:E3DB mov AH,DL
+100D:E3DD pop DX
+100D:E3DE ret near
+100D:E3DF push CX
+100D:E3E0 push DX
+100D:E3E1 mov AX,BX
+100D:E3E3 or AX,AX
+100D:E3E5 je short 0xE408
+100D:E3E7 mov CX,0xFFFF
+100D:E3EA shl CX,1
+100D:E3EC shr AX,1
+100D:E3EE jne short 0xE3EA
+100D:E3F0 not CX
+100D:E3F2 mov AX,word ptr DS:[0xD828]
+100D:E3F5 mov DX,0xCBD1
+100D:E3F8 mul DX
+100D:E3FA inc AX
+100D:E3FB mov word ptr DS:[0xD828],AX
+100D:E3FE mov AL,AH
+100D:E400 mov AH,DL
+100D:E402 and AX,CX
+100D:E404 cmp AX,BX
+100D:E406 ja short 0xE3F2
+100D:E408 pop DX
+100D:E409 pop CX
+100D:E40A ret near
+100D:E4AD mov SI,0x0080
+100D:E4B0 lods AL,byte ptr DS:[SI]
+100D:E4B1 xor AH,AH
+100D:E4B3 mov BP,AX
+100D:E4B5 add BP,SI
+100D:E4B7 push CS
+100D:E4B8 pop ES
+100D:E4B9 call near 0xE56B
+100D:E4BC jb short 0xE4E5
+100D:E4BE je short 0xE4B9
+100D:E4C0 mov DL,AL
+100D:E4C2 call near 0xE56B
+100D:E4C5 jbe short 0xE542
+100D:E4C7 mov AH,AL
+100D:E4C9 call near 0xE56B
+100D:E4CC jbe short 0xE542
+100D:E4CE xchg AL,DL
+100D:E4D0 mov DI,0xE40C
+100D:E4D3 mov CX,0x0017
+100D:E4D6 scas AX,word ptr ES:[DI]
+100D:E4D7 jne short 0xE4DE
+100D:E4D9 cmp DL,byte ptr ES:[DI]
+100D:E4DC je short 0xE4E6
+100D:E4DE add DI,5
+100D:E4E1 loop 0xE4D6
+100D:E4E5 ret near
+100D:E4E6 mov AX,0x1F58
+100D:E4E9 mov ES,AX
+100D:E4EB mov BL,byte ptr CS:[DI+1]
+100D:E4EF xor BH,BH
+100D:E4F1 add BX,0x2942
+100D:E4F5 mov AL,byte ptr CS:[DI+2]
+100D:E4F9 or byte ptr ES:[BX],AL
+100D:E4FC mov BX,word ptr CS:[DI+3]
+100D:E500 or BX,BX
+100D:E502 je short 0xE542
+100D:E504 call near 0xE56B
+100D:E507 jb short 0xE4E5
+100D:E509 je short 0xE542
+100D:E50B dec SI
+100D:E50C cmp BX,0x3826
+100D:E510 je short 0xE54D
+100D:E512 xor DX,DX
+100D:E514 call near 0xE56B
+100D:E517 mov AH,AL
+100D:E519 jbe short 0xE537
+100D:E51B sub AL,0x30
+100D:E51D jb short 0xE537
+100D:E51F cmp AL,9
+100D:E521 jbe short 0xE52B
+100D:E52B shl DX,1
+100D:E52D shl DX,1
+100D:E52F shl DX,1
+100D:E531 shl DX,1
+100D:E533 or DL,AL
+100D:E535 jmp short 0xE514
+100D:E537 mov word ptr ES:[BX],DX
+100D:E53A add BX,2
+100D:E53D cmp AH,0x20
+100D:E540 ja short 0xE512
+100D:E542 dec SI
+100D:E543 call near 0xE56B
+100D:E546 jb short 0xE4E5
+100D:E548 jne short 0xE543
+100D:E54A jmp near 0xE4B7
+100D:E56B mov AL,0x0D
+100D:E56D cmp SI,BP
+100D:E56F jae short 0xE578
+100D:E571 lods AL,byte ptr DS:[SI]
+100D:E572 cmp AL,0x61
+100D:E574 jb short 0xE578
+100D:E578 cmp AL,0x20
+100D:E57A ret near
+100D:E57B push CX
+100D:E57C push SI
+100D:E57D add AX,0x00C8
+100D:E580 mov SI,AX
+100D:E582 call near 0xF0B9
+100D:E585 pop SI
+100D:E586 pop CX
+100D:E587 mov AX,ES
+100D:E589 sub AX,0x0010
+100D:E58C mov word ptr DS:[SI],AX
+100D:E58E add SI,4
+100D:E591 loop 0xE58C
+100D:E593 ret near
+100D:E594 mov AX,0x1F58
+100D:E597 mov ES,AX
+100D:E599 mov CX,0xDD1D
+100D:E59C mov DI,0x3CBC
+100D:E59F sub CX,DI
+100D:E5A1 cld
+100D:E5A2 xor AX,AX
+100D:E5A4 rep stos byte ptr ES:[DI],AL
+100D:E5A6 mov AX,word ptr DS:[2]
+100D:E5A9 push ES
+100D:E5AA pop DS
+100D:E5AB mov word ptr DS:[0xCE68],AX
+100D:E5AE mov CX,0xDD1D
+100D:E5B1 call near 0xF0FF
+100D:E5B4 mov AX,0x4C6F
+100D:E5B7 mov CL,4
+100D:E5B9 shr AX,CL
+100D:E5BB mov CX,DS
+100D:E5BD add AX,CX
+100D:E5BF mov word ptr DS:[0xDC32],AX
+100D:E5C2 mov AH,0x19
+100D:E5C4 int 0x21
+100D:E5C6 mov byte ptr DS:[0xCE76],AL
+100D:E5C9 mov byte ptr DS:[0xCE77],AL
+100D:E5CC mov AX,0x3301
+100D:E5CF int 0x21
+100D:E5D1 mov byte ptr DS:[0x2941],DL
+100D:E5D5 mov AX,0x3301
+100D:E5D8 xor DX,DX
+100D:E5DA int 0x21
+100D:E5DC call near 0xE675
+100D:E5DF mov AL,byte ptr DS:[0x2942]
+100D:E5E2 and AX,1
+100D:E5E5 mov SI,0x38B7
+100D:E5E8 mov CX,0x002E
+100D:E5EB call near 0xE57B
+100D:E5EE call far dword ptr DS:[0x38B9]
+100D:E5F2 mov word ptr DS:[0xDBD8],AX
+100D:E5F5 call near 0xC08E
+100D:E5F8 mov word ptr DS:[0xCE74],CX
+100D:E5FC mov DI,0xDBDC
+100D:E5FF call near 0xF0F6
+100D:E602 mov word ptr DS:[0xDBD6],BP
+100D:E606 or BP,BP
+100D:E608 jne short 0xE610
+100D:E60A mov DI,0xDBD4
+100D:E60D call near 0xF0F6
+100D:E610 call far dword ptr DS:[0x38B5]
+100D:E614 mov AL,byte ptr DS:[0x2942]
+100D:E617 push AX
+100D:E618 shr AL,1
+100D:E61A shr AL,1
+100D:E61C and AL,7
+100D:E61E mov byte ptr DS:[0xCEEB],AL
+100D:E621 pop AX
+100D:E622 or AL,AL
+100D:E624 jns short 0xE62B
+100D:E62B test AL,0x40
+100D:E62D jne short 0xE632
+100D:E62F call near 0xE97A
+100D:E632 call near 0xE85C
+100D:E635 call near 0xEA7B
+100D:E638 mov AL,byte ptr DS:[0x2942]
+100D:E63B and AL,2
+100D:E63D mov BP,0xCE7A
+100D:E640 call far dword ptr DS:[0x3925]
+100D:E644 mov word ptr DS:[0xDC48],0x271C
+100D:E64A mov byte ptr DS:[0xDC46],0xFF
+100D:E64F xor AX,AX
+100D:E651 mov BX,0x00C7
+100D:E654 xor CX,CX
+100D:E656 mov DX,0x013F
+100D:E659 call near 0xDB14
+100D:E65C mov BX,0x00AB
+100D:E65F mov DX,0x00ED
+100D:E662 call near 0xDB03
+100D:E665 call near 0xE76A
+100D:E668 call near 0xCE6C
+100D:E66B call near 0xC07C
+100D:E66E call near 0xC0AD
+100D:E671 jmp near 0xC412
+100D:E675 mov DX,0x37F2
+100D:E678 call near 0xF1FB
+100D:E67B jb short 0xE692
+100D:E692 mov SI,0x37F7
+100D:E695 inc byte ptr DS:[SI]
+100D:E697 cmp byte ptr DS:[SI],0x39
+100D:E69A jbe short 0xE675
+100D:E69C mov DX,0x37E9
+100D:E69F mov AX,0x3D00
+100D:E6A2 int 0x21
+100D:E6A4 jb short 0xE674
+100D:E6A6 mov word ptr DS:[0xDBBA],AX
+100D:E6A9 call near 0xE741
+100D:E6AC mov SI,DI
+100D:E6AE mov BP,ES
+100D:E6B0 les DI,word ptr DS:[0x39B7]
+100D:E6B4 mov word ptr DS:[0xDBBC],DI
+100D:E6B8 mov word ptr DS:[0xDBBE],ES
+100D:E6BC mov AX,0x0145
+100D:E6BF stos word ptr ES:[DI],AX
+100D:E6C0 mov CX,0x014D
+100D:E6C3 mov AL,0xFF
+100D:E6C5 rep stos byte ptr ES:[DI],AL
+100D:E6C7 mov word ptr DS:[0xD820],DI
+100D:E6CB push DS
+100D:E6CC mov DS,BP
+100D:E6CE lods AX,word ptr DS:[SI]
+100D:E6CF push SI
+100D:E6D0 call near 0xF314
+100D:E6D3 pop SI
+100D:E6D4 jb short 0xE702
+100D:E6D6 call near 0xF3A7
+100D:E6D9 je short 0xE6F9
+100D:E6DB push AX
+100D:E6DC push DX
+100D:E6DD push SI
+100D:E6DE push DI
+100D:E6DF mov CX,word ptr SS:[0xD820]
+100D:E6E4 mov SI,CX
+100D:E6E6 sub CX,DI
+100D:E6E8 sub SI,2
+100D:E6EB lea DI,SI+0x0A
+100D:E6EE shr CX,1
+100D:E6F0 std
+100D:E6F1 rep movs word ptr ES:[DI],word ptr ES:[SI]
+100D:E6F4 cld
+100D:E6F5 pop DI
+100D:E6F6 pop SI
+100D:E6F7 pop DX
+100D:E6F8 pop AX
+100D:E6F9 call near 0xE75B
+100D:E6FC add word ptr SS:[0xD820],0x000A
+100D:E702 add SI,0x0019
+100D:E705 cmp byte ptr DS:[SI],0
+100D:E708 jne short 0xE6CF
+100D:E70A pop DS
+100D:E70B mov SI,0x0145
+100D:E70E mov AX,word ptr DS:[0xD820]
+100D:E711 sub AX,SI
+100D:E713 xor DX,DX
+100D:E715 mov CX,0x0280
+100D:E718 div CX
+100D:E71A mov DX,0x000A
+100D:E71D mul DX
+100D:E71F mov DX,AX
+100D:E721 les DI,word ptr SS:[0xDBBC]
+100D:E726 add DI,2
+100D:E729 add SI,DX
+100D:E72B push SI
+100D:E72C movs word ptr ES:[DI],word ptr ES:[SI]
+100D:E72E movs byte ptr ES:[DI],byte ptr ES:[SI]
+100D:E730 pop SI
+100D:E731 mov AX,SI
+100D:E733 stos word ptr ES:[DI],AX
+100D:E734 cmp DI,0x0140
+100D:E738 jb short 0xE729
+100D:E73A mov CX,word ptr DS:[0xD820]
+100D:E73E jmp near 0xF0FF
+100D:E741 xor AX,AX
+100D:E743 xor DX,DX
+100D:E745 call near 0xF2D6
+100D:E748 mov AX,word ptr DS:[0x39B9]
+100D:E74B add AX,0x0800
+100D:E74E mov ES,AX
+100D:E750 xor DI,DI
+100D:E752 mov CX,0xFFFF
+100D:E755 call near 0xF2EA
+100D:E758 jb short 0xE741
+100D:E75A ret near
+100D:E75B push SI
+100D:E75C stos word ptr ES:[DI],AX
+100D:E75D mov AL,DL
+100D:E75F stos byte ptr ES:[DI],AL
+100D:E760 add SI,0x0010
+100D:E763 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:E764 movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:E765 inc SI
+100D:E766 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:E767 movs word ptr ES:[DI],word ptr DS:[SI]
+100D:E768 pop SI
+100D:E769 ret near
+100D:E76A mov AL,byte ptr DS:[0x2944]
+100D:E76D mov CL,4
+100D:E76F shr AL,CL
+100D:E771 add AL,7
+100D:E773 xor AH,AH
+100D:E775 mov SI,0x398B
+100D:E778 mov CX,8
+100D:E77B call near 0xE57B
+100D:E77E mov AX,word ptr DS:[0x39B5]
+100D:E781 call far dword ptr DS:[0x3989]
+100D:E785 mov word ptr DS:[0xDBC8],BX
+100D:E789 call near 0xA637
+100D:E78C call near 0xAE54
+100D:E78F call near 0xE851
+100D:E792 jb short 0xE7BC
+100D:E7BC mov AX,word ptr DS:[0x3813]
+100D:E7BF mov word ptr DS:[0x381B],AX
+100D:E7C2 call near 0xA87E
+100D:E7C5 mov AL,byte ptr DS:[0x2944]
+100D:E7C8 and AX,0x000F
+100D:E7CB add AX,2
+100D:E7CE mov SI,0x396F
+100D:E7D1 mov CX,7
+100D:E7D4 call near 0xE57B
+100D:E7D7 mov BP,0x3349
+100D:E7DA mov CX,0x000A
+100D:E7DD mov AX,word ptr DS:[0x39B3]
+100D:E7E0 call far dword ptr DS:[0x396D]
+100D:E7E4 or word ptr DS:[0xDBC8],BX
+100D:E7E8 call near 0xA650
+100D:E7EB call near 0xAE3F
+100D:E7EE call near 0xE851
+100D:E7F1 jb short 0xE818
+100D:E818 call near 0xAE28
+100D:E81B je short 0xE825
+100D:E81D call near 0xE826
+100D:E820 and byte ptr DS:[0x2943],0xEF
+100D:E825 ret near
+100D:E826 cmp word ptr DS:[0xDBBA],0
+100D:E82B je short 0xE850
+100D:E82D call near 0xE741
+100D:E830 push DS
+100D:E831 mov SI,DI
+100D:E833 push ES
+100D:E834 pop DS
+100D:E835 lods AX,word ptr DS:[SI]
+100D:E836 mov CX,0x00FA
+100D:E839 push CX
+100D:E83A push SI
+100D:E83B call near 0xF314
+100D:E83E pop SI
+100D:E83F jb short 0xE849
+100D:E841 call near 0xF3A7
+100D:E844 jne short 0xE849
+100D:E846 call near 0xE75B
+100D:E849 add SI,0x0019
+100D:E84C pop CX
+100D:E84D loop 0xE839
+100D:E84F pop DS
+100D:E850 ret near
+100D:E851 mov AX,word ptr DS:[0x39B9]
+100D:E854 add AX,0x2F13
+100D:E857 cmp AX,word ptr DS:[0xCE68]
+100D:E85B ret near
+100D:E85C cli
+100D:E85D call near 0xE913
+100D:E860 xor AX,AX
+100D:E862 mov ES,AX
+100D:E864 mov DI,0x0020
+100D:E867 mov word ptr ES:[DI],0xE8B8
+100D:E86C pushf
+100D:E86D sti
+100D:E86E cmp byte ptr CS:[0xE8D4],0
+100D:E874 je short 0xE86E
+100D:E876 popf
+100D:E877 mov word ptr ES:[DI],0xEF6A
+100D:E87C mov AX,word ptr CS:[0xE8D2]
+100D:E880 or AH,AH
+100D:E882 je short 0xE8A5
+100D:E884 or AL,AL
+100D:E886 je short 0xE8A5
+100D:E888 xor DX,DX
+100D:E88A mov CX,0x1745
+100D:E88D div CX
+100D:E88F shl DX,1
+100D:E891 cmp DX,CX
+100D:E893 jb short 0xE896
+100D:E895 inc AX
+100D:E896 dec AX
+100D:E897 jns short 0xE89A
+100D:E899 inc AX
+100D:E89A cmp AX,0x000A
+100D:E89D jb short 0xE8A1
+100D:E89F mov AL,0x0A
+100D:E8A1 mov byte ptr CS:[0xEFD9],AL
+100D:E8A5 mov AX,0x1745
+100D:E8A8 pushf
+100D:E8A9 push AX
+100D:E8AA cli
+100D:E8AB mov AL,0x36
+100D:E8AD out 0x43,AL
+100D:E8AF pop AX
+100D:E8B0 out 0x40,AL
+100D:E8B2 mov AL,AH
+100D:E8B4 out 0x40,AL
+100D:E8B6 popf
+100D:E8B7 ret near
+100D:E8B8 push AX
+100D:E8B9 mov AL,0x36
+100D:E8BB out 0x43,AL
+100D:E8BD in AL,0x40
+100D:E8BF mov AH,AL
+100D:E8C1 in AL,0x40
+100D:E8C3 xchg AH,AL
+100D:E8C5 mov word ptr CS:[0xE8D2],AX
+100D:E8C9 inc byte ptr CS:[0xE8D4]
+100D:E8CE pop AX
+100D:E8CF jmp near 0xEF6A
+100D:E8D5 cmp word ptr CS:[0xEE8A],0
+100D:E8DB je short 0xE8E2
+100D:E8E2 cmp word ptr CS:[0xED3A],0
+100D:E8E8 je short 0xE8EF
+100D:E8EF mov DX,word ptr CS:[0xED3E]
+100D:E8F4 or DX,DX
+100D:E8F6 je short 0xE8FD
+100D:E8FD xor AX,AX
+100D:E8FF call near 0xE8A8
+100D:E902 mov DL,byte ptr DS:[0x2941]
+100D:E906 mov AX,0x3301
+100D:E909 int 0x21
+100D:E90B cmp byte ptr DS:[0xCE73],0
+100D:E910 jne short 0xE913
+100D:E913 xor byte ptr DS:[0xCE73],0xFF
+100D:E918 mov SI,0x2913
+100D:E91B pushf
+100D:E91C cli
+100D:E91D lods AX,word ptr DS:[SI]
+100D:E91E mov DI,AX
+100D:E920 lods AX,word ptr DS:[SI]
+100D:E921 xchg DI,AX
+100D:E922 push SI
+100D:E923 mov SI,AX
+100D:E925 shl SI,1
+100D:E927 shl SI,1
+100D:E929 xor AX,AX
+100D:E92B mov ES,AX
+100D:E92D mov AX,word ptr CS:[DI]
+100D:E930 xchg AX,word ptr ES:[SI]
+100D:E933 mov word ptr CS:[DI],AX
+100D:E936 mov AX,word ptr CS:[DI+2]
+100D:E93A xchg AX,word ptr ES:[SI+2]
+100D:E93E mov word ptr CS:[DI+2],AX
+100D:E942 pop SI
+100D:E943 lods AX,word ptr DS:[SI]
+100D:E944 or AX,AX
+100D:E946 jns short 0xE91E
+100D:E948 popf
+100D:E949 ret near
+100D:E97A mov AX,0x3533
+100D:E97D int 0x21
+100D:E97F mov AX,ES
+100D:E981 or AX,BX
+100D:E983 je short 0xE9F3
+100D:E985 mov AX,0
+100D:E988 int 0x33
+100D:E98A inc AX
+100D:E98B jne short 0xE9F3
+100D:E98D xor CX,CX
+100D:E98F xor DX,DX
+100D:E991 mov AX,4
+100D:E994 int 0x33
+100D:E996 inc byte ptr DS:[0x2580]
+100D:E99A js short 0xE9B3
+100D:E99C mov CL,byte ptr DS:[0x2580]
+100D:E9A0 mov AX,1
+100D:E9A3 shl AX,CL
+100D:E9A5 mov CX,AX
+100D:E9A7 mov AX,4
+100D:E9AA int 0x33
+100D:E9AC mov AX,3
+100D:E9AF int 0x33
+100D:E9B1 jcxz short 0xE996
+100D:E9B3 inc byte ptr DS:[0x2581]
+100D:E9B7 js short 0xE9D0
+100D:E9B9 mov CL,byte ptr DS:[0x2581]
+100D:E9BD mov DX,1
+100D:E9C0 shl DX,CL
+100D:E9C2 mov AX,4
+100D:E9C5 int 0x33
+100D:E9C7 mov AX,3
+100D:E9CA int 0x33
+100D:E9CC or DX,DX
+100D:E9CE je short 0xE9B3
+100D:E9D0 mov AX,0x0010
+100D:E9D3 mov DX,AX
+100D:E9D5 and word ptr DS:[0x2580],0x7F7F
+100D:E9DB mov CX,word ptr DS:[0x2580]
+100D:E9DF shr AX,CL
+100D:E9E1 mov CL,CH
+100D:E9E3 shr DX,CL
+100D:E9E5 mov CX,AX
+100D:E9E7 mov AX,0x000F
+100D:E9EA push DX
+100D:E9EB int 0x33
+100D:E9ED pop DX
+100D:E9EE mov AX,0x0013
+100D:E9F1 int 0x33
+100D:E9F3 ret near
+100D:EA7B test byte ptr DS:[0x2943],0x80
+100D:EA80 je short 0xEA85
+100D:EA85 test byte ptr DS:[0x2943],0x48
+100D:EA8A je short 0xEA8F
+100D:EA8F test byte ptr DS:[0x2943],0xE8
+100D:EA94 je short 0xEAB6
+100D:EAB6 ret near
+100D:EF6A push AX
+100D:EF6B push DS
+100D:EF6C push ES
+100D:EF6D mov AX,0x1F58
+100D:EF70 mov DS,AX
+100D:EF72 cld
+100D:EF73 cmp byte ptr DS:[0xCEEA],0
+100D:EF78 jg short 0xEFA2
+100D:EF7A inc word ptr DS:[0xCE7A]
+100D:EF7E jne short 0xEF84
+100D:EF80 inc word ptr DS:[0xCE7C]
+100D:EF84 cmp byte ptr DS:[0x2788],0
+100D:EF89 jne short 0xEF9F
+100D:EF8B dec word ptr DS:[0x46DB]
+100D:EF8F jns short 0xEF9F
+100D:EF91 mov AX,word ptr DS:[0x146E]
+100D:EF94 mov word ptr DS:[0x46DB],AX
+100D:EF97 inc word ptr DS:[2]
+100D:EF9B inc byte ptr DS:[0x46DD]
+100D:EF9F call near 0xEFBA
+100D:EFA2 pop ES
+100D:EFA3 dec byte ptr DS:[0xCE72]
+100D:EFA7 js short 0xEFD5
+100D:EFA9 mov AL,0x20
+100D:EFAB out 0x20,AL
+100D:EFAD cmp byte ptr DS:[0xDBB5],0
+100D:EFB2 je short 0xEFB7
+100D:EFB4 call near 0xCEC9
+100D:EFB7 pop DS
+100D:EFB8 pop AX
+100D:EFB9 iret
+100D:EFBA push BX
+100D:EFBB test byte ptr DS:[0x2943],0x10
+100D:EFC0 jne short 0xEFD3
+100D:EFC2 push CX
+100D:EFC3 call far dword ptr DS:[0x3981]
+100D:EFC7 mov byte ptr DS:[0xDBCD],AL
+100D:EFCA mov word ptr DS:[0xDBCE],BX
+100D:EFCE mov word ptr DS:[0xDBD0],CX
+100D:EFD2 pop CX
+100D:EFD3 pop BX
+100D:EFD4 ret near
+100D:EFD5 mov byte ptr DS:[0xCE72],byte ptr [0x0001F0A9]
+100D:EFDA pop DS
+100D:EFDB pop AX
+100D:EFDC jmp far F000:0006
+100D:EFE7 push AX
+100D:EFE8 push CX
+100D:EFE9 push DI
+100D:EFEA push DS
+100D:EFEB mov AX,0x1F58
+100D:EFEE mov DS,AX
+100D:EFF0 cld
+100D:EFF1 in AL,0x60
+100D:EFF3 cmp AL,0xFF
+100D:EFF5 je short 0xEFE1
+100D:EFF7 mov DI,AX
+100D:EFF9 and DI,0x007F
+100D:EFFC cmp DI,0x005A
+100D:EFFF jae short 0xF031
+100D:F001 add DI,0xCE81
+100D:F005 cbw
+100D:F006 not AH
+100D:F008 xchg AL,AH
+100D:F00A mov byte ptr DS:[DI],AL
+100D:F00C or AL,AL
+100D:F00E je short 0xF031
+100D:F010 mov AL,AH
+100D:F012 mov byte ptr DS:[0xCEE8],AL
+100D:F015 cmp AL,0x53
+100D:F017 jne short 0xF026
+100D:F026 cmp AL,0x2E
+100D:F028 jne short 0xF031
+100D:F031 cmp AL,0x70
+100D:F033 jae short 0xF049
+100D:F035 in AL,0x61
+100D:F037 or AL,0x80
+100D:F039 out 0x61,AL
+100D:F03B and AL,0x7F
+100D:F03D out 0x61,AL
+100D:F03F mov AL,0x20
+100D:F041 cli
+100D:F042 out 0x20,AL
+100D:F044 pop DS
+100D:F045 pop DI
+100D:F046 pop CX
+100D:F047 pop AX
+100D:F048 iret
+100D:F049 pop DS
+100D:F04A pop DI
+100D:F04B pop CX
+100D:F04C pop AX
+100D:F04D jmp far F000:0011
+100D:F0A0 push DI
+100D:F0A1 push ES
+100D:F0A2 inc byte ptr DS:[0xCE71]
+100D:F0A6 push DS
+100D:F0A7 pop ES
+100D:F0A8 mov DI,0x4C60
+100D:F0AB call near 0xF0B9
+100D:F0AE dec byte ptr DS:[0xCE71]
+100D:F0B2 mov SI,DI
+100D:F0B4 pop ES
+100D:F0B5 pop DI
+100D:F0B6 jmp near 0xF403
+100D:F0B9 mov word ptr DS:[0xCE78],SI
+100D:F0BD shl SI,1
+100D:F0BF mov SI,word ptr DS:[SI+0x31FF]
+100D:F0C3 lods AX,word ptr DS:[SI]
+100D:F0C4 mov DX,SI
+100D:F0C6 or AX,AX
+100D:F0C8 je short 0xF0D6
+100D:F0CA mov CX,AX
+100D:F0CC push DX
+100D:F0CD call near 0xF11C
+100D:F0D0 pop DX
+100D:F0D1 call near 0xF0D6
+100D:F0D4 jmp short 0xF0FF
+100D:F0D6 mov AX,word ptr DS:[0xCE78]
+100D:F0D9 cmp AL,byte ptr DS:[0xCE70]
+100D:F0DD jae short 0xF0E4
+100D:F0E4 call near 0xF244
+100D:F0E7 mov AX,word ptr DS:[0xCE78]
+100D:F0EA cmp AL,byte ptr DS:[0xCE70]
+100D:F0EE jae short 0xF0F3
+100D:F0F3 jmp near 0xF3D3
+100D:F0F6 les SI,word ptr DS:[0x39B7]
+100D:F0FA mov word ptr DS:[DI],SI
+100D:F0FC mov word ptr DS:[DI+2],ES
+100D:F0FF mov AX,CX
+100D:F101 add AX,0x000F
+100D:F104 rcr AX,1
+100D:F106 shr AX,1
+100D:F108 shr AX,1
+100D:F10A shr AX,1
+100D:F10C add word ptr DS:[0x39B9],AX
+100D:F110 push AX
+100D:F111 mov AX,word ptr DS:[0x39B9]
+100D:F114 cmp AX,word ptr DS:[0xCE68]
+100D:F118 pop AX
+100D:F119 ja short 0xF131
+100D:F11B ret near
+100D:F11C les DI,word ptr DS:[0x39B7]
+100D:F120 mov AX,ES
+100D:F122 add AX,CX
+100D:F124 cmp AX,word ptr DS:[0xCE68]
+100D:F128 jae short 0xF12B
+100D:F12A ret near
+100D:F12B call near 0xF13F
+100D:F12E jmp short 0xF11C
+100D:F13F push CX
+100D:F140 mov BP,word ptr DS:[2]
+100D:F144 mov SI,0xD844
+100D:F147 mov DI,0xDA8C
+100D:F14A mov CX,0x0091
+100D:F14D xor DX,DX
+100D:F14F mov BX,DX
+100D:F151 add DI,2
+100D:F154 add SI,4
+100D:F157 mov AX,word ptr DS:[SI+2]
+100D:F15A or AX,AX
+100D:F15C je short 0xF16A
+100D:F15E mov AX,BP
+100D:F160 sub AX,word ptr DS:[DI]
+100D:F162 cmp AX,DX
+100D:F164 jb short 0xF16A
+100D:F166 mov DX,AX
+100D:F168 mov BX,SI
+100D:F16A loop 0xF151
+100D:F16C or BX,BX
+100D:F16E je short 0xF130
+100D:F170 mov AX,BX
+100D:F172 sub AX,0xD844
+100D:F175 shr AX,1
+100D:F177 shr AX,1
+100D:F179 cmp AX,word ptr DS:[0x2784]
+100D:F17D jne short 0xF185
+100D:F17F mov word ptr DS:[0x2784],0xFFFF
+100D:F185 xor DX,DX
+100D:F187 xchg DX,word ptr DS:[BX+2]
+100D:F18A mov SI,0xD84A
+100D:F18D mov CX,0x0091
+100D:F190 mov BX,0x8000
+100D:F193 lods AX,word ptr DS:[SI]
+100D:F194 add SI,2
+100D:F197 sub AX,DX
+100D:F199 jb short 0xF1A1
+100D:F19B cmp AX,BX
+100D:F19D jae short 0xF1A1
+100D:F19F mov BX,AX
+100D:F1A1 loop 0xF193
+100D:F1A3 or BX,BX
+100D:F1A5 js short 0xF1F5
+100D:F1A7 mov SI,0xD846
+100D:F1AA mov CX,0x0091
+100D:F1AD add SI,4
+100D:F1B0 cmp word ptr DS:[SI],DX
+100D:F1B2 jb short 0xF1B6
+100D:F1B4 sub word ptr DS:[SI],BX
+100D:F1B6 loop 0xF1AD
+100D:F1B8 mov SI,0xDBB2
+100D:F1BB cmp word ptr DS:[SI],DX
+100D:F1BD jb short 0xF1C1
+100D:F1BF sub word ptr DS:[SI],BX
+100D:F1C1 mov ES,DX
+100D:F1C3 add DX,BX
+100D:F1C5 mov DS,DX
+100D:F1C7 xor SI,SI
+100D:F1C9 mov DI,SI
+100D:F1CB mov AX,word ptr SS:[0x39B9]
+100D:F1CF sub AX,DX
+100D:F1D1 cmp AX,0x1000
+100D:F1D4 jbe short 0xF1E3
+100D:F1D6 mov CX,0x8000
+100D:F1D9 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:F1DB mov DX,ES
+100D:F1DD add DX,0x1000
+100D:F1E1 jmp short 0xF1C1
+100D:F1E3 mov CX,AX
+100D:F1E5 shl CX,1
+100D:F1E7 shl CX,1
+100D:F1E9 shl CX,1
+100D:F1EB rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:F1ED push SS
+100D:F1EE pop DS
+100D:F1EF sub word ptr DS:[0x39B9],BX
+100D:F1F3 pop CX
+100D:F1F4 ret near
+100D:F1F5 mov word ptr DS:[0x39B9],DX
+100D:F1F9 pop CX
+100D:F1FA ret near
+100D:F1FB push DX
+100D:F1FC call near 0xF2A7
+100D:F1FF pop SI
+100D:F200 jae short 0xF228
+100D:F202 mov DX,SI
+100D:F204 push DX
+100D:F205 call near 0xF2FC
+100D:F208 mov AX,0x3D00
+100D:F20B int 0x21
+100D:F20D pop DX
+100D:F20E jb short 0xF228
+100D:F210 mov BX,AX
+100D:F212 xor CX,CX
+100D:F214 mov DX,CX
+100D:F216 mov AX,0x4202
+100D:F219 int 0x21
+100D:F21B push AX
+100D:F21C push DX
+100D:F21D xor CX,CX
+100D:F21F mov DX,CX
+100D:F221 mov AX,0x4200
+100D:F224 int 0x21
+100D:F226 pop BP
+100D:F227 pop CX
+100D:F228 ret near
+100D:F229 call near 0xF1FB
+100D:F22C jb short 0xF22F
+100D:F22E ret near
+100D:F244 push DX
+100D:F245 call near 0xF229
+100D:F248 pop DX
+100D:F249 cmp BX,word ptr DS:[0xDBBA]
+100D:F24D jne short 0xF260
+100D:F24F call near 0xF2EA
+100D:F252 jb short 0xF244
+100D:F254 ret near
+100D:F255 push DX
+100D:F256 push DI
+100D:F257 push ES
+100D:F258 call near 0xF204
+100D:F25B jb short 0xF22F
+100D:F25D pop ES
+100D:F25E pop DI
+100D:F25F pop DX
+100D:F260 push DX
+100D:F261 push DI
+100D:F262 push ES
+100D:F263 push DS
+100D:F264 push ES
+100D:F265 pop DS
+100D:F266 mov CX,0xFFFF
+100D:F269 mov DX,DI
+100D:F26B mov AH,0x3F
+100D:F26D int 0x21
+100D:F26F pop DS
+100D:F270 mov CX,AX
+100D:F272 pushf
+100D:F273 mov AH,0x3E
+100D:F275 int 0x21
+100D:F277 popf
+100D:F278 pop ES
+100D:F279 pop DI
+100D:F27A pop DX
+100D:F27B ret near
+100D:F27C push CX
+100D:F27D mov AH,0x3C
+100D:F27F xor CX,CX
+100D:F281 int 0x21
+100D:F283 pop CX
+100D:F284 jb short 0xF29A
+100D:F286 mov BX,AX
+100D:F288 push DS
+100D:F289 push ES
+100D:F28A pop DS
+100D:F28B mov DX,DI
+100D:F28D mov AH,0x40
+100D:F28F int 0x21
+100D:F291 pop DS
+100D:F292 sub AX,CX
+100D:F294 pushf
+100D:F295 mov AH,0x3E
+100D:F297 int 0x21
+100D:F299 popf
+100D:F29A ret near
+100D:F2A7 push DI
+100D:F2A8 push ES
+100D:F2A9 cmp word ptr DS:[0xDBBA],1
+100D:F2AE jb short 0xF2D3
+100D:F2B0 mov SI,DX
+100D:F2B2 call near 0xF314
+100D:F2B5 jb short 0xF2D3
+100D:F2B7 call near 0xF3A7
+100D:F2BA jb short 0xF2D3
+100D:F2BC xor CX,CX
+100D:F2BE mov CL,byte ptr ES:[DI+5]
+100D:F2C2 mov BP,CX
+100D:F2C4 mov CX,word ptr ES:[DI+3]
+100D:F2C8 mov AX,word ptr ES:[DI+6]
+100D:F2CC mov DX,word ptr ES:[DI+8]
+100D:F2D0 call near 0xF2D6
+100D:F2D3 pop ES
+100D:F2D4 pop DI
+100D:F2D5 ret near
+100D:F2D6 push CX
+100D:F2D7 mov BX,word ptr SS:[0xDBBA]
+100D:F2DC mov CX,DX
+100D:F2DE mov DX,AX
+100D:F2E0 mov AX,0x4200
+100D:F2E3 int 0x21
+100D:F2E5 pop CX
+100D:F2E6 ret near
+100D:F2EA push DS
+100D:F2EB push ES
+100D:F2EC pop DS
+100D:F2ED mov BX,word ptr SS:[0xDBBA]
+100D:F2F2 mov DX,DI
+100D:F2F4 mov AH,0x3F
+100D:F2F6 int 0x21
+100D:F2F8 cmp AX,CX
+100D:F2FA pop DS
+100D:F2FB ret near
+100D:F2FC push SI
+100D:F2FD push DI
+100D:F2FE mov SI,DX
+100D:F300 mov DI,word ptr DS:[0x38A6]
+100D:F304 mov AL,byte ptr DS:[SI]
+100D:F306 inc SI
+100D:F307 mov byte ptr DS:[DI],AL
+100D:F309 inc DI
+100D:F30A or AL,AL
+100D:F30C jne short 0xF304
+100D:F30E pop DI
+100D:F30F pop SI
+100D:F310 mov DX,0x3826
+100D:F313 ret near
+100D:F314 push SS
+100D:F315 pop ES
+100D:F316 cmp word ptr DS:[SI+2],0x505C
+100D:F31B je short 0xF36C
+100D:F31D push SI
+100D:F31E mov CX,0x0010
+100D:F321 mov DX,CX
+100D:F323 lods AL,byte ptr DS:[SI]
+100D:F324 or AL,AL
+100D:F326 loopne 0xF323
+100D:F328 jne short 0xF32B
+100D:F32A inc CX
+100D:F32B sub CX,0x0010
+100D:F32E neg CX
+100D:F330 pop SI
+100D:F331 xor DX,DX
+100D:F333 mov AX,word ptr DS:[0xCE78]
+100D:F336 mov DI,AX
+100D:F338 shl DI,1
+100D:F33A mov DI,word ptr DS:[DI+0x31FF]
+100D:F33E add DI,2
+100D:F341 push CX
+100D:F342 push SI
+100D:F343 repe cmps byte ptr DS:[SI],byte ptr ES:[DI]
+100D:F345 pop SI
+100D:F346 pop CX
+100D:F347 je short 0xF3A5
+100D:F349 mov BX,0x31FF
+100D:F34C mov BP,0x00F7
+100D:F34F mov DI,word ptr ES:[BX]
+100D:F352 mov AX,BX
+100D:F354 sub AX,0x31FF
+100D:F357 shr AX,1
+100D:F359 add BX,2
+100D:F35C add DI,2
+100D:F35F push CX
+100D:F360 push SI
+100D:F361 repe cmps byte ptr DS:[SI],byte ptr ES:[DI]
+100D:F363 pop SI
+100D:F364 pop CX
+100D:F365 je short 0xF3A5
+100D:F367 dec BP
+100D:F368 jne short 0xF34F
+100D:F36A stc
+100D:F36B ret near
+100D:F36C add SI,4
+100D:F36F lods AL,byte ptr DS:[SI]
+100D:F370 sub AL,0x40
+100D:F372 mov DL,AL
+100D:F374 xor BX,BX
+100D:F376 mov CX,3
+100D:F379 lods AL,byte ptr DS:[SI]
+100D:F37A cmp AL,0x41
+100D:F37C jb short 0xF380
+100D:F37E sub AL,7
+100D:F380 and AL,0x0F
+100D:F382 shl BX,1
+100D:F384 shl BX,1
+100D:F386 shl BX,1
+100D:F388 shl BX,1
+100D:F38A or BL,AL
+100D:F38C loop 0xF379
+100D:F38E lods AL,byte ptr DS:[SI]
+100D:F38F cmp AL,0x4F
+100D:F391 cmc
+100D:F392 rcl DL,1
+100D:F394 lods AL,byte ptr DS:[SI]
+100D:F395 sub AL,0x41
+100D:F397 jb short 0xF3A3
+100D:F399 shl AL,1
+100D:F39B shl AL,1
+100D:F39D shl AL,1
+100D:F39F shl AL,1
+100D:F3A1 or BH,AL
+100D:F3A3 mov AX,BX
+100D:F3A5 clc
+100D:F3A6 ret near
+100D:F3A7 les DI,word ptr SS:[0xDBBC]
+100D:F3AC sub DI,5
+100D:F3AF add DI,5
+100D:F3B2 cmp DL,byte ptr ES:[DI+4]
+100D:F3B6 jne short 0xF3BC
+100D:F3B8 cmp AX,word ptr ES:[DI+2]
+100D:F3BC ja short 0xF3AF
+100D:F3BE mov DI,word ptr ES:[DI]
+100D:F3C1 sub DI,0x000A
+100D:F3C4 add DI,0x000A
+100D:F3C7 cmp DL,byte ptr ES:[DI+2]
+100D:F3CB jne short 0xF3D0
+100D:F3CD cmp AX,word ptr ES:[DI]
+100D:F3D0 ja short 0xF3C4
+100D:F3D2 ret near
+100D:F3D3 cmp byte ptr DS:[0xCE71],0
+100D:F3D8 jne short 0xF402
+100D:F3DA push CX
+100D:F3DB push DI
+100D:F3DC push DS
+100D:F3DD push ES
+100D:F3DE pop DS
+100D:F3DF mov DX,DI
+100D:F3E1 add DX,CX
+100D:F3E3 mov CX,6
+100D:F3E6 mov SI,DI
+100D:F3E8 xor AX,AX
+100D:F3EA lods AL,byte ptr DS:[SI]
+100D:F3EB add AH,AL
+100D:F3ED loop 0xF3EA
+100D:F3EF cmp AH,0xAB
+100D:F3F2 jne short 0xF3FE
+100D:F3F4 mov SI,DI
+100D:F3F6 lods AX,word ptr DS:[SI]
+100D:F3F7 mov DI,AX
+100D:F3F9 lods AL,byte ptr DS:[SI]
+100D:F3FA or AL,AL
+100D:F3FC je short 0xF40D
+100D:F3FE stc
+100D:F3FF pop DS
+100D:F400 pop DI
+100D:F401 pop CX
+100D:F402 ret near
+100D:F403 push CX
+100D:F404 push DI
+100D:F405 push DS
+100D:F406 add SI,6
+100D:F409 xor BP,BP
+100D:F40B jmp short 0xF435
+100D:F40D lods AX,word ptr DS:[SI]
+100D:F40E mov CX,AX
+100D:F410 sub SI,5
+100D:F413 mov BP,SI
+100D:F415 add DI,SI
+100D:F417 add DI,0x0040
+100D:F41A add SI,CX
+100D:F41C dec SI
+100D:F41D dec DI
+100D:F41E sub CX,6
+100D:F421 std
+100D:F422 shr CX,1
+100D:F424 jae short 0xF427
+100D:F426 movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:F427 dec SI
+100D:F428 dec DI
+100D:F429 rep movs word ptr ES:[DI],word ptr DS:[SI]
+100D:F42B cld
+100D:F42C mov SI,DI
+100D:F42E add SI,2
+100D:F431 mov DI,BP
+100D:F433 xor BP,BP
+100D:F435 shr BP,1
+100D:F437 je short 0xF43E
+100D:F439 jae short 0xF446
+100D:F43B movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:F43C jmp short 0xF435
+100D:F43E lods AX,word ptr DS:[SI]
+100D:F43F mov BP,AX
+100D:F441 stc
+100D:F442 rcr BP,1
+100D:F444 jb short 0xF43B
+100D:F446 xor CX,CX
+100D:F448 shr BP,1
+100D:F44A jne short 0xF452
+100D:F44C lods AX,word ptr DS:[SI]
+100D:F44D mov BP,AX
+100D:F44F stc
+100D:F450 rcr BP,1
+100D:F452 jb short 0xF482
+100D:F454 shr BP,1
+100D:F456 jne short 0xF45E
+100D:F458 lods AX,word ptr DS:[SI]
+100D:F459 mov BP,AX
+100D:F45B stc
+100D:F45C rcr BP,1
+100D:F45E rcl CX,1
+100D:F460 shr BP,1
+100D:F462 jne short 0xF46A
+100D:F464 lods AX,word ptr DS:[SI]
+100D:F465 mov BP,AX
+100D:F467 stc
+100D:F468 rcr BP,1
+100D:F46A rcl CX,1
+100D:F46C lods AL,byte ptr DS:[SI]
+100D:F46D mov AH,0xFF
+100D:F46F add AX,DI
+100D:F471 xchg SI,AX
+100D:F472 mov BX,DS
+100D:F474 mov DX,ES
+100D:F476 mov DS,DX
+100D:F478 inc CX
+100D:F479 inc CX
+100D:F47A rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+100D:F47C mov DS,BX
+100D:F47E mov SI,AX
+100D:F480 jmp short 0xF435
+100D:F482 lods AX,word ptr DS:[SI]
+100D:F483 mov CL,AL
+100D:F485 shr AX,1
+100D:F487 shr AX,1
+100D:F489 shr AX,1
+100D:F48B or AH,0xE0
+100D:F48E and CL,7
+100D:F491 jne short 0xF46F
+100D:F493 mov BX,AX
+100D:F495 lods AL,byte ptr DS:[SI]
+100D:F496 mov CL,AL
+100D:F498 mov AX,BX
+100D:F49A or CL,CL
+100D:F49C jne short 0xF46F
+100D:F49E stc
+100D:F49F mov CX,DI
+100D:F4A1 pop DS
+100D:F4A2 pop DI
+100D:F4A3 add SP,2
+100D:F4A6 sub CX,DI
+100D:F4A8 ret near
+3358:0100 jmp near 0x0967
+3358:0103 jmp near 0x09D9
+3358:0106 jmp near 0x09E2
+3358:0109 jmp near 0x1888
+3358:010C jmp near 0x1940
+3358:010F jmp near 0x0F5B
+3358:0112 jmp near 0x1452
+3358:0115 jmp near 0x1BF5
+3358:0118 jmp near 0x19F7
+3358:011B jmp near 0x1979
+3358:011E jmp near 0x197B
+3358:0121 jmp near 0x1B7C
+3358:0124 jmp near 0x1B8E
+3358:012A jmp near 0x1B8C
+3358:012D jmp near 0x1B7C
+3358:0130 jmp near 0x1B8E
+3358:0133 jmp near 0x1BCA
+3358:0136 jmp near 0x1BE7
+3358:0139 jmp near 0x1A07
+3358:013C ret far
+3358:0142 jmp near 0x23EB
+3358:0145 jmp near 0x1CB6
+3358:0148 jmp near 0x1D07
+3358:014B jmp near 0x1C46
+3358:014E jmp near 0x1C76
+3358:0151 jmp near 0x25E7
+3358:0154 jmp near 0x0975
+3358:0157 jmp near 0x1F4C
+3358:015A jmp near 0x3200
+3358:015D jmp near 0x19C9
+3358:0160 jmp near 0x0B0C
+3358:0163 jmp near 0x0C06
+3358:0169 jmp near 0x0D85
+3358:016C jmp near 0x39E9
+3358:016F jmp near 0x3A14
+3358:0172 jmp near 0x0A40
+3358:0175 jmp near 0x0AD7
+3358:017B jmp near 0x0A68
+3358:017E jmp near 0x2441
+3358:0181 jmp near 0x3724
+3358:0184 jmp near 0x0C34
+3358:0187 jmp near 0x0A76
+3358:0967 mov AH,0x0F
+3358:0969 int 0x10
+3358:096B cmp AL,0x13
+3358:096D je short 0x0974
+3358:096F mov AX,0x0013
+3358:0972 int 0x10
+3358:0974 ret far
+3358:0975 mov byte ptr CS:[0x01BD],AL
+3358:0979 pushf
+3358:097A sti
+3358:097B mov AX,0x0040
+3358:097E mov ES,AX
+3358:0980 mov DX,word ptr ES:[0x0063]
+3358:0985 add DL,6
+3358:0988 mov word ptr CS:[0x019F],DX
+3358:098D in AL,DX
+3358:098E and AL,8
+3358:0990 call near 0x09B8
+3358:0993 jae short 0x09B4
+3358:0995 call near 0x09B8
+3358:0998 jae short 0x09B4
+3358:099A mov DI,SI
+3358:099C mov byte ptr CS:[0x01A2],AH
+3358:09A1 call near 0x09B8
+3358:09A4 jae short 0x09B4
+3358:09A6 cmp SI,DI
+3358:09A8 not byte ptr CS:[0x01A1]
+3358:09AD jae short 0x09B4
+3358:09AF mov byte ptr CS:[0x01A2],AH
+3358:09B4 popf
+3358:09B5 jmp near 0x0B0C
+3358:09B8 mov AH,AL
+3358:09BA xor SI,SI
+3358:09BC mov BX,word ptr SS:[BP]
+3358:09BF inc SI
+3358:09C0 jne short 0x09C3
+3358:09C3 in AL,DX
+3358:09C4 and AL,8
+3358:09C6 cmp AL,AH
+3358:09C8 jne short 0x09D7
+3358:09CA push AX
+3358:09CB mov AX,word ptr SS:[BP]
+3358:09CE sub AX,BX
+3358:09D0 cmp AX,0x0064
+3358:09D3 pop AX
+3358:09D4 jb short 0x09BF
+3358:09D7 stc
+3358:09D8 ret near
+3358:09D9 mov AX,0xA000
+3358:09DC mov CX,0xFA00
+3358:09DF xor BP,BP
+3358:09E1 ret far
+3358:09E2 push AX
+3358:09E3 push BX
+3358:09E4 push CX
+3358:09E5 push SI
+3358:09E6 push DI
+3358:09E7 push DS
+3358:09E8 push ES
+3358:09E9 push ES
+3358:09EA pop DS
+3358:09EB push CS
+3358:09EC pop ES
+3358:09ED mov DI,0x05BF
+3358:09F0 add DI,BX
+3358:09F2 mov AX,CX
+3358:09F4 mov SI,DX
+3358:09F6 repe cmps byte ptr DS:[SI],byte ptr ES:[DI]
+3358:09F8 je short 0x0A19
+3358:09FA mov byte ptr CS:[0x01BE],1
+3358:0A00 mov DI,0x05BF
+3358:0A03 add DI,BX
+3358:0A05 mov SI,DX
+3358:0A07 mov CX,AX
+3358:0A09 push CX
+3358:0A0A rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:0A0C pop CX
+3358:0A0D call near 0x0A21
+3358:0A10 mov DI,0x01BF
+3358:0A13 add DI,BX
+3358:0A15 mov AL,1
+3358:0A17 rep stos byte ptr ES:[DI],AL
+3358:0A19 pop ES
+3358:0A1A pop DS
+3358:0A1B pop DI
+3358:0A1C pop SI
+3358:0A1D pop CX
+3358:0A1E pop BX
+3358:0A1F pop AX
+3358:0A20 ret far
+3358:0A21 push DX
+3358:0A22 mov AX,BX
+3358:0A24 mov DL,3
+3358:0A26 div DL
+3358:0A28 xor AH,AH
+3358:0A2A mov BX,AX
+3358:0A2C mov AX,CX
+3358:0A2E cmp AX,0x0300
+3358:0A31 jae short 0x0A3B
+3358:0A33 div DL
+3358:0A35 xor AH,AH
+3358:0A37 mov CX,AX
+3358:0A39 pop DX
+3358:0A3A ret near
+3358:0A40 push CX
+3358:0A41 push SI
+3358:0A42 push DI
+3358:0A43 push DS
+3358:0A44 push ES
+3358:0A45 push ES
+3358:0A46 pop DS
+3358:0A47 push CS
+3358:0A48 pop ES
+3358:0A49 mov DI,0x02BF
+3358:0A4C add DI,BX
+3358:0A4E mov SI,DX
+3358:0A50 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:0A52 pop ES
+3358:0A53 pop DS
+3358:0A54 pop DI
+3358:0A55 pop SI
+3358:0A56 pop CX
+3358:0A57 ret far
+3358:0A58 push CS
+3358:0A59 push CS
+3358:0A5A pop DS
+3358:0A5B pop ES
+3358:0A5C mov SI,0x05BF
+3358:0A5F mov DI,0x02BF
+3358:0A62 mov CX,0x0180
+3358:0A65 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:0A67 ret near
+3358:0A68 push CX
+3358:0A69 push SI
+3358:0A6A push DI
+3358:0A6B push DS
+3358:0A6C push ES
+3358:0A6D call near 0x0A58
+3358:0A70 pop ES
+3358:0A71 pop DS
+3358:0A72 pop DI
+3358:0A73 pop SI
+3358:0A74 pop CX
+3358:0A75 ret far
+3358:0A76 push AX
+3358:0A77 push CX
+3358:0A78 push SI
+3358:0A79 push DI
+3358:0A7A push DS
+3358:0A7B push ES
+3358:0A7C push CS
+3358:0A7D push CS
+3358:0A7E pop DS
+3358:0A7F pop ES
+3358:0A80 mov SI,0x05BF
+3358:0A83 mov DI,0x02BF
+3358:0A86 mov CX,0x0180
+3358:0A89 mov AX,word ptr DS:[DI]
+3358:0A8B xchg AX,word ptr DS:[SI]
+3358:0A8D stos word ptr ES:[DI],AX
+3358:0A8E add SI,2
+3358:0A91 loop 0x0A89
+3358:0A93 mov AL,1
+3358:0A95 mov DI,0x01BE
+3358:0A98 mov CX,0x0101
+3358:0A9B rep stos byte ptr ES:[DI],AL
+3358:0A9D pop ES
+3358:0A9E pop DS
+3358:0A9F pop DI
+3358:0AA0 pop SI
+3358:0AA1 pop CX
+3358:0AA2 pop AX
+3358:0AA3 ret far
+3358:0AD7 push AX
+3358:0AD8 push BX
+3358:0AD9 push CX
+3358:0ADA push DX
+3358:0ADB push SI
+3358:0ADC push DI
+3358:0ADD push BP
+3358:0ADE push ES
+3358:0ADF push DS
+3358:0AE0 push CS
+3358:0AE1 pop DS
+3358:0AE2 push CS
+3358:0AE3 pop ES
+3358:0AE4 mov DL,AL
+3358:0AE6 or DL,DL
+3358:0AE8 jne short 0x0AEB
+3358:0AEA inc DX
+3358:0AEB mov DI,0x05BF
+3358:0AEE add DI,BX
+3358:0AF0 lea SI,DI-768
+3358:0AF4 push DI
+3358:0AF5 push CX
+3358:0AF6 lods AL,byte ptr DS:[SI]
+3358:0AF7 sub AL,byte ptr DS:[DI]
+3358:0AF9 cbw
+3358:0AFA idiv DL
+3358:0AFC add AL,byte ptr DS:[DI]
+3358:0AFE stos byte ptr ES:[DI],AL
+3358:0AFF loop 0x0AF6
+3358:0B01 pop CX
+3358:0B02 call near 0x0A21
+3358:0B05 pop DX
+3358:0B06 call near 0x0B68
+3358:0B09 pop DS
+3358:0B0A jmp short 0x0B5F
+3358:0B0C cmp byte ptr CS:[0x01BE],0
+3358:0B12 je short 0x0B67
+3358:0B14 mov byte ptr CS:[0x01BE],0
+3358:0B1A push AX
+3358:0B1B push BX
+3358:0B1C push CX
+3358:0B1D push DX
+3358:0B1E push SI
+3358:0B1F push DI
+3358:0B20 push BP
+3358:0B21 push ES
+3358:0B22 push CS
+3358:0B23 pop ES
+3358:0B24 mov DI,0x01BF
+3358:0B27 mov CX,0x0100
+3358:0B2A xor AL,AL
+3358:0B2C repe scas AL,byte ptr ES:[DI]
+3358:0B2E je short 0x0B55
+3358:0B30 dec DI
+3358:0B31 inc CX
+3358:0B32 mov BX,CX
+3358:0B34 repne scas AL,byte ptr ES:[DI]
+3358:0B36 push CX
+3358:0B37 jne short 0x0B3A
+3358:0B39 inc CX
+3358:0B3A sub CX,BX
+3358:0B3C neg CX
+3358:0B3E mov DX,0x0100
+3358:0B41 sub DX,BX
+3358:0B43 mov BX,DX
+3358:0B45 add DX,DX
+3358:0B47 add DX,BX
+3358:0B49 add DX,0x05BF
+3358:0B4D call near 0x0B68
+3358:0B50 pop CX
+3358:0B51 or CX,CX
+3358:0B53 jne short 0x0B2A
+3358:0B55 mov DI,0x01BF
+3358:0B58 mov CX,0x0080
+3358:0B5B xor AX,AX
+3358:0B5D rep stos word ptr ES:[DI],AX
+3358:0B5F pop ES
+3358:0B60 pop BP
+3358:0B61 pop DI
+3358:0B62 pop SI
+3358:0B63 pop DX
+3358:0B64 pop CX
+3358:0B65 pop BX
+3358:0B66 pop AX
+3358:0B67 ret far
+3358:0B68 push SI
+3358:0B69 push DS
+3358:0B6A push ES
+3358:0B6B pop DS
+3358:0B6C mov SI,DX
+3358:0B6E pushf
+3358:0B6F cmp byte ptr DS:[0x01A1],0
+3358:0B74 je short 0x0B83
+3358:0B76 mov DX,word ptr DS:[0x019F]
+3358:0B7A in AL,DX
+3358:0B7B and AL,8
+3358:0B7D cmp AL,byte ptr DS:[0x01A2]
+3358:0B81 jne short 0x0B7A
+3358:0B83 cli
+3358:0B84 mov DX,0x03C8
+3358:0B87 mov AL,BL
+3358:0B89 out DX,AL
+3358:0B8A jmp short 0x0B8C
+3358:0B8C jmp short 0x0B8E
+3358:0B8E jmp short 0x0B90
+3358:0B90 jmp short 0x0B92
+3358:0B92 inc DX
+3358:0B93 cmp byte ptr CS:[0x01BD],0
+3358:0B99 jne short 0x0BA9
+3358:0B9B mov AX,CX
+3358:0B9D add CX,CX
+3358:0B9F add CX,AX
+3358:0BA1 lods AL,byte ptr DS:[SI]
+3358:0BA2 out DX,AL
+3358:0BA3 loop 0x0BA1
+3358:0BA5 popf
+3358:0BA6 pop DS
+3358:0BA7 pop SI
+3358:0BA8 ret near
+3358:0BDC push SI
+3358:0BDD push DS
+3358:0BDE push ES
+3358:0BDF push CS
+3358:0BE0 push CS
+3358:0BE1 pop DS
+3358:0BE2 pop ES
+3358:0BE3 mov SI,0x073F
+3358:0BE6 mov DX,SI
+3358:0BE8 mov DI,SI
+3358:0BEA lods AX,word ptr DS:[SI]
+3358:0BEB mov BL,byte ptr DS:[SI]
+3358:0BED inc SI
+3358:0BEE mov CX,0x005E
+3358:0BF1 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:0BF3 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:0BF4 stos word ptr ES:[DI],AX
+3358:0BF5 mov byte ptr DS:[DI],BL
+3358:0BF7 mov BX,0x0080
+3358:0BFA mov CX,0x0040
+3358:0BFD call near 0x0B68
+3358:0C00 pop ES
+3358:0C01 pop DS
+3358:0C02 pop SI
+3358:0C03 ret near
+3358:0C06 mov DX,0x0140
+3358:0C09 mul DX
+3358:0C0B mov word ptr CS:[0x01A3],AX
+3358:0C0F ret far
+3358:0C10 cmp BX,0x00C8
+3358:0C14 jb short 0x0C19
+3358:0C19 xchg BH,BL
+3358:0C1B mov DI,BX
+3358:0C1D shr DI,1
+3358:0C1F shr DI,1
+3358:0C21 add DI,BX
+3358:0C23 xchg BH,BL
+3358:0C25 add DI,DX
+3358:0C27 add DI,word ptr CS:[0x01A3]
+3358:0C2C ret near
+3358:0C34 call near 0x0C10
+3358:0C37 mov AL,byte ptr ES:[DI]
+3358:0C3A ret far
+3358:0C3B mov BP,word ptr [0x000341BC]
+3358:0C3E sub DI,BP
+3358:0C40 sub DI,BP
+3358:0C42 selector
+3358:0C42 sub DI,0x0140
+3358:0C42 add DI,0x0140
+3358:0C46 lods AL,byte ptr DS:[SI]
+3358:0C47 or AL,AL
+3358:0C49 js short 0x0C85
+3358:0C4B mov CX,AX
+3358:0C4D xor CH,CH
+3358:0C4F inc CX
+3358:0C50 sub BP,CX
+3358:0C52 lods AL,byte ptr DS:[SI]
+3358:0C53 mov AH,AL
+3358:0C55 and AL,DL
+3358:0C57 je short 0x0C7B
+3358:0C59 add AL,DH
+3358:0C5B stos byte ptr ES:[DI],AL
+3358:0C5C shr AH,1
+3358:0C5E shr AH,1
+3358:0C60 shr AH,1
+3358:0C62 shr AH,1
+3358:0C64 je short 0x0C80
+3358:0C66 mov AL,AH
+3358:0C68 add AL,DH
+3358:0C6A stos byte ptr ES:[DI],AL
+3358:0C6B loop 0x0C52
+3358:0C6D or BP,BP
+3358:0C6F ja short 0x0C46
+3358:0C71 dec BX
+3358:0C72 jne short 0x0C3B
+3358:0C74 mov byte ptr CS:[0x0C43],0xC7
+3358:0C7A ret far
+3358:0C7B inc DI
+3358:0C7C shr AH,1
+3358:0C7E jne short 0x0C5E
+3358:0C80 inc DI
+3358:0C81 loop 0x0C52
+3358:0C83 jmp short 0x0C6D
+3358:0C85 mov CX,0x0101
+3358:0C88 xor AH,AH
+3358:0C8A sub CX,AX
+3358:0C8C sub BP,CX
+3358:0C8E lods AL,byte ptr DS:[SI]
+3358:0C8F shl AX,1
+3358:0C91 je short 0x0CB6
+3358:0C93 shl AX,1
+3358:0C95 shl AX,1
+3358:0C97 shl AX,1
+3358:0C99 shr AL,1
+3358:0C9B je short 0x0CC0
+3358:0C9D shr AL,1
+3358:0C9F shr AL,1
+3358:0CA1 shr AL,1
+3358:0CA3 add AL,DH
+3358:0CA5 or AH,AH
+3358:0CA7 je short 0x0CCF
+3358:0CA9 add AH,DH
+3358:0CAB rep stos word ptr ES:[DI],AX
+3358:0CAD or BP,BP
+3358:0CAF ja short 0x0C46
+3358:0CB1 dec BX
+3358:0CB2 jne short 0x0C3B
+3358:0CB4 jmp short 0x0C74
+3358:0CB6 shl CX,1
+3358:0CB8 add DI,CX
+3358:0CBA or BP,BP
+3358:0CBC ja short 0x0C46
+3358:0CBE jmp short 0x0CB1
+3358:0CC0 mov AL,AH
+3358:0CC2 add AL,DH
+3358:0CC4 inc DI
+3358:0CC5 stos byte ptr ES:[DI],AL
+3358:0CC6 loop 0x0CC4
+3358:0CC8 or BP,BP
+3358:0CCA jbe short 0x0CB1
+3358:0CCC jmp near 0x0C46
+3358:0CCF stos byte ptr ES:[DI],AL
+3358:0CD0 inc DI
+3358:0CD1 loop 0x0CCF
+3358:0CD3 jmp short 0x0CAD
+3358:0CD5 mov BP,word ptr [0x00034256]
+3358:0CD8 add DI,BP
+3358:0CDA add DI,BP
+3358:0CDC selector
+3358:0CDC sub DI,0x0140
+3358:0CDC add DI,0x0140
+3358:0CE0 mov AL,byte ptr DS:[SI]
+3358:0CE2 inc SI
+3358:0CE3 or AL,AL
+3358:0CE5 js short 0x0D51
+3358:0CE7 mov CX,AX
+3358:0CE9 xor CH,CH
+3358:0CEB inc CX
+3358:0CEC sub BP,CX
+3358:0CEE mov AL,byte ptr DS:[SI]
+3358:0CF0 inc SI
+3358:0CF1 mov AH,AL
+3358:0CF3 and AL,DL
+3358:0CF5 je short 0x0D1A
+3358:0CF7 add AL,DH
+3358:0CF9 stos byte ptr ES:[DI],AL
+3358:0CFA shr AH,1
+3358:0CFC shr AH,1
+3358:0CFE shr AH,1
+3358:0D00 shr AH,1
+3358:0D02 je short 0x0D1F
+3358:0D04 mov AL,AH
+3358:0D06 add AL,DH
+3358:0D08 stos byte ptr ES:[DI],AL
+3358:0D09 loop 0x0CEE
+3358:0D0B or BP,BP
+3358:0D0D ja short 0x0CE0
+3358:0D0F dec BX
+3358:0D10 jne short 0x0CD5
+3358:0D12 cld
+3358:0D13 mov byte ptr CS:[0x0CDD],0xC7
+3358:0D19 ret far
+3358:0D1A dec DI
+3358:0D1B shr AH,1
+3358:0D1D jne short 0x0CFC
+3358:0D1F dec DI
+3358:0D20 loop 0x0CEE
+3358:0D22 jmp short 0x0D0B
+3358:0D24 shl CX,1
+3358:0D26 sub DI,CX
+3358:0D28 or BP,BP
+3358:0D2A ja short 0x0CE0
+3358:0D2C jmp short 0x0D46
+3358:0D2F mov AL,AH
+3358:0D31 add AL,DH
+3358:0D33 dec DI
+3358:0D34 stos byte ptr ES:[DI],AL
+3358:0D35 loop 0x0D33
+3358:0D37 or BP,BP
+3358:0D39 ja short 0x0CE0
+3358:0D3E stos byte ptr ES:[DI],AL
+3358:0D3F dec DI
+3358:0D40 loop 0x0D3E
+3358:0D42 or BP,BP
+3358:0D44 ja short 0x0CE0
+3358:0D46 dec BX
+3358:0D47 jne short 0x0CD5
+3358:0D49 cld
+3358:0D4A mov byte ptr CS:[0x0CDD],0xC7
+3358:0D50 ret far
+3358:0D51 mov CX,0x0101
+3358:0D54 xor AH,AH
+3358:0D56 sub CX,AX
+3358:0D58 sub BP,CX
+3358:0D5A mov AL,byte ptr DS:[SI]
+3358:0D5C inc SI
+3358:0D5D shl AX,1
+3358:0D5F je short 0x0D24
+3358:0D61 shl AX,1
+3358:0D63 shl AX,1
+3358:0D65 shl AX,1
+3358:0D67 shr AL,1
+3358:0D69 je short 0x0D2F
+3358:0D6B shr AL,1
+3358:0D6D shr AL,1
+3358:0D6F shr AL,1
+3358:0D71 add AL,DH
+3358:0D73 or AH,AH
+3358:0D75 je short 0x0D3E
+3358:0D77 add AH,DH
+3358:0D79 dec DI
+3358:0D7A xchg AH,AL
+3358:0D7C rep stos word ptr ES:[DI],AX
+3358:0D7E inc DI
+3358:0D7F jmp short 0x0D42
+3358:0D85 mov byte ptr CS:[0x019E],CH
+3358:0D8A xor CH,CH
+3358:0D8C and AX,0x03FF
+3358:0D8F mov word ptr CS:[0x0D81],AX
+3358:0D93 mov AX,DI
+3358:0D95 and DI,0x01FF
+3358:0D99 add DI,3
+3358:0D9C shr DI,1
+3358:0D9E shr DI,1
+3358:0DA0 shl DI,1
+3358:0DA2 mov word ptr CS:[0x0DDE],DI
+3358:0DA7 mov byte ptr CS:[0x0E13],0xC7
+3358:0DAD test AX,0x2000
+3358:0DB0 je short 0x0DBB
+3358:0DB2 mov byte ptr CS:[0x0E13],0xEF
+3358:0DB8 add BX,CX
+3358:0DBA dec BX
+3358:0DBB mov byte ptr CS:[0x0E26],0x47
+3358:0DC1 test AX,0x4000
+3358:0DC4 je short 0x0DD3
+3358:0DC6 mov byte ptr CS:[0x0E26],0x4F
+3358:0DCC add DX,word ptr CS:[0x0D81]
+3358:0DD1 dec DX
+3358:0DD2 std
+3358:0DD3 call near 0x0C10
+3358:0DD6 xor BX,BX
+3358:0DD8 mov word ptr CS:[0x0D83],BX
+3358:0DDD mov AX,word ptr [0x0003435E]
+3358:0DE0 push SI
+3358:0DE1 mul BH
+3358:0DE3 add SI,AX
+3358:0DE5 push DI
+3358:0DE6 push CX
+3358:0DE7 xor DX,DX
+3358:0DE9 mov BX,SI
+3358:0DEB mov CX,word ptr CS:[0x0D81]
+3358:0DF0 mov AH,byte ptr CS:[0x019E]
+3358:0DF5 mov AL,DH
+3358:0DF7 shr AL,1
+3358:0DF9 xlat byte ptr DS:[BX+AL]
+3358:0DFA jae short 0x0E04
+3358:0DFC shr AL,1
+3358:0DFE shr AL,1
+3358:0E00 shr AL,1
+3358:0E02 shr AL,1
+3358:0E04 and AL,0x0F
+3358:0E06 je short 0x0E26
+3358:0E08 add AL,AH
+3358:0E0A stos byte ptr ES:[DI],AL
+3358:0E0B add DX,BP
+3358:0E0D loop 0x0DF5
+3358:0E0F pop CX
+3358:0E10 pop DI
+3358:0E11 pop SI
+3358:0E12 selector
+3358:0E12 sub DI,0x0140
+3358:0E12 add DI,0x0140
+3358:0E16 mov BX,word ptr CS:[0x0D83]
+3358:0E1B add BX,BP
+3358:0E1D mov word ptr CS:[0x0D83],BX
+3358:0E22 loop 0x0DDD
+3358:0E24 cld
+3358:0E25 ret far
+3358:0E26 selector
+3358:0E26 inc DI
+3358:0E26 dec DI
+3358:0E27 add DX,BP
+3358:0E29 loop 0x0DF5
+3358:0E2B jmp short 0x0E0F
+3358:0E2D mov BP,DX
+3358:0E2F sub DI,BP
+3358:0E31 add DI,0x0140
+3358:0E35 lods AL,byte ptr DS:[SI]
+3358:0E36 or AL,AL
+3358:0E38 js short 0x0E6A
+3358:0E3A mov CX,AX
+3358:0E3C xor CH,CH
+3358:0E3E inc CX
+3358:0E3F sub BP,CX
+3358:0E41 lods AL,byte ptr DS:[SI]
+3358:0E42 or AL,AL
+3358:0E44 je short 0x0E5E
+3358:0E46 stos byte ptr ES:[DI],AL
+3358:0E47 loop 0x0E41
+3358:0E49 or BP,BP
+3358:0E4B ja short 0x0E35
+3358:0E4D dec BX
+3358:0E4E jne short 0x0E2D
+3358:0E50 cld
+3358:0E51 mov byte ptr CS:[0x0E32],0xC7
+3358:0E57 mov byte ptr CS:[0x0EF0],0xC7
+3358:0E5D ret far
+3358:0E5E inc DI
+3358:0E5F loop 0x0E41
+3358:0E61 or BP,BP
+3358:0E63 ja short 0x0E35
+3358:0E65 dec BX
+3358:0E66 jne short 0x0E2D
+3358:0E68 jmp short 0x0E50
+3358:0E6A mov CX,0x0101
+3358:0E6D xor AH,AH
+3358:0E6F sub CX,AX
+3358:0E71 sub BP,CX
+3358:0E73 lods AL,byte ptr DS:[SI]
+3358:0E74 or AL,AL
+3358:0E76 je short 0x0E83
+3358:0E78 rep stos byte ptr ES:[DI],AL
+3358:0E7A or BP,BP
+3358:0E7C ja short 0x0E35
+3358:0E7E dec BX
+3358:0E7F jne short 0x0E2D
+3358:0E81 jmp short 0x0E50
+3358:0E83 add DI,CX
+3358:0E85 or BP,BP
+3358:0E87 ja short 0x0E35
+3358:0E89 dec BX
+3358:0E8A jne short 0x0E2D
+3358:0E8C jmp short 0x0E50
+3358:0EEB mov BP,DX
+3358:0EED sub DI,BP
+3358:0EEF add DI,0x0140
+3358:0EF3 lods AL,byte ptr DS:[SI]
+3358:0EF4 or AL,AL
+3358:0EF6 js short 0x0F09
+3358:0EF8 mov CX,AX
+3358:0EFA xor CH,CH
+3358:0EFC inc CX
+3358:0EFD sub BP,CX
+3358:0EFF rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:0F01 ja short 0x0EF3
+3358:0F03 dec BX
+3358:0F04 jne short 0x0EEB
+3358:0F06 jmp near 0x0E50
+3358:0F09 mov CX,0x0101
+3358:0F0C xor AH,AH
+3358:0F0E sub CX,AX
+3358:0F10 sub BP,CX
+3358:0F12 lods AL,byte ptr DS:[SI]
+3358:0F13 rep stos byte ptr ES:[DI],AL
+3358:0F15 ja short 0x0EF3
+3358:0F17 dec BX
+3358:0F18 jne short 0x0EEB
+3358:0F1A jmp near 0x0E50
+3358:0F5B cmp CH,0xFE
+3358:0F5E jb short 0x0F63
+3358:0F60 jmp near 0x100A
+3358:0F63 or DI,DI
+3358:0F65 js short 0x0F8E
+3358:0F67 mov AX,DI
+3358:0F69 mov BP,0x0100
+3358:0F6C test AX,0x6000
+3358:0F6F je short 0x0F74
+3358:0F71 jmp near 0x0D85
+3358:0F74 and AX,0x01FF
+3358:0F77 add AX,3
+3358:0F7A shr AX,1
+3358:0F7C shr AX,1
+3358:0F7E mov word ptr CS:[0x158B],AX
+3358:0F82 call near 0x0C10
+3358:0F85 mov DH,CH
+3358:0F87 xor CH,CH
+3358:0F89 mov DL,0x0F
+3358:0F8B jmp near 0x158A
+3358:0F8E mov AX,DI
+3358:0F90 and AX,0x01FF
+3358:0F93 mov word ptr CS:[0x0D81],AX
+3358:0F97 add AX,3
+3358:0F9A shr AX,1
+3358:0F9C shr AX,1
+3358:0F9E shl AX,1
+3358:0FA0 mov BP,AX
+3358:0FA2 mov AX,DI
+3358:0FA4 call near 0x0C10
+3358:0FA7 mov DH,CH
+3358:0FA9 xor CH,CH
+3358:0FAB mov DL,0x0F
+3358:0FAD mov BX,CX
+3358:0FAF test AX,0x4000
+3358:0FB2 jne short 0x0FD9
+3358:0FB4 mov word ptr CS:[0x0C3C],BP
+3358:0FB9 test AX,0x2000
+3358:0FBC je short 0x0FD6
+3358:0FBE mov byte ptr CS:[0x0C43],0xEF
+3358:0FC4 mov AH,BL
+3358:0FC6 dec AH
+3358:0FC8 mov CH,AH
+3358:0FCA xor CL,CL
+3358:0FCC mov AL,CL
+3358:0FCE shr CX,1
+3358:0FD0 shr CX,1
+3358:0FD2 add DI,AX
+3358:0FD4 add DI,CX
+3358:0FD6 jmp near 0x0C46
+3358:0FD9 mov word ptr CS:[0x0CD6],BP
+3358:0FDE test AX,0x2000
+3358:0FE1 je short 0x0FFB
+3358:0FE3 mov byte ptr CS:[0x0CDD],0xEF
+3358:0FE9 mov AH,BL
+3358:0FEB dec AH
+3358:0FED mov CH,AH
+3358:0FEF xor CL,CL
+3358:0FF1 mov AL,CL
+3358:0FF3 shr CX,1
+3358:0FF5 shr CX,1
+3358:0FF7 add DI,AX
+3358:0FF9 add DI,CX
+3358:0FFB add DI,word ptr CS:[0x0D81]
+3358:1000 dec DI
+3358:1001 std
+3358:1002 jmp near 0x0CE0
+3358:100A or DI,DI
+3358:100C js short 0x1064
+3358:100E mov BP,DI
+3358:1010 and BP,0x01FF
+3358:1014 mov AX,DI
+3358:1016 call near 0x0C10
+3358:1019 mov BX,CX
+3358:101B xor BH,BH
+3358:101D cmp CH,0xFF
+3358:1020 je short 0x1043
+3358:1022 shr BP,1
+3358:1024 mov AX,DI
+3358:1026 jb short 0x1035
+3358:1028 mov CX,BP
+3358:102A mov DI,AX
+3358:102C rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:102E add AX,0x0140
+3358:1031 dec BX
+3358:1032 jne short 0x1028
+3358:1034 ret far
+3358:1043 mov DX,DI
+3358:1045 mov CX,BP
+3358:1047 mov DI,DX
+3358:1049 lods AL,byte ptr DS:[SI]
+3358:104A or AL,AL
+3358:104C je short 0x1059
+3358:104E stos byte ptr ES:[DI],AL
+3358:104F loop 0x1049
+3358:1051 add DX,0x0140
+3358:1055 dec BX
+3358:1056 jne short 0x1045
+3358:1058 ret far
+3358:1059 inc DI
+3358:105A loop 0x1049
+3358:105C add DX,0x0140
+3358:1060 dec BX
+3358:1061 jne short 0x1045
+3358:1063 ret far
+3358:1064 mov BP,DI
+3358:1066 and BP,0x01FF
+3358:106A mov AX,DI
+3358:106C call near 0x0C10
+3358:106F mov BX,CX
+3358:1071 xor BH,BH
+3358:1073 test AX,0x4000
+3358:1076 jne short 0x10A8
+3358:1078 test AX,0x2000
+3358:107B je short 0x109B
+3358:109B mov DX,BP
+3358:109D cmp CH,0xFF
+3358:10A0 je short 0x10A5
+3358:10A2 jmp near 0x0EF3
+3358:10A5 jmp near 0x0E35
+3358:10E2 mov BP,word ptr CS:[0x10DE]
+3358:10E7 shr BP,1
+3358:10E9 pushf
+3358:10EA jcxz short 0x10F4
+3358:10EC or DL,DL
+3358:10EE js short 0x111D
+3358:10F0 jmp short 0x1100
+3358:10F2 add SI,CX
+3358:10F4 lods AL,byte ptr DS:[SI]
+3358:10F5 xor AH,AH
+3358:10F7 mov DL,AL
+3358:10F9 or AL,AL
+3358:10FB js short 0x1117
+3358:10FD mov CX,AX
+3358:10FF inc CX
+3358:1100 sub BP,CX
+3358:1102 jae short 0x10F2
+3358:1104 add CX,BP
+3358:1106 add SI,CX
+3358:1108 mov CX,BP
+3358:110A neg CX
+3358:110C mov BP,word ptr CS:[0x10E0]
+3358:1111 popf
+3358:1112 jae short 0x1146
+3358:1114 lods AL,byte ptr DS:[SI]
+3358:1115 jmp short 0x1132
+3358:1117 mov CX,0x0101
+3358:111A sub CX,AX
+3358:111C inc SI
+3358:111D sub BP,CX
+3358:111F jae short 0x10F4
+3358:1121 xor AH,AH
+3358:1123 mov CX,BP
+3358:1125 neg CX
+3358:1127 mov BP,word ptr CS:[0x10E0]
+3358:112C popf
+3358:112D jae short 0x1146
+3358:112F mov AL,byte ptr DS:[SI-1]
+3358:1132 shr AL,1
+3358:1134 shr AL,1
+3358:1136 shr AL,1
+3358:1138 shr AL,1
+3358:113A je short 0x1141
+3358:113C add AL,DH
+3358:113E mov byte ptr ES:[DI],AL
+3358:1141 inc DI
+3358:1142 dec CX
+3358:1143 dec BP
+3358:1144 je short 0x1184
+3358:1146 shr BP,1
+3358:1148 jcxz short 0x1151
+3358:114A or DL,DL
+3358:114C jns short 0x115D
+3358:114E jmp short 0x11A8
+3358:1151 lods AL,byte ptr DS:[SI]
+3358:1152 xor AH,AH
+3358:1154 mov DL,AL
+3358:1156 or AL,AL
+3358:1158 js short 0x11A2
+3358:115A mov CX,AX
+3358:115C inc CX
+3358:115D sub BP,CX
+3358:115F jae short 0x1165
+3358:1161 add CX,BP
+3358:1163 je short 0x1180
+3358:1165 lods AL,byte ptr DS:[SI]
+3358:1166 mov AH,AL
+3358:1168 and AL,0x0F
+3358:116A je short 0x1198
+3358:116C add AL,DH
+3358:116E stos byte ptr ES:[DI],AL
+3358:116F shr AH,1
+3358:1171 shr AH,1
+3358:1173 shr AH,1
+3358:1175 shr AH,1
+3358:1177 je short 0x119D
+3358:1179 mov AL,AH
+3358:117B add AL,DH
+3358:117D stos byte ptr ES:[DI],AL
+3358:117E loop 0x1165
+3358:1180 or BP,BP
+3358:1182 jns short 0x1151
+3358:1184 mov CX,BP
+3358:1186 neg CX
+3358:1188 sub DI,word ptr CS:[0x10E0]
+3358:118D add DI,0x0140
+3358:1191 dec BX
+3358:1192 je short 0x1197
+3358:1194 jmp near 0x10E2
+3358:1197 ret far
+3358:1198 inc DI
+3358:1199 shr AH,1
+3358:119B jne short 0x1171
+3358:119D inc DI
+3358:119E loop 0x1165
+3358:11A0 jmp short 0x1180
+3358:11A2 mov CX,0x0101
+3358:11A5 sub CX,AX
+3358:11A7 inc SI
+3358:11A8 sub BP,CX
+3358:11AA jae short 0x11B0
+3358:11AC add CX,BP
+3358:11AE je short 0x11D1
+3358:11B0 mov AL,byte ptr DS:[SI-1]
+3358:11B3 shl AX,1
+3358:11B5 je short 0x11D8
+3358:11B7 shl AX,1
+3358:11B9 shl AX,1
+3358:11BB shl AX,1
+3358:11BD shr AL,1
+3358:11BF je short 0x11DE
+3358:11C1 shr AL,1
+3358:11C3 shr AL,1
+3358:11C5 shr AL,1
+3358:11C7 add AL,DH
+3358:11C9 or AH,AH
+3358:11CB je short 0x11E8
+3358:11CD add AH,DH
+3358:11CF rep stos word ptr ES:[DI],AX
+3358:11D1 or BP,BP
+3358:11D3 js short 0x1184
+3358:11D5 jmp near 0x1151
+3358:11D8 shl CX,1
+3358:11DA add DI,CX
+3358:11DC jmp short 0x11D1
+3358:11DE mov AL,AH
+3358:11E0 add AL,DH
+3358:11E2 inc DI
+3358:11E3 stos byte ptr ES:[DI],AL
+3358:11E4 loop 0x11E2
+3358:11E6 jmp short 0x11D1
+3358:11E8 stos byte ptr ES:[DI],AL
+3358:11E9 inc DI
+3358:11EA loop 0x11E8
+3358:11EC jmp short 0x11D1
+3358:11EE mov BP,word ptr CS:[0x10DE]
+3358:11F3 or BP,BP
+3358:11F5 jne short 0x11FF
+3358:11F7 mov BP,word ptr CS:[0x10E0]
+3358:11FC jmp short 0x1266
+3358:11FF shr BP,1
+3358:1201 pushf
+3358:1202 jcxz short 0x120C
+3358:1204 or DL,DL
+3358:1206 js short 0x1235
+3358:1208 jmp short 0x1218
+3358:120A add SI,CX
+3358:120C lods AL,byte ptr DS:[SI]
+3358:120D xor AH,AH
+3358:120F mov DL,AL
+3358:1211 or AL,AL
+3358:1213 js short 0x122F
+3358:1215 mov CX,AX
+3358:1217 inc CX
+3358:1218 sub BP,CX
+3358:121A jae short 0x120A
+3358:121C add CX,BP
+3358:121E add SI,CX
+3358:1220 mov CX,BP
+3358:1222 neg CX
+3358:1224 mov BP,word ptr CS:[0x10E0]
+3358:1229 popf
+3358:122A jae short 0x1266
+3358:122C lods AL,byte ptr DS:[SI]
+3358:122D jmp short 0x124A
+3358:122F mov CX,0x0101
+3358:1232 sub CX,AX
+3358:1234 inc SI
+3358:1235 sub BP,CX
+3358:1237 jae short 0x120C
+3358:1239 xor AH,AH
+3358:123B mov CX,BP
+3358:123D neg CX
+3358:123F mov BP,word ptr CS:[0x10E0]
+3358:1244 popf
+3358:1245 jae short 0x1266
+3358:1247 mov AL,byte ptr DS:[SI-1]
+3358:124A shr AL,1
+3358:124C shr AL,1
+3358:124E shr AL,1
+3358:1250 shr AL,1
+3358:1252 je short 0x1259
+3358:1254 add AL,DH
+3358:1256 mov byte ptr ES:[DI],AL
+3358:1259 inc DI
+3358:125A dec CX
+3358:125B dec BP
+3358:125C jne short 0x1266
+3358:125E mov BP,word ptr CS:[0x10DC]
+3358:1263 jmp near 0x132C
+3358:1266 shr BP,1
+3358:1268 pushf
+3358:1269 jcxz short 0x1272
+3358:126B or DL,DL
+3358:126D jns short 0x127E
+3358:126F jmp short 0x12C7
+3358:1272 lods AL,byte ptr DS:[SI]
+3358:1273 xor AH,AH
+3358:1275 mov DL,AL
+3358:1277 or AL,AL
+3358:1279 js short 0x12C1
+3358:127B mov CX,AX
+3358:127D inc CX
+3358:127E sub BP,CX
+3358:1280 jae short 0x1286
+3358:1282 add CX,BP
+3358:1284 je short 0x12A1
+3358:1286 lods AL,byte ptr DS:[SI]
+3358:1287 mov AH,AL
+3358:1289 and AL,0x0F
+3358:128B je short 0x12B7
+3358:128D add AL,DH
+3358:128F stos byte ptr ES:[DI],AL
+3358:1290 shr AH,1
+3358:1292 shr AH,1
+3358:1294 shr AH,1
+3358:1296 shr AH,1
+3358:1298 je short 0x12BC
+3358:129A mov AL,AH
+3358:129C add AL,DH
+3358:129E stos byte ptr ES:[DI],AL
+3358:129F loop 0x1286
+3358:12A1 or BP,BP
+3358:12A3 jns short 0x1272
+3358:12A5 mov CX,BP
+3358:12A7 neg CX
+3358:12A9 mov BP,word ptr CS:[0x10DC]
+3358:12AE xor AH,AH
+3358:12B0 popf
+3358:12B1 jae short 0x132C
+3358:12B3 lods AL,byte ptr DS:[SI]
+3358:12B4 jmp short 0x131E
+3358:12B7 inc DI
+3358:12B8 shr AH,1
+3358:12BA jne short 0x1292
+3358:12BC inc DI
+3358:12BD loop 0x1286
+3358:12BF jmp short 0x12A1
+3358:12C1 mov CX,0x0101
+3358:12C4 sub CX,AX
+3358:12C6 inc SI
+3358:12C7 sub BP,CX
+3358:12C9 jae short 0x12CF
+3358:12CB add CX,BP
+3358:12CD je short 0x1306
+3358:12CF mov AL,byte ptr DS:[SI-1]
+3358:12D2 shl AX,1
+3358:12D4 je short 0x12F2
+3358:12D6 shl AX,1
+3358:12D8 shl AX,1
+3358:12DA shl AX,1
+3358:12DC shr AL,1
+3358:12DE je short 0x12F8
+3358:12E0 shr AL,1
+3358:12E2 shr AL,1
+3358:12E4 shr AL,1
+3358:12E6 add AL,DH
+3358:12E8 or AH,AH
+3358:12EA je short 0x1302
+3358:12EC add AH,DH
+3358:12EE rep stos word ptr ES:[DI],AX
+3358:12F0 jmp short 0x1306
+3358:12F2 shl CX,1
+3358:12F4 add DI,CX
+3358:12F6 jmp short 0x1306
+3358:12F8 mov AL,AH
+3358:12FA add AL,DH
+3358:12FC inc DI
+3358:12FD stos byte ptr ES:[DI],AL
+3358:12FE loop 0x12FC
+3358:1300 jmp short 0x1306
+3358:1302 stos byte ptr ES:[DI],AL
+3358:1303 inc DI
+3358:1304 loop 0x1302
+3358:1306 or BP,BP
+3358:1308 js short 0x130D
+3358:130A jmp near 0x1272
+3358:130D xor AH,AH
+3358:130F mov CX,BP
+3358:1311 neg CX
+3358:1313 mov BP,word ptr CS:[0x10DC]
+3358:1318 popf
+3358:1319 jae short 0x132C
+3358:131B mov AL,byte ptr DS:[SI-1]
+3358:131E and AL,0x0F
+3358:1320 je short 0x1327
+3358:1322 add AL,DH
+3358:1324 mov byte ptr ES:[DI],AL
+3358:1327 inc DI
+3358:1328 dec CX
+3358:1329 dec BP
+3358:132A je short 0x1362
+3358:132C shr BP,1
+3358:132E jcxz short 0x1338
+3358:1330 or DL,DL
+3358:1332 js short 0x1358
+3358:1334 jmp short 0x1344
+3358:1336 add SI,CX
+3358:1338 lods AL,byte ptr DS:[SI]
+3358:1339 xor AH,AH
+3358:133B mov DL,AL
+3358:133D or AL,AL
+3358:133F js short 0x1352
+3358:1341 mov CX,AX
+3358:1343 inc CX
+3358:1344 sub BP,CX
+3358:1346 jae short 0x1336
+3358:1348 add CX,BP
+3358:134A add SI,CX
+3358:134C mov CX,BP
+3358:134E neg CX
+3358:1350 jmp short 0x1362
+3358:1352 mov CX,0x0101
+3358:1355 sub CX,AX
+3358:1357 inc SI
+3358:1358 sub BP,CX
+3358:135A jae short 0x1338
+3358:135C xor AH,AH
+3358:135E mov CX,BP
+3358:1360 neg CX
+3358:1362 sub DI,word ptr CS:[0x10E0]
+3358:1367 add DI,0x0140
+3358:136B dec BX
+3358:136C je short 0x1371
+3358:136E jmp near 0x11EE
+3358:1371 ret far
+3358:1372 mov AL,byte ptr DS:[SI-1]
+3358:1375 mov byte ptr CS:[0x019E],AL
+3358:1379 and DI,0x1FFF
+3358:137D mov word ptr CS:[0x158B],DI
+3358:1382 add DI,3
+3358:1385 shr DI,1
+3358:1387 shr DI,1
+3358:1389 shl DI,1
+3358:138B mov AX,word ptr SS:[BP+2]
+3358:138E sub AX,BX
+3358:1390 jle short 0x13BE
+3358:1392 sub CX,AX
+3358:1394 jbe short 0x13F1
+3358:1396 add BX,AX
+3358:1398 push DX
+3358:1399 push CX
+3358:139A push BP
+3358:139B mul DI
+3358:139D mov BP,AX
+3358:139F xor AH,AH
+3358:13A1 lods AL,byte ptr DS:[SI]
+3358:13A2 or AL,AL
+3358:13A4 js short 0x13B1
+3358:13A6 mov CX,AX
+3358:13A8 inc CX
+3358:13A9 add SI,CX
+3358:13AB sub BP,CX
+3358:13AD jne short 0x13A1
+3358:13AF jmp short 0x13BB
+3358:13B1 mov CX,0x0101
+3358:13B4 sub CX,AX
+3358:13B6 inc SI
+3358:13B7 sub BP,CX
+3358:13B9 jne short 0x13A1
+3358:13BB pop BP
+3358:13BC pop CX
+3358:13BD pop DX
+3358:13BE mov AX,BX
+3358:13C0 add AX,CX
+3358:13C2 sub AX,word ptr SS:[BP+6]
+3358:13C5 jbe short 0x13CB
+3358:13C7 sub CX,AX
+3358:13C9 jbe short 0x13F1
+3358:13CB mov AX,DX
+3358:13CD add AX,DI
+3358:13CF add AX,DI
+3358:13D1 sub AX,word ptr SS:[BP+4]
+3358:13D4 jg short 0x1419
+3358:13D6 mov AX,word ptr SS:[BP]
+3358:13D9 sub AX,DX
+3358:13DB jg short 0x13F2
+3358:13DD mov word ptr CS:[0x0C3C],DI
+3358:13E2 mov BP,DI
+3358:13E4 call near 0x0C10
+3358:13E7 mov BX,CX
+3358:13E9 mov DX,word ptr CS:[0x019D]
+3358:13EE jmp near 0x0C46
+3358:13F1 ret far
+3358:13F2 cmp AX,word ptr CS:[0x158B]
+3358:13F7 jae short 0x13F1
+3358:13F9 mov BP,DI
+3358:13FB shl BP,1
+3358:13FD sub BP,AX
+3358:13FF mov word ptr CS:[0x10E0],BP
+3358:1404 mov word ptr CS:[0x10DE],AX
+3358:1408 add DX,AX
+3358:140A call near 0x0C10
+3358:140D mov DX,word ptr CS:[0x019D]
+3358:1412 mov BX,CX
+3358:1414 xor CX,CX
+3358:1416 jmp near 0x10E2
+3358:1419 shl DI,1
+3358:141B sub DI,AX
+3358:141D jle short 0x13F1
+3358:141F mov word ptr CS:[0x10DC],AX
+3358:1423 mov word ptr CS:[0x10DE],0
+3358:142A mov AX,word ptr SS:[BP]
+3358:142D sub AX,DX
+3358:142F jle short 0x143B
+3358:1431 mov word ptr CS:[0x10DE],AX
+3358:1435 sub DI,AX
+3358:1437 jle short 0x13F1
+3358:1439 add DX,AX
+3358:143B mov word ptr CS:[0x10E0],DI
+3358:1440 call near 0x0C10
+3358:1443 mov DX,word ptr CS:[0x019D]
+3358:1448 mov BX,CX
+3358:144A xor CX,CX
+3358:144C jmp near 0x11EE
+3358:144F jmp near 0x17E8
+3358:1452 cmp CH,0xFE
+3358:1455 jae short 0x144F
+3358:1457 or DI,DI
+3358:1459 jns short 0x145E
+3358:145B jmp near 0x1372
+3358:145E mov AL,byte ptr DS:[SI-1]
+3358:1461 mov byte ptr CS:[0x019E],AL
+3358:1465 mov word ptr CS:[0x158B],DI
+3358:146A add DI,3
+3358:146D shr DI,1
+3358:146F shr DI,1
+3358:1471 shl DI,1
+3358:1473 mov AX,word ptr SS:[BP+2]
+3358:1476 sub AX,BX
+3358:1478 jle short 0x1485
+3358:147A sub CX,AX
+3358:147C jbe short 0x14B8
+3358:147E add BX,AX
+3358:1480 add SI,DI
+3358:1482 dec AX
+3358:1483 jne short 0x1480
+3358:1485 mov AX,BX
+3358:1487 add AX,CX
+3358:1489 sub AX,word ptr SS:[BP+6]
+3358:148C jbe short 0x1492
+3358:148E sub CX,AX
+3358:1490 jbe short 0x14B8
+3358:1492 mov AX,DX
+3358:1494 add AX,word ptr CS:[0x158B]
+3358:1499 sub AX,word ptr SS:[BP+4]
+3358:149C jg short 0x14FD
+3358:149E mov AX,word ptr SS:[BP]
+3358:14A1 sub AX,DX
+3358:14A3 jg short 0x14B9
+3358:14A5 mov AX,DI
+3358:14A7 shr AX,1
+3358:14A9 mov word ptr CS:[0x158B],AX
+3358:14AD call near 0x0C10
+3358:14B0 mov DX,word ptr CS:[0x019D]
+3358:14B5 jmp near 0x158A
+3358:14B8 ret far
+3358:14B9 sub word ptr CS:[0x158B],AX
+3358:14BE jle short 0x14B8
+3358:14C0 push SI
+3358:14C1 add DX,AX
+3358:14C3 mov SI,AX
+3358:14C5 and SI,3
+3358:14C8 shl SI,1
+3358:14CA mov SI,word ptr CS:[SI+0x14F5]
+3358:14CF shr DI,1
+3358:14D1 shr AX,1
+3358:14D3 mov byte ptr CS:[SI+2],AL
+3358:14D7 shr AX,1
+3358:14D9 sub DI,AX
+3358:14DB mov word ptr CS:[SI+4],DI
+3358:14DF call near 0x0C10
+3358:14E2 mov BP,SI
+3358:14E4 pop SI
+3358:14E5 mov AX,BP
+3358:14E7 sub AX,0x163D
+3358:14EA mov byte ptr CS:[0x163C],AL
+3358:14EE mov DX,word ptr CS:[0x019D]
+3358:14F3 jmp near BP
+3358:14FD sub word ptr CS:[0x158B],AX
+3358:1502 jle short 0x14B8
+3358:1504 mov AX,word ptr SS:[BP]
+3358:1507 sub AX,DX
+3358:1509 jg short 0x152D
+3358:150B mov AX,word ptr CS:[0x158B]
+3358:150F mov word ptr CS:[0x16AB],AX
+3358:1513 add AX,3
+3358:1516 shr AX,1
+3358:1518 and AL,0xFE
+3358:151A sub DI,AX
+3358:151C mov AX,DI
+3358:151E mov byte ptr CS:[0x16A9],AL
+3358:1522 call near 0x0C10
+3358:1525 mov DX,word ptr CS:[0x019D]
+3358:152A jmp near 0x16AA
+3358:152D sub word ptr CS:[0x158B],AX
+3358:1532 jle short 0x14B8
+3358:1534 push CX
+3358:1535 mov CX,AX
+3358:1537 shr CX,1
+3358:1539 add SI,CX
+3358:153B push SI
+3358:153C add DX,AX
+3358:153E mov SI,AX
+3358:1540 and SI,3
+3358:1543 shl SI,1
+3358:1545 mov SI,word ptr CS:[SI+0x1582]
+3358:154A add AX,word ptr CS:[0x158B]
+3358:154F add AX,3
+3358:1552 shr AX,1
+3358:1554 and AL,0xFE
+3358:1556 sub DI,AX
+3358:1558 mov AX,DI
+3358:155A add AX,CX
+3358:155C mov byte ptr CS:[SI+2],AL
+3358:1560 mov AX,word ptr CS:[0x158B]
+3358:1564 mov word ptr CS:[SI+4],AX
+3358:1568 call near 0x0C10
+3358:156B mov BP,SI
+3358:156D pop SI
+3358:156E pop CX
+3358:156F mov AX,BP
+3358:1571 sub AX,0x1779
+3358:1574 mov byte ptr CS:[0x1778],AL
+3358:1578 mov DX,word ptr CS:[0x019D]
+3358:157D add BP,3
+3358:1580 jmp near BP
+3358:158A mov BP,word ptr [0x00034B0B]
+3358:158D push DI
+3358:158E lods AX,word ptr DS:[SI]
+3358:158F mov BL,AL
+3358:1591 and AL,DL
+3358:1593 je short 0x15CA
+3358:1595 add AL,DH
+3358:1597 stos byte ptr ES:[DI],AL
+3358:1598 shr BL,1
+3358:159A shr BL,1
+3358:159C shr BL,1
+3358:159E shr BL,1
+3358:15A0 je short 0x15D9
+3358:15A2 mov AL,BL
+3358:15A4 add AL,DH
+3358:15A6 stos byte ptr ES:[DI],AL
+3358:15A7 mov AL,AH
+3358:15A9 and AL,DL
+3358:15AB je short 0x15EE
+3358:15AD add AL,DH
+3358:15AF stos byte ptr ES:[DI],AL
+3358:15B0 shr AH,1
+3358:15B2 shr AH,1
+3358:15B4 shr AH,1
+3358:15B6 shr AH,1
+3358:15B8 je short 0x15F5
+3358:15BA mov AL,AH
+3358:15BC add AL,DH
+3358:15BE stos byte ptr ES:[DI],AL
+3358:15BF dec BP
+3358:15C0 jne short 0x158E
+3358:15C2 pop DI
+3358:15C3 add DI,0x0140
+3358:15C7 loop 0x158A
+3358:15C9 ret far
+3358:15CA inc DI
+3358:15CB or AL,BL
+3358:15CD je short 0x15D9
+3358:15CF shr AL,1
+3358:15D1 shr AL,1
+3358:15D3 shr AL,1
+3358:15D5 shr AL,1
+3358:15D7 jmp short 0x15A4
+3358:15D9 inc DI
+3358:15DA mov AL,AH
+3358:15DC or AL,AL
+3358:15DE jne short 0x15A9
+3358:15E0 add DI,2
+3358:15E3 dec BP
+3358:15E4 jne short 0x158E
+3358:15E6 pop DI
+3358:15E7 add DI,0x0140
+3358:15EB loop 0x158A
+3358:15ED ret far
+3358:15EE shr AH,1
+3358:15F0 je short 0x15E0
+3358:15F2 inc DI
+3358:15F3 jmp short 0x15B2
+3358:15F5 inc DI
+3358:15F6 dec BP
+3358:15F7 jne short 0x158E
+3358:15F9 jmp short 0x15E6
+3358:15FB add SI,(short)byte ptr [0x00034B7D]
+3358:15FE mov BP,word ptr [0x00034B7F]
+3358:1601 push DI
+3358:1602 lods AX,word ptr DS:[SI]
+3358:1603 mov BL,AL
+3358:1605 and AL,DL
+3358:1607 je short 0x163E
+3358:1609 add AL,DH
+3358:160B stos byte ptr ES:[DI],AL
+3358:160C shr BL,1
+3358:160E shr BL,1
+3358:1610 shr BL,1
+3358:1612 shr BL,1
+3358:1614 je short 0x164D
+3358:1616 mov AL,BL
+3358:1618 add AL,DH
+3358:161A stos byte ptr ES:[DI],AL
+3358:161B mov AL,AH
+3358:161D and AL,DL
+3358:161F je short 0x1661
+3358:1621 add AL,DH
+3358:1623 stos byte ptr ES:[DI],AL
+3358:1624 shr AH,1
+3358:1626 shr AH,1
+3358:1628 shr AH,1
+3358:162A shr AH,1
+3358:162C je short 0x1668
+3358:162E mov AL,AH
+3358:1630 add AL,DH
+3358:1632 stos byte ptr ES:[DI],AL
+3358:1633 dec BP
+3358:1634 jne short 0x1602
+3358:1636 pop DI
+3358:1637 add DI,0x0140
+3358:163B loop 0x1684
+3358:163B loop 0x166E
+3358:163B selector
+3358:163B loop 0x15FB
+3358:163B loop 0x1690
+3358:163D ret far
+3358:163E inc DI
+3358:163F or AL,BL
+3358:1641 je short 0x164D
+3358:1643 shr AL,1
+3358:1645 shr AL,1
+3358:1647 shr AL,1
+3358:1649 shr AL,1
+3358:164B jmp short 0x1618
+3358:164D inc DI
+3358:164E mov AL,AH
+3358:1650 or AL,AL
+3358:1652 jne short 0x161D
+3358:1654 add DI,2
+3358:1657 dec BP
+3358:1658 jne short 0x1602
+3358:165A pop DI
+3358:165B add DI,0x0140
+3358:165F jmp short 0x163B
+3358:1661 shr AH,1
+3358:1663 je short 0x1654
+3358:1665 inc DI
+3358:1666 jmp short 0x1626
+3358:1668 inc DI
+3358:1669 dec BP
+3358:166A jne short 0x1602
+3358:166C jmp short 0x165A
+3358:166E add SI,(short)byte ptr [0x00034BF0]
+3358:1671 mov BP,word ptr [0x00034BF2]
+3358:1674 push DI
+3358:1675 lods AL,byte ptr DS:[SI]
+3358:1676 cmp AL,DL
+3358:1678 jbe short 0x1668
+3358:167A shr AL,1
+3358:167C shr AL,1
+3358:167E shr AL,1
+3358:1680 shr AL,1
+3358:1682 jmp short 0x1630
+3358:1684 add SI,(short)byte ptr [0x00034C06]
+3358:1687 mov BP,word ptr [0x00034C08]
+3358:168A push DI
+3358:168B lods AL,byte ptr DS:[SI]
+3358:168C mov AH,AL
+3358:168E jmp short 0x161D
+3358:1690 add SI,(short)byte ptr [0x00034C12]
+3358:1693 mov BP,word ptr [0x00034C14]
+3358:1696 push DI
+3358:1697 lods AX,word ptr DS:[SI]
+3358:1698 and AL,0xF0
+3358:169A je short 0x164D
+3358:169C shr AL,1
+3358:169E shr AL,1
+3358:16A0 shr AL,1
+3358:16A2 shr AL,1
+3358:16A4 jmp near 0x1618
+3358:16A7 add SI,(short)byte ptr [0x00034C29]
+3358:16AA mov BP,word ptr [0x00034C2B]
+3358:16AD push DI
+3358:16AE add BP,DI
+3358:16B0 lods AX,word ptr DS:[SI]
+3358:16B1 mov BL,AL
+3358:16B3 and AL,DL
+3358:16B5 je short 0x16F9
+3358:16B7 add AL,DH
+3358:16B9 stos byte ptr ES:[DI],AL
+3358:16BA cmp DI,BP
+3358:16BC jae short 0x16F1
+3358:16BE shr BL,1
+3358:16C0 shr BL,1
+3358:16C2 shr BL,1
+3358:16C4 shr BL,1
+3358:16C6 je short 0x170C
+3358:16C8 mov AL,BL
+3358:16CA add AL,DH
+3358:16CC stos byte ptr ES:[DI],AL
+3358:16CD cmp DI,BP
+3358:16CF jae short 0x16F1
+3358:16D1 mov AL,AH
+3358:16D3 and AL,DL
+3358:16D5 je short 0x171C
+3358:16D7 add AL,DH
+3358:16D9 stos byte ptr ES:[DI],AL
+3358:16DA cmp DI,BP
+3358:16DC jae short 0x16F1
+3358:16DE shr AH,1
+3358:16E0 shr AH,1
+3358:16E2 shr AH,1
+3358:16E4 shr AH,1
+3358:16E6 je short 0x1725
+3358:16E8 mov AL,AH
+3358:16EA add AL,DH
+3358:16EC stos byte ptr ES:[DI],AL
+3358:16ED cmp DI,BP
+3358:16EF jb short 0x16B0
+3358:16F1 pop DI
+3358:16F2 add DI,0x0140
+3358:16F6 loop 0x16A7
+3358:16F8 ret far
+3358:16F9 inc DI
+3358:16FA cmp DI,BP
+3358:16FC jae short 0x16F1
+3358:16FE or AL,BL
+3358:1700 je short 0x170C
+3358:1702 shr AL,1
+3358:1704 shr AL,1
+3358:1706 shr AL,1
+3358:1708 shr AL,1
+3358:170A jmp short 0x16CA
+3358:170C inc DI
+3358:170D cmp DI,BP
+3358:170F jae short 0x16F1
+3358:1711 mov AL,AH
+3358:1713 or AL,AL
+3358:1715 jne short 0x16D3
+3358:1717 add DI,2
+3358:171A jmp short 0x16ED
+3358:171C inc DI
+3358:171D cmp DI,BP
+3358:171F jae short 0x16F1
+3358:1721 shr AH,1
+3358:1723 jne short 0x16E0
+3358:1725 inc DI
+3358:1726 jmp short 0x16ED
+3358:1728 add SI,(short)byte ptr [0x00034CAA]
+3358:172B mov BP,word ptr [0x00034CAC]
+3358:172E push DI
+3358:172F add BP,DI
+3358:1731 lods AX,word ptr DS:[SI]
+3358:1732 mov BL,AL
+3358:1734 and AL,DL
+3358:1736 je short 0x177A
+3358:1738 add AL,DH
+3358:173A stos byte ptr ES:[DI],AL
+3358:173B cmp DI,BP
+3358:173D jae short 0x1772
+3358:173F shr BL,1
+3358:1741 shr BL,1
+3358:1743 shr BL,1
+3358:1745 shr BL,1
+3358:1747 je short 0x178D
+3358:1749 mov AL,BL
+3358:174B add AL,DH
+3358:174D stos byte ptr ES:[DI],AL
+3358:174E cmp DI,BP
+3358:1750 jae short 0x1772
+3358:1752 mov AL,AH
+3358:1754 and AL,DL
+3358:1756 je short 0x179D
+3358:1758 add AL,DH
+3358:175A stos byte ptr ES:[DI],AL
+3358:175B cmp DI,BP
+3358:175D jae short 0x1772
+3358:175F shr AH,1
+3358:1761 shr AH,1
+3358:1763 shr AH,1
+3358:1765 shr AH,1
+3358:1767 je short 0x17A6
+3358:1769 mov AL,AH
+3358:176B add AL,DH
+3358:176D stos byte ptr ES:[DI],AL
+3358:176E cmp DI,BP
+3358:1770 jb short 0x1731
+3358:1772 pop DI
+3358:1773 add DI,0x0140
+3358:1777 loop 0x17A9
+3358:1777 loop 0x1728
+3358:1777 selector
+3358:1777 loop 0x17C1
+3358:1777 loop 0x17CF
+3358:1779 ret far
+3358:177A inc DI
+3358:177B cmp DI,BP
+3358:177D jae short 0x1772
+3358:177F or AL,BL
+3358:1781 je short 0x178D
+3358:1783 shr AL,1
+3358:1785 shr AL,1
+3358:1787 shr AL,1
+3358:1789 shr AL,1
+3358:178B jmp short 0x174B
+3358:178D inc DI
+3358:178E cmp DI,BP
+3358:1790 jae short 0x1772
+3358:1792 mov AL,AH
+3358:1794 or AL,AL
+3358:1796 jne short 0x1754
+3358:1798 add DI,2
+3358:179B jmp short 0x176E
+3358:179D inc DI
+3358:179E cmp DI,BP
+3358:17A0 jae short 0x1772
+3358:17A2 shr AH,1
+3358:17A4 je short 0x1761
+3358:17A6 inc DI
+3358:17A7 jmp short 0x176E
+3358:17A9 add SI,(short)byte ptr [0x00034D2B]
+3358:17AC mov BP,word ptr [0x00034D2D]
+3358:17AF push DI
+3358:17B0 add BP,DI
+3358:17B2 lods AL,byte ptr DS:[SI]
+3358:17B3 cmp AL,DL
+3358:17B5 jbe short 0x17A6
+3358:17B7 shr AL,1
+3358:17B9 shr AL,1
+3358:17BB shr AL,1
+3358:17BD shr AL,1
+3358:17BF jmp short 0x176B
+3358:17C1 add SI,3
+3358:17C4 mov BP,word ptr [0x00034D45]
+3358:17C7 push DI
+3358:17C8 add BP,DI
+3358:17CA lods AL,byte ptr DS:[SI]
+3358:17CB mov AH,AL
+3358:17CD jmp short 0x1754
+3358:17CF add SI,(short)byte ptr [0x00034D51]
+3358:17D2 mov BP,word ptr [0x00034D53]
+3358:17D5 push DI
+3358:17D6 add BP,DI
+3358:17D8 lods AX,word ptr DS:[SI]
+3358:17D9 and AL,0xF0
+3358:17DB je short 0x178D
+3358:17DD shr AL,1
+3358:17DF shr AL,1
+3358:17E1 shr AL,1
+3358:17E3 shr AL,1
+3358:17E5 jmp near 0x174B
+3358:17E8 xor CH,CH
+3358:17EA mov AX,word ptr SS:[BP+2]
+3358:17ED sub AX,BX
+3358:17EF jle short 0x17FC
+3358:17F1 sub CX,AX
+3358:17F3 jbe short 0x1825
+3358:17F5 add BX,AX
+3358:17F7 add SI,DI
+3358:17F9 dec AX
+3358:17FA jne short 0x17F7
+3358:17FC mov AX,BX
+3358:17FE add AX,CX
+3358:1800 sub AX,word ptr SS:[BP+6]
+3358:1803 jbe short 0x1809
+3358:1805 sub CX,AX
+3358:1807 jbe short 0x1825
+3358:1809 mov AX,DX
+3358:180B add AX,DI
+3358:180D sub AX,word ptr SS:[BP+4]
+3358:1810 jg short 0x1854
+3358:1825 ret far
+3358:1837 sub BP,DX
+3358:1839 mov CX,DX
+3358:183B lods AL,byte ptr DS:[SI]
+3358:183C or AL,AL
+3358:183E je short 0x184F
+3358:1840 stos byte ptr ES:[DI],AL
+3358:1841 loop 0x183B
+3358:1843 sub DI,DX
+3358:1845 add SI,BP
+3358:1847 add DI,0x0140
+3358:184B dec BX
+3358:184C jne short 0x1839
+3358:184E ret far
+3358:184F inc DI
+3358:1850 loop 0x183B
+3358:1852 jmp short 0x1843
+3358:1854 mov word ptr CS:[0x158B],DI
+3358:1859 sub DI,AX
+3358:185B jle short 0x1825
+3358:185D mov AX,word ptr SS:[BP]
+3358:1860 sub AX,DX
+3358:1862 jg short 0x1872
+3358:1864 push DI
+3358:1865 call near 0x0C10
+3358:1868 pop DX
+3358:1869 mov BP,word ptr CS:[0x158B]
+3358:186E mov BX,CX
+3358:1870 jmp short 0x1837
+3358:1872 sub DI,AX
+3358:1874 jle short 0x1825
+3358:1876 add SI,AX
+3358:1878 add DX,AX
+3358:187A push DI
+3358:187B call near 0x0C10
+3358:187E pop DX
+3358:187F mov BP,word ptr CS:[0x158B]
+3358:1884 mov BX,CX
+3358:1886 jmp short 0x1837
+3358:1888 lods AX,word ptr DS:[SI]
+3358:1889 sub DX,AX
+3358:188B jae short 0x188F
+3358:188D xor DX,DX
+3358:188F lods AX,word ptr DS:[SI]
+3358:1890 sub BX,AX
+3358:1892 jae short 0x1896
+3358:1896 mov CX,0x0010
+3358:1899 cmp BX,0x00B8
+3358:189D jbe short 0x18A4
+3358:189F mov CX,0x00C8
+3358:18A2 sub CX,BX
+3358:18A4 call near 0x0C10
+3358:18A7 mov AX,0xA000
+3358:18AA mov ES,AX
+3358:18AC sub DX,0x0140
+3358:18B0 neg DX
+3358:18B2 cmp DX,0x0010
+3358:18B5 jbe short 0x18BA
+3358:18B7 mov DX,0x0010
+3358:18BA mov word ptr CS:[0x018C],DX
+3358:18BF mov word ptr CS:[0x018E],CX
+3358:18C4 mov word ptr CS:[0x018A],DI
+3358:18C9 mov BX,0xFA00
+3358:18CC shr DX,1
+3358:18CE mov word ptr CS:[0x0190],DX
+3358:18D3 mov word ptr CS:[0x0192],CX
+3358:18D8 mov CX,word ptr CS:[0x0190]
+3358:18DD mov BP,word ptr DS:[SI+0x20]
+3358:18E0 lods AX,word ptr DS:[SI]
+3358:18E1 mov DX,AX
+3358:18E3 jcxz short 0x1911
+3358:18E5 mov AX,word ptr ES:[DI]
+3358:18E8 mov word ptr ES:[BX],AX
+3358:18EB add BX,2
+3358:18EE rol BP,1
+3358:18F0 add DX,DX
+3358:18F2 jb short 0x18FE
+3358:18F4 xor AL,AL
+3358:18F6 test BP,1
+3358:18FA je short 0x18FE
+3358:18FC mov AL,0x0F
+3358:18FE rol BP,1
+3358:1900 add DX,DX
+3358:1902 jb short 0x190E
+3358:1904 xor AH,AH
+3358:1906 test BP,1
+3358:190A je short 0x190E
+3358:190C mov AH,0x0F
+3358:190E stos word ptr ES:[DI],AX
+3358:190F loop 0x18E5
+3358:1911 test byte ptr CS:[0x018C],1
+3358:1917 je short 0x192F
+3358:1919 mov AL,byte ptr ES:[DI]
+3358:191C mov byte ptr ES:[BX],AL
+3358:191F inc BX
+3358:1920 inc DI
+3358:1921 add DX,DX
+3358:1923 jb short 0x192F
+3358:1925 xor AL,AL
+3358:1927 add BP,BP
+3358:1929 jae short 0x192D
+3358:192B mov AL,0x0F
+3358:192D dec DI
+3358:192E stos byte ptr ES:[DI],AL
+3358:192F sub DI,word ptr CS:[0x018C]
+3358:1934 add DI,0x0140
+3358:1938 dec word ptr CS:[0x0192]
+3358:193D jne short 0x18D8
+3358:193F ret far
+3358:1940 push AX
+3358:1941 push BX
+3358:1942 push CX
+3358:1943 push DX
+3358:1944 push SI
+3358:1945 push DI
+3358:1946 push BP
+3358:1947 push DS
+3358:1948 push ES
+3358:1949 mov BP,word ptr CS:[0x018A]
+3358:194E mov BX,word ptr CS:[0x018C]
+3358:1953 mov DX,word ptr CS:[0x018E]
+3358:1958 mov AX,0xA000
+3358:195B mov ES,AX
+3358:195D mov DS,AX
+3358:195F mov SI,0xFA00
+3358:1962 mov DI,BP
+3358:1964 mov CX,BX
+3358:1966 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:1968 add BP,0x0140
+3358:196C dec DX
+3358:196D jne short 0x1962
+3358:196F pop ES
+3358:1970 pop DS
+3358:1971 pop BP
+3358:1972 pop DI
+3358:1973 pop SI
+3358:1974 pop DX
+3358:1975 pop CX
+3358:1976 pop BX
+3358:1977 pop AX
+3358:1978 ret far
+3358:1979 xor AX,AX
+3358:197B mov AH,AL
+3358:197D push AX
+3358:197E lods AX,word ptr DS:[SI]
+3358:197F mov DX,AX
+3358:1981 lods AX,word ptr DS:[SI]
+3358:1982 mov BX,AX
+3358:1984 call near 0x0C10
+3358:1987 lods AX,word ptr DS:[SI]
+3358:1988 mov BP,AX
+3358:198A sub BP,DX
+3358:198C jbe short 0x19C7
+3358:198E lods AX,word ptr DS:[SI]
+3358:198F sub BX,AX
+3358:1991 jae short 0x19C7
+3358:1993 neg BX
+3358:1995 pop AX
+3358:1996 mov SI,DI
+3358:1998 shr BP,1
+3358:199A jb short 0x19AC
+3358:199C je short 0x19C6
+3358:199E mov DI,SI
+3358:19A0 mov CX,BP
+3358:19A2 rep stos word ptr ES:[DI],AX
+3358:19A4 add SI,0x0140
+3358:19A8 dec BX
+3358:19A9 jne short 0x199E
+3358:19AB ret far
+3358:19AC je short 0x19BD
+3358:19AE mov DI,SI
+3358:19B0 mov CX,BP
+3358:19B2 rep stos word ptr ES:[DI],AX
+3358:19B4 stos byte ptr ES:[DI],AL
+3358:19B5 add SI,0x0140
+3358:19B9 dec BX
+3358:19BA jne short 0x19AE
+3358:19BC ret far
+3358:19C7 pop AX
+3358:19C8 ret far
+3358:19C9 mov DX,word ptr SS:[BP]
+3358:19CC mov BX,word ptr SS:[BP+2]
+3358:19CF call near 0x0C10
+3358:19D2 mov SI,DI
+3358:19D4 mov DX,word ptr SS:[BP+8]
+3358:19D7 mov BX,word ptr SS:[BP+0x0A]
+3358:19DA call near 0x0C10
+3358:19DD mov DX,word ptr SS:[BP+4]
+3358:19E0 mov BX,word ptr SS:[BP+6]
+3358:19E3 mov CX,DX
+3358:19E5 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:19E7 sub SI,DX
+3358:19E9 sub DI,DX
+3358:19EB add SI,0x0140
+3358:19EF add DI,0x0140
+3358:19F3 dec BX
+3358:19F4 jne short 0x19E3
+3358:19F6 ret far
+3358:19F7 push AX
+3358:19F8 push CX
+3358:19F9 push DI
+3358:19FA xor DI,DI
+3358:19FC xor AX,AX
+3358:19FE mov CX,0x7D00
+3358:1A01 rep stos word ptr ES:[DI],AX
+3358:1A03 pop DI
+3358:1A04 pop CX
+3358:1A05 pop AX
+3358:1A06 ret far
+3358:1A07 mov word ptr CS:[0x019A],BP
+3358:1A0C mov word ptr CS:[0x0198],SI
+3358:1A11 mov byte ptr CS:[0x019C],AL
+3358:1A15 push AX
+3358:1A16 push BX
+3358:1A17 push CX
+3358:1A18 push DX
+3358:1A19 push DI
+3358:1A1A mov word ptr CS:[0x0194],DX
+3358:1A1F mov word ptr CS:[0x0196],BX
+3358:1A24 sub BX,CX
+3358:1A26 sub DX,DI
+3358:1A28 neg BX
+3358:1A2A neg DX
+3358:1A2C call near 0x1ADC
+3358:1A2F mov BP,word ptr CS:[0x019A]
+3358:1A34 pop DI
+3358:1A35 pop DX
+3358:1A36 pop CX
+3358:1A37 pop BX
+3358:1A38 pop AX
+3358:1A39 ret far
+3358:1A3A mov BX,word ptr CS:[0x0196]
+3358:1A3F mov CX,DX
+3358:1A41 mov AX,word ptr CS:[0x0194]
+3358:1A45 mov DX,AX
+3358:1A47 add AX,CX
+3358:1A49 cmp AX,DX
+3358:1A4B jg short 0x1A51
+3358:1A4D mov DX,AX
+3358:1A4F neg CX
+3358:1A51 mov DI,word ptr CS:[0x0198]
+3358:1A56 cmp BX,word ptr DS:[DI+2]
+3358:1A59 jl short 0x1A83
+3358:1A5B cmp BX,word ptr DS:[DI+6]
+3358:1A5E jge short 0x1A83
+3358:1A60 call near 0x0C10
+3358:1A63 inc CX
+3358:1A64 mov AL,byte ptr CS:[0x019C]
+3358:1A68 mov SI,word ptr CS:[0x0198]
+3358:1A6D rol word ptr CS:[0x019A],1
+3358:1A72 jae short 0x1A7F
+3358:1A74 cmp DX,word ptr DS:[SI]
+3358:1A76 jl short 0x1A7F
+3358:1A78 cmp DX,word ptr DS:[SI+4]
+3358:1A7B jge short 0x1A7F
+3358:1A7D stos byte ptr ES:[DI],AL
+3358:1A7E dec DI
+3358:1A7F inc DI
+3358:1A80 inc DX
+3358:1A81 loop 0x1A6D
+3358:1A83 pop SI
+3358:1A84 pop DI
+3358:1A85 ret near
+3358:1A86 mov CX,BX
+3358:1A88 mov BX,word ptr CS:[0x0196]
+3358:1A8D mov DX,word ptr CS:[0x0194]
+3358:1A92 or AX,AX
+3358:1A94 jns short 0x1A98
+3358:1A98 cmp BX,0x00C8
+3358:1A9C jb short 0x1AA4
+3358:1AA4 mov DI,word ptr CS:[0x0198]
+3358:1AA9 cmp DX,word ptr DS:[DI]
+3358:1AAB jl short 0x1AD9
+3358:1AAD cmp DX,word ptr DS:[DI+4]
+3358:1AB0 jge short 0x1AD9
+3358:1AB2 call near 0x0C10
+3358:1AB5 inc CX
+3358:1AB6 mov AL,byte ptr CS:[0x019C]
+3358:1ABA mov SI,word ptr CS:[0x0198]
+3358:1ABF rol word ptr CS:[0x019A],1
+3358:1AC4 jae short 0x1AD2
+3358:1AC6 cmp BX,word ptr DS:[SI+2]
+3358:1AC9 jl short 0x1AD2
+3358:1ACB cmp BX,word ptr DS:[SI+6]
+3358:1ACE jge short 0x1AD2
+3358:1AD0 stos byte ptr ES:[DI],AL
+3358:1AD1 dec DI
+3358:1AD2 inc BX
+3358:1AD3 add DI,0x0140
+3358:1AD7 loop 0x1ABF
+3358:1AD9 pop SI
+3358:1ADA pop DI
+3358:1ADB ret near
+3358:1ADC push DI
+3358:1ADD push SI
+3358:1ADE or BX,BX
+3358:1AE0 jne short 0x1AE5
+3358:1AE2 jmp near 0x1A3A
+3358:1AE5 mov AX,1
+3358:1AE8 jns short 0x1AEE
+3358:1AEA neg BX
+3358:1AEC neg AX
+3358:1AEE or DX,DX
+3358:1AF0 je short 0x1A86
+3358:1AF2 mov CX,1
+3358:1AF5 jns short 0x1AFB
+3358:1AF7 neg CX
+3358:1AF9 neg DX
+3358:1AFB push AX
+3358:1AFC push CX
+3358:1AFD push AX
+3358:1AFE push CX
+3358:1AFF mov BP,SP
+3358:1B01 mov SI,BX
+3358:1B03 mov DI,DX
+3358:1B05 xor AX,AX
+3358:1B07 cmp DX,BX
+3358:1B09 jbe short 0x1B10
+3358:1B0B mov word ptr SS:[BP+2],AX
+3358:1B0E jmp short 0x1B19
+3358:1B10 or BX,BX
+3358:1B12 je short 0x1B76
+3358:1B14 xchg DI,SI
+3358:1B16 mov word ptr SS:[BP],AX
+3358:1B19 mov AX,DI
+3358:1B1B mov CX,DI
+3358:1B1D shr AX,1
+3358:1B1F add AX,SI
+3358:1B21 cmp AX,DI
+3358:1B23 jb short 0x1B2F
+3358:1B25 sub AX,DI
+3358:1B27 mov DX,word ptr SS:[BP+4]
+3358:1B2A mov BX,word ptr SS:[BP+6]
+3358:1B2D jmp short 0x1B35
+3358:1B2F mov DX,word ptr SS:[BP]
+3358:1B32 mov BX,word ptr SS:[BP+2]
+3358:1B35 add DX,word ptr CS:[0x0194]
+3358:1B3A add BX,word ptr CS:[0x0196]
+3358:1B3F mov word ptr CS:[0x0194],DX
+3358:1B44 mov word ptr CS:[0x0196],BX
+3358:1B49 push AX
+3358:1B4A push DI
+3358:1B4B rol word ptr CS:[0x019A],1
+3358:1B50 jae short 0x1B72
+3358:1B52 mov DI,word ptr CS:[0x0198]
+3358:1B57 cmp DX,word ptr DS:[DI]
+3358:1B59 jl short 0x1B72
+3358:1B5B cmp BX,word ptr DS:[DI+2]
+3358:1B5E jl short 0x1B72
+3358:1B60 cmp DX,word ptr DS:[DI+4]
+3358:1B63 jge short 0x1B72
+3358:1B65 cmp BX,word ptr DS:[DI+6]
+3358:1B68 jge short 0x1B72
+3358:1B6A call near 0x0C10
+3358:1B6D mov AL,byte ptr CS:[0x019C]
+3358:1B71 stos byte ptr ES:[DI],AL
+3358:1B72 pop DI
+3358:1B73 pop AX
+3358:1B74 loop 0x1B1F
+3358:1B76 add SP,8
+3358:1B79 pop SI
+3358:1B7A pop DI
+3358:1B7B ret near
+3358:1B7C push CX
+3358:1B7D push SI
+3358:1B7E push DI
+3358:1B7F xor SI,SI
+3358:1B81 mov DI,SI
+3358:1B83 mov CX,0x7D00
+3358:1B86 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:1B88 pop DI
+3358:1B89 pop SI
+3358:1B8A pop CX
+3358:1B8B ret far
+3358:1B8C mov DS,SI
+3358:1B8E call near 0x0C10
+3358:1B91 shr BP,1
+3358:1B93 jb short 0x1BA9
+3358:1B95 je short 0x1BBD
+3358:1B97 mov DX,DI
+3358:1B99 mov SI,DX
+3358:1B9B mov DI,SI
+3358:1B9D mov CX,BP
+3358:1B9F rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:1BA1 add DX,0x0140
+3358:1BA5 dec AX
+3358:1BA6 jne short 0x1B99
+3358:1BA8 ret far
+3358:1BA9 je short 0x1BBE
+3358:1BAB mov DX,DI
+3358:1BAD mov SI,DX
+3358:1BAF mov DI,SI
+3358:1BB1 mov CX,BP
+3358:1BB3 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:1BB5 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:1BB6 add DX,0x0140
+3358:1BBA dec AX
+3358:1BBB jne short 0x1BAD
+3358:1BBD ret far
+3358:1BBE mov CX,AX
+3358:1BC0 mov SI,DI
+3358:1BC2 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:1BC3 add DI,0x013F
+3358:1BC7 loop 0x1BC0
+3358:1BC9 ret far
+3358:1BCA mov BP,DI
+3358:1BCC and BP,0x01FF
+3358:1BD0 call near 0x0C10
+3358:1BD3 mov DX,CX
+3358:1BD5 xor DH,DH
+3358:1BD7 mov CX,BP
+3358:1BD9 push DI
+3358:1BDA movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:1BDB inc DI
+3358:1BDC loop 0x1BDA
+3358:1BDE pop DI
+3358:1BDF add DI,0x0280
+3358:1BE3 dec DX
+3358:1BE4 jne short 0x1BD7
+3358:1BE6 ret far
+3358:1BE7 push DS
+3358:1BE8 mov DS,SI
+3358:1BEA xor SI,SI
+3358:1BEC mov DI,SI
+3358:1BEE mov CX,0x5F00
+3358:1BF1 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:1BF3 pop DS
+3358:1BF4 ret far
+3358:1BF5 call near 0x0C10
+3358:1BF8 mov BX,AX
+3358:1BFA mov DX,CX
+3358:1BFC xor CX,CX
+3358:1BFE mov BP,DI
+3358:1C00 or BH,BH
+3358:1C02 je short 0x1C1F
+3358:1C04 mov CL,DL
+3358:1C06 lods AL,byte ptr DS:[SI]
+3358:1C07 mov AH,AL
+3358:1C09 mov AL,BL
+3358:1C0B shl AH,1
+3358:1C0D jb short 0x1C11
+3358:1C0F mov AL,BH
+3358:1C11 stos byte ptr ES:[DI],AL
+3358:1C12 loop 0x1C09
+3358:1C14 add BP,0x0140
+3358:1C18 mov DI,BP
+3358:1C1A dec DH
+3358:1C1C jne short 0x1C04
+3358:1C1E ret far
+3358:1C1F mov CL,DL
+3358:1C21 lods AL,byte ptr DS:[SI]
+3358:1C22 mov AH,AL
+3358:1C24 mov AL,BL
+3358:1C26 shl AH,1
+3358:1C28 jb short 0x1C38
+3358:1C2A inc DI
+3358:1C2B loop 0x1C26
+3358:1C2D add BP,0x0140
+3358:1C31 mov DI,BP
+3358:1C33 dec DH
+3358:1C35 jne short 0x1C1F
+3358:1C37 ret far
+3358:1C38 stos byte ptr ES:[DI],AL
+3358:1C39 loop 0x1C26
+3358:1C3B add BP,0x0140
+3358:1C3F mov DI,BP
+3358:1C41 dec DH
+3358:1C43 jne short 0x1C1F
+3358:1C46 mov DX,word ptr SS:[BP]
+3358:1C49 mov BX,word ptr SS:[BP+2]
+3358:1C4C call near 0x0C10
+3358:1C4F mov CX,word ptr SS:[BP+4]
+3358:1C52 mov AX,word ptr SS:[BP+6]
+3358:1C55 sub CX,DX
+3358:1C57 sub AX,BX
+3358:1C59 xchg DI,SI
+3358:1C5B mov DX,0x0140
+3358:1C5E sub DX,CX
+3358:1C60 push DS
+3358:1C61 push ES
+3358:1C62 pop DS
+3358:1C63 pop ES
+3358:1C64 push CX
+3358:1C65 shr CX,1
+3358:1C67 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:1C69 adc CX,CX
+3358:1C6B rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:1C6D pop CX
+3358:1C6E add SI,DX
+3358:1C70 dec AX
+3358:1C71 jne short 0x1C64
+3358:1C73 push SS
+3358:1C74 pop DS
+3358:1C75 ret far
+3358:1C76 mov DX,word ptr SS:[BP]
+3358:1C79 mov BX,word ptr SS:[BP+2]
+3358:1C7C call near 0x0C10
+3358:1C7F mov CX,word ptr SS:[BP+4]
+3358:1C82 mov AX,word ptr SS:[BP+6]
+3358:1C85 sub CX,DX
+3358:1C87 sub AX,BX
+3358:1C89 mov DX,0x0140
+3358:1C8C sub DX,CX
+3358:1C8E push CX
+3358:1C8F shr CX,1
+3358:1C91 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:1C93 adc CX,CX
+3358:1C95 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:1C97 pop CX
+3358:1C98 add DI,DX
+3358:1C9A dec AX
+3358:1C9B jne short 0x1C8E
+3358:1C9D push SS
+3358:1C9E pop DS
+3358:1C9F ret far
+3358:1CB6 or AL,AL
+3358:1CB8 mov AX,0x9090
+3358:1CBB je short 0x1CC0
+3358:1CBD mov AX,0x7DEB
+3358:1CC0 mov word ptr CS:[0x1E4A],AX
+3358:1CC4 mov word ptr CS:[0x1CA0],SI
+3358:1CC9 mov word ptr CS:[0x1CA2],DS
+3358:1CCE mov word ptr CS:[0x1CA4],BP
+3358:1CD3 add BP,0x0319
+3358:1CD7 mov word ptr CS:[0x1CA8],BP
+3358:1CDC mov DI,BP
+3358:1CDE mov word ptr CS:[0x1CA6],BP
+3358:1CE3 add BP,0x0CD9
+3358:1CE7 mov word ptr CS:[0x1CAA],BP
+3358:1CEC add BP,0x3301
+3358:1CF0 mov word ptr CS:[0x1CAC],BP
+3358:1CF5 mov word ptr CS:[0x1CB4],0xFEC0
+3358:1CFC push CS
+3358:1CFD call near 0x1D5A
+3358:1D00 push CS
+3358:1D01 call near 0x1D07
+3358:1D04 jae short 0x1D00
+3358:1D06 ret far
+3358:1D07 mov DS,word ptr CS:[0x1CA2]
+3358:1D0C mov DI,word ptr CS:[0x1CA6]
+3358:1D11 mov AL,byte ptr SS:[DI]
+3358:1D14 xor AH,AH
+3358:1D16 inc DI
+3358:1D17 or AL,AL
+3358:1D19 jns short 0x1D52
+3358:1D1B mov DI,word ptr CS:[0x1CA8]
+3358:1D20 neg word ptr CS:[0x1CB4]
+3358:1D25 js short 0x1D5A
+3358:1D27 mov word ptr CS:[0x1EA6],0xFEDB
+3358:1D2E mov word ptr CS:[0x1F29],0xFE58
+3358:1D35 mov AX,0x64A0
+3358:1D38 mov word ptr CS:[0x1CB0],AX
+3358:1D3C mov word ptr CS:[0x1CB2],AX
+3358:1D40 dec AX
+3358:1D41 mov word ptr CS:[0x1CAE],AX
+3358:1D45 mov AL,byte ptr SS:[DI-1]
+3358:1D49 cbw
+3358:1D4A sub DI,AX
+3358:1D4C mov AL,byte ptr SS:[DI]
+3358:1D4F xor AH,AH
+3358:1D51 inc DI
+3358:1D52 mov SI,word ptr CS:[0x1CAA]
+3358:1D57 jmp near 0x1EA5
+3358:1D5A mov word ptr CS:[0x1CA6],DI
+3358:1D5F mov word ptr CS:[0x1EA6],0xFEDD
+3358:1D66 mov word ptr CS:[0x1F29],0xFE5A
+3358:1D6D mov AX,0x6360
+3358:1D70 mov word ptr CS:[0x1CB0],AX
+3358:1D74 mov word ptr CS:[0x1CB2],AX
+3358:1D78 dec AX
+3358:1D79 mov word ptr CS:[0x1CAE],AX
+3358:1D7D mov AX,SS
+3358:1D7F mov DS,AX
+3358:1D81 stc
+3358:1D82 ret far
+3358:1D83 neg AX
+3358:1D85 add AX,AX
+3358:1D87 mov BP,word ptr CS:[0x1CAC]
+3358:1D8C add BP,AX
+3358:1D8E mov AX,word ptr SS:[BP]
+3358:1D91 or AX,AX
+3358:1D93 js short 0x1DE3
+3358:1D95 cbw
+3358:1D96 or AX,AX
+3358:1D98 jns short 0x1DC2
+3358:1D9A neg AX
+3358:1D9C mov BP,AX
+3358:1D9E mov BL,byte ptr SS:[BP+SI]
+3358:1DA0 mov AL,byte ptr SS:[BP+SI+0x64]
+3358:1DA3 xor AH,AH
+3358:1DA5 mov BH,AH
+3358:1DA7 shl BX,1
+3358:1DA9 shl BX,1
+3358:1DAB mov BP,word ptr CS:[0x1CA4]
+3358:1DB0 add BP,BX
+3358:1DB2 mov BX,word ptr SS:[BP]
+3358:1DB5 mov CX,word ptr SS:[BP+2]
+3358:1DB8 mov DX,word ptr SS:[BP+4]
+3358:1DBB neg AX
+3358:1DBD add AX,CX
+3358:1DBF jmp short 0x1E32
+3358:1DC2 mov BP,AX
+3358:1DC4 mov BL,byte ptr SS:[BP+SI]
+3358:1DC6 mov AL,byte ptr SS:[BP+SI+0x64]
+3358:1DC9 xor AH,AH
+3358:1DCB mov BH,AH
+3358:1DCD shl BX,1
+3358:1DCF shl BX,1
+3358:1DD1 mov BP,word ptr CS:[0x1CA4]
+3358:1DD6 add BP,BX
+3358:1DD8 mov BX,word ptr SS:[BP]
+3358:1DDB mov CX,word ptr SS:[BP+2]
+3358:1DDE mov DX,word ptr SS:[BP+4]
+3358:1DE1 jmp short 0x1E32
+3358:1DE3 cbw
+3358:1DE4 or AX,AX
+3358:1DE6 jns short 0x1E11
+3358:1DE8 neg AX
+3358:1DEA mov BP,AX
+3358:1DEC mov BL,byte ptr SS:[BP+SI]
+3358:1DEE mov AL,byte ptr SS:[BP+SI+0x64]
+3358:1DF1 xor AH,AH
+3358:1DF3 mov BH,AH
+3358:1DF5 shl BX,1
+3358:1DF7 shl BX,1
+3358:1DF9 mov BP,word ptr CS:[0x1CA4]
+3358:1DFE add BP,BX
+3358:1E00 mov BX,word ptr SS:[BP]
+3358:1E03 mov CX,word ptr SS:[BP+2]
+3358:1E06 mov DX,word ptr SS:[BP+4]
+3358:1E09 neg AX
+3358:1E0B add AX,CX
+3358:1E0D neg BX
+3358:1E0F jmp short 0x1E32
+3358:1E11 mov BP,AX
+3358:1E13 mov BL,byte ptr SS:[BP+SI]
+3358:1E15 mov AL,byte ptr SS:[BP+SI+0x64]
+3358:1E18 xor AH,AH
+3358:1E1A mov BH,AH
+3358:1E1C shl BX,1
+3358:1E1E shl BX,1
+3358:1E20 mov BP,word ptr CS:[0x1CA4]
+3358:1E25 add BP,BX
+3358:1E27 mov BX,word ptr SS:[BP]
+3358:1E2A mov CX,word ptr SS:[BP+2]
+3358:1E2D mov DX,word ptr SS:[BP+4]
+3358:1E30 neg BX
+3358:1E32 add CX,CX
+3358:1E34 mov BP,DX
+3358:1E36 sub BP,AX
+3358:1E38 jns short 0x1E3C
+3358:1E3A add BP,CX
+3358:1E3C add BP,BX
+3358:1E3E add DX,AX
+3358:1E40 push SI
+3358:1E41 push DI
+3358:1E42 mov SI,word ptr CS:[0x1CA0]
+3358:1E47 mov AL,byte ptr DS:[BP+SI]
+3358:1E4A selector
+3358:1E4A jmp short 0x1EC9
+3358:1E4A nop
+3358:1E4B nop
+3358:1E4C mov AH,AL
+3358:1E4E and AX,0x300F
+3358:1E51 cmp AH,0x10
+3358:1E54 jne short 0x1E5C
+3358:1E5C add AL,0x10
+3358:1E5E mov DI,word ptr CS:[0x1CAE]
+3358:1E63 std
+3358:1E64 stos byte ptr ES:[DI],AL
+3358:1E65 cld
+3358:1E66 mov word ptr CS:[0x1CAE],DI
+3358:1E6B mov BP,DX
+3358:1E6D sub BP,CX
+3358:1E6F jns short 0x1E73
+3358:1E71 add BP,CX
+3358:1E73 add BP,BX
+3358:1E75 mov AL,byte ptr DS:[BP+SI]
+3358:1E78 mov AH,AL
+3358:1E7A and AX,0x300F
+3358:1E7D cmp AH,0x10
+3358:1E80 jne short 0x1E88
+3358:1E88 add AL,0x10
+3358:1E8A mov DI,word ptr CS:[0x1CB0]
+3358:1E8F stos byte ptr ES:[DI],AL
+3358:1E90 mov word ptr CS:[0x1CB0],DI
+3358:1E95 pop DI
+3358:1E96 pop SI
+3358:1E97 add SI,0x00C8
+3358:1E9B mov AL,byte ptr SS:[DI]
+3358:1E9E xor AH,AH
+3358:1EA0 inc DI
+3358:1EA1 or AL,AL
+3358:1EA3 js short 0x1EA8
+3358:1EA5 selector
+3358:1EA5 jmp near 0x1D83
+3358:1EA5 jmp near 0x1D85
+3358:1EA8 mov word ptr CS:[0x1CA6],DI
+3358:1EAD mov AX,word ptr CS:[0x1CB4]
+3358:1EB1 add AX,word ptr CS:[0x1CB2]
+3358:1EB6 mov word ptr CS:[0x1CB2],AX
+3358:1EBA mov word ptr CS:[0x1CB0],AX
+3358:1EBE dec AX
+3358:1EBF mov word ptr CS:[0x1CAE],AX
+3358:1EC3 clc
+3358:1EC4 mov AX,SS
+3358:1EC6 mov DS,AX
+3358:1EC8 ret far
+3358:1EC9 mov AH,AL
+3358:1ECB and AX,0x300F
+3358:1ECE or AL,0x10
+3358:1ED0 sub AH,0x10
+3358:1ED3 jb short 0x1EDE
+3358:1ED5 shr AH,1
+3358:1ED7 and AH,0x10
+3358:1EDA add AL,0x10
+3358:1EDC add AL,AH
+3358:1EDE mov DI,word ptr CS:[0x1CAE]
+3358:1EE3 std
+3358:1EE4 stos byte ptr ES:[DI],AL
+3358:1EE5 cld
+3358:1EE6 mov word ptr CS:[0x1CAE],DI
+3358:1EEB mov BP,DX
+3358:1EED sub BP,CX
+3358:1EEF jns short 0x1EF3
+3358:1EF1 add BP,CX
+3358:1EF3 add BP,BX
+3358:1EF5 mov AL,byte ptr DS:[BP+SI]
+3358:1EF8 mov AH,AL
+3358:1EFA and AX,0x300F
+3358:1EFD or AL,0x10
+3358:1EFF sub AH,0x10
+3358:1F02 jb short 0x1F0D
+3358:1F04 shr AH,1
+3358:1F06 and AH,0x10
+3358:1F09 add AL,0x10
+3358:1F0B add AL,AH
+3358:1F0D mov DI,word ptr CS:[0x1CB0]
+3358:1F12 stos byte ptr ES:[DI],AL
+3358:1F13 mov word ptr CS:[0x1CB0],DI
+3358:1F18 pop DI
+3358:1F19 pop SI
+3358:1F1A add SI,0x00C8
+3358:1F1E mov AL,byte ptr SS:[DI]
+3358:1F21 xor AH,AH
+3358:1F23 inc DI
+3358:1F24 or AL,AL
+3358:1F26 js short 0x1F2B
+3358:1F28 selector
+3358:1F28 jmp near 0x1D83
+3358:1F28 jmp near 0x1D85
+3358:1F2B mov word ptr CS:[0x1CA6],DI
+3358:1F30 mov AX,word ptr CS:[0x1CB4]
+3358:1F34 add AX,word ptr CS:[0x1CB2]
+3358:1F39 mov word ptr CS:[0x1CB2],AX
+3358:1F3D mov word ptr CS:[0x1CB0],AX
+3358:1F41 dec AX
+3358:1F42 mov word ptr CS:[0x1CAE],AX
+3358:1F46 clc
+3358:1F47 mov AX,SS
+3358:1F49 mov DS,AX
+3358:1F4B ret far
+3358:1F4C mov word ptr CS:[0x01A7],DI
+3358:1F51 mov word ptr CS:[0x01A9],ES
+3358:1F56 mov word ptr CS:[0x01BB],BP
+3358:1F5B mov word ptr CS:[0x01A5],SI
+3358:1F60 mov word ptr CS:[0x01B7],0x0024
+3358:1F67 mov word ptr CS:[0x01AB],BX
+3358:1F6C mov word ptr CS:[0x1CB2],0x0504
+3358:1F73 shl AX,1
+3358:1F75 shl AX,1
+3358:1F77 shl AX,1
+3358:1F79 jns short 0x1FE3
+3358:1F7B neg AX
+3358:1F7D add BP,AX
+3358:1F7F mov CX,word ptr SS:[BP]
+3358:1F82 mov BX,word ptr SS:[BP+2]
+3358:1F85 neg CX
+3358:1F87 mov DI,word ptr CS:[0x01A5]
+3358:1F8C mov word ptr CS:[0x01B9],0x08F7
+3358:1F93 add word ptr CS:[0x01BB],0x02B0
+3358:1F9A add DI,0x008C
+3358:1F9E call near 0x2025
+3358:1FA1 sub BP,8
+3358:1FA4 mov CX,word ptr SS:[BP]
+3358:1FA7 mov BX,word ptr SS:[BP+2]
+3358:1FAA neg CX
+3358:1FAC je short 0x1FC5
+3358:1FAE mov DI,word ptr CS:[0x01A5]
+3358:1FB3 add DI,0x06CC
+3358:1FB7 call near 0x2025
+3358:1FBA call near 0x2123
+3358:1FBD dec word ptr CS:[0x01B7]
+3358:1FC2 jne short 0x1FA1
+3358:1FC4 ret far
+3358:1FC5 mov DI,word ptr CS:[0x01A5]
+3358:1FCA mov word ptr CS:[0x01B9],0x092F
+3358:1FD1 add word ptr CS:[0x01BB],8
+3358:1FD7 add DI,0x06CC
+3358:1FDB call near 0x2025
+3358:1FDE call near 0x2123
+3358:1FE1 jmp short 0x201D
+3358:1FE3 add BP,AX
+3358:1FE5 mov CX,word ptr SS:[BP]
+3358:1FE8 mov BX,word ptr SS:[BP+2]
+3358:1FEB mov DI,word ptr CS:[0x01A5]
+3358:1FF0 mov word ptr CS:[0x01B9],0x092F
+3358:1FF7 add word ptr CS:[0x01BB],0x02B8
+3358:1FFE add DI,0x008C
+3358:2002 call near 0x2025
+3358:2005 add BP,8
+3358:2008 mov CX,word ptr SS:[BP]
+3358:200B mov BX,word ptr SS:[BP+2]
+3358:200E mov DI,word ptr CS:[0x01A5]
+3358:2013 add DI,0x06CC
+3358:2017 call near 0x2025
+3358:201A call near 0x2153
+3358:201D dec word ptr CS:[0x01B7]
+3358:2022 jne short 0x2005
+3358:2024 ret far
+3358:2025 push DX
+3358:2026 push DS
+3358:2027 lds SI,word ptr CS:[0x01A7]
+3358:202C mov AX,SS
+3358:202E mov ES,AX
+3358:2030 add SI,CX
+3358:2032 add BX,BX
+3358:2034 mov AX,DX
+3358:2036 mul BX
+3358:2038 mov word ptr SS:[BP+4],DX
+3358:203B rol AX,1
+3358:203D rol AX,1
+3358:203F and AX,3
+3358:2042 sub DI,AX
+3358:2044 mov AX,DX
+3358:2046 mov CX,0x0058
+3358:2049 cmp BX,CX
+3358:204B jae short 0x2079
+3358:204D sub CX,BX
+3358:204F shl CX,1
+3358:2051 add DI,CX
+3358:2053 mov CX,BX
+3358:2055 shr CX,1
+3358:2057 sub AX,CX
+3358:2059 jns short 0x205D
+3358:205B add AX,BX
+3358:205D mov CX,BX
+3358:205F sub BX,AX
+3358:2061 inc CX
+3358:2062 sub CX,BX
+3358:2064 jns short 0x209E
+3358:2079 shr CX,1
+3358:207B sub AX,CX
+3358:207D jns short 0x2081
+3358:207F add AX,BX
+3358:2081 sub BX,AX
+3358:2083 mov CX,0x0058
+3358:2086 inc CX
+3358:2087 sub CX,BX
+3358:2089 jns short 0x209E
+3358:208B add CX,BX
+3358:208D add SI,AX
+3358:208F mov AL,byte ptr DS:[SI-1]
+3358:2092 stc
+3358:2093 adc AL,AL
+3358:2095 add AL,AL
+3358:2097 shl AL,1
+3358:2099 shl AL,1
+3358:209B jmp short 0x20EB
+3358:209E or BX,BX
+3358:20A0 je short 0x20EB
+3358:20A2 xchg CX,BX
+3358:20A4 push SI
+3358:20A5 add SI,AX
+3358:20A7 mov AL,byte ptr DS:[SI-1]
+3358:20AA stc
+3358:20AB adc AL,AL
+3358:20AD add AL,AL
+3358:20AF shl AL,1
+3358:20B1 shl AL,1
+3358:20B3 mov DH,byte ptr DS:[SI]
+3358:20B5 inc SI
+3358:20B6 stc
+3358:20B7 adc DH,DH
+3358:20B9 add DH,DH
+3358:20BB shl DH,1
+3358:20BD shl DH,1
+3358:20BF mov DL,DH
+3358:20C1 sub DL,AL
+3358:20C3 sar DL,1
+3358:20C5 sar DL,1
+3358:20C7 or DL,DL
+3358:20C9 je short 0x20E0
+3358:20CB mov AH,AL
+3358:20CD add AH,DL
+3358:20CF stos word ptr ES:[DI],AX
+3358:20D0 add AH,DL
+3358:20D2 mov AL,AH
+3358:20D4 add AH,DL
+3358:20D6 stos word ptr ES:[DI],AX
+3358:20D7 mov AL,DH
+3358:20D9 loop 0x20B3
+3358:20DB mov CX,BX
+3358:20DD pop SI
+3358:20DE jmp short 0x20EB
+3358:20E0 mov AH,AL
+3358:20E2 stos word ptr ES:[DI],AX
+3358:20E3 stos word ptr ES:[DI],AX
+3358:20E4 mov AL,DH
+3358:20E6 loop 0x20B3
+3358:20E8 mov CX,BX
+3358:20EA pop SI
+3358:20EB jcxz short 0x2115
+3358:20ED mov DH,byte ptr DS:[SI]
+3358:20EF inc SI
+3358:20F0 stc
+3358:20F1 adc DH,DH
+3358:20F3 add DH,DH
+3358:20F5 shl DH,1
+3358:20F7 shl DH,1
+3358:20F9 mov DL,DH
+3358:20FB sub DL,AL
+3358:20FD sar DL,1
+3358:20FF sar DL,1
+3358:2101 or DL,DL
+3358:2103 je short 0x2118
+3358:2105 mov AH,AL
+3358:2107 add AH,DL
+3358:2109 stos word ptr ES:[DI],AX
+3358:210A add AH,DL
+3358:210C mov AL,AH
+3358:210E add AH,DL
+3358:2110 stos word ptr ES:[DI],AX
+3358:2111 mov AL,DH
+3358:2113 loop 0x20ED
+3358:2115 pop DS
+3358:2116 pop DX
+3358:2117 ret near
+3358:2118 mov AH,AL
+3358:211A stos word ptr ES:[DI],AX
+3358:211B stos word ptr ES:[DI],AX
+3358:211C mov AL,DH
+3358:211E loop 0x20ED
+3358:2120 pop DS
+3358:2121 pop DX
+3358:2122 ret near
+3358:2123 push DX
+3358:2124 push BP
+3358:2125 mov CX,word ptr SS:[BP+0x0A]
+3358:2128 mov DX,word ptr SS:[BP+2]
+3358:212B mov DI,word ptr CS:[0x01A5]
+3358:2130 add DI,0x013C
+3358:2134 mov word ptr CS:[0x01B3],0x00B0
+3358:213B mov SI,DI
+3358:213D mov AX,0x0190
+3358:2140 add DI,AX
+3358:2142 mov BP,DI
+3358:2144 add DI,AX
+3358:2146 mov BX,DI
+3358:2148 add DI,AX
+3358:214A mov word ptr CS:[0x01B5],DI
+3358:214F add DI,AX
+3358:2151 jmp short 0x2183
+3358:2153 push DX
+3358:2154 push BP
+3358:2155 mov CX,word ptr SS:[BP+2]
+3358:2158 mov DX,word ptr SS:[BP-6]
+3358:215B mov DI,word ptr CS:[0x01A5]
+3358:2160 add DI,0x013C
+3358:2164 mov word ptr CS:[0x01B3],0x00B0
+3358:216B push DI
+3358:216C mov AX,0x0190
+3358:216F add DI,AX
+3358:2171 mov word ptr CS:[0x01B5],DI
+3358:2176 add DI,AX
+3358:2178 mov BX,DI
+3358:217A add DI,AX
+3358:217C mov BP,DI
+3358:217E add DI,AX
+3358:2180 mov SI,DI
+3358:2182 pop DI
+3358:2183 push word ptr CS:[0x01B3]
+3358:2188 push DI
+3358:2189 push word ptr CS:[0x01B5]
+3358:218E push BX
+3358:218F push BP
+3358:2190 push SI
+3358:2191 sub DX,CX
+3358:2193 mov AX,DS
+3358:2195 mov ES,AX
+3358:2197 xor AX,AX
+3358:2199 div CX
+3358:219B mov word ptr CS:[0x01AD],AX
+3358:219F mov word ptr CS:[0x01AF],AX
+3358:21A3 shr AX,1
+3358:21A5 mov DX,AX
+3358:21A7 shr AX,1
+3358:21A9 mov CX,DX
+3358:21AB add CX,AX
+3358:21AD add AX,0x0080
+3358:21B0 add CX,0x0080
+3358:21B4 add DX,0x0080
+3358:21B8 mov CL,CH
+3358:21BA mov CH,AH
+3358:21BC mov DL,DH
+3358:21BE mov word ptr CS:[0x01B1],CX
+3358:21C3 lods AL,byte ptr DS:[SI]
+3358:21C4 mov AH,byte ptr DS:[DI]
+3358:21C6 inc DI
+3358:21C7 sub AH,AL
+3358:21C9 sar AH,1
+3358:21CB sar AH,1
+3358:21CD add AL,AH
+3358:21CF mov byte ptr SS:[BP],AL
+3358:21D2 inc BP
+3358:21D3 add CH,byte ptr CS:[0x01B2]
+3358:21D8 jb short 0x220B
+3358:21DA add AL,AH
+3358:21DC mov byte ptr DS:[BX],AL
+3358:21DE inc BX
+3358:21DF add DL,DH
+3358:21E1 jb short 0x2211
+3358:21E3 add AL,AH
+3358:21E5 xchg DI,word ptr CS:[0x01B5]
+3358:21EA stos byte ptr ES:[DI],AL
+3358:21EB add CL,byte ptr CS:[0x01B1]
+3358:21F0 jb short 0x2216
+3358:21F2 xchg DI,word ptr CS:[0x01B5]
+3358:21F7 mov AX,word ptr CS:[0x01AD]
+3358:21FB add word ptr CS:[0x01AF],AX
+3358:2200 jb short 0x2219
+3358:2202 dec word ptr CS:[0x01B3]
+3358:2207 jne short 0x21C3
+3358:2209 jmp short 0x2221
+3358:220B mov byte ptr SS:[BP],AL
+3358:220E inc BP
+3358:220F jmp short 0x21DA
+3358:2211 mov byte ptr DS:[BX],AL
+3358:2213 inc BX
+3358:2214 jmp short 0x21E3
+3358:2216 stos byte ptr ES:[DI],AL
+3358:2217 jmp short 0x21F2
+3358:2219 inc DI
+3358:221A dec word ptr CS:[0x01B3]
+3358:221F jne short 0x21C3
+3358:2221 pop SI
+3358:2222 pop BP
+3358:2223 pop BX
+3358:2224 pop word ptr CS:[0x01B5]
+3358:2229 pop DI
+3358:222A pop word ptr CS:[0x01B3]
+3358:222F mov CX,word ptr CS:[0x01B1]
+3358:2234 mov DL,DH
+3358:2236 mov AX,word ptr CS:[0x01AD]
+3358:223A mov word ptr CS:[0x01AF],AX
+3358:223E dec SI
+3358:223F dec DI
+3358:2240 dec word ptr CS:[0x01B5]
+3358:2245 std
+3358:2246 lods AL,byte ptr DS:[SI]
+3358:2247 mov AH,byte ptr DS:[DI]
+3358:2249 dec DI
+3358:224A sub AH,AL
+3358:224C sar AH,1
+3358:224E sar AH,1
+3358:2250 add AL,AH
+3358:2252 dec BP
+3358:2253 mov byte ptr SS:[BP],AL
+3358:2256 add CH,byte ptr CS:[0x01B2]
+3358:225B jb short 0x228F
+3358:225D add AL,AH
+3358:225F dec BX
+3358:2260 mov byte ptr DS:[BX],AL
+3358:2262 add DL,DH
+3358:2264 jb short 0x2295
+3358:2266 add AL,AH
+3358:2268 xchg DI,word ptr CS:[0x01B5]
+3358:226D stos byte ptr ES:[DI],AL
+3358:226E add CL,byte ptr CS:[0x01B1]
+3358:2273 jb short 0x229A
+3358:2275 xchg DI,word ptr CS:[0x01B5]
+3358:227A mov AX,word ptr CS:[0x01AD]
+3358:227E add word ptr CS:[0x01AF],AX
+3358:2283 jb short 0x229D
+3358:2285 dec word ptr CS:[0x01B3]
+3358:228A jne short 0x2246
+3358:228C cld
+3358:228D jmp short 0x22A0
+3358:228F dec BP
+3358:2290 mov byte ptr SS:[BP],AL
+3358:2293 jmp short 0x225D
+3358:2295 dec BX
+3358:2296 mov byte ptr DS:[BX],AL
+3358:2298 jmp short 0x2266
+3358:229A stos byte ptr ES:[DI],AL
+3358:229B jmp short 0x2275
+3358:229D dec DI
+3358:229E jmp short 0x2285
+3358:22A0 pop BP
+3358:22A1 push BP
+3358:22A2 sub BP,word ptr CS:[0x01BB]
+3358:22A7 jb short 0x230A
+3358:22A9 mov AX,CS
+3358:22AB mov DS,AX
+3358:22AD add BP,word ptr CS:[0x01B9]
+3358:22B2 mov DI,word ptr CS:[0x01A5]
+3358:22B7 add DI,0x00A0
+3358:22BB xor CH,CH
+3358:22BD xor AL,AL
+3358:22BF mov BL,4
+3358:22C1 mov SI,0x08EF
+3358:22C4 mov CL,byte ptr CS:[BP]
+3358:22C8 mov BH,CL
+3358:22CA sub CX,4
+3358:22CD ja short 0x22D9
+3358:22CF neg CX
+3358:22D1 add SI,CX
+3358:22D3 mov CL,BH
+3358:22D5 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:22D7 jmp short 0x22DF
+3358:22D9 xor AL,AL
+3358:22DB rep stos byte ptr ES:[DI],AL
+3358:22DD movs word ptr ES:[DI],word ptr DS:[SI]
+3358:22DE movs word ptr ES:[DI],word ptr DS:[SI]
+3358:22DF mov CL,byte ptr CS:[BP+1]
+3358:22E3 add DI,CX
+3358:22E5 add DI,CX
+3358:22E7 mov CL,BH
+3358:22E9 sub CX,4
+3358:22EC ja short 0x22F6
+3358:22EE mov CL,BH
+3358:22F0 xor CH,CH
+3358:22F2 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:22F4 jmp short 0x22FC
+3358:22F6 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:22F7 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:22F8 xor AL,AL
+3358:22FA rep stos byte ptr ES:[DI],AL
+3358:22FC add DI,0x0058
+3358:22FF add BP,2
+3358:2302 dec BL
+3358:2304 jne short 0x22C1
+3358:2306 mov AX,SS
+3358:2308 mov DS,AX
+3358:230A mov ES,word ptr CS:[0x01AB]
+3358:230F mov CX,0x0138
+3358:2312 mov DI,word ptr CS:[0x1CB2]
+3358:2317 mov SI,word ptr CS:[0x01A5]
+3358:231C add SI,0x00A0
+3358:2320 call near 0x2343
+3358:2323 mov word ptr CS:[0x1CB2],DI
+3358:2328 mov AX,DS
+3358:232A mov ES,AX
+3358:232C mov DI,word ptr CS:[0x01A5]
+3358:2331 add DI,0x008C
+3358:2335 mov SI,DI
+3358:2337 add SI,0x0640
+3358:233B mov CX,0x015E
+3358:233E rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2340 pop BP
+3358:2341 pop DX
+3358:2342 ret near
+3358:2343 push DX
+3358:2344 push BP
+3358:2345 mov BH,4
+3358:2347 mov BP,0x0F0F
+3358:234A mov DX,0x1010
+3358:234D push CX
+3358:234E shr CX,1
+3358:2350 jae short 0x2360
+3358:2360 lods AX,word ptr DS:[SI]
+3358:2361 shr AX,1
+3358:2363 shr AX,1
+3358:2365 shr AX,1
+3358:2367 shr AX,1
+3358:2369 and AX,BP
+3358:236B add AX,DX
+3358:236D stos word ptr ES:[DI],AX
+3358:236E loop 0x2360
+3358:2370 pop CX
+3358:2371 sub DI,CX
+3358:2373 sub SI,CX
+3358:2375 add DI,0x0140
+3358:2379 add SI,0x0190
+3358:237D dec BH
+3358:237F jne short 0x234D
+3358:2381 pop BP
+3358:2382 pop DX
+3358:2383 ret near
+3358:2396 xor DX,DX
+3358:2398 or AX,AX
+3358:239A jns short 0x239E
+3358:239C neg AX
+3358:239E sub AX,0x0046
+3358:23A1 jb short 0x23CB
+3358:23A3 mov BX,0x2384
+3358:23A6 xlat byte ptr CS:[BX+AL]
+3358:23A8 xor AH,AH
+3358:23AA mov DX,AX
+3358:23AC xor AL,AL
+3358:23AE add SI,DX
+3358:23B0 sub CX,DX
+3358:23B2 sub CX,DX
+3358:23B4 jb short 0x23CC
+3358:23B6 push DX
+3358:23B7 xchg CX,DX
+3358:23B9 sub CX,4
+3358:23BC jb short 0x23C4
+3358:23BE rep stos byte ptr ES:[DI],AL
+3358:23C0 mov AX,0x191C
+3358:23C3 stos word ptr ES:[DI],AX
+3358:23C4 mov AX,0x1718
+3358:23C7 stos word ptr ES:[DI],AX
+3358:23C8 mov CX,DX
+3358:23CA pop DX
+3358:23CB ret near
+3358:23CC add CX,DX
+3358:23CE add CX,DX
+3358:23D0 rep stos byte ptr ES:[DI],AL
+3358:23D2 xor CX,CX
+3358:23D4 xor DX,DX
+3358:23D6 ret near
+3358:23D7 jcxz short 0x23EA
+3358:23D9 mov AX,0x1817
+3358:23DC stos word ptr ES:[DI],AX
+3358:23DD sub CX,4
+3358:23E0 jb short 0x23EA
+3358:23E2 mov AX,0x1C19
+3358:23E5 stos word ptr ES:[DI],AX
+3358:23E6 xor AL,AL
+3358:23E8 rep stos byte ptr ES:[DI],AL
+3358:23EA ret near
+3358:23EB push DI
+3358:23EC mov DI,CX
+3358:23EE dec DI
+3358:23EF add BX,DI
+3358:23F1 add AX,DI
+3358:23F3 push AX
+3358:23F4 push DX
+3358:23F5 mov AX,0x00C8
+3358:23F8 mul DI
+3358:23FA add SI,AX
+3358:23FC pop DX
+3358:23FD pop AX
+3358:23FE call near 0x0C10
+3358:2401 pop DX
+3358:2402 xchg CX,DX
+3358:2404 call near 0x2413
+3358:2407 sub SI,0x00C8
+3358:240B sub DI,0x0140
+3358:240F dec DX
+3358:2410 jne short 0x2404
+3358:2412 ret far
+3358:2413 push AX
+3358:2414 push CX
+3358:2415 push DX
+3358:2416 push SI
+3358:2417 push DI
+3358:2418 call near 0x2396
+3358:241B push DX
+3358:241C mov BP,0x0F0F
+3358:241F mov DX,0x1010
+3358:2422 shr CX,1
+3358:2424 jae short 0x242C
+3358:242C jcxz short 0x2436
+3358:242E lods AX,word ptr DS:[SI]
+3358:242F and AX,BP
+3358:2431 add AX,DX
+3358:2433 stos word ptr ES:[DI],AX
+3358:2434 loop 0x242E
+3358:2436 pop CX
+3358:2437 call near 0x23D7
+3358:243A pop DI
+3358:243B pop SI
+3358:243C pop DX
+3358:243D pop CX
+3358:243E pop AX
+3358:243F dec AX
+3358:2440 ret near
+3358:2441 push BX
+3358:2442 xor BH,BH
+3358:2444 push DI
+3358:2445 call near 0x0C10
+3358:2448 pop DX
+3358:2449 xchg CX,DX
+3358:244B pop BX
+3358:244C or BH,BH
+3358:244E jne short 0x2487
+3358:2450 call near 0x24AD
+3358:2453 add SI,0x00C8
+3358:2457 add DI,0x0140
+3358:245B dec DX
+3358:245C jne short 0x2450
+3358:245E cmp byte ptr CS:[0x01BD],0
+3358:2464 je short 0x2486
+3358:2486 ret far
+3358:2487 call near 0x24E9
+3358:248A add SI,0x00C8
+3358:248E add DI,0x0140
+3358:2492 push AX
+3358:2493 lea BX,BP+0x0100
+3358:2497 dec BX
+3358:2498 mov AL,byte ptr DS:[BX]
+3358:249A cmp AL,0x70
+3358:249C je short 0x24A4
+3358:249E rol AL,1
+3358:24A0 rol AL,1
+3358:24A2 mov byte ptr DS:[BX],AL
+3358:24A4 cmp BX,BP
+3358:24A6 ja short 0x2497
+3358:24A8 pop AX
+3358:24A9 dec DX
+3358:24AA jne short 0x2487
+3358:24AC ret far
+3358:24AD push AX
+3358:24AE push CX
+3358:24AF push DX
+3358:24B0 push SI
+3358:24B1 push DI
+3358:24B2 call near 0x2396
+3358:24B5 push DX
+3358:24B6 mov BX,BP
+3358:24B8 mov AH,0x70
+3358:24BA dec CX
+3358:24BB lods AL,byte ptr DS:[SI]
+3358:24BC cmp AL,byte ptr DS:[SI]
+3358:24BE jne short 0x24CC
+3358:24C0 cmp AL,byte ptr DS:[SI+0x00C7]
+3358:24C4 jne short 0x24CC
+3358:24C6 xlat byte ptr DS:[BX+AL]
+3358:24C7 stos byte ptr ES:[DI],AL
+3358:24C8 loop 0x24BB
+3358:24CA jmp short 0x24D1
+3358:24CC mov AL,AH
+3358:24CE stos byte ptr ES:[DI],AL
+3358:24CF loop 0x24BB
+3358:24D1 lods AL,byte ptr DS:[SI]
+3358:24D2 cmp AL,byte ptr DS:[SI+0x00C7]
+3358:24D6 jne short 0x24DB
+3358:24D8 xlat byte ptr DS:[BX+AL]
+3358:24D9 jmp short 0x24DD
+3358:24DB mov AL,AH
+3358:24DD stos byte ptr ES:[DI],AL
+3358:24DE pop CX
+3358:24DF call near 0x23D7
+3358:24E2 pop DI
+3358:24E3 pop SI
+3358:24E4 pop DX
+3358:24E5 pop CX
+3358:24E6 pop AX
+3358:24E7 inc AX
+3358:24E8 ret near
+3358:24E9 push AX
+3358:24EA push CX
+3358:24EB push DX
+3358:24EC push SI
+3358:24ED push DI
+3358:24EE call near 0x2396
+3358:24F1 push DX
+3358:24F2 mov BX,BP
+3358:24F4 mov AH,0x70
+3358:24F6 dec CX
+3358:24F7 lods AL,byte ptr DS:[SI]
+3358:24F8 cmp AL,byte ptr DS:[SI]
+3358:24FA jne short 0x2510
+3358:24FC cmp AL,byte ptr DS:[SI+0x00C7]
+3358:2500 jne short 0x2510
+3358:2502 xlat byte ptr DS:[BX+AL]
+3358:2503 cmp AL,AH
+3358:2505 je short 0x2512
+3358:2507 and AL,3
+3358:2509 add AL,0x71
+3358:250B stos byte ptr ES:[DI],AL
+3358:250C loop 0x24F7
+3358:250E jmp short 0x2515
+3358:2510 mov AL,AH
+3358:2512 stos byte ptr ES:[DI],AL
+3358:2513 loop 0x24F7
+3358:2515 lods AL,byte ptr DS:[SI]
+3358:2516 cmp AL,byte ptr DS:[SI+0x00C7]
+3358:251A jne short 0x2527
+3358:251C xlat byte ptr DS:[BX+AL]
+3358:251D cmp AL,AH
+3358:251F je short 0x2529
+3358:2521 and AL,3
+3358:2523 add AL,0x71
+3358:2525 jmp short 0x2529
+3358:2527 mov AL,AH
+3358:2529 stos byte ptr ES:[DI],AL
+3358:252A pop CX
+3358:252B call near 0x23D7
+3358:252E pop DI
+3358:252F pop SI
+3358:2530 pop DX
+3358:2531 pop CX
+3358:2532 pop AX
+3358:2533 inc AX
+3358:2534 ret near
+3358:253D cmp byte ptr CS:[0x01A1],0
+3358:2543 je short 0x2564
+3358:2545 mov AX,word ptr SS:[BP]
+3358:2548 sub AX,BX
+3358:254A cmp AX,5
+3358:254D jb short 0x2545
+3358:254F push DX
+3358:2550 mov DX,word ptr CS:[0x019F]
+3358:2555 in AL,DX
+3358:2556 and AL,8
+3358:2558 cmp AL,byte ptr CS:[0x01A2]
+3358:255D jne short 0x2555
+3358:255F pop DX
+3358:2560 mov BX,word ptr SS:[BP]
+3358:2563 ret near
+3358:2572 cmp byte ptr CS:[0x01A1],0
+3358:2578 jne short 0x254F
+3358:2596 push DS
+3358:2597 push ES
+3358:2598 mov DS,word ptr CS:[0x2539]
+3358:259D mov ES,word ptr CS:[0x2535]
+3358:25A2 push CS
+3358:25A3 call near 0x1B7C
+3358:25A6 pop ES
+3358:25A7 pop DS
+3358:25A8 ret near
+3358:25E7 mov word ptr CS:[0x2768],8
+3358:25EE mov word ptr CS:[0x276A],1
+3358:25F5 mov word ptr CS:[0x2535],SI
+3358:25FA mov word ptr CS:[0x2537],DS
+3358:25FF mov word ptr CS:[0x2539],ES
+3358:2604 mov CX,0x0098
+3358:2607 and AX,0x00FE
+3358:260A cmp AX,0x003E
+3358:260D jb short 0x2614
+3358:2614 mov BX,AX
+3358:2616 jmp near word ptr CS:[BX+0x25A9]
+3358:261D cmp byte ptr DS:[0x01A1],0
+3358:2622 jne short 0x2627
+3358:2627 ret near
+3358:2628 call near 0x0A58
+3358:262B xor AX,AX
+3358:262D mov DI,0x01BE
+3358:2630 mov CX,0x0101
+3358:2633 rep stos byte ptr ES:[DI],AL
+3358:2635 mov DI,0x05BF
+3358:2638 mov DX,DI
+3358:263A mov CX,0x02FD
+3358:263D rep stos byte ptr ES:[DI],AL
+3358:263F xor BX,BX
+3358:2641 mov CX,0x00FF
+3358:2644 call near 0x0B68
+3358:2647 mov CX,0x0060
+3358:264A mov DX,0x0140
+3358:264D mov DS,word ptr CS:[0x2537]
+3358:2652 mov ES,word ptr CS:[0x2539]
+3358:2657 push CS
+3358:2658 call near 0x1B7C
+3358:265B push CS
+3358:265C push CS
+3358:265D pop DS
+3358:265E pop ES
+3358:265F xor BX,BX
+3358:2661 push BX
+3358:2662 push CX
+3358:2663 push DX
+3358:2664 push word ptr SS:[BP]
+3358:2667 mov DI,0x05BF
+3358:266A add DI,BX
+3358:266C lea SI,DI-768
+3358:2670 push BX
+3358:2671 push CX
+3358:2672 push DI
+3358:2673 lods AL,byte ptr DS:[SI]
+3358:2674 sub AL,byte ptr DS:[DI]
+3358:2676 je short 0x2690
+3358:2678 mov BL,AL
+3358:267A xor AH,AH
+3358:267C div DH
+3358:267E xchg AL,AH
+3358:2680 inc AH
+3358:2682 or AL,AL
+3358:2684 jne short 0x268A
+3358:2686 dec AH
+3358:2688 mov AL,DH
+3358:268A cmp AH,DL
+3358:268C jb short 0x2690
+3358:268E add byte ptr DS:[DI],AL
+3358:2690 inc DI
+3358:2691 loop 0x2673
+3358:2693 pop DX
+3358:2694 pop CX
+3358:2695 pop BX
+3358:2696 call near 0x0A21
+3358:2699 call near 0x0B68
+3358:269C pop BX
+3358:269D call near 0x261D
+3358:26A0 pop DX
+3358:26A1 pop CX
+3358:26A2 pop BX
+3358:26A3 add BX,CX
+3358:26A5 cmp BX,0x02FD
+3358:26A9 jb short 0x2661
+3358:26AB dec DL
+3358:26AD jne short 0x265F
+3358:26AF ret far
+3358:26B0 call near 0x0A58
+3358:26B3 mov DX,0x0220
+3358:26B6 mov AX,0x0040
+3358:26B9 call near 0x26E3
+3358:26BC mov DS,word ptr CS:[0x2537]
+3358:26C1 mov ES,word ptr CS:[0x2539]
+3358:26C6 push CS
+3358:26C7 call near 0x1B7C
+3358:26CA push CS
+3358:26CB push CS
+3358:26CC pop DS
+3358:26CD pop ES
+3358:26CE mov DI,0x05BF
+3358:26D1 mov DX,DI
+3358:26D3 mov SI,0x02BF
+3358:26D6 mov CX,0x0180
+3358:26D9 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:26DB xor BX,BX
+3358:26DD mov CX,0x0060
+3358:26E0 jmp near 0x0B0C
+3358:26E3 mov word ptr CS:[0x261B],AX
+3358:26E7 xor BX,BX
+3358:26E9 push BX
+3358:26EA push DX
+3358:26EB push word ptr SS:[BP]
+3358:26EE mov SI,0x05BF
+3358:26F1 add SI,BX
+3358:26F3 add SI,BX
+3358:26F5 add SI,BX
+3358:26F7 mov DI,SI
+3358:26F9 mov AX,word ptr CS:[0x261B]
+3358:26FD push AX
+3358:26FE mov CX,AX
+3358:2700 add CX,CX
+3358:2702 add CX,AX
+3358:2704 mov AL,byte ptr DS:[SI]
+3358:2706 sub AL,DH
+3358:2708 jns short 0x270C
+3358:270A xor AL,AL
+3358:270C mov byte ptr DS:[SI],AL
+3358:270E inc SI
+3358:270F loop 0x2704
+3358:2711 pop CX
+3358:2712 mov DX,DI
+3358:2714 call near 0x0B68
+3358:2717 pop BX
+3358:2718 call near 0x261D
+3358:271B pop DX
+3358:271C pop BX
+3358:271D mov AX,word ptr CS:[0x261B]
+3358:2721 add BX,AX
+3358:2723 cmp BX,0x00FF
+3358:2727 jb short 0x26E9
+3358:2729 dec DL
+3358:272B jne short 0x26E7
+3358:272D ret near
+3358:272E push CS
+3358:272F push CS
+3358:2730 pop DS
+3358:2731 pop ES
+3358:2732 mov SI,0x05C2
+3358:2735 mov DI,0x02C2
+3358:2738 mov CX,0x017D
+3358:273B mov AX,word ptr DS:[DI]
+3358:273D xchg AX,word ptr DS:[SI]
+3358:273F stos word ptr ES:[DI],AX
+3358:2740 add SI,2
+3358:2743 loop 0x273B
+3358:2745 mov AX,0x0055
+3358:2748 mov DX,0x0316
+3358:274B call near 0x26E3
+3358:274E mov CX,0x00FF
+3358:2751 mov DX,0x0316
+3358:2754 jmp near 0x264D
+3358:2757 push CS
+3358:2758 call near 0x0B0C
+3358:275B mov DI,word ptr CS:[0x01A3]
+3358:2760 mov SI,DI
+3358:2762 mov CX,0x5F00
+3358:2765 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2767 ret far
+3358:276C mov CX,word ptr CS:[0x2768]
+3358:2771 mov SI,word ptr CS:[0x276A]
+3358:2776 push CX
+3358:2777 push SI
+3358:2778 call near 0x27E6
+3358:277B pop SI
+3358:277C pop CX
+3358:277D add CX,8
+3358:2780 add SI,1
+3358:2783 cmp CX,0x0212
+3358:2787 jb short 0x278F
+3358:2789 mov CX,8
+3358:278C mov SI,1
+3358:278F mov word ptr CS:[0x2768],CX
+3358:2794 mov word ptr CS:[0x276A],SI
+3358:2799 ret far
+3358:27E6 call near 0x2802
+3358:27E9 mov word ptr CS:[0x27E4],0x2823
+3358:27F0 push CX
+3358:27F1 push SI
+3358:27F2 push BX
+3358:27F3 push BP
+3358:27F4 mov DX,0x00B0
+3358:27F7 mov BX,0x005B
+3358:27FA call near 0x28EC
+3358:27FD pop BP
+3358:27FE pop BX
+3358:27FF pop SI
+3358:2800 pop CX
+3358:2801 ret near
+3358:2802 push CX
+3358:2803 push SI
+3358:2804 sub CX,8
+3358:2807 je short 0x2820
+3358:2809 push BX
+3358:280A push BP
+3358:280B sub SI,1
+3358:280E mov word ptr CS:[0x27E4],0x2887
+3358:2815 mov DX,0x00B0
+3358:2818 mov BX,0x005B
+3358:281B call near 0x28EC
+3358:281E pop BP
+3358:281F pop BX
+3358:2820 pop SI
+3358:2821 pop CX
+3358:2822 ret near
+3358:2823 push BX
+3358:2824 mov AX,0x005B
+3358:2827 sub AX,BX
+3358:2829 js short 0x2832
+3358:282B shr AX,1
+3358:282D mov BX,0x005B
+3358:2830 sub BX,AX
+3358:2832 mov AX,BX
+3358:2834 sub AX,0x0047
+3358:2837 cmp AX,0x004E
+3358:283A jae short 0x2885
+3358:283C cmp DX,0x0140
+3358:2840 jae short 0x2885
+3358:2842 push CX
+3358:2843 push DI
+3358:2844 call near 0x0C10
+3358:2847 mov AX,word ptr ES:[DI]
+3358:284A and AX,word ptr ES:[DI+2]
+3358:284E and AX,word ptr ES:[DI+0x0140]
+3358:2853 and AX,word ptr ES:[DI+0x0142]
+3358:2858 and AX,word ptr ES:[DI+0x0280]
+3358:285D and AX,word ptr ES:[DI+0x0282]
+3358:2862 and AX,word ptr ES:[DI+0x03C0]
+3358:2867 and AX,word ptr ES:[DI+0x03C2]
+3358:286C and AL,AH
+3358:286E jns short 0x2883
+3358:2870 mov AL,byte ptr DS:[DI]
+3358:2872 cmp AL,0xF0
+3358:2874 jae short 0x2883
+3358:2876 mov AH,AL
+3358:2878 mov CX,4
+3358:287B stos word ptr ES:[DI],AX
+3358:287C stos word ptr ES:[DI],AX
+3358:287D add DI,0x013C
+3358:2881 loop 0x287B
+3358:2883 pop DI
+3358:2884 pop CX
+3358:2885 pop BX
+3358:2886 ret near
+3358:2887 push BX
+3358:2888 mov AX,0x005B
+3358:288B sub AX,BX
+3358:288D js short 0x2896
+3358:288F shr AX,1
+3358:2891 mov BX,0x005B
+3358:2894 sub BX,AX
+3358:2896 mov AX,BX
+3358:2898 sub AX,0x0047
+3358:289B cmp AX,0x004E
+3358:289E jae short 0x2885
+3358:28A0 cmp DX,0x0140
+3358:28A4 jae short 0x2885
+3358:28A6 push CX
+3358:28A7 push SI
+3358:28A8 push DI
+3358:28A9 call near 0x0C10
+3358:28AC mov CX,4
+3358:28AF mov SI,DI
+3358:28B1 mov AL,byte ptr ES:[DI]
+3358:28B4 or AL,AL
+3358:28B6 jns short 0x28BB
+3358:28B8 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:28B9 dec SI
+3358:28BA dec DI
+3358:28BB inc SI
+3358:28BC inc DI
+3358:28BD mov AL,byte ptr ES:[DI]
+3358:28C0 or AL,AL
+3358:28C2 jns short 0x28C7
+3358:28C4 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:28C5 dec SI
+3358:28C6 dec DI
+3358:28C7 inc SI
+3358:28C8 inc DI
+3358:28C9 mov AL,byte ptr ES:[DI]
+3358:28CC or AL,AL
+3358:28CE jns short 0x28D3
+3358:28D0 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:28D1 dec SI
+3358:28D2 dec DI
+3358:28D3 inc SI
+3358:28D4 inc DI
+3358:28D5 mov AL,byte ptr ES:[DI]
+3358:28D8 or AL,AL
+3358:28DA jns short 0x28DF
+3358:28DC movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:28DD dec SI
+3358:28DE dec DI
+3358:28DF inc SI
+3358:28E0 inc DI
+3358:28E1 add DI,0x013C
+3358:28E5 loop 0x28AF
+3358:28E7 pop DI
+3358:28E8 pop SI
+3358:28E9 pop CX
+3358:28EA pop BX
+3358:28EB ret near
+3358:28EC sub SP,0x0014
+3358:28EF mov BP,SP
+3358:28F1 mov byte ptr CS:[0x29D3],0
+3358:28F7 push DX
+3358:28F8 xor AX,AX
+3358:28FA mov DX,AX
+3358:28FC mov AH,CL
+3358:28FE mov DL,CH
+3358:2900 push AX
+3358:2901 push DX
+3358:2902 add AX,AX
+3358:2904 adc DX,DX
+3358:2906 add AH,2
+3358:2909 adc DX,0
+3358:290C mov word ptr SS:[BP],AX
+3358:290F mov word ptr SS:[BP+2],DX
+3358:2912 sub AH,4
+3358:2915 sbb DX,0
+3358:2918 mov word ptr SS:[BP+4],AX
+3358:291B mov word ptr SS:[BP+6],DX
+3358:291E pop DX
+3358:291F pop AX
+3358:2920 div SI
+3358:2922 mul AX
+3358:2924 mov AL,AH
+3358:2926 mov AH,DL
+3358:2928 mov DL,DH
+3358:292A xor DH,DH
+3358:292C mov word ptr SS:[BP+8],AX
+3358:292F mov word ptr SS:[BP+0x0A],DX
+3358:2932 add AX,AX
+3358:2934 adc DX,DX
+3358:2936 mov word ptr SS:[BP+0x0C],AX
+3358:2939 mov word ptr SS:[BP+0x0E],DX
+3358:293C pop DX
+3358:293D mov DI,DX
+3358:293F add DI,CX
+3358:2941 sub DX,CX
+3358:2943 mov SI,BX
+3358:2945 jmp short 0x295E
+3358:2947 sub word ptr SS:[BP+4],0x0200
+3358:294C sbb word ptr SS:[BP+6],0
+3358:2950 mov AX,word ptr SS:[BP+0x0C]
+3358:2953 add word ptr SS:[BP+8],AX
+3358:2956 mov AX,word ptr SS:[BP+0x0E]
+3358:2959 adc word ptr SS:[BP+0x0A],AX
+3358:295C inc BX
+3358:295D dec SI
+3358:295E call near 0x29D4
+3358:2961 mov AX,word ptr SS:[BP+8]
+3358:2964 sub word ptr SS:[BP],AX
+3358:2967 mov AX,word ptr SS:[BP+0x0A]
+3358:296A sbb word ptr SS:[BP+2],AX
+3358:296D jae short 0x2950
+3358:296F inc DX
+3358:2970 dec DI
+3358:2971 mov AX,word ptr SS:[BP+4]
+3358:2974 add word ptr SS:[BP],AX
+3358:2977 mov AX,word ptr SS:[BP+6]
+3358:297A adc word ptr SS:[BP+2],AX
+3358:297D jb short 0x2947
+3358:297F sub word ptr SS:[BP+4],0x0200
+3358:2984 sbb word ptr SS:[BP+6],0
+3358:2988 mov AX,word ptr SS:[BP+0x0C]
+3358:298B add word ptr SS:[BP+8],AX
+3358:298E mov AX,word ptr SS:[BP+0x0E]
+3358:2991 adc word ptr SS:[BP+0x0A],AX
+3358:2994 call near 0x29D4
+3358:2997 inc DX
+3358:2998 dec DI
+3358:2999 mov AX,word ptr SS:[BP+4]
+3358:299C add word ptr SS:[BP],AX
+3358:299F mov AX,word ptr SS:[BP+6]
+3358:29A2 adc word ptr SS:[BP+2],AX
+3358:29A5 jae short 0x29C1
+3358:29A7 inc BX
+3358:29A8 dec SI
+3358:29A9 mov AX,word ptr SS:[BP+8]
+3358:29AC sub word ptr SS:[BP],AX
+3358:29AF mov AX,word ptr SS:[BP+0x0A]
+3358:29B2 sbb word ptr SS:[BP+2],AX
+3358:29B5 mov AX,word ptr SS:[BP+0x0C]
+3358:29B8 add word ptr SS:[BP+8],AX
+3358:29BB mov AX,word ptr SS:[BP+0x0E]
+3358:29BE adc word ptr SS:[BP+0x0A],AX
+3358:29C1 sub word ptr SS:[BP+4],0x0200
+3358:29C6 sbb word ptr SS:[BP+6],0
+3358:29CA jns short 0x2994
+3358:29CC call near 0x29D4
+3358:29CF add SP,0x0014
+3358:29D2 ret near
+3358:29D4 inc byte ptr CS:[0x29D3]
+3358:29D9 mov AL,byte ptr CS:[0x29D3]
+3358:29DD and AL,3
+3358:29DF je short 0x29F5
+3358:29E1 cmp AL,2
+3358:29E3 jb short 0x29FB
+3358:29E5 je short 0x2A05
+3358:29E7 xchg DX,DI
+3358:29E9 xchg BX,SI
+3358:29EB call near word ptr CS:[0x27E4]
+3358:29F0 xchg BX,SI
+3358:29F2 xchg DX,DI
+3358:29F4 ret near
+3358:29F5 call near word ptr CS:[0x27E4]
+3358:29FA ret near
+3358:29FB xchg DX,DI
+3358:29FD call near word ptr CS:[0x27E4]
+3358:2A02 xchg DX,DI
+3358:2A04 ret near
+3358:2A05 xchg BX,SI
+3358:2A07 call near word ptr CS:[0x27E4]
+3358:2A0C xchg BX,SI
+3358:2A0E ret near
+3358:2A15 mov DX,0x0096
+3358:2A18 mov AX,0x0140
+3358:2A1B push DX
+3358:2A1C mul CX
+3358:2A1E pop DX
+3358:2A1F mov CX,1
+3358:2A22 mov BX,word ptr SS:[BP]
+3358:2A25 push DX
+3358:2A26 mov SI,CX
+3358:2A28 add SI,word ptr CS:[0x01A3]
+3358:2A2D mov DI,SI
+3358:2A2F movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2A30 sub SI,word ptr CS:[0x01A3]
+3358:2A35 add SI,0x7FFE
+3358:2A39 cmp SI,AX
+3358:2A3B jae short 0x2A4A
+3358:2A3D add SI,word ptr CS:[0x01A3]
+3358:2A42 mov DI,SI
+3358:2A44 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2A45 sub SI,word ptr CS:[0x01A3]
+3358:2A4A shr CX,1
+3358:2A4C jae short 0x2A51
+3358:2A4E xor CH,0x44
+3358:2A51 cmp CX,1
+3358:2A54 je short 0x2A61
+3358:2A56 dec DX
+3358:2A57 jne short 0x2A26
+3358:2A59 pop DX
+3358:2A5A cmp BX,word ptr SS:[BP]
+3358:2A5D je short 0x2A5A
+3358:2A5F jmp short 0x2A22
+3358:2A61 pop DX
+3358:2A62 xor SI,SI
+3358:2A64 mov DI,SI
+3358:2A66 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2A67 ret far
+3358:2A68 mov BX,0x004A
+3358:2A6B mov DX,0x009C
+3358:2A6E call near 0x0C10
+3358:2A71 mov DX,1
+3358:2A74 mov AX,0xFB08
+3358:2A77 call near 0x2AB0
+3358:2A7A inc DX
+3358:2A7B xor AX,AX
+3358:2A7D call near 0x2AB0
+3358:2A80 mov DX,2
+3358:2A83 mov AX,0xFAF8
+3358:2A86 add DI,AX
+3358:2A88 call near 0x2AB0
+3358:2A8B sub DI,0x04F8
+3358:2A8F mov AX,0xF600
+3358:2A92 call near 0x2AB0
+3358:2A95 add DI,0x0508
+3358:2A99 inc DX
+3358:2A9A mov AX,0xFB08
+3358:2A9D call near 0x2AB0
+3358:2AA0 add DI,0x04F8
+3358:2AA4 xor AX,AX
+3358:2AA6 call near 0x2AB0
+3358:2AA9 inc DX
+3358:2AAA cmp DX,0x0026
+3358:2AAD jb short 0x2A83
+3358:2AAF ret far
+3358:2AB0 push word ptr SS:[BP]
+3358:2AB3 mov BX,DX
+3358:2AB5 mov CX,4
+3358:2AB8 mov SI,DI
+3358:2ABA movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2ABB movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2ABC movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2ABD movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2ABE add DI,0x0138
+3358:2AC2 loop 0x2AB8
+3358:2AC4 add DI,AX
+3358:2AC6 dec BX
+3358:2AC7 jne short 0x2AB5
+3358:2AC9 pop AX
+3358:2ACA cmp AX,word ptr SS:[BP]
+3358:2ACD je short 0x2ACA
+3358:2ACF ret near
+3358:2AD1 push CS
+3358:2AD2 call near 0x0B0C
+3358:2AD5 or DX,DX
+3358:2AD7 js short 0x2B1A
+3358:2AD9 push CX
+3358:2ADA push DS
+3358:2ADB mov DS,word ptr CS:[0x2539]
+3358:2AE0 call near 0x2C52
+3358:2AE3 pop DS
+3358:2AE4 pop CX
+3358:2AE5 mov BX,CX
+3358:2AE7 mov DX,0x0140
+3358:2AEA sub BX,8
+3358:2AED push BX
+3358:2AEE push word ptr SS:[BP]
+3358:2AF1 jns short 0x2AF7
+3358:2AF3 add DX,BX
+3358:2AF5 xor BX,BX
+3358:2AF7 mov AX,word ptr SS:[BP]
+3358:2AFA cmp AX,word ptr SS:[BP]
+3358:2AFD je short 0x2AFA
+3358:2AFF call near 0x0C10
+3358:2B02 push BX
+3358:2B03 push DX
+3358:2B04 push DI
+3358:2B05 call near 0x2BAC
+3358:2B08 pop DI
+3358:2B09 pop DX
+3358:2B0A pop BX
+3358:2B0B call near 0x2B56
+3358:2B0E pop BX
+3358:2B0F call near 0x2572
+3358:2B12 pop BX
+3358:2B13 cmp BX,0xFEC8
+3358:2B17 jg short 0x2AE7
+3358:2B19 ret far
+3358:2B1A push CX
+3358:2B1B push DS
+3358:2B1C mov DS,word ptr CS:[0x2537]
+3358:2B21 call near 0x2C52
+3358:2B24 pop DS
+3358:2B25 pop CX
+3358:2B26 mov BX,0xFEC8
+3358:2B29 mov DX,0x0140
+3358:2B2C push BX
+3358:2B2D push word ptr SS:[BP]
+3358:2B30 or BX,BX
+3358:2B32 jns short 0x2B38
+3358:2B34 add DX,BX
+3358:2B36 xor BX,BX
+3358:2B38 call near 0x0C10
+3358:2B3B push BX
+3358:2B3C push DX
+3358:2B3D push DI
+3358:2B3E call near 0x2C02
+3358:2B41 pop DI
+3358:2B42 pop DX
+3358:2B43 pop BX
+3358:2B44 call near 0x2B56
+3358:2B47 pop BX
+3358:2B48 call near 0x2572
+3358:2B4B pop BX
+3358:2B4C add BX,8
+3358:2B4F cmp BX,0x0098
+3358:2B53 jl short 0x2B29
+3358:2B55 ret far
+3358:2B56 push DX
+3358:2B57 mov AX,0x00C8
+3358:2B5A neg DX
+3358:2B5C add DX,0x0140
+3358:2B60 inc DX
+3358:2B61 mul DX
+3358:2B63 mov SI,AX
+3358:2B65 mov AX,0x0098
+3358:2B68 sub SI,AX
+3358:2B6A pop DX
+3358:2B6B cmp DX,AX
+3358:2B6D jae short 0x2B73
+3358:2B6F add SI,AX
+3358:2B71 sub SI,DX
+3358:2B73 sub AX,BX
+3358:2B75 cmp AX,DX
+3358:2B77 jb short 0x2B7B
+3358:2B79 mov AX,DX
+3358:2B7B mov DS,word ptr CS:[0x2535]
+3358:2B80 sub DI,AX
+3358:2B82 mov CX,AX
+3358:2B84 shr CX,1
+3358:2B86 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2B88 sub SI,AX
+3358:2B8A sub DI,AX
+3358:2B8C add SI,0x00C8
+3358:2B90 add DI,0x0140
+3358:2B94 dec AX
+3358:2B95 mov CX,AX
+3358:2B97 shr CX,1
+3358:2B99 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2B9B movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2B9C sub SI,AX
+3358:2B9E sub DI,AX
+3358:2BA0 add SI,0x00C8
+3358:2BA4 add DI,0x0140
+3358:2BA8 dec AX
+3358:2BA9 jg short 0x2B82
+3358:2BAB ret near
+3358:2BAC mov DS,word ptr CS:[0x2537]
+3358:2BB1 mov AX,0x0098
+3358:2BB4 sub AX,BX
+3358:2BB6 mov BX,DX
+3358:2BB8 sub BX,AX
+3358:2BBA jns short 0x2BBE
+3358:2BBC add AX,BX
+3358:2BBE cmp DX,0x0138
+3358:2BC2 jbe short 0x2BDD
+3358:2BC4 xor DX,DX
+3358:2BC6 mov CX,DX
+3358:2BC8 mov SI,DI
+3358:2BCA rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2BCC sub DI,DX
+3358:2BCE add DI,0x013F
+3358:2BD2 inc DX
+3358:2BD3 cmp DX,8
+3358:2BD6 jb short 0x2BC6
+3358:2BD8 sub AX,8
+3358:2BDB jbe short 0x2C01
+3358:2BDD mov SI,DI
+3358:2BDF mov CX,4
+3358:2BE2 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2BE4 add DI,0x0137
+3358:2BE8 dec AX
+3358:2BE9 jne short 0x2BDD
+3358:2BEB or BX,BX
+3358:2BED jge short 0x2C01
+3358:2BEF mov DX,8
+3358:2BF2 mov CX,DX
+3358:2BF4 mov SI,DI
+3358:2BF6 rep movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2BF8 sub DI,DX
+3358:2BFA add DI,0x0140
+3358:2BFE dec DX
+3358:2BFF jne short 0x2BF2
+3358:2C01 ret near
+3358:2C02 mov DS,word ptr CS:[0x2537]
+3358:2C07 mov AX,0x0098
+3358:2C0A add AX,8
+3358:2C0D cmp DI,AX
+3358:2C0F jb short 0x2C51
+3358:2C11 or BX,BX
+3358:2C13 sub AX,8
+3358:2C16 or BX,BX
+3358:2C18 jle short 0x2C3E
+3358:2C1A add AX,8
+3358:2C1D sub AX,BX
+3358:2C1F sub DI,AX
+3358:2C21 sub DI,0x0A00
+3358:2C25 mov DX,8
+3358:2C28 mov CX,AX
+3358:2C2A shr CX,1
+3358:2C2C mov SI,DI
+3358:2C2E rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2C30 sub DI,AX
+3358:2C32 add DI,0x0140
+3358:2C36 dec DX
+3358:2C37 jne short 0x2C28
+3358:2C39 sub AX,8
+3358:2C3C jmp short 0x2C43
+3358:2C3E sub DI,AX
+3358:2C40 sub DI,8
+3358:2C43 mov SI,DI
+3358:2C45 mov CX,4
+3358:2C48 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2C4A add DI,0x0138
+3358:2C4E dec AX
+3358:2C4F jne short 0x2C43
+3358:2C51 ret near
+3358:2C52 push ES
+3358:2C53 mov ES,word ptr CS:[0x2535]
+3358:2C58 mov SI,0xF9FF
+3358:2C5B xor DI,DI
+3358:2C5D mov DX,0x0140
+3358:2C60 mov BX,0x6062
+3358:2C63 push SI
+3358:2C64 mov CX,0x0032
+3358:2C67 mov AH,byte ptr DS:[SI-320]
+3358:2C6B cmp AH,BH
+3358:2C6D jb short 0x2C76
+3358:2C6F cmp AH,BL
+3358:2C71 jae short 0x2C76
+3358:2C76 mov AL,byte ptr DS:[SI]
+3358:2C78 cmp AL,BH
+3358:2C7A jb short 0x2C82
+3358:2C7C cmp AL,BL
+3358:2C7E jae short 0x2C82
+3358:2C82 stos word ptr ES:[DI],AX
+3358:2C83 mov AH,byte ptr DS:[SI-960]
+3358:2C87 cmp AH,BH
+3358:2C89 jb short 0x2C92
+3358:2C8B cmp AH,BL
+3358:2C8D jae short 0x2C92
+3358:2C92 mov AL,byte ptr DS:[SI-640]
+3358:2C96 cmp AL,BH
+3358:2C98 jb short 0x2CA0
+3358:2C9A cmp AL,BL
+3358:2C9C jae short 0x2CA0
+3358:2CA0 stos word ptr ES:[DI],AX
+3358:2CA1 sub SI,0x0500
+3358:2CA5 loop 0x2C67
+3358:2CA7 pop SI
+3358:2CA8 dec SI
+3358:2CA9 dec DX
+3358:2CAA jne short 0x2C63
+3358:2CAC push DS
+3358:2CAD push ES
+3358:2CAE pop DS
+3358:2CAF mov DI,0x62A0
+3358:2CB2 mov DX,0x0044
+3358:2CB5 lea SI,DI-10800
+3358:2CB9 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2CBA movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2CBB movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2CBC movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2CBD add DI,0x00C0
+3358:2CC1 dec DX
+3358:2CC2 jne short 0x2CB5
+3358:2CC4 pop DS
+3358:2CC5 pop ES
+3358:2CC6 ret near
+3358:2CCA or DL,DL
+3358:2CCC js short 0x2CFE
+3358:2CFE call near 0x2596
+3358:2D01 mov AX,0x0140
+3358:2D04 mul CX
+3358:2D06 mov DX,AX
+3358:2D08 mov SI,0x0A00
+3358:2D0B mov BX,word ptr SS:[BP]
+3358:2D0E push SI
+3358:2D0F xor DI,DI
+3358:2D11 mov CX,DX
+3358:2D13 sub CX,SI
+3358:2D15 mov AX,DS
+3358:2D17 mov DS,word ptr CS:[0x2535]
+3358:2D1C shr CX,1
+3358:2D1E rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2D20 mov DS,AX
+3358:2D22 mov CX,0x0500
+3358:2D25 mov AX,0x0707
+3358:2D28 rep stos word ptr ES:[DI],AX
+3358:2D2A cmp DI,DX
+3358:2D2C jae short 0x2D35
+3358:2D2E mov CX,0x0500
+3358:2D31 mov SI,DI
+3358:2D33 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:2D35 pop SI
+3358:2D36 add SI,0x0A00
+3358:2D3A call near 0x253D
+3358:2D3D cmp SI,DX
+3358:2D3F jbe short 0x2D0E
+3358:2D41 ret far
+3358:2DC0 mov CX,0x00C8
+3358:2DC3 mov BX,word ptr SS:[BP]
+3358:2DC6 mov SI,0x2FD7
+3358:2DC9 shr CX,1
+3358:2DCB shr CX,1
+3358:2DCD lods AX,word ptr CS:[SI]
+3358:2DCF or AX,AX
+3358:2DD1 js short 0x2DF7
+3358:2DD3 push CX
+3358:2DD4 push SI
+3358:2DD5 add AX,word ptr CS:[0x01A3]
+3358:2DDA mov DI,AX
+3358:2DDC xor AX,AX
+3358:2DDE push DI
+3358:2DDF mov DX,0x0050
+3358:2DE2 stos byte ptr ES:[DI],AL
+3358:2DE3 add DI,3
+3358:2DE6 dec DX
+3358:2DE7 jne short 0x2DE2
+3358:2DE9 pop DI
+3358:2DEA add DI,0x0500
+3358:2DEE loop 0x2DDE
+3358:2DF0 call near 0x2572
+3358:2DF3 pop SI
+3358:2DF4 pop CX
+3358:2DF5 jmp short 0x2DCD
+3358:2DF7 push CS
+3358:2DF8 call near 0x0B0C
+3358:2DFB mov BX,word ptr SS:[BP]
+3358:2DFE mov SI,0x2FD7
+3358:2E01 lods AX,word ptr CS:[SI]
+3358:2E03 or AX,AX
+3358:2E05 js short 0x2E2B
+3358:2E07 push CX
+3358:2E08 push SI
+3358:2E09 add AX,word ptr CS:[0x01A3]
+3358:2E0E mov DI,AX
+3358:2E10 push DI
+3358:2E11 mov DX,0x0050
+3358:2E14 mov SI,DI
+3358:2E16 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2E17 add DI,3
+3358:2E1A dec DX
+3358:2E1B jne short 0x2E14
+3358:2E1D pop DI
+3358:2E1E add DI,0x0500
+3358:2E22 loop 0x2E10
+3358:2E24 call near 0x2572
+3358:2E27 pop SI
+3358:2E28 pop CX
+3358:2E29 jmp short 0x2E01
+3358:2E2B ret far
+3358:2EEA mov BX,word ptr SS:[BP]
+3358:2EED mov SI,0x2EE8
+3358:2EF0 shr CX,1
+3358:2EF2 shr CX,1
+3358:2EF4 shr CX,1
+3358:2EF6 cmp SI,0x2E66
+3358:2EFA jbe short 0x2F24
+3358:2EFC sub SI,2
+3358:2EFF mov AX,word ptr CS:[SI]
+3358:2F02 push CX
+3358:2F03 mov DI,AX
+3358:2F05 add DI,word ptr CS:[0x01A3]
+3358:2F0A xor AX,AX
+3358:2F0C push DI
+3358:2F0D mov DX,0x0028
+3358:2F10 stos byte ptr ES:[DI],AL
+3358:2F11 add DI,7
+3358:2F14 dec DX
+3358:2F15 jne short 0x2F10
+3358:2F17 pop DI
+3358:2F18 add DI,0x0A00
+3358:2F1C loop 0x2F0C
+3358:2F1E call near 0x2572
+3358:2F21 pop CX
+3358:2F22 jmp short 0x2EF6
+3358:2F24 push CS
+3358:2F25 call near 0x0B0C
+3358:2F28 lods AX,word ptr CS:[SI]
+3358:2F2A or AX,AX
+3358:2F2C js short 0x2F52
+3358:2F2E push CX
+3358:2F2F push SI
+3358:2F30 mov SI,AX
+3358:2F32 add SI,word ptr CS:[0x01A3]
+3358:2F37 push SI
+3358:2F38 mov DX,0x0028
+3358:2F3B mov DI,SI
+3358:2F3D movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:2F3E add SI,7
+3358:2F41 dec DX
+3358:2F42 jne short 0x2F3B
+3358:2F44 pop SI
+3358:2F45 add SI,0x0A00
+3358:2F49 loop 0x2F37
+3358:2F4B call near 0x2572
+3358:2F4E pop SI
+3358:2F4F pop CX
+3358:2F50 jmp short 0x2F28
+3358:2F52 ret far
+3358:2F53 call near 0x2596
+3358:2F56 push DS
+3358:2F57 mov DS,SI
+3358:2F59 call near 0x2FC1
+3358:2F5C call near 0x2FF9
+3358:2F5F call near 0x3031
+3358:2F62 push CS
+3358:2F63 call near 0x0B0C
+3358:2F66 pop DS
+3358:2F67 call near 0x3031
+3358:2F6A call near 0x2FF9
+3358:2F6D call near 0x2FC1
+3358:2F70 ret far
+3358:2F87 call near 0x2596
+3358:2F8A push DS
+3358:2F8B mov DS,SI
+3358:2F8D call near 0x2FC1
+3358:2F90 call near 0x2FF9
+3358:2F93 push CS
+3358:2F94 call near 0x0B0C
+3358:2F97 pop DS
+3358:2F98 call near 0x2FF9
+3358:2F9B call near 0x2FC1
+3358:2F9E ret far
+3358:2F9F call near 0x2596
+3358:2FA2 push DS
+3358:2FA3 mov DS,SI
+3358:2FA5 call near 0x2FC1
+3358:2FA8 call near 0x2FC1
+3358:2FAB call near 0x2FC1
+3358:2FAE push CS
+3358:2FAF call near 0x0B0C
+3358:2FB2 pop DS
+3358:2FB3 call near 0x2FC1
+3358:2FB6 ret far
+3358:2FC1 mov BX,word ptr SS:[BP]
+3358:2FC4 mov SI,0x2FB7
+3358:2FC7 lods AX,word ptr CS:[SI]
+3358:2FC9 or AX,AX
+3358:2FCB js short 0x2FC4
+3358:2FCD push SI
+3358:2FCE mov SI,AX
+3358:2FD0 call near 0x30C5
+3358:2FD3 pop SI
+3358:2FD4 jb short 0x2FC7
+3358:2FD6 ret near
+3358:2FF9 mov BX,word ptr SS:[BP]
+3358:2FFC mov SI,0x2FD7
+3358:2FFF lods AX,word ptr CS:[SI]
+3358:3001 or AX,AX
+3358:3003 js short 0x2FFC
+3358:3005 push SI
+3358:3006 mov SI,AX
+3358:3008 call near 0x308C
+3358:300B pop SI
+3358:300C jb short 0x2FFF
+3358:300E ret near
+3358:3031 mov BX,word ptr SS:[BP]
+3358:3034 mov SI,0x300F
+3358:3037 lods AX,word ptr CS:[SI]
+3358:3039 or AX,AX
+3358:303B js short 0x3034
+3358:303D push SI
+3358:303E mov SI,AX
+3358:3040 call near 0x3047
+3358:3043 pop SI
+3358:3044 jb short 0x3037
+3358:3046 ret near
+3358:3047 push CX
+3358:3048 mov DI,word ptr CS:[0x01A3]
+3358:304D add SI,DI
+3358:304F shr CX,1
+3358:3051 shr CX,1
+3358:3053 shr CX,1
+3358:3055 push CX
+3358:3056 push SI
+3358:3057 push DI
+3358:3058 mov CX,0x0028
+3358:305B lods AL,byte ptr DS:[SI]
+3358:305C add SI,7
+3358:305F mov AH,AL
+3358:3061 mov DX,8
+3358:3064 stos word ptr ES:[DI],AX
+3358:3065 stos word ptr ES:[DI],AX
+3358:3066 stos word ptr ES:[DI],AX
+3358:3067 stos word ptr ES:[DI],AX
+3358:3068 add DI,0x0138
+3358:306C dec DX
+3358:306D jne short 0x3064
+3358:306F sub DI,0x09F8
+3358:3073 loop 0x305B
+3358:3075 pop DI
+3358:3076 pop SI
+3358:3077 pop CX
+3358:3078 add DI,0x0A00
+3358:307C add SI,0x0A00
+3358:3080 loop 0x3055
+3358:3082 mov AX,word ptr SS:[BP]
+3358:3085 sub AX,BX
+3358:3087 cmp AX,0x0024
+3358:308A pop CX
+3358:308B ret near
+3358:308C push CX
+3358:308D shr CX,1
+3358:308F shr CX,1
+3358:3091 mov DI,word ptr CS:[0x01A3]
+3358:3096 add SI,DI
+3358:3098 push CX
+3358:3099 push SI
+3358:309A push DI
+3358:309B mov CX,0x0050
+3358:309E lods AL,byte ptr DS:[SI]
+3358:309F add SI,3
+3358:30A2 mov AH,AL
+3358:30A4 mov DX,4
+3358:30A7 stos word ptr ES:[DI],AX
+3358:30A8 stos word ptr ES:[DI],AX
+3358:30A9 add DI,0x013C
+3358:30AD dec DX
+3358:30AE jne short 0x30A7
+3358:30B0 sub DI,0x04FC
+3358:30B4 loop 0x309E
+3358:30B6 pop DI
+3358:30B7 pop SI
+3358:30B8 pop CX
+3358:30B9 add SI,0x0500
+3358:30BD add DI,0x0500
+3358:30C1 loop 0x3098
+3358:30C3 jmp short 0x3082
+3358:30C5 push CX
+3358:30C6 mov DI,word ptr CS:[0x01A3]
+3358:30CB add SI,DI
+3358:30CD shr CX,1
+3358:30CF push CX
+3358:30D0 push SI
+3358:30D1 push DI
+3358:30D2 mov CX,0x00A0
+3358:30D5 lods AL,byte ptr DS:[SI]
+3358:30D6 inc SI
+3358:30D7 mov AH,AL
+3358:30D9 mov word ptr ES:[DI+0x0140],AX
+3358:30DE stos word ptr ES:[DI],AX
+3358:30DF loop 0x30D5
+3358:30E1 pop DI
+3358:30E2 pop SI
+3358:30E3 pop CX
+3358:30E4 add SI,0x0280
+3358:30E8 add DI,0x0280
+3358:30EC loop 0x30CF
+3358:30EE jmp short 0x3082
+3358:311A mov DI,word ptr CS:[0x3118]
+3358:311F xor AX,AX
+3358:3121 mov CX,0x12C0
+3358:3124 rep stos word ptr ES:[DI],AX
+3358:3126 mov DS,word ptr CS:[0x2537]
+3358:312B push CS
+3358:312C call near 0x0B0C
+3358:312F ret near
+3358:3130 call near 0x2596
+3358:3133 mov DS,word ptr CS:[0x2535]
+3358:3138 mov AX,word ptr CS:[0x01A3]
+3358:313C mov word ptr CS:[0x3118],AX
+3358:3140 or DL,DL
+3358:3142 mov CX,0x0101
+3358:3145 js short 0x314A
+3358:3147 mov CX,0xFF11
+3358:314A push word ptr SS:[BP]
+3358:314D push CX
+3358:314E push BP
+3358:314F xor CH,CH
+3358:3151 mov BX,CX
+3358:3153 shl BX,1
+3358:3155 mov AX,word ptr CS:[BX+0x30F0]
+3358:315A call near 0x316D
+3358:315D pop BP
+3358:315E pop CX
+3358:315F pop BX
+3358:3160 call near 0x253D
+3358:3163 add CL,CH
+3358:3165 je short 0x316C
+3358:3167 cmp CL,0x11
+3358:316A jb short 0x314A
+3358:316C ret far
+3358:316D cmp CL,9
+3358:3170 je short 0x311A
+3358:3172 mov word ptr CS:[0x3114],AX
+3358:3176 mov DI,0x5DC0
+3358:3179 add DI,word ptr CS:[0x01A3]
+3358:317E lea BP,DI+0x0140
+3358:3182 mov SI,DI
+3358:3184 mov BX,BP
+3358:3186 mov DX,0x004C
+3358:3189 jmp short 0x3193
+3358:318B sub SI,0x0280
+3358:318F sub DI,0x0280
+3358:3193 dec DX
+3358:3194 js short 0x31C5
+3358:3196 mov CX,0x00A0
+3358:3199 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:319B xchg DI,BP
+3358:319D xchg SI,BX
+3358:319F mov CX,0x00A0
+3358:31A2 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:31A4 xchg DI,BP
+3358:31A6 xchg SI,BX
+3358:31A8 dec AL
+3358:31AA jne short 0x318B
+3358:31AC mov CX,0x0140
+3358:31AF sub DL,AH
+3358:31B1 jbe short 0x31C1
+3358:31B3 sub SI,CX
+3358:31B5 add BX,CX
+3358:31B7 dec AH
+3358:31B9 jne short 0x31B3
+3358:31BB mov AX,word ptr CS:[0x3114]
+3358:31BF jmp short 0x318B
+3358:31C1 sub DI,0x0280
+3358:31C5 mov BX,DI
+3358:31C7 xchg BX,word ptr CS:[0x3118]
+3358:31CC xor AX,AX
+3358:31CE cmp BX,DI
+3358:31D0 jg short 0x31E5
+3358:31D2 mov CX,0x00A0
+3358:31D5 xchg BP,DI
+3358:31D7 rep stos word ptr ES:[DI],AX
+3358:31D9 xchg BP,DI
+3358:31DB mov CL,0xA0
+3358:31DD rep stos word ptr ES:[DI],AX
+3358:31DF sub DI,0x0280
+3358:31E3 jmp short 0x31CE
+3358:31E5 ret near
+3358:3200 mov word ptr CS:[0x2535],SI
+3358:3205 mov word ptr CS:[0x2537],DS
+3358:320A mov word ptr CS:[0x2539],ES
+3358:320F and AX,0x00FE
+3358:3212 cmp AX,0x001A
+3358:3215 jb short 0x321C
+3358:321C mov BX,AX
+3358:321E jmp near word ptr CS:[BX+0x31E6]
+3358:3280 mov DI,0xC71C
+3358:3283 mov DX,0x0010
+3358:3286 mov AX,0xFEFE
+3358:3289 mov CX,0x0044
+3358:328C rep stos word ptr ES:[DI],AX
+3358:328E add DI,0x00B8
+3358:3292 dec DX
+3358:3293 jne short 0x3289
+3358:3295 mov DX,8
+3358:3298 mov AX,0xF208
+3358:329B mov CX,0x0044
+3358:329E rep stos word ptr ES:[DI],AX
+3358:32A0 add DI,0x00B8
+3358:32A4 xchg AL,AH
+3358:32A6 dec DX
+3358:32A7 jne short 0x329B
+3358:32A9 mov DX,0x0010
+3358:32AC mov AX,0xFEFE
+3358:32AF mov CX,0x0044
+3358:32B2 rep stos word ptr ES:[DI],AX
+3358:32B4 add DI,0x00B8
+3358:32B8 dec DX
+3358:32B9 jne short 0x32AF
+3358:32BB mov DS,word ptr CS:[0x2537]
+3358:32C0 ret near
+3358:32C1 cmp CL,9
+3358:32C4 je short 0x3280
+3358:32C6 mov word ptr CS:[0x3116],CX
+3358:32CB mov word ptr CS:[0x3114],AX
+3358:32CF mov DI,0xE01C
+3358:32D2 lea BP,DI-320
+3358:32D6 mov CX,0x0044
+3358:32D9 mov SI,DI
+3358:32DB rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:32DD add DI,0x00B8
+3358:32E1 mov SI,DI
+3358:32E3 mov BX,BP
+3358:32E5 mov DX,0x0014
+3358:32E8 jmp short 0x32FA
+3358:32EA sub SI,0x01C8
+3358:32EE sub DI,0x01C8
+3358:32F2 add BX,0x00B8
+3358:32F6 add BP,0x00B8
+3358:32FA dec DX
+3358:32FB js short 0x3330
+3358:32FD mov CX,0x0044
+3358:3300 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:3302 xchg DI,BP
+3358:3304 xchg SI,BX
+3358:3306 mov CX,0x0044
+3358:3309 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:330B xchg DI,BP
+3358:330D xchg SI,BX
+3358:330F dec AL
+3358:3311 jne short 0x32EA
+3358:3313 mov CX,0x0140
+3358:3316 sub DL,AH
+3358:3318 jbe short 0x3328
+3358:331A sub SI,CX
+3358:331C add BX,CX
+3358:331E dec AH
+3358:3320 jne short 0x331A
+3358:3322 mov AX,word ptr CS:[0x3114]
+3358:3326 jmp short 0x32EA
+3358:3328 sub DI,0x01C8
+3358:332C add BP,0x00B8
+3358:3330 mov BX,0xFEFE
+3358:3333 mov AX,0xF208
+3358:3336 mov DX,word ptr CS:[0x3116]
+3358:333B cmp DX,9
+3358:333E jb short 0x3346
+3358:3340 sub DX,0x0012
+3358:3343 neg DX
+3358:3345 xchg BX,AX
+3358:3346 mov CX,0x0044
+3358:3349 xchg BX,AX
+3358:334A xchg BP,DI
+3358:334C rep stos word ptr ES:[DI],AX
+3358:334E xchg BX,AX
+3358:334F xchg BP,DI
+3358:3351 mov CL,0x44
+3358:3353 rep stos word ptr ES:[DI],AX
+3358:3355 xchg AL,AH
+3358:3357 xchg BL,BH
+3358:3359 sub DI,0x01C8
+3358:335D add BP,0x00B8
+3358:3361 dec DX
+3358:3362 jne short 0x3346
+3358:3364 mov AX,0xFEFE
+3358:3367 mov CL,0x44
+3358:3369 xchg BP,DI
+3358:336B rep stos word ptr ES:[DI],AX
+3358:336D xchg BP,DI
+3358:336F mov CL,0x44
+3358:3371 rep stos word ptr ES:[DI],AX
+3358:3373 sub DI,0x01C8
+3358:3377 add BP,0x00B8
+3358:337B cmp DI,0xC6C0
+3358:337F jae short 0x3367
+3358:3381 ret near
+3358:3382 cmp CX,0x0011
+3358:3385 jne short 0x33A3
+3358:3387 push CX
+3358:3388 push SI
+3358:3389 push DS
+3358:338A push ES
+3358:338B push ES
+3358:338C push SI
+3358:338D pop ES
+3358:338E pop DS
+3358:338F mov DX,0x005C
+3358:3392 mov BX,0x009F
+3358:3395 mov BP,0x0088
+3358:3398 mov AX,0x0029
+3358:339B push CS
+3358:339C call near 0x1B8E
+3358:339F pop ES
+3358:33A0 pop DS
+3358:33A1 pop SI
+3358:33A2 pop CX
+3358:33A3 cmp CL,9
+3358:33A6 jb short 0x33AA
+3358:33A8 push SI
+3358:33A9 pop DS
+3358:33AA push CX
+3358:33AB mov BX,CX
+3358:33AD shl BX,1
+3358:33AF mov AX,word ptr CS:[BX+0x30F0]
+3358:33B4 call near 0x32C1
+3358:33B7 pop CX
+3358:33B8 loop 0x33C9
+3358:33BA mov DX,0x005C
+3358:33BD mov BX,0x009F
+3358:33C0 mov BP,0x0088
+3358:33C3 mov AX,0x0029
+3358:33C6 jmp near 0x1B8E
+3358:33C9 ret far
+3358:3500 call near 0x0BDC
+3358:3503 push SI
+3358:3504 mov DX,word ptr SS:[SI]
+3358:3507 mov BX,word ptr SS:[SI+2]
+3358:350B add BX,word ptr CS:[0x34FC]
+3358:3510 inc word ptr CS:[0x34FC]
+3358:3515 mov BP,word ptr SS:[SI+6]
+3358:3519 sub BP,BX
+3358:351B ja short 0x352C
+3358:351D add BP,BX
+3358:351F mov word ptr CS:[0x34FC],0
+3358:3526 mov BX,word ptr SS:[SI+2]
+3358:352A sub BP,BX
+3358:352C call near 0x0C10
+3358:352F sub DX,word ptr SS:[SI+4]
+3358:3533 neg DX
+3358:3535 shr DX,1
+3358:3537 push DI
+3358:3538 xchg DI,word ptr CS:[0x34FE]
+3358:353D sub DI,5
+3358:3540 mov SI,DI
+3358:3542 mov CX,DX
+3358:3544 add CX,5
+3358:3547 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:3549 pop DI
+3358:354A mov SI,0x3487
+3358:354D lods AL,byte ptr CS:[SI]
+3358:354F cmp AL,0x80
+3358:3551 je short 0x356D
+3358:3553 call near 0x356F
+3358:3556 dec BP
+3358:3557 jne short 0x354D
+3358:3559 pop AX
+3358:355A push AX
+3358:355B push DX
+3358:355C push SI
+3358:355D mov SI,AX
+3358:355F mov DX,word ptr SS:[SI]
+3358:3562 mov BX,word ptr SS:[SI+2]
+3358:3566 call near 0x0C10
+3358:3569 pop SI
+3358:356A pop DX
+3358:356B jmp short 0x354D
+3358:356D pop SI
+3358:356E ret far
+3358:356F push SI
+3358:3570 push DI
+3358:3571 mov SI,DI
+3358:3573 cbw
+3358:3574 add DI,AX
+3358:3576 mov CX,DX
+3358:3578 rep movs word ptr ES:[DI],word ptr DS:[SI]
+3358:357A pop DI
+3358:357B pop SI
+3358:357C add DI,0x0140
+3358:3580 ret near
+3358:3581 mov DX,word ptr SS:[SI]
+3358:3584 mov BX,word ptr SS:[SI+2]
+3358:3588 call near 0x0C10
+3358:358B mov DX,word ptr SS:[SI+4]
+3358:358F sub DX,word ptr SS:[SI]
+3358:3592 shr DX,1
+3358:3594 mov BX,word ptr SS:[SI+6]
+3358:3598 sub BX,word ptr SS:[SI+2]
+3358:359C shr BX,1
+3358:359E je short 0x35C7
+3358:35A0 push word ptr SS:[BP]
+3358:35A3 mov SI,0x2FB7
+3358:35A6 lods AX,word ptr CS:[SI]
+3358:35A8 or AX,AX
+3358:35AA js short 0x35A3
+3358:35AC push BX
+3358:35AD push CX
+3358:35AE push DX
+3358:35AF push SI
+3358:35B0 push DI
+3358:35B1 push BP
+3358:35B2 call near 0x35C8
+3358:35B5 pop BP
+3358:35B6 pop DI
+3358:35B7 pop SI
+3358:35B8 pop DX
+3358:35B9 pop CX
+3358:35BA pop BX
+3358:35BB pop AX
+3358:35BC push AX
+3358:35BD sub AX,word ptr SS:[BP]
+3358:35C0 neg AX
+3358:35C2 cmp AX,CX
+3358:35C4 jb short 0x35A6
+3358:35C6 pop AX
+3358:35C7 ret far
+3358:35C8 mov SI,DI
+3358:35CA add SI,AX
+3358:35CC push SI
+3358:35CD push DI
+3358:35CE mov CX,DX
+3358:35D0 lods AL,byte ptr DS:[SI]
+3358:35D1 inc SI
+3358:35D2 mov AH,AL
+3358:35D4 mov word ptr ES:[DI+0x0140],AX
+3358:35D9 stos word ptr ES:[DI],AX
+3358:35DA loop 0x35D0
+3358:35DC pop DI
+3358:35DD pop SI
+3358:35DE add SI,0x0280
+3358:35E2 add DI,0x0280
+3358:35E6 dec BX
+3358:35E7 jne short 0x35CC
+3358:35E9 ret near
+3358:3602 push DS
+3358:3603 lods AX,word ptr DS:[SI]
+3358:3604 or AX,AX
+3358:3606 jns short 0x360A
+3358:360A cmp AX,0x012C
+3358:360D jb short 0x3612
+3358:360F mov AX,0x012C
+3358:3612 mov word ptr CS:[0x35F2],AX
+3358:3616 push AX
+3358:3617 lods AX,word ptr DS:[SI]
+3358:3618 or AX,AX
+3358:361A jns short 0x361E
+3358:361E mov word ptr CS:[0x35F4],AX
+3358:3622 push AX
+3358:3623 call near 0x36B0
+3358:3626 pop BX
+3358:3627 pop DX
+3358:3628 push ES
+3358:3629 pop DS
+3358:362A mov CX,2
+3358:362D push BX
+3358:362E push CX
+3358:362F push DX
+3358:3630 mov CX,8
+3358:3633 push BX
+3358:3634 push CX
+3358:3635 push DX
+3358:3636 push word ptr SS:[BP]
+3358:3639 call near 0x372D
+3358:363C pop BX
+3358:363D call near 0x2572
+3358:3640 pop DX
+3358:3641 pop CX
+3358:3642 pop BX
+3358:3643 add DX,word ptr CS:[0x35EA]
+3358:3648 add BX,word ptr CS:[0x35EC]
+3358:364D loop 0x3633
+3358:364F pop DX
+3358:3650 pop CX
+3358:3651 pop BX
+3358:3652 loop 0x362D
+3358:3654 mov AX,2
+3358:3657 push AX
+3358:3658 mov DX,word ptr CS:[0x35F6]
+3358:365D mov BX,word ptr CS:[0x35F8]
+3358:3662 mov CX,0x0014
+3358:3665 mov SI,0x0014
+3358:3668 mov AX,8
+3358:366B push AX
+3358:366C push BX
+3358:366D push CX
+3358:366E push DX
+3358:366F push SI
+3358:3670 push word ptr SS:[BP]
+3358:3673 mov word ptr CS:[0x35FA],DX
+3358:3678 mov word ptr CS:[0x35FC],BX
+3358:367D mov word ptr CS:[0x35FE],CX
+3358:3682 mov word ptr CS:[0x3600],SI
+3358:3687 call near 0x37B1
+3358:368A pop BX
+3358:368B call near 0x2572
+3358:368E pop SI
+3358:368F pop DX
+3358:3690 pop CX
+3358:3691 pop BX
+3358:3692 mov AX,word ptr CS:[0x35EE]
+3358:3696 sub DX,AX
+3358:3698 add CX,AX
+3358:369A add CX,AX
+3358:369C mov AX,word ptr CS:[0x35F0]
+3358:36A0 sub BX,AX
+3358:36A2 add SI,AX
+3358:36A4 add SI,AX
+3358:36A6 pop AX
+3358:36A7 dec AX
+3358:36A8 jne short 0x366B
+3358:36AA pop AX
+3358:36AB dec AX
+3358:36AC jne short 0x3657
+3358:36AE pop DS
+3358:36AF ret far
+3358:36B0 mov AX,word ptr DS:[DI+4]
+3358:36B3 mov DX,word ptr DS:[DI]
+3358:36B5 sub AX,DX
+3358:36B7 sub AX,0x0014
+3358:36BA shr AX,1
+3358:36BC add DX,AX
+3358:36BE mov word ptr CS:[0x35F6],DX
+3358:36C3 shr AX,1
+3358:36C5 shr AX,1
+3358:36C7 shr AX,1
+3358:36C9 mov word ptr CS:[0x35EE],AX
+3358:36CD mov AX,word ptr DS:[DI+6]
+3358:36D0 mov BX,word ptr DS:[DI+2]
+3358:36D3 sub AX,BX
+3358:36D5 sub AX,0x0014
+3358:36D8 shr AX,1
+3358:36DA add BX,AX
+3358:36DC mov word ptr CS:[0x35F8],BX
+3358:36E1 shr AX,1
+3358:36E3 shr AX,1
+3358:36E5 shr AX,1
+3358:36E7 mov word ptr CS:[0x35F0],AX
+3358:36EB sub DX,word ptr CS:[0x35F2]
+3358:36F0 sub BX,word ptr CS:[0x35F4]
+3358:36F5 or DX,DX
+3358:36F7 pushf
+3358:36F8 jns short 0x36FC
+3358:36FA neg DX
+3358:36FC shr DX,1
+3358:36FE shr DX,1
+3358:3700 shr DX,1
+3358:3702 popf
+3358:3703 jns short 0x3707
+3358:3705 neg DX
+3358:3707 or BX,BX
+3358:3709 pushf
+3358:370A jns short 0x370E
+3358:370C neg BX
+3358:370E shr BX,1
+3358:3710 shr BX,1
+3358:3712 shr BX,1
+3358:3714 popf
+3358:3715 jns short 0x3719
+3358:3717 neg BX
+3358:3719 mov word ptr CS:[0x35EA],DX
+3358:371E mov word ptr CS:[0x35EC],BX
+3358:3723 ret near
+3358:3724 dec SI
+3358:3725 push DS
+3358:3726 push ES
+3358:3727 pop DS
+3358:3728 call near 0x3733
+3358:372B pop DS
+3358:372C ret far
+3358:372D mov CX,0x0014
+3358:3730 mov SI,0x0014
+3358:3733 add SI,DX
+3358:3735 add CX,BX
+3358:3737 mov AX,4
+3358:373A cmp DX,AX
+3358:373C jge short 0x3740
+3358:373E mov DX,AX
+3358:3740 cmp SI,AX
+3358:3742 jge short 0x3746
+3358:3746 mov AX,0x013C
+3358:3749 cmp DX,AX
+3358:374B jle short 0x374F
+3358:374F cmp SI,AX
+3358:3751 jle short 0x3755
+3358:3753 mov SI,AX
+3358:3755 mov AX,4
+3358:3758 cmp BX,AX
+3358:375A jge short 0x375E
+3358:375E cmp CX,AX
+3358:3760 jge short 0x3764
+3358:3764 mov AX,0x0094
+3358:3767 cmp BX,AX
+3358:3769 jle short 0x376D
+3358:376D cmp CX,AX
+3358:376F jle short 0x3773
+3358:3771 mov CX,AX
+3358:3773 sub SI,DX
+3358:3775 sub CX,BX
+3358:3777 inc SI
+3358:3778 sub CX,2
+3358:377B call near 0x0C10
+3358:377E push CX
+3358:377F push CX
+3358:3780 mov CX,SI
+3358:3782 mov AL,0x0F
+3358:3784 xor byte ptr DS:[DI],AL
+3358:3786 inc DI
+3358:3787 loop 0x3784
+3358:3789 dec DI
+3358:378A pop CX
+3358:378B or CX,CX
+3358:378D jle short 0x379B
+3358:378F add DI,0x0140
+3358:3793 xor byte ptr DS:[DI],AL
+3358:3795 loop 0x378F
+3358:3797 add DI,0x0140
+3358:379B mov CX,SI
+3358:379D xor byte ptr DS:[DI],AL
+3358:379F dec DI
+3358:37A0 loop 0x379D
+3358:37A2 inc DI
+3358:37A3 pop CX
+3358:37A4 or CX,CX
+3358:37A6 jle short 0x37B0
+3358:37A8 sub DI,0x0140
+3358:37AC xor byte ptr DS:[DI],AL
+3358:37AE loop 0x37A8
+3358:37B0 ret near
+3358:37B1 push BP
+3358:37B2 mov BP,CX
+3358:37B4 call near 0x0C10
+3358:37B7 mov AX,0x0F0F
+3358:37BA mov CX,5
+3358:37BD xor word ptr DS:[DI],AX
+3358:37BF add DI,2
+3358:37C2 loop 0x37BD
+3358:37C4 add DI,BP
+3358:37C6 sub DI,0x0014
+3358:37C9 mov CX,5
+3358:37CC xor word ptr DS:[DI],AX
+3358:37CE add DI,2
+3358:37D1 loop 0x37CC
+3358:37D3 dec DI
+3358:37D4 mov CX,9
+3358:37D7 add DI,0x0140
+3358:37DB xor byte ptr DS:[DI],AL
+3358:37DD loop 0x37D7
+3358:37DF mov AX,SI
+3358:37E1 sub AX,0x0014
+3358:37E4 mov CX,0x0140
+3358:37E7 imul CX
+3358:37E9 add DI,AX
+3358:37EB mov AX,0x0F0F
+3358:37EE mov CX,9
+3358:37F1 add DI,0x0140
+3358:37F5 xor byte ptr DS:[DI],AL
+3358:37F7 loop 0x37F1
+3358:37F9 add DI,0x0140
+3358:37FD dec DI
+3358:37FE mov CX,5
+3358:3801 xor word ptr DS:[DI],AX
+3358:3803 sub DI,2
+3358:3806 loop 0x3801
+3358:3808 sub DI,BP
+3358:380A add DI,0x0014
+3358:380D mov CX,5
+3358:3810 xor word ptr DS:[DI],AX
+3358:3812 sub DI,2
+3358:3815 loop 0x3810
+3358:3817 add DI,2
+3358:381A mov CX,9
+3358:381D sub DI,0x0140
+3358:3821 xor byte ptr DS:[DI],AL
+3358:3823 loop 0x381D
+3358:3825 mov AX,SI
+3358:3827 sub AX,0x0014
+3358:382A mov CX,0x0140
+3358:382D imul CX
+3358:382F sub DI,AX
+3358:3831 mov AX,0x0F0F
+3358:3834 mov CX,9
+3358:3837 sub DI,0x0140
+3358:383B xor byte ptr DS:[DI],AL
+3358:383D loop 0x3837
+3358:383F pop BP
+3358:3840 ret near
+3358:3841 push DS
+3358:3842 push ES
+3358:3843 pop DS
+3358:3844 mov AX,2
+3358:3847 push AX
+3358:3848 mov DX,word ptr CS:[0x35FA]
+3358:384D mov BX,word ptr CS:[0x35FC]
+3358:3852 mov CX,word ptr CS:[0x35FE]
+3358:3857 mov SI,word ptr CS:[0x3600]
+3358:385C mov AX,8
+3358:385F push AX
+3358:3860 push BX
+3358:3861 push CX
+3358:3862 push DX
+3358:3863 push SI
+3358:3864 push word ptr SS:[BP]
+3358:3867 call near 0x37B1
+3358:386A pop BX
+3358:386B call near 0x2572
+3358:386E pop SI
+3358:386F pop DX
+3358:3870 pop CX
+3358:3871 pop BX
+3358:3872 mov AX,word ptr CS:[0x35EE]
+3358:3876 add DX,AX
+3358:3878 sub CX,AX
+3358:387A sub CX,AX
+3358:387C mov AX,word ptr CS:[0x35F0]
+3358:3880 add BX,AX
+3358:3882 sub SI,AX
+3358:3884 sub SI,AX
+3358:3886 pop AX
+3358:3887 dec AX
+3358:3888 jne short 0x385F
+3358:388A pop AX
+3358:388B dec AX
+3358:388C jne short 0x3847
+3358:388E mov CX,2
+3358:3891 push CX
+3358:3892 mov DX,word ptr CS:[0x35F6]
+3358:3897 mov BX,word ptr CS:[0x35F8]
+3358:389C mov CX,8
+3358:389F sub DX,word ptr CS:[0x35EA]
+3358:38A4 sub BX,word ptr CS:[0x35EC]
+3358:38A9 push BX
+3358:38AA push CX
+3358:38AB push DX
+3358:38AC push word ptr SS:[BP]
+3358:38AF call near 0x372D
+3358:38B2 pop BX
+3358:38B3 call near 0x2572
+3358:38B6 pop DX
+3358:38B7 pop CX
+3358:38B8 pop BX
+3358:38B9 loop 0x389F
+3358:38BB pop CX
+3358:38BC loop 0x3891
+3358:38BE pop DS
+3358:38BF ret far
+3358:38D8 lods AX,word ptr DS:[SI]
+3358:38D9 add AX,8
+3358:38DC mov word ptr CS:[0x38C8],AX
+3358:38E0 lods AX,word ptr DS:[SI]
+3358:38E1 add AX,8
+3358:38E4 mov word ptr CS:[0x38CA],AX
+3358:38E8 mov SI,DI
+3358:38EA lods AX,word ptr DS:[SI]
+3358:38EB mov DX,AX
+3358:38ED lods AX,word ptr DS:[SI]
+3358:38EE mov BX,AX
+3358:38F0 lods AX,word ptr DS:[SI]
+3358:38F1 mov CX,AX
+3358:38F3 lods AX,word ptr DS:[SI]
+3358:38F4 mov SI,AX
+3358:38F6 xchg CX,SI
+3358:38F8 mov word ptr CS:[0x38CC],DX
+3358:38FD mov word ptr CS:[0x38CE],BX
+3358:3902 mov word ptr CS:[0x38D0],SI
+3358:3907 mov word ptr CS:[0x38D2],CX
+3358:390C sub SI,DX
+3358:390E shr SI,1
+3358:3910 shr SI,1
+3358:3912 shr SI,1
+3358:3914 shr SI,1
+3358:3916 sub CX,BX
+3358:3918 shr CX,1
+3358:391A shr CX,1
+3358:391C shr CX,1
+3358:391E shr CX,1
+3358:3920 mov word ptr CS:[0x38C4],SI
+3358:3925 mov word ptr CS:[0x38C6],CX
+3358:392A sub DX,word ptr CS:[0x38C8]
+3358:392F pushf
+3358:3930 jns short 0x3934
+3358:3932 neg DX
+3358:3934 shr DX,1
+3358:3936 shr DX,1
+3358:3938 shr DX,1
+3358:393A shr DX,1
+3358:393C popf
+3358:393D jns short 0x3941
+3358:393F neg DX
+3358:3941 mov word ptr CS:[0x38C0],DX
+3358:3946 sub BX,word ptr CS:[0x38CA]
+3358:394B pushf
+3358:394C jns short 0x3950
+3358:394E neg BX
+3358:3950 shr BX,1
+3358:3952 shr BX,1
+3358:3954 shr BX,1
+3358:3956 shr BX,1
+3358:3958 popf
+3358:3959 jns short 0x395D
+3358:395B neg BX
+3358:395D mov word ptr CS:[0x38C2],BX
+3358:3962 mov DX,word ptr CS:[0x38C8]
+3358:3967 mov BX,word ptr CS:[0x38CA]
+3358:396C xor CX,CX
+3358:396E xor SI,SI
+3358:3970 push DS
+3358:3971 push ES
+3358:3972 pop DS
+3358:3973 mov AX,word ptr SS:[BP]
+3358:3976 mov word ptr CS:[0x38D4],AX
+3358:397A mov AX,0x000F
+3358:397D push AX
+3358:397E add DX,word ptr CS:[0x38C0]
+3358:3983 add BX,word ptr CS:[0x38C2]
+3358:3988 add SI,word ptr CS:[0x38C4]
+3358:398D add CX,word ptr CS:[0x38C6]
+3358:3992 push BX
+3358:3993 push CX
+3358:3994 push DX
+3358:3995 push SI
+3358:3996 call near 0x3733
+3358:3999 mov BX,word ptr CS:[0x38D4]
+3358:399E call near 0x2572
+3358:39A1 mov word ptr CS:[0x38D4],BX
+3358:39A6 pop SI
+3358:39A7 pop DX
+3358:39A8 pop CX
+3358:39A9 pop BX
+3358:39AA push BX
+3358:39AB push CX
+3358:39AC push DX
+3358:39AD push SI
+3358:39AE call near 0x3733
+3358:39B1 pop SI
+3358:39B2 pop DX
+3358:39B3 pop CX
+3358:39B4 pop BX
+3358:39B5 pop AX
+3358:39B6 dec AX
+3358:39B7 jne short 0x397D
+3358:39B9 pop DS
+3358:39BA ret far
+3358:39BB mov DX,word ptr CS:[0x38CC]
+3358:39C0 mov BX,word ptr CS:[0x38CE]
+3358:39C5 mov SI,word ptr CS:[0x38D0]
+3358:39CA mov CX,word ptr CS:[0x38D2]
+3358:39CF sub SI,DX
+3358:39D1 sub CX,BX
+3358:39D3 neg word ptr CS:[0x38C0]
+3358:39D8 neg word ptr CS:[0x38C2]
+3358:39DD neg word ptr CS:[0x38C4]
+3358:39E2 neg word ptr CS:[0x38C6]
+3358:39E7 jmp short 0x3970
+3358:39E9 push AX
+3358:39EA push DI
+3358:39EB call near 0x0C10
+3358:39EE pop BX
+3358:39EF mov DX,AX
+3358:39F1 shr BP,1
+3358:39F3 jae short 0x39F7
+3358:39F5 xor BP,SI
+3358:39F7 mov AX,BP
+3358:39F9 and AX,3
+3358:39FC dec AX
+3358:39FD add AL,DH
+3358:39FF stos byte ptr ES:[DI],AL
+3358:3A00 add DX,BX
+3358:3A02 loop 0x39F1
+3358:3A04 pop AX
+3358:3A05 ret far
+3358:3A14 call near 0x0C10
+3358:3A17 mov SI,DI
+3358:3A19 mov DI,word ptr CS:[0x01A3]
+3358:3A1E shl BP,1
+3358:3A20 jmp near word ptr CS:[BP+0x3A04]
+3358:3A25 mov BX,0x0013
+3358:3A28 mov CX,0x0028
+3358:3A2B mov BP,6
+3358:3A2E push CX
+3358:3A2F lods AL,byte ptr DS:[SI]
+3358:3A30 mov AH,AL
+3358:3A32 stos word ptr ES:[DI],AX
+3358:3A33 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:3A34 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:3A35 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:3A36 loop 0x3A2F
+3358:3A38 pop CX
+3358:3A39 add SI,CX
+3358:3A3B dec BP
+3358:3A3C jne short 0x3A2E
+3358:3A3E lods AL,byte ptr DS:[SI]
+3358:3A3F mov AH,AL
+3358:3A41 mov word ptr ES:[DI+0x0140],AX
+3358:3A46 stos word ptr ES:[DI],AX
+3358:3A47 lods AX,word ptr DS:[SI]
+3358:3A48 mov word ptr ES:[DI+0x0140],AX
+3358:3A4D stos word ptr ES:[DI],AX
+3358:3A4E lods AX,word ptr DS:[SI]
+3358:3A4F mov word ptr ES:[DI+0x0140],AX
+3358:3A54 stos word ptr ES:[DI],AX
+3358:3A55 lods AX,word ptr DS:[SI]
+3358:3A56 mov word ptr ES:[DI+0x0140],AX
+3358:3A5B stos word ptr ES:[DI],AX
+3358:3A5C loop 0x3A3E
+3358:3A5E add SI,0x0028
+3358:3A61 add DI,0x0140
+3358:3A65 dec BX
+3358:3A66 jne short 0x3A28
+3358:3A68 ret far
+3358:3A69 mov BX,0x0026
+3358:3A6C mov CX,0x0050
+3358:3A6F mov BP,2
+3358:3A72 push CX
+3358:3A73 lods AL,byte ptr DS:[SI]
+3358:3A74 mov AH,AL
+3358:3A76 stos word ptr ES:[DI],AX
+3358:3A77 movs word ptr ES:[DI],word ptr DS:[SI]
+3358:3A78 loop 0x3A73
+3358:3A7A pop CX
+3358:3A7B add SI,CX
+3358:3A7D dec BP
+3358:3A7E jne short 0x3A72
+3358:3A80 lods AL,byte ptr DS:[SI]
+3358:3A81 mov AH,AL
+3358:3A83 mov word ptr ES:[DI+0x0140],AX
+3358:3A88 stos word ptr ES:[DI],AX
+3358:3A89 lods AX,word ptr DS:[SI]
+3358:3A8A mov word ptr ES:[DI+0x0140],AX
+3358:3A8F stos word ptr ES:[DI],AX
+3358:3A90 loop 0x3A80
+3358:3A92 add SI,0x0050
+3358:3A95 add DI,0x0140
+3358:3A99 dec BX
+3358:3A9A jne short 0x3A6C
+3358:3A9C ret far
+3358:3A9D mov BX,0x0032
+3358:3AA0 mov CX,0x006A
+3358:3AA3 push CX
+3358:3AA4 lods AL,byte ptr DS:[SI]
+3358:3AA5 mov AH,AL
+3358:3AA7 stos word ptr ES:[DI],AX
+3358:3AA8 movs byte ptr ES:[DI],byte ptr DS:[SI]
+3358:3AA9 loop 0x3AA4
+3358:3AAB lods AL,byte ptr DS:[SI]
+3358:3AAC mov AH,AL
+3358:3AAE stos word ptr ES:[DI],AX
+3358:3AAF pop CX
+3358:3AB0 add SI,CX
+3358:3AB2 inc SI
+3358:3AB3 lods AL,byte ptr DS:[SI]
+3358:3AB4 mov AH,AL
+3358:3AB6 mov word ptr ES:[DI+0x0140],AX
+3358:3ABB stos word ptr ES:[DI],AX
+3358:3ABC lods AL,byte ptr DS:[SI]
+3358:3ABD mov byte ptr ES:[DI+0x0140],AL
+3358:3AC2 stos byte ptr ES:[DI],AL
+3358:3AC3 loop 0x3AB3
+3358:3AC5 lods AL,byte ptr DS:[SI]
+3358:3AC6 mov AH,AL
+3358:3AC8 mov word ptr ES:[DI+0x0140],AX
+3358:3ACD stos word ptr ES:[DI],AX
+3358:3ACE add SI,0x006B
+3358:3AD1 add DI,0x0140
+3358:3AD5 dec BX
+3358:3AD6 jne short 0x3AA0
+3358:3AD8 ret far
+3358:3AD9 mov BX,0x004C
+3358:3ADC mov CX,0x00A0
+3358:3ADF lods AL,byte ptr DS:[SI]
+3358:3AE0 mov AH,AL
+3358:3AE2 mov word ptr ES:[DI+0x0140],AX
+3358:3AE7 stos word ptr ES:[DI],AX
+3358:3AE8 loop 0x3ADF
+3358:3AEA add SI,0x00A0
+3358:3AEE add DI,0x0140
+3358:3AF2 dec BX
+3358:3AF3 jne short 0x3ADC
+3358:3AF5 ret far
+3358:3AF6 mov BX,0x0032
+3358:3AF9 mov CX,0x006A
+3358:3AFC lods AL,byte ptr DS:[SI]
+3358:3AFD mov AH,AL
+3358:3AFF stos word ptr ES:[DI],AX
+3358:3B00 stos byte ptr ES:[DI],AL
+3358:3B01 add DI,0x013D
+3358:3B05 stos word ptr ES:[DI],AX
+3358:3B06 stos byte ptr ES:[DI],AL
+3358:3B07 add DI,0x013D
+3358:3B0B stos word ptr ES:[DI],AX
+3358:3B0C stos byte ptr ES:[DI],AL
+3358:3B0D sub DI,0x0280
+3358:3B11 loop 0x3AFC
+3358:3B13 lods AL,byte ptr DS:[SI]
+3358:3B14 mov AH,AL
+3358:3B16 stos word ptr ES:[DI],AX
+3358:3B17 add DI,0x013E
+3358:3B1B stos word ptr ES:[DI],AX
+3358:3B1C add DI,0x013E
+3358:3B20 stos word ptr ES:[DI],AX
+3358:3B21 add SI,0x00D5
+3358:3B25 dec BX
+3358:3B26 jne short 0x3AF9
+3358:3B28 mov CX,0x006A
+3358:3B2B lods AL,byte ptr DS:[SI]
+3358:3B2C mov AH,AL
+3358:3B2E stos word ptr ES:[DI],AX
+3358:3B2F stos byte ptr ES:[DI],AL
+3358:3B30 add DI,0x013D
+3358:3B34 stos word ptr ES:[DI],AX
+3358:3B35 stos byte ptr ES:[DI],AL
+3358:3B36 sub DI,0x0140
+3358:3B3A loop 0x3B2B
+3358:3B3C lods AL,byte ptr DS:[SI]
+3358:3B3D mov AH,AL
+3358:3B3F stos word ptr ES:[DI],AX
+3358:3B40 add DI,0x013E
+3358:3B44 stos word ptr ES:[DI],AX
+3358:3B45 ret far
+3358:3B46 mov BX,0x0026
+3358:3B49 mov CX,0x0050
+3358:3B4C lods AL,byte ptr DS:[SI]
+3358:3B4D mov AH,AL
+3358:3B4F mov BP,4
+3358:3B52 stos word ptr ES:[DI],AX
+3358:3B53 stos word ptr ES:[DI],AX
+3358:3B54 add DI,0x013C
+3358:3B58 dec BP
+3358:3B59 jne short 0x3B52
+3358:3B5B sub DI,0x04FC
+3358:3B5F loop 0x3B4C
+3358:3B61 add SI,0x00F0
+3358:3B65 add DI,0x03C0
+3358:3B69 dec BX
+3358:3B6A jne short 0x3B49
+3358:3B6C ret far
+5642:0100 jmp short 0x0120
+5642:0103 jmp near 0x01C2
+5642:0106 jmp near 0x01DE
+5642:0109 jmp near 0x01C2
+5642:010C jmp near 0x01CB
+5642:0112 jmp near 0x0217
+5642:0115 jmp near 0x01A7
+5642:0120 or AX,AX
+5642:0122 je short 0x0144
+5642:0124 push AX
+5642:0125 and AL,0x0F
+5642:0127 mov BX,2
+5642:012A call near 0x082B
+5642:012D pop AX
+5642:012E shr AX,1
+5642:0130 shr AX,1
+5642:0132 shr AX,1
+5642:0134 shr AX,1
+5642:0136 push AX
+5642:0137 mov BX,1
+5642:013A call near 0x082B
+5642:013D pop AX
+5642:013E mov BX,0x000D
+5642:0141 call near 0x082B
+5642:0144 mov BX,3
+5642:0147 call near 0x082B
+5642:014A mov word ptr CS:[0x011C],0x0100
+5642:0151 mov word ptr CS:[0x011E],CS
+5642:0156 mov word ptr CS:[0x0118],0x0100
+5642:015D mov word ptr CS:[0x011A],CS
+5642:0162 push CS
+5642:0163 call near 0x01C2
+5642:0166 mov BX,0x000F
+5642:0169 ret far
+5642:016A push BX
+5642:016B push DX
+5642:016C shr AL,1
+5642:016E shr AL,1
+5642:0170 shr AL,1
+5642:0172 mov DX,AX
+5642:0174 mov BX,0xF078
+5642:0177 cmp AH,BL
+5642:0179 jbe short 0x017D
+5642:017B mov AH,BL
+5642:017D xor AL,AL
+5642:017F div BH
+5642:0181 mul DL
+5642:0183 xchg AH,DH
+5642:0185 sub AH,BH
+5642:0187 neg AH
+5642:0189 cmp AH,BL
+5642:018B jbe short 0x018F
+5642:018D mov AH,BL
+5642:018F xor AL,AL
+5642:0191 div BH
+5642:0193 mul DL
+5642:0195 shr AX,1
+5642:0197 shr AX,1
+5642:0199 shr AX,1
+5642:019B shr AX,1
+5642:019D mov AH,DH
+5642:019F and AX,0x0FF0
+5642:01A2 or AL,AH
+5642:01A4 pop DX
+5642:01A5 pop BX
+5642:01A6 ret near
+5642:01A7 call near 0x016A
+5642:01AA mov AH,4
+5642:01AC call near 0x01B0
+5642:01AF ret far
+5642:01B0 push DX
+5642:01B1 mov DX,word ptr CS:[0x0285]
+5642:01B6 add DL,4
+5642:01B9 xchg AL,AH
+5642:01BB out DX,AL
+5642:01BC inc DX
+5642:01BD xchg AL,AH
+5642:01BF out DX,AL
+5642:01C0 pop DX
+5642:01C1 ret near
+5642:01C2 push BX
+5642:01C3 mov BX,8
+5642:01C6 call near 0x082B
+5642:01C9 pop BX
+5642:01CA ret far
+5642:01CB push AX
+5642:01CC xor AX,AX
+5642:01CE push BX
+5642:01CF mov BX,0x000C
+5642:01D2 call near 0x082B
+5642:01D5 pop BX
+5642:01D6 pop AX
+5642:01D7 ret far
+5642:01DE push ES
+5642:01DF mov word ptr CS:[0x0118],SI
+5642:01E4 mov word ptr CS:[0x011A],DS
+5642:01E9 les DI,word ptr DS:[SI]
+5642:01EB mov BX,word ptr DS:[SI+4]
+5642:01EE or byte ptr DS:[SI+6],3
+5642:01F2 mov byte ptr ES:[BX+DI],0
+5642:01F6 sub BX,4
+5642:01F9 cmp byte ptr ES:[DI+3],0
+5642:01FE jne short 0x0206
+5642:0200 cmp word ptr ES:[DI+1],BX
+5642:0204 jb short 0x020F
+5642:0206 mov word ptr ES:[DI+1],BX
+5642:020A mov byte ptr ES:[DI+3],0
+5642:020F mov BX,6
+5642:0212 call near 0x082B
+5642:0215 pop ES
+5642:0216 ret far
+5642:0217 push ES
+5642:0218 mov word ptr CS:[0x011C],SI
+5642:021D mov word ptr CS:[0x011E],DS
+5642:0222 les DI,word ptr DS:[SI]
+5642:0224 mov BX,word ptr DS:[SI+4]
+5642:0227 cmp byte ptr DS:[SI+7],0
+5642:022B jns short 0x0232
+5642:022D or BX,BX
+5642:022F je short 0x0232
+5642:0231 dec BX
+5642:0232 mov byte ptr ES:[BX+DI+6],0
+5642:0237 mov byte ptr ES:[DI+2],2
+5642:023C mov word ptr ES:[DI+3],BX
+5642:0240 mov byte ptr ES:[DI+5],0
+5642:0245 mov byte ptr DS:[SI+6],2
+5642:0249 cmp byte ptr CS:[0x0292],0
+5642:024F jne short 0x0281
+5642:0251 cmp byte ptr CS:[0x02FE],0
+5642:0257 jne short 0x0281
+5642:0259 lds SI,word ptr CS:[0x011C]
+5642:025E les DI,word ptr DS:[SI]
+5642:0260 add word ptr DS:[SI+4],6
+5642:0264 mov byte ptr ES:[DI],1
+5642:0268 mov byte ptr ES:[DI+3],1
+5642:026D mov AL,byte ptr CS:[0x02FC]
+5642:0271 mov byte ptr ES:[DI+4],AL
+5642:0275 mov AL,byte ptr CS:[0x02FD]
+5642:0279 mov byte ptr ES:[DI+5],AL
+5642:027D push CS
+5642:027E call near 0x01DE
+5642:0281 pop ES
+5642:0282 ret far
+5642:02FF push CX
+5642:0300 mov CX,0x0200
+5642:0303 mov AH,AL
+5642:0305 in AL,DX
+5642:0306 or AL,AL
+5642:0308 jns short 0x030F
+5642:030F mov AL,AH
+5642:0311 out DX,AL
+5642:0312 clc
+5642:0313 pop CX
+5642:0314 ret near
+5642:0315 push CX
+5642:0316 push DX
+5642:0317 mov DX,word ptr DS:[0x0285]
+5642:031B add DL,0x0E
+5642:031E mov CX,0x0200
+5642:0321 in AL,DX
+5642:0322 or AL,AL
+5642:0324 js short 0x032B
+5642:0326 loop 0x0321
+5642:032B sub DL,4
+5642:032E in AL,DX
+5642:032F clc
+5642:0330 pop DX
+5642:0331 pop CX
+5642:0332 ret near
+5642:0333 mov DX,word ptr DS:[0x0285]
+5642:0337 add DL,0x0C
+5642:033A mov AH,AL
+5642:033C mov AL,0xF0
+5642:033E in AL,DX
+5642:033F or AL,AL
+5642:0341 js short 0x033E
+5642:0343 mov AL,AH
+5642:0345 out DX,AL
+5642:0346 ret near
+5642:0347 push DX
+5642:0348 mov DX,word ptr DS:[0x0285]
+5642:034C add DL,0x0E
+5642:034F xor AL,AL
+5642:0351 in AL,DX
+5642:0352 or AL,AL
+5642:0354 jns short 0x0351
+5642:0356 sub DL,4
+5642:0359 in AL,DX
+5642:035A pop DX
+5642:035B ret near
+5642:035C mov DX,word ptr DS:[0x0285]
+5642:0360 add DL,6
+5642:0363 mov AL,1
+5642:0365 out DX,AL
+5642:0366 in AL,DX
+5642:0367 in AL,DX
+5642:0368 in AL,DX
+5642:0369 in AL,DX
+5642:036A xor AL,AL
+5642:036C out DX,AL
+5642:036D mov BL,0x10
+5642:036F call near 0x0315
+5642:0372 cmp AL,0xAA
+5642:0374 je short 0x0380
+5642:0380 xor AX,AX
+5642:0382 or AX,AX
+5642:0384 ret near
+5642:0385 mov BX,2
+5642:0388 mov AL,0xE0
+5642:038A mov DX,word ptr DS:[0x0285]
+5642:038E add DL,0x0C
+5642:0391 call near 0x02FF
+5642:0394 jb short 0x03A8
+5642:0396 mov AL,0xAA
+5642:0398 call near 0x02FF
+5642:039B jb short 0x03A8
+5642:039D call near 0x0315
+5642:03A0 jb short 0x03A8
+5642:03A2 cmp AL,0x55
+5642:03A4 jne short 0x03A8
+5642:03A6 xor BX,BX
+5642:03A8 mov AX,BX
+5642:03AA or AX,AX
+5642:03AC ret near
+5642:03AD push AX
+5642:03AE push DX
+5642:03AF mov DX,word ptr CS:[0x0285]
+5642:03B4 add DL,0x0E
+5642:03B7 in AL,DX
+5642:03B8 mov byte ptr CS:[0x028E],1
+5642:03BE mov AL,0x20
+5642:03C0 cmp byte ptr CS:[0x0287],8
+5642:03C6 jb short 0x03CC
+5642:03CC out 0x20,AL
+5642:03CE pop DX
+5642:03CF pop AX
+5642:03D0 iret
+5642:03D1 mov byte ptr DS:[0x028E],0
+5642:03D6 mov AX,0x03AD
+5642:03D9 call near 0x04D8
+5642:03DC mov DX,CS
+5642:03DE mov AX,0x0291
+5642:03E1 call near 0x048A
+5642:03E4 xor CX,CX
+5642:03E6 mov DH,0x48
+5642:03E8 call near 0x0450
+5642:03EB mov AL,0x40
+5642:03ED call near 0x0333
+5642:03F0 mov AL,0x64
+5642:03F2 call near 0x033A
+5642:03F5 mov AL,0x14
+5642:03F7 call near 0x033A
+5642:03FA xor AL,AL
+5642:03FC call near 0x033A
+5642:03FF xor AL,AL
+5642:0401 call near 0x033A
+5642:0404 xor AX,AX
+5642:0406 mov CX,0xFFFF
+5642:0409 cmp byte ptr DS:[0x028E],0
+5642:040E jne short 0x0414
+5642:0410 loop 0x0409
+5642:0414 push AX
+5642:0415 call near 0x0524
+5642:0418 pop AX
+5642:0419 or AX,AX
+5642:041B ret near
+5642:041C mov AL,0xE1
+5642:041E call near 0x033A
+5642:0421 call near 0x0347
+5642:0424 mov AH,AL
+5642:0426 call near 0x0347
+5642:0429 cmp AX,0x0103
+5642:042C mov AX,0
+5642:042F adc AL,AH
+5642:0431 ret near
+5642:0432 pushf
+5642:0433 mov CX,0x0064
+5642:0436 mov DX,word ptr DS:[0x0285]
+5642:043A add DL,0x0C
+5642:043D sti
+5642:043E cmp byte ptr DS:[0x0292],0
+5642:0443 je short 0x044E
+5642:0445 cli
+5642:0446 in AL,DX
+5642:0447 test AL,0x80
+5642:0449 loopne 0x043D
+5642:044B mov AL,0xD0
+5642:044D out DX,AL
+5642:044E popf
+5642:044F ret near
+5642:0450 push BX
+5642:0451 mov BX,AX
+5642:0453 mov AH,DL
+5642:0455 mov AL,byte ptr CS:[0x0288]
+5642:0459 mov DL,AL
+5642:045B or AL,4
+5642:045D out 0x0A,AL
+5642:045F xor AL,AL
+5642:0461 out 0x0C,AL
+5642:0463 mov AL,DH
+5642:0465 or AL,DL
+5642:0467 out 0x0B,AL
+5642:0469 xor DH,DH
+5642:046B shl DX,1
+5642:046D mov AL,BL
+5642:046F out DX,AL
+5642:0470 mov AL,BH
+5642:0472 out DX,AL
+5642:0473 mov AL,CL
+5642:0475 inc DX
+5642:0476 out DX,AL
+5642:0477 mov AL,CH
+5642:0479 out DX,AL
+5642:047A mov DL,byte ptr CS:[0x0289]
+5642:047F mov AL,AH
+5642:0481 out DX,AL
+5642:0482 mov AL,byte ptr CS:[0x0288]
+5642:0486 out 0x0A,AL
+5642:0488 pop BX
+5642:0489 ret near
+5642:048A push CX
+5642:048B mov CL,4
+5642:048D rol DX,CL
+5642:048F mov CX,DX
+5642:0491 and DX,0x000F
+5642:0494 and CX,-16
+5642:0497 add AX,CX
+5642:0499 adc DX,0
+5642:049C pop CX
+5642:049D ret near
+5642:049E mov DX,word ptr DS:[0x0295]
+5642:04A2 add AX,word ptr DS:[0x0293]
+5642:04A6 jae short 0x04AB
+5642:04AB ret near
+5642:04AC push ES
+5642:04AD push DI
+5642:04AE les DI,word ptr DS:[0x0293]
+5642:04B2 mov AX,word ptr ES:[DI+1]
+5642:04B6 xor DX,DX
+5642:04B8 mov DL,byte ptr ES:[DI+3]
+5642:04BC pop DI
+5642:04BD pop ES
+5642:04BE ret near
+5642:04BF mov AL,byte ptr DS:[0x0287]
+5642:04C2 add AL,8
+5642:04C4 cmp AL,0x10
+5642:04C6 jb short 0x04CA
+5642:04CA xor AH,AH
+5642:04CC shl AX,1
+5642:04CE shl AX,1
+5642:04D0 mov BX,AX
+5642:04D2 xor AX,AX
+5642:04D4 mov ES,AX
+5642:04D6 cli
+5642:04D7 ret near
+5642:04D8 pushf
+5642:04D9 push BX
+5642:04DA push CX
+5642:04DB push DX
+5642:04DC mov DX,AX
+5642:04DE push ES
+5642:04DF call near 0x04BF
+5642:04E2 mov AX,CS
+5642:04E4 xchg DX,word ptr ES:[BX]
+5642:04E7 mov word ptr DS:[0x0297],DX
+5642:04EB xchg AX,word ptr ES:[BX+2]
+5642:04EF mov word ptr DS:[0x0299],AX
+5642:04F2 pop ES
+5642:04F3 mov CL,byte ptr DS:[0x0287]
+5642:04F7 cmp CL,8
+5642:04FA jb short 0x0510
+5642:0510 mov AH,1
+5642:0512 shl AH,CL
+5642:0514 not AH
+5642:0516 in AL,0x21
+5642:0518 mov byte ptr DS:[0x029B],AL
+5642:051B and AL,AH
+5642:051D out 0x21,AL
+5642:051F pop DX
+5642:0520 pop CX
+5642:0521 pop BX
+5642:0522 popf
+5642:0523 ret near
+5642:0524 pushf
+5642:0525 push BX
+5642:0526 push ES
+5642:0527 call near 0x04BF
+5642:052A mov AX,word ptr DS:[0x0297]
+5642:052D mov word ptr ES:[BX],AX
+5642:0530 mov AX,word ptr DS:[0x0299]
+5642:0533 mov word ptr ES:[BX+2],AX
+5642:0537 pop ES
+5642:0538 cmp byte ptr DS:[0x0287],8
+5642:053D jb short 0x0544
+5642:0544 mov AL,byte ptr DS:[0x029B]
+5642:0547 out 0x21,AL
+5642:0549 pop BX
+5642:054A popf
+5642:054B ret near
+5642:054C push DS
+5642:054D push SI
+5642:054E lds SI,word ptr DS:[0x0293]
+5642:0552 lods AL,byte ptr DS:[SI]
+5642:0553 pop SI
+5642:0554 pop DS
+5642:0555 ret near
+5642:0556 mov CX,AX
+5642:0558 call near 0x049E
+5642:055B call near 0x048A
+5642:055E mov byte ptr DS:[0x029D],DL
+5642:0562 mov word ptr DS:[0x029E],AX
+5642:0565 call near 0x04AC
+5642:0568 sub CX,4
+5642:056B sub AX,CX
+5642:056D sbb DX,0
+5642:0570 mov word ptr DS:[0x02A0],AX
+5642:0573 mov word ptr DS:[0x02A2],DX
+5642:0577 sub AX,1
+5642:057A sbb DX,0
+5642:057D add AX,word ptr DS:[0x029E]
+5642:0581 adc DL,byte ptr DS:[0x029D]
+5642:0585 mov word ptr DS:[0x02A4],AX
+5642:0588 sub DL,byte ptr DS:[0x029D]
+5642:058C mov byte ptr DS:[0x02A6],DL
+5642:0590 ret near
+5642:0591 push DS
+5642:0592 push ES
+5642:0593 push AX
+5642:0594 push BX
+5642:0595 push CX
+5642:0596 push DX
+5642:0597 push SI
+5642:0598 push DI
+5642:0599 push BP
+5642:059A cld
+5642:059B mov AX,CS
+5642:059D mov DS,AX
+5642:059F mov ES,AX
+5642:05A1 mov AL,0x20
+5642:05A3 cmp byte ptr CS:[0x0287],8
+5642:05A9 jb short 0x05AF
+5642:05AF out 0x20,AL
+5642:05B1 mov DX,word ptr DS:[0x0285]
+5642:05B5 add DL,0x0E
+5642:05B8 in AL,DX
+5642:05B9 sti
+5642:05BA mov AX,word ptr DS:[0x02A0]
+5642:05BD or AX,word ptr DS:[0x02A2]
+5642:05C1 jne short 0x05D5
+5642:05C3 call near 0x0677
+5642:05C6 call near 0x065F
+5642:05C9 cmp byte ptr DS:[0x02A7],0
+5642:05CE je short 0x05D8
+5642:05D0 call near 0x0640
+5642:05D3 jmp short 0x05D8
+5642:05D8 pop BP
+5642:05D9 pop DI
+5642:05DA pop SI
+5642:05DB pop DX
+5642:05DC pop CX
+5642:05DD pop BX
+5642:05DE pop AX
+5642:05DF pop ES
+5642:05E0 pop DS
+5642:05E1 iret
+5642:05E2 mov CX,0xFFFF
+5642:05E5 cmp byte ptr DS:[0x02A6],0
+5642:05EA jne short 0x05F4
+5642:05EC inc byte ptr DS:[0x02A6]
+5642:05F0 mov CX,word ptr DS:[0x02A4]
+5642:05F4 sub CX,word ptr DS:[0x029E]
+5642:05F8 mov word ptr DS:[0x02A8],CX
+5642:05FC inc CX
+5642:05FD je short 0x060A
+5642:05FF sub word ptr DS:[0x02A0],CX
+5642:0603 sbb word ptr DS:[0x02A2],0
+5642:0608 jmp short 0x060E
+5642:060E mov DH,0x48
+5642:0610 mov DL,byte ptr DS:[0x029D]
+5642:0614 mov AX,word ptr DS:[0x029E]
+5642:0617 mov CX,word ptr DS:[0x02A8]
+5642:061B call near 0x0450
+5642:061E dec byte ptr DS:[0x02A6]
+5642:0622 inc byte ptr DS:[0x029D]
+5642:0626 mov word ptr DS:[0x029E],0
+5642:062C mov CX,word ptr DS:[0x02A8]
+5642:0630 mov AL,byte ptr DS:[0x02AA]
+5642:0633 call near 0x0333
+5642:0636 mov AL,CL
+5642:0638 call near 0x033A
+5642:063B mov AL,CH
+5642:063D jmp near 0x033A
+5642:0640 mov AL,byte ptr CS:[0x0288]
+5642:0644 or AL,4
+5642:0646 out 0x0A,AL
+5642:0648 call near 0x0524
+5642:064B xor AX,AX
+5642:064D mov byte ptr DS:[0x0292],AL
+5642:0650 mov word ptr DS:[0x02AB],AX
+5642:0653 mov word ptr DS:[0x0283],AX
+5642:0656 mov DX,word ptr DS:[0x0285]
+5642:065A add DL,0x0E
+5642:065D in AL,DX
+5642:065E ret near
+5642:065F call near 0x054C
+5642:0662 cmp AL,8
+5642:0664 jae short 0x0672
+5642:0666 cbw
+5642:0667 mov BX,AX
+5642:0669 shl BX,1
+5642:066B call near word ptr DS:[BX+0x02D0]
+5642:066F jb short 0x065F
+5642:0671 ret near
+5642:0677 push ES
+5642:0678 push AX
+5642:0679 push BX
+5642:067A push DX
+5642:067B les BX,word ptr DS:[0x0293]
+5642:067F mov AX,word ptr ES:[BX+1]
+5642:0683 xor DX,DX
+5642:0685 mov DL,byte ptr ES:[BX+3]
+5642:0689 add AX,4
+5642:068C adc DX,0
+5642:068F add AX,word ptr DS:[0x0293]
+5642:0693 adc DX,0
+5642:0696 ror DX,1
+5642:0698 ror DX,1
+5642:069A ror DX,1
+5642:069C ror DX,1
+5642:069E add DX,word ptr DS:[0x0295]
+5642:06A2 mov BX,AX
+5642:06A4 shr BX,1
+5642:06A6 shr BX,1
+5642:06A8 shr BX,1
+5642:06AA shr BX,1
+5642:06AC add DX,BX
+5642:06AE and AX,0x000F
+5642:06B1 mov word ptr DS:[0x0295],DX
+5642:06B5 mov word ptr DS:[0x0293],AX
+5642:06B8 pop DX
+5642:06B9 pop BX
+5642:06BA pop AX
+5642:06BB pop ES
+5642:06BC ret near
+5642:06BD push AX
+5642:06BE shr AX,1
+5642:06C0 shr AX,1
+5642:06C2 shr AX,1
+5642:06C4 shr AX,1
+5642:06C6 add DX,AX
+5642:06C8 pop AX
+5642:06C9 and AX,0x000F
+5642:06CC ret near
+5642:06CD push ES
+5642:06CE les SI,word ptr DS:[0x0118]
+5642:06D2 mov byte ptr ES:[SI+6],0
+5642:06D7 mov AL,byte ptr ES:[SI+7]
+5642:06DB shl AL,1
+5642:06DD jb short 0x0733
+5642:06DF les SI,word ptr DS:[0x011C]
+5642:06E3 cmp byte ptr ES:[SI+6],2
+5642:06E8 je short 0x070F
+5642:06EA shl AL,1
+5642:06EC jae short 0x0738
+5642:06EE les SI,word ptr DS:[0x0118]
+5642:06F2 mov byte ptr ES:[SI+6],3
+5642:06F7 les SI,word ptr ES:[SI]
+5642:06FA cmp byte ptr ES:[SI+2],2
+5642:06FF jne short 0x0704
+5642:0701 add SI,2
+5642:0704 mov word ptr DS:[0x0293],SI
+5642:0708 mov word ptr DS:[0x0295],ES
+5642:070C pop ES
+5642:070D stc
+5642:070E ret near
+5642:070F mov word ptr DS:[0x0118],SI
+5642:0713 mov word ptr DS:[0x011A],ES
+5642:0717 mov byte ptr ES:[SI+6],3
+5642:071C cmp word ptr ES:[SI+4],3
+5642:0721 jb short 0x06CE
+5642:0723 les AX,word ptr ES:[SI]
+5642:0726 add AX,2
+5642:0729 mov word ptr DS:[0x0293],AX
+5642:072C mov word ptr DS:[0x0295],ES
+5642:0730 pop ES
+5642:0731 stc
+5642:0732 ret near
+5642:0733 mov byte ptr DS:[0x02FE],1
+5642:0738 mov byte ptr DS:[0x02A7],1
+5642:073D pop ES
+5642:073E clc
+5642:073F ret near
+5642:0740 push ES
+5642:0741 les DI,word ptr DS:[0x0293]
+5642:0745 mov AL,0x40
+5642:0747 call near 0x0333
+5642:074A mov AL,byte ptr ES:[DI+4]
+5642:074E mov byte ptr DS:[0x02FC],AL
+5642:0751 call near 0x033A
+5642:0754 mov AL,byte ptr ES:[DI+5]
+5642:0758 mov byte ptr DS:[0x02FD],AL
+5642:075B mov BX,0x02C5
+5642:075E xlat byte ptr DS:[BX+AL]
+5642:075F mov byte ptr DS:[0x02AA],AL
+5642:0762 pop ES
+5642:0763 mov AX,6
+5642:0766 call near 0x0556
+5642:0769 call near 0x05E2
+5642:076C call near 0x0771
+5642:076F clc
+5642:0770 ret near
+5642:0771 mov AL,byte ptr DS:[0x02AA]
+5642:0774 cmp AL,0x61
+5642:0776 jb short 0x0782
+5642:0782 and byte ptr DS:[0x02AA],0xFE
+5642:0787 ret near
+5642:0788 mov AX,4
+5642:078B call near 0x0556
+5642:078E call near 0x0771
+5642:0791 call near 0x05E2
+5642:0794 clc
+5642:0795 ret near
+5642:0796 mov AL,0x40
+5642:0798 call near 0x0333
+5642:079B push ES
+5642:079C les BX,word ptr DS:[0x0293]
+5642:07A0 mov AL,byte ptr ES:[BX+6]
+5642:07A4 call near 0x033A
+5642:07A7 mov AX,word ptr ES:[BX+4]
+5642:07AB pop ES
+5642:07AC mov BX,AX
+5642:07AE mov AL,0x80
+5642:07B0 call near 0x033A
+5642:07B3 mov AL,BL
+5642:07B5 call near 0x033A
+5642:07B8 mov AL,BH
+5642:07BA call near 0x033A
+5642:07BD clc
+5642:07BE ret near
+5642:07D0 push DS
+5642:07D1 lds BX,word ptr DS:[0x0293]
+5642:07D5 mov AX,word ptr DS:[BX+4]
+5642:07D8 pop DS
+5642:07D9 add word ptr DS:[0x02AB],2
+5642:07DE mov BX,word ptr DS:[0x02AB]
+5642:07E2 mov word ptr DS:[BX+0x02AB],AX
+5642:07E6 push BX
+5642:07E7 call near 0x0677
+5642:07EA mov SI,0x0293
+5642:07ED mov DI,0x02B3
+5642:07F0 pop BX
+5642:07F1 add DI,BX
+5642:07F3 add DI,BX
+5642:07F5 movs word ptr ES:[DI],word ptr DS:[SI]
+5642:07F6 movs word ptr ES:[DI],word ptr DS:[SI]
+5642:07F7 stc
+5642:07F8 ret near
+5642:07F9 mov BX,word ptr DS:[0x02AB]
+5642:07FD or BX,BX
+5642:07FF je short 0x0826
+5642:0801 cmp word ptr DS:[BX+0x02AB],0
+5642:0806 je short 0x0821
+5642:0808 mov DI,0x0293
+5642:080B mov SI,0x02B3
+5642:080E add SI,BX
+5642:0810 add SI,BX
+5642:0812 movs word ptr ES:[DI],word ptr DS:[SI]
+5642:0813 movs word ptr ES:[DI],word ptr DS:[SI]
+5642:0814 cmp word ptr DS:[BX+0x02AB],-1
+5642:0819 je short 0x0829
+5642:081B dec word ptr DS:[BX+0x02AB]
+5642:081F jmp short 0x0829
+5642:0821 sub word ptr DS:[0x02AB],2
+5642:0826 call near 0x0677
+5642:0829 stc
+5642:082A ret near
+5642:082B push CX
+5642:082C push DX
+5642:082D push SI
+5642:082E push DI
+5642:082F push BP
+5642:0830 push DS
+5642:0831 push ES
+5642:0832 push CS
+5642:0833 pop DS
+5642:0834 mov word ptr DS:[0x028F],ES
+5642:0838 push CS
+5642:0839 pop ES
+5642:083A cmp BX,0x000E
+5642:083D jae short 0x0858
+5642:083F cmp BL,4
+5642:0842 jb short 0x0850
+5642:0844 cmp BL,0x0D
+5642:0847 je short 0x0850
+5642:0849 cmp byte ptr DS:[0x028E],0
+5642:084E je short 0x0858
+5642:0850 shl BX,1
+5642:0852 call near word ptr DS:[BX+0x02E0]
+5642:0856 jmp short 0x085B
+5642:085B pop ES
+5642:085C pop DS
+5642:085D pop BP
+5642:085E pop DI
+5642:085F pop SI
+5642:0860 pop DX
+5642:0861 pop CX
+5642:0862 ret near
+5642:0867 and AX,0xFFF8
+5642:086A mov BX,AX
+5642:086C sub AX,0x0210
+5642:086F cmp AX,0x0050
+5642:0872 ja short 0x08B0
+5642:0874 mov word ptr DS:[0x0285],BX
+5642:0878 xor AX,AX
+5642:087A ret near
+5642:087B cmp AL,0x0A
+5642:087D je short 0x088F
+5642:087F cmp AL,7
+5642:0881 je short 0x088F
+5642:088F mov byte ptr DS:[0x0287],AL
+5642:0892 xor AX,AX
+5642:0894 ret near
+5642:0895 and AL,7
+5642:0897 dec AL
+5642:0899 cmp AL,3
+5642:089B ja short 0x08B0
+5642:089D cmp AL,2
+5642:089F je short 0x08B0
+5642:08A1 mov byte ptr DS:[0x0288],AL
+5642:08A4 push BX
+5642:08A5 mov BX,0x028A
+5642:08A8 xlat byte ptr DS:[BX+AL]
+5642:08A9 mov byte ptr DS:[0x0289],AL
+5642:08AC pop BX
+5642:08AD xor AX,AX
+5642:08AF ret near
+5642:08B0 mov AX,0xFFFF
+5642:08B3 ret near
+5642:08B4 pushf
+5642:08B5 sti
+5642:08B6 call near 0x035C
+5642:08B9 jne short 0x08D1
+5642:08BB call near 0x0385
+5642:08BE jne short 0x08D1
+5642:08C0 call near 0x041C
+5642:08C3 jne short 0x08D1
+5642:08C5 call near 0x03D1
+5642:08C8 jne short 0x08D1
+5642:08CA mov AL,1
+5642:08CC call near 0x08D3
+5642:08CF xor AX,AX
+5642:08D1 popf
+5642:08D2 ret near
+5642:08D3 mov DX,word ptr DS:[0x0285]
+5642:08D7 add DL,0x0C
+5642:08DA or AL,AL
+5642:08DC mov AL,0xD1
+5642:08DE jne short 0x08E2
+5642:08E2 call near 0x033A
+5642:08E5 xor AX,AX
+5642:08E7 ret near
+5642:08E8 cmp byte ptr DS:[0x0292],0
+5642:08ED jne short 0x08B0
+5642:08EF inc byte ptr DS:[0x0292]
+5642:08F3 mov DX,word ptr DS:[0x028F]
+5642:08F7 mov AX,DI
+5642:08F9 call near 0x06BD
+5642:08FC mov word ptr DS:[0x0295],DX
+5642:0900 mov word ptr DS:[0x0293],AX
+5642:0903 xor AX,AX
+5642:0905 mov byte ptr DS:[0x02A7],AL
+5642:0908 mov word ptr DS:[0x02AB],AX
+5642:090B mov word ptr DS:[0x02AD],AX
+5642:090E mov AX,0x0591
+5642:0911 call near 0x04D8
+5642:0914 mov word ptr DS:[0x0283],0xFFFF
+5642:091A call near 0x065F
+5642:091D mov byte ptr DS:[0x02FE],0
+5642:0922 xor AX,AX
+5642:0924 ret near
+5642:0925 mov AX,1
+5642:0928 cmp byte ptr DS:[0x0292],0
+5642:092D je short 0x0937
+5642:092F call near 0x0432
+5642:0932 call near 0x0640
+5642:0935 xor AX,AX
+5642:0937 mov byte ptr DS:[0x02FE],1
+5642:093C ret near
+5642:095F mov CX,AX
+5642:0961 mov AX,1
+5642:0964 pushf
+5642:0965 cli
+5642:0966 mov BX,word ptr DS:[0x02AB]
+5642:096A or BX,BX
+5642:096C je short 0x0990
+5642:096E xor AX,AX
+5642:0970 mov word ptr DS:[BX+0x02AB],AX
+5642:0974 jcxz short 0x098E
+5642:098E xor AX,AX
+5642:0990 popf
+5642:0991 ret near
+5BAE:0100 jmp near 0x02D8
+5BAE:0103 jmp near 0x03B2
+5BAE:0106 jmp near 0x02FE
+5BAE:0109 jmp near 0x039C
+5BAE:010C jmp near 0x035B
+5BAE:010F jmp near 0x0473
+5BAE:0112 jmp near 0x0348
+5BAE:02B5 push SS
+5BAE:02B6 pop ES
+5BAE:02B7 mov SI,BP
+5BAE:02B9 lods AX,word ptr ES:[SI]
+5BAE:02BB add AX,2
+5BAE:02BE mov DI,AX
+5BAE:02C0 push CX
+5BAE:02C1 mov CX,9
+5BAE:02C4 mov AL,0x2E
+5BAE:02C6 repne scas AL,byte ptr ES:[DI]
+5BAE:02C8 pop CX
+5BAE:02C9 jne short 0x02D5
+5BAE:02CB mov AX,word ptr CS:[0x02B0]
+5BAE:02CF stos word ptr ES:[DI],AX
+5BAE:02D0 mov AL,byte ptr CS:[0x02B2]
+5BAE:02D4 stos byte ptr ES:[DI],AL
+5BAE:02D5 loop 0x02B9
+5BAE:02D7 ret near
+5BAE:02D8 and AX,0x0FFF
+5BAE:02DB je short 0x02E1
+5BAE:02DD mov word ptr CS:[0x02B3],AX
+5BAE:02E1 call near 0x02B5
+5BAE:02E4 mov AX,0x2001
+5BAE:02E7 call near 0x0AA2
+5BAE:02EA mov AX,0x00BD
+5BAE:02ED call near 0x0AA2
+5BAE:02F0 mov AX,0x4008
+5BAE:02F3 call near 0x0AA2
+5BAE:02F6 push CS
+5BAE:02F7 call near 0x02FE
+5BAE:02FA mov BX,0x0F00
+5BAE:02FD ret far
+5BAE:02FE pushf
+5BAE:02FF cli
+5BAE:0300 call near 0x091B
+5BAE:0303 xor AX,AX
+5BAE:0305 mov byte ptr CS:[0x019A],AL
+5BAE:0309 popf
+5BAE:030A ret far
+5BAE:030B push BX
+5BAE:030C push DX
+5BAE:030D shr AL,1
+5BAE:030F shr AL,1
+5BAE:0311 shr AL,1
+5BAE:0313 mov DX,AX
+5BAE:0315 mov BX,0xF078
+5BAE:0318 cmp AH,BL
+5BAE:031A jbe short 0x031E
+5BAE:031C mov AH,BL
+5BAE:031E xor AL,AL
+5BAE:0320 div BH
+5BAE:0322 mul DL
+5BAE:0324 xchg AH,DH
+5BAE:0326 sub AH,BH
+5BAE:0328 neg AH
+5BAE:032A cmp AH,BL
+5BAE:032C jbe short 0x0330
+5BAE:032E mov AH,BL
+5BAE:0330 xor AL,AL
+5BAE:0332 div BH
+5BAE:0334 mul DL
+5BAE:0336 shr AX,1
+5BAE:0338 shr AX,1
+5BAE:033A shr AX,1
+5BAE:033C shr AX,1
+5BAE:033E mov AH,DH
+5BAE:0340 and AX,0x0FF0
+5BAE:0343 or AL,AH
+5BAE:0345 pop DX
+5BAE:0346 pop BX
+5BAE:0347 ret near
+5BAE:0348 call near 0x030B
+5BAE:034B mov byte ptr CS:[0x019E],AL
+5BAE:034F mov byte ptr CS:[0x019D],AL
+5BAE:0353 mov word ptr CS:[0x019F],0xFFFF
+5BAE:035A ret far
+5BAE:035B push AX
+5BAE:035C mov AX,BX
+5BAE:035E call near 0x030B
+5BAE:0361 mov byte ptr CS:[0x019D],AL
+5BAE:0365 pop AX
+5BAE:0366 mov BX,0xFFFF
+5BAE:0369 cmp AX,0x0060
+5BAE:036C jb short 0x0388
+5BAE:036E mov BX,0xAAAA
+5BAE:0371 cmp AX,0x00C0
+5BAE:0374 jb short 0x0388
+5BAE:0376 mov BX,0x8888
+5BAE:0379 cmp AX,0x0180
+5BAE:037C jb short 0x0388
+5BAE:037E mov BX,0x8080
+5BAE:0381 cmp AX,0x0300
+5BAE:0384 jb short 0x0388
+5BAE:0388 mov word ptr CS:[0x019F],BX
+5BAE:038D mov AL,byte ptr CS:[0x019A]
+5BAE:0391 or AL,AL
+5BAE:0393 jns short 0x039B
+5BAE:0395 or AL,0x40
+5BAE:0397 mov byte ptr CS:[0x019A],AL
+5BAE:039B ret far
+5BAE:039C mov byte ptr CS:[0x019B],1
+5BAE:03A2 mov AL,byte ptr CS:[0x019A]
+5BAE:03A6 ret far
+5BAE:03B2 push DS
+5BAE:03B3 push CS
+5BAE:03B4 pop DS
+5BAE:03B5 mov byte ptr DS:[0x019B],AL
+5BAE:03B8 mov AX,word ptr ES:[SI]
+5BAE:03BB mov DI,0x03A8
+5BAE:03BE mov word ptr DS:[DI],SI
+5BAE:03C0 mov word ptr DS:[DI+2],ES
+5BAE:03C3 mov word ptr DS:[DI+4],AX
+5BAE:03C6 mov AX,word ptr ES:[SI+0x4000]
+5BAE:03CB mov word ptr DS:[DI+6],AX
+5BAE:03CE mov AX,word ptr ES:[SI-32768]
+5BAE:03D3 mov word ptr DS:[DI+8],AX
+5BAE:03D6 add SI,2
+5BAE:03D9 mov word ptr DS:[0x0115],SI
+5BAE:03DD mov word ptr DS:[0x0117],ES
+5BAE:03E1 sub SI,2
+5BAE:03E4 add SI,word ptr ES:[SI]
+5BAE:03E7 mov word ptr DS:[0x0119],SI
+5BAE:03EB mov word ptr DS:[0x011B],ES
+5BAE:03EF call near 0x099A
+5BAE:03F2 call near 0x0413
+5BAE:03F5 mov AL,byte ptr DS:[0x019E]
+5BAE:03F8 mov byte ptr DS:[0x019C],AL
+5BAE:03FB call near 0x0982
+5BAE:03FE mov byte ptr DS:[0x019D],AL
+5BAE:0401 xor AX,AX
+5BAE:0403 mov word ptr DS:[0x011D],AX
+5BAE:0406 mov word ptr DS:[0x0123],AX
+5BAE:0409 call near 0x04D3
+5BAE:040C mov AL,0x80
+5BAE:040E mov byte ptr DS:[0x019A],AL
+5BAE:0411 pop DS
+5BAE:0412 ret far
+5BAE:0413 push DS
+5BAE:0414 push DS
+5BAE:0415 pop ES
+5BAE:0416 lds SI,word ptr DS:[0x0115]
+5BAE:041A mov BP,SI
+5BAE:041C mov DI,0x01C6
+5BAE:041F mov CX,9
+5BAE:0422 lods AX,word ptr DS:[SI]
+5BAE:0423 or AX,AX
+5BAE:0425 je short 0x0429
+5BAE:0427 add AX,BP
+5BAE:0429 stos word ptr ES:[DI],AX
+5BAE:042A loop 0x0422
+5BAE:042C mov DI,0x01D8
+5BAE:042F mov CL,9
+5BAE:0431 mov AX,0x00FF
+5BAE:0434 rep stos word ptr ES:[DI],AX
+5BAE:0436 mov DI,0x01FC
+5BAE:0439 mov CL,9
+5BAE:043B xor AX,AX
+5BAE:043D rep stos word ptr ES:[DI],AX
+5BAE:043F pop DS
+5BAE:0440 les SI,word ptr DS:[0x0115]
+5BAE:0444 mov word ptr DS:[0x011F],1
+5BAE:044A mov word ptr DS:[0x0121],0x0060
+5BAE:0450 mov CX,9
+5BAE:0453 mov DI,0x01A2
+5BAE:0456 mov SI,word ptr DS:[DI+0x24]
+5BAE:0459 mov word ptr DS:[DI+0x12],SI
+5BAE:045C mov word ptr DS:[DI],0xFFFF
+5BAE:0460 or SI,SI
+5BAE:0462 je short 0x046D
+5BAE:0464 mov AX,CX
+5BAE:0466 call near 0x08E1
+5BAE:0469 inc word ptr DS:[DI]
+5BAE:046B mov CX,AX
+5BAE:046D add DI,2
+5BAE:0470 loop 0x0456
+5BAE:0472 ret near
+5BAE:0473 push DS
+5BAE:0474 mov AX,CS
+5BAE:0476 mov DS,AX
+5BAE:0478 cmp byte ptr DS:[0x019A],0
+5BAE:047D jns short 0x04A0
+5BAE:047F dec byte ptr DS:[0x011E]
+5BAE:0483 jns short 0x0497
+5BAE:0485 call near 0x04AD
+5BAE:0488 jne short 0x04A0
+5BAE:048A push DX
+5BAE:048B push SI
+5BAE:048C push DI
+5BAE:048D push BP
+5BAE:048E push ES
+5BAE:048F call near 0x04D3
+5BAE:0492 pop ES
+5BAE:0493 pop BP
+5BAE:0494 pop DI
+5BAE:0495 pop SI
+5BAE:0496 pop DX
+5BAE:0497 rol word ptr DS:[0x019F],1
+5BAE:049B jae short 0x04A0
+5BAE:049D call near 0x092D
+5BAE:04A0 mov AL,byte ptr DS:[0x019A]
+5BAE:04A3 mov BX,word ptr DS:[0x011F]
+5BAE:04A7 mov CX,word ptr DS:[0x0121]
+5BAE:04AB pop DS
+5BAE:04AC ret far
+5BAE:04AD push SI
+5BAE:04AE push ES
+5BAE:04AF les SI,word ptr DS:[0x03A8]
+5BAE:04B3 mov AX,word ptr ES:[SI]
+5BAE:04B6 cmp word ptr DS:[0x03AC],AX
+5BAE:04BA jne short 0x04D0
+5BAE:04BC mov AX,word ptr ES:[SI+0x4000]
+5BAE:04C1 cmp word ptr DS:[0x03AE],AX
+5BAE:04C5 jne short 0x04D0
+5BAE:04C7 mov AX,word ptr ES:[SI-32768]
+5BAE:04CC cmp word ptr DS:[0x03B0],AX
+5BAE:04D0 pop ES
+5BAE:04D1 pop SI
+5BAE:04D2 ret near
+5BAE:04D3 les BX,word ptr DS:[0x0115]
+5BAE:04D7 mov AX,word ptr ES:[BX+0x30]
+5BAE:04DB add word ptr DS:[0x011D],AX
+5BAE:04DF mov DI,0x01A2
+5BAE:04E2 call near 0x0553
+5BAE:04E5 mov CX,9
+5BAE:04E8 dec word ptr DS:[DI]
+5BAE:04EA jne short 0x052A
+5BAE:04EC mov SI,word ptr DS:[DI+0x12]
+5BAE:04EF or SI,SI
+5BAE:04F1 je short 0x0515
+5BAE:04F3 push CX
+5BAE:04F4 push DI
+5BAE:04F5 lods AX,word ptr ES:[SI]
+5BAE:04F7 mov DX,DI
+5BAE:04F9 sub DX,0x01A2
+5BAE:04FD shr DX,1
+5BAE:04FF mov BX,AX
+5BAE:0501 and BX,0x0070
+5BAE:0504 shr BX,1
+5BAE:0506 shr BX,1
+5BAE:0508 shr BX,1
+5BAE:050A call near word ptr DS:[BX+0x0125]
+5BAE:050E pop DI
+5BAE:050F pop CX
+5BAE:0510 cmp word ptr DS:[DI],0
+5BAE:0513 je short 0x04EC
+5BAE:0515 add DI,2
+5BAE:0518 loop 0x04E8
+5BAE:051A dec byte ptr DS:[0x0121]
+5BAE:051E jne short 0x0529
+5BAE:0520 mov byte ptr DS:[0x0121],0x60
+5BAE:0525 inc word ptr DS:[0x011F]
+5BAE:0529 ret near
+5BAE:052A cmp byte ptr DS:[DI+0x5A],0
+5BAE:052E je short 0x0515
+5BAE:0530 mov SI,word ptr DS:[DI+0x12]
+5BAE:0533 or SI,SI
+5BAE:0535 je short 0x0515
+5BAE:0537 push CX
+5BAE:0538 push DI
+5BAE:0539 dec byte ptr DS:[DI+0x5A]
+5BAE:053C mov AX,word ptr DS:[DI+0x6C]
+5BAE:053F add AL,AH
+5BAE:0541 mov byte ptr DS:[DI+0x6C],AL
+5BAE:0544 mov DX,DI
+5BAE:0546 sub DX,0x01A2
+5BAE:054A shr DX,1
+5BAE:054C call near 0x07EF
+5BAE:054F pop DI
+5BAE:0550 pop CX
+5BAE:0551 jmp short 0x0515
+5BAE:0553 cmp word ptr DS:[0x0123],0
+5BAE:0558 jne short 0x0585
+5BAE:055A mov AX,word ptr ES:[BX+0x2A]
+5BAE:055E cmp AX,word ptr DS:[0x011F]
+5BAE:0562 jne short 0x0584
+5BAE:0564 cmp word ptr DS:[0x0121],0x0060
+5BAE:0569 jne short 0x0584
+5BAE:056B push DI
+5BAE:056C push ES
+5BAE:056D mov SI,DI
+5BAE:056F add DI,0x00EA
+5BAE:0573 push DS
+5BAE:0574 pop ES
+5BAE:0575 mov CX,0x0012
+5BAE:0578 rep movs word ptr ES:[DI],word ptr DS:[SI]
+5BAE:057A pop ES
+5BAE:057B pop DI
+5BAE:057C mov AX,word ptr ES:[BX+0x2E]
+5BAE:0580 dec AX
+5BAE:0581 mov word ptr DS:[0x0123],AX
+5BAE:0584 ret near
+5BAE:0585 mov AX,word ptr ES:[BX+0x2C]
+5BAE:0589 cmp AX,word ptr DS:[0x011F]
+5BAE:058D jne short 0x0584
+5BAE:058F dec word ptr DS:[0x0123]
+5BAE:0593 push DI
+5BAE:0594 push ES
+5BAE:0595 lea SI,DI+0x00EA
+5BAE:0599 push DS
+5BAE:059A pop ES
+5BAE:059B mov CX,0x0012
+5BAE:059E rep movs word ptr ES:[DI],word ptr DS:[SI]
+5BAE:05A0 pop ES
+5BAE:05A1 pop DI
+5BAE:05A2 mov AX,word ptr ES:[BX+0x2A]
+5BAE:05A6 mov word ptr DS:[0x011F],AX
+5BAE:05A9 ret near
+5BAE:05AA call near 0x08E1
+5BAE:05AD cmp byte ptr DS:[DI+0x36],AH
+5BAE:05B0 je short 0x05A9
+5BAE:05B2 mov byte ptr DS:[DI+0x36],AH
+5BAE:05B5 mov AL,0x28
+5BAE:05B7 mul AH
+5BAE:05B9 les SI,word ptr DS:[0x0119]
+5BAE:05BD add SI,AX
+5BAE:05BF mov AX,word ptr ES:[SI+0x21]
+5BAE:05C3 mov word ptr DS:[DI+0x48],AX
+5BAE:05C6 mov AH,byte ptr ES:[SI+0x17]
+5BAE:05CA mov AL,byte ptr ES:[SI+0x0A]
+5BAE:05CE mov BH,byte ptr ES:[SI+2]
+5BAE:05D2 mov BL,byte ptr ES:[SI+0x0F]
+5BAE:05D6 and BX,0x0303
+5BAE:05DA ror BX,1
+5BAE:05DC ror BX,1
+5BAE:05DE or AX,BX
+5BAE:05E0 mov word ptr DS:[DI+0x0090],AX
+5BAE:05E4 mov AX,word ptr ES:[SI+0x1E]
+5BAE:05E8 mov word ptr DS:[DI+0x7E],AX
+5BAE:05EB mov AX,word ptr ES:[SI+0x26]
+5BAE:05EF mov word ptr DS:[DI+0x00C6],AX
+5BAE:05F3 mov AL,byte ptr ES:[SI+0x0E]
+5BAE:05F7 not AL
+5BAE:05F9 ror AL,1
+5BAE:05FB mov AH,byte ptr ES:[SI+4]
+5BAE:05FF shl AX,1
+5BAE:0601 mov AL,byte ptr ES:[SI+0x20]
+5BAE:0605 mov word ptr DS:[DI+0x00B4],AX
+5BAE:0609 mov AL,byte ptr ES:[SI+0x1B]
+5BAE:060D mov word ptr DS:[DI+0x00D8],AX
+5BAE:0611 mov AX,word ptr ES:[SI+0x23]
+5BAE:0615 mov byte ptr DS:[DI+0x6D],AH
+5BAE:0618 mov AH,AL
+5BAE:061A xor AL,AL
+5BAE:061C mov word ptr DS:[DI+0x5A],AX
+5BAE:061F push DS
+5BAE:0620 mov AX,ES
+5BAE:0622 mov DS,AX
+5BAE:0624 add SI,2
+5BAE:0627 call near 0x09AB
+5BAE:062A pop DS
+5BAE:062B ret near
+5BAE:062C lods AL,byte ptr ES:[SI]
+5BAE:062E call near 0x08E1
+5BAE:0631 push AX
+5BAE:0632 call near 0x0740
+5BAE:0635 cmp byte ptr DS:[DI+0x37],0
+5BAE:0639 je short 0x0640
+5BAE:063B xor AX,AX
+5BAE:063D call near 0x0A8F
+5BAE:0640 pop AX
+5BAE:0641 mov AL,AH
+5BAE:0643 add AL,byte ptr DS:[DI+0x49]
+5BAE:0646 xor AH,AH
+5BAE:0648 mov byte ptr DS:[DI+0x37],AL
+5BAE:064B sub AX,0x0048
+5BAE:064E mov CL,byte ptr DS:[DI+0x5B]
+5BAE:0651 mov byte ptr DS:[DI+0x5A],CL
+5BAE:0654 mov byte ptr DS:[DI+0x6C],0x40
+5BAE:0658 jmp near 0x0A58
+5BAE:065B inc SI
+5BAE:065C call near 0x08E1
+5BAE:065F add AH,byte ptr DS:[DI+0x49]
+5BAE:0662 cmp byte ptr DS:[DI+0x37],AH
+5BAE:0665 jne short 0x066E
+5BAE:0667 mov byte ptr DS:[DI+0x37],0
+5BAE:066B jmp near 0x0A87
+5BAE:066E ret near
+5BAE:066F mov word ptr DS:[DI],0xFFFF
+5BAE:0673 sub byte ptr DS:[DI+0x12],2
+5BAE:0677 or DX,DX
+5BAE:0679 jne short 0x0696
+5BAE:067B dec byte ptr DS:[0x019B]
+5BAE:067F je short 0x0697
+5BAE:0681 jns short 0x0687
+5BAE:0683 inc byte ptr DS:[0x019B]
+5BAE:0687 call near 0x0444
+5BAE:068A les BX,word ptr DS:[0x0115]
+5BAE:068E mov DI,0x01A2
+5BAE:0691 call near 0x0553
+5BAE:0694 dec word ptr DS:[DI]
+5BAE:0696 ret near
+5BAE:0697 mov AX,0xFFFF
+5BAE:069A push ES
+5BAE:069B push DS
+5BAE:069C pop ES
+5BAE:069D mov CX,9
+5BAE:06A0 rep stos word ptr ES:[DI],AX
+5BAE:06A2 pop ES
+5BAE:06A3 push CS
+5BAE:06A4 call near 0x02FE
+5BAE:06A7 ret near
+5BAE:06A8 call near 0x08E1
+5BAE:06AB mov AL,0x80
+5BAE:06AD sub AL,AH
+5BAE:06AF xchg AL,AH
+5BAE:06B1 mov BX,word ptr DS:[DI+0x00A2]
+5BAE:06B5 mov CX,word ptr DS:[DI+0x00C6]
+5BAE:06B9 or CL,CL
+5BAE:06BB je short 0x06E7
+5BAE:06BD push AX
+5BAE:06BE jns short 0x06C4
+5BAE:06C4 sub CL,4
+5BAE:06C7 neg CL
+5BAE:06C9 shr AL,CL
+5BAE:06CB mov AH,BL
+5BAE:06CD and AH,0x3F
+5BAE:06D0 sub AH,AL
+5BAE:06D2 jae short 0x06D6
+5BAE:06D4 xor AH,AH
+5BAE:06D6 and BL,0xC0
+5BAE:06D9 or AH,BL
+5BAE:06DB mov SI,0x0171
+5BAE:06DE add SI,DX
+5BAE:06E0 lods AL,byte ptr DS:[SI]
+5BAE:06E1 add AL,0x40
+5BAE:06E3 call near 0x0AA2
+5BAE:06E6 pop AX
+5BAE:06E7 or CH,CH
+5BAE:06E9 je short 0x0714
+5BAE:06EB push AX
+5BAE:06EC jns short 0x06F2
+5BAE:06F2 mov CL,4
+5BAE:06F4 sub CL,CH
+5BAE:06F6 shr AL,CL
+5BAE:06F8 mov AH,BH
+5BAE:06FA and AH,0x3F
+5BAE:06FD sub AH,AL
+5BAE:06FF jae short 0x0703
+5BAE:0701 xor AH,AH
+5BAE:0703 and BH,0xC0
+5BAE:0706 or AH,BH
+5BAE:0708 mov SI,0x017A
+5BAE:070B add SI,DX
+5BAE:070D lods AL,byte ptr DS:[SI]
+5BAE:070E add AL,0x40
+5BAE:0710 call near 0x0AA2
+5BAE:0713 pop AX
+5BAE:0714 mov CX,word ptr DS:[DI+0x00D8]
+5BAE:0718 or CL,CL
+5BAE:071A jne short 0x071D
+5BAE:071C ret near
+5BAE:071D jns short 0x0723
+5BAE:0723 sub CL,6
+5BAE:0726 neg CL
+5BAE:0728 shr AL,CL
+5BAE:072A and AL,0xFE
+5BAE:072C add AL,CH
+5BAE:072E cmp AL,0x0F
+5BAE:0730 jbe short 0x0736
+5BAE:0732 and AL,0x0F
+5BAE:0734 or AL,0x0E
+5BAE:0736 mov AH,AL
+5BAE:0738 mov AL,DL
+5BAE:073A add AL,0xC0
+5BAE:073C call near 0x0AA2
+5BAE:073F ret near
+5BAE:0740 mov AH,AL
+5BAE:0742 mov AL,0x80
+5BAE:0744 sub AL,AH
+5BAE:0746 mov BX,word ptr DS:[DI+0x0090]
+5BAE:074A mov CX,word ptr DS:[DI+0x7E]
+5BAE:074D or CL,CL
+5BAE:074F je short 0x0780
+5BAE:0751 push AX
+5BAE:0752 jns short 0x0758
+5BAE:0758 sub CL,4
+5BAE:075B neg CL
+5BAE:075D shr AL,CL
+5BAE:075F mov AH,BL
+5BAE:0761 and AH,0x3F
+5BAE:0764 add AH,AL
+5BAE:0766 cmp AH,0x3F
+5BAE:0769 jbe short 0x076D
+5BAE:076B mov AH,0x3F
+5BAE:076D and BL,0xC0
+5BAE:0770 or BL,AH
+5BAE:0772 mov AH,BL
+5BAE:0774 mov SI,0x0171
+5BAE:0777 add SI,DX
+5BAE:0779 lods AL,byte ptr DS:[SI]
+5BAE:077A add AL,0x40
+5BAE:077C call near 0x0AA2
+5BAE:077F pop AX
+5BAE:0780 or CH,CH
+5BAE:0782 je short 0x07B2
+5BAE:0784 push AX
+5BAE:0785 jns short 0x078B
+5BAE:078B mov CL,4
+5BAE:078D sub CL,CH
+5BAE:078F shr AL,CL
+5BAE:0791 mov AH,BH
+5BAE:0793 and AH,0x3F
+5BAE:0796 add AH,AL
+5BAE:0798 cmp AH,0x3F
+5BAE:079B jbe short 0x079F
+5BAE:079F and BH,0xC0
+5BAE:07A2 or BH,AH
+5BAE:07A4 mov AH,BH
+5BAE:07A6 mov SI,0x017A
+5BAE:07A9 add SI,DX
+5BAE:07AB lods AL,byte ptr DS:[SI]
+5BAE:07AC add AL,0x40
+5BAE:07AE call near 0x0AA2
+5BAE:07B1 pop AX
+5BAE:07B2 mov word ptr DS:[DI+0x00A2],BX
+5BAE:07B6 mov CX,word ptr DS:[DI+0x00B4]
+5BAE:07BA or CL,CL
+5BAE:07BC jne short 0x07C3
+5BAE:07BE mov byte ptr DS:[DI+0x00D9],CH
+5BAE:07C2 ret near
+5BAE:07C3 jns short 0x07C9
+5BAE:07C5 neg CL
+5BAE:07C7 mov AL,AH
+5BAE:07C9 sub CL,6
+5BAE:07CC neg CL
+5BAE:07CE shr AL,CL
+5BAE:07D0 and AL,0xFE
+5BAE:07D2 add AL,CH
+5BAE:07D4 cmp AL,0x0F
+5BAE:07D6 jbe short 0x07DC
+5BAE:07DC mov AH,AL
+5BAE:07DE mov byte ptr DS:[DI+0x00D9],AL
+5BAE:07E2 mov AL,DL
+5BAE:07E4 add AL,0xC0
+5BAE:07E6 call near 0x0AA2
+5BAE:07E9 ret near
+5BAE:07EA mov AL,AH
+5BAE:07EC call near 0x08E1
+5BAE:07EF mov CL,byte ptr DS:[DI+0x37]
+5BAE:07F2 xor CH,CH
+5BAE:07F4 jcxz short 0x07E9
+5BAE:07F6 mov AH,CH
+5BAE:07F8 xchg CX,AX
+5BAE:07F9 sub AL,0x18
+5BAE:07FB mov BH,0x0C
+5BAE:07FD div BH
+5BAE:07FF xchg CX,AX
+5BAE:0800 cmp byte ptr DS:[DI+0x48],0
+5BAE:0804 jne short 0x0865
+5BAE:0806 sub AX,0x0040
+5BAE:0809 jae short 0x0842
+5BAE:080B neg AX
+5BAE:080D ror AX,1
+5BAE:080F ror AX,1
+5BAE:0811 ror AX,1
+5BAE:0813 ror AX,1
+5BAE:0815 ror AX,1
+5BAE:0817 sub CH,AL
+5BAE:0819 jae short 0x0824
+5BAE:081B add CH,0x0C
+5BAE:081E dec CL
+5BAE:0820 jns short 0x0824
+5BAE:0824 mov AL,CH
+5BAE:0826 mov BX,0x0183
+5BAE:0829 xlat byte ptr DS:[BX+AL]
+5BAE:082A mul AH
+5BAE:082C mov AL,AH
+5BAE:082E xchg AL,CH
+5BAE:0830 xor AH,AH
+5BAE:0832 add AX,AX
+5BAE:0834 mov SI,AX
+5BAE:0836 mov AX,word ptr DS:[SI+0x0147]
+5BAE:083A sub AL,CH
+5BAE:083C sbb AH,0
+5BAE:083F jmp near 0x08CD
+5BAE:0842 inc AX
+5BAE:0843 ror AX,1
+5BAE:0845 ror AX,1
+5BAE:0847 ror AX,1
+5BAE:0849 ror AX,1
+5BAE:084B ror AX,1
+5BAE:084D add CH,AL
+5BAE:084F cmp CH,0x0C
+5BAE:0852 jb short 0x0859
+5BAE:0854 sub CH,0x0C
+5BAE:0857 inc CL
+5BAE:0859 mov AL,CH
+5BAE:085B mov BX,0x0184
+5BAE:085E xlat byte ptr DS:[BX+AL]
+5BAE:085F mul AH
+5BAE:0861 mov AL,AH
+5BAE:0863 jmp short 0x08BC
+5BAE:0865 sub AX,0x0040
+5BAE:0868 jae short 0x089E
+5BAE:086A neg AX
+5BAE:086C mov BH,5
+5BAE:086E div BH
+5BAE:0870 sub CH,AL
+5BAE:0872 jae short 0x087D
+5BAE:0874 add CH,0x0C
+5BAE:0877 dec CL
+5BAE:0879 jns short 0x087D
+5BAE:087B xor CX,CX
+5BAE:087D mov AL,AH
+5BAE:087F mov BX,0x0190
+5BAE:0882 cmp CH,6
+5BAE:0885 jb short 0x088A
+5BAE:0887 add BX,5
+5BAE:088A xlat byte ptr DS:[BX+AL]
+5BAE:088B xchg AL,CH
+5BAE:088D xor AH,AH
+5BAE:088F add AX,AX
+5BAE:0891 mov SI,AX
+5BAE:0893 mov AX,word ptr DS:[SI+0x0147]
+5BAE:0897 sub AL,CH
+5BAE:0899 sbb AH,0
+5BAE:089C jmp short 0x08CD
+5BAE:089E mov BH,5
+5BAE:08A0 div BH
+5BAE:08A2 add CH,AL
+5BAE:08A4 cmp CH,0x0C
+5BAE:08A7 jb short 0x08AE
+5BAE:08A9 sub CH,0x0C
+5BAE:08AC inc CL
+5BAE:08AE mov AL,AH
+5BAE:08B0 mov BX,0x0190
+5BAE:08B3 cmp CH,6
+5BAE:08B6 jb short 0x08BB
+5BAE:08B8 add BX,5
+5BAE:08BB xlat byte ptr DS:[BX+AL]
+5BAE:08BC xchg AL,CH
+5BAE:08BE xor AH,AH
+5BAE:08C0 add AX,AX
+5BAE:08C2 mov SI,AX
+5BAE:08C4 mov AX,word ptr DS:[SI+0x0147]
+5BAE:08C8 add AL,CH
+5BAE:08CA adc AH,0
+5BAE:08CD shl CL,1
+5BAE:08CF shl CL,1
+5BAE:08D1 or AH,CL
+5BAE:08D3 mov SI,DX
+5BAE:08D5 add SI,SI
+5BAE:08D7 mov word ptr DS:[SI+0x015F],AX
+5BAE:08DB or AH,0x20
+5BAE:08DE jmp near 0x0A8F
+5BAE:08E1 push AX
+5BAE:08E2 xor AX,AX
+5BAE:08E4 lods AL,byte ptr ES:[SI]
+5BAE:08E6 or AL,AL
+5BAE:08E8 jns short 0x0914
+5BAE:08EA xor CX,CX
+5BAE:08EC mov CH,CL
+5BAE:08EE mov CL,AH
+5BAE:08F0 mov AH,AL
+5BAE:08F2 lods AL,byte ptr ES:[SI]
+5BAE:08F4 or AL,AL
+5BAE:08F6 js short 0x08EC
+5BAE:08F8 and AX,0x7F7F
+5BAE:08FB and CX,0x7F7F
+5BAE:08FF shl CL,1
+5BAE:0901 shr CX,1
+5BAE:0903 shl AL,1
+5BAE:0905 shl AX,1
+5BAE:0907 shr CX,1
+5BAE:0909 rcr AX,1
+5BAE:090B shr CX,1
+5BAE:090D rcr AX,1
+5BAE:090F jcxz short 0x0914
+5BAE:0914 mov word ptr DS:[DI],AX
+5BAE:0916 mov word ptr DS:[DI+0x12],SI
+5BAE:0919 pop AX
+5BAE:091A ret near
+5BAE:091B push DS
+5BAE:091C push CS
+5BAE:091D pop DS
+5BAE:091E mov CX,9
+5BAE:0921 push CX
+5BAE:0922 mov DX,CX
+5BAE:0924 dec DX
+5BAE:0925 call near 0x0A87
+5BAE:0928 pop CX
+5BAE:0929 loop 0x0921
+5BAE:092B pop DS
+5BAE:092C ret near
+5BAE:092D mov AL,byte ptr DS:[0x019C]
+5BAE:0930 cmp AL,byte ptr DS:[0x019D]
+5BAE:0934 jne short 0x0942
+5BAE:0936 mov word ptr DS:[0x019F],1
+5BAE:093C and byte ptr DS:[0x019A],0xBF
+5BAE:0941 ret near
+5BAE:0942 mov AH,AL
+5BAE:0944 mov BL,byte ptr DS:[0x019D]
+5BAE:0948 mov BH,BL
+5BAE:094A and AL,0x0F
+5BAE:094C and BL,0x0F
+5BAE:094F cmp AL,BL
+5BAE:0951 je short 0x095B
+5BAE:0953 inc AH
+5BAE:0955 jb short 0x095B
+5BAE:0957 dec AH
+5BAE:0959 dec AH
+5BAE:095B mov AL,AH
+5BAE:095D and AH,0xF0
+5BAE:0960 and BH,0xF0
+5BAE:0963 cmp AH,BH
+5BAE:0965 je short 0x096F
+5BAE:0967 add AL,0x10
+5BAE:0969 cmp AH,BH
+5BAE:096B jb short 0x096F
+5BAE:096D sub AL,0x20
+5BAE:096F mov byte ptr DS:[0x019C],AL
+5BAE:0972 or AL,AL
+5BAE:0974 jne short 0x0986
+5BAE:0976 push DX
+5BAE:0977 push SI
+5BAE:0978 call near 0x091B
+5BAE:097B pop SI
+5BAE:097C pop DX
+5BAE:097D mov byte ptr DS:[0x019A],0
+5BAE:0982 mov AL,byte ptr CS:[0x019C]
+5BAE:0986 mov AH,0x26
+5BAE:0988 push DX
+5BAE:0989 mov DX,word ptr CS:[0x02B3]
+5BAE:098E add DL,4
+5BAE:0991 xchg AL,AH
+5BAE:0993 out DX,AL
+5BAE:0994 inc DX
+5BAE:0995 xchg AL,AH
+5BAE:0997 out DX,AL
+5BAE:0998 pop DX
+5BAE:0999 ret near
+5BAE:099A mov SI,0x0171
+5BAE:099D mov CX,0x0012
+5BAE:09A0 mov AH,0xFF
+5BAE:09A2 lods AL,byte ptr DS:[SI]
+5BAE:09A3 add AL,0x80
+5BAE:09A5 call near 0x0AA2
+5BAE:09A8 loop 0x09A2
+5BAE:09AA ret near
+5BAE:09AB add DX,DX
+5BAE:09AD mov BX,DX
+5BAE:09AF mov DX,word ptr CS:[BX+0x0135]
+5BAE:09B4 shr BX,1
+5BAE:09B6 call near 0x09C3
+5BAE:09B9 xchg DH,DL
+5BAE:09BB mov AH,byte ptr DS:[SI+0x1B]
+5BAE:09BE add SI,0x000D
+5BAE:09C1 jmp short 0x09DC
+5BAE:09C3 mov AH,byte ptr DS:[SI+0x0C]
+5BAE:09C6 shr AX,1
+5BAE:09C8 mov AH,byte ptr DS:[SI+2]
+5BAE:09CB not AL
+5BAE:09CD shl AX,1
+5BAE:09CF and AH,0x0F
+5BAE:09D2 mov AL,0xC0
+5BAE:09D4 add AL,BL
+5BAE:09D6 call near 0x0AA2
+5BAE:09D9 mov AH,byte ptr DS:[SI+0x1A]
+5BAE:09DC and AH,3
+5BAE:09DF mov AL,0xE0
+5BAE:09E1 add AL,DL
+5BAE:09E3 call near 0x0AA2
+5BAE:09E6 mov AH,byte ptr DS:[SI+8]
+5BAE:09E9 mov AL,byte ptr DS:[SI]
+5BAE:09EB shl AH,1
+5BAE:09ED shl AH,1
+5BAE:09EF ror AX,1
+5BAE:09F1 ror AX,1
+5BAE:09F3 mov AL,0x40
+5BAE:09F5 add AL,DL
+5BAE:09F7 call near 0x0AA2
+5BAE:09FA mov AH,byte ptr DS:[SI+3]
+5BAE:09FD mov AL,byte ptr DS:[SI+6]
+5BAE:0A00 shl AL,1
+5BAE:0A02 shl AL,1
+5BAE:0A04 shl AL,1
+5BAE:0A06 shl AL,1
+5BAE:0A08 shl AX,1
+5BAE:0A0A shl AX,1
+5BAE:0A0C shl AX,1
+5BAE:0A0E shl AX,1
+5BAE:0A10 mov AL,0x60
+5BAE:0A12 add AL,DL
+5BAE:0A14 call near 0x0AA2
+5BAE:0A17 mov AH,byte ptr DS:[SI+4]
+5BAE:0A1A mov AL,byte ptr DS:[SI+7]
+5BAE:0A1D shl AL,1
+5BAE:0A1F shl AL,1
+5BAE:0A21 shl AL,1
+5BAE:0A23 shl AL,1
+5BAE:0A25 shl AX,1
+5BAE:0A27 shl AX,1
+5BAE:0A29 shl AX,1
+5BAE:0A2B shl AX,1
+5BAE:0A2D mov AL,0x80
+5BAE:0A2F add AL,DL
+5BAE:0A31 call near 0x0AA2
+5BAE:0A34 mov AL,byte ptr DS:[SI+0x0B]
+5BAE:0A37 ror AX,1
+5BAE:0A39 mov AL,byte ptr DS:[SI+5]
+5BAE:0A3C ror AX,1
+5BAE:0A3E mov AL,byte ptr DS:[SI+0x0A]
+5BAE:0A41 ror AX,1
+5BAE:0A43 mov AL,byte ptr DS:[SI+9]
+5BAE:0A46 ror AX,1
+5BAE:0A48 mov AL,byte ptr DS:[SI+1]
+5BAE:0A4B and AX,0xF00F
+5BAE:0A4E or AH,AL
+5BAE:0A50 mov AL,0x20
+5BAE:0A52 add AL,DL
+5BAE:0A54 call near 0x0AA2
+5BAE:0A57 ret near
+5BAE:0A58 add AX,0x0030
+5BAE:0A5B cmp AX,0x0060
+5BAE:0A5E jb short 0x0A62
+5BAE:0A60 xor AX,AX
+5BAE:0A62 mov BL,0x0C
+5BAE:0A64 div BL
+5BAE:0A66 mov CL,AL
+5BAE:0A68 xchg AH,AL
+5BAE:0A6A xor AH,AH
+5BAE:0A6C add AX,AX
+5BAE:0A6E mov SI,AX
+5BAE:0A70 mov AX,word ptr DS:[SI+0x0147]
+5BAE:0A74 shl CL,1
+5BAE:0A76 shl CL,1
+5BAE:0A78 or AH,CL
+5BAE:0A7A mov SI,DX
+5BAE:0A7C add SI,SI
+5BAE:0A7E mov word ptr DS:[SI+0x015F],AX
+5BAE:0A82 or AH,0x20
+5BAE:0A85 jmp short 0x0A8F
+5BAE:0A87 mov SI,DX
+5BAE:0A89 add SI,SI
+5BAE:0A8B mov AX,word ptr DS:[SI+0x015F]
+5BAE:0A8F mov CX,AX
+5BAE:0A91 mov AL,DL
+5BAE:0A93 add AL,0xA0
+5BAE:0A95 mov AH,CL
+5BAE:0A97 mov SI,AX
+5BAE:0A99 call near 0x0AA2
+5BAE:0A9C mov AX,SI
+5BAE:0A9E add AL,0x10
+5BAE:0AA0 mov AH,CH
+5BAE:0AA2 push DX
+5BAE:0AA3 mov DX,0x0388
+5BAE:0AA6 out DX,AL
+5BAE:0AA7 in AL,DX
+5BAE:0AA8 in AL,DX
+5BAE:0AA9 in AL,DX
+5BAE:0AAA in AL,DX
+5BAE:0AAB in AL,DX
+5BAE:0AAC in AL,DX
+5BAE:0AAD in AL,DX
+5BAE:0AAE inc DX
+5BAE:0AAF mov AL,AH
+5BAE:0AB1 out DX,AL
+5BAE:0AB2 in AL,DX
+5BAE:0AB3 in AL,DX
+5BAE:0AB4 in AL,DX
+5BAE:0AB5 in AL,DX
+5BAE:0AB6 in AL,DX
+5BAE:0AB7 in AL,DX
+5BAE:0AB8 in AL,DX
+5BAE:0AB9 in AL,DX
+5BAE:0ABA in AL,DX
+5BAE:0ABB in AL,DX
+5BAE:0ABC in AL,DX
+5BAE:0ABD in AL,DX
+5BAE:0ABE in AL,DX
+5BAE:0ABF in AL,DX
+5BAE:0AC0 in AL,DX
+5BAE:0AC1 in AL,DX
+5BAE:0AC2 in AL,DX
+5BAE:0AC3 in AL,DX
+5BAE:0AC4 in AL,DX
+5BAE:0AC5 in AL,DX
+5BAE:0AC6 in AL,DX
+5BAE:0AC7 in AL,DX
+5BAE:0AC8 in AL,DX
+5BAE:0AC9 in AL,DX
+5BAE:0ACA in AL,DX
+5BAE:0ACB in AL,DX
+5BAE:0ACC in AL,DX
+5BAE:0ACD in AL,DX
+5BAE:0ACE in AL,DX
+5BAE:0ACF in AL,DX
+5BAE:0AD0 in AL,DX
+5BAE:0AD1 in AL,DX
+5BAE:0AD2 in AL,DX
+5BAE:0AD3 in AL,DX
+5BAE:0AD4 in AL,DX
+5BAE:0AD5 pop DX
+5BAE:0AD6 ret near
+F000:0000 callback 0x0010
+F000:0004 iret
+F000:0005 iret
+F000:0006 callback 8
+F000:000A int 0x1C
+F000:000C callback 0x0101
+F000:0010 iret
+F000:0011 callback 9
+F000:0015 iret
+F000:0057 callback 0x0070
+F000:005B iret
+F000:005D call far F000:00E3
+F000:0062 callback 0x0074
+F000:0066 iret
+F000:0067 callback 0x0104
+F000:006B iret
+F000:006C callback 0x0105
+F000:0070 iret
+F000:0071 callback 0x0106
+F000:0075 iret
+F000:0076 callback 0x0107
+F000:007A iret
+F000:007B callback 0x0108
+F000:007F iret
+F000:0080 callback 0x0109
+F000:0084 iret
+F000:0090 cmp AH,7
+F000:0093 je short 0x00A4
+F000:0095 cmp AH,8
+F000:0098 je short 0x00A4
+F000:009A cmp AH,0x0A
+F000:009D je short 0x00A4
+F000:009F callback 0x0021
+F000:00A3 iret
+F000:00DD callback 0x0033
+F000:00E1 iret
+F000:00E2 ret far
+F000:00E3 callback 0x010C
+F000:00E7 call far F000:00E2
+F000:00EC callback 0x010D
+F000:00F0 ret far
