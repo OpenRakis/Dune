@@ -2,11 +2,12 @@
 
 Dune functions auto-generated as C# code by the CFGCPU (feature/speculative_execution branch of Spice86 from Kevin)
 
-
-
 &#x20;cd GeneratedProject
 
 &#x20;dotnet run -- -e "C:\\Jeux\\DUNE\_CDVF\\C\\DNCDPRG.EXE" -a "ADP220 SBP2227" -p 4096 --UseCodeOverride true
 
+<https://github.com/user-attachments/assets/17d775ce-d7d4-489e-a129-f9ac624e71af>
 
-https://github.com/user-attachments/assets/17d775ce-d7d4-489e-a129-f9ac624e71af
+## Credits
+
+madmoose, debrouxl, and many others.
