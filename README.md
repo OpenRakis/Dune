@@ -1,6 +1,6 @@
 # Dune
 
-Dune functions auto-generated as C# code by the CFGCPU (feature/speculative_execution branch of Spice86 from Kevin)
+Dune functions auto-generated as C# code by the CFGCPU (feature/speculative_execution branch of Spice86 from Kevin, merged on spice86 master branch now)
 
 
 
