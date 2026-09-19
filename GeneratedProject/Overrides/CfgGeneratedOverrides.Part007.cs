@@ -12,7 +12,7 @@ namespace Spice86.Generated;
 
 public partial class CfgGeneratedOverrides
 {
-    public virtual Action unknown_100D_391D_139ED(int loadOffset)
+    public virtual Action sky_palette_fade_step(int loadOffset)
     {
     label_100D_391D_139ED_6270:
         CheckExternalEvents(cs1, 0x391D);
@@ -92,10 +92,10 @@ public partial class CfgGeneratedOverrides
         // 100D:3955 mov SI,0x3916
         SI = (ushort)0x3916;
         // 100D:3958 jmp near 0xDA5F
-        return unknown_100D_DA5F_1DB2F(0x0000);
+        return remove_frame_task(0x0000);
     }
 
-    public virtual Action unknown_100D_395C_13A2C(int loadOffset)
+    public virtual Action sky_palette_id_from_game_time(int loadOffset)
     {
     label_100D_395C_13A2C_12778:
         CheckExternalEvents(cs1, 0x395C);
@@ -136,7 +136,7 @@ public partial class CfgGeneratedOverrides
         AX = (ushort)0x0028;
         // 100D:3974 add AL,byte ptr DS:[0x22E3]
         AL = Alu8.Add(AL, UInt8[DS, (ushort)0x22E3]);
-        return unknown_100D_3978_13A48(0x0000);
+        return open_sky_palette(0x0000);
     }
 
     public virtual Action unknown_100D_398C_13A5C(int loadOffset)
@@ -269,17 +269,17 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_39E6_13AB6(int loadOffset)
+    public virtual Action remove_room_frame_task(int loadOffset)
     {
     label_100D_39E6_13AB6_3439:
         CheckExternalEvents(cs1, 0x39E6);
         // 100D:39E6 mov SI,0xC0B6
         SI = (ushort)0xC0B6;
         // 100D:39E9 jmp near 0xDA5F
-        return unknown_100D_DA5F_1DB2F(0x0000);
+        return remove_frame_task(0x0000);
     }
 
-    public virtual Action unknown_100D_3A73_13B43(int loadOffset)
+    public virtual Action draw_ornis(int loadOffset)
     {
     entrydispatcher:
     label_100D_3A73_13B43_20650:
@@ -292,7 +292,7 @@ public partial class CfgGeneratedOverrides
         CX = unchecked((ushort)(CX - (ushort)0x0001));
         if (CX != (ushort)0x0000)
         {
-            if (JumpDispatcher.Jump(unknown_100D_3A6A_13B3A, 0x0000))
+            if (JumpDispatcher.Jump(draw_ornis_loop, 0x0000))
             {
                 loadOffset = JumpDispatcher.NextEntryAddress;
                 goto entrydispatcher;
@@ -306,12 +306,12 @@ public partial class CfgGeneratedOverrides
         throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
     }
 
-    public virtual Action unknown_100D_3A7C_13B4C(int loadOffset)
+    public virtual Action add_room_frame_task(int loadOffset)
     {
     label_100D_3A7C_13B4C_4709:
         CheckExternalEvents(cs1, 0x3A7C);
         // 100D:3A7C call near 0x39E6
-        NearCall(cs1, 0x3A7F, unknown_100D_39E6_13AB6);
+        NearCall(cs1, 0x3A7F, remove_room_frame_task);
     label_100D_3A7F_13B4F_4711:
         CheckExternalEvents(cs1, 0x3A7F);
         // 100D:3A7F mov AX,word ptr DS:[4]
@@ -339,14 +339,14 @@ public partial class CfgGeneratedOverrides
         // 100D:3A8E mov BP,0x000C
         BP = (ushort)0x000C;
         // 100D:3A91 call near 0xDA25
-        NearCall(cs1, 0x3A94, unknown_100D_DA25_1DAF5);
+        NearCall(cs1, 0x3A94, add_frame_task);
     label_100D_3A94_13B64_4715:
         CheckExternalEvents(cs1, 0x3A94);
         // 100D:3A94 ret near
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3A95_13B65(int loadOffset)
+    public virtual Action get_orni_position(int loadOffset)
     {
     label_100D_3A95_13B65_20594:
         CheckExternalEvents(cs1, 0x3A95);
@@ -373,14 +373,14 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3AA9_13B79(int loadOffset)
+    public virtual Action draw_orni(int loadOffset)
     {
     label_100D_3AA9_13B79_20614:
         CheckExternalEvents(cs1, 0x3AA9);
         // 100D:3AA9 xor AX,AX
         AX = Alu16.Xor(AX, AX);
         // 100D:3AAB call near 0xC305
-        NearCall(cs1, 0x3AAE, unknown_100D_C305_1C3D5);
+        NearCall(cs1, 0x3AAE, draw_sprite_from_sheet_clipped);
     label_100D_3AAE_13B7E_20617:
         CheckExternalEvents(cs1, 0x3AAE);
         // 100D:3AAE add DX,6
@@ -390,7 +390,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3AB4 mov AX,1
         AX = (ushort)0x0001;
         // 100D:3AB7 call near 0xC305
-        NearCall(cs1, 0x3ABA, unknown_100D_C305_1C3D5);
+        NearCall(cs1, 0x3ABA, draw_sprite_from_sheet_clipped);
     label_100D_3ABA_13B8A_20622:
         CheckExternalEvents(cs1, 0x3ABA);
         // 100D:3ABA sub DX,2
@@ -432,7 +432,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3AD2 add AL,2
         AL = Alu8.Add(AL, (byte)0x02);
         // 100D:3AD4 call near 0xC305
-        NearCall(cs1, 0x3AD7, unknown_100D_C305_1C3D5);
+        NearCall(cs1, 0x3AD7, draw_sprite_from_sheet_clipped);
     label_100D_3AD7_13BA7_20637:
         CheckExternalEvents(cs1, 0x3AD7);
         // 100D:3AD7 sub DX,0x0055
@@ -490,7 +490,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3AF9_13BC9(int loadOffset)
+    public virtual Action dialogue_zoom_room(int loadOffset)
     {
     label_100D_3AF9_13BC9_15423:
         CheckExternalEvents(cs1, 0x3AF9);
@@ -504,7 +504,7 @@ public partial class CfgGeneratedOverrides
     label_100D_3B00_13BD0_36324:
         CheckExternalEvents(cs1, 0x3B00);
         // 100D:3B00 jmp near 0xC43E
-        return unknown_100D_C43E_1C50E(0x0000);
+        return copy_game_area_fb2_to_fb1(0x0000);
     label_100D_3B03_13BD3_15426:
         CheckExternalEvents(cs1, 0x3B03);
         // 100D:3B03 cmp byte ptr DS:[0x47A4],0
@@ -611,14 +611,14 @@ public partial class CfgGeneratedOverrides
         DS = UInt16[SS, SP];
         SP = unchecked((ushort)(SP + (ushort)0x0002));
         // 100D:3B55 jmp near 0xC43E
-        return unknown_100D_C43E_1C50E(0x0000);
+        return copy_game_area_fb2_to_fb1(0x0000);
     label_100D_3B58_13C28_15686:
         CheckExternalEvents(cs1, 0x3B58);
         // 100D:3B58 ret near
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3B59_13C29(int loadOffset)
+    public virtual Action draw_sal_room(int loadOffset)
     {
     label_100D_3B59_13C29_6769:
         CheckExternalEvents(cs1, 0x3B59);
@@ -646,7 +646,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3B6A add AX,0x0013
         AX = Alu16.Add(AX, (ushort)0x0013);
         // 100D:3B6D call near 0xC13E
-        NearCall(cs1, 0x3B70, unknown_100D_C13E_1C20E);
+        NearCall(cs1, 0x3B70, open_sprite_bank);
     label_100D_3B70_13C40_6781:
         CheckExternalEvents(cs1, 0x3B70);
         // 100D:3B70 pop AX
@@ -662,7 +662,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3B7B mov SI,word ptr DS:[SI]
         SI = UInt16[DS, SI];
         // 100D:3B7D call near 0x3D83
-        NearCall(cs1, 0x3B80, unknown_100D_3D83_13E53);
+        NearCall(cs1, 0x3B80, sal_position_markers);
     label_100D_3B80_13C50_6827:
         CheckExternalEvents(cs1, 0x3B80);
         // 100D:3B80 lods AX,word ptr DS:[SI]
@@ -731,7 +731,7 @@ public partial class CfgGeneratedOverrides
     label_100D_3BAF_13C7F_6851:
         CheckExternalEvents(cs1, 0x3BAF);
         // 100D:3BAF call near 0xC22F
-        NearCall(cs1, 0x3BB2, unknown_100D_C22F_1C2FF);
+        NearCall(cs1, 0x3BB2, draw_active_bank_sprite);
     label_100D_3BB2_13C82_6853:
         CheckExternalEvents(cs1, 0x3BB2);
         // 100D:3BB2 pop SI
@@ -839,7 +839,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3D26 mov AL,byte ptr DS:[DI]
         AL = UInt8[DS, DI];
         // 100D:3D28 call near 0x3D2F
-        NearCall(cs1, 0x3D2B, unknown_100D_3D2F_13DFF);
+        NearCall(cs1, 0x3D2B, draw_character);
     label_100D_3D2B_13DFB_6976:
         CheckExternalEvents(cs1, 0x3D2B);
         // 100D:3D2B pop SI
@@ -1237,7 +1237,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3D2F_13DFF(int loadOffset)
+    public virtual Action draw_character(int loadOffset)
     {
     label_100D_3D2F_13DFF_7759:
         CheckExternalEvents(cs1, 0x3D2F);
@@ -1260,7 +1260,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3D44 mov AX,0x0026
         AX = (ushort)0x0026;
         // 100D:3D47 call near 0xC13E
-        NearCall(cs1, 0x3D4A, unknown_100D_C13E_1C20E);
+        NearCall(cs1, 0x3D4A, open_sprite_bank);
     label_100D_3D4A_13E1A_7771:
         CheckExternalEvents(cs1, 0x3D4A);
         // 100D:3D4A pop AX
@@ -1285,11 +1285,11 @@ public partial class CfgGeneratedOverrides
     label_100D_3D58_13E28_7776:
         CheckExternalEvents(cs1, 0x3D58);
         // 100D:3D58 call near 0x9123
-        NearCall(cs1, 0x3D5B, unknown_100D_9123_191F3);
+        NearCall(cs1, 0x3D5B, character_sprite_map);
     label_100D_3D5B_13E2B_7789:
         CheckExternalEvents(cs1, 0x3D5B);
         // 100D:3D5B call near 0x127C
-        NearCall(cs1, 0x3D5E, unknown_100D_127C_1134C);
+        NearCall(cs1, 0x3D5E, is_gurney_between_phases_15_and_20);
     label_100D_3D5E_13E2E_7797:
         CheckExternalEvents(cs1, 0x3D5E);
         // 100D:3D5E jae short 0x3D65
@@ -1342,16 +1342,16 @@ public partial class CfgGeneratedOverrides
         // 100D:3D7B inc AX
         AX = Alu16.Inc(AX);
         // 100D:3D7C call near 0xC22F
-        NearCall(cs1, 0x3D7F, unknown_100D_C22F_1C2FF);
+        NearCall(cs1, 0x3D7F, draw_active_bank_sprite);
     label_100D_3D7F_13E4F_7819:
         CheckExternalEvents(cs1, 0x3D7F);
         // 100D:3D7F pop AX
         AX = Stack.Pop16();
         // 100D:3D80 jmp near 0xC13E
-        return unknown_100D_C13E_1C20E(0x0000);
+        return open_sprite_bank(0x0000);
     }
 
-    public virtual Action unknown_100D_3D83_13E53(int loadOffset)
+    public virtual Action sal_position_markers(int loadOffset)
     {
     label_100D_3D83_13E53_6789:
         CheckExternalEvents(cs1, 0x3D83);
@@ -1453,7 +1453,7 @@ public partial class CfgGeneratedOverrides
     label_100D_3DCD_13E9D_7015:
         CheckExternalEvents(cs1, 0x3DCD);
         // 100D:3DCD call near 0x3DF4
-        NearCall(cs1, 0x3DD0, unknown_100D_3DF4_13EC4);
+        NearCall(cs1, 0x3DD0, assign_position_marker);
     label_100D_3DD0_13EA0_6812:
         CheckExternalEvents(cs1, 0x3DD0);
         // 100D:3DD0 or DX,DX
@@ -1483,7 +1483,7 @@ public partial class CfgGeneratedOverrides
         // 100D:3DDE inc AX
         AX = Alu16.Inc(AX);
         // 100D:3DDF call near 0x3DF4
-        NearCall(cs1, 0x3DE2, unknown_100D_3DF4_13EC4);
+        NearCall(cs1, 0x3DE2, assign_position_marker);
     label_100D_3DE2_13EB2_32032:
         CheckExternalEvents(cs1, 0x3DE2);
         // 100D:3DE2 dec DX
@@ -1512,7 +1512,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3DF4_13EC4(int loadOffset)
+    public virtual Action assign_position_marker(int loadOffset)
     {
     label_100D_3DF4_13EC4_7017:
         CheckExternalEvents(cs1, 0x3DF4);
@@ -1921,7 +1921,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_3F15_13FE5(int loadOffset)
+    public virtual Action ui_click_move_up(int loadOffset)
     {
     entrydispatcher:
     label_100D_3F15_13FE5_19790:
@@ -1937,7 +1937,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_3F1A_13FEA(int loadOffset)
+    public virtual Action ui_click_move_right(int loadOffset)
     {
     entrydispatcher:
     label_100D_3F1A_13FEA_20169:
@@ -1953,7 +1953,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_3F1F_13FEF(int loadOffset)
+    public virtual Action ui_click_move_down(int loadOffset)
     {
     entrydispatcher:
     label_100D_3F1F_13FEF_20388:
@@ -1969,7 +1969,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_3F24_13FF4(int loadOffset)
+    public virtual Action ui_click_move_left(int loadOffset)
     {
     entrydispatcher:
     label_100D_3F24_13FF4_20193:
@@ -1984,7 +1984,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_4057_14127(int loadOffset)
+    public virtual Action commit_room_move(int loadOffset)
     {
     entrydispatcher:
         goto label_100D_4057_14127_19909;
@@ -1996,8 +1996,8 @@ public partial class CfgGeneratedOverrides
         // 100D:1701 mov AX,0x128F
         AX = (ushort)0x128F;
         // 100D:1704 call near 0x1771
-        NearCall(cs1, 0x1707, unknown_100D_1771_11841);
-        if (JumpDispatcher.Jump(unknown_100D_1707_117D7, 0x0000))
+        NearCall(cs1, 0x1707, start_scripted_dialogue);
+        if (JumpDispatcher.Jump(menu_callback_choice_continue_for_sequence, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -2006,7 +2006,7 @@ public partial class CfgGeneratedOverrides
     label_100D_4057_14127_19909:
         CheckExternalEvents(cs1, 0x4057);
         // 100D:4057 call near 0x40C3
-        NearCall(cs1, 0x405A, unknown_100D_40C3_14193);
+        NearCall(cs1, 0x405A, move_all_npcs_whose_bit_6_of_flags_is_set);
     label_100D_405A_1412A_19919:
         CheckExternalEvents(cs1, 0x405A);
         // 100D:405A mov word ptr DS:[4],DX
@@ -2045,7 +2045,7 @@ public partial class CfgGeneratedOverrides
     label_100D_407B_1414B_19930:
         CheckExternalEvents(cs1, 0x407B);
         // 100D:407B jmp near 0x2DBF
-        if (JumpDispatcher.Jump(unknown_100D_2DBF_12E8F, 0x0000))
+        if (JumpDispatcher.Jump(draw_room_game_screen_scene_reload, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -2053,7 +2053,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_407E_1414E(int loadOffset)
+    public virtual Action get_map_position(int loadOffset)
     {
     label_100D_407E_1414E_17417:
         CheckExternalEvents(cs1, 0x407E);
@@ -2093,7 +2093,7 @@ public partial class CfgGeneratedOverrides
         return unknown_100D_4099_14169(0x0000);
     }
 
-    public virtual Action unknown_100D_409A_1416A(int loadOffset)
+    public virtual Action find_location_by_map_offset(int loadOffset)
     {
     label_100D_409A_1416A_20543:
         CheckExternalEvents(cs1, 0x409A);
@@ -2125,7 +2125,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_40AE_1417E(int loadOffset)
+    public virtual Action location_entry_room_codes(int loadOffset)
     {
     label_100D_40AE_1417E_22610:
         CheckExternalEvents(cs1, 0x40AE);
@@ -2155,7 +2155,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_40C3_14193(int loadOffset)
+    public virtual Action move_all_npcs_whose_bit_6_of_flags_is_set(int loadOffset)
     {
     entrydispatcher:
     label_100D_40C3_14193_19911:
@@ -2163,7 +2163,7 @@ public partial class CfgGeneratedOverrides
         // 100D:40C3 mov BP,0x40C9
         BP = (ushort)0x40C9;
         // 100D:40C6 jmp near 0x36EE
-        if (JumpDispatcher.Jump(unknown_100D_36EE_137BE, 0x0000))
+        if (JumpDispatcher.Jump(scan_current_room_npcs, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -2194,7 +2194,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_40D5_141A5(int loadOffset)
+    public virtual Action run_travel_departure_npc_scans(int loadOffset)
     {
     entrydispatcher:
     label_100D_40D5_141A5_21622:
@@ -2202,7 +2202,7 @@ public partial class CfgGeneratedOverrides
         // 100D:40D5 mov byte ptr DS:[0x0023],7
         UInt8[DS, (ushort)0x0023] = (byte)0x07;
         // 100D:40DA call near 0x36D3
-        NearCall(cs1, 0x40DD, unknown_100D_36D3_137A3);
+        NearCall(cs1, 0x40DD, run_room_leave_dialogue_scan);
     label_100D_40DD_141AD_21625:
         CheckExternalEvents(cs1, 0x40DD);
         // 100D:40DD call near 0x4AC4
@@ -2212,7 +2212,7 @@ public partial class CfgGeneratedOverrides
         // 100D:40E0 mov BP,0x40E6
         BP = (ushort)0x40E6;
         // 100D:40E3 jmp near 0x36EE
-        if (JumpDispatcher.Jump(unknown_100D_36EE_137BE, 0x0000))
+        if (JumpDispatcher.Jump(scan_current_room_npcs, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -2220,7 +2220,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_40E6_141B6(int loadOffset)
+    public virtual Action npc_travel_detach_companion(int loadOffset)
     {
     label_100D_40E6_141B6_25233:
         CheckExternalEvents(cs1, 0x40E6);
@@ -2243,18 +2243,18 @@ public partial class CfgGeneratedOverrides
     label_100D_40F2_141C2_33053:
         CheckExternalEvents(cs1, 0x40F2);
         // 100D:40F2 call near 0x9556
-        NearCall(cs1, 0x40F5, unknown_100D_9556_19626);
+        NearCall(cs1, 0x40F5, npc_clear_travelling);
     label_100D_40F5_141C5_33055:
         CheckExternalEvents(cs1, 0x40F5);
         // 100D:40F5 call near 0x9655
-        NearCall(cs1, 0x40F8, unknown_100D_9655_19725);
+        NearCall(cs1, 0x40F8, npc_remove_companion_slot);
     label_100D_40F8_141C8_25239:
         CheckExternalEvents(cs1, 0x40F8);
         // 100D:40F8 ret near
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_40F9_141C9(int loadOffset)
+    public virtual Action travel_scan_nearby_location(int loadOffset)
     {
     label_100D_40F9_141C9_25254:
         CheckExternalEvents(cs1, 0x40F9);
@@ -2277,7 +2277,7 @@ public partial class CfgGeneratedOverrides
     label_100D_4108_141D8_25260:
         CheckExternalEvents(cs1, 0x4108);
         // 100D:4108 call near 0x407E
-        NearCall(cs1, 0x410B, unknown_100D_407E_1414E);
+        NearCall(cs1, 0x410B, get_map_position);
     label_100D_410B_141DB_25262:
         CheckExternalEvents(cs1, 0x410B);
         // 100D:410B mov CX,9
@@ -2285,7 +2285,7 @@ public partial class CfgGeneratedOverrides
         // 100D:410E mov AX,9
         AX = (ushort)0x0009;
         // 100D:4111 call near 0xB56C
-        NearCall(cs1, 0x4114, unknown_100D_B56C_1B63C);
+        NearCall(cs1, 0x4114, map_build_cell_strip);
     label_100D_4114_141E4_25266:
         CheckExternalEvents(cs1, 0x4114);
         // 100D:4114 mov CX,0x0051
@@ -2311,7 +2311,7 @@ public partial class CfgGeneratedOverrides
         // 100D:411F push SI
         Stack.Push16(SI);
         // 100D:4120 call near 0x409A
-        NearCall(cs1, 0x4123, unknown_100D_409A_1416A);
+        NearCall(cs1, 0x4123, find_location_by_map_offset);
     label_100D_4123_141F3_25280:
         CheckExternalEvents(cs1, 0x4123);
         // 100D:4123 jne short 0x417A
@@ -2344,7 +2344,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4133 mov DI,SI
         DI = SI;
         // 100D:4135 call near 0x5124
-        NearCall(cs1, 0x4138, unknown_100D_5124_151F4);
+        NearCall(cs1, 0x4138, compass_angle_to_location);
     label_100D_4138_14208_27093:
         CheckExternalEvents(cs1, 0x4138);
         // 100D:4138 jb short 0x417A
@@ -2391,7 +2391,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4156 mov byte ptr DS:[0x00E1],AH
         UInt8[DS, (ushort)0x00E1] = AH;
         // 100D:415A call near 0x6231
-        NearCall(cs1, 0x415D, unknown_100D_6231_16301);
+        NearCall(cs1, 0x415D, get_location_type_string_offset);
     label_100D_415D_1422D_27109:
         CheckExternalEvents(cs1, 0x415D);
         // 100D:415D add AX,0x0048
@@ -2401,27 +2401,27 @@ public partial class CfgGeneratedOverrides
         // 100D:4163 mov byte ptr DS:[0x0023],3
         UInt8[DS, (ushort)0x0023] = (byte)0x03;
         // 100D:4168 call near 0x425B
-        NearCall(cs1, 0x416B, unknown_100D_425B_1432B);
+        NearCall(cs1, 0x416B, location_mark_discovered);
     label_100D_416B_1423B_27123:
         CheckExternalEvents(cs1, 0x416B);
         // 100D:416B call near 0x4944
-        NearCall(cs1, 0x416E, unknown_100D_4944_14A14);
+        NearCall(cs1, 0x416E, arm_pending_travel);
     label_100D_416E_1423E_27125:
         CheckExternalEvents(cs1, 0x416E);
         // 100D:416E call near 0xDBB2
-        NearCall(cs1, 0x4171, unknown_100D_DBB2_1DC82);
+        NearCall(cs1, 0x4171, call_restore_cursor);
     label_100D_4171_14241_27127:
         CheckExternalEvents(cs1, 0x4171);
         // 100D:4171 call near 0x2EFB
-        NearCall(cs1, 0x4174, unknown_100D_2EFB_12FCB);
+        NearCall(cs1, 0x4174, build_room_command_records);
     label_100D_4174_14244_27129:
         CheckExternalEvents(cs1, 0x4174);
         // 100D:4174 call near 0x2FFB
-        NearCall(cs1, 0x4177, unknown_100D_2FFB_130CB);
+        NearCall(cs1, 0x4177, rebuild_and_draw_room_nav_panel);
     label_100D_4177_14247_27131:
         CheckExternalEvents(cs1, 0x4177);
         // 100D:4177 call near 0xD397
-        NearCall(cs1, 0x417A, unknown_100D_D397_1D467);
+        NearCall(cs1, 0x417A, redraw_active_command_menu);
     label_100D_417A_1424A_25285:
         CheckExternalEvents(cs1, 0x417A);
         // 100D:417A pop SI
@@ -2445,7 +2445,7 @@ public partial class CfgGeneratedOverrides
         throw FailAsUntested("Generated partition reached the end without a terminating control-flow instruction.");
     }
 
-    public virtual Action unknown_100D_4182_14252(int loadOffset)
+    public virtual Action travel_route_hostile_zone_check(int loadOffset)
     {
     label_100D_4182_14252_22083:
         CheckExternalEvents(cs1, 0x4182);
@@ -2474,22 +2474,22 @@ public partial class CfgGeneratedOverrides
         // 100D:4192 mov DI,word ptr DS:[0x11C5]
         DI = UInt16[DS, (ushort)0x11C5];
         // 100D:4196 call near 0x5D36
-        NearCall(cs1, 0x4199, unknown_100D_5D36_15E06);
+        NearCall(cs1, 0x4199, location_is_atreides);
     label_100D_4199_14269_22099:
         CheckExternalEvents(cs1, 0x4199);
         // 100D:4199 jb short 0x41C5
         if (CarryFlag)
         {
-            return unknown_100D_41C5_14295(0x0000);
+            return ungrey_skip_to_destination_verb(0x0000);
         }
     label_100D_419B_1426B_27074:
         CheckExternalEvents(cs1, 0x419B);
         // 100D:419B call near 0x407E
-        NearCall(cs1, 0x419E, unknown_100D_407E_1414E);
+        NearCall(cs1, 0x419E, get_map_position);
     label_100D_419E_1426E_27076:
         CheckExternalEvents(cs1, 0x419E);
         // 100D:419E call near 0xB532
-        NearCall(cs1, 0x41A1, unknown_100D_B532_1B602);
+        NearCall(cs1, 0x41A1, read_map_byte);
     label_100D_41A1_14271_27078:
         CheckExternalEvents(cs1, 0x41A1);
         // 100D:41A1 and AL,0x30
@@ -2499,7 +2499,7 @@ public partial class CfgGeneratedOverrides
         // 100D:41A5 jb short 0x41C5
         if (CarryFlag)
         {
-            return unknown_100D_41C5_14295(0x0000);
+            return ungrey_skip_to_destination_verb(0x0000);
         }
     label_100D_41A7_14277_37324:
         CheckExternalEvents(cs1, 0x41A7);
@@ -2519,7 +2519,7 @@ public partial class CfgGeneratedOverrides
         // 100D:41B3 mov AL,0x40
         AL = (byte)0x40;
         // 100D:41B5 call near 0x41CC
-        NearCall(cs1, 0x41B8, unknown_100D_41CC_1429C);
+        NearCall(cs1, 0x41B8, set_skip_to_destination_verb_flags);
     label_100D_41B8_14288_37332:
         CheckExternalEvents(cs1, 0x41B8);
         // 100D:41B8 sub byte ptr DS:[0x4726],0x20
@@ -2537,7 +2537,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_41C5_14295(int loadOffset)
+    public virtual Action ungrey_skip_to_destination_verb(int loadOffset)
     {
     label_100D_41C5_14295_21603:
         CheckExternalEvents(cs1, 0x41C5);
@@ -2545,10 +2545,10 @@ public partial class CfgGeneratedOverrides
         UInt8[DS, (ushort)0x4726] = (byte)0x00;
         // 100D:41CA xor AL,AL
         AL = Alu8.Xor(AL, AL);
-        return unknown_100D_41CC_1429C(0x0000);
+        return set_skip_to_destination_verb_flags(0x0000);
     }
 
-    public virtual Action unknown_100D_41CC_1429C(int loadOffset)
+    public virtual Action set_skip_to_destination_verb_flags(int loadOffset)
     {
     label_100D_41CC_1429C_21606:
         CheckExternalEvents(cs1, 0x41CC);
@@ -2571,7 +2571,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_41E1_142B1(int loadOffset)
+    public virtual Action travel_flyover_detect(int loadOffset)
     {
         goto label_100D_41E1_142B1_22265;
 
@@ -2618,7 +2618,7 @@ public partial class CfgGeneratedOverrides
     label_100D_41F8_142C8_22275:
         CheckExternalEvents(cs1, 0x41F8);
         // 100D:41F8 call near 0xB56C
-        NearCall(cs1, 0x41FB, unknown_100D_B56C_1B63C);
+        NearCall(cs1, 0x41FB, map_build_cell_strip);
     label_100D_41FB_142CB_22325:
         CheckExternalEvents(cs1, 0x41FB);
         // 100D:41FB mov CX,8
@@ -2660,7 +2660,7 @@ public partial class CfgGeneratedOverrides
         // 100D:420D push SI
         Stack.Push16(SI);
         // 100D:420E call near 0x409A
-        NearCall(cs1, 0x4211, unknown_100D_409A_1416A);
+        NearCall(cs1, 0x4211, find_location_by_map_offset);
     label_100D_4211_142E1_22455:
         CheckExternalEvents(cs1, 0x4211);
         // 100D:4211 jne short 0x4257
@@ -2693,7 +2693,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4221 mov DI,SI
         DI = SI;
         // 100D:4223 call near 0x5124
-        NearCall(cs1, 0x4226, unknown_100D_5124_151F4);
+        NearCall(cs1, 0x4226, compass_angle_to_location);
     label_100D_4226_142F6_22463:
         CheckExternalEvents(cs1, 0x4226);
         // 100D:4226 jb short 0x4257
@@ -2735,7 +2735,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4242 xor AX,AX
         AX = Alu16.Xor(AX, AX);
         // 100D:4244 call near 0x5E4F
-        NearCall(cs1, 0x4247, unknown_100D_5E4F_15F1F);
+        NearCall(cs1, 0x4247, calc_sal_index);
     label_100D_4247_14317_22481:
         CheckExternalEvents(cs1, 0x4247);
         // 100D:4247 mov BX,0x196D
@@ -2764,7 +2764,7 @@ public partial class CfgGeneratedOverrides
         goto label_100D_4203_142D3_22330;
     }
 
-    public virtual Action unknown_100D_425B_1432B(int loadOffset)
+    public virtual Action location_mark_discovered(int loadOffset)
     {
     entrydispatcher:
     label_100D_425B_1432B_22603:
@@ -2809,7 +2809,7 @@ public partial class CfgGeneratedOverrides
         // 100D:427C mov AL,0x10
         AL = (byte)0x10;
         // 100D:427E call near 0x121F
-        NearCall(cs1, 0x4281, unknown_100D_121F_112EF);
+        NearCall(cs1, 0x4281, set_game_phase_and_trigger_callbacks);
     label_100D_4281_14351_30936:
         CheckExternalEvents(cs1, 0x4281);
         // 100D:4281 call near 0xE283
@@ -2843,7 +2843,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4291 mov SI,0x00BE
         SI = (ushort)0x00BE;
         // 100D:4294 call near 0xF0B9
-        NearCall(cs1, 0x4297, unknown_100D_F0B9_1F189);
+        NearCall(cs1, 0x4297, bank_filename);
     label_100D_4297_14367_35097:
         CheckExternalEvents(cs1, 0x4297);
         // 100D:4297 mov SI,0x015F
@@ -2884,7 +2884,7 @@ public partial class CfgGeneratedOverrides
         // 100D:42C6 mov AX,0x0039
         AX = (ushort)0x0039;
         // 100D:42C9 call near 0xC13E
-        NearCall(cs1, 0x42CC, unknown_100D_C13E_1C20E);
+        NearCall(cs1, 0x42CC, open_sprite_bank);
     label_100D_42CC_1439C_35113:
         CheckExternalEvents(cs1, 0x42CC);
         // 100D:42CC call far dword ptr DS:[0x3935]
@@ -2902,29 +2902,29 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_4377_14447(int loadOffset)
+    public virtual Action map_view_redraw(int loadOffset)
     {
     entrydispatcher:
     label_100D_4377_14447_28219:
         CheckExternalEvents(cs1, 0x4377);
         // 100D:4377 call near 0xC07C
-        NearCall(cs1, 0x437A, unknown_100D_C07C_1C14C);
+        NearCall(cs1, 0x437A, set_fb1_as_active_framebuffer);
     label_100D_437A_1444A_28221:
         CheckExternalEvents(cs1, 0x437A);
         // 100D:437A call near 0x5B93
-        NearCall(cs1, 0x437D, unknown_100D_5B93_15C63);
+        NearCall(cs1, 0x437D, map_view_clip_rect);
     label_100D_437D_1444D_28223:
         CheckExternalEvents(cs1, 0x437D);
         // 100D:437D call near 0xB6C3
-        NearCall(cs1, 0x4380, unknown_100D_B6C3_1B793);
+        NearCall(cs1, 0x4380, map_draw_zoomed_globe);
     label_100D_4380_14450_28225:
         CheckExternalEvents(cs1, 0x4380);
         // 100D:4380 call near 0xC137
-        NearCall(cs1, 0x4383, unknown_100D_C137_1C207);
+        NearCall(cs1, 0x4383, open_icones_spritesheet);
     label_100D_4383_14453_28227:
         CheckExternalEvents(cs1, 0x4383);
         // 100D:4383 call near 0x5DCE
-        NearCall(cs1, 0x4386, unknown_100D_5DCE_15E9E);
+        NearCall(cs1, 0x4386, map_build_and_draw_location_markers);
     label_100D_4386_14456_28229:
         CheckExternalEvents(cs1, 0x4386);
         // 100D:4386 cmp byte ptr DS:[0x473E],0
@@ -2939,13 +2939,13 @@ public partial class CfgGeneratedOverrides
         // 100D:438D mov AX,0x0024
         AX = (ushort)0x0024;
         // 100D:4390 call near 0xC13E
-        NearCall(cs1, 0x4393, unknown_100D_C13E_1C20E);
+        NearCall(cs1, 0x4393, open_sprite_bank);
     label_100D_4393_14463_28235:
         CheckExternalEvents(cs1, 0x4393);
         // 100D:4393 mov SI,0x14C0
         SI = (ushort)0x14C0;
         // 100D:4396 call near 0xC21B
-        NearCall(cs1, 0x4399, unknown_100D_C21B_1C2EB);
+        NearCall(cs1, 0x4399, draw_icons_list_at_si);
     label_100D_4399_14469_28238:
         CheckExternalEvents(cs1, 0x4399);
         // 100D:4399 call near 0xC4ED
@@ -2953,7 +2953,7 @@ public partial class CfgGeneratedOverrides
     label_100D_439C_1446C_28240:
         CheckExternalEvents(cs1, 0x439C);
         // 100D:439C jmp near 0x445D
-        if (JumpDispatcher.Jump(unknown_100D_445D_1452D, 0x0000))
+        if (JumpDispatcher.Jump(map_arm_player_marker_task, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -2961,12 +2961,12 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_439F_1446F(int loadOffset)
+    public virtual Action map_screen_draw_base(int loadOffset)
     {
     label_100D_439F_1446F_20713:
         CheckExternalEvents(cs1, 0x439F);
         // 100D:439F call near 0xC07C
-        NearCall(cs1, 0x43A2, unknown_100D_C07C_1C14C);
+        NearCall(cs1, 0x43A2, set_fb1_as_active_framebuffer);
     label_100D_43A2_14472_20715:
         CheckExternalEvents(cs1, 0x43A2);
         // 100D:43A2 cmp byte ptr DS:[0x473E],0
@@ -2981,7 +2981,7 @@ public partial class CfgGeneratedOverrides
         // 100D:43A9 mov AX,0x0024
         AX = (ushort)0x0024;
         // 100D:43AC call near 0xC13E
-        NearCall(cs1, 0x43AF, unknown_100D_C13E_1C20E);
+        NearCall(cs1, 0x43AF, open_sprite_bank);
     label_100D_43AF_1447F_35123:
         CheckExternalEvents(cs1, 0x43AF);
         // 100D:43AF call near 0xC49A
@@ -2989,7 +2989,7 @@ public partial class CfgGeneratedOverrides
     label_100D_43B2_14482_35125:
         CheckExternalEvents(cs1, 0x43B2);
         // 100D:43B2 call near 0xC412
-        NearCall(cs1, 0x43B5, unknown_100D_C412_1C4E2);
+        NearCall(cs1, 0x43B5, copy_active_framebuffer_to_framebuffer_2);
     label_100D_43B5_14485_35127:
         CheckExternalEvents(cs1, 0x43B5);
         // 100D:43B5 call far dword ptr DS:[0x3935]
@@ -3004,7 +3004,7 @@ public partial class CfgGeneratedOverrides
     label_100D_43B9_14489_35129:
         CheckExternalEvents(cs1, 0x43B9);
         // 100D:43B9 call near 0x5B69
-        NearCall(cs1, 0x43BC, unknown_100D_5B69_15C39);
+        NearCall(cs1, 0x43BC, draw_map_view_border);
     label_100D_43BC_1448C_35131:
         CheckExternalEvents(cs1, 0x43BC);
         // 100D:43BC mov SI,0x14A4
@@ -3025,7 +3025,7 @@ public partial class CfgGeneratedOverrides
     label_100D_43C9_14499_35136:
         CheckExternalEvents(cs1, 0x43C9);
         // 100D:43C9 jmp near 0xC4DD
-        return unknown_100D_C4DD_1C5AD(0x0000);
+        return present_game_area(0x0000);
     label_100D_43CC_1449C_20718:
         CheckExternalEvents(cs1, 0x43CC);
         // 100D:43CC cmp byte ptr DS:[0x002B],0
@@ -3038,26 +3038,26 @@ public partial class CfgGeneratedOverrides
     label_100D_43D3_144A3_20721:
         CheckExternalEvents(cs1, 0x43D3);
         // 100D:43D3 call near 0x38B4
-        NearCall(cs1, 0x43D6, unknown_100D_38B4_13984);
+        NearCall(cs1, 0x43D6, draw_sky);
     label_100D_43D6_144A6_20723:
         CheckExternalEvents(cs1, 0x43D6);
         // 100D:43D6 mov AX,0x0024
         AX = (ushort)0x0024;
         // 100D:43D9 call near 0xC13E
-        NearCall(cs1, 0x43DC, unknown_100D_C13E_1C20E);
+        NearCall(cs1, 0x43DC, open_sprite_bank);
     label_100D_43DC_144AC_20726:
         CheckExternalEvents(cs1, 0x43DC);
         // 100D:43DC mov SI,0x14B4
         SI = (ushort)0x14B4;
         // 100D:43DF call near 0xC21B
-        NearCall(cs1, 0x43E2, unknown_100D_C21B_1C2EB);
+        NearCall(cs1, 0x43E2, draw_icons_list_at_si);
     label_100D_43E2_144B2_20729:
         CheckExternalEvents(cs1, 0x43E2);
         // 100D:43E2 ret near
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_43E3_144B3(int loadOffset)
+    public virtual Action map_screen_restore_room_view(int loadOffset)
     {
     label_100D_43E3_144B3_21550:
         CheckExternalEvents(cs1, 0x43E3);
@@ -3090,7 +3090,7 @@ public partial class CfgGeneratedOverrides
         // 100D:43F8 pop SI
         SI = Stack.Pop16();
         // 100D:43F9 jmp near 0xC4F0
-        return unknown_100D_C4F0_1C5C0(0x0000);
+        return present_screen_rect(0x0000);
     label_100D_43FC_144CC_21553:
         CheckExternalEvents(cs1, 0x43FC);
         // 100D:43FC cmp byte ptr DS:[6],0x80
@@ -3103,30 +3103,30 @@ public partial class CfgGeneratedOverrides
     label_100D_4403_144D3_21556:
         CheckExternalEvents(cs1, 0x4403);
         // 100D:4403 call near 0x388D
-        NearCall(cs1, 0x4406, unknown_100D_388D_1395D);
+        NearCall(cs1, 0x4406, set_sky_palette);
     label_100D_4406_144D6_21558:
         CheckExternalEvents(cs1, 0x4406);
         // 100D:4406 call near 0xC43E
-        NearCall(cs1, 0x4409, unknown_100D_C43E_1C50E);
+        NearCall(cs1, 0x4409, copy_game_area_fb2_to_fb1);
     label_100D_4409_144D9_21560:
         CheckExternalEvents(cs1, 0x4409);
         // 100D:4409 call near 0xC4DD
-        NearCall(cs1, 0x440C, unknown_100D_C4DD_1C5AD);
+        NearCall(cs1, 0x440C, present_game_area);
     label_100D_440C_144DC_21564:
         CheckExternalEvents(cs1, 0x440C);
         // 100D:440C jmp near 0xC0F4
-        return unknown_100D_C0F4_1C1C4(0x0000);
+        return update_screen_palette(0x0000);
     label_100D_440F_144DF_28259:
         CheckExternalEvents(cs1, 0x440F);
         // 100D:440F call near 0x4ABE
-        NearCall(cs1, 0x4412, unknown_100D_4ABE_14B8E);
+        NearCall(cs1, 0x4412, travel_resume_flight_view);
     label_100D_4412_144E2_28261:
         CheckExternalEvents(cs1, 0x4412);
         // 100D:4412 jmp near 0xC0F4
-        return unknown_100D_C0F4_1C1C4(0x0000);
+        return update_screen_palette(0x0000);
     }
 
-    public virtual Action unknown_100D_4415_144E5(int loadOffset)
+    public virtual Action map_screen_cleanup(int loadOffset)
     {
     label_100D_4415_144E5_21533:
         CheckExternalEvents(cs1, 0x4415);
@@ -3149,29 +3149,29 @@ public partial class CfgGeneratedOverrides
         // 100D:4420 mov word ptr DS:[0xA5C0],0
         UInt16[DS, (ushort)0xA5C0] = (ushort)0x0000;
         // 100D:4426 call near 0xDAA3
-        NearCall(cs1, 0x4429, unknown_100D_DAA3_1DB73);
+        NearCall(cs1, 0x4429, clear_mouse_nav_rect);
     label_100D_4429_144F9_21541:
         CheckExternalEvents(cs1, 0x4429);
         // 100D:4429 mov SI,0x44AB
         SI = (ushort)0x44AB;
         // 100D:442C call near 0xDA5F
-        NearCall(cs1, 0x442F, unknown_100D_DA5F_1DB2F);
+        NearCall(cs1, 0x442F, remove_frame_task);
     label_100D_442F_144FF_21544:
         CheckExternalEvents(cs1, 0x442F);
         // 100D:442F call near 0x469B
-        NearCall(cs1, 0x4432, unknown_100D_469B_1476B);
+        NearCall(cs1, 0x4432, map_remove_select_destination_text_task);
     label_100D_4432_14502_21546:
         CheckExternalEvents(cs1, 0x4432);
         // 100D:4432 call near 0x5BA0
-        NearCall(cs1, 0x4435, unknown_100D_5BA0_15C70);
+        NearCall(cs1, 0x4435, copy_game_area_rect_to_unknown_rect);
     label_100D_4435_14505_21548:
         CheckExternalEvents(cs1, 0x4435);
         // 100D:4435 call near 0x43E3
-        NearCall(cs1, 0x4438, unknown_100D_43E3_144B3);
+        NearCall(cs1, 0x4438, map_screen_restore_room_view);
     label_100D_4438_14508_21566:
         CheckExternalEvents(cs1, 0x4438);
         // 100D:4438 call near 0xC0F4
-        NearCall(cs1, 0x443B, unknown_100D_C0F4_1C1C4);
+        NearCall(cs1, 0x443B, update_screen_palette);
     label_100D_443B_1450B_21568:
         CheckExternalEvents(cs1, 0x443B);
         // 100D:443B cmp word ptr DS:[0x11C5],0
@@ -3188,15 +3188,15 @@ public partial class CfgGeneratedOverrides
     label_100D_4447_14517_21571:
         CheckExternalEvents(cs1, 0x4447);
         // 100D:4447 call near 0xD95B
-        NearCall(cs1, 0x444A, unknown_100D_D95B_1DA2B);
+        NearCall(cs1, 0x444A, select_room_ui_table);
     label_100D_444A_1451A_21573:
         CheckExternalEvents(cs1, 0x444A);
         // 100D:444A call near 0xD717
-        NearCall(cs1, 0x444D, unknown_100D_D717_1D7E7);
+        NearCall(cs1, 0x444D, ui_setup_and_draw_nav_panel);
     label_100D_444D_1451D_21577:
         CheckExternalEvents(cs1, 0x444D);
         // 100D:444D call near 0x2FFB
-        NearCall(cs1, 0x4450, unknown_100D_2FFB_130CB);
+        NearCall(cs1, 0x4450, rebuild_and_draw_room_nav_panel);
     label_100D_4450_14520_21585:
         CheckExternalEvents(cs1, 0x4450);
         // 100D:4450 cmp byte ptr DS:[0x4728],0
@@ -3212,7 +3212,7 @@ public partial class CfgGeneratedOverrides
         return unknown_100D_4AC4_14B94(0x0000);
     }
 
-    public virtual Action unknown_100D_445D_1452D(int loadOffset)
+    public virtual Action map_arm_player_marker_task(int loadOffset)
     {
     entrydispatcher:
     label_100D_445D_1452D_20990:
@@ -3220,15 +3220,15 @@ public partial class CfgGeneratedOverrides
         // 100D:445D mov SI,0x44AB
         SI = (ushort)0x44AB;
         // 100D:4460 call near 0xDA5F
-        NearCall(cs1, 0x4463, unknown_100D_DA5F_1DB2F);
+        NearCall(cs1, 0x4463, remove_frame_task);
     label_100D_4463_14533_20993:
         CheckExternalEvents(cs1, 0x4463);
         // 100D:4463 call near 0x407E
-        NearCall(cs1, 0x4466, unknown_100D_407E_1414E);
+        NearCall(cs1, 0x4466, get_map_position);
     label_100D_4466_14536_20995:
         CheckExternalEvents(cs1, 0x4466);
         // 100D:4466 call near 0x62D6
-        NearCall(cs1, 0x4469, unknown_100D_62D6_163A6);
+        NearCall(cs1, 0x4469, map_position_to_screen_if_visible);
     label_100D_4469_14539_20997:
         CheckExternalEvents(cs1, 0x4469);
         // 100D:4469 jae short 0x4472
@@ -3245,7 +3245,7 @@ public partial class CfgGeneratedOverrides
     label_100D_4472_14542_20999:
         CheckExternalEvents(cs1, 0x4472);
         // 100D:4472 call near 0xC137
-        NearCall(cs1, 0x4475, unknown_100D_C137_1C207);
+        NearCall(cs1, 0x4475, open_icones_spritesheet);
     label_100D_4475_14545_21001:
         CheckExternalEvents(cs1, 0x4475);
         // 100D:4475 mov AX,0x004C
@@ -3289,12 +3289,12 @@ public partial class CfgGeneratedOverrides
         // 100D:44A0 mov BP,0x012C
         BP = (ushort)0x012C;
         // 100D:44A3 call near 0xDA25
-        NearCall(cs1, 0x44A6, unknown_100D_DA25_1DAF5);
+        NearCall(cs1, 0x44A6, add_frame_task);
     label_100D_44A6_14576_21022:
         CheckExternalEvents(cs1, 0x44A6);
         // 100D:44A6 mov byte ptr DS:[0x4751],0
         UInt8[DS, (ushort)0x4751] = (byte)0x00;
-        if (JumpDispatcher.Jump(unknown_100D_44AB_1457B, 0x0000))
+        if (JumpDispatcher.Jump(tick_map_player_marker, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -3302,7 +3302,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_44AB_1457B(int loadOffset)
+    public virtual Action tick_map_player_marker(int loadOffset)
     {
     entrydispatcher:
     label_100D_44AB_1457B_21024:
@@ -3312,21 +3312,21 @@ public partial class CfgGeneratedOverrides
         // 100D:44AF push word ptr DS:[0xDBDA]
         Stack.Push16(UInt16[DS, (ushort)0xDBDA]);
         // 100D:44B3 call near 0xC08E
-        NearCall(cs1, 0x44B6, unknown_100D_C08E_1C15E);
+        NearCall(cs1, 0x44B6, set_screen_as_active_framebuffer);
     label_100D_44B6_14586_21027:
         CheckExternalEvents(cs1, 0x44B6);
         // 100D:44B6 call near 0x5B93
-        NearCall(cs1, 0x44B9, unknown_100D_5B93_15C63);
+        NearCall(cs1, 0x44B9, map_view_clip_rect);
     label_100D_44B9_14589_21029:
         CheckExternalEvents(cs1, 0x44B9);
         // 100D:44B9 call near 0xC137
-        NearCall(cs1, 0x44BC, unknown_100D_C137_1C207);
+        NearCall(cs1, 0x44BC, open_icones_spritesheet);
     label_100D_44BC_1458C_21031:
         CheckExternalEvents(cs1, 0x44BC);
         // 100D:44BC mov SI,0x4749
         SI = (ushort)0x4749;
         // 100D:44BF call near 0xDB74
-        NearCall(cs1, 0x44C2, unknown_100D_DB74_1DC44);
+        NearCall(cs1, 0x44C2, restore_mouse_if_rect_intersects);
     label_100D_44C2_14592_21034:
         CheckExternalEvents(cs1, 0x44C2);
         // 100D:44C2 mov DX,word ptr DS:[SI]
@@ -3418,7 +3418,7 @@ public partial class CfgGeneratedOverrides
         ushort poppedValue_100D_4507_145D7 = Stack.Pop16();
         UInt16[DS, (ushort)0xDBDA] = unchecked((ushort)poppedValue_100D_4507_145D7);
         // 100D:450B jmp near 0xDB67
-        if (JumpDispatcher.Jump(unknown_100D_DB67_1DC37, 0x0000))
+        if (JumpDispatcher.Jump(draw_mouse_cursor_if_needed, 0x0000))
         {
             loadOffset = JumpDispatcher.NextEntryAddress;
             goto entrydispatcher;
@@ -3426,7 +3426,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_450E_145DE(int loadOffset)
+    public virtual Action map_mouse_lmb_select_destination(int loadOffset)
     {
     entrydispatcher:
     label_100D_450E_145DE_21362:
@@ -3445,7 +3445,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4516 push DX
         Stack.Push16(DX);
         // 100D:4517 call near 0x4586
-        NearCall(cs1, 0x451A, unknown_100D_4586_14656);
+        NearCall(cs1, 0x451A, map_mouse_hover_tracker);
     label_100D_451A_145EA_21369:
         CheckExternalEvents(cs1, 0x451A);
         // 100D:451A pop DX
@@ -3499,11 +3499,11 @@ public partial class CfgGeneratedOverrides
         // 100D:4536 push DI
         Stack.Push16(DI);
         // 100D:4537 call near 0x456C
-        NearCall(cs1, 0x453A, unknown_100D_456C_1463C);
+        NearCall(cs1, 0x453A, map_hover_narration_clip);
     label_100D_453A_1460A_21403:
         CheckExternalEvents(cs1, 0x453A);
         // 100D:453A call near 0xAB45
-        NearCall(cs1, 0x453D, unknown_100D_AB45_1AC15);
+        NearCall(cs1, 0x453D, duck_music_and_start_narration_voice_clip);
     label_100D_453D_1460D_21414:
         CheckExternalEvents(cs1, 0x453D);
         // 100D:453D pop DI
@@ -3519,7 +3519,7 @@ public partial class CfgGeneratedOverrides
         // 100D:4543 mov AX,0x0014
         AX = (ushort)0x0014;
         // 100D:4546 call near 0xE3A0
-        NearCall(cs1, 0x4549, unknown_100D_E3A0_1E470);
+        NearCall(cs1, 0x4549, tick_one_frame);
     label_100D_4549_14619_21438:
         CheckExternalEvents(cs1, 0x4549);
         // 100D:4549 push DI
@@ -3527,7 +3527,7 @@ public partial class CfgGeneratedOverrides
         // 100D:454A xor DI,DI
         DI = Alu16.Xor(DI, DI);
         // 100D:454C call near 0x45DE
-        NearCall(cs1, 0x454F, unknown_100D_45DE_146AE);
+        NearCall(cs1, 0x454F, map_draw_hover_label);
     label_100D_454F_1461F_21449:
         CheckExternalEvents(cs1, 0x454F);
         // 100D:454F pop DI
@@ -3535,11 +3535,11 @@ public partial class CfgGeneratedOverrides
         // 100D:4550 mov AX,0x000A
         AX = (ushort)0x000A;
         // 100D:4553 call near 0xE3A0
-        NearCall(cs1, 0x4556, unknown_100D_E3A0_1E470);
+        NearCall(cs1, 0x4556, tick_one_frame);
     label_100D_4556_14626_21454:
         CheckExternalEvents(cs1, 0x4556);
         // 100D:4556 call near 0x45DE
-        NearCall(cs1, 0x4559, unknown_100D_45DE_146AE);
+        NearCall(cs1, 0x4559, map_draw_hover_label);
     label_100D_4559_14629_21456:
         CheckExternalEvents(cs1, 0x4559);
         // 100D:4559 pop DI
@@ -3557,7 +3557,7 @@ public partial class CfgGeneratedOverrides
         // 100D:455D push DI
         Stack.Push16(DI);
         // 100D:455E call near 0xABA9
-        NearCall(cs1, 0x4561, unknown_100D_ABA9_1AC79);
+        NearCall(cs1, 0x4561, wait_for_narration_voice_clip);
     label_100D_4561_14631_21477:
         CheckExternalEvents(cs1, 0x4561);
         // 100D:4561 pop DI
@@ -3577,7 +3577,7 @@ public partial class CfgGeneratedOverrides
         return JumpDispatcher.RequiredJumpAsmReturn;
     }
 
-    public virtual Action unknown_100D_456C_1463C(int loadOffset)
+    public virtual Action map_hover_narration_clip(int loadOffset)
     {
     label_100D_456C_1463C_21388:
         CheckExternalEvents(cs1, 0x456C);
@@ -3616,7 +3616,7 @@ public partial class CfgGeneratedOverrides
         return NearRet((ushort)0x0000);
     }
 
-    public virtual Action unknown_100D_4586_14656(int loadOffset)
+    public virtual Action map_mouse_hover_tracker(int loadOffset)
     {
     entrydispatcher:
     label_100D_4586_14656_21068:
@@ -3637,7 +3637,7 @@ public partial class CfgGeneratedOverrides
         // 100D:458E mov AL,0xFF
         AL = (byte)0xFF;
         // 100D:4590 call near 0x5E6D
-        NearCall(cs1, 0x4593, unknown_100D_5E6D_15F3D);
+        NearCall(cs1, 0x4593, find_nearest_location_marker);
     label_100D_4593_14663_21210:
         CheckExternalEvents(cs1, 0x4593);
         // 100D:4593 cmp AX,9
@@ -3674,7 +3674,7 @@ public partial class CfgGeneratedOverrides
         // 100D:45B0 sub BX,word ptr DS:[0x474F]
         BX = Alu16.Sub(BX, UInt16[DS, (ushort)0x474F]);
         // 100D:45B4 call near 0x514E
-        NearCall(cs1, 0x45B7, unknown_100D_514E_1521E);
+        NearCall(cs1, 0x45B7, compass_angle_from_delta);
     label_100D_45B7_14687_21228:
         CheckExternalEvents(cs1, 0x45B7);
         // 100D:45B7 add AL,3
@@ -3720,7 +3720,7 @@ public partial class CfgGeneratedOverrides
         // 100D:45DB jne short 0x45DE
         if (!ZeroFlag)
         {
-            if (JumpDispatcher.Jump(unknown_100D_45DE_146AE, 0x0000))
+            if (JumpDispatcher.Jump(map_draw_hover_label, 0x0000))
             {
                 loadOffset = JumpDispatcher.NextEntryAddress;
                 goto entrydispatcher;
