@@ -7,8 +7,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>CS0164</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="../Spice86/src/Spice86/Spice86.csproj" />
+    <PackageReference Include="Spice86" Version="16.1.0" />
   </ItemGroup>
 </Project>
